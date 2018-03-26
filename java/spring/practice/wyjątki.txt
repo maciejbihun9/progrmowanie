@@ -1,0 +1,4 @@
+
+ * BeanDefinitionException:
+ - when components are declared in the default package or Component scan is over class
+ that exists in default package.

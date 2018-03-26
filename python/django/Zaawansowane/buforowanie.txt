@@ -1,0 +1,86 @@
+# S³u¿y do tego, aby nie wykonywaæ kosztownych zaoytañ do bazy danych wiele razy 
+# dokumentacja: https://docs.djangoproject.com/en/1.8/topics/cache/.
+# kaszowanie strona 400.
+
+W celu uzyskania optymalnej wydajnoœci nale¿y u¿yæ mechanizmu buforowania przechowuj¹cego dane
+w pamiêci, takiego jak Memcached.
+
+ * to jest coœ w stylu kaszowania wartoœci,
+ 
+ * zaawansowane ¿¹dania najpierw przetwarzaj¹ baze danych i póŸniej generuj¹ szablon,
+
+ * Przy u¿yciu buforowania zapytañ, wyników obliczeñ oraz treœci wygenerowanej
+w ¿¹daniu HTTP mo¿na unikn¹æ ponownego wykonywania kosztownych operacji w kolejnych
+¿¹daniach. A to oznacza krótszy czas udzielenia odpowiedzi i mniejsze obci¹¿enie serwera,
+
+ * Elementy s¹ przechowywane w buforze systemu przez domyœln¹ iloœæ czasu. Oczywiœcie
+istnieje mo¿liwoœæ zdefiniowania czasu wa¿noœci buforowanych elementów.
+
+MAMCHACHED
+
+ * pobieranie: http://memcached.org/downloads.
+
+ * instalacja wersji python'a: python3-memcached==1.51
+
+ * django-memcache-status - przeznaczony do wyœwietlania na witrynie administracyjnej 
+			Django danych statystycznych dotycz¹cych egzemplarzy memcached.
+
+ - pip install git+git://github.com/zenx/django-memcache-status.git
+
+ * odpalanie serwera caszowania: memcached
+
+ * W omawianym przyk³adzie wykorzystamy mechanizm Memcached, który dzia³a w pamiêci
+i na swoje potrzeby wykorzystuje pewn¹ iloœæ pamiêci RAM. Po zape³nieniu przeznaczonej
+dla niego pamiêci RAM Memcached zaczyna usuwanie najstarszych danych z bufora w celu
+zrobienia miejsca dla nowych danych.
+
+ * ustawienia bufora: str. 403
+
+ * ustawienia caszowania:
+# ustawienia cashowania
+CACHES = {
+        'default': {
+        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+        'LOCATION': '127.0.0.1:11211',
+    }
+}
+
+ * Zawsze unikaj przechowywania wartoœci None w kluczu bufora, poniewa¿ wtedy nie bêdziesz móg³
+rozró¿niæ rzeczywistej wartoœci i nietrafienia bufora.
+
+ * Dok³adnie przemyœl strategiê buforowania, zanim zaczniesz j¹ implementowaæ. Najpierw skoncentruj siê
+na najkosztowniejszych zapytaniach lub obliczeniach, które nie s¹ przeprowadzane dla poszczególnych
+u¿ytkowników.
+
+ * zapisywanie do cache:
+ - from django.core.cache import cache
+ - cache.set(key, value)
+ - cache.get(key) - jeœli nie ma klucza zwraca None
+
+ * istnieje mo¿liwoœæ pobrania danych z cache w szablonie:
+
+ - pobranie danych z module.contents dla podanego modu³u lub jego zapisnie jeœli go nie by³o do
+ podanej zmiennej.
+
+	{% cache 600 module_contents module %}
+            {% for content in module.contents.all %}
+                {% with item=content.item %}
+                    <h2>{{ item.title }}</h2>
+                    {{ item.render }}
+                {% endwith %}
+            {% endfor %}
+        {% endcache %}
+
+ - dane wyjœciowe widoków mo¿na przechowywaæ podaj¹c parametry w url:
+url(r'^course/(?P<pk>\d+)/(?P<module_id>\d+)/$',
+	cache_page(60 * 15)(views.StudentCourseDetailView.as_view()),
+	name='student_course_detail_module'),
+
+ - Bufor dla poszczególnych widoków korzysta z adresu URL do utworzenia klucza bufora. Dlatego te¿
+wiele adresów URL prowadz¹cych do tego samego widoku bêdzie buforowanych oddzielnie,
+
+ * mo¿liwe jest nawet chachowanie ca³ej stronki, ale nie jest rekomendowane,
+
+ * Przedstawi³em ogólne omówienie dostarczanych przez framework Django metod buforowania
+danych. Powinieneœ rozwa¿nie zdefiniowaæ strategiê buforowania i preferowaæ w pierwszej
+kolejnoœci najkosztowniejsze zapytania QuerySet i obliczenia.

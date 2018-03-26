@@ -1,0 +1,75 @@
+
+ * Because template-driven forms are in their own module,
+ you need to add the FormsModule to the array of 
+ imports for the application module before you can use forms.
+ 
+ * You add the FormsModule to the list of imports defined in the @NgModule decorator. 
+ This gives the application access to all of the template-driven forms features, including ngModel,
+ 
+ * In template driven forms, if you've imported FormsModule,
+ you don't have to do anything to the <form> 
+ tag in order to make use of FormsModule. Continue on to see how this works.
+ 
+ * The container, form-group, form-control, and btn classes come from Twitter Bootstrap. 
+ These classes are purely cosmetic. Bootstrap gives the form a little style.
+ 
+ * each form element needs to have an id reference for you to be able to
+ reference to it using this id.
+ - <form #heroForm="ngForm"> or <form ngForm></form>
+ - The variable heroForm is now a reference to the NgForm directive that governs the form as a whole.
+ - I can see that form does not has to have any id's, this will still work anyway
+ 
+ * label element over an html item, it is not needed to have any for attributes or properties
+ 
+ * Angular ads some classes to an element depends on the element state (valid, not valid):
+ <input type="text" class="form-control"
+               required
+               [(ngModel)]="model.name" name="name"
+               #name="ngModel" #spy>
+        <br>TODO: remove this: {{spy.className}}
+ - The control has been visited.	ng-touched	ng-untouched
+ - The control's value has changed.	ng-dirty	ng-pristine
+ ("pristine" means the user hasn't changed the value since it was displayed in this form.)
+ - The control's value is valid.	ng-valid	ng-invalid
+ styling this:
+ .ng-valid[required], .ng-valid.required  {
+  border-left: 5px solid #42A948; /* green */
+}
+
+.ng-invalid:not(form)  {
+  border-left: 5px solid #a94442; /* red */
+}
+ 
+ 
+ FORM ELEMENTS:
+ 
+  * Each input element has a "name" property that is required 
+  by Angular forms to register the control with the form.
+  - this property does not have any effect, but has to be declared,
+ 
+  * create a nice select element:
+  - <select class="form-control" id="power" required>
+    <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
+  </select>
+  
+  * Using ngModel in a form gives you more than just two-way data binding.
+  It also tells you if the user touched the control,
+  if the value changed, or if the value became invalid.
+  
+  * create even nicer select element:
+  - <select class="form-control" 
+				id="power"
+                required
+                [(ngModel)]="model.power" 
+				name="power"
+                #power="ngModel">
+          <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
+        </select>
+  -  Defining a name attribute is a requirement when using [(ngModel)] in combination with a form.
+  It is just much more descriptive using this!  
+  
+  * this is how we create a message element below the html element:
+  - <div [hidden]="name.valid || name.pristine"
+     class="alert alert-danger">
+	Name is required
+	</div>

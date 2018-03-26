@@ -1,0 +1,4 @@
+1. emaile mo¿na wysy³aæ poprzez serwer google,
+gdzie ustawienia trzeba zdefiniowaæ w settings.py,
+
+2. 

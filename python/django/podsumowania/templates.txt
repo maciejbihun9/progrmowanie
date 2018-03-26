@@ -1,0 +1,31 @@
+ * ³adowanie plików statycznych odbywa siê tylko w pliku base.html
+
+ * w ka¿dym szablonie jest dostêpny request,
+
+ * nie wyjmowaæ zawartoœci obiektów przed dodawaniem do szablonów, bo mo¿na to zrobic tam,
+kiedy bêd¹ potrzebne,
+
+ * jeœli <a href> ma nigdzie nie kierowaæ, to fajnie jest zapodaæ mu #, bo to nic nie zrobi.
+Lepsza nawet bêdzie kropka.  
+
+ * to co znajduje siê w blokach title lub content zostanie podmienione podczas dziedziczenia,
+
+ * block title - jest to tytu³ tej karty
+
+{% block title %}
+    {% if object %}
+        Edycja treœci "{{ object.title }}"
+    {% else %}
+        Dodanie nowej treœci
+    {% endif %}
+{% endblock %}
+
+ * czêsto siê stosuje znaczniki if else
+
+ * czy istnieje jakiœ obiekt! : if object
+
+ * ka¿dy template posiada swój fragment do tworzenia bloku tytu³u,
+
+ * nie pisze siê du¿ych plików template
+
+ * w formach nie definiuje siê ¿adnych akcji - maj¹ pozostaæ puste

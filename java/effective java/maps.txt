@@ -1,0 +1,11 @@
+
+ * throw an IllegalArumentException when there is now key when accessing a map,
+ 
+ * create a new hashmap without redundant calls:
+ - Map<String, List<String>> m = HashMap.newInstance();
+ 
+ * get a view of a map keys:
+ - map.keySet()
+ - this returns a set of map keys. This does not create a new object, but
+ returns the same set of keys each time.
+ - when you change it, then you changing all map instance,

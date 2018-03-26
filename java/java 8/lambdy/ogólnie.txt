@@ -1,0 +1,40 @@
+YOU CAN ASSIGN LAMBDA EXPRESSION TO ANY FUNCTIONAL INTERFEJS,
+ THAT BEHAVES LIKE METHOD IN THIS INTERFACE 
+
+ * zastêpstwo dla klas wbudowanych,
+
+ * nie potrzeba ju¿ tworzenia klas anonimowych
+
+ * lambdas zachêcaj¹ do tworzenia kodu bardziej generycznego, tak¿e
+znika potrzeba pisania nadmiarowego kodu,
+
+ * interfejs funkcjonalny to taki, który posiada tylko jedn¹ metodê do zaimplementowania
+np. Callable, Runnable, ActionListener,
+
+ * wyra¿enie lambda spokojnie mo¿na przypisaæ do zmiennej oraz podaæ jako parametr funkcji,
+
+ * przekazywanie zachowania jest dok³adnie tym do czego lambdy zosta³y stworzone,
+
+ * to jest w³aœnie g³ówna zaleta -> zapierdala, mo¿na dawaæ funkcje jako parametry!!!,
+   tak¿e nie trzeba tworzyæ otoczki wiele razy, a tylko raz!!
+
+ * opisuje tutaj kurwa te wszystkie interfejsy, które mo¿na wykorzystaæ, ale je ju¿ znamy,
+
+ * w skali oraz javie mo¿na parametryzowaæ tylko dla typów referencyjnych, czyli typy proste 
+nie wchodz¹ w gre. Mo¿na zastosowaæ mechanizm pakowania zmiennych w typy generyczne, ale wi¹¿e siê
+to z narzutami czasowymi, bo trzeba zu¿yæ wiêcej pamiêci dla utworzenia niwego obiektu oraz podpatrywaæ 
+zmienne spakowane w obiekty,
+
+ * Interfejsy java 8 pozwalaj¹ na generyczne zastosowanie nawet dla typów prostych;
+np.IntPredicate, DoublePredicate,
+
+ * Interfejsy Java 8, to tylko starter, jakby co to zawsze twórz swoje interfejsy!!,
+
+ * Wyra¿enie lambda nie posiada informacji na temat tego jaki interfejs implementuje,
+
+ * typ lambdy jest dedukowany w tym kontekœcie w jakim jest u¿ywany, czyli podpatruje 
+typy obiektów w metodzie,
+
+ * scope zmiennych nie zmienia siê!, zmienne musz¹ byæ finalne, aby nie by³o b³êdu kompilacji,
+
+ * pozwalaj¹ na wrzucanie kodu do metod -> kurwa zajebiste

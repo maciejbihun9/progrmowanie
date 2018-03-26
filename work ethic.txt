@@ -1,0 +1,144 @@
+# NIE NAKRÊCANIE SIÊ ¯ADNYMI GÓWNAMI(SZCZEGÓLNIE FACEBOOKIEM)
+
+# JEDNA PRZERWA PODCZAS DNIA PRACY NA JEDZENIE
+
+# KLUCZEM JEST DOBRE ŒRODOWISKO DO TESTOWANIA
+
+# NIE PIJEMY KAWY
+
+# PLANOWANIE JEST WSZYSTKIM!!!
+
+# NA KA¯DYM ETAPIE WYCHODZ¥ B£ÊDY POPE£NIONE NA POZIOMIE PLANOWANIA
+
+# Z£Y PLAN MO¯E WYD£U¯AÆ CA£Y PROCES KILKAKROTNIE
+
+# ARCHITEKTURA JEST KURWA NAJWA¯NIEJSZA
+
+# DAJ TYM DURNIOM TO CZEGO CHC¥(POSZUKIWANIE GLOBALNYCH TRENDÓ, ABY WIÊCEJ IM TEGO SPRZEDAÆ)
+
+ANALIZA TEGO CO POTRZEBA ZROBIÆ -> WYSZUKANIE INFORMACJI NA TEMAT TEGO JAK TO ZROBIÆ
+-> UTWORZENIE GÓRNEGO INTERFEJSU DO ANALIZ -> NAPISANIE DATA API -> UTORZENIE SCHEMATU BAZY DANYCH,
+
+NAUKA ORAZ ANALIZA TEGO CO SPOTYKA MNIE NA DRODZE, TRZEBA POTRAFIÆ PORADZIÆ SOBIE Z KA¯D¥ SYTUACJ¥, 
+ROZKMINKA WSZYTKIEGO CO SIÊ DZIEJE...
+* TO W JAKI SPOSÓB COŒ JEST NAPISANE,
+* POPRAWA KONCENTRACJI ORAZ SKUPIENIA SIÊ NA ZADANIU,
+
+KA¯DY PROBLEM TO MILIARD PODPROBLEMÓW
+
+JEŒLI NIE WIEM JAK BIZNESOWO COŒ DZIA£A TO TWORZENIE DO TEGO SYSTEMU JEST BEZ SENSU.
+
+NALE¯Y ROZWIAÆ KA¯D¥ W¥TPLIWOŒÆ BIZNESOW¥
+* z³a znajomoœæ biznesowa danego zagadnienia prowadzi zupe³nie inn¹ drog¹,
+
+# Czytaj przed ka¿dym dniem pracy.
+
+# Testowanie ma³ej iloœci zapisanych danych przed pe³nym zapisem.
+
+1. Zaplanowanie ogólnie ca³ego zadania.
+
+ * czy to co chce zrobiæ ju¿ istnieje?
+
+ * co dok³adnie mi to da, gdy ju¿ bêdê mia³ dany program?,
+
+ * czy aby napewno bêde u¿ywa³ danej metody?
+
+ * wogóle po co mi to?
+
+ * Zebranie konkretnych wymagañ funkcjonalnoœci, analiza tego co ma byæ zrobione
+ - w tym czasie kompletenie odchodziny od technologii wykonania,
+ - nale¿y poczytaæ o tym, o co tak naprawdê chodzi w danej bran¿y
+ - dobre poznanie danej bran¿y,
+ - jeœli widze, ¿e du¿o siê zastanawiam, to znaczy, ¿e nie posiadam wystarczaj¹cej wiedzy
+   na temat danego zagadnienia
+
+2. Rozpisanie architektury ca³ego porgramu:  
+
+ * zaplanowanie funkcjonalnoœci,
+
+ * zaplanowanie bazy danych,
+
+3. Testowanie funkcjonalnoœci:
+
+ * ka¿dy nowy modu³ musi byæ sprawdzony pod k¹tem funkcjonalnoœci w testach oraz dobrze opisany zanim zostanie skomitowany.
+
+ * nowe funkcjonalnoœci,
+
+4. Pisanie kodu jak najbardziej generycznego z myœl¹ o przysz³oœci,
+
+ * jak by tu zrobiæ, aby ju¿ nie pisaæ tego kolejny raz.
+
+5. Dobre zrozumienie kolekcji na których siê pracuje oraz rozkminka tego
+   do jakich rzeczy mo¿na tego u¿ywaæ.
+
+6. testowanie dzia³ania kodu tylko w plikach testowych.
+
+7. nie pisaæ kodu, który nie jest na dany moment potrzebny.(tylko interfejsy)
+
+8. I have to commit only files that have tests representation and are well tested.
+
+9. Only things that are well named can work properly!!!.
+
+10. Pisanie dokumentacji tylko do metod najbardziej potrzebnych.
+
+11. Pracowanie w metodologii JIT. W tym momêcie w przestrzeni i w czasie jestem
+    tu i teraz i musze zrobiæ wszystko zajebiœcie.
+
+12. Zapamiêtywanie wszystkiego co robie podczas programowania oraz myœlenie nad
+    tym co móg³bym poprawiæ w podejœciu do tego,
+
+13. Zapisywanie wa¿nych rzeczy w tym samym momêcie w czasie.
+
+14. Nie zastanawiaæ siê a¿ tyle, tylko dzia³aæ!!! I patrzeæ na rezultaty. 
+
+15. Rozpisanie strategii dzia³ania przed ka¿dym zadaniem,
+
+16. Rozpisanie pe³nych rozwi¹zañ postawionego problemu:
+
+ * zebranie wiedzy na temat danego zagadnienia,
+
+ * przygotowanie na kartce papieru gotowych pe³nych rozwi¹zañ zagdanienia,
+
+17. Rozwi¹zywanie problemu:
+
+ * przejœcie przez ca³y proces ogólnie, aby lepiej ogarn¹æ proces w ca³oœci,
+
+ * rozbicie problemu na sk³adniki i rozkminka sk³adników po koleji,
+ - zbudowanie ca³oœciowego modelu sk³adnika do koñca w kotekœcie ca³ego procesu,
+ - próba wpasowania tego sk³adnika do procesu, je¿eli dobrze pasuje, to idziemy dalej, jeœli nie, to pêtla powrotna.
+
+18. Visualize your problem:
+
+ * try to visualize your problem on the piece of paper,
+
+ * resolve your problem on the piece of paper.
+
+19. Nie patrz siê na czas, on nie jest istotny,
+myœl ca³y czas nad tym jak uefektywniæ Twoj¹ pracê oraz
+tym ¿eby rozkminiæ dobrze ka¿dy detal oraz myœleæ 
+nad tym w szerszych perspektywach.
+
+20. Nie oczekuj efektów zbyt szyko, one przyjd¹,
+ a nawet nie bêdziesz wiedzia³ kiedy, 
+
+21. Rozkminka tego co robie wiele razy i próba automatyzacji tego zagadnienia.   
+
+22. Ewentualne przemyœlenia w szarym komentarzu nad definicj¹ metody,
+zielonym kolorem mo¿emy oznaczaæ tylko do dana metoda robi.
+
+23. Nie mo¿na wszystkiego idelanie zaplanowaæ:
+
+ * trzeba stworzyæ plan, który trzyma siê kupy i podczas niespodziewanej sytuacji odpowidnio zareagowaæ,
+
+ * If I miss my goal I still ok!!! but the goal has to the best,
+
+24. Testowanie wa¿nych funkcji pod wieloma k¹tami(bardzo wa¿ne!!!)
+
+25. Nieznajomoœæ trendów w danych, która spowodowa³a z³e dobranie metody obliczeniowej:
+
+ * znów o pora¿ce zdecydowa³a ma³a wiedza na temat ca³ego zagadnienia, 
+
+26. Gdy coœ nie dzia³a tak jak powinno, to najpierw trzeba sprawdziæ dzia³anie kodu:
+
+
+

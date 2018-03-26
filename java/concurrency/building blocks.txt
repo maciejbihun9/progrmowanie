@@ -1,0 +1,62 @@
+OPIS:
+
+ * struktury danych z pakietu concurrent są klasami, które działają bardziej wydajnie niż
+ zwykłe synchronizowane kolekcje, także dlatego powinny być uzywane,
+ 
+ * zamiana kolekcji synchronizowanych na te konkurencyjne pozwala na dramatyczne zwiększenie 
+ sklaowalności z małym ryzykiem,
+ 
+ * wywoływanie metod klas konkurencyjnych może zająć bardzo dużo czasu, gdy np. metoda get()
+ porównuje obiekty kolekcji poprzez equals, gdzie mtoda hash nie rozdzieliła ich w odpowiedni sposób,
+ takie rzeczy trudno będzie odnaleźć później w gąszczu problemów z wydajnością,
+ 
+ * kolekcje konkurencyjne zostały stworzone w taki sposób, żeby mogły mieć zmienianą zawartość wiele razy
+ 
+ * ConcurrentHashMap - jest kolekcją, która radzi sobie trochę lepiej, bo
+ nie synchronizuje wszystkich metod po tym samym lock'u więc pozwala na to, aby
+ kilka wątków mogło czytać dane z takiej mapy, a nawet udzuelić pozwolenia na zapisywanie
+ do takiej mapy wielu wątkom na raz,
+ - nie rzuca wyjątku COncurrentModificationExeception, bo posiada iterator, który na to nie 
+ reaguje, gdy kolekcja została zmieniona podczas iteracji przez nią,
+ - ten iterator może reflektować te zmiany w kolekcji, ale nie jest napisane, że to zrobi na pewno,
+ - metody size() oraz isEmpty() zostały spowolnione na rzecz add(), get(),
+ 
+ zastosowanie:
+ - dodwawnia elementów do kolekcji która jest w danym czasie iterowana, a nawet może się zdarzyć, że
+ iterator uwzględni ten nowy obiekt,
+ 
+ * CopyonWriteArrayList - jest to kolekcja, która pozwala na dodawanie nowych elementów do listy
+ podczas iterowania i nie rzuca wyjątkami, ale ta nowa lista powoduje, że inne wątki mogą dostać 
+ wstęp do już troche zmienionej listy, także iterowanie bedzie na innej liście,
+
+ zastosowanie:
+ - nie, kiedy potrzeba o wiele więcej dodawania nić iterowania,
+ - for event notification systems, where is far more common to change a event that unregister it,
+
+ * producer-consumer:
+ - jest to wzorzeć zbudowany na blokującej się kolejce, gdzie producer produkuje 
+ prace, a konsumer ją konsumuje i wykonuje
+ - kolejka moze mieć ustawioną wielkość, ale nie musi, także może się tak zdarzyć, że taka
+ kolejka wyczerpie totalnie pamięć komputerową, także taka wielkość powinna być podawana,
+ - taki design lepiej rozdziela aktywności aplikacji, która jest bardziej rozszerzalna oraz lepiej
+ jest ją zrozumieć niż taki jeden wielki monolit,
+ np. producer - produkuje czyste naczynia, a consumer(klienci) - konsumuję je i z nich jedzą
+ np. kelnerzy produkują brudne naczynia, a obsługa je konsumuje i czyści
+ np. serwer, który wrzuca ządania do koleji z której pobierane są te żądania, gdy konsumerzy
+ np. file searcher and indexer where a file seracher moves file names into a collection and
+ indexer indexes them when they become available,
+ są już wolni
+ - jeśli taka struktura danych nie jest odpowiednia dla Twojego problemu, to można zawsze użyć
+ struktury tj. Semaphores,
+ 
+ * dequeue pattern:
+ - jest to wzorzec, który powoduje, że workery posiadają swoją kolejkę, a producenci wrzucją do
+ nich pracę, która jest do zrobienia. Producenci mają dodatkowe zadanie, aby dobrze dystrybuować pracę. 
+ Jeżeli jeden z workerów nie posiada w danym momęcie żadnego zadania do wykonania, to następuje kradzież
+ pracy z kolejki innego wykonawcy.
+ - jest to wydajniejszy sposób pracy w kontekscie wzorca producer-konsumer
+ np. webCrawler który jedzie przez stronkę i napotyka kolejne zadania do zrobienia, które dostją się na 
+ koniec jego kolejki, które mogą zostać w każdej chwili pobrane,
+  
+ 
+TRIKI: 

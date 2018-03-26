@@ -1,0 +1,47 @@
+ * s¹ szybsze od list, bo komp wie, ¿e s¹ niemutowalne i je traktuje inaczej,
+ * u¿ywaj ich, gdy masz do czynienia z du¿a list¹ elementów, których nie powinno siê zmieniaæ
+ * dzia³ania na nich jest szybsze
+ * s¹ bardzo bezpieczne, tak¿e nadaj¹ siê na przechowywniae sta³ych
+ * krotek nie mo¿na sortowaæ, po³o¿enie jest nie zmienne 
+
+ * krotki == lista, ale jest nie zmienialna,
+
+ * to NIE jest krotka:
+ - krotka = (2)
+
+ * nie powinno siê jej zmieniaæ, bo jest to niezgodne z zamierzeniami tej struktury,
+   jej zmiana powoduje powstanie nowej krotki, a poza tym listy s¹ szybsze,
+   wiêc powinno siê ich stosowaæ w takich przypadakch. 
+
+ * krotki s¹ to listy elementów nie zmienialne, nie mo¿na zmieniæ ich wartoœci
+nie mo¿na usun¹æ elementów z ich wnêtrza i tak dalej,
+
+ * krotka = (1,2,3,4,5,6)
+
+ * mo¿na je normalnie wypisaæ
+
+ * dodawanie do krotek(tworzenie nowej krotki, nawet do tej samej zmiennej 
+   jest poprostu przypisanie nowej krotki):
+ - (1,2,3,4,5) + (1,),
+
+ * krotki mo¿na konkatenowaæ tak samo jak listy
+
+ * mo¿na sprawdzaæ czy dany element znajduje siê w sekwencji tak samo jak w listach:
+ - item in krotka - True
+
+ * pobranie randomoweg elementu z krotki:
+ - random.choice(krotka)
+
+ * fajny sposób na utworzenie zbioru sta³ych
+ - WORDS = ("NADU¯YWANY", "MA£¯", "GUAM", "TAFTA", "PYTHON")
+
+ - WAYS_TO_WIN = ((0, 1, 2),
+(3, 4, 5),
+(6, 7, 8),
+(0, 3, 6),
+(1, 4, 7),
+(2, 5, 8),
+(0, 4, 8),
+(2, 4, 6))
+
+ 

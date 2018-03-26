@@ -1,0 +1,50 @@
+﻿
+ * latches:
+ zastosowania:
+ - nie pozwala na dostęp wątków dopóki np. zasoby nie zostały zainicjalizowane,
+ np. pobrane z sici
+ - w grze multiplayer, gdzie trzeba zaczekać aż wszyscy uczstnicy będą gotowi do gry,
+ - może też być użyta podczas czekania na wątki, aby np. obliczyć czas, który był potrzebny
+ na wykonanie jakieś czynności,
+ - kiedy trzeba wykonać jakąs aktywność (najczęściej początkową), po której następuje zwolnienie bramki
+ aby dostęp do zasobów otrzymały wszystkie wątki,
+ 
+ examples:
+ public class TestHarness {
+ public long timeTasks(int nThreads, final Runnable task)
+ throws InterruptedException {
+ final CountDownLatch startGate = new CountDownLatch(1);
+ final CountDownLatch endGate = new CountDownLatch(nThreads);
+ for (int i = 0; i < nThreads; i++) {
+ Thread t = new Thread() {
+ public void run() {
+ try {
+ startGate.await();
+ try {
+ task.run();
+ } finally {
+ endGate.countDown();
+ }
+ } catch (InterruptedException ignored) { }
+ }
+ };
+ t.start();
+ }
+ long start = System.nanoTime();
+ startGate.countDown();
+ endGate.await();
+ long end = System.nanoTime();
+ return end-start;
+ }
+}  
+ 
+ * semapgores:
+ - łatwiej jest ją zrobić poprzez blockingQUeue,
+ - np. pozwala na implementację puli połączeń do bazy danych,
+ - następuje inicjalizacja ile wątków może mieć dostęp w tym samym czasie do zasobów
+ 
+ * bariery:
+ - działają dokładnie tak samo jak latche, tylko one czekają na pozostałe wątki,
+ np. spotykamy się pod sklepem o 6:00,
+ jak tam dojedziesz to czekaj tam na pozostałych.
+ Jak reszta tam dojedzie to wtedy rozkminimy co dalej robić.

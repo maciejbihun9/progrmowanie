@@ -1,0 +1,57 @@
+
+ * Czynności użytkownika, takie jak kliknięcie łącza, naciśnięcie przycisku
+ i wprowadzenie tekstu, powodują zdarzenia DOM,
+ 
+ * having fun with the inputs is fine for small amount of items.
+ If there are many of them, then things are at risk to mess this up,
+ 
+ * create an input that's require an input value:
+ - <input type="text" class="form-control"
+               required
+               [(ngModel)]="model.name" name="name"
+               #name="ngModel">
+ 
+EVENTS:
+ 
+ * $event - contains all informations about element calling it,
+ about the data, that has been written to it,
+ keycodes, times, etc, just all information about the event,
+ 
+ * pass only values to the component if you not need all event parameters,
+ 
+ * event in method should be of any type, because this provides
+ much lower cost of a method,
+ 
+ * not each event has a value property to get a value,
+ so sometime it is better to cast it a HTMLInputElement,
+ 
+ * send all event as a parameter after some DOM action,
+ - <input (keyup)="onKey($event)">
+ - onKey(event: any) {
+    // without type info
+    debugger;
+    this.values += event.target.value + ' | ';
+  } 
+  
+ * we can do data binding without component even!!!:
+ - <input #input (keyup)="0">
+ - <p>{{input.value}}</p>
+ - without keyup it won't work, because angular sncas DOM events, so
+ - will update template only if an event is bounded with an element 
+ 
+ * set an element reaction only for keystroke.enter:
+ - <input #box (keyup.enter)="onEnter(box.value)">
+ - <p>{{value}}</p>
+ 
+ * update the html template with the data from input after keystroke and blur event
+ (mouse clicks somewhere else):
+ - <input #input (keyup.enter)="s" (blur)="s">
+ - <p>{{input.value}}</p>
+ - angular reacts on each event for specified in the html a element,
+ 
+ * set many action after blur event:
+ - (blur)="addHero(newHero.value); newHero.value='' ">
+ 
+ * setting an element id in the template does not allow 
+ any other components to access that, this is great seperation for all components
+ to protect them from id errors,

@@ -1,0 +1,28 @@
+
+ * istnieje tutaj swego rodzaju optimizer, który rozwala na części pierwsze
+ elementy dokumnetu match i ustawia je w odpowiednich miejscach, aby 
+ zastosować je w odpowiednich miejscach rurki,
+ 
+ * jeśli posiadamy w naszym zapytaniu sorotwanie, to optimizer
+ przemieści matchowanie na początek, aby zminimalizować ilość danych do sortowania,
+
+ * posiada pewne ograniczenia dotyczące zwracanych wyników agregacji,
+ agregacja może zwrócić liste dokumentów, które mogą mieć powyżej 16Mb pamięci,
+ co spowoduje błąd agregacji,
+ każde przejście w rurce może używać maksymalnie 100 MB RAM,
+ 
+ * każda agregacja działa dla całej kolekcji,
+ 
+ * przechodzenie przez potok może generować nowe dokumenty,
+ 
+ * Operatory potoków $ match i $ sort mogą korzystać z indeksu, 
+ gdy występują na początku potoku.
+
+ * operatory $match powinny być umieszczane na początku potoków,
+ 
+ * aggregation function:
+ - $sum - sumowanie
+ 
+ EXAMPLES:
+ 
+ * 

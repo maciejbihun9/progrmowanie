@@ -1,0 +1,150 @@
+ * Podczas definiowania funkcji mo¿na okreœliæ oczekiwane parametry. Funkcja nie musi pobieraæ
+parametrów, ale jeœli oczekuje, ¿e je otrzyma, a programista podczas wywo³ywania funkcji
+zapomni o ich podaniu, JavaScript przypisze im wartoœæ undefined. W poni¿szym przyk³adzie
+funkcja zwraca wartoœæ NaN, poniewa¿ próbuje dodaæ 1 do undefined:
+
+ function sum(a, b){
+	var c =  a + b;
+	return c
+} 
+
+ * sum(1) -> undefined
+
+ * przypisanie zmiennej do funkcji:
+ - var a = alert;
+
+ * JavaScript nie wybrzydza podczas pobierania parametrów. Jeœli otrzyma ich wiêcej, ni¿ jest
+potrzebne, dodatkowe parametry zostan¹ zignorowane:
+>>> sum(1, 2, 3, 4, 5)
+
+ * Na dodatek mo¿liwe jest pisanie funkcji, które mog¹ przyjmowaæ ró¿n¹ liczbê parametrów. Jest to
+mo¿liwe dziêki tablicy arguments, która jest automatycznie tworzona wewn¹trz ka¿dej funkcji.
+Oto funkcja, której dzia³anie polega na zwracaniu wszystkich przekazanych jej argumentów:
+>>> function args() { return arguments; }
+>>> args();
+
+ * dobrze jest przed pêtlami zdefiniowaæ d³ugoœæ pêtli:
+ - var liczba_parametrow = arguments.length;
+
+ * funckje wbudowane:
+ - parseInt():
+   zwraca liczbê jeœli string posiada j¹ na pocz¹tku stringa, jesli zawiera 0,
+   to zwraca jakieœdziesiêtne gówno.
+   a) parseInt("1sadasd21") returns 1 ;)
+   b) parseInt("absd231") returns NaN
+
+ - parseFloat():
+   dzia³a podobnie jak parseInt. 
+   a) parseFloat('123e2') - zwraca 12300 !!!
+   
+ - isNaN():
+   a) isNaN('123') - false
+   b) isNaN("asda213") - true
+ - isFinite():
+   sprawdza, czy wartoœæ parametru wejœciowego to liczba ró¿na od Infinity i ró¿na od NaN.
+
+ - eval() - nie stosowaæ:
+   Funkcja eval() pobiera ³añcuch znaków i uruchamia go jako kod w jêzyku JavaScript:
+   Wydajnoœæ: wykonywanie kodu „na ¿ywo” jest wolniejsze od wykonywania kodu
+   zapisanego w skrypcie.
+   Bezpieczeñstwo: JavaScript ma du¿e mo¿liwoœci, co oznacza, ¿e przy jego
+   „pomocy” mo¿na coœ zepsuæ. Jeœli nie mo¿esz ufaæ Ÿród³u, z którego pochodzi
+   wejœcie przekazywane do eval(), nie wywo³uj tej funkcji.
+   a) eval("var i = 12; ") >>>>ii 12
+
+
+ * zdefiniowanie zmiennej globalnej bez var powoduje, ¿e zmienna mo¿e byæ wywo³ana z poziomu przegl¹darki!!!:
+   zmienna = 12 - oczywiœcie poza scoem funkcji
+ - mo¿na j¹ podejrzeæ, ale nie mo¿na zmieniæ jej wartoœci!
+
+ * nie uw¿ywaæzmiennych globalnych!!! - z³e praktyki
+
+ * Byæ mo¿e spodziewasz siê, ¿e pierwszy alert() wyœwietli 123 (wartoœæ globalnej zmiennej a),
+ a drugi wyœwietli 1 (wartoœæ lokalnej zmiennej a). Jednak stanie siê inaczej. Pierwszy alert()
+ poka¿e "undefined". Stanie siê tak dlatego, ¿e wewn¹trz funkcji zasiêg lokalny jest wa¿niejszy
+ od globalnego. Zmienna lokalna nadpisuje zmienn¹ globaln¹ o tej samej nazwie. Podczas wykonywania
+ pierwszego alert(), a nie by³o jeszcze zdefiniowane (st¹d wartoœæ undefined), ale
+ ju¿ istnia³o w lokalnej przestrzeni nazw:
+
+ * Zajebiœcie wa¿ny przyklad!!!:
+ - scope funkcji jest wa¿niejszy!!!
+
+ var a = 123;
+ function f() {
+  alert(a); -> returns undefined;
+  var a = 1;
+  alert(a); -> returns 1;
+ }
+
+FUNKCJE ANONIMOWE:
+
+ * Funkcjê anonimow¹ mo¿na przekazaæ jako parametr do innej funkcji. Funkcja
+ odbieraj¹ca ten parametr mo¿e przeprowadziæ operacje na otrzymanej funkcji.
+ * Funkcje anonimowe mo¿ne definiowaæ i od razu uruchamiaæ.
+ * Mo¿na przekazywaæ funkcje bez koniecznoœci ich nazywania, co oznacza, ¿e
+ potrzebnych jest mniej zmiennych globalnych.
+ * Jeœli przeniesiemy obowi¹zek wywo³ania funkcji na inn¹ funkcjê, nasz kod bêdzie
+ krótszy.
+ * Wywo³ania zwrotne mog¹ korzystnie wp³yn¹æ na wydajnoœæ aplikacji.
+
+ * wykonywanie funkcji, która przyjmuje parametry oraz funkcje:
+ - callback nie bedzie pojmowany jako funkcje
+
+function pomnozRazyDwa(a, b, c, callback) {
+  var i, ar = [];
+  for(i = 0; i < 3; i++) {
+   ar[i] = callback(arguments[i] * 2);
+  }
+ return ar;
+}
+
+>>>>pp2(12,2,3, function(a){return a * 3;}) - zajebiste, bo mo¿na ró¿nego rodzju funkcje tutaj wrzucaæ
+
+FUNKCJE SAMOWYWO£UJ¥CE:
+
+ * dobre do inicjalizacji!!!
+
+ * nie tworz¹ dodatkowych zbêdnych zmiennych,
+
+ * nie da siêich wykorzystaæ ponownie!,
+
+ * (
+function(){
+ alert('uuu!');
+ }
+)();
+
+FUNKCJE PRYWATNE:
+
+ * funkcja prywatne nie jest dostêpna spoza funkcji a, jest prywatna i nie mozna z niej korzystaæ
+
+ * zapisanie funkcji z nazw¹ jako var, czy za napisem function nie ma znacznia!!!
+
+var a = function(param) {
+ var b = function(theinput) {
+  return theinput * 2;
+ };
+ return 'Wynik wynosi ' + b(param);
+};
+
+>>>> a(2) -> 4
+
+ - funkcja b() jest niedostepna spoza tej funkcji.
+
+ * mo¿liwe jest równie¿ przypisanie funkcji definicji funkcji, która zosta³a 
+   zadeklarowana wewn¹trz funkcji ;)
+
+ * teraz funkcje mo¿na przypisaædo zmiennej, tylko podczas definicji
+
+ITERATOR:
+
+ * utworzenie iteratora!! - bardzo ciekawe rozwi¹zaniew
+
+ * function setup(x) {
+ var i = 0;
+  return function(){
+   return x[i++];
+  };
+ } 
+
+ * var iterator = setup(lista);

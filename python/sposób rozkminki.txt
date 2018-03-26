@@ -1,0 +1,1 @@
+ * rozkminke kodu zawsze zaczynaj od szablonu

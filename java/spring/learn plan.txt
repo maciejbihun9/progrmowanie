@@ -1,0 +1,6 @@
+
+1. Czytanie ksi¹¿ki spring in action oraz zapisywanie wa¿nych kwestii pod danym rozdzia³em,
+
+2. Utworzenie aplikacji w javie na podstawie eelx, phoenixa oraz projektów open source (architektura),
+
+3.   

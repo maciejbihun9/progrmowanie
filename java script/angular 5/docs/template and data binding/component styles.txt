@@ -1,0 +1,6 @@
+
+  * Angular can bundle component styles with components, 
+  enabling a more modular design than regular stylesheets.
+  - we can create a modular styles component,
+  
+  * css for component is available only for this component!!!,

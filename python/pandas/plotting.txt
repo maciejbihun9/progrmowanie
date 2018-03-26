@@ -1,0 +1,18 @@
+ * plot nice looking series plot:
+ - series.plot(legend=True, figsize=(50, 50), grid=True, label=sector)
+
+ * plot bar chart:
+ - series.plot(kind="bar")
+ 
+ * plot many plots in one figure:
+ plt.figure(1)
+ plt.subplot(211)
+ macd_results["MACD"].plot()
+ plt.subplot(212)
+ macd_results[StocksProps.STOCK_CLOSE].plot()
+ plt.tight_layout(pad=0.4, w_pad=0.5, h_pad=1.0)
+ plt.show()
+ 
+ * create space between charts:
+ - use this before plt.show() when everything is set up
+ - plt.tight_layout(pad=0.4, w_pad=0.5, h_pad=1.0)

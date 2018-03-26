@@ -1,0 +1,88 @@
+ * tworzenie metod jak najbardzije generycznych,
+
+ * tworzenie metod do analizy jednej rzeczy
+ - analiza wielu elementów powinna odbyæ siê w wy¿szej metodzie,
+
+ * zbyt wiele petli for zaciemnia obraz programu, trudny do analizy
+
+ * zbyt wiele dictów w jendym dikcie zaciemnia obraz rezultatów,
+
+ * tworzenie metod w taki sposób, aby mo¿na by³o podawaæ im metody jako parametry!!!,
+
+ * trzeba dok³adnie znaæ ka¿dy szczegó³ programu!!!
+
+ * nie tworzenie zbyt wielu wbudowanych obiektów!!!
+ - nie da rady sortowaæ, wyszukiwaæ
+ - trzeba robiæ liste dictów, bo mo¿na ³atwo wyszukiwaæ po ich atrybutach,
+ - £ATWE SOROTWOWANIE!!! oraz TWORZENIE SUBLIST!!!,
+ - o wiele mniej kodu do napisania,
+
+ * debuggowanie trwa zawsze d³u¿ej ni¿ run, tak¿e to jest kolejny czynnik dlaczego
+   trzeba testowaæ ma³e funkcje osobno. U¿ywanie przy tym looogera, który zadzia³a dla
+   kazdego œrodowiska.
+
+ * w przypadku, gdy metoda otrzymuje ró¿na iloœæ parametrów, to najlepiej jest u¿ywaæ **kwargs
+ - jest to dict
+
+ * warto tworzyæ generyczne metody poprzez podawanie parametrów w postaci kwargsów,
+ - to pozwala na tworzenie kodu zajebiœcie generycznego.
+
+ * jeœli zmieniam coœ w napisanej funkcji to powinienem zrobiæ nowego brancha,
+   jesli okwa¿e siê, ¿e jest to z³e rozwi¹zanie, to powracam, a jakieœ innwe istotne treœci kopiuje
+
+ * napisanie opisu dzia³ania zadania, wizualizacja go na papierze,
+
+ * dobrze jest zaczynaæ pisaæ zadanie od samej góry, bo wiem jakich rezultatów mam siê
+   spodziewaæ oraz czy to gówno w koñcu mi siê przyda.
+ - jeœli tak, jeœli nie jest zbyt skomplikowane, to warto siê o to pokusiæ
+   i dostosowywaæ kod od spodu
+ 
+ * czyli zaczynanie od samej góry, czyli jaki jest cel tego zadania, napisanie górnego
+   wywo³ania api, swego rodzaju interfejs
+ - a póŸniej dewelopowanie od samego do³u, aby budowaæ system pod to rozwi¹zanie
+
+ * mówienie sobie, ¿e nie odejde od zadania dopóki nie zrobie jakieœ jego czêœci,
+
+ * w pythonie mo¿na przekazaæ funkcje w liœcie, aby wykonaæ je póŸniej lub,
+
+ * czêœciej wykonuj commity, bo wtedy ³atwiej jest coœ wycofaæ ni¿ robiæ od nowa!!!
+   jako parametry funkcji,
+
+ * zapisywanie co wywo³uje generyczne b³êdy, dla okreœlonego programu,
+
+ * podczas zmiany metody, trzeba odrazu sprawdziæ czy nie wywo³a³o to jakiegoœ
+   problemu w innych, bo poŸniej podczas kolejnej implementacji
+   bede myœla³, ¿e to nowy kod to powoduje!!!.
+
+ * zmieni³em funkcje bez testowania!!!, ja pierdole!!
+
+ * testowanie funkcji generycznych, które s¹ wykorzystywane przez wiele innych funkcji.
+ - mo¿e nie testowanie tych maksymalnie ma³ych, ale te du¿e jak nabardziej.
+
+ * odpalanie wszystkich testów po ka¿dej zmianie implementacji, 
+
+ * zapisywanie co doprowadza do popularnego wyj¹tku, który ci¿eko siê debuguje
+
+ * chcia³em za szybko osi¹gn¹æ efekt i napisa³em metodê, tylko dla jednego elementu,
+   to spowodowa³o, ¿e implementacja tego wy¿szego poziomu zajê³a wiêcej czasu, bo
+   trzeba by³o zmieniæ koncepcje.
+   Na koniec okaza³o siê, ¿e pozosta³e metody s¹ bezu¿yteczne.
+   Trzeba myœleæ ca³y czas o maksymalnym celu, bo celowanie w mniejsze cele, powoduje to, 
+   ¿e trzeba poœwiêciæ wiêcej czasu.
+
+ * interpretacja wyników trwa w chuj d³ugo, 
+   tak¿e naprawde trzeba pomyœleæ nad ostatecznym
+   wynikiem, abye nie traciæ czasu,
+   
+ * trzymanie statycznych nazw w jednym osobnym pliku
+ - utworzenie kilku plików z nazwami zmiennych w zaleznoœci od ich kategorii,
+ 
+ * statyczne zmienne s¹ deklarowane z tak¹ sam¹ nazw¹, ale CAMEL CASE!!!
+ 
+ * szczerze mówi¹c mozna by³oby siê pokusiæ o tylko jeden plik dla labelek dla ca³ego projektu,
+   bo póŸniej bedziesz kurwa prze¿uca³ te zmienne miêdzy plikami w kó³ko.
+   w pliku mo¿na nazwaæ odpowiednio sekcje,
+   
+ * zawsze zapisuj zmiany przed zmian¹ brancha,
+
+ * zapisywanie zmian, po ka¿dym featurze, 

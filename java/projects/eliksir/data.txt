@@ -1,0 +1,28 @@
+* Enum - statusy u¿ytkownika
+
+* Kryteria wyszukiwania obiektów klas modelowych:
+
+ - w jaki sposób mo¿na wyszukiwaæ okreœlone obiekty
+
+* Istniej¹ puste klasy? ->
+
+* podpakiet model zawiera zarówno encje jaki i enumy
+
+* modu³y data nie posiadaj¹ implementacji
+
+* dao - to interfejsy bez implementacji, które rozszerzaj¹ ReadWriteCriteriaDao(metody odczytu oraz zapisu)
+
+ - te interfejsy s¹ pusty pewnie dlatego, ¿e nie potrzeba innych metod do pobierania danych ni¿ te na najwy¿szy poziomie
+
+ - jeœli posiadaj¹ jakieœ metody, to bez cia³a,
+
+ - znajduj¹ siê tutaj us³ugi zwi¹zane z przetwarzaniem danych - np. zarchiwizuj cos, usuñ jakiœ zbiór,
+   czyli nie ma tu zwyk³ego zapisz, tylko zapisz coœ konkretnego, w odpoweidnie miejsce
+
+* na tym poziomie ju¿ s¹ tylko us³ugi odpowiednio nazwane w zale¿noœci od tego co maj¹ robiæ,
+ale ca³y czas bez implementacji
+
+* model - definicja encji oran enumów do zapisania,
+* dao - co mo¿na zrobiæ z dan¹ encj¹,
+* criteria - w jaki sposób mozna je wyszukiwaæ,
+* config - definicje statusów jakie moga sie pojawiæ podczas przetwarzania obiektów zdefiniowanych w pakiecie model

@@ -1,0 +1,10 @@
+OGÓLNA TAKA ZALETA U¯YWANIA TAKICH ZNACZNIKÓW, TO TO, ¯E NIE POTRZEBA POBIERAÆ DANYCH W SZABLONACH HTML.
+
+1. @register.inclusion_tag - Z pomoc¹ wymienionej funkcji mo¿na wygenerowaæ
+szablon wraz ze zmiennymi kontekstu zwróconymi przez znacznik szablonu.
+
+ * czyi generuje nam plik html,
+
+2. @register.assignment_tag - pozwala na pobranie danych oraz zadeklarowanie ich w pliku html
+
+ * {% get_most_commented_posts as most_commented_posts %},

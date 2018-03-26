@@ -1,0 +1,9 @@
+
+ * remove blank space between strings:
+ - string.trim();
+ 
+ * compute string length:
+ - string.length;
+ 
+ * parse json into a string:
+ - JSON.stringfy(obj.property)

@@ -1,0 +1,61 @@
+ * pogrupowanie transakcji po traderze:
+ - transactions.stream().collect(groupingBy(Transaction::getTrader));
+
+ * zaawansowane grupowanie - przyk³ad:
+public enum CaloricLevel { DIET, NORMAL, FAT }
+
+Map<CaloricLevel, List<Dish>> dishesByCaloricLevel = menu.stream().collect(
+groupingBy(dish -> {
+if (dish.getCalories() <= 400) return CaloricLevel.DIET;
+else if (dish.getCalories() <= 700) return
+CaloricLevel.NORMAL;
+else return CaloricLevel.FAT;
+} ));
+
+ * kilkukrotne grupowanie:
+
+ - jest bardzo przydatne do tworzenia np. wyszukanego menu z wieloma podkategoriami
+Map<String, Map<Integer, List<Transaction>>> city_year_mapping =
+                transactions.stream().collect(
+                groupingBy((t) -> t.getTrader().getCity(),
+                        groupingBy((t) -> t.getYear()))
+        );
+ - grupowanie po mieœcie trader'a, a potem po roku tranzakcji
+
+ * zliczanie iloœci elementów danego typu po pogrupowaniu
+ - zwraca iloœæ elementów daengo typu
+
+transactions.stream().collect(
+                groupingBy(Transaction::getYear, counting()));
+
+ * poszukiwanie elementów w podgrupach, które spe³nia¹ okreœlone kryteria
+
+ * wyszukanie najbardziej kalorycznych rzeczy w danej podgrupie:
+Map<Dish.Type, Optional<Dish>> mostCaloricByType =
+	menu.stream().collect(groupingBy(Dish::getType, maxBy(comparingInt(Dish::getCalories))));
+
+ - ale to zwraca obiekty optionals, które nie s¹ zbyt u¿yteczne
+ 
+ * poszukiwanie elementów w podgrupach, które spe³nia¹ okreœlone kryteria z u¿yciem collectAndThen():
+
+ Map<String, Transaction> transactionsByCityAndValue = transactions.stream()
+                .collect(groupingBy((transaction) -> transaction.getTrader().getCity(),
+                        collectingAndThen(maxBy(comparing(Transaction::getValue)),
+                                Optional::get)));
+
+PARTITIONING
+
+ * œwietna metoda do podzia³u listy na dwie czêœci podzielone pod wzglêdem tego czy elementy spe³niaj¹
+   okreœlone wyra¿enie
+
+ - Map<Boolean, List<Transaction>> moreThanValue = transactions.stream()
+	.collect(partitioningBy((transaction) -> transaction.getValue() > 500));
+
+ * pozwala na partycjonowanie elementów na dwa zbiory, które s¹ podwi¹zane pod: True oraz False,
+
+ * metoda partycjonowania przyjmuje tylko funkcje zwracaj¹ce predyktay, czyli boolean
+ - transactions.stream().collect(partitioningBy(Transaction::isFair))
+
+ * mo¿liwe jest oczywiœcie partycjonowanie wielo poziomowe:
+menu.stream().collect(partitioningBy(Dish::isVegetarian, partitioningBy(d -> d.getCalories() > 500)));
+   

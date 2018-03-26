@@ -1,0 +1,16 @@
+
+ * śledzi wszystkie zmiany w plikach,
+ 
+ * porównywanie wprowadzonych zmian w projekcie,
+ 
+ * kto wprowadzał ostatnio zmiany,
+ 
+ * git jest to rozproszona bazą danych, która posiada ochronę przed
+ utratą danych wskutek awarii centralnego serwera lub bazy,
+ każdy klient kopiuje całą bazę i działa jako host dla innych w razie spierdolenia,
+ 
+ * Od swoich narodzin w 2005 roku, Git ewoluował i ustabilizował się jako narzędzie łatwe w użyciu,
+ jednocześnie zachowując wyżej wymienione cechy. Jest niewiarygodnie szybki, bardzo
+ wydajny przy pracy z dużymi projektami i posiada niezwykły system gałęzi do nieliniowego rozwoju,
+ 
+ * linux był tworziny z łatek (patches), bo nie mieli kontroli wersji,

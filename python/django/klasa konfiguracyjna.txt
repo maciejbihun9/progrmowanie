@@ -1,0 +1,2 @@
+ * Wiêcej informacji na temat konfiguracji aplikacji znajdziesz pod adresem https://docs.django
+project.com/en/1.8/ref/applications/.

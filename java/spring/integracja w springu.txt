@@ -1,0 +1,30 @@
+1. Aplikacja zawsze musi integrowaæ siê z innymi aplikacjami, nie mo¿e byæ bezludn¹ wysp¹,
+
+2. W œwieci realnym mo¿e byæ potrzebne zdalne udostêpnianie us³ug aplikacji innym aplikacjom,
+
+3. Przep³yw wykonania przekazywany jest w tym przypadku pomiêdzy
+dwiema aplikacjami, teoretycznie na innym komputerze w zdalnej lokalizacji,
+poprzez sieæ.
+
+4. Bez wzglêdu na to, czy bêdziesz tworzyæ kod, który konsumuje zdalne us³ugi, implementuje
+je, czy ³¹czy oba podejœcia, praca ze zdalnymi us³ugami w Springu jest tylko
+kwesti¹ konfiguracji.
+
+5. RMI daje ogromne mo¿liwoœci w zakresie komunikacji pomiedzy programami javy,
+
+ * RMI jest doskona³ym sposobem komunikacji pomiêdzy zdalnymi us³ugami, jednak
+ma pewne ograniczenia,
+
+ * rmi jest z natury mniej wydajne,
+
+ * rmi powinno byæ ograniczone do minimum ze wzglêdu na jego ma³¹ wydajnoœæ,
+
+ * rmi przydaje siê do tworzenia aplikacji rozproszonych zorientowanych na us³ugi,
+
+ * budowê aplikacji rozproszoych mo¿na prowadziæ na dwa sposoby(rest oraz rmi)
+
+ * rest jest w tym przypadku lepszym rozwi¹zaniem
+
+6. Spring zmniejsza iloœæ kodu potrzebnego do uzycia rmi do komunikacji miêdzy palikacjmai.
+
+7. Praca ze zdalnymi us³ugami to najczêœciej nu¿¹cy obowi¹zek. 

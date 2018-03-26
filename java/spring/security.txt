@@ -1,0 +1,143 @@
+Co tak naprawdê wymaga zabezpieczenia w aplikacji?
+
+1. Spring security teraz potrzebuje zaledwie kilku linijek kodu do zabezpieczenia ca³ej aplikacji,
+
+2. Do zabezpieczenia ¿¹dañ sieciowych i ograniczenia
+dostêpu na poziomie adresów URL wykorzystuje filtry serwletów,
+
+3. SpringSecurityFilterChain jest komponentem, do którego docieraj¹ wszystkie ¿¹danie klientów,
+który je odsiewa i mówi, które maj¹ przejœæ lub nie,
+
+4. Filtry te zostan¹ utworzone po w³¹czeniu ustawieñ
+bezpieczeñstwa.
+
+5.  Jak sugeruje sama nazwa adnotacji, @EnableWebSecurity w³¹cza ustawienia bezpieczeñstwa
+aplikacji internetowej.
+
+ * @EnableWebMvcSecurity dzia³a jeszcze lepiej szczególnie dla aplikacji WEB
+
+6. @EnableWebMvcSecurity Konfiguruje te¿ komponenty, które automatycznie
+dodaj¹ do formularzy ukryte pola tokenów CSRF (cross-site request forgery) z wykorzystaniem
+biblioteki znaczników wi¹zania formularzy Springa. 
+
+7. Aby aplikacja spe³nia³a nasze wymagania, musimy trochê rozbudowaæ konfiguracjê.
+W szczególnoœci musimy:
+* Skonfigurowaæ bazê u¿ytkowników.
+* Okreœliæ, które ¿¹dania powinny, a które nie powinny wymagaæ uwierzytelniania,
+jak równie¿ to, jakie uprawnienia musz¹ mieæ odwiedzaj¹cy stronê u¿ytkownicy.
+* Dostarczyæ w³asn¹ stronê logowania, by podmieniæ ekran domyœlny.
+
+8. Trzeba zadeklarowaæ, którzy u¿ytkowniccy bêd¹ mieli dostêp do zasobów,
+
+9. baze uzytkowników trzeba trzymaæ w bazie danych, jednak debagowanie mo¿e odbywaæ siê z baz¹ w pamiêci,
+
+10. jdbcAuthentication() - pozwalan na autentykacjê poprzez po³¹cznie z baz¹ danych,
+
+11. Nadania pewnych uprawnieñ userowi typu: ROLE_USER pozwala ju¿ na skorzystanie z autentykacji bazo danowej,
+
+12. Mamy pe³n¹ kontrolê nad zapytaniami do bazy danych,
+
+ * mo¿emy je zmieniaæ w zale¿noœci od budowy naszej bazy,
+
+ * zapytanie jest kierowane tylko pod adres username,
+a ono pobiera status oraz grupy do jakich u¿ytkownik nale¿y
+
+13. Has³o nie mo¿e widnieæ w bazie jako string, musi byæ zaszyfrowane!!!
+
+ * u¿ytkownik wprowadza has³o, algorytm je szyfruje i porównuje je ze stringiem zaszyfrowanym,
+has³o nigdy nie jest odszyfrowywane,
+
+ * Bazy relacyjne s¹ zaledwie jedn¹ z opcji zapisywania danych u¿ytkownika. Inn¹
+powszechnie wykorzystywan¹ mo¿liwoœci¹ jest przechowywanie danych w repozytorium
+LDAP. 
+
+14. Autoryzacja poprzez LDAP wymaga, aby podaæ pocz¹tkowy folder wyszukiwania w repozytorium,
+
+15. Aby korzystaæ z LDAP, trzeba posiadaæ jakieœ kurwa repozytorium,
+
+16. Serwer LDAP nas³uchuje na okreœlonym porcie okreœlonej maszyny,
+
+17. LDAP - g³ównie do odczytywania danych (bardzo szybkiego),
+
+18. Wbudowane w Spring Security bazy u¿ytkowników s¹ wygodne i obejmuj¹ najczêstsze
+przypadki u¿ycia. Je¿eli jednak potrzebujemy przeprowadzenia niestandardowego procesu
+uwierzytelniania, musimy utworzyæ i skonfigurowaæ w³asn¹ us³ugê obs³ugi danych
+u¿ytkowników.
+
+19. Nie ma praktycznie dwóch aplikacji, które zabezpieczamy dok³adnie w taki sam
+sposób. Niektóre ¿¹dania wymagaj¹ uwierzytelniania, a inne nie. Czêœæ ¿¹dañ mo¿e byæ
+dostêpna dla u¿ytkowników o okreœlonych uprawnieniach i niedostêpna dla u¿ytkowników
+bez tych uprawnieñ.
+
+20. Dobrym przyk³adem zabezpieczania konkretnych ¿¹dañ HTTP jest:
+
+@Override
+protected void configure(HttpSecurity http) throws Exception {
+	http
+	.authorizeRequests()
+	.antMatchers("/spitters/me").authenticated()
+	.antMatchers(HttpMethod.POST, "/spittles").authenticated()
+	.anyRequest().permitAll();
+}
+
+ * Pierwsze wywo³anie metody antMatchers() wskazuje, ¿e ¿¹danie, którego œcie¿k¹ jest
+/spitters/me, nale¿y uwierzytelniæ. Drugie wywo³anie metody antMatchers() jest jeszcze
+bardziej konkretne i wskazuje, ¿e uwierzytelnione maj¹ byæ wszystkie ¿¹dania typu
+POST do zasobu /spittles.
+
+ * metoda antMatchers() jest dobra do konfiguracji zabezpieczeñ aplikacji
+
+ * jeœli u¿ytkownik nie jest zalogowany, to filtry Springa przekieruje go do odpowiedniego miejsca,
+
+ * strona 291 przedstawia metode do konfiguracji bezpieczeñstwa ca³ej aplikacji,
+
+ * Mo¿emy ³¹czyæ ze sob¹ dowoln¹ liczbê wywo³añ metod antMatchers(), regexMatchers()
+oraz anyRequest(), by w pe³ni ustaliæ regu³y bezpieczeñstwa aplikacji. Musimy jednak
+pamiêtaæ, ¿e zostan¹ one zastosowane w zadanej kolejnoœci. Z tego powodu jako pierwsze
+powinniœmy zdefiniowaæ najbardziej konkretne wzorce œcie¿ek, a te najbardziej ogólne
+(jak anyRequest()) — na samym koñcu. W przeciwnym wypadku te ogólne wzorce
+„przechwyc¹” te bardziej konkretne.
+
+21. Wysy³anie danych za pomoc¹ HTTP to ryzykowna sprawa. Byæ mo¿e nie ma to a¿ tak
+du¿ego znaczenia przy wiadomoœci spittle, ale przesy³anie informacji poufnych, jak na
+przyk³ad has³a czy numery kart kredytowych, jest proszeniem siê o k³opoty.
+
+22. Wymiana danych za pomoc¹ HTTP nastêpuje w postaci niezaszyfrowanej.
+
+23. Niewszystkie strony powinny u¿ywaæ kana³u https do wymiany danych,
+
+24. W Spring requiresSecure() method is able to fully secure that url,
+
+25. OCHRONA PRZED ATAKAMI CSRF
+
+ * csrf - jest to przyk³ad wys³ania danych z formularza zamieszczonego na innesj stronie,
+
+ przyk³ad: uzytkownik jest na jakieœ innej stronie. Ma tam przycisk, który po klikniêciu wysy³a
+ukryt¹ wiadomoœæ pod ukryty adres url. Jeœli jesteœ zalogowany do serwisu, to wiadomoœæ zostanie wyslana bez przeszkód,
+
+26. Spring posiada domyœlnie ochronê przed atakami csrf,
+
+27. thymleaf posiada automatycznie wbudowan¹ obs³ugê csrf, wiêc automatycznie wysy³a token csrf razem z ¿¹daniem POST,
+
+28. Jest tak¿e mo¿liwe wy³¹czenie csrf,
+
+29. Czasami klientem naszej aplikacji nie jest cz³owiek wiêc uwierzytlenienie za pomoc¹ formy nie zadzia³a,
+
+30. HTTP basic jest to metoda uwierzytelnienia jest œwietnym sposobem dla konsumentów us³ug REST:
+
+ * wystarczy dodaæ httpBasic.realmName("domena")
+ - teraz nikt nie mo¿e konsumowaæ us³ug rest bez autentykacji
+ 
+31. Spring posiada równie¿ funkcjê "pamiêtaj mnie". Zapisuje on dane na temat uzytkownika
+username, password, klucz oraz date wygaœniêcia jako zaszyfrowane dane na komputerze klienta.
+
+32. Po klikniêciu odnoœnika ¿¹danie do adresu /logout zostanie przechwycone przez filtr
+Spring Security LogoutFilter, czyli ciasteczko jest niszczone podczas wylogowywania.
+
+ZABEZPIECZANIE ODNOŒNIKÓW:
+
+* thymleaf zapewnia mo¿liwoœæ wypisania okreœlonej wiadomoœci warunkowo w zale¿noœci od statusu autentykacji,
+
+* wszystko tutaj jest zajebiœcie proste.
+
+

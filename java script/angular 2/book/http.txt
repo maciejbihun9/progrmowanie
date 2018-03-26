@@ -1,0 +1,5 @@
+
+ * get data from given url, call a method on it and assign it to a variable:
+ - this._http.get(this._URL)
+      .map(res => res.json())
+      .subscribe(users => this.users = users);

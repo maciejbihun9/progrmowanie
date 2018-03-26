@@ -1,0 +1,6 @@
+ * lib do zarz¹dzania wyœwietlaniem plików video:
+ - install django-embed-video
+ - Do dzia³ania wystarczy jedynie
+publiczny adres URL danego klipu wideo.
+
+ * dokumentacja: http://django-embed-video.readthedocs.org/en/v1.0.0/.

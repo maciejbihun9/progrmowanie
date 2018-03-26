@@ -1,0 +1,3 @@
+
+ * all packages have to be in atleast one packages
+ putting all packages into a default package can throw an BeanDefinitionException

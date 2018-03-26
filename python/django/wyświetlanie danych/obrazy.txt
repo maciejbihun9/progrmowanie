@@ -1,0 +1,6 @@
+ * w ksi¹¿ce jest u¿ywana biblioteka : sorl-thumbnail
+ - jest to biblioteka do zarz¹dzania miniaturkami zdjêæ, tak¿e mo¿na ni¹ robiæ 
+wiele zaawansowanych rzeczy w stylu edycji zdjêæ itp. itd,
+
+ * wszelkie szczegó³y na temat budowania oraz tworzenie miniaturek zdjêæ
+mo¿na znaleŸæ na stronie: https://sorl-thumbnail.readthedocs.io/en/latest/examples.html#template-examples 

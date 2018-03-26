@@ -1,0 +1,25 @@
+ * bit - jest to zmienna logiczna, któa przyjmuje wartości
+ zależne od stanów,
+ można posiadać dwa rodzaje stanów, wysokie napięcie oraz niskie napięcie,
+ jak wiele bitów potrafi przelecieć w strumieniu w podanym czasie,
+
+ * dane mogąbyć przesyłane za pomocą światłwodów, drutów miedzianych etc,
+ 
+ * szybkość transmisji danych mierzy się w bitach na sekundę, 
+
+ * strumienie to abstrakcyjne byty,
+ 
+ * strumień binarny - 
+ - wygląda to jak strumień 0,1,
+ - OutputStream oraz iNputStream są przykłądami strumieni binarnych,
+ - funkcja read() zwraca bajt, lub tablice bajtów, która
+ służy tutaj jako bufor,
+ 
+ * strumień bajtów:
+ - Strumienie bajtowe służą do wejścia-wyjścia bajtowego
+ - umożliwiają odczytywanie danych binarnych,
+ -InputStream
+ -OutputStream
+ - są to klasy, które robią całą robotę, oczywiście zapewniają
+ dostęp do różnych innych urządzeń,
+ - odczytywanie oraz zapis danych do oraz z plików,

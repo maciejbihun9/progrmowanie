@@ -1,0 +1,7 @@
+PLIKI MULTIMEDIALNE
+
+ * Aby mo¿na by³o dodawaæ pliki multimedialne podczas dzia³ania aplikacji to trzeba to odpowiednio konfigurowaæ
+   Zosta³o to opisane na stronie 131 ksi¹zki podczas tworzenia formy rejestracji nowego u¿ytkownika,
+
+ * pobieranie plików na podstawie adresu url: response = request.urlopen(url)
+   file = ContentFile(response.read())

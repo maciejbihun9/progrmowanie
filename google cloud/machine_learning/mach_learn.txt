@@ -1,0 +1,17 @@
+1. We can use machine learning techniques wrote by google.
+
+2. You can easly use cloud to build your own models and integrate them with cloud storage.
+
+3. API do wyszukiwania ofert pracy - google cloud JOB,
+
+4. Video inteligence API - pozwala na wyszukanie słów w filmikach, aby je odnaleźć
+
+5. Google Cloud Vision API - wyszukiwanie zdjęć oraz ich kategoryzacja
+
+6. Google Cloud Speech API - tłumacz
+
+7. Google Natural Language API - search for text sentiment,
+
+8. Google Cloud Translation API - translacja tekstu,
+
+# IT IS TOO EXPENSIVE FOR NOW

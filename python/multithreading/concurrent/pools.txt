@@ -1,0 +1,37 @@
+ * ThreadPoolExecutor oraz ProcessPoolExecutor bezpoœrednio dziedzicz¹ po Executor,
+
+ThreadPoolExecutor:
+
+ * wykonuje pracê asynchronicznie uzywaj¹c w¹tków,
+
+ * ThreadPoolExecutor jest podklas¹ Executor, 
+   która u¿ywa puli w¹tków do asynchronicznego wykonywania wywo³añ,
+
+ * Zakleszczenia mog¹ wyst¹piæ, gdy osoba dzwoni¹ca zwi¹zana z 
+   Przysz³oœci¹ czeka na wyniki innej Przysz³oœci.
+
+ * wykonywanie pracy za pomoc¹ wykonawców (jest podana liczba w¹tków):
+ - przyjmuje interfejs callable,
+ - future - jest dostêpny po zakoñczeniu zadania,
+ - future.result() - jest to wynik zadania asynchronicznego,
+ 
+ * istnieje mo¿liwoœæ podania thread_name_prefix, w celu ³atwiejszego debugowania kodu,
+
+ with ThreadPoolExecutor(max_workers=1) as executor:
+    future = executor.submit(pow, 323, 1235)
+    print(future.result()) 
+
+ * map() - mapowanie funkcji do obiektów iteracji:
+ - rzucany jest timeout error jeœli nie ma wyniku po okreœlonym czasie,
+ - callables s¹ wrzucane do iteratora,
+ - wyj¹tki s¹ przechwytywane podczas iterowania po obiektach callable
+   w momêcie zwracania wyniku z dzia³ania,
+
+ * as_completed() - jest to funkcja, która przyjmuje kolekcje obiektów future, czyli takich
+   które zosta³y zasubmitowane przez executor do wykonania,
+ - executor.submit() - tworzy obiekt future,
+ - mo¿liwe jest, ¿e zadanie zostanie wykonane wczeœniej ni¿ kolekcja zostanie podana do tej metody,
+   tak¿e rezultat zostanie zwrócony jako pierwszy
+
+ future_to_url = {executor.submit(load_url, url, 60): url for url in URLS}
+    for future in concurrent.futures.as_completed(future_to_url):

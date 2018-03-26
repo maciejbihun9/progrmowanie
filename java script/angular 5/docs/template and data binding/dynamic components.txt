@@ -1,0 +1,10 @@
+
+ * Component templates are not always fixed. 
+ An application may need to load new components at runtime.
+ 
+ * load components dynamically:
+ - ComponentFactoryResolver
+ 
+ * create component for adding a dynamic html items:
+ - The <ng-template> element is a good choice
+ for dynamic components because it doesn't render any additional output.

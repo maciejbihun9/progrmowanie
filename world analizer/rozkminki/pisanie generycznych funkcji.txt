@@ -1,0 +1,10 @@
+
+ * posiadanie obiektu condition_values = {}
+ - przekazywanie całego df razem z curr index oraz last index
+   jako atrybutów condition_values
+ 
+ - condition_values byłby rozszerzany dla każdej metody
+
+ * testowanie działania macd:
+ - nałożenie wykresu ceny na MACD,
+ - 

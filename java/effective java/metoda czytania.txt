@@ -1,0 +1,8 @@
+
+ * czytanie całego rozdziału
+ 
+ * zapisywanie notatek po przyczytaniu każdej strony,
+ 
+ * na zakończenie każdego rozdziału, czytanie na podsumowanie,
+ 
+ * zapisywanie przykładów dla danej sekcji materiału

@@ -1,0 +1,34 @@
+USER STORIES - WSTÊPNIE JEST OK:
+
+ - to jak bêd¹ siê wykonywaæ operacje zale¿y tylko od dewelopera,
+   user nie ma dostepu do np. wykluczenie danych z artyku³ów!,
+
+ * mog¹ siê pojawiæ jakieœ kolejne karty,
+
+ * rynkowe okazje kupna: 
+ - top 5 najlepszych aktywów do kupienia,
+ - jaki rynek (USA, POLSKA (zablokowany dla ró¿nych u¿ytkowników), EUROPA) 
+ - filter po ryzyku transakcji,
+ - filter po okazjach d³ugoterminowych,
+ - filter po okazjach krótkoterminowych,
+ - po rodzaju aktywa,
+
+ * rynkowe okazje sprzeda¿y - 
+ - obligacje, akcje, surowce, 
+   nieruchomoœci oraz inne aktywa(waluty), indeksy, pojedyñcze spó³ki, etf's,
+ - pokazywanie wykresów z zaznaczeniem wyj¹tkowoœci okazji,
+ - nazwa firmy, kraj po³o¿enie,
+ 
+ * rynkowe okazje na biznes lub wakacje:
+ - maj¹c jakieœ zajebiœcie tanie aktywo, mo¿na kupiæ np. srebro i je sprzedawaæ,
+ - rozkminka sytuacji na rynku tj. wojny
+
+ * zbudowanie portfeli inwestycji na podstawie
+   sytuacji rynkowej (not like a hedge fund),
+
+ * czy u¿ytkownik bedzie podawa³ parametry do serwera:
+ - iloœæ firm? - bez sensu,
+ - sortowanie po prawdopodobieñstwie - tak 
+ - warunki kupna lub sprzeda¿y - nie 
+ 
+ * mo¿liwoœæ zakupu pakietu inwestycyjnego odemnie

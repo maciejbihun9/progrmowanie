@@ -1,0 +1,162 @@
+
+ * we can compare enum to named tuple, it has defined all fields as final,
+ you can not change them, you can call methods on them, but that all.
+
+ * using it is all about compile type checking, to save time
+ during development,
+ 
+ * declare all enum types right at the beginning of the class,
+ 
+ * enums can not be instantiated, so you are safe that there won't be even one null exception with this,
+ 
+ * it is not good to use an ordinal() method with enums, because it causes many runtime xecettions that we want to omit
+ 
+ * use enum constructors to set any type of variables right from the start,
+
+ * enum is a kind of a class,
+ 
+ * enums types are effectivelly great objects for concurrent programming,
+ because they have described state right from the start,
+ 
+ * enum types are immutable, so to speak,
+ 
+ * the basic idea is this:
+ - the compiler won't be complaining if you pass na orange in the apple place,
+ -
+ * using string and ints as enum are hard to debug,
+ 
+ * using string is much more error pronce that just using simple enum types,
+ 
+ * in java enum types are just full-flaged classes,
+ 
+ * they do not have any accessable constructors, they can not be extended,
+ - actually the do have a constructor field, but it is essentially private and
+ can create many enums with initialized fields right from the start that cna not be changed,
+ 
+ * do not ever use ordinal() method for working with enums,
+ use EnumMaps only,
+ 
+ * for working with multidimensional arrays use this EnumMaps!!!
+ 
+ * enum types are essentially singletons
+ 
+ * enums can have multiple methods, static methods etc,
+ 
+ * enum types are effectively final
+ 
+ * ordinal method is a part of an enum type,
+ shows what is the number of an enum in the set of enums in enum,
+ - sometimes it is important, but this is a bad idea to call for a number, 
+ 
+ * is is not a good idea to make an extension of an enum, there is not reason why not to
+ implement an interface,
+ - we can make an implementation of an intraface for many enums and then use it later on,
+ 
+ public enum BasicOperation implements Operation {
+    PLUS("+") {
+        public double apply(double x, double y) { return x + y; }
+    },
+    MINUS("-") {
+        public double apply(double x, double y) { return x - y; }
+    },
+    TIMES("*") {
+        public double apply(double x, double y) { return x * y; }
+    },
+    DIVIDE("/") {
+        public double apply(double x, double y) { return x / y; }
+    };
+    private final String symbol;
+    BasicOperation(String symbol) {
+        this.symbol = symbol;
+    }
+    @Override public String toString() {
+        return symbol;
+    }
+}
+
+// Emulated extensible enum using an interface
+interface Operation {
+    double apply(double x, double y);
+}
+ 
+ examples:
+ 
+ * public enum Ensemble {
+	SOLO(1), DUET(2), TRIO(3), QUARTET(4), QUINTET(5),
+	SEXTET(6), SEPTET(7), OCTET(8), DOUBLE_QUARTET(8),
+	NONET(9), DECTET(10), TRIPLE_QUARTET(12);
+
+	private final int numberOfMusicians;
+	Ensemble(int size) { this.numberOfMusicians = size; }
+	public int numberOfMusicians() { return numberOfMusicians; }
+ }
+ 
+ * enumSet:
+ - is represented as a bit vector,
+ - bit representation is a replacement for enums, but weak replacement,
+ much more better is to use enums,
+ - the right resolution for set of enums:
+	// EnumSet - a modern replacement for bit fields
+	public class Text {
+		public enum Style { BOLD, ITALIC, UNDERLINE, STRIKETHROUGH }
+		// Any Set could be passed in, but EnumSet is clearly best
+		public void applyStyles(Set<Style> styles) { ... }
+	}
+
+ * enumMap:
+ - enum can be part of a class, 
+ - this is the correct way connecting a type with set of elements of this type,
+ - // Using an EnumMap to associate data with an enum
+ - where Herb.type is an enum set that exists in the Type class,
+ herb is just a type.
+	Map<Herb.Type, Set<Herb>> herbsByType =
+	new EnumMap<Herb.Type, Set<Herb>>(Herb.Type.class);
+	for (Herb.Type t : Herb.Type.values())
+	herbsByType.put(t, new HashSet<Herb>());
+	for (Herb h : garden)
+	herbsByType.get(h.type).add(h);
+	System.out.println(herbsByType);
+ - the set of people, of the same people (soldiers, captains, celebrities)	
+ 
+ * nested enums:
+ - // Using a nested EnumMap to associate data with enum pairs
+ - very safe resolution in terms of getting transitions between phases,
+ - this is great example of how to create multidimensional arrays, do not use ordinal method,
+ - perfect solution for 
+public enum Phase {
+    SOLID, LIQUID, GAS;
+    public enum Transition {
+        MELT(SOLID, LIQUID), FREEZE(LIQUID, SOLID),
+        BOIL(LIQUID, GAS), CONDENSE(GAS, LIQUID),
+        SUBLIME(SOLID, GAS), DEPOSIT(GAS, SOLID);
+
+        private final Phase src;
+        private final Phase dst;
+
+        Transition(Phase src, Phase dst) {
+            this.src = src;
+            this.dst = dst;
+        }
+        // Initialize the phase transition map
+        private static final Map<Phase, Map<Phase,Transition>> m =
+                new EnumMap<Phase, Map<Phase,Transition>>(Phase.class);
+				
+		// static initalization for transitions between phases,		
+        static {
+            for (Phase p : Phase.values())
+                m.put(p, new EnumMap<Phase,Transition>(Phase.class));
+            for (Transition trans : Transition.values())
+                m.get(trans.src).put(trans.dst, trans);
+        }
+        public static Transition from(Phase src, Phase dst) {
+            return m.get(src).get(dst);
+        }
+    }
+}
+ 
+ zastosowania:
+ * the seasons of the year, the planets in the solar system, or the suits
+ in a deck of playing cards.
+ 
+ * types application:
+ - set types and from those types you can get some aftermaths that are associated with maps

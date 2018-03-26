@@ -1,0 +1,185 @@
+1. wyœwietlanie danych powi¹zanych za pomoc¹ ForeignKey, gdzie commentsjest dowi¹zane do obiektu post, który posiada ich wiele.
+{% with comments.count as total_comments %}
+<h2>
+{{ total_comments }} komentarz{{ total_comments|pluralize:"y" }}
+</h2>
+{% endwith %}
+
+2. Znacznik {% with %} szablonu okazuje siê u¿yteczny, gdy chcemy unikn¹æ wykonania zapytania do
+bazy danych lub wielokrotnego uzyskania dostêpu do kosztownych metod.
+
+3. Informacja o pustej liœcie, gdy nie ma jeszcze komentarzy:
+
+ {% for comment in comments %}
+   % some to do...
+ {% empty %}
+    <p>Nie ma jeszcze ¿adnych komentarzy.</p>
+ {% endfor %}
+
+4. Wyœwietlanie liczby pêtli w trakcie ka¿dej iteracji:
+
+ * {{ forloop.counter }}
+
+5. Wyœwietlanie obiektów tags klasy post:
+
+ * <p class="tags">Tagi: {{ post.tags.all|join:", " }}</p>
+ - tags jest polem post, które zosta³o dodane jako:
+ tags = TaggableManager(), czyli tags manager
+
+6. Pamiêtaj o leniwym dzia³aniu kolekcji QuerySet.
+Wymieniona kolekcja pobierze obiekty tylko
+podczas iteracji przez listê obiektów w trakcie generowania szablonu,
+
+7. Wyœwietlanie listy obiektów lepiej jest przeprowadziæ poprzez ListView:
+
+ * pozwala ona na zmniejszenie iloœci kodu,
+
+ * zamiana za standardow¹ wersjê:
+
+ def post_list(request):
+    object_list = Post.published.all()
+    paginator = Paginator(object_list, 3) # Trzy posty na ka¿dej stronie.
+    # wskazanie na numer bie¿¹cej strony
+    page = request.GET.get('page')
+    try:
+        posts = paginator.page(page)
+    except PageNotAnInteger:
+        # Je¿eli zmienna page nie jest liczb¹ ca³kowit¹,
+        # wówczas pobierana jest pierwsza strona wyników.
+        posts = paginator.page(1)
+    except EmptyPage:
+        # Je¿eli zmienna page ma wartoœæ wiêksz¹ ni¿ numer ostatniej strony
+        # wyników, wtedy pobierana jest ostatnia strona wyników.
+        posts = paginator.page(paginator.num_pages)
+    return render(request, 'blog/post/list.html', {'page': page, 'posts': posts})
+
+ * class PostListView(ListView):
+    queryset = Post.published.all()
+    context_object_name = 'posts'
+    paginate_by = 3
+    template_name = 'blog/post/list.html'
+
+ - pozwala na paginacje, okreœlenie nazwy listy danych w szablonie oraz nie trzeba definiowaæ 
+   kodu odpowiedzialnego za wyj¹tki.
+
+ - trzeba tylko edytowaæ stronicowanie, bo listview przekazuje, tylko obiekty do szablonu,
+
+8. Wyœwietlanie przecinka w for loop:
+
+ {% for tag in post.tags.all %}
+        <a href="{% url "blog:post_list_by_tag" tag.slug %}">
+            {{ tag.name }}
+        </a>
+        {% if not forloop.last %}, {% endif %}
+    {% endfor %}
+
+9. Z tego wynika, ¿e pobieranie danych eager odbywa siê podczas próby dostêpu do dzieci danego obiektu,
+
+10. Django wbudowane znaczniki:
+
+ * https://docs.djangoproject.com/en/1.8/ref/templates/builtins/
+
+11. Jednak Django pozwala równie¿ na utworzenie w³asnych znaczników szablonów w celu przeprowadzania
+niestandardowych akcji,
+
+ * poczytaj o tym od str. 80
+
+12. Potêga niestandardowych znaczników szablonu wi¹¿e siê z mo¿liwoœci¹ przetwarzania dowolnych
+danych i dodawania ich do wybranego szablonu niezale¿nie od wykonywanego widoku.
+W celu wyœwietlenia wyników w szablonach mo¿esz wykorzystaæ kolekcjê QuerySet lub
+przetwarzaæ dowolne dane.
+
+ * czyli mo¿na przetwarzaæ dowolne dane,
+
+13. Lepiej jest wrzuciæ do modelu ca³y obiekt z danymi i tam go rozpakowaæ ni¿ robiæ to w metodzie widoków,
+
+14. Element <a href> pozwala na zdefiniowanie atrybutu tj.: data-action
+ - Atrybut wskazuje akcjê do wykonania po klikniêciu ³¹cza przez
+u¿ytkownika. Mo¿e to byæ like lub unlike.
+
+15. W Django bardzo popularne jest aby zdefniniowaæ sekcjê "if else" w œrodku atrybutu kodu HTML:
+
+ * pozwala to do dodawanie pewnych sekcji tylko w specyficznych sytuacjach zzwi¹zanych z tym
+co siê dzieje na serwerze aplikacji,   
+
+16. {% if request.user not in users_like %}
+                        Lubiê
+                    {% else %}
+                        Nie lubiê
+                    {% endif %}
+
+ * metoda ta, która pobiera dane do strony jest wywo³ywana, tylko raz podczas ³adowania strony!!!,
+ - póŸniej jej wartoœæ trzeba zmieniaæ za pomoc¹ metod JavaScript.
+
+17. Pobranie akcji tylko tych, które posiadaj¹ podane ids:
+
+ * actions.filter(user_id__in=following_ids)
+
+18. Pobranie obiektów za wy³¹czeniem podanych:
+
+ * Action.objects.exclude(user=request.user)
+
+19. Najlepiej jest po¿¹dkowaæ dane podczas tworzenia modeli, wtedy
+nie potrzeba tych danych sortowaæ podczas przetwarzania.
+
+ * trzeba ustaliæ w jaki sposób jest najlepiej przechowywaæ dane,
+
+20. Django nie pobiera automatycznie danych powi¹zanych, robi to dopiero
+podczas próby pobrania ich, czyli tworzy dodatkowe po³aæzenie z baz¹ danych.
+
+21. ORM - pobieranie danych powi¹zanych foreignKey, oraz OneToOne:
+
+ * Rozs¹dne u¿ycie metody select_related() mo¿e znacznie skróciæ czas wykonywania zapytania.
+
+ * actions = actions.filter(user_id__in=following_ids).select_related('user', 'user__profile') 
+ - dane s¹ pobierane dla kolumn user oraz user_profile,
+ - jeœli nie zostan¹ podane argumenty, to pobior¹ siê wszystkie dane z ka¿dej kolumny,
+ - ale nie wiem, czy chodzi tutaj tak¿e o to, ¿e zostan¹ pobrane dane z foreignKey równie¿
+obiektu user??
+
+22. prefetch_related() - metoda do pobierania powi¹zañ wiele do wielu oraz wiele do jednego.
+
+23. Pobieranie danych nadobiektu oraz obiektów dzieci wygl¹da nastêpuj¹co:
+
+ * {% with user=action.user profile=action.user.profile %}
+
+ - widzimy, ¿e profile nie jest pobierany razem z user, musi zostaæ pobrany osobno,
+co zwiêksza zaanga¿owanie bazy danych,
+
+ - mo¿na by to by³o zrobiæ poprzez select_releted()
+
+24. {% if profile.photo %} - ten zapis mówi nam, czy obiekt profile posiada photo,
+
+25. Warunkowe wyœwietlanie danych:
+
+ <img src="{% if product.image %}{{ product.image.url }}
+                        {% else %}{% static "img/no_image.png" %}{% endif %}">
+
+ - jeœli produkt istnieje to wywo³a siê podana akcja, jeœli nie, to zwróci None, czli wykona siê else
+
+26. Najbardziej ciekawe jest to, ¿e w Django mo¿na swobodnie manipulowaæ sobie atrybutami tagów w 
+zale¿noœci od:
+ * wartoœci obiektów,
+ * tego co znajduje siê w bazie danych,
+ * mo¿na sobie dodawaæ klasy css, ró¿ne atrybuty , jest to bardzo ciekawe rozwi¹zanie
+
+27. Czêsto jest tak, ¿e wyœwietlamy html, tylko wtedy, gdy jest spe³nione za³o¿enie, ¿e istniej dana wartoœæ:
+
+{% if recommended_products %}
+        <div class="recommendations">
+            <h3>Z tym produktem klienci kupowali równie¿:</h3>
+            {% for p in recommended_products %}
+                <div class="item">
+                    <a href="{{ p.get_absolute_url }}">
+                        <img src="{% if p.image %}{{ p.image.url }}{% else %}
+                                {% static "img/no_image.png" %}{% endif %}">
+                    </a>
+                    <p><a href="{{ p.get_absolute_url }}">{{ p.name }}</a></p>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+28. Inkrementacja liczby:
+
+ * {{ m.order|add:1 }}

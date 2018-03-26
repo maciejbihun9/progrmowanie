@@ -1,0 +1,12 @@
+
+ * this is not just a shorter way to declare functions,
+
+ * this also resolves problem of using "this" in the functions body:
+ - let obj = {
+       name: "Maciej",
+       printName: function (){ setTimeout(() => {console.log(this.name)}, 1000)}
+     };
+
+ * in type script they introduced a new approach for working with functions:
+ - array.forEach(x => console.log(x)) is the same as ...
+ - array.forEach(function(x){console.log(x)})

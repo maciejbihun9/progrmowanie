@@ -1,0 +1,28 @@
+# INTELIJ IDEA - W£¥CZA SIÊ JAK ZWYKLE PÓ£ GODZINY,
+
+ * Nie jest to projekt pure MVC
+
+ * Tworzenie projektu z ma³ych podprojektów maven,
+
+ * Aplikacja jest podzielona na ma³e podprojekty w zale¿noœci od ich zastosowania,
+
+ * Istnieje oczywiœcie projekt, który posiada tylko wspó³dzielone zasoby tj.:
+ - Klasy na samym szczycie abstrakcji, interfejsy na samym szczycie abstrakcji,
+ które s¹ implementowane przez klasy z innych modu³ów.
+
+ * funkcjonalnoœæ mo¿e byæ oczywiœcie wykorzystana w innych modu³ach,
+
+ * Istniej¹ puste klasy
+
+ * Komentarze zawsze wielolinijkowe, czysty kod mamy w dupie!
+
+ * Kurwa tych enumów to od zajebania jest:
+ - enum - status, czyn mozna coœ zrobiæ, tryb pracy, tryb aplikacji,
+   wersja aplikacji, oddzia³ aplikacji, u¿ytkownik coœ zrobi³(skopiowa³, zapisa³, usun¹³),
+   w eelx zdarza siê, ¿e nawet b³êdu s¹ jako enumy, importy, b³¹d kopiowanie
+   w tym przypadku enum czêsto posiada³ nawet konkretny numer zdarzenia,
+ - w tym projekcie enum gra role takiego odwzorowania statusu, z którego mo¿na pobraæ ró¿ne w³aœciowœci
+   oraz informacje na temat tego statusu,
+
+ * parametry te¿ mog¹ byæ zapisane w interfejsach,
+ - parametry typu np. sta³e, które definiuj¹ iloœæ dni do usuniêcia jakiegoœ pliku,

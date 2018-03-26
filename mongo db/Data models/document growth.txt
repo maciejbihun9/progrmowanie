@@ -1,0 +1,17 @@
+ * MMAPv1 - jest to mechanizm magazynowania dokumentów, który ma zapobiegaæ realokacji dokumentu pod dysku,
+
+ * ¿adna operacja nie mo¿e zmieniæwiêcej ni¿ jendego dokumentu,
+
+ * du¿a iloœæ kolekcji ma dobry wp³yw na wydajnoœæ, ale oczywiœcie zwiêksza czas pobierania.
+ - jest to dobry sposób na podzia³ danych nawet po³¹czonych ze sob¹ relacj¹, 
+ - pozwala na zajebiste wyszukiwanie elementów, sortowanie i tak dalej
+
+ * ka¿dy index zajmuje conajmniej 8kB pamiêci,
+
+ * ka¿dy dokument posiada _id Object - 12B indexed by default,czyli dla ma³ych dokumentów
+   zajmuje to w chuj miejsca
+
+ * wbudowane dokumenty nie posiadaj¹ id oraz indeksów
+
+ * wielkoœæ wartoœci pól obiektu maj¹ znaczenie w pamiêci, tak¿e dla ma³ych dokumentów mo¿na oszczêdziæ
+   trochê pamiêci,

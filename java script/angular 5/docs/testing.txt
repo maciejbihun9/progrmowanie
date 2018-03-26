@@ -1,0 +1,139 @@
+
+ * each test file has to have .spec extension,
+ 
+ * Services are often the easiest files to unit test
+ 
+ * see the documentation to see how to test services, services methods return values, 
+ 
+WITH NO ANGULAR INGERENCE: 
+ 
+ * service test example:
+ it('#getValue should return real value from the real service', () => {
+    masterService = new MasterService(new ValueService());
+    expect(masterService.getValue()).toBe('real value');
+  });
+  
+ * service test with mocked getValue method():
+ - it('#getValue should return faked value from a fake object', () => {
+    const fake =  { getValue: () => 'fake value' };
+    masterService = new MasterService(fake as ValueService);
+    expect(masterService.getValue()).toBe('fake value');
+  }); 
+  
+ * Prefer spies as they are usually the easiest way to mock services.
+ - they are more efficient to create 
+ - services are hard to maintain,
+ - const valueServiceSpy = jasmine.createSpyObj('ValueService', ['getValue']);
+
+ANGULAR 
+ 
+ * Angular testing utilities make it easy to investigate how injected services behave.
+ 
+ * TestBed - creates an emulated @NgModule for testing,
+ - The TestBed is the most important of the Angular testing utilities.
+ 
+ * for now everything works with a lot of code to just test returned value from a method
+ 
+TESTING METHODS:
+
+ * expect value that should be returned from a function:
+ - expect(masterService.getValue()).toBe(stubValue, 'service returned stub value');
+
+ * check string values:
+ - expect(comp.message).toMatch("some string message") 
+ 
+ * use two methods to initialize variable sfor testing:
+ - setup():
+ function setup() {
+  const valueServiceSpy =
+    jasmine.createSpyObj('ValueService', ['getValue']);
+  const stubValue = 'stub value';
+  const masterService = new MasterService(valueServiceSpy);
+
+  valueServiceSpy.getValue.and.returnValue(stubValue);
+  return { masterService, stubValue, valueServiceSpy };
+ }
+ - beforeEach():
+ beforeEach(() => {}) 
+ 
+ * check if component was created for testing:
+ - expect(compInstance).toBeDefined();
+ 
+ * get the access to the component's html code:
+ - fixture = TestBed.createComponent(CompName)
+ - const bannerElement: HTMLElement = fixture.nativeElement
+ 
+ * text contains string value:
+ - const bannerElement: HTMLElement = fixture.nativeElement;
+ - expect(bannerElement.textContent).toContain('Hero Search');
+ 
+ * get html element text:
+ - const p = bannerElement.querySelector('p');
+ 
+ * check string for equality:
+ - expect(p.textContent).toEqual('banner works!');
+ 
+ * see docs for more info about how to test services,
+ 
+TESTING COMPONENTS: 
+
+ * We have to import many component , modules and providers to make it work,
+ a lot of work
+
+ * where there is no component deps then create a new comp iwth new.
+
+ * it depends on a component's dependencies, if no deps then you can just assert some
+ variables and check for correctenns,
+ - const comp = new LightswitchComponent();
+    expect(comp.isOn).toBe(false, 'off at first');
+
+ *  when a component has a few dependencies then it has to be declared:
+ - beforeEach(() => {
+  TestBed.configureTestingModule({
+    // provide the component-under-test and dependent service
+    providers: [
+      WelcomeComponent,
+      { provide: UserService, useClass: MockUserService }
+     ]
+   });
+  // inject both the component and the dependent service.
+  comp = TestBed.get(WelcomeComponent);
+  userService = TestBed.get(UserService);
+  });
+  
+ * setup can be reduced to:
+ - describe('BannerComponent (minimal)', () => {
+  it('should create', () => {
+    TestBed.configureTestingModule({
+      declarations: [ BannerComponent ]
+    });
+    const fixture = TestBed.createComponent(BannerComponent);
+    const component = fixture.componentInstance;
+    expect(component).toBeDefined();
+  });
+}); 
+
+ * when testing very complex component html this exception can be trown:
+ - [object ErrorEvent] thrown
+ 
+ * testing components with bindings can not be done the same way as without it,
+ because Angular detects changes only after some asynchromus calls, keystroke and component creations
+ @Component({
+  selector: 'app-banner',
+  template: '<h1>{{title}}</h1>',
+  styles: ['h1 { color: green; font-size: 350%}']
+ })
+ export class BannerComponent {
+   title = 'Test Tour of Heroes';
+ }
+ - TestBed.createComponent() does not produce any of them, so:
+  fixture = TestBed.createComponent(BannerComponent);
+  component = fixture.componentInstance; // BannerComponent test instance
+  h1 = fixture.nativeElement.querySelector('h1');
+  expect(h1.textContent).toContain(component.title); -> this will be always empty
+  
+ * remember to add detectChanges() before each test with data bindings, 
+	
+COMPONENT DOM TESTING:	
+		
+	 	

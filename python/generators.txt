@@ -1,0 +1,32 @@
+ * generatory s¹ zastêpstwem dla du¿ych list
+
+ * nie zajmuj¹ wogle pamiêci,
+
+ * a tak¿e ostro zapierdalaj¹
+
+ * iteracja przez du¿¹ liste numerów starym sposobem mo¿e wygl¹daæ tak:
+def square_numbers(nums):
+	result = []
+	for i in nums:
+		result.append(i*i)
+	return result
+
+ - jest to s³aby sposób, bo zwraca ca³¹ liste do pamiêci, jeœli jest ona du¿a
+   to bêdzie ma³o wydajne.
+
+ * ten sam przyk³ad z generatorem:
+def square_numbers(nums):
+	for i in nums:
+		yield(i*i)
+
+ - ¿aden wynik nie jest trzymany w pamiêci, a mno¿enie yield jest wykonywane
+na elementach listy po kolei, kiedy s¹ o to pytane:
+
+next(generator) lub podczas iteracji listy
+
+ - wynik jest poprostu zwracany, kiedy jest potrzebny, a nie odrazu ca³y do pamiêci
+
+ * skrócona wersja generatora liczb:
+ - (x*x for item in numbers)
+
+ - mo¿na to skonwertowaæ na liste, ale tracimy wtedy ca³¹ wydajnoœæ

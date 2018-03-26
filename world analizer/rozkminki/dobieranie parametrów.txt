@@ -1,0 +1,4 @@
+ * wykonanie for loops dla ka¿dej listy parametrów
+ - dla ka¿dego kolejnego indykatora bedzie coraz wiêcej 
+
+ * zastosowanie metod symulowanego wy¿arzania

@@ -1,0 +1,40 @@
+
+ * create a injectable service with parameters,
+ - you can create a service with parameters as other injectable services, but
+ no with simple variables,
+ - to create that you have to create a providerFactory
+ 
+ create a new file:
+ - src/app/heroes/hero.service.provider.ts
+ - let heroServiceFactory = (logger: Logger, userService: UserService) => {
+  return new HeroService(logger, userService.user.isAuthorized);
+ };
+
+ - and you can inject with with:
+ export let heroServiceProvider =
+  { provide: HeroService,
+    // name of it,
+    useFactory: heroServiceFactory,
+    deps: [Logger, UserService]
+  };
+ - use case:
+ @Component({
+  selector: 'app-heroes',
+  providers: [ heroServiceProvider ],
+  template: `
+    <h2>Heroes</h2>
+    <app-hero-list></app-hero-list>
+  `
+})
+
+ - this can be used when user starts our app and we have to check if he is autorized
+ 
+ * create an injectable app config object that is available for entire application
+ (like the title of the application or the address of a web API endpoint)
+ 
+ * optional use case for a service instance:
+ - constructor(@Optional() private logger: Logger) {
+  if (this.logger) {
+    this.logger.log(some_message);
+  }
+}

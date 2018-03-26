@@ -1,0 +1,22 @@
+Jest to przydatne, gdy potrzebujemy zmiennej, która ma byæ dostêpna w ka¿dym szablonie.
+
+ * udostêpnianie danych kontekstu w ka¿dym szablonie 
+
+ * klase nale¿y dodaæ do 'context_processors' w settings TEMPLATES
+
+from .cart import Cart
+	
+def cart(request):
+	return {'cart': Cart(request)}
+
+ * zmienna cart jest dostêpna w ka¿dym szxablonie generowanym podczas zapytania pod t¹sam¹ nazw¹
+
+Jak mo¿esz zobaczyæ, procesor kontekstu to funkcja otrzymuj¹ca parametr w postaci obiektu
+request i zwracaj¹ca s³ownik obiektów dostêpnych dla wszystkich szablonów wygenerowanych
+za pomoc¹ RequestContext. W budowanym tutaj procesorze tekstu tworzymy egzemplarz koszyka
+na zakupy, u¿ywaj¹c obiektu request, i udostêpniamy ten koszyk wszystkim szablonom
+jako zmienn¹ o nazwie cart.
+
+Procesory kontekstu s¹ wykonywane we wszystkich ¿¹daniach, w których u¿yto RequestContext.
+Je¿eli konieczne jest uzyskanie dostêpu do bazy danych, zamiast procesora kontekstu powinieneœ
+utworzyæ w³asny znacznik szablonu.

@@ -1,0 +1,62 @@
+
+ * mówi się, że wrzucenie do kolejki jakiś rozwiązań z wielu wątków
+ to wszystko czego potrzeba widzieć na ten temat,
+ 
+ * best use case for many threads are just many http calls,
+ 
+ * mówi się, że podczas pobierania danych z sieci trzeba testować jaka ilość
+ wątków zadziała najlepiej bo tego nie wiadomo,
+ 
+ * zysk czasowy na pobieraniu może dochodzić do 5X - 20x
+ 
+ * ThreadPoolExecutor and ProcessPoolExecutor classes robią całą robotę,
+ 
+ * podczas uzywania executor.map(func, iterable) mogłem zwrócić nie callable,
+ - zwraca wyniki w takiej samej kolejności jak zostały nadane podczas odpalania funkcji,
+ a to jest już nie korzystne, chyba, że potrzebujemy wszystkich wyników na raz,
+ - może dlatego, że jest to generator?
+ - result() - jest niejawna dla tego przypadku, bo jest wykonana w iteracji
+ - def main():
+	display('Script starting.')
+	executor = futures.ThreadPoolExecutor(max_workers=3)
+	results = executor.map(loiter, range(5))
+	display('results:', results) # .
+	display('Waiting for individual results:')
+	for i, result in enumerate(results):
+		display('result {}: {}'.format(i, result))
+ 
+ * GIL - global interpreter pozwala na pracę 
+ tylko jednego wątka podczas wykonywania zadań,
+ - metoda time.sleep potrafi go zwolnić
+ - nie pozwala na wykonywanie programu na wielu procesorach,
+ - jest prawie nie szkodliwy podczas wykonywania wielu wątków
+ - podczas I/O nastepuje zwolnienie GIL i może działać wielo wątkowo,
+ dokłądnie dzieje się to dopiero podczas czekania na zwolnienie wątka,
+ 
+ * niby ProcessPoolExecutor pozwala ominąć GIL,
+ - nie potrzebuje on parametrów, bo odczyta ilość procków z ustawień
+ 
+ * mapowanie wywoływania współbieżnego dla każdego elementu listy:
+ - częste jest mapowanie metody do wywołania jej dla każdego elementu listy,
+ - def download_many(cc_list):
+	workers = min(MAX_WORKERS, len(cc_list))
+	with futures.ThreadPoolExecutor(workers) as executor:
+	# returns an iterator to get the results
+		res = executor.map(download_one, sorted(cc_list))
+		
+ * metoda na nie blokowanie wątku głównego:
+ - wykonanie zadań w metodzie as_completed() 
+		
+ * Istnieją także klasy concurrent.futures.Future and asyncio.Future,
+ które mogą się zakończyc, ale nie muszą
+ - mogą być dodawane do kolejek wykonywania
+ - te obiekty powstają tylko podczas stworzenia zadania do wykonania
+ przez Executor.submit()
+
+ * get the results as they are available:
+ - task.result() - blocks thread until results are ready.
+
+ * wykorzystanie jest niemal takie samo jak w docs 
+ 
+ * jeśli wysoko poziomowe klasy nie pomagają, to trzeba zwrócić się do moduły threading,
+ - używając klas  takich jak: Thread, Lock, Semaphore, possibly use of queue,

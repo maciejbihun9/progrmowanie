@@ -1,0 +1,46 @@
+ * sprawdzanie typu danych: string, obiekt, funkacja, undefined, number:
+ - typeof n; -> "number", "string",true, null, NaN(podczas mno¿enia liczby przez string) etc.
+
+ * tworzenie obiektu globalnego:
+ - object = "string";
+
+ * nie globalny:
+ - var obj = 12;
+
+ * obiekt scopowy:
+ - deklarowanie funkcji, gdzie zmienna istniej tylko w zadeklarowany scopie,
+ - let obj = 14;
+
+ * definiowanie zmiennych w jednej linijce:
+ - var s1 = "raz"; var s2 = "dwa"; var s = s1 + s2;
+
+ * automatyczna konwersja stringów do numerów(dzia³a tak samo dla mno¿enia, inkrementowania, dekrementowania):
+ - dodawanie zadzia³a jako dodawnaie stringów
+ - var s = "1"; string
+ - s + 123 + "sdsfdf" + 32141 -> string (automatyczna konwersja na typ string!!! - ZAJEBISTE)
+ - var ss = s++ - number
+ ss = 2
+
+ * przywracanie poprzedniej wartoœci:
+ - var b = !!true;
+
+UNDEFINED ORAZ NULL:
+
+ * UNDEFINED - jest to zmienna, która nie posiada ¿adnej wartoœci inicjalizacyjnej lub
+   nie zosta³a zadeklarowana,
+
+ * NULL - jest to zmienna, która jest obiektem:
+ - typeof obj = "object";
+
+ * zmienna null jest równie¿ automatycznie rzutowana podczas dzia³añ:
+ - 12 + null = 12; "string" + null = "stringnull";
+
+ * undefined - jest to zmienna, której nie da rady interpretowaæ, tak¿e zwraca NaN
+ - 12 + undefined = NaN;, "string" + undefined = "NaNundefined"; 
+
+ * Wszystko, co nie jest typu prostego, jest obiektem.
+
+ * wartoœci fa³szywe dla typów boolean:
+ - " ", null, undefined, 0, NaN, false,
+
+

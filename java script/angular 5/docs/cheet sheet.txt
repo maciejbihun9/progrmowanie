@@ -1,0 +1,24 @@
+We can find there all Angular tricks: 
+ 
+ * exports - List of components, directives, and pipes visible to modules that import this module,
+ 
+ * bootstrap - List of components to bootstrap when this module is bootstrapped.
+ - so we can have many components that can be bootstrapped,
+ - in the index.html we can declare many components that can be dispalyed
+ at the application start
+ - we can not do it without declaring in the bootstrap,
+ 
+ * send an event to the method:
+ - <button (click)="readRainbow($event)">,
+ 
+ * acuire access to all html item action, attributes:
+ - <video #movieplayer ...>
+	<button (click)="movieplayer.play()">
+   </video>
+   
+ * turns an html element into an embedded template:
+ - <p *myUnless="myExpression">...</p>
+ - this is equvalent to <ng-template></ng-template> 
+ 
+ * ignore the rest of expression if first part is not available:
+ - <p>Employer: {{employer?.companyName}}</p>

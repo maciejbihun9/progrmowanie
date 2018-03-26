@@ -1,0 +1,63 @@
+Kiedy powinno siê stosowaæ obs³ugê wyj¹tków? Ka¿de miejsce zewnêtrznej
+interakcji z Twoim programem jest warte rozwa¿enia pod k¹tem wyj¹tków.
+Dobrym pomys³em jest obs³uga wyj¹tków przy otwieraniu pliku do odczytu,
+nawet jeœli uwa¿asz, ¿e plik ju¿ istnieje. Mo¿esz tak¿e zdefiniowaæ obs³ugê
+wyj¹tków, gdy próbujesz przeprowadzaæ konwersjê danych pochodz¹cych
+z zewnêtrznego Ÿród³a, takiego jak u¿ytkownik. 
+
+Specyfikowanie typów wyj¹tków pozwalaj¹ce na obs³ugê ka¿dego przypadku
+indywidualnie stanowi dobr¹ praktykê w programowaniu. Wy³apywanie wszystkich
+wyj¹tków w taki sposób, jak to zrobi³em w pierwszej klauzuli except programu, jest
+w³aœciwie niebezpieczne. Na ogó³ powinieneœ unikaæ uniwersalnych rozwi¹zañ tego typu.
+
+OBS£UGA KA¯DEGO TYPU WYJ¥TKU Z OSOBNA JEST DOBRYM TYPEM PROGRAMOWANIA
+
+ * Klauzula except umo¿liwia dok³adne okreœlenie typu wyj¹tków, jaki bêdzie obs³ugiwaæ.
+
+ * ValueError - próba konwersji stringa na liczbê
+
+ * Typy wyj¹tków:
+IOError Zg³aszany w przypadku wyst¹pienia b³êdu operacji wejœcia-wyjœcia,
+takiego jak próba otwarcia nieistniej¹cego pliku w trybie odczytu.
+
+IndexError Zg³aszany przy indeksowaniu sekwencji, gdy numer indeksu
+wskazuje na nieistniej¹cy element.
+
+KeyError Zg³aszany, gdy nie zostanie znaleziony klucz s³ownika.
+
+NameError Zg³aszany, gdy nie zostanie znaleziona nazwa (na przyk³ad zmiennej
+lub funkcji).
+
+SyntaxError Zg³aszany, gdy zostanie wykryty b³¹d sk³adni.
+
+TypeError Zg³aszany, gdy wbudowana operacja lub funkcja zostanie
+zastosowana do obiektu nieodpowiedniego typu.
+
+ValueError Zg³aszany, gdy wbudowana operacja lub funkcja otrzyma argument,
+który ma w³aœciwy typ, ale nieodpowiedni¹ wartoœæ.
+
+ZeroDivisionError Zg³aszany, gdy drugi argument operacji dzielenia lub modulo jest
+równy zeru.
+
+ * obs³uga wielutypów wyj¹tków:
+try:
+	print("Próba konwersji:", value, "-->", end=" ")
+	print(float(value))
+except (TypeError, ValueError):
+	print("Wyst¹pi³ jakiœ b³¹d!")
+
+ * wypisanie widomoœci o b³êdzie:
+try:
+	num = float(input("\nWprowadŸ liczbê: "))
+except ValueError as e:
+	print("To nie by³a liczba! Lub wyra¿aj¹c to na sposób Pythona...")
+	print(e)
+
+ * wyœwietlenie komunikaty, tylko jeœli nie by³o wyj¹tku:
+
+try:
+	num = float(input("\nWprowadŸ liczbê: "))
+except ValueError:
+	print("To nie by³a liczba!")
+else:
+	print("Wprowadzi³eœ liczbê", num)

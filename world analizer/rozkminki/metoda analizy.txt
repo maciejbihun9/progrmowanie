@@ -1,0 +1,14 @@
+
+ * metoda bbands:
+ - zmieniając parametry kupna i sprzedaży można mapipulować strategią gry,
+ - nie jest to pure bbnads, ale ma jego części, te dosyć ważne części,
+ - metoda ta nie jest perfekcyjna, bo nie reagugje na duże spadki,
+ - żeby ją odpalać na dłuższe okrey czasu, np. kilkanaście, kila dziesiąt minut, to
+ musi być bardziej prawdopodobne, że ona zadziała,
+ (ale co to znaczy bardziej prawdopodobne?) - z zabezpieczeniem na straty, ale właśnie
+ ta strategia chyba bardziej pasowałaby do czasów stablizacji, kiedy jest nuda i jest dobra koninktura,
+ 
+ 
+ wnioski:
+ - czyli czasy dobrej koniunktury - GOOD TO GO!,
+ - po ogólnym rozpatrzeniu sytuacji rynkowej - GOOD TO GO!

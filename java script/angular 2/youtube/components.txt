@@ -1,0 +1,71 @@
+ * make class available to import:
+ - we will be able to use this class outside
+ - export class Component {}
+  
+ * we import classes from moduels, so from files,
+
+ * add additional metadata into our component:
+ - this is just simple javascript object 
+ - {selector: "app" - name of our component in html file, template: "Hello"} 
+ 
+ * create an extensive html section: `html tags`
+ 
+ * each new component should be included in "declarations" of
+   the app.module file,
+   
+ * directives was removed from the component,
+ 
+ * in simple js we use simple var before declaring an object,
+   here we use:
+ - we can use quoted names 
+ - public objName = {}  
+   
+
+TEPMPLATES:
+ 
+ * component items should be quoted:
+ - name = 'Maciej'
+ 
+ * create bounded html item variable:
+ - <input type="text" #inputElement>
+ 
+ * include component items into a html file using this expression in html:
+ - this is some html text {{name}} bla, bla!,
+ 
+ * We declare all components into the app.module,
+   then we can use it in all html files, because it is declared in main scope.
+ 
+ * conditionalyy add a class to an element:
+ - this will work if inputElement has a key event
+ - <h2 [class.is-awesome]="inputElement.value === 'yes'">fda</h2>
+ 
+ * when we use [] - then we want to add something into an element, np. [disabled]
+ 
+ * when we use () - then we want to listen to our element. np. (keyup)
+ 
+ * remember that coponents are directives,
+ 
+ * every component have to go to the app.module file to be available
+   to entire application,
+ 
+ * inserting data from forms into the database 
+ 
+EVENTS:
+
+ * fire up an event when keyup on the element:
+ - with value 0 this will update our html UI!!!. 
+ - <input type="text" #inputElement (keyup)="0">
+ 
+CONDITIONS 
+ 
+ * enable button if a condition if true:
+ - <button [disabled] = "inputElement.value !== 'yes'">
+	Enabled if 'yes'</button>
+ * <span [style.color] = "inputElement.value === 'yes' ? 'red' : ''"></span>	
+ 
+ * after style we can add each of css attributes, but we have to remeber
+   that ex. background-color will be backgroundColor.
+
+ * None of this events would run if inputElement be without (keyup) = "0"   
+
+ * [class.clicked]="showDetail === true" 

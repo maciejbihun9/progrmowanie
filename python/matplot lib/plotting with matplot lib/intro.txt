@@ -1,0 +1,78 @@
+﻿ with plt as matplotlib object:
+ 
+ * set x, y label:
+ - xlabel(), ylabel()
+ 
+ * create a title:
+ - title()
+ 
+ * create a reference to a plot(Axis):
+ - gca() -> AxesSubplot
+ 
+ * get plt lines:
+ - plt_ref = plt.gca()
+ - line = plt_ref.lines[0] -> Line2D
+ 
+ * show what I can do with those lines:
+ - plt_ref.set_ -> does not work, FUCK
+ 
+ * plot this label for each point in the dataset:
+ - line.set_marker('o')
+ 
+ * clear all plt:
+ - clf()
+ 
+ * plot many lines at once:
+ - plot()
+ - plot()
+ 
+ * create a legend with a location:
+ - plt.legend(('linear', 'square'), loc="upper left")
+ 
+ * plot data with specified line settings:
+ - plt.plot(x, y, 'g-')
+ 
+ * create a text on plot:
+ - works from 0 to 1,
+ - text = plt.figtext(0.5, 0.5, "so this is some text")
+ - text.set_fontsize(20)
+ 
+ * create an annotation:
+ - x have to an index, not chart property
+ - ax.annotation("this is text" xy=(70, 20))
+ 
+ * utworzenie tekstów, które są ze sobą w pewien sposób powiązane (strzałką)
+   lub tekst prowadzi do pewnego punktu:
+ - where x_start have to an x index point (if from data frame then it have to be date format!!!, not properties from a chart)  
+ - ax.annotate('local max', xy=(x_start, 600), xytext=(x_end, 800),
+                    arrowprops=dict(facecolor='black', shrink=0.05),
+                    )   
+
+ * get space between dates:
+ - dates_margin = datetime.datetime(2011, 12, 24) - datetime.datetime(2009, 12, 24) 
+ 
+ * plot labels for points:
+ - for label, x, y in zip(labels, x_list, y_list):
+           plt.annotate(label, xy=(x, y))
+ 
+FIGURE:
+
+ * change figure color:
+ - fig.set_facecolor('g')
+ 
+ * add subplot to a figure:
+ - ax = fig.add_subplot(111)
+ - ax.plot()
+ - plt.show()
+ 
+ * hide axis labels:
+ - ax.xaxis.set_visible(False) - for x labels,
+ - ax.yaxis.set_visible(False) - for y labels,
+ 
+ * create a small chart on a big:
+ - plotting with matplotlib - youtube
+ 
+ * matplotlib - see on charts: then you can get full code 
+   to develop this chart,
+					
+ 

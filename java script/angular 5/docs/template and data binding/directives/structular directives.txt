@@ -1,0 +1,71 @@
+The reason is simplicity. Structural directives can do complex things with
+the host element and its descendents. 
+When two directives lay claim to the same host element, which one
+takes precedence? Which should go first, the NgIf or the NgFor? Can the
+NgIf cancel the effect of the NgFor? 
+If so (and it seems like it should be so),
+how should Angular generalize the ability to cancel for other structural directives?
+
+There are no easy answers to these questions. 
+Prohibiting multiple structural directives makes them moot. 
+There's an easy solution for this use case: put the *ngIf on a 
+container element that wraps the *ngFor element. One or both elements
+can be an ng-container so you don't have to introduce extra levels of HTML.
+
+NGIF:
+
+ * The ngIf directive doesn't hide elements with CSS.
+ It adds and removes them physically from the DOM,
+ 
+ * *ngIf translates all html tag into a:
+ - <ng-template [ngIf]="hero">
+	<div class="name">{{hero.name}}</div>
+   </ng-template>
+   
+NGFOR:
+
+ * the *ngFor syntax:
+ - <div *ngFor="let hero of heroes; let i=index; let odd=odd;
+	trackBy: trackById" [class.odd]="odd">
+	({{i}}) {{hero.name}}
+   </div> 
+  translates to this:
+ * <ng-template ngFor let-hero [ngForOf]="heroes" let-i="index" let-odd="odd" [ngForTrackBy]="trackById">
+    <div [class.odd]="odd">({{i}}) {{hero.name}}</div>
+   </ng-template>  
+   
+ * we can use an ngFor directive with others containers, but sometimes it won't work,  
+ 
+COMBINATIONS:
+
+ * using select with na option:
+ - <select [(ngModel)]="hero">
+  <span *ngFor="let h of heroes">
+    <span *ngIf="showSad">
+      <option [ngValue]="h">{{h.name}} ({{h.id}})</option>
+    </span>
+  </span>
+</select
+ - this won't be displayed!!!, because you can not use any span tags before using 
+ immidate child there,
+
+NGCONTAINER:
+
+ * The Angular <ng-container> is a grouping element that doesn't 
+ interfere with styles or layout because Angular doesn't put it in the DOM. 
+ 
+ - now this is going to work!!!
+ <select [(ngModel)]="hero">
+  <ng-container *ngFor="let h of heroes">
+    <ng-container *ngIf="showSad">
+      <option [ngValue]="h">{{h.name}} ({{h.id}})</option>
+    </ng-container>
+  </ng-container>
+</select>
+
+UNLESS:
+
+ * this is my design
+
+ * this is an oposite to ngIf,
+ 

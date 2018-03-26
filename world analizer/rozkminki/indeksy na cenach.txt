@@ -1,0 +1,12 @@
+
+ * żaden dokument nie powinien posiadać indeksów na cenach akcji,
+ bo te indeksy zajęły by zbyt dużo pamięci,
+ 
+ * decyduje się tego nie zabezpieczać w ten sposób,
+ 
+ * bede poprost usprawdzał douplicaty podczas dodawania elementów w
+ dalszej fazie projektu,
+ 
+STRATEGIA DZIAŁANIA:
+
+ *  

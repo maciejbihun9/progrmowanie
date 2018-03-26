@@ -1,0 +1,5 @@
+ * zakres liczb pomiêdzy 1 oraz 100 - z wy³¹czeniem konkretnych liczb:
+ - IntStream evenNumbers =  IntStream.rangeClosed(1, 100).filter(n -> n% 2 == 0);
+ - evenNumbers.count();
+
+ * 

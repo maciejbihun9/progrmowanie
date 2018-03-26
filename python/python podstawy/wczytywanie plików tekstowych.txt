@@ -1,0 +1,104 @@
+ * fajnie jest zapisaæ do pliku jakieœ dane na temat programu,
+   koñcowe wyniki
+
+ * tryby otwarcia pliku tekstowego:
+ - str. 198
+
+ * Wybrane metody obiektu pliku
+ - str. 203
+
+ * wczytani pliku o nazwie:
+
+ - text_file = open("odczytaj_to.txt", "r")
+ - text_file.read() - odczytanie ca³oœci
+ - text_file.read(2) - odczytanie znaku
+ - text_file.readline() - odczytanie ca³ej linijki
+ - lines = text_file.readlines() - odczytanie wszystkich lini do listy lini
+ - text_file.close()
+
+ * wczytywanie ca³ego pliku linijka po linijce:
+text_file = open("odczytaj_to.txt", "r")
+for line in text_file:
+	print(line)
+
+
+ * zapisywanie do pliku:
+
+text_file = open("zapisz_to.txt", "w")
+
+text_file.write("Wiersz 1\n")
+text_file.write("To jest wiersz 2\n")
+text_file.write("Ten tekst tworzy wiersz 3\n")
+
+text_file.close()
+
+ * zapisywanie lini do pliku:
+
+text_file = open("zapisz_to.txt", "w")
+lines = ["Wiersz 1\n", "To jest wiersz 2\n", "Ten tekst tworzy wiersz 3\n"]
+text_file.writelines(lines)
+text_file.close()
+
+MARYNOWANIE - CZYLI ZAPISAYWANIE STRUKTUR DANYCH DO PLIKÓW:
+Zamarynowanie i odmarynowanie to dobre sposoby magazynowania i pobierania
+z powrotem ustrukturyzowanych informacji, lecz bardziej z³o¿one informacje
+mog¹ wymagaæ nawet silniejszych i elastyczniejszych œrodków. Dwie popularne
+metody magazynowania i pobierania bardziej skomplikowanych struktur informacji to
+bazy danych i pliki XML, a Python zawiera modu³y, które mog¹ wspó³pracowaæ
+z ka¿d¹ z nich. Aby dowiedzieæ siê na ten temat wiêcej, odwiedŸ stronê jêzyka
+Python http://www.python.org.
+
+ * opis: str. 205
+
+ * pliki musz¹ byæ w pliku binarnym
+
+ * marynowanie przez zapis w tej samej kolejnoœci:
+- zapisanie za jednym razem powoduje, ¿e potem odczytywanie nastêpuje w tej samej kolejnoœci.
+print("Marynowanie list.")
+variety = ["³agodny", "pikantny", "kwaszony"]
+shape = ["ca³y", "krojony wzd³u¿", "w plasterkach"]
+brand = ["Dawtona", "Klimex", "Vortumnus"]
+
+f = open("plik.dat", "wb")
+
+pickle.dump(variety, f)
+pickle.dump(shape, f)
+pickle.dump(brand, f)
+f.close()
+ 
+
+print("\nOdmarynowanie list.")
+f = open("pikle1.dat", "rb")
+variety = pickle.load(f)
+shape = pickle.load(f)
+brand = pickle.load(f)
+
+ * marynowanie przez pó³kê - dzia³a ona jak s³ownikowa baza danych:
+Chocia¿ móg³byœ zasymulowaæ pó³kê poprzez zamarynowanie s³ownika, to jednak
+modu³ shelve wykorzystuje pamiêæ efektywniej. Wiêc jeœli potrzebujesz swobodnego
+dostêpu do zamarynowanych obiektów, utwórz pó³kê.
+
+print("\nOdk³adanie list na pó³kê.")
+s = shelve.open("pikle2.dat") - utworzenie zbioru w pliku
+
+s["odmiana"] = ["³agodny", "pikantny", "kwaszony"]
+s["kszta³t"] = ["ca³y", "krojony wzd³u¿", "w plasterkach"]
+s["marka"] = ["Dawtona", "Klimex", "Vortumnus"]
+
+s.sync() # upewnij siê, ¿e dane zosta³y zapisane
+
+ 
+ * status zapisu plików:
+"rb" Odczyt danych z pliku binarnego. Jeœli plik nie istnieje, Python zasygnalizuje b³¹d.
+"wb" Zapis danych do pliku binarnego. Jeœli plik ju¿ istnieje, jego zawartoœæ zostaje
+zast¹piona przez nowe dane. Jeœli nie istnieje, zostaje utworzony.
+"ab" Dopisanie danych na koñcu pliku binarnego. Jeœli plik istnieje, nowe dane
+zostaj¹ do niego dopisane. Jeœli plik nie istnieje, jest tworzony.
+"rb+" Odczyt i zapis danych z (do) pliku binarnego. Jeœli plik nie istnieje, Python
+zasygnalizuje b³¹d.
+"wb+" Zapis i odczyt danych do (z) pliku binarnego. Jeœli plik istnieje, jego zawartoœæ
+zostanie zast¹piona nowymi danymi. Jeœli nie istnieje, zostanie utworzony.
+"ab+" Dopisywanie i odczyt danych do (z) pliku binarnego. Jeœli plik istnieje, nowe
+dane s¹ dopisywane na jego koñcu. Jeœli plik nie istnieje, zostanie utworzony.
+
+ 

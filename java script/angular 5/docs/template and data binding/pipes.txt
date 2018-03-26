@@ -1,0 +1,81 @@
+
+ * ogólnie rurka jest bardziej efektywna do wykrywania zmian normalnych, bo
+ sprawdz, tylko referencje do obiektów i nie sprawdza obiektów z których 
+ obiekt rodzica został zrobiony.
+ Zostanie wywołana ponownie, tylko gdy zostanie zmieniona referencja do tablicy,
+ lub po zmianie numeru, stringa, czyli typów prostych. Nawet zmiana pola obiektu nie zadziała.
+
+ * It was designed for formatting the data,
+ 
+ * dates, numbers, string fields,
+ 
+ * apply many formatting on one field:
+ - {{ birthday | date | uppercase}}
+ 
+ * you can create even your own pipes
+ 
+ * send a parameter to a pipe:
+ - <p>Super power boost: {{2 | exponentialStrength: 10}}</p>
+ 
+ * we can used them even a sa filter:
+ - <div *ngFor="let hero of (heroes | flyingHeroes)">
+  {{hero.name}}
+</div>
+
+@Pipe({ name: 'flyingHeroes', pure: true })
+export class FlyingHeroesPipe implements PipeTransform {
+  transform(allHeroes: Flyer[]) {
+    return allHeroes.filter(hero => hero.canFly);
+  }
+}
+
+ - dodawanie elementów nie działa, tylko dla czystych rurek, czyli takich, którewywoływane są
+ tylko po zmianach referencji do obiektów w rurce.
+ pure: false - wyukryje zmiany dodania nowego elementu do kolekcji lub każdego innego eventa,
+ który Angular może wykrywać,
+ 
+ - now adding is not working, trzeba stworzyć nową tablice z jednym elementem
+ i dopierą ją dodać do pozostałych,
+ 
+ - z jakiegoś powodu angular nie reaguje na zmiany itrzeba zmienić referencej, aby coś się zmieniło
+ i tak w sumie siędzieje, że tylko zmiana referencji działa,
+ podczas mutowania array pipe się nie wywołuje
+ 
+  - angular detects only reference changes, so if we change our 
+  collection then anything won't happen because this is the same list.
+  eg. after push or pull.
+  
+ * when i use a pipe, then angular uses faster and easier algorithm 
+ to detect changes,
+ - normal iterations over all bounded fields and variables can be not fast,
+ it works after each event, array changes etc,
+ 
+ * component should be anaware of pipes,
+ 
+ * pipe can be used as a http caller that retrives the data and transforms it,
+ - calls this pipe every time when user changes url,
+ 
+ @Pipe({
+  name: 'fetch',
+  pure: false
+})
+export class FetchJsonPipe  implements PipeTransform {
+  private cachedData: any = null;
+  private cachedUrl = '';
+
+  constructor(private http: Http) { }
+
+  transform(url: string): any {
+    if (url !== this.cachedUrl) {
+      this.cachedData = null;
+      this.cachedUrl = url;
+      this.http.get(url)
+        .map( result => result.json() )
+        .subscribe( result => this.cachedData = result );
+    }
+
+    return this.cachedData;
+  }
+}
+   
+ 

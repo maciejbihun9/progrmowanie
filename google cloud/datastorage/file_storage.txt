@@ -1,0 +1,6 @@
+1. It is good for saving files,but we can not make any queries on data 
+that lives in those files.
+
+2. We can update those files but we can not add any new rows or any new data there.
+
+3. We can automate adding a new files into the backet. 

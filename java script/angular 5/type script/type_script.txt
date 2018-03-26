@@ -1,0 +1,340 @@
+ECMAScript6 is a objected oriented standard
+
+ * webbrowsers owners have to adjust their technology to the new features,
+
+ * they introduce an extends, super, constructor keywords,
+ this works totally the same like in java,
+
+ * const - have to declared immidietly,
+ - we can not change it after declaration adn initialization
+ - it is blocked scoped, so has the same local scope as let,
+ - this restriction only works for references, so we can change
+ the values of an object anyway,
+ - const a = 3;
+
+ - we can avoid from making changes to const variables:
+ - by freezing this objects with Object.freeze function
+ - const item = Object.freeze({});
+
+ * in ts we can create totally generic classes like in java!!!,
+
+ * enums are not well supported, because we can not create functions or constructors there!,
+
+ * let - this is a scoped variable,
+  where var - is a global variable,
+ var and let only declares varialbes scope, the real type is after :
+ var variable that is declared inside of some scope if, while
+ can be used outside of this scope - this is crazy baby !!!,
+ zastosowanie:
+  - if we used var in the for loop we would have "black" being printed in the log();
+  function hello(){
+     var a  = "function";
+     for (var i = 0; i < 12; i++){
+         let a = "black";
+     }
+     console.log(a)
+  }
+  hello();
+
+ - var is a keyword that is always global scoped!!! even if declared in the local scope
+ this is going to be global scoped. This is very dangerous specially with for loops.
+
+ ALWAYS USE LET FROM THIS POINT
+ WE HAVE TO USE ENCAPSULATION AS MUCH AS WE CAN SO THIS IS VERY IMPORTANT!
+
+ * we have MODULES!!! that prevents from names collision,
+ we can import and export variables, to make safe environment for them,
+ - it is better to not exporting any let variables, because they are local so to speak,
+
+ * we can push functions to arrays:
+ - array = []
+ array.push (function(){console.log("shit")})
+ array.forEach((a) => {a()})
+
+NEW_FEATURES:
+
+ * Arrows:
+ - they are not just callbacks, they can be considered as a shortcuts for functions,
+ zastosowanie:
+ - numbers.map((x, y, z) =>  {console.log("this is a x: " + x); console.log("this is a y: " + y); console.log("this is a z: " + z)});
+ - x - każdy kolejny element kolekcji,
+ - y - index kolekcji,
+ - z - cała kolekcja
+
+
+USEFULL FUNCTIONS:
+
+ * Promise():
+ - this is an async callback,
+ function doSomething() {
+   return new Promise((resolve, reject) => {
+     setTimeout(() => {
+       console.log('robię coś...');
+       resolve();
+     }, 1500);
+   });
+ }
+
+ doSomething()
+   .then(() => console.log('a teraz robię coś jeszcze'));
+
+  - where resolve() is called after previos code was executed()
+  probably with the retunred data,
+
+  zastosowanie:
+  - works great with delaying execution
+  - for something that is executed asynchronicznie - for callbacks,
+
+ * map():
+ - this function can be called on a collection and creates a another collection,
+ - works for arrays,
+ - maps each item in the array with specified function
+ - we can execute a function on item from an array without loops
+ example:
+ var result, numbers = [2,5,6,9,2];
+    result = numbers.map(function(x) {
+      return x + x;
+    });
+
+ result = [4, 10, 12, 18, 4]
+ // for each item use a predicate function to make an operation on it,
+ result = numbers.map(x => x + x);
+
+ - we can have max. 3 items in the function
+ - numbers.map((x, y, z) =>  {console.log("this is a x: " + x); console.log("this is a y: " + y); console.log("this is a z: " + z)});
+  - x - każdy kolejny element kolekcji,
+  - y - index kolekcji,
+  - z - cała kolekcja
+
+# TYPESCRIPT TO JEST TAKIE POŁĄCZENIE JAVY ORAZ PYTHON'A
+
+ * is not executed in the browser,
+ 
+ * ts has to compiled into a js file to be executed in the browser,
+ 
+ * without IDE, we should read some about converting ts into a js, 15 - 20
+ 
+ * Fortunately TypeScript is similar to other languages like C, Java or C#. And
+differently from JavaScript we can create classes and interfaces, define variable and return
+types.
+
+ * casting:
+ - java: ((String)obj).value,
+ - typescript: (<HTMLInputElement> object).value
+
+ * basic types:
+ - boolean,
+ - number,
+ - string,
+ - never - 
+ 
+ * parse string to int:
+ - string = '12';
+ var a = +string;
+ 
+ * create an object:
+ item: Item = {id: 12, "name" : "Maciej"}
+ item: Item = new Item(12, "Maciej")
+
+ * create a new variable:
+ - var VAR_NAME : TYPE = value
+ 
+ * create an array (of any type):
+ - list does not have to have var declaration
+ - var list : number [] = [1,2,3]
+ - astronauts = ['Lovell', 'Swigert', 'Haise'];
+ - history: string [] = [];
+ 
+ * create a generic array:
+ - var list : Array<number> = [1,2,3]
+ 
+ * create a list of objects:
+ - var points: Array<Point> = [
+      new Point(),
+      new Point()
+    ];
+	
+ * 	create a enum:
+ - enum Color {RED, GREEN, BLUE}
+ - var c: Color = Color.GREEN
+ 
+ * create a any type variable:
+ - var c: any = 12;
+ 
+ * create a string from parametrs:
+ - const url = `${this.heroesUrl}/${id}`;
+ 
+ * one line if statement:
+ - const id = typeof hero === 'number' ? hero : hero.id;
+ 
+ * sprawdzanie typu zmiennej:
+ - typeof variable
+ 
+ * put variable into a string:
+ - this.log(`deleted hero id=${id}`)
+ 
+FUNCTIONS:
+
+ * function with parameter of different types:
+ - deleteHero (hero: Hero | number)
+
+ * function key word is only used out side of a class!!!
+
+ * create a function that has to return something:
+ - someFunction(): any {return 12;}
+ - someFunction(): number {return 12;} 
+ - someFunction(): string {return 'string';}
+ 
+ * create a void function:
+ - this function does not return any results
+ - function warnUser(): void {
+	alert("This is my warning message");
+   }
+   
+ * in PyCharm we do not need any function key words:
+ - someFunction(): number {
+    return 12;
+   }
+
+ * function is declared the same as variable but without any keywords,
+   with simple name and type at the end.
+   
+ * function optional parameter:
+ - funkcja (var: string, name?: string) {} 
+ 
+ * we can have many subscribe function one by one, one after another:
+ - this.route.params.subscribe(params => this.heroService.getHero(+(params['id']))
+ .subscribe(hero => this.hero = hero));
+ 
+ * create a sort function:
+ - protected afterGetHeroes() {
+    this.heroes = this.heroes.sort((h1, h2) => {
+      return h1.name < h2.name ? -1 :
+            (h1.name > h2.name ? 1 : 0);
+    });
+  }
+  
+ * create a long if else statement:
+ - h1.name < h2.name ? -1 :
+            (h1.name > h2.name ? 1 : 0); 
+			
+ * anonumus function:
+ - (h1, h2) => {return h1 + h2} 
+
+CLASSES:
+
+ * create a constructor with optional parameter:
+ - constructor(
+    public id: number,
+    public name: string,
+    public power: string,
+    public alterEgo?: string
+  ) {  }
+
+ * create an object from data:
+ - nie musi zawierać pełnej ilości danych aby utworzyc obiekt
+ - export class Hero {
+   id: number;
+   name: string;
+ }
+ - { name } as Hero
+
+ * it is possible to have variables out of class scope:
+ - those objects have to be real java script objects
+ - const httpOptions = {
+  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+ };
+
+ * private fields are normally available in the html files, but not in 
+   other classes. There have to be set or get.
+
+ class_functions:
+  
+ * prywatne funkcje też powinny mieć podkreślink przed deklaracja:
+ - private funkcja(){}
+ 
+ * metody statyczne działają dokładnie tak samo jak w javie:
+ - ALE POWINNO SIĘ JE DEKLAROWAĆ ODRAZU PO DEKLARACJI ZMIENNYCH KLASY
+ PRZED DEKLARACJĄ METOD INSTANCJI,
+ - static funkcja(): string {}
+ 
+ * metody get oraz set mogą być generowane automatycznie!!!
+ - on są zawsze publiczne, bo zawierają słowa kluczowe: keywords!!!
+ 
+ * typ zwrotny dla metody może być deklarowany, ale nie musi!!!:
+ - jest deklarowany dokładnei tak samo jak w pythonie 3.6, tylko tam  jest ->, a tu :
+
+ * metoda klasowa może posiadać wartość domyślną (tak samo jak w pythonie , ale nie w javie):
+ - metoda(variable: string = '213'): any{
+    return 'da';
+  } 
+  
+  class_variables:
+
+ * dziedziczenie odbywa się dokładnie tak samo jak w Javie,
+ - super w metodzie może być wywołane jako druga lub dalsza linijka
+ 
+ * obiekt polimorficzny:
+ - var tom: Animal = new Horse("Tommy the Palomino");
+
+ * deklarowanie typów dla zmiennych w klasach jest takie same jak w pythonie 3.6
+ - odbywa się po dwukropku, ale NIE MUSI WYSTĘPOWAĆ WOGLE!!!:
+ - greeting: string;
+ - zmienna: number;
+ - zmienna;
+
+ * modyfikator dostępu dla zmiennych klasowych by default jest public:
+ - zmienna: string;
+ 
+ * prywatne zmienne powinny mieć podkreślink przed jej deklaracją,
+ - private _zmienna: string;
+
+ * nie używanie let, var w klasach, bo nie mają żadnego zastosowania,
+
+ * te wszystkie var, let mają tylko znaczenie poza deklaracją klas,
+ - W klasie nie mają żadnego znacznia,
+
+ * not changed objects:
+ - it is a good practice to declare them as const objects if are not changed later,
+ - const greeter = new Greeter('world'); 
+ 
+INTERFEJSY:
+
+ * deklaracja tak samo jak w Java, ale zmienne oraz metody jak w pythonie!!! 
+ 
+JSON:
+
+ * podawanie obiektu json jako parametru funkcji:
+ - parsowanie formatu json odrazu na obiekt okreslonej klasy
+ - class Point{
+	private _x : number = 0;
+	private _y : number = 0;
+	private _z : number = 0;
+	constructor( p: {x:number;y:number;z?:number;}){
+		this._x = p.x;
+		this._y = p.y;
+		if (p.z)
+			this._z = p.z;
+	}
+	
+	is3d():boolean{
+		return this._z!=0;
+	}
+} 
+
+- var p1 = new Point({x:10,y:20});
+ 
+MODULES:
+
+ * poprostu importowanie modułów
+ - jest to łatwe w IDE, ale w innych jest już zgoła inaczej
+ nie wiadomo jak importować moduły, także potrzebna jest odrębna konfiguracja
+ 
+DECORATORS (aka. ANNOTATIONS):
+
+ * Is used to set up a class with properties,
+ 
+ * tsconfig.json have to contain:
+ - emitDecoratorMetadata and experimentalDecorators for convenience of all project,
+ 
+ * @Component działa jak @Table w Springu

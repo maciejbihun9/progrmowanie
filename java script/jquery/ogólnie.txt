@@ -1,0 +1,65 @@
+ * $("a.like") - wyszukujemy w dokumencie HTML wszystkie elementy <a> wraz z klas¹ like,
+
+ * $.post oraz $.get - króluj¹ podczas definiowania metod AJAX JSON
+
+ * e.preventDefault() - zapobieganie standardowemu dzia³aniu elementa html
+
+ * wysy³anie polecenia ajax:
+	$.ajax({
+            type: 'POST',
+            url: '{% url "content_order" %}',
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            data: JSON.stringify(contents_order),
+        });
+
+ * pobranie indeksu elementu listy iterowanej(ju¿ po wywo³aniu iteracji!):
+ - $(this).index();
+
+ * iterowanie po liscie, któa posiada takie id:
+	$('#module-contents').children().each(function(){
+            // Powi¹zanie identyfikatora modu³u z jego kolejnoœci¹.
+	    // pobranie data-id z ka¿dego elementu i zapisanie indeksu pod takim luczem w s³owniku
+            contents_order[$(this).data('id')] = $(this).index();
+        });
+
+ * pobranie tekstu: 
+ - <div data-id="{{ content.id }}">
+ - modules_order[$(this).data('id')] = $(this).index();
+
+ * przypisanie jakieœ wartoœci do wszystkich elementów z podan¹ klas¹:
+ - tu jest this, bo jest to iterowane w liœcie!!
+    $('#modules').children().each(function(){
+        // Uaktualnienie kolumny order.
+        $(this).find('.order').text($(this).index() + 1);
+        // Powi¹zanie identyfikatora modu³u z jego kolejnoœci¹.
+        modules_order[$(this).data('id')] = $(this).index();
+    });
+ - przypisanie tekstu do ka¿dego elementu dziecka danego elementu listy
+ - znalezienie w tym dziecku elementu z klas¹ order i wykoanie na nim akcji
+ - $(this).find('.order').text($(this).index() + 1);
+
+ * funkcjonalnoœæ przestawiania elemnetów listy, któa ma id: modules:
+$('#modules').sortable({
+    // Zdarzenie bêdzie wywo³ywane za ka¿dym razem, gdy u¿ytkownik zakoñczy sortowanie elementu.
+    // czyli gdy opuœci element
+    stop: function(event, ui) {
+        // Tworzymy pusty s³ownik modules_order. Kluczami dla tego s³ownika bêd¹
+        //identyfikatory modu³ów, natomiast wartoœciami — kolejnoœæ przypisana
+        //poszczególnym modu³om.
+        modules_order = {};
+        $('#modules').children().each(function(){
+            // Uaktualnienie kolumny order.
+            $(this).find('.order').text($(this).index() + 1);
+            // Powi¹zanie identyfikatora modu³u z jego kolejnoœci¹.
+            modules_order[$(this).data('id')] = $(this).index();
+        });
+    
+        $.ajax({
+            type: 'POST',
+            url: '{% url "module_order" %}',
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json', data: JSON.stringify(modules_order)
+        });
+    }
+});

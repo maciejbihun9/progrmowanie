@@ -1,0 +1,20 @@
+koncepcja jak w jêzyku C: 
+
+ * if 0 - zwraca false
+
+ * if 3 - zwraca true
+
+ * liczby ujemne s¹ zawsze False -1 == True -> False
+
+ * liczby dodatnie zawsze True
+
+ * 0 jest zawsze False 
+
+ * generowanie liczb z podanego przedzia³u:
+ - random.randrange(2, 8)
+
+ * dopóki odpowiedŸ nie jest w zasiêgu liczb:
+ while response not in range(low, high):
+	response = int(input(question))
+
+ *  

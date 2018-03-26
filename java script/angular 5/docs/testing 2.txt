@@ -1,0 +1,56 @@
+
+ * it is hard to inject a serivce into a testing module,
+ - it is far more better to mock a service with an js object,
+ 
+ * the case is this we do not testing any services, we only test
+ components, so we can easly mock those,
+ 
+ eample:
+ - let userServiceStub: Partial<UserService>;
+ - create a mock
+  userServiceStub = {
+    isLoggedIn: true,
+    user: { name: 'Test User'}
+  };
+  
+ - provide it under different name,
+  TestBed.configureTestingModule({
+     declarations: [ WelcomeComponent ],
+     providers:    [ {provide: UserService, useValue: userServiceStub } ]
+  });
+
+  fixture = TestBed.createComponent(WelcomeComponent);
+  comp    = fixture.componentInstance;
+
+  // UserService from the root injector
+  userService = TestBed.get(UserService);
+
+  //  get the "welcome" element by CSS selector (e.g., by class name)
+  el = fixture.nativeElement.querySelector('.welcome');
+});
+
+ * during testing in Angular we can change an object fields
+ detectChanges and check component testing fields,
+ - it('should welcome the user', () => {
+	  fixture.detectChanges();
+	  const content = el.textContent;
+	  expect(content).toContain('Welcome', '"Welcome ..."');
+	  expect(content).toContain('Test User', 'expected name');
+ }),
+ 
+ * mock service method with retun value:
+ - we can use this method even if behaves as observable,
+ - testQuote = 'test message';
+ - const twainService = jasmine.createSpyObj('TwainService', ['getQuote']);
+  // Make the spy return a synchronous Observable with the test data
+ - getQuoteSpy = twainService.getQuote.and.returnValue( of(testQuote) );
+ 
+ * get component instance native element by class:
+ template: `
+  <p class="twain"><i>{{quote | async}}</i></p>
+  <button (click)="getQuote()">Next quote</button>
+  <p class="error" *ngIf="errorMessage">{{ errorMessage }}</p>`,
+  
+ - fixture = TestBed.createComponent(TwainComponent);
+ - component = fixture.componentInstance;
+ - quoteEl = fixture.nativeElement.querySelector('.twain');

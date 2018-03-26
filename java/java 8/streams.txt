@@ -1,0 +1,25 @@
+
+ * Strumienie dzia³aj¹ jak taœma w jakieœ fabryce,
+taœma jedzie, a graupa ludzi wykonuje przy elementach na taœmie okreœlone zadania,
+bez potrzeby wykonywania tego wiele razy.
+
+ * metoda: list.stream() - wrzuca wszystkie elementy list na pas, dziêki temu
+mo¿na wykonaæ na nich okreœlone czynnoœci,
+
+people.stream()
+ .filter(p -> p.getLastName().startsWith("C")) 
+ .forEach(p ->  System.out.println(p.getFirstName()));
+
+ - jeœli jakaœ osoba posiada nazwisko zaczynaj¹ce siê na "C",
+to jest automaczynie usuwana z taœmy i dalszy kod nie jest wykonywany
+
+ - nie trzeba wykonywaæ wielu iteracji listy, bo mo¿na wykonaæ wiele operacji zajednym przejœciem pasa,
+ - mo¿na modyfikowaæ obiekty podczas ich przechodzenia po pasie,
+ - mo¿na dodawaæ wiele modyfikacji do danego obiektu,
+
+ * przetwarzanie wspó³bie¿ne:
+ - za³ó¿my, ¿e mamy zajebiœcie du¿¹ liste obiektów na liœcie, to wtedy mo¿emy j¹ podzieliæ na
+ czêœci (na dwa pasy produkcyjne) i wykonaæ procesowanie na nich osobno i wynik dostaæ szybciej.
+ - long count = people.parallelStream()
+    .filter(p -> p.getLastname().startsWith("D"))
+    .count();

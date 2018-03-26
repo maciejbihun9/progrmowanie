@@ -1,0 +1,7 @@
+ * keep in mind that each pymongo query returns Cursor and do not load any data from the database,
+   you have to do something with the data to get it np.:
+ - list(cursor) - get all items from the database
+ - cursor.find_one() - load one item  - but maybe it won't work
+ - when you have list of items in the Cursor then iterate over cursor - it will load one item at the time
+ - for one item it can be list()
+

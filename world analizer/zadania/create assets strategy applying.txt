@@ -1,0 +1,23 @@
+
+ * create a plot with avgs of stocks parameters
+ 
+ * eliminate stock splits
+ 
+ * eliminate very different data items:
+ - condition to eliminate very different items,
+ - plot graph where i can see parameters distribution.
+ 
+ * get more parameters:
+ - get market cap for companies to invastigate
+ 
+ * create a tools for plotting parameters distribution.
+ 
+ 
+WNIOSKI:
+
+ * the data is not much distributed
+ * we have 95% of data points in one area where the difference are max.10%
+ * 5% is very high 
+ 
+ * after i removed very distributed items i can see that 
+ there is no real clusters here

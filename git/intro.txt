@@ -1,0 +1,36 @@
+ * git init - initilize folder in current folder
+
+ * .git - stores anything associated with project!
+ - git do not have any back up
+ - jest w plikach, nia na serwerze
+
+ * git status - status plików
+
+ * git add '. or file name'- dodaj do stage area
+ - *.html - only html files
+
+ * git commit -m "" - komituj do repozytoirum
+
+ * git branch nazwa - nowy branch
+
+ * git stash - po wykonaniu git add ., pliki id¹ do stage area, ale ni s¹ skomitowane,
+po przejœciu do innego brancza, bedzie problem, bo ten plik pozostanie, ale nie teraz.
+Staszowanie pozwala na nie uwzglêdnianie tego pliku w inneym branczu..
+
+ * git checkout nazwa - checkout do brancza:
+ - pozwala na to, ¿e mozemy mieæ ró¿ne pliki w ró¿nych branchach
+ - uwa¿aj przy zmianie branczy, bo nie skomitowane pliki, kótrych nie ma
+   w innym branczu pozostan¹ w folderze!!! - bedzie problem
+
+ * git merge nazwa_branch - merd¿owanie brancza o nazwie nazwa_branch 
+   do tego w którym jestem. W razie, gdyby wyst¹pi konflikt to poka¿e nam wiadomoœæ
+   i w konkretnym pliku mo¿na to rozwi¹zaæ
+
+ - po mergu z b³êdami trzeba zapisaæ odpowiedni¹ forme
+ - git merge tool
+
+ * git remote - pokazuje zdalne repozytoria
+
+ * git close url - pobierze folder do bierz¹cego with commit history
+ - cd folder
+ - git remote -> origin

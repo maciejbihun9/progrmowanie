@@ -1,0 +1,29 @@
+
+ * Concurrency provides a way to structure a solution
+ to solve a problem that may (but not necessarily) be parallelizable!!!
+ 
+ * concurrency is all about structure,
+ 
+ * For real parallelism you must have multiple cores.
+ 
+ * So, in practice, most processing happens concurrently and not in parallel.
+ - so many process sometimes are running on one thread,
+ 
+ * It’s one of the largest and most ambitious libraries ever added to Python,
+ 
+ * współprogram (ang. coroutines) - wykonują się sekwencyjnie, jeden program najpierw
+ wykonuje swoje zadania i późnie przeskakuje do innego,
+ - są synchroniczne z definicji,
+ - only one of them is running at any time,
+ 
+ * Note that, by design, there is no API for terminating a thread in Python.
+ 
+asyncio.Future: non-blocking by design
+
+ * futures are created only as the result of scheduling something for execution,
+ 
+ * wywołanie resutl(), gdy zadanie się nie zakończyło powoduje:
+ - Instead, an asyncio.InvalidStateError is raised.
+ 
+ * 
+ 

@@ -1,0 +1,7 @@
+1. Stworzenie stronicowania wi¹¿e siê z dodaniem pliku html z przygotowan¹ do tego templatk¹,
+
+ * istnieje potrzeba przekazania jako parametru templateki wszystkich postów,
+
+2. trzeba go inkludowaæ w bazowym pliku html,
+
+3. W ka¿dym razie nie jest to zbyt skomplikowany proces,

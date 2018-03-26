@@ -1,0 +1,80 @@
+# PAMIÊTAJ, ¯E FILTROWANIE WYNIKÓW MUSI ODBYWAÆ SIÊ ZAWSZE PO STRONIE BAZY, A NIE
+POBIERANIE ICH DO APLIKACJI I WTEDY!!!
+
+1. W Django mo¿na pobraæ wszystkie obiekty, nawet jeœli nie mamy zamiaru wyœwietlania ich wszystkich,
+
+2. To jakie obiekty zostan¹ wyœwietlone zostaje okreœlone w metodzie "filter".
+
+ - tam mo¿na wskazaæ kryteria wyœwietlania
+
+3.  Metoda filter dzia³a bardzo prosto, poprostu trzeba podaæ atrybuty obiektu w metodzie zapytania:
+
+ * Post.objects.filter(publish__year=2015, author__username='admin'):
+ - tutaj pobieramy tylko obiekty po podanym roku oraz z podanym username
+
+4. Nie pobieranie obiektów z pewn¹ podan¹ wartoœci¹:
+
+ * Post.objects.filter(publish__year=2015).exclude(title__startswith='Dlaczego')
+
+5. Pamiêtaj, ¿e usuniêcie obiektu oznacza równie¿ usuniêcie wszystkich dotycz¹cych go zwi¹zków.
+
+ * czyli zawsze usuwanie jest eager
+
+6. W kolekcji QuerySet mo¿na ³¹czyæ dowoln¹ liczbê filtrów, ale operacje w bazie danych nie
+bêd¹ wykonywane a¿ do chwili wywo³ania kolekcji. Okreœlenie zawartoœci kolekcji QuerySet
+odbywa siê jedynie w wymienionych poni¿ej sytuacjach.
+
+ * czyli dane s¹ pobierane dopiero podczas próby wykorzystania danych(jakiœ metod)
+ - np. pierwszej iteracji przez kolekcjê
+
+7. values_list() - Pobieranie danych jako listy tupli: 
+
+ * dobra metoda do pobierania ró¿nych atrybutów obiektów,
+
+ * post_tags_ids = post.tags.values_list('id', flat=True) - pobiera liste ids,
+
+ * post_tags_ids = post.tags.values_list('id', 'name') - pobiera liste tupli z id oraz name,
+
+8. Pobieranie obiektów tylko z podanymi wartoœciami id:
+
+ * Post.published.filter(tags__in=post_tags_ids).exclude(id=post.id),
+   gdzie post_tags_ids to lista identyfikatorów typu integer, które nale¿y pobraæ
+   z wykluczeniem podanego id.
+
+9. Lista atrybutów, które mo¿na u¿yæ w metodzie filter() znajduje siê tutaj:
+
+ * in, gt, gte, lt, lte ...
+
+ * https://docs.djangoproject.com/en/1.11/ref/models/querysets/
+
+10. Pobranie aktywnych u¿ytkowników:
+
+ * users = User.objects.filter(is_active=True)
+
+11. Pobranie obiektu albo zwrócenie 404 z dodatkowymi parametrami obiektu:
+
+ * user = get_object_or_404(User, username=username, is_active=True) 
+
+12. pobranie ostatniego obiektu:
+
+ * User.objects.latest('id')
+
+13.  Tworzenie lub pobranie obiektu:
+
+ * Contact.objects.get_or_create(user_from=request.user, user_to=user)
+
+14. usuwanie obiektu po przefiltrowaniu bazy danych:
+
+ * Contact.objects.filter(user_from=request.user, user_to=user).delete()
+
+15. Przypisanie obiektowi konkretnej metody o podanej nazwie, która wykonuje podan¹ czynnoœæ:
+
+ * # Each publisher, each with a count of books as a "num_books" attribute.
+from django.db.models import Count
+pubs = Publisher.objects.annotate(num_books=Count('book'))
+pubs
+<QuerySet [<Publisher: BaloneyPress>, <Publisher: SalamiPress>, ...]>
+pubs[0].num_books
+
+ * do kadego obiektu przypisujemy metodê num_books, 
+która zwraca nam iloœæ kszi¹ek podczepionych do danego obiektju

@@ -1,0 +1,27 @@
+
+ * fajne rozwiązanie dla dużej ilości elementów:
+ - 10 mln float points
+ - działa szybciej niz lista, bo zaweira tylko zapis bajtowy,
+ a nie obiekty float.
+ 
+ * są szybsze od list,
+ 
+ * są jednakowego typu!!!
+ 
+ * deklaracja tablicy float:
+ - trzeba podać typ tablicy
+ - array('d', (random() for i in range(10**7)))
+ * nie posiada sortowania w miejscu, ale można przebudować ją w miejscu:
+ - array.array(a.typecode, sorted(a))
+ 
+ * memory view:
+ - A memoryview is essentially a generalized NumPy array structure in Python itself
+(without the math). It allows you to share memory between data-structures (things like
+PIL images, SQLlite databases, NumPy arrays, etc.) without first copying. This is very
+important for large data sets.
+ - always sharing the same memory,
+ 
+ - to jest zajebiste do tworzenia wycinków, bez kopiowania,
+ 
+ 
+ 

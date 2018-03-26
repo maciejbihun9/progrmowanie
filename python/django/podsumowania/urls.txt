@@ -1,0 +1,56 @@
+ * trzeba pisaæ ³adne url, ¿eby nie by³o jakiœ pojebanych zakoñczeñ .php itd.
+
+ * $ i ^ s¹ znakami wyra¿enia regularnego, które maj¹ specjalne znaczenie:
+   znak "oznacza, ¿e wzór pasuje do pocz¹tku ci¹gu znaków",
+   a znak dolara oznacza "wymaga, aby wzór pasowa³ do koñca ci¹gu znaków".
+
+ * url przyjmuj¹ jako widok albo nazwe metody, która zwraca podany widok, albo klasê, która dziedziczy po
+   klasie widoku z dodatkiem .as_view()
+ 
+ * url nie zawsze prowadzi do widoku!, czasami mo¿e prowadziæ do akcji! post - delete, która
+   po wykonaniu danej akcji przekieruje na coœ innego.
+
+ - redirect("jakas_nazwa_widoku_zwykle_glownego")
+ - takie klasy powinny byæ lepiej nazwane, bo nie posiadaj¹ one ¿adnego widoku, a przedstawiaj¹ akcje.
+
+ * przyk³ad url:
+url(r'^(?P<pk>\d+)/edit/$',
+        views.CourseUpdateView.as_view(),
+        name='course_edit'),
+
+ - jest zwracany ten sam widok, pod zadanym url, ale inne parametry zmieniaj¹ ten widok
+
+ - I parametr odnosi siê do url pod jakim ¿yje widok, czyli drugi parametr, trzeci parametr odnosi siê do nazy 
+   tego widoku która mo¿na u¿ywaæ podczas definiowania przekierowañ  w html: <a href="{% course_edit course.id %}">
+
+- urlpatterns = patterns('',
+    url(r'^hello/$', hello), - widok hello pasuje tylko i wy³¹cznie do podanego url. Œciœle sprecyzowany url.
+)
+
+ - bez znaku dolara ten url bêdzie pasowa³ do ka¿dego url poni¿ej:
+hello/satish
+hello/gandham/
+hello/satish/123/pqr
+
+
+ * znak zakoñczenia url stawiamy na koñcu, a nie na ocz¹tku, aby w daszych url nie stawiaæ nic na pocz¹tku,
+
+ * ustalanie podstawoej œcie¿ki do plików urls w settings(nazwa_projektu.urls):
+ - ROOT_URLCONF = 'educa.urls' 
+
+ * url z parametrem liczbowym:
+ - url(r'^(?P<pk>\d+)/edit/$',
+        views.CourseUpdateView.as_view(),
+        name='course_edit'),
+
+ * na koñcu ka¿dego url stawiamu $
+
+ * nazwy podane w url s¹ takie same, aby siê do nich odnieœæ w widokach
+
+ * definiowanie liczby w url:
+ - (?P<pk>\d+)
+
+ * wprowadzanie stringa do url:
+ - (?P<model_name>\w+)
+
+ * podaæ opis danego url.

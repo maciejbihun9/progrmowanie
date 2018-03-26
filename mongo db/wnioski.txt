@@ -1,0 +1,5 @@
+ARCHITEKTURA:
+
+ * jeœli chcesz pobraæ z dokumentów kolekcji jakiœ jeden atrybut np. name (liste tych atrybutów) - to nie da rady
+   trzeba pobraæ ca³e dokumenty, z ca³¹ zawartoœci¹!!!
+ - jedyne wyjœcie to metoda distinct() - ale nie daje ona pe³ni mo¿liwoœci

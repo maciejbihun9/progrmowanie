@@ -1,0 +1,111 @@
+ pytania:
+ 
+ - czy ta metoda analizy jest ok?: tak,
+ - trzeba ją przyspieszyć?: tak
+ - inne działanie obliczania otwierania oraz zamykania pozycji:
+ ile rzy ta metoda bedzie odpalana:
+ - dla kilku sektorów - raz na tydzień,
+ aby rozkminić jakie strategie są dobre,
+ to jest tylko skrypt, który zostanie raz odpalony, aby rozkminić dobrą strategie,
+ - ja szukam "perełek",
+ - na razie jest to testowanie efektywności strategii,
+ - to może się długo obiczać, nawet cały dzień, ale jak raz sie obliczy to jest git
+ - dla całego rynku - raz dziennie
+ parametry musze dobrać sam!!! na podstawie mojej wiedzy biznesowej!!!
+ trzeba jechać przez wszystkie elementy? - tak
+ czy da rade zrobić duzy skok wydajności?: nie
+ odkrywanie jaka strategia pasuje to aktywów o określonych parametrach:
+ 
+ - co teraz robie:
+ + badam jak analiza techniczna nam pomaga
+ + jaki mix indykatorów działa najlepiej: 
+ dla konkretnej spółki, dla pewnej grupy spółek oraz całego rynku,
+ 
+ eg. jakaś spółka ma pewne wyceny
+ ja musze wiedzieć jakie wyniki dawały mixy indykatorów itd. dla niej samej,
+ dla grupy oraz calego rynku
+ 
+ + ale jak wydzielić te grupy badawcze!!!:
+ - podział na grupy związane z danymi, które obecnie już posiadam
+ - istnieje duże prawdopodobieństwo, że nie uda mi się odnaleźć tych kategorii,
+ ale czemu nie?
+ volumen zależy od popularności
+ - ustalenie grup cenowych z kapelusza może być mało efektywne, bo musiałbym mieć
+ konkretną wiedzę na temat tych cen, i ch nie mam i nie chce mieć!!!
+ o to właśnie tutaj chodzi!!! - aby wogle nie pracować
+ - trzeba generować zakresy kategorii
+ - takich elementów do grupowania może być jeszcze od cholery
+ (np. aktywa po ostrych wzrostach, aktywa po duzych spadkach, w konkretnym czasie, itd,)
+ - kategorii może być od cholery,
+ konkretna spółka, sektor, cały rynek, przedział volumenów, średnia cena akcji spółki,
+ dla każdego roku z osobna obliczanie tych strategii 
+ - dla każdej takiej kategorii trzeba ustalić odpowiednią strategie
+ 
+ różne strategie - do różnych parametrów
+np. bbands (1,8, 1.5) - TSLA(volume = 2000000, number of shares, avg. price,)
+
+ ZADANIA:
+ * ustalenie przedziałów wartości dla różnych parametrów
+ - wygenerowania całej przestrzeni wartości dla każdego parametru,
+ - wykreowanie takiej sytuacji, gdzie moge dodawać różne parametry
+ i tworzyć bardzie skomplikowane klastry,
+ - używanie różnej kombinacji tych parametrów,
+ - generowanie różnej ilości clustrów
+ - obliczanie strategii dla tyh kategorii, tych aktywów
+ - ustalenie jaka strategia pasuje najlepiej dla jakiego klastra,
+ - najbliższe elementy połączyć w cluster i obliczyć ich średnie,
+ skad wiem ile elementów?
+ - obliczenie wyników dla tych parametrów
+ 
+ * metoda do analiz za pomocą klastrów (market_catgories_analisis):
+ - dane będą pobierane orazu dla wielu aktywów, bo to jest tylko ustalanie 
+ najlepszych strategii,
+ - zadeklarowanie jakie kategorie będą badane (volume, avg.price),
+ - wygenerowania całej przestrzeni wartości dla każdego parametru,
+ - generowanie różnej ilości clustrów,
+ - obliczanie strategii dla tyh kategorii, tych aktywów,
+ -ustalenie jaka strategia pasuje najlepiej dla jakiego klastra,
+ tzn. jakie parametry muszą być badane, aby największe szanse
+ 
+ * utworzenie klasy do analiz za pomocą klastrów:
+ - utworzenie klasy serwisowej dla obliczeń za pomocą klastrów,
+ - wstrzyknięcie komponentów z innej klasy i wykonam obliczenia dla różnych
+ parametrów z firmami z tych samych klastrów,
+ - wyświetlenie wyników dla wielu klastrów w tym samym czasie na tym samym wykresie
+ i porównanie działania strategii dla różnych typów aktywów (drogie akcje, duży wolumen, tanie akcje,)
+ - kiedy zobacze rezultaty wtedy zadecyduje co dalej
+ (czy zapisać w bazie, że dane aktywo należy do danego klasatra i np. na AAPL najlepiej działa jakaś specyficzn strategia)
+ 
+ * ustalanie przedziałów zakresów:
+ (zadanie z zakresu poszukiwania rozwiązania nie koniecznie optymalnego)
+ - zastosowanie symulowanego wyżarzania do estymacji takiego zakresu wolumenów,
+ aby rozwiązanie było najlepsze (strategie dawały najlepsze wzrosty)
+ - przeszukiwanie całego zakresu możliwych rozwiązań i zwrócenie kilku zakresów
+ (bo zakresy będą miały różne początki oraz końce)
+ - ale to jest także jeden z parametrów
+ 
+ * grupowanie aktywów po różnych parametrach:
+ - trzeb ustalić odpowiednie zakresy,
+ - dla ostatniego roku,
+ - przedział średnia cena,
+ - przedział średni wolumen,
+ 
+ * kategoryzacja czasowa:
+ - dla każdego roku,
+ - przydzielenie odpowiednim okresom - odpowiednich etykietek,
+ - okres hossy, okres bessy, okres rosnących stóp procentowych,
+ - ostatnie 2, 3, 4 lata,
+ - obliczenie jak różnią się wyniki dla okresów rocznych między dwa a trzy oraz trzy a cztery,
+ - jakie są różnice 
+ 
+ * ustalenie czy wartość wolumenu może stanowić kategorie:
+ - czy konkretny przedział wolumenu sprawia, że jedne techniki działają lepiej od innych,
+ - ustalenie jakie strategie dla jakich przedziałów wolumenów,
+ - generowanie różnych przedziałów wolumenów, 
+ - dla każdego przedziału wolumenu - estymowanie strategii
+ 
+ STRATEGIE WYKONANIA ZADANIA:
+ * ustalanie wartości wolumenów:
+ - symulowane wyżarzanie,
+ - wrzucanie do jednego wora aktywów w podanym przedziale wolumenu,
+ - dla tych aktywów odpalamy obliczenia 

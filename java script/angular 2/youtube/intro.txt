@@ -1,0 +1,47 @@
+ * it is very modular,
+ 
+ * install much needed modules for a project(in the project directory):
+ - npm install
+ 
+ * compile files and start light server and recompile changes:
+ - npm start
+  
+ * server will work on localhost:8000 
+ 
+ * compile files goes to app folder,
+ - we do not touch that
+ 
+ * assets - for css files that are complierd into src/css files
+
+ * we will work in the dev folder (create it by your self) 
+ 
+ * boot.ts starts all our application,
+ 
+ * node_modules contains all modules and dependencies,
+ 
+ * each angular 2 applications have only one root component,
+ 
+ * boot.ts (in our life this is ngModule!!!) - this is the first file that is executed in the first place,
+ 
+ * there is a only one html file comes from a server into our  
+   browser and then we manipulate that html file in our angular application,
+
+ * the angular 2 server process should be terminated before closing the IDE,
+   you can stop the process using info from here:
+ - https://stackoverflow.com/questions/39091735/port-4200-is-already-in-use-when-running-the-ng-serve-command
+ 
+ * even after some fixes, there is no info about what should be fixed,
+   because the program is still broken and there is no new info about a situation,
+   
+ * all errors are in browser!!!,
+
+ * coping all files it is not good idea, a lot of change implementations there, 
+
+INDEX.HTML
+   
+ * in main html file we have to import all used java script files,
+
+ * we incluse our components into a html code:
+ - <comp></comp>
+
+ * import here boot file to boot all components

@@ -1,0 +1,43 @@
+1. Zamiast zwracaæ metody widoków mo¿na zbudowaæ klasê, która implementuje sposób wyœwietlania danych np.ListView.
+
+ * nie ma tam zbyt du¿o do zyskania, ale jest taka mo¿liwoœæ.
+
+ * ka¿da klasa implementuj¹ca klasê View posiada metodê dispatch:
+    # ogólnie próbuje delegowa¿ ¿¹dania do get lub post
+    # kiedy siê to wywo³uje? - podczas ¿¹dania http, wiêæ jest pierwsz¹, która siê wywo³a
+    # ta metoda mo¿e nam inicjalizowaæ jakieœ obiekty. Pobiera ¿¹danie, wiêc ma dostêp do parametrów z¹dania.
+    # warto j¹ nadpisaæ aby mieæ dodatkow¹ funkcjonalnoœæ widoku podczas inicjaliacji
+    # metoda ta równie¿ zwraca odpowiedŸ
+    def dispatch(self, request, pk):
+        # przypisane obiektu do pola publicznego
+        self.course = get_object_or_404(Course,
+                                        id=pk,
+                                        owner=request.user)
+
+        # wywo³¹nie metody wy¿ej po³o¿onej
+        return super(CourseModuleUpdateView, self).dispatch(request, pk)
+
+    def get(self, request, *args, **kwargs):
+        # tworzenie pustego obiektu formset
+        formset = self.get_formset()
+        # zbudowanie formy wraz z obiektem Course
+        return self.render_to_response({'course': self.course,
+                                    'formset': formset})
+
+    def post(self, request, *args, **kwargs):
+        # zbudowanie formy w zale¿noœci od tego co by³o w POST
+        formset = self.get_formset(data=request.POST)
+
+        # walidacja wszystkich form na raz.
+        # jeœli nie, nastêpuje wygenerowanie szablonu wraz z odpowiednimi komunikatami b³êdów.
+        if formset.is_valid():
+            # zapisanie wszystkich form do bazki
+            formset.save()
+            return redirect('manage_course_list')
+        # przekazanie szablonu do kontekstu i jego generacja
+        return self.render_to_response({'course': self.course,
+                                    'formset': formset})
+
+
+  - metoda dispatch deleguje ¿¹dania do get() oraz post() w zale¿noœci od parametrów ¿¹dania,
+    dlatego te metody te¿ trzeba implementowaæ

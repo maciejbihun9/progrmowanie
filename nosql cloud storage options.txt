@@ -1,0 +1,9 @@
+1. bitnami:
+
+ * Ułatwia proces deplojowania oraz zarządzania aplikacjami,
+ 
+ * Pozwala na utrzymywanie aplikacji w chmurze oraz na zarządzanie nią,
+ 
+ * Bitnami upraszcza proces monitorowania i przechowywania obrazów aplikacji,
+ automatycznie śledząc aktualizacje pakietów, łatki i
+ luki w zabezpieczeniach wszystkich Twoich programów.

@@ -1,0 +1,3 @@
+ * nowe pliki powinno siê tworzyæ dla konkretnych narzêdzi np.:
+ - klasa odpowiedzialna za rekomendacje. Posiada implementacje tego jak nowe produkty bêd¹ rekomendowane.
+ - Nastêpnie wywo³anie metod klasy rekomendacyjnej mo¿e odbyæ siê w pliku widoku

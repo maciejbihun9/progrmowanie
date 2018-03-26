@@ -1,0 +1,16 @@
+1. Jest to œwietny sposób na zarz¹dzanie baz¹ danych za pomoc¹ œwietnego interefejsu
+
+2. Aby zobaczyæ coœ w tym panelu trzeba najpierw zarejestrowaæ dany model w pliku admin,
+
+3. Za pomoc¹ tego interfejsu
+mo¿esz póŸniej wyœwietlaæ, edytowaæ, tworzyæ i usuwaæ obiekty w niezwykle ³atwy sposób.
+
+ * tylko dla testów jako ja, tak¿e nie mo¿na tego u¿yæ w œrodowisku produkcyjnym 
+
+4. Dziêki zaledwie kilku wierszom kodu mo¿na dostosowaæ do w³asnych potrzeb sposób wyœwietlania
+modelu w witrynie administracyjnej Django. Istnieje wiele sposobów na zmianê i rozszerzenie
+witryny administracyjnej.
+
+ * u³atwia to m.in dodawanie oraz wyszukiwanie obiektów w bazie,
+
+5. W przypadku takich aplikacji jak blog znacz¹co u³atwia zarz¹dzanie ca³¹ treœci¹ aplikacji,

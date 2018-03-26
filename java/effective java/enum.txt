@@ -1,0 +1,13 @@
+enum Rank { ACE, DEUCE, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT,
+    NINE, TEN, JACK, QUEEN, KING }
+
+ * list all enums from enum:
+ - Rank.values();
+ 
+ * get enum name:
+ - it is comparable to toString, but to String can be override, name() can not,
+ - Rank.ACE.name()
+ 
+ * enum should not be part of a class or a static method
+ 
+ 

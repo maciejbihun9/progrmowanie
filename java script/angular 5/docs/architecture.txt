@@ -1,0 +1,76 @@
+
+COMPONENTS:
+
+ * dalej widzę, że zmienne klasowe są deklarowane normalnie jako publiczne,
+ przynajmniej bez jakich kolwiek modyfikatorów dostepu,
+
+ * mają umożliwić tylko wyświetlanie się danych na ekranie usera,
+ nic więcej
+
+ * komponenty to tak naprawde dyrektywy, tylko, że rozszerzone o templatkę,
+
+ * kontrokuje skrawek widoku, 
+ 
+ * metadata jest to właśnie adnotacja, która mówi, że klasa jest
+ komponentem,
+ 
+ * providers zapewnieją wstrzykiwanie serwisów do komponentów,
+ które pobierają dane, odpowiadają za DependencyInjection,
+ 
+ * adnotacja mówi, gdzie można znaleźć najważniejsze elementy
+ budujące cały komponent (html, css, nazwa),
+ 
+ * komponentem można zejść na sam dół, tzn. można utworzyć
+ go do samoego kontrolowania html input,
+
+ * component classes are designed to manage templates html files,
+ 
+ * export == public
+
+TEMPLATES:
+
+ * angular templates are dynamic, 
+ 
+MODULES: 
+
+ * all services, comps, directives are modules
+
+ * each file is a module, so we can just import objects from files
+ using export keyword to make some class available for all application,
+
+ * NgModule describes the module
+ 
+ * angular has it s own modularity system called ngModules,
+ 
+ * NgModules are designed to provide some capibilities, workflow,
+ application domain, 
+
+DECORATORS:
+ 
+ * provide metadata about classes,
+ 
+ * tells what class can do and what should do,
+ 
+ * how should work, etc,
+ 
+ * tells something about what is the name of this component etc.,
+ 
+DIRECTIVES:
+
+ * dyrektywy to: ngModel, ngFor, ngIf etc,
+ 
+ * wyglądają jak normalne atrybuty html z wyjątkiem nazwy,
+ 
+SERVICES:
+
+ * angular nie posiada żadnej definicji serwisu,
+
+ * typowe zadania serwisó to:
+ - ładowanie danych,
+ - logowanie wiadomości do konsoli,
+ - walidowanie danych z input tag,
+
+ * są wstrzykiwane przez injector, który je zawiera w trakcie działania
+ aplikacji bo pobrał je z app.module z providers,
+
+ 

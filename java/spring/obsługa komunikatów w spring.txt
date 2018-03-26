@@ -1,0 +1,159 @@
+1. Komunikacja synchroniczna ma wiele zastosowañ, ale nie jest bynajmniej jedynym
+stylem komunikacji miêdzy aplikacjami dostêpnym dla programistów. Asynchroniczna
+obs³uga komunikatów jest podejœciem pozwalaj¹cym na poœrednie wysy³anie komunikatów
+z jednej aplikacji do drugiej, bez potrzeby czekania na odpowiedŸ.
+
+2. Z drugiej strony, kiedy komunikaty s¹ przesy³ane asynchronicznie, jak pokazano
+na rysunku 17.2, klient nie musi czekaæ, a¿ us³uga przetworzy komunikat, ani nawet
+a¿ zostanie on dostarczony. Klient wysy³a komunikat i kontynuuje dzia³anie, zak³adaj¹c,
+¿e prêdzej czy póŸniej dotrze on do us³ugi i zostanie przez ni¹ przetworzony.
+
+3. Komunikaty z kolejki mog¹ byæ
+przetwarzane przez kilku odbiorców. Ka¿dy z nich przetwarza jednak swoje w³asne
+komunikaty.
+
+4. Podobnie jest w przypadku modelu obs³ugi komunikatów punkt-punkt, jeœli wielu
+odbiorców nas³uchuje komunikatów z kolejki, nie wiadomo, który ostatecznie przetworzy
+konkretny komunikat. Ta niepewnoœæ jest dobra, umo¿liwia bowiem aplikacji
+zwiêkszenie zaanga¿owania w przetwarzanie komunikatów poprzez proste dodanie
+kolejnego odbiorcy.
+
+5. Kiedy komunikat jest wysy³any asynchronicznie, klient nie musi czekaæ na jego przetworzenie
+ani nawet dostarczenie. Zostawia komunikat w brokerze komunikatów i kontynuuje
+dzia³anie, ufaj¹c, ¿e komunikat dotrze do odpowiedniego miejsca docelowego.
+Poniewa¿ nie musi czekaæ, klient dostaje woln¹ rêkê w wykonywaniu dalszych dzia³añ.
+Powoduje to znacz¹cy wzrost wydajnoœci klienta.
+
+6. Jeœli adres
+IP us³ugi ulegnie zmianie lub jeœli zacznie ona nas³uchiwaæ na innym porcie, klient
+musi zostaæ odpowiednio zmodyfikowany, inaczej nie bêdzie móg³ skorzystaæ z us³ugi.
+
+7. Klient zna tylko kolejkê lub temat, przez które komunikat zostanie wys³any. Nie ma dla
+niego znaczenia lokalizacja us³ugi, liczy siê tylko mo¿liwoœæ pobierania komunikatów
+z kolejki lub tematu.
+
+8. Komunikacja synchroniczna ma wiele wad oraz ograniczeñ. Komunikacja asynchroniczna ju¿ je eliminuje.
+
+9. W przeciwieñstwie do komunikacji RPC, która najczêœciej koncentruje siê wokó³
+wywo³ania metody, asynchronicznie wysy³ane komunikaty skupiaj¹ siê na danych.
+
+10. Ka¿dy odbiorca kolejki lub subskrybent tematu, 
+który potrafi przetworzyæ przes³ane przez
+klienta dane, potrafi przetworzyæ komunikat. 
+Klient nie musi znaæ szczegó³ów us³ugi.
+
+11. Klient zna tylko kolejkê lub temat, przez które komunikat zostanie wys³any. Nie ma dla
+niego znaczenia lokalizacja us³ugi, liczy siê tylko mo¿liwoœæ pobierania komunikatów
+z kolejki lub tematu.
+
+12. Jeœli us³uga jest nadmiernie obci¹¿ona
+i nie nad¹¿a z przetwarzaniem, wystarczy dodaæ kilka nowych instancji us³ugi
+odbieraj¹cych komunikaty z tej samej kolejki.
+
+13. Aby klient móg³ po³¹czyæ siê z synchroniczn¹ us³ug¹, us³uga musi nas³uchiwaæ na
+okreœlonym porcie pod okreœlonym adresem IP. W razie awarii us³ugi klient nie bêdzie
+móg³ kontynuowaæ dzia³ania.
+
+Przy asynchronicznym wysy³aniu komunikatów klient ma pewnoœæ, ¿e jego komunikaty
+bêd¹ dostarczone. Nawet gdy us³uga jest niedostêpna podczas wysy³ania komunikatu,
+komunikat zostanie przechowany do czasu jej wznowienia.
+
+14. JMS dostarcza jeden standard, który mo¿e byæ wykorzystywany przez wiele us³ug,
+
+15. ActiveMQ, broker komunikatów o otwartym kodzie, jest doskona³ym wyborem, jeœli chodzi
+o asynchroniczn¹ obs³ugê komunikatów za pomoc¹ JMS.
+
+16. Domyœlnie ActiveMQConnectionFactory zak³ada, ¿e broker ActiveMQ nas³uchuje na
+porcie 61616 lokalnego komputera (localhost).
+
+17. produkcyjny broker ActiveMQ najprawdopodobniej
+bêdzie musia³ dzia³aæ na innym komputerze b¹dŸ porcie. W takim przypadku
+adres URL brokera mo¿na okreœliæ przy u¿yciu w³aœciwoœci brokerURL:
+
+<bean id="connectionFactory"
+class="org.apache.activemq.spring.ActiveMQConnectionFactory"
+p:brokerURL="tcp://localhost:61616"/>
+
+18. Broker komunikatów dzia³a na innym porcie komputera, serwera, czyli dzia³a jako serwis,
+udostêpniaj¹cy swoje us³ugi pod podanym adresem url,
+
+19. Ma³o tego: praktycznie
+ka¿da implementacja brokera komunikatów obs³uguje JMS. Nie ma wiêc potrzeby nauki
+niestandardowego API obs³ugi komunikatów przy ka¿dym nowym brokerze. 
+
+20. Szablon JmsTemplate jest odpowiedzi¹ Springa na rozwlek³y i pe³en powtórzeñ kod JMS.
+JmsTemplate zajmuje siê tworzeniem po³¹czenia, uzyskiwaniem sesji i wreszcie wysy³aniem
+oraz odbieraniem komunikatów. Dziêki temu programista mo¿e siê skupiæ na
+generowaniu nowych komunikatów i przetwarzaniu otrzymanych.
+
+21. Trzeba oddaæ API JMS, ¿e klasa JMSException posiada dosyæ obszerny i opisowy zbiór
+podklas, które daj¹ nam pewne pojêcie o charakterze b³êdu.
+
+22. JMS jest œwietne w sytuacji, gdy chcemy powiadomiæ u¿ytkowników o jakieœ sytuacji lub zdarzeniu,
+
+23. Nasza aplikacja nie musi siê martwiæ o to kto otrzyma informacje, wysy³a tylko wiadomoœci do kolejki,
+gdzie informacja jest przetwarzana
+
+24. Metoda receive() szablonu JMS w momencie wywo³ania spróbuje pobraæ komunikat
+z brokera. W przypadku braku dostêpnych komunikatów poczeka, a¿ jakiœ siê pojawi.
+
+25. Zgodnie z filozofi¹ Springa, by unikaæ kontrolowanych wyj¹tków, nie chcemy,
+¿eby wyj¹tek JMSException wymkn¹³ siê metodzie, tak wiêc spróbujemy go przechwyciæ.
+
+26. Oznacza ona, ¿e odbiorca
+musi cierpliwie czekaæ na nadejœcie komunikatu, jako ¿e metoda receive() wstrzyma
+wykonanie do momentu odebrania komunikatu (lub przekroczenia limitu czasowego).
+Czy¿ nie jest dziwne, ¿e konsumujemy synchronicznie komunikat, który zosta³ wys³any
+asynchronicznie?
+Tu w³aœnie przydadz¹ nam siê obiekty POJO sterowane komunikatami. Zobaczmy,
+jak odbieraæ komunikaty asynchronicznie, wykorzystuj¹c komponenty, które reaguj¹ na
+komunikaty, zamiast na nie czekaæ.
+
+27. Jest mo¿liwoœæ u¿ycia komponentu, który bêdzie oczekiwa³ na komunikatu i powiadomi aplikajcjê klienck¹
+od razu po otrzymaniu jakiegoœ. Stwarza to warunki do nieblokowania aplikacji podczas oczekiwania na komunikat.
+
+28. W ci¹gu ostatnich kilku lat bardzo du¿e uznanie zdoby³ tak¿e Advanced Message
+Queuing Protocol (AMQP, zaawansowany protokó³ kolejkowania komunikatów). Jak
+siê okazuje, Spring zapewnia wsparcie dla wysy³ania komunikatów przy jego u¿yciu,
+o czym przekonasz siê w nastêpnym podrozdziale. 
+
+29. Obs³uga komunikatów przy u¿yciu AMQP:
+
+ * alternatywa dla jms
+
+ * Jak siê okazuje, AMQP w porównaniu z JMS wypada pod kilkoma wzglêdami lepiej.
+Przede wszystkim AMQP jest protoko³em warstwy po³¹czenia (ang. wire-level protocol),
+natomiast JMS definiuje specyfikacjê API.
+
+ * W konsekwencji AMQP zapewnia wiêksze mo¿liwoœci wspó³dzia³ania ni¿
+JMS — obejmuj¹ one bowiem nie tylko ró¿ne implementacje AMQP, lecz tak¿e inne
+jêzyki i platformy.
+
+ * Spring AMQP udostêpnia API, dziêki któremu korzystanie
+z AMQP staje siê bardzo podobne do stosowania dostêpnej w Springu abstrakcji JMS.
+
+ * AMQP wprowadza dodatkowy element, który okresla do jakiej kolejki ma powêdrowaæ dana wiadomoœæ,
+zale¿y to od podanych argumentów.
+
+ * AMQP jest mocno konfigurowalny,
+
+30. Spring w g³ównej mierze polega na konfiguracji,
+
+31. Wszystko w Springu jest tak zajebiœcie ³atwe!!,
+
+32. Zamiast synchronicznie odpytywaæ kolejkê i oczekiwaæ na odebranie komunikatu,
+Spring AMQP udostêpnia tak¿e mo¿liwoœæ skorzystania z obiektów POJO sterowanych
+komunikatami, stanowi¹c¹ odpowiednik tej samej mo¿liwoœci Spring JMS. Zobaczmy
+zatem, jak konsumowaæ komunikaty, u¿ywaj¹c Spring AMQP i obiektów POJO sterowanych
+komunikatami.
+
+33. Asynchroniczna obs³uga komunikatów ma kilka zalet w porównaniu do synchronicznego
+RPC. Mniej bezpoœrednia komunikacja powoduje, ¿e aplikacje s¹ ze sob¹ luŸniej
+powi¹zane, co zmniejsza wp³yw awarii jednego z systemów na ca³oœæ.
+
+34. Szablon JMS Springa eliminuje zbêdny kod, czêsto wymagany w tradycyjnym
+modelu programowania JMS.
+
+35. S¹ to sposoby asynchronicznej komunikacji pomiêdzy aplikacjami.
+
+36. 

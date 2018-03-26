@@ -1,0 +1,80 @@
+BASICS:
+
+ * podczas dodawania kodu do strony nale¿y uwa¿aæ na wszystkie komentarze oraz
+cudzys³owie, bo mog¹ zostaæ Ÿle interpretowane przez przegl¹darke i bêdzie dupa,
+
+ * CORS - allows to call Ajax requests to servers under other domains,
+ we can get the resources from other servers,
+ - this is the recomended idea for cracking the cross-domain concept,
+ - here some additional informations are added to the headers of the requests,
+
+ * web does not allows users to get page content from other domains
+ eg. we can not get images from other domains using <img> src, this is dangerous!
+ 
+URL/URI:
+
+ * encode a url - this encodes only only the special characters of the url:
+ - I have to encode them, because the special characters will be tract badly
+ - var uri = "https://w3schools.com/my test.asp?name=stale&car=saab";
+ - var res = encodeURIComponent(uri); 
+ - from res i get the encoded url
+
+COOKIES:
+
+ * we receive cookies from the server and then we can use it around the whole application,
+ 
+ * it is very usefull to pass the application states between app stages,
+ 
+ * server can send a cookie with data access informations to the client,
+ 
+ * are very fuckin important and we can not interact with the websites without them!!!,
+ 
+ * server could not know whether the requestes are coming to the server from the same browser oraz
+ not, so each request was tract the same wothout any knowledge about it,
+ 
+ * cookie is saved on the client side computer/machine and is sended back and fourth,
+ this cookie is set after the user authentication, this is just a data,
+ 
+ * only cookie velue is sent over the web,
+ Cookie: value,
+ 
+ * they say that cookie file is encoded from url!!!, very strange for me, because I thought that
+ we have to use all credentials to store some values or informations there,
+
+ * with the first response to the client, the server sends this cookie,
+ 
+ * cookies lives only when the browser is opened, and they die when is closed,
+ 
+ * Without the expires option, a cookie has a lifespan of a single session,
+ 
+ * when cookie has an expire date set to older than today date then it is removed right away,
+ 
+ * the browser sends cookies only to sites that matches the domain names,
+ but can be used also for paths. Those paths are chacked after the domain option has been checked,
+ 
+ * we can also specify: secure flag, that allows the browser to send calls only over the https cpnecciton,
+ because the clear text of the cookie would not be safe to send,
+ 
+ * it is not safe to store the data in the cookies, because it is not safe at all,
+ 
+ * the user changes the cookie names, to change teh cookie value we have to send set-cookie again,
+ also with the same domain,
+ 
+ * we can indentify cookie only by name!
+ 
+ * we can delete a cookie by setting his date to the date in the past,
+ 
+ * one domain can have only 20 cookies, and one cookie is restricted to have only 4kB,,
+ 
+ * istnieje równie¿ koncept plików subcookie,
+ 
+ * document.cookie has to be set unchangeable
+ if you want to be sure that it won't be changed,
+ 
+ * we can easly read data from cookies,
+
+COOKIE-BASED XSRF PROTECTION SYSTEM: 
+
+ * to be implemented
+ 
+

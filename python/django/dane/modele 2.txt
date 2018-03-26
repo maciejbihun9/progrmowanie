@@ -1,0 +1,65 @@
+ * modele dla zró¿nicowanej treœci:
+ - Content - reprezentuj¹cego treœæ modu³ów oraz zdefiniowania ogólnego zwi¹zku w
+ celu powi¹zania dowolnego rodzaju treœci,
+
+class Content(models.Model):
+	module = models.ForeignKey(Module, related_name='contents')
+	object_id = models.PositiveIntegerField()
+        # zdefiniowanie jakich modeli mo¿na siê tutaj spodziewaæ
+	content_type = models.ForeignKey(ContentType,
+                                     limit_choices_to={'model__in': ('text',
+                                                                     'video',
+                                                                     'image',
+                                                                     'file')})
+	item = GenericForeignKey('content_type', 'object_id')
+
+W Module bêdzie mo¿na dostaæ siê do atrybutu contents i tam bêd¹ obiektu contents,
+zwi¹zane z ró¿nyi typami.
+ 
+- content_type. Kolumna typu ForeignKey wskazuj¹ca w modelu kolumnê typu
+ContentType.
+- object_id. Kolumna typu PositiveIntegerField przeznaczona do przechowywania
+klucza podstawowego powi¹zanego obiektu.
+- item. Kolumna typu GenericForeignKey prowadz¹ca do powi¹zanego obiektu przez
+po³¹czenie dwóch poprzednich kolumn.
+
+Natomiast kolumna item pozwala na bezpoœrednie pobranie zbioru powi¹zanych
+obiektów, a jej funkcjonalnoœæ zosta³a zbudowana na podstawie dwóch wczeœniej
+wymienionych kolumn.
+
+ * w³asne kolumny modeli:
+ - mo¿na tworzyæ w³asne kolumny modeli,
+
+ - przyk³ad: kolumna, która przechowuje kolejnoœæ elementów danego typu w bazie danych.
+   Dla jednego typu dodaje kolejnoœæ w zale¿noœci od ju¿ nadanych kolejnoœci poprzednim obiektom.
+ - Dla innego typu zaczyna operacja przypisania kolejnoœci od pocz¹tku.
+
+Podczas tworzenia niestandardowych kolumn modelu pamiêtaj, aby pozosta³y jak najbardziej ogólne.
+Unikaj definiowania na sta³e danych, które zale¿¹ od konkretnego modelu lub kolumny. Przygotowana
+przez Ciebie kolumna powinna dzia³aæ w dowolnym modelu.
+
+ - dane na temat tworzenia w³asnych kolumn:
+https://docs.djangoproject.com/en/1.8/howto/custom-model-fields/.
+
+ * MODELE OPARTE NA KLASACH:
+
+ - ListView - posiada wbudowan¹ metodê, która pobiera ca³¹ liste obiektów model.
+
+class ManageCourseListView(ListView):
+    model = Course
+
+    template_name = 'courses/manage/course/list.html'
+
+    # metoda query set domyœlnie pobiera wszystkie elementy zwiazane z klas¹ model.
+    def get_queryset(self):
+        # aby pobieraæ jedynie kursy utworzone przez bie¿¹cego u¿ytkownika.
+        qs = super(ManageCourseListView, self).get_queryset()
+        # zwrócenie tylko elementow dla zalogowanego u¿ytkownika.
+        return qs.filter(owner=self.request.user)
+
+ * DOMIESZKI W KLASACH:
+ - http://django-braces.readthedocs.org/en/latest/
+
+ - dokumentacja: https://docs.djangoproject.com/en/1.8/topics/class-based-views/mixins/,
+
+ - domieszki: https://docs.djangoproject.com/en/1.8/ref/class-based-views/mixins/.

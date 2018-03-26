@@ -1,0 +1,12 @@
+RETRIVING:
+
+ * get document specified fields:
+ - first is a query that retrives document,
+ - second is a list of fields to get,
+ - return self.db[collection].find({"ticker": "AAPL"}, {"ticker":1, "comp_name":1})
+
+SORTOWANIE:
+
+ * sortowanie: 
+ - jedno pole: list(self.db[collection].find().sort("_id", -1).limit(n))[0]
+ - wiele pól: list(self.db[collection].find().sort([("_id", -1), (..., ...)]).limit(n))

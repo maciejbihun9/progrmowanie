@@ -1,0 +1,4 @@
+# ignore angular node modules files
+/node_modules
+# ignore angular e2e files
+/e2e

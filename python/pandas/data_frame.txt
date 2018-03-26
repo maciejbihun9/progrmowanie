@@ -1,0 +1,235 @@
+# Setting an index to dataframe from column that already exists where column
+# Can have many teh same item won't cause any errors!!! - we will have under the same items under one index!
+# this can happen when we load the data from mongo db and trying to set data_frame index using dictionary attr.
+# In this specific situation we will have the a data_frame with items under that index.
+
+ * data_frames columns data_types are commonly as objects,
+   so we should parse columns separatelty to make a use from them,
+ - new_df["age"].astype(int)
+
+ * get base statistics from a data_frame:
+ - df.describe()
+
+ * create data frame:
+ - DataFrame(data=data(ndarray), index=index, columns=columns) 
+
+ * add a new row:
+ - if columns specified in the series are not given then it will be a new column
+ - REMEMEBER that adding a new item creates a new data_frame!!!
+ - old one is not updated!!!,
+ - adding a new row will create a new index, so old one will be destroyed.
+ - you can reset a new index to old one storing it before changing - it will work!!!
+ - results_df = results_df.append(pd.Series({"avg_gain" : procent_margin, "num_of_positions" : 1}), ignore_index=True)
+
+ * get the data from data_frame:
+ - data_frame.values -> ndarray
+
+ * get all column data by name:
+ - data_frame["columns_nmae"] -> Series(index, column)
+ - data_frame.column_name -> Series(index, column)
+
+ * get all columns data by names -> Dataframe
+ - data_frame[["columns_name1", "columns_name2"]] ->  DataFrame
+
+ * iterate over rows in data_frame:
+ - for index, row in data_frame.iterrows():
+
+ * iterate over each item in the dataframe:
+ - for index, item in data_frame.iteritems():
+
+ * reverse index and data order:
+ - data = data[::-1] - pd.Dataframe
+
+ * read the first couple rows:
+ - df.head(n=3) - Dataframe
+
+ * add a new series:
+ - df[name] = pd.Series()
+ - it is really important to add Series with the biggest index,
+   then we can add a new Series, even with smaller number of indexes
+   and if we do not have values in some indexes then those places will be NaN.
+
+ * iterate over a data_frame:
+ - for index, row in data_frame.iterrows():
+ - row is a series
+
+ * convert column type:
+ - it will be viewed as a object in info, because string is a object in pandas	
+ - df[col] = df[col].astype(str)
+
+ * convert entire column:
+ - df = df.astype(str)
+
+ * each column has to be the same type!!!,
+   when we change one value from a float column to a string then
+   entire column will be parsed to a string.
+
+ * column parsing:
+ - pd.to_numeric(df[col], errors="coerse") - str as numeric -> numeric, string -> NaN
+
+ * call a function on a column:
+ - df[col].apply(function) - this is great (functional programming)
+
+ * call a function on a data_frame:
+ - it will be called on column after column basis.
+ - all column is passed as a first parameter
+ - df.apply(function)
+ 
+DATA_FRAME MATHS FUNCTIONS:
+
+ * compute column mean:
+ - df[column].mean() 
+
+SERIES
+
+ * SERIES IS A VECTOR!!!
+
+ * we can apply a numerical functions to columns(series)
+ - df[col] ** 2 -> numeric (we can not do it with lists)
+
+ * because series is a vector then we can use numpy vectorize functions:
+ - np.sum(series) (in numpy we have to use iteration over all list to get the results)
+
+ * create Series:
+ - Series do not have any column names
+ - Series comes from data_frame column query
+ - contains only data and index
+
+ * cumulative return over all series(great for day stock series data percent returns):
+ - series.cumsum() 
+
+FUNKCJE INDEKSOWANIA:
+
+ * specific_value = df.get_value(index_number, "col_name")
+
+ * get the data between dates as indexes:
+ - df[start_date : end_date]
+
+ * get the row at number or by index name(the best way to get a row by index(number or string)):
+ - ix can even get some queries for getting the data.
+ - df.ix[0] -> Series
+ - df.ix[[1,11,123]] -> Dataframe 
+ - df.ix[row, column_name] -> value(int, str, etc)
+
+ * get couple of rows with couple of columns:
+ - df.ix[["row1", "row2"], ["col2", "col3"]] -> DataFrame
+ - df.ix["row2", ["col2", "col3"]] -> Series
+ - df.ix[["row1", "row2"], "col3"] -> Series
+ 
+ * get column data by i-number:
+ - data_frame.iloc[:, column] -> Series
+
+ * get data_frame row by i-number:
+ - data_frame.iloc[[index_value_1, index_value_2]] -> DataFrame
+
+ * get data_frame rows by i-numbers:
+ - gets 0, 2, 6 row with all column
+ - data_frame.iloc[[0,2,6], :]
+
+ Location: where we can address items using index labels
+ 
+ * get the last item:
+ - df.loc[df.shape[0] - 1] - Series
+ 
+ * get items after date:
+ - df.loc[df.index > date]
+ - sometimes df.index can be in string data format which is bad,
+ - all dates has to be parsed to datetime.datetime datatype
+
+ * use true/false expressions in loc indexing:
+ - new_df.loc[new_df["age"].astype(int) > 50]
+ - result = df.loc[df["year"] == 1993, :]
+   result["year"].mean() - gets mean from all rows for column year!   
+
+ - df.loc[pd.isnull(function), :]
+ - df.loc[pd.isnull(function), [col1, col2, col3]]
+
+ * get data_frame row by index:
+ - data_frame.loc[index] -> Series (can be converted into dictionary)
+
+ * get rows by indexes:
+ - data_frame.loc[[id1, id2, id3], col(optional)]
+
+ * assign a new value to selected items:
+ - data_frame.loc[[id1, id2, id3], col(optional)] = "new value" 
+
+CONCATENATE:
+
+ * the concat() function is the main method for combining data_frames
+
+ * adds a new df in the right place under the right columns,
+
+ * returns a new bigger data_frame
+
+ * combine data_frames (nice way to add a row):
+ - pandas will automaticaly fill missing values
+ - pandas doda równie¿ kolumny, które nie istniej¹ w jednej z kolumn,
+ - pandas will automatically align rows in columns
+ - pd.concat([df1, df2, df3])
+ - df can be a data_frame or series with the same columns
+
+ * add df on the right side:
+ - new_df = pd.concat([df1, df2], axis=1)
+
+FUNKCJA GRUPOWANIA
+
+ * get mean of grouped by column items - get column lifeExp and get mean of it for each group:
+ - df.groupby('grouped_col')["lifeExp"].mean(),
+ - data_series = df.groupby(['grouped_col1','grouped_col2'])["lifeExp"].mean() -> Series(single columns of numbers)
+ - data_series.plot().show() -> we can even plot it easly
+
+ * each python object has a plot method associated with it 
+
+ * we can group by many columns:
+ - df.groupby(["col1", "col2"])[[col1, col2]] - oraz pobranie tych kolumn
+
+ * obliczaenie oraz zwrócenie wartoœci unikalnych:
+ - df.groupby('col_name')["col"].nunique()  
+
+ * aggregate by specific functions:
+ - df.groupby('col_name')["col"].agg(np.mean) 
+
+ * we can use any function in agg method call!!!!
+
+ * we can input many functions into the agg() function:
+ - {"title1" : np.mean, "title2" : np.count_nonzero, "title3" : np.std}
+
+ * count unique values in a column:
+ - df[col_name].value_counts(dropna=False)
+
+ * all merge functions calls are by default inner joins:
+
+ * merge two df's by two columns:
+ - column name on the left == column site on the right
+ - pd.merge(df1, df2, left_on="name", right_on="site")
+
+ * merge data_frames:
+ - we can do one merge at a time
+ - df_1.merge(df_2, column_name) -> DataFrame (when dataframes have the same column names),
+
+ * make a simple merge:
+ - df_1.merge(df_2, left_on="name", right_on="site") -> DataFrame (when dataframe have different names)
+
+ * get series with null items:
+ - pandas.isnull(df.column_name) -> Series wiith true/false
+
+ * get series with null items:
+ - df.ix[pandas.isnull(df.column_name)] - > Series
+
+ * change not needed columns into one column ,remove unneeded cols, add a new one from others:
+ - melt(), pivot_table()
+
+FUNKCJE £ADOWANIE:
+
+ * load the data into the csv file:
+ - pd.read_csv("../data/file.csv", keep_default_na=False) - do not load nan data
+ - na_values=['', ''] - what type of a field is recognized as a missing value
+
+VIZUALIZACJA DLA PAND:
+
+ * seaborn is made for pandas
+
+NAN:
+
+ * change values in the list on value specified in the value(in every columns)
+ - df.replace(to_replace=[item1, item2, item3], value=NaN)

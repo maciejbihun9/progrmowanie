@@ -1,0 +1,5 @@
+ * () -> method(), p -> method(p) - mo¿e byæ zast¹pione przez prze samo wywo³anie metody na obiekcie.
+ - System.out.println(s) -> System.out:println
+ - mo¿e siê to odbyæ w miejsce wstawiania parametrów do metody, bi
+ 
+ 

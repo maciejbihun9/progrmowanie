@@ -1,0 +1,99 @@
+1. EmbeddedDatabaseBuilder s³u¿y do testowych danych,
+
+@Bean(destroyMethod="shutdown")
+public DataSource dataSource() {
+return new EmbeddedDatabaseBuilder()
+.addScript("classpath:schema.sql")
+.addScript("classpath:test-data.sql")
+.build();
+}
+
+* Podana konfiguracja Ÿród³a danych sprawdza siê œwietnie w œrodowisku deweloperskim,
+gdy odpalamy testy integracyjne albo uruchamiamy aplikacjê w celu rêcznego
+testowania. Za ka¿dym razem przy uruchomieniu aplikacji stan pocz¹tkowy naszej bazy
+danych jest identyczny.
+
+
+2. Baza danych dla œrodowiska testowego:
+
+@Bean(destroyMethod="close")
+public DataSource dataSource() {
+BasicDataSource dataSource = new BasicDataSource(); 
+dataSource.setUrl("jdbc:h2:tcp://dbserver/~/test");
+dataSource.setDriverClassName("org.h2.Driver");
+dataSource.setUsername("sa");
+dataSource.setPassword("password");
+dataSource.setInitialSize(20);
+dataSource.setMaxActive(30);
+return dataSource;
+}	
+
+ * Musimy znaleŸæ sposób, który umo¿liwi nam tak¹ konfiguracjê komponentu DataSource, aby dla ka¿dego
+œrodowiska wybrana zosta³a jego najbardziej odpowiednia implementacja. 
+
+3. PROFILES - narzêdzie do uruchamiania komponentów w zale¿noœci od œrodowiska
+
+4. Istnieje mo¿liwoœæ wstrzykiwania komponentów, tylko kiedy spe³nione s¹ odpowiednie warunki
+Jest to mo¿liwe za pomoc¹ adnotacji @Conditional
+
+5. Podczas niejednoznacznoœci komponentów mo¿na podaæ adnotacje @Primary
+
+6. Wszystkie klasy oznaczone adnotacj¹ @Component
+maj¹ nadane identyfikatory, a ich nazw¹ jest nazwa
+klasy z pierwsz¹ liter¹ zamienion¹ na ma³¹,
+
+7. Mo¿emy u¿ywaæ adnotacji @Qualifier("name") do metod,
+ aby wskazaæ który komponent ma byæ wstrzykniêty
+w wypadku, gdy jest kilka takich, które implementuj¹ ten sam interfejs,
+
+8. stany komponentu:
+
+ Spring udostêpnia kilka zasiêgów deklaracji komponentów, miêdzy innymi:
+* Singleton — jedna instancja komponentu tworzona dla ca³ej aplikacji;
+* Prototype (prototyp) — jedna instancja komponentu tworzona za ka¿dym razem,
+gdy komponent jest wstrzykiwany lub pobierany z kontekstu aplikacji Springa;
+* Session (sesja) — w aplikacji internetowej jedna instancja obiektu utworzona
+dla ka¿dej sesji;
+* Request (¿¹danie) — w aplikacji internetowej jedna instancja obiektu utworzona
+dla ka¿dego ¿¹dania.
+
+- @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+
+9. 
+@Component
+public class StoreService {
+@Autowired
+public void setShoppingCart(ShoppingCart shoppingCart) {
+	this.shoppingCart = shoppingCart;
+}
+...
+}
+Poniewa¿ komponent StoreService jest singletonem, zostanie utworzony przez Springa
+w trakcie wczytywania kontekstu aplikacji. Po jego utworzeniu Spring podejmie próbê
+wstrzykniêcia koszyka ShoppingCart do metody setShoppingCart(). Ale komponent
+ShoppingCart jest zdefiniowany w zasiêgu sesji, która w tym momencie jeszcze nie
+istnieje. Jego instancja zostanie utworzona dopiero po wejœciu u¿ytkownika na stronê
+i wygenerowaniu sesji.
+
+StoreService jest singletonem, który obs³uguje wiele obiektów o zasiêgu sesji.
+Store service otrzymuje jeden obiekt proxy dziêki któremu zarz¹dza ca³¹ pul¹ obiektów.
+
+Obiekt poœrednicz¹cy musi byæ interfejsem, bo inaczej nie mo¿e byæ znaleziony przez singleton jako obiekt sesji.
+
+10. Ustawianie statycznych wartoœci:
+
+ * @PropertySource("classpath:/com/soundsystem/app.properties") - nad deklaracj¹ klasy,
+
+ * wstrzykiwanie œrodowiska
+
+ @Autowired
+ Environment env;
+
+ * pobieranie w³aœciwoœci:
+
+ env.getProperty("disc.title")
+
+11. Wyra¿enia regularne do sprawdzania wzorców w tekœcie
+
+12. 
+

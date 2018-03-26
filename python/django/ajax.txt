@@ -1,0 +1,13 @@
+ * stosowany, w celu unikniêcia prze³adowania ca³ej strony,
+
+ * pozwala na adresowanie elementów sieci, tylko tych które posiadaj¹ te sam¹ domenê,
+
+ * mo¿emy nawet wymagaæ, aby funkcja by³a tylko obs³ugiwana przez zapytania ajax,
+mo¿na to zrealizowaæ poprzez utworzenie dodatkowego dekoratora python'a,
+
+ * PRZECI¥GNIJ - UPUŒÆ:
+ - realizacjê zadania przeci¹gnij oraz upuœæ trzeba zrealizowaæ za pomoc¹ ajax, aby powiadomiæ
+   serwer o nowej kolejnoœci,
+
+ - potrzeba do tego elementu sortable z jQuery UI
+ - <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>

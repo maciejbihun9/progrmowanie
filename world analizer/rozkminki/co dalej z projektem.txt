@@ -1,0 +1,83 @@
+ ANALIZOWANIE DZIA£ANIA BBANDS:
+ * analizowanie tego jakie parametry bbands dzia³aj¹ najlepiej dla danej spó³ki:
+ JAK:
+ - manipulowanie odleg³oœciami od wykresu ceny,
+ - manipulowanie wieloma parametrami,
+ - manipulowanie ró¿nymi spó³kami, walutami
+ - u¿ywanie konkretnych metod do analizowania tych danych,
+
+ zalety: 
+ - dojœcie do tego jakie parametry dzia³aj¹ najlepiej dla poszczegó³nych spó³ek,
+ a póŸniej uœrednienie tego,
+ - nauka analizowania danych - priorytet w tym projekcie,
+ - zbadanie ró¿nych parametrów,
+
+ wady:	 
+ - czasoch³onny proces, bo du¿o iteracji, 
+ - nie zmieni to tego, ¿e bbands to za ma³o, potrzeba  
+
+ 
+ POBRANIE DANYCH WALUTOWYCH:
+ zalety:
+ - mo¿liwoœæ rozkminki, czy w tych cenach coœ siê znajduje,
+ - czy s¹ jakieœ zale¿noœci miêdzy gie³d¹, a walutami
+ wady:
+ - na razie nie bede ich analizowa³,
+ - 
+
+ CZYTANIE KSI¥¯KI NA TEMAT ANALIZY DANYCH:
+ zalety:
+ - stworzenie notatek na temat analiz danych, uczenia maszynowego,
+ - porobienie sobie linków do ró¿nych metod analiz danych,
+ - w tym czasie pobieranie danych, bieranie informacji,
+ - dewelopowanie pobierania oraz aktualizacji danych
+
+ POBIERANIE DANYCH INTRADAY KRYPTOWALUT - NIE(NA RAZIE):
+ zalety:
+ - teraz ludzie maj¹ wyjebane w te ceny ale na pewno w przysz³oœci bêd¹ badaæ to jebane gówno,
+ - popularnoœæ tego ca³y czas roœnie tak¿e kto wie, mo¿e siê byd³o na to rzuci
+
+ wady:
+ - du¿o pracy,
+ - aplikacja ca³y czas musi dzia³aæ na serwerze,
+ - pobieranie dla wielu walut jest nie mo¿liwe, aby w tym samym czasie sie to zapisywa³o,
+ - nie interesuje mnie to spekulacyjne gówno
+
+ TWORZENIE STRATEGII DLA CZASÓW NIEBYTU ORAZ DOBROBYTU - SKREŒLONE:
+ jak: 
+ - zbudowanie strategii dla czasów kiedy jest hossa,
+ - zbudowanie strategii dla czasów kiedy jest bull market,
+ 
+ wady:
+ - ja nie chce mieæ jakiœ podpowiedzi, ja chce wiedzieæ co radzi sobie lepiej od innych,
+ - to ma byæ zwyk³ê przedstawienie wyników wiêc ja chce mieæ tylko dane oraz wykresy,
+ - ja nie bede wiedzia³ co to jest dobrobyt lub nie,
+
+ ZBUDOWANIE STRATEGII INWESTOWANIA W DOW JONES, S&P 500:
+ jak:
+ * ustalenie punktów wejœcia na rynek i punktów sprzeda¿y w ró¿nych sytuacjach rynkowych (hossa, bull market),
+ * ustalenie punktów sprzeda¿y
+ * podczas bessy na rynku, jaka musi byæ moja przecena, aby mo¿na by³o swobodnie inwestowaæ?,
+ * inwestowanie w akcje poszczególnych spólek te¿ wchodzi w gre, bo np. gazprom!!!
+ * po ka¿dym dniu gie³dowym nastêpuje pobranie aktualnych danych i ich zapisanie(du¿o zapytañ do bazy nawet po jeden dzieñ)
+
+ zalety:
+
+ wady:
+ 
+ UTWORZENIE STRONKI Z WYNIKAMI OBLICZEÑ:
+ jak:
+ 
+ zalety:
+ 
+ wady:
+ - na razie musze rozkminiæ jak analizowaæ co jest tanie, a co nie
+
+ CZY JU¯ TERAZ PRZEDSTAWIAÆ WYNIKI?:
+ zalety:
+ - ju¿ teraz bede mia³ output
+ 
+ wady:
+ - jeszcze trzeba troche pobadaæ,
+ - wiedzieæ bardziej co przedstawiæ
+ 

@@ -1,0 +1,18 @@
+
+ * tworzenie wątków w celu szybszego wykonania:
+ - nie przyniosło żadnego rezultatu,
+ - kod wykonał się dłużej, co było spowodowane odpalaniem wątków
+ oraz przeskakiwaniem między nimi podczas pracy programu.
+ - kod ten nie używa kilku procesorów, także w przypadku zadania nie http
+ jest to bezuzyteczne,
+ - t1 = threading.Thread(target=task1)
+    t2 = threading.Thread(target=task2)
+    t3 = threading.Thread(target=task3)
+
+    t1.start()
+    t2.start()
+    t3.start()
+
+    t1.join()
+    t2.join()
+    t3.join()

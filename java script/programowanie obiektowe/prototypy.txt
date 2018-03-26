@@ -1,0 +1,79 @@
+# U¯YWANIE KONSTRUKTORÓW JEST TO SWEGO RODZAJU ROZSZERZANIE KLAS JAVASCRIPTOWYCH!!!
+# DOK£ADNIE TAK JAK W INNYCH JEZYKACH PROGRAMOWANIA
+
+ * pobieranie typu zmiennej, obiektu:
+>>> function foo(a, b){return a * b;}
+>>> foo.length
+2
+>>> foo.constructor - pobranie typu danego obiektu lub zmiennej
+
+ * Pole prototype tworzone jest w chwili definicji funkcji.
+   Jego wartoœci¹ pocz¹tkow¹ jest pusty obiekt.
+
+ * java script nie posiada klas, a tylko konstruktory, które mog¹ tworzyæ obiekty,
+
+ * rozszerzanie klasy:
+ Gadget.prototype.cena = 100;
+ Gadget.prototype.ocena_uzytkownikow = 3;
+ Gadget.prototype.informuj = function() {
+  return 'Ocena_uzytkownikow: ' + this.ocena_uzytkownikow + ', cena: ' + this.cena;
+ };
+
+ - lepszy sposób (najlepiej zrobiæ rozszerzenie poprzez dodanie nowego obiektu json do obiektu):
+ - to nie jest takie z³e, bo mo¿na dodawaæ takie kapsu³ki do istniej¹cego obiektu,
+   dzieki temu mamy odzielone czêœci klasy w ró¿nych czêœciach kodu. 
+
+ Gadget.prototype = {
+  cena: 100,
+  ocena_uzytkownikow: 3,
+  informuj: function() {
+   return 'Ocena_uzytkownikow: ' + this.ocena_uzytkownikow + ', cena: ' + this.cena;
+  }
+ };
+
+ * Nie wolno zapominaæ o tym, ¿e obiekty s¹ przekazywane przez referencjê, zatem zmiana prototypu
+ poci¹ga za sob¹ zmiany we wszystkich dziedzicz¹cych z niego obiektach, nawet tych - utworzonych
+ wczeœniej - NIE PRAWDA!!! - NIE ZMIENIA ICH WARTOŒCI
+
+ - zmiana danych prototypu nie zmieni ju¿ utworzonych!!!
+
+ * konstruktor to taka klasa,
+
+ * sprawdzanie, czy pole jest polem w³asnym obiektu:
+ - hasOwnProperty()
+
+ * iteracja po polach obiektu:
+ - for (var pole in nowaZabawka) {
+	console.log(pole + ' = ' + nowaZabawka [pole]);
+   }
+
+ * sprawdzanie, czy dany obiekt jest prototypem podanego:
+ - isPrototypeOf()
+
+ * zmiana pól obiektu nadklasowego zmienia pola obiektów podlklas:
+ var ma³pa = {
+	je: 'banany',
+	oddycha: 'powietrzem'
+ };
+function Cz³owiek() {}
+Cz³owiek.prototype = ma³pa;
+
+ - var maciek = new Cz³owiek();
+ - ma³pa.je = "apple" - powoduje, ¿e ka¿dy obiekt zmieni swoj¹ wartoœæ
+ - maciek.je - nie zmienia wartoœci nadklasy, tylko podklasy (konkretnego obiektu)
+
+ * Zmiana prototypu poci¹ga za sob¹ jego zmianê we wszystkich utworzonych
+ przy jego pomocy obiektach, z wyj¹tkiem sytuacji, gdy obiekt prototype zostaje
+ ca³kowicie zast¹piony innym obiektem.
+
+ * pola w³asne s¹ pobierane najpierw z obiektu podklasy, a jak nie znajdzie to z nadklasy,
+
+ * jest mo¿liwe rozszerzanie konstruktorów wbudowanych, ale jest nierekomendowane:
+ - Array.prototype.inArray = function(needle) {
+	for (var i = 0, len = this.length; i < len; i++) {
+		if (this[i] === needle) {
+			return true;
+		}
+	}
+	return false;
+	}

@@ -1,0 +1,35 @@
+ * nie powinno siê u¿ywaæ zmiennych globalnych!!!
+
+ * zmiana wartoœci zmiennej niemutowalnej w funkcji:
+
+value = 10
+
+def funkcja():
+	global value
+	value = -10
+
+print(value) -> zwróci -10
+
+ - jest to przejaw z³ych praktyk
+
+ * przyk³ad funkcji do sprawdzania:
+def ask_yes_no(question):
+	"""Zadaj pytanie, na które mo¿na odpowiedzieæ tak lub nie."""
+	response = None
+	while response not in ("t", "n"):
+		response = input(question).lower()
+	return response
+
+ * mo¿na zwracaæ ile siê chce zmiennych,
+
+ * Zawsze, gdy wartoœæ mutowalna zostaje przekazana do funkcji, musisz zachowaæ
+ostro¿noœæ. Jeœli wiesz, ¿e mo¿esz zmieniæ tê wartoœæ w trakcie jej wykorzystywania,
+utwórz jej kopiê i u¿ywaj tej kopii.
+
+def computer_move(board, computer, human):
+	"""Spowoduj wykonanie ruchu przez komputer."""
+	# utwórz kopiê robocz¹, poniewa¿ funkcja bêdzie zmieniaæ listê
+	board = board[:]
+
+ * najlepiej komunikowaæ siê z programem za pomoc¹ wartoœci zwrotnych!
+

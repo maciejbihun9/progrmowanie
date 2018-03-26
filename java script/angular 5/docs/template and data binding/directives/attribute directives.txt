@@ -1,0 +1,47 @@
+
+ * A directive can be percived as a container for styles. 
+ We can apply a directive to html tags and change their look in some situations,
+ mouse events, clicks, etc.
+ 
+ * they look almost the same as components, but we apply them totally differently,
+
+ * An attribute directive minimally requires building a controller
+ class annotated with @Directive, which specifies the selector that identifies the attribute. 
+ The controller class implements the desired directive behavior,
+ - <p appHighlight>Highlight me!</p>
+ 
+ * the best practice is to prefix selector names to ensure they don't conflict with standard HTML, 
+ 
+ * directive name with ng because that prefix is reserved for Angular and using
+ it could cause bugs that are difficult to diagnose,
+ 
+ * You use the ElementRefin the directive's constructor
+ to inject a reference to the host DOM element,
+ the element to which you applied appHighlight
+ - el.nativeElement.style.backgroundColor = 'yellow';
+ 
+ * directives works only for simple html tags, not for angular declared components!!!
+ <p directive></p>
+ 
+ * CREATES AN INSTANCE FOR EACH ELEMENT THAT IS MARKED
+ 
+ * directives can work on each event:
+ - each javascript event can be a parameter to this method.
+ -  @HostListener('mouseleave') onMouseLeave() {
+    this.highlight(null);
+  }
+  
+ * Of course you could reach into the DOM with standard JavaScript and attach event
+ listeners manually. There are at least three problems with that approach:
+
+You have to write the listeners correctly.
+The code must detach the listener when the directive is destroyed to avoid memory leaks.
+Talking to DOM API directly isn't a best practice. 
+
+ * directive with input parameters:
+ - @Input() highlightColor: string;
+  @Input() mouseLeaveColor: string;
+ - <p appHighlight highlightColor="green" mouseLeaveColor="orange">
+ 
+ - variable when we want to use a field: color = "green"
+ - <p appHighlight [highlightColor]="color" mouseLeaveColor="orange">

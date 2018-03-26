@@ -1,0 +1,5 @@
+# ogólne przemyœlenia jak pisaæ kod,
+# co jest czêsto u¿ywane,
+# pomysleæ nad tym kodem - co tu jaes na trzecim levelu, którego nie widaæ
+
+ * wszystkie templatki s¹ generowane poprzez u¿ywanie pêtli for oraz if elsów,

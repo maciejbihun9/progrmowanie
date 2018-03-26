@@ -1,0 +1,57 @@
+ * convert timestamp to datetime:
+ - to_datetime()
+
+ * get last n items:
+ - data_frame.tail(n=10)
+
+ * count the same elements in the column:
+ - data_frame.column_name.value_counts() -> Series(nazwa_elementu: liczba) 
+
+ * plot series:
+ - data_frame.col_name.value_counts().plot(kind = "bar")
+ - wraz z tym jak powinien wygl¹daæ wykres - s³upkowy
+
+ * assign a new series to our data_frame:
+ - data_frame.assign(series=series)
+
+ * example:
+ - we have a data frame with a series with numbers from 1 to a 100
+ - this series exists in the data_frame with specific column name,
+ - we can exchange this column with values from some dictionary with keys as those series numbers
+   acts as a indexes,
+
+ weekday_names = ["Monday", "thusday", "Wednesday"]
+ weekday_dict = {key : weekday_name[key] for key in range(7)}
+
+def day_of_week(idx):
+	return weekday_dict[idx]
+
+data.weekdays = data.weekdays.apply(day_of_week)
+
+data_head()
+
+ * we can apply a function to data_frame:
+ - data_frame.column = data_frame.column.apply(function),
+
+ * fill NaN fields with an average of values after and before.
+ - we have a different methods to fill those empty rows (linear, time, etc)
+ - data_frame.interpolate()
+
+ * change an index to be daily spaced:
+ - this will remove all datetimes with time and refactor it into date(works as a group by day)
+ - data_frame.resample("D").asfreq()
+
+ * create a column with weekdays for each date:
+ - data_frame[column_name] = data_frame.index.weekday_name
+
+ * compute the differences between column items:
+ - data_frame.column.diff() - the result will be on the next day
+ - data_frame.column.diff().shift(-1) - the result will be on the first day - zwraca nowy obiekt
+   tak¿e nie trzeba siê baæ o przypisanie nowej wartoœci do starego obiektu
+
+ * join data_frames:
+ - data_frame.join(column_name, how="outer")
+
+ * take a mena out of data_frame:
+ - take the data groiped by one week and take a mean out of it:
+ - data_frame.resample("W").mean() 

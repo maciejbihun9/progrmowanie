@@ -1,0 +1,7 @@
+1. Automatically handles sharding and replication
+
+2. Cab be a integration point that is easly accessable for other services,
+
+3. scales seamlessly and automatically,
+
+4. 

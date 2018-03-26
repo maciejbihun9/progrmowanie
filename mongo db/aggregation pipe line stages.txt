@@ -1,0 +1,90 @@
+SORT:
+
+ * if field does not have good name, then there will be no indication!!!,
+ 
+ * for $unwind sorting over an _id of a collection does not work
+ 
+ * sort unwinded document collection:
+ - {"$sort": {"comp_prices.date": -1}},
+
+
+PROJECT:
+
+ * określa co można przepuścić przez rurkę
+
+ * przenosi dokumenty z żądanymi polami do następnego etapu wyszukiwania dokumentów,
+ może przekazać pola już istniejące lub nowo utworzone,
+ 
+ * można określić, że dane elementy mogą być pozbierane w jakąś liste i
+ zostanie zwrócona w inny sposób,
+ - db.collection.aggregate( [ { $project: { myArray: [ "$x", "$y" ] } } ] )
+ 
+ * może wykluczyć pola lub zresetować ich wartość
+ 
+ examples:
+ - return only dates from comp_prices collection,
+ - db.collection.aggregate([
+            { $project: {
+                comp_prices.date : 1
+            }}
+        ])
+		
+		
+GROUP:
+
+ * return document fields in group stage:
+ - "name_to_return": { "$first": '$field_name'} 
+ 
+ examples:
+ - move only those two columns through the pipeline
+ - group by field of comp_prices collection that is a field of a docuemnt
+ - count objects
+ - return with ticker and with duplicates
+ - self.db[collection].aggregate([
+            { "$project": {
+                "_id": 0, "comp_prices.date": 1, "ticker": 1
+            }},
+            {"$group": {
+                "_id" : {"dates" : "$comp_prices.date"},
+                "count": {"$sum": 1},
+                "ticker": { "$first": '$ticker'}
+            }},
+            { "$match": {"count": { "$gt": 1}}}
+        ])
+		
+LOOKUP:
+
+ * pozwala na join kolekcji z tej samej bazy danych,
+ 
+ * połączenie elementów gdzie w jednym jest null, a w drugim wogle nie ma wartości
+ jest jaknajbardziej możliwe.
+
+ examples:
+
+ - db.orders.insert([
+   { "_id" : 1, "item" : "almonds", "price" : 12, "quantity" : 2 },
+   { "_id" : 2, "item" : "pecans", "price" : 20, "quantity" : 1 },
+   { "_id" : 3  }
+ ])
+ 
+ - db.inventory.insert([
+   { "_id" : 1, "sku" : "almonds", description: "product 1", "instock" : 120 },
+   { "_id" : 2, "sku" : "bread", description: "product 2", "instock" : 80 },
+   { "_id" : 3, "sku" : "cashews", description: "product 3", "instock" : 60 },
+   { "_id" : 4, "sku" : "pecans", description: "product 4", "instock" : 70 },
+   { "_id" : 5, "sku": null, description: "Incomplete" },
+   { "_id" : 6 }
+ ])
+
+ * create an inner join
+ - db.orders.aggregate([
+   {
+     $lookup:
+       {
+         from: "inventory",
+         localField: "item",
+         foreignField: "sku",
+         as: "inventory_docs"
+       }
+  }
+ ]) 

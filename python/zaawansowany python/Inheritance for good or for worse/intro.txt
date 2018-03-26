@@ -1,0 +1,87 @@
+
+ * Subclassing built-in types like dict or list or str directly is errorprone
+because the built-in methods mostly ignore user-defined
+overrides. Instead of subclassing the built-ins, derive your classes
+from UserDict, UserList and UserString from the collections
+module, which are designed to be easily extended.
+
+- set works great!!!, but get works us we expected and we can get errors in our calls,
+ >>> class AnswerDict(dict):
+... def __getitem__(self, key): #
+... return 42
+...
+>>> ad = AnswerDict(a='foo') #
+>>> ad['a'] #
+42
+>>> d = {}
+>>> d.update(ad) #
+>>> d['a'] #
+'foo'
+>>> d
+{'a': 'foo'}
+
+ - AnswerDict instance derive from dict, but if we want to add this object
+ into a normal dict then this instance use methods from parent class.
+ - our overrided method is ignored!!!
+ 
+ * when using subclassing we have be very carefull about when our method is called,
+ because if we init our object with initm then our overrideed method might not have
+ any effects,
+ >>> class DoppelDict(dict):
+... def __setitem__(self, key, value):
+... super().__setitem__(key, [value] * 2) #
+...
+>>> dd = DoppelDict(one=1) #
+>>> dd
+{'one': 1}
+>>> dd['two'] = 2 #
+>>> dd
+{'one': 1, 'two': [2, 2]}
+
+ * if we have an instance of a class that inherits from couple classes and 
+ those classes have methods with the same names, then we call a method 
+ from a class that was declared as first.
+ - we can call a method from overclass even like this:
+ class D(B, C):
+ 
+ d = D()
+ C.pond(d) - call a method pond from C for d instance.
+ 
+ * show the inheritnce queue:
+ - Class.__mro__
+ 
+ * we can call a super method not in the first line:
+ - and we can call many methods from overclasses in one method
+	class D(B, C):
+		
+		def ping(self):
+			super().ping()
+			print('post-ping:', self)
+		
+		def pingpong(self):
+			self.ping()
+			super().ping()
+			self.pong()
+			super().pong()
+			
+ Good ways to develop an inheritance:
+ * mixins:
+ - when we want to have many methods that works for many class instances
+ then we want to create an mixin class that contains methods which are designed to
+ work with many types,
+ - methods should be related with behaviour,
+ - should never be instantieted,
+ - caontains just behaviuor of a class ,not a another type, 
+ - should have good naming conventions
+ 
+ * aggregated classes:
+ - those are classes that inherites many different classes, but 
+ class do not contain any other implementation,
+ - those classes inherites many classes in convenient queue,
+ 
+ * btw: the best what you can do is to use delegation adn composition over simple
+ inheritance.
+ - mixins, delegation, composition - this is how we should buil our programs,
+ 
+ 
+ 

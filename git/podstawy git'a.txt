@@ -1,0 +1,83 @@
+
+ * czasami jest nawet dobre, aby zrobić commit jednego pliku,
+
+ * Projekt Gita możesz rozpocząć w dwojaki sposób. 
+ Pierwsza metoda używa istniejącego projektu lub katalogu i importuje go do Gita.
+ Druga polega na sklonowaniu istniejącego repozytorium z innego serwera.
+ 
+ * początek śledzenia plików projektowych:
+ $ git add *.c
+ $ git add README
+ $ git commit -m 'initial project version'
+ 
+ * pobieranie całego projektowego repozytorium:
+ - git clone
+ 
+ * git oferuje różne metody transmisji danych:
+ - git://, http(s)://,
+ - np. git pozwala na pobieranie danych bez uwierzytelnienia użytkownika,
+ 
+ * poprawianie rewizji po błędnym zakomitowaniu:
+ - git commit --amend
+ 
+ eg.
+ - zapomniałem zapisać jeden plik, także dodaje zapomniany plik i komituje z --amend, co nadpisuje
+ poprzedni komit,
+ $ git commit -m 'initial commit'
+ $ git add forgotten_file
+ $ git commit --amend -m "with forgotten file"
+ 
+ * usuwanie poszczególnyhc plików z poczekalni:
+ - git reset HEAD url\file.txt
+ 
+ * usuwanie zmian w projekcie:
+ - niebzepieczna, bo usuwa wszystkie zmiany bez ich zapisania, także odchodzi na zawsze,
+ - git checkout -- file.txt
+ 
+ * pokaż zdalne serwery:
+ - git remote -v
+ 
+ * pobranie danych, których jeszcze nie posiadam (ze zdalnego repo):
+ - git fetch url
+ 
+ - po sklonowaniu można już używać:
+ - git fetch origin
+ 
+ - pobierze to każdą nową pracę jaka została wypchnięta, także dostanę świeże dane
+ całego zespołu,
+ 
+ - te polecenie nie scala jednak zmian z moimi,
+ - muszę to wykonać ręcznie, kiedy bede gotowy
+ 
+ * pobieranie danych ze zdalnego repo i automatyczne ich scalenie:
+ - git pull
+ 
+ * wypychanie danych do repo:
+ - git push origin master
+ 
+ - czasami może być tak, że nie moge zrobić push, bo blokuje mnie
+ zapisywanie innego use'ra,
+ 
+ * zmiana nazwy zdalnej gałęzi:
+ - git remote rename nazwa_1 nazwa_2
+ 
+ * usuwanie odnośnika do zdalnego serwera:
+ - git remote rm nazwa
+
+TAGOWANIE: 
+ 
+ * tworzenie tagów (czyli wersji):
+ - git tag -a v1.4 -m "tag message"
+
+ * pokazywanie tagów:
+ - git tag 
+ 
+ * wrzucanie tagów na serwer:
+ - git push origin nazwa_taga
+ 
+ * wypychanie wszystkich tagów:
+ - git push origin --tags (lub version_name)
+ 
+Sztuczki i kruczki: 
+
+ * 

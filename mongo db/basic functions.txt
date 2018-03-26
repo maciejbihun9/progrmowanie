@@ -1,0 +1,12 @@
+ * create the database:
+ - use database
+
+ * show all collections:
+ - show collections
+
+ * get all objects from the colleciton:
+ - db.coll_name.find()
+
+ * remove collection:
+ - db.coll_name.drop()
+  

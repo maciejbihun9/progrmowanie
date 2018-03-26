@@ -1,0 +1,112 @@
+ * Mo¿e siê tak zdarzyæ, ¿e bêdziesz musia³ utworzyæ interfejs dla innych us³ug, aby tym samym
+umo¿liwiæ im wspó³dzia³anie z nasz¹ aplikacj¹ sieciow¹. Opracowanie API mo¿e pozwoliæ
+firmom zewnêtrznym na u¿ywanie informacji oraz programow¹ wspó³pracê z nasz¹ aplikacj¹.
+
+ - za pomoc¹ rest mo¿na równie¿ np. zapisaæ siê na kurs wysy³aj¹c ¿¹danie, czyli nie tylko pobieranie
+ ale równie¿ postowanie serwera oraz zasobów mo¿e siê odbywaæ za pomoc¹ REST.
+
+ * rest zosta³ stworzony, aby wywo³ywaæ us³ugi przez inne aplikacje,
+
+ * Formaty najczêœciej stosowane do wymiany danych w API typu RESTful to JSON i XML,
+
+ * istnieje wiele opracowanych przez firmy trzecie modu³ów u³atwiaj¹cych budowanie
+API dla projektu. Najpopularniejszy jest Django Rest Framework.
+
+ * REST DOCS: http://www.django-rest-framework.org/api-guide/settings/,
+
+ * Ca³a funkcjonalnoœæ API zostanie umieszczona w katalogu api,
+ co pozwoli zachowaæ eleganck¹ organizacjê projektu,
+
+ * serializowaæ mo¿emy obiekty models oraz ca³e klasy
+
+ * serializacja obiektu do JSON:
+from courses.models import Subject
+from courses.api.serializers import SubjectSerializer
+subject = Subject.objects.latest('id')
+serializer = SubjectSerializer(subject)
+serializer.data
+
+ * formatowanie danych w postaci bajtów do obiektu Python(zbioru):
+from io import BytesIO
+from rest_framework.parsers import JSONParser
+data = b'{"id":4,"title":"Muzyka","slug":"muzyka"}'
+JSONParser().parse(BytesIO(data))
+
+ * Framework ustala, który generator powinien byæ u¿yty podczas negocjacji treœci.
+
+ * jeœli z¹danie posiada w nag³ówku, ¿e chce dostaæ dane w formacie JSON, to:
+from rest_framework.renderers import JSONRenderer
+JSONRenderer().render(serializer.data)
+ - zostan¹ zwrócone dane w postaci bajtów, który posiada te dane w formacie JSON
+   po parsowaniu,
+
+ * wiêcej informacji na temat rest framework:
+ - http://www.django-rest-framework.org/api-guide/renderers/
+i http://www.django-rest-framework.org/api-guide/parsers/.
+
+ * Informacje o wszystkich ogólnych widokach i domieszkach
+oferowanych przez framework REST znajdziesz na stronie http://www.django-rest-framework.org/
+api-guide/generic-views/.
+
+AUTENTYKACJA - REST
+
+ * Uwierzytelnienie jedynie identyfikuje u¿ytkownika wykonuj¹cego ¿¹danie. Nie zezwala na uzyskanie dostêpu
+do widoków lub nie zabrania tego. Je¿eli chcesz ograniczyæ dostêp do widoków, musisz wykorzystaæ
+system uprawnieñ.
+
+ * po autentykacji w ¿¹daniu nastêpuje umieszczenie user'a, a jak nie to jest dodany AnonimowyUser,
+
+ * Istnieje mo¿liwoœæ przygotowania w³asnego mechanizmu uwierzytelniania; mo¿na utworzyæ
+podklasê klasy BaseAuthentication dostarczanej przez framework REST oraz nadpisaæ metodê
+authenticate().
+
+ * rest authentication:  http://www.django-rest-framework.org/api-guide/authentication/.
+
+ * Okreœlenie uprawnieñ do widoków - str. 423
+
+ * w ka¿dym widoku mo¿na okreœliæ w jaki sposób bêdzie przebiegaæ uwierzytelnianie oraz w jaki sposób
+
+ROUTERS - REST:
+
+ * pozwala na utworzenie url na podstawie nazw klasy widoku listy, czyli nie potrzbea pisania wielu adresów
+   url, która mo¿na przewidzieæ jak bêd¹ wygl¹daæ w³asnie na podstawie tych klas. -> U¯YWAÆ,
+
+ * viewset - jest to klasa, która pozwala na utworzenie dobrego url przez router na podstawie nazwy podklasy
+ - nie posiada ona metod takich jak View.
+ - posiada ona list() oraz retrive(), które pozwl¹ na pobranie danych zawartych w url utworzonym przez router.
+ - metoda do ³atwego zwracania danych z wykorzystaniem routerów:
+class UserViewSet(viewsets.ViewSet):
+    """
+    A simple ViewSet for listing or retrieving users.
+    """
+    def list(self, request):
+        queryset = User.objects.all()
+        serializer = UserSerializer(queryset, many=True)
+        return Response(serializer.data)
+
+    def retrieve(self, request, pk=None):
+        queryset = User.objects.all()
+        user = get_object_or_404(queryset, pk=pk)
+        serializer = UserSerializer(user)
+        return Response(serializer.data)
+
+ * u¿ywanie @detail_route pozwala na to, ¿e nie trzeba pisaæ wielu urlsów. nazwa metody do endpoint ¿¹dania,
+tak¿e ³atwo jest zapamiêtaæ koniec adresu url. Wymaga istnienia parametru pk w ¿¹daniu, aby pobraæ odpowieni obiekt.
+DOBRA DO POBIERANIA SZCZEGÓ£ÓW OBIEKTÓW!
+ 
+ * dynamiczne tworzenie adresów URL za pomoc¹ obiektu Router.
+
+ * dokumentacja: http://www.django-rest-framework.org/api-guide/routers/.
+
+TWORZENIE W£ASNYCH UPRAWNIEÑ:
+
+ * np. Chcemy, aby uczestnicy mieli dostêp do treœci jedynie tych kursów, na które siê zapisali.
+Tylko uczestnik zapisany na dany kurs powinien mieæ dostêp do jego zawartoœci.
+
+ - do tego dobra jest klasa basePermission
+
+ * has_permission(). Sprawdzenie uprawnieñ na poziomie widoku.
+ * has_object_permission(). Sprawdzenie uprawnieñ na poziomie egzemplarza.
+
+SERIALIZACJA TEŒCI
+

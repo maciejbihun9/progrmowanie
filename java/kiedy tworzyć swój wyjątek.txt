@@ -1,0 +1,15 @@
+ * musz¹ posiadaæ w³asny pakiet,
+
+ * posiadaj¹ tylko fajne nazwy, ale bez ¿adnej implementacji nowych metod klas.
+
+EELX:
+1. Sytuacje podczas których zg³aszane s¹ w³asne implementacje wyj¹tków:
+
+ * Wyj¹tek zg³aszany gdy przy próbie logowania obiekt {@link Uzytkownik} ma ustawiony znacznik
+ wymuszaj¹cy zmianê has³a,
+
+ * Wyj¹tek zg³aszany, gdy status u¿ytkownika jest ustawiony na zablokowany,
+
+ * Wyj¹tek zg³aszany gdy u¿ytkownik nie jest w pe³ni skonfigurowany,
+
+ * 

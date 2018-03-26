@@ -1,0 +1,12 @@
+
+ * get java object(s) in json format with url parameters:
+ - @RequestMapping("/{collection_name}/num_of_items")
+    @ResponseBody
+    public long getNumberOfItems(@PathVariable("collection_name") String collectionName){
+        return mongo.getCollection(collectionName).count();
+    }
+ - @RequestMapping bounds to this url,
+ - @RequestBody returns object or objects in json format 
+ 
+ * the best method to get the data from the server (including errors):
+ 

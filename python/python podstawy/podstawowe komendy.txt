@@ -1,0 +1,21 @@
+ * wypisanie s³ów po spacji:
+ - print("jeden", "dwa" , "trzy")
+
+ * wypisanie cudzys³owia:
+ - print("Mr\'s")
+
+ * dzwonek systemowy:
+ - print("\a")
+
+ * znak podwójnego cudzys³owia: \'
+
+ * stringki mo¿na normalnie dodawaæ:
+ - string = "sadasf"
+ - string2 = "fafdsg"
+ - c = string + string2
+
+ * wypisanie tego samego tekstu wiele razy:
+ - print("string" * 10)
+
+ * dzielenie ca³kowite:
+ - //

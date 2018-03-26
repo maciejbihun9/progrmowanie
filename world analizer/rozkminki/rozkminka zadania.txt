@@ -1,0 +1,9 @@
+
+ * mam ju¿ zrobione api do obliczania wydajnoœci oraz zwrotów strategii,
+
+ * teraz musze dobraæ odpowiednie grupy do obliczania tych strategii, tak¿e trzeba 
+ pozbieraæ wiele parametrów, aby wydzieliæ te grupy i ustaliæ, czy sitnieje jakaœ
+ grupa, gdzie prawdopodobieñstwo jest wiêksze i dla jakich wspó³czynników,
+
+ * dodatkowe wspó³czynniki by bardzo pomog³y:
+ p/e ratio, kapitalizacja gie³dowa

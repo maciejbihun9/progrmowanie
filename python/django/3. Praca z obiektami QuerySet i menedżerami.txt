@@ -1,0 +1,24 @@
+1. Standardowo
+framework Django jest dostarczany wraz z oferuj¹cym u¿yteczne mo¿liwoœci API przeznaczonym
+do pracy z baz¹ danych. Za pomoc¹ tego API mo¿na bardzo ³atwo tworzyæ, pobieraæ,
+uaktualniaæ i usuwaæ obiekty,
+
+2. Dostarczane przez Django rozwi¹zanie z zakresu mapowania
+obiektowo-relacyjnego (ORM) jest zgodne z bazami danych MySQL, PostgreSQL, SQLite i Oracle.
+
+ * czyli posiadamy za darmo rozwi¹zania ORM!!!, nie trzeba dodawaæ ¿adnych zaleznoœci!
+
+3. Obiekty mo¿na tak¿e tworzyæ w shell, ale nie polecam.
+
+ * w shell mo¿na tworzyæ obiekty, których nie musimy zapisywaæ w bazie,
+
+ * istniej¹ one tylko w pamiêci aplikacji, a nie w bazie. Do tego trzeba u¿yc metody save(),
+
+ * pozwala na ³atwe potestowanie dzia³ania pól naszego obiektu!
+
+4. U¿ywane przez Django kolekcje QuerySet s¹ „leniwe” i dzia³aj¹ jedynie wtedy, gdy
+zostan¹ do tego zmuszone. Dziêki takiemu zachowaniu charakteryzuj¹ siê niezwykle du¿¹
+efektywnoœci¹,
+
+5.  Ogólnie manager zapytañ pobiera wszystkie obiekty, ale mo¿na utworzyæ nasz personalny
+manager, który bêdzie pobiera³ tylko te obiekty, które zosta³y zdefininowane w filtrach.

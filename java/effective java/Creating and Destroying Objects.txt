@@ -1,0 +1,160 @@
+STATIC FACOTRY METHODS:
+
+ * use static factory methods over constructors to create a new objects,
+ - they have names, so you do not have to overload constructors,
+ - they can return a new object of any subtype,
+ - sometimes they do not have to create a new object any time
+ public static Boolean valueOf(boolean b) {
+	return b ? Boolean.TRUE : Boolean.FALSE;
+ }
+ 
+ * use EnumSet for a set of enum objects,
+ 
+ * factory methods does not need much documentation
+ and are more self-descriptable,
+ 
+ * it is good to create a static void methods when adding new items to
+ a map that contains providers, that are accessable in all application
+ 
+ * huge disadventage with creating classes with not public or protected construcotros
+ is that you can not subclass them, but this is a huge profit because it encoroges
+ you to develop compoeistion over inheritance,
+ 
+ * popular methods for factory classes:
+ - newInstance() - returns a new instance after each call,
+ - getInstance() - returns the same instance after each call,
+ - newType() - returns a new instance, but probably factory is a part of a another class,
+ - getType(), valueOf()
+ 
+ * summary: try to use this technique as much as you can
+ 
+BUILDER PATTERN OVER TELESCOPING PATTERN WITH MANY CONSTRUCTORS:
+
+ * use it when you have many constructor parameters and it is common that
+ you want use them all when creating objects,
+ 
+ * the use case of setters is not good because the java bean can be in inconsistent state for awhile,
+ and it is not good for any concurrent reasons,
+ 
+ * create a class with many parameters like that:
+ - // Builder Pattern
+public class NutritionFacts {
+	private final int servingSize;
+	private final int servings;
+	private final int calories;
+	private final int fat;
+	private final int sodium;
+	private final int carbohydrate;
+	public static class Builder {
+	// Required parameters
+	private final int servingSize;
+	private final int servings;
+	// Optional parameters - initialized to default values
+	private int calories = 0;
+	private int fat = 0;
+	private int carbohydrate = 0;
+	private int sodium = 0;
+
+	public Builder(int servingSize, int servings) {
+		this.servingSize = servingSize;
+		this.servings = servings;
+	}
+
+	// each time returns the same instance
+	public Builder calories(int val) { calories = val; return this; }
+	public Builder fat(int val){ fat = val; return this; }
+	public Builder carbohydrate(int val){ carbohydrate = val; return this; }
+	public Builder sodium(int val){ sodium = val; return this; }
+	public NutritionFacts build() {
+		return new NutritionFacts(this);
+	}
+	}
+	private NutritionFacts(Builder builder) {
+		servingSize = builder.servingSize;
+		servings = builder.servings;
+		calories = builder.calories;
+		fat = builder.fat;
+		sodium = builder.sodium;
+		carbohydrate = builder.carbohydrate;
+	}
+}
+
+ - an example of creating a new object:
+ NutritionFacts cocaCola = new NutritionFacts.Builder(240, 8).
+calories(100).sodium(35).carbohydrate(27).build();
+
+ * use builders each time when you want create a constructor with more than four parameters,
+
+ * are much more safier than javaBeans
+
+SINGLETONS:
+
+ * there are tree methods to create a true singleton,
+
+ * // Singleton with static factory
+public class Elvis {
+	private static final Elvis INSTANCE = new Elvis();
+	private Elvis() { ... }
+	public static Elvis getInstance() { return INSTANCE; }
+	public void leaveTheBuilding() { ... }
+	// readResolve method to preserve singleton property
+	private Object readResolve() {
+		// Return the one true Elvis and let the garbage collector
+		// take care of the Elvis impersonator.
+		return INSTANCE;
+	}
+
+}
+
+ * the best way to create a singleton is by using an enum type:
+ - // Enum singleton - the preferred approach
+	public enum Elvis {
+		INSTANCE;
+		public void leaveTheBuilding() { ... }
+	} 
+	
+	
+ * sometimes it is good to create a class with couple of static methods,
+ when you do that, you want to make sure that constructor is private to indicate that
+ this class is not for creating new classes,
+ - avoid using this construcotr inside a class
+	// Noninstantiable utility class
+	public class UtilityClass {
+	// Suppress default constructor for noninstantiability
+		private UtilityClass() {
+			throw new AssertionError();
+		}
+	... // Remainder omitted
+	}
+ - this assures that any subclass cannot be created
+
+ * don't you ever dare to create String instances like that:
+ - String s = new String("danif");
+ 
+ - String s = "dafa"; - makes sure that this object will be used by the same VM instance, 
+ 
+ * sometimes it is good to create a static section when we do not want to create a couple of instances
+ every time we create a new object.
+ - class Person {
+private final Date birthDate;
+	// Other fields, methods, and constructor omitted
+	/**
+	* The starting and ending dates of the baby boom.
+	*/
+	private static final Date BOOM_START;
+	private static final Date BOOM_END;
+	static {
+		Calendar gmtCal =
+		Calendar.getInstance(TimeZone.getTimeZone("GMT"));
+		gmtCal.set(1946, Calendar.JANUARY, 1, 0, 0, 0);
+		BOOM_START = gmtCal.getTime();
+		gmtCal.set(1965, Calendar.JANUARY, 1, 0, 0, 0);
+		BOOM_END = gmtCal.getTime();
+	}
+	public boolean isBabyBoomer() {
+		return birthDate.compareTo(BOOM_START) >= 0 &&
+			birthDate.compareTo(BOOM_END) < 0;
+	}
+}
+- calendar is an expensive object to create,
+ 

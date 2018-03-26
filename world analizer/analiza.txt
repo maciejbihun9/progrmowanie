@@ -1,0 +1,66 @@
+ANALIZA: 
+ - raz razy dziennie - yes,
+ - jedna dla ca³ego rynku akcji daje nam wiele okazji pod wzglêdem atrakcyjnoœci,
+   ale ma³o wyników, to w g³ównej mierze polagam na sektorze lub ca³oœci - yes,
+ - trzeba dodaæ jakieœ warunki do tych analiz, bo same indykataory nic nie daj¹ - yes,
+   trzeba poprawiæ wyjœcie z pozycji,
+   
+ * wyjœcie z pozycji:
+ - mo¿ne je wyestymowaæ, ju¿ mam dla ró¿nych indykatorów, ale
+   trzeba dodaæ dla jakiœ wyj¹tkowych sytuacji, 
+ 
+
+ wynik:
+ * rodzaj aktywa (akcje, surowce, mieszkania) - yes,
+ * kraj - yes,
+ * wyniki analiz dla ka¿dego indeksu z osobna:
+ - mamy konkretny dzieñ
+ - estymujemy sytuacjê z osttanich dni (dla ka¿dej spó³ki? - tak, bo tam s¹ pere³ki!),
+ - pobieranie danych dla spó³ki, pobieranie ostatnich wyników i ich dodanie z sob¹ -> obliczanie
+ - patrze po kazdym wsp. jakie profity póŸniej dawa³y i licze zyski dla danej metody,
+   jeœli s¹ najwy¿sz,
+
+ * prawdopodobieñstwo zysków / strat - yes,
+ * opis do tej analizy:
+ - dlaczego zawiera takie wyniki, a nie inne,
+ * jakie dane s¹ poparciem dla tego:
+ - pokazanie wykresów cen akcji,
+ - wykresy analiz
+ 
+ROZKMINKA:
+
+ - czy analizy s¹ zabezpieczone przed spadkami? - no,
+ - czy chce je zabezpieczaæ? - nie, 
+ - ja chce znaæ tylko i wy³¹czni stan tych indykatorów i 
+   czego mogê siê spodziewaæ po obecnej sytuacji
+ - NIE TWORZYMY ZABEZPIECZENIA
+
+ - zrobienie anzliz tylko dla kilku sektorów - testowych - yes,
+ - napisanie interfejsu do obliczania sytuacji rynkowej - yes
+ - zapisanie danych dla kilku sektorów,
+ 
+ - pobranie danych dla sektora (pobranie cen dla firm z danego sektora)
+ - pobieranie ostatnich 30 dni
+ - obliczanie indykatorów dla tego sektora oraz innych sektorów,
+ - estymowanie dla jakiego sektora jest teraz najlepsza sytuacja na zyski,
+ - zwrócenie wyników i podanie dlaczego
+ 
+ 
+ - aby analizowaæ sektor, to trzeba pobraæ ceny firm dla ca³ego sektora i 
+ wtedy posumowaæ % zyski dla ka¿dego z nich,
+ - ja musze estymowæ ca³e spó³ki - yes,
+ ale to wymaga tego, aby zapisaæ wyniki do bazy, a póŸniej je wczytaæ podczas
+ analizowania,
+ - czy porównywaæ wyniki jednej firmy z jej sektorem? - nie, s³abe,
+ - czy ze œredni¹ z kilku sektorów - lepiej,
+ - œrednia z jednego sektora, z kilku -> bedzie git
+ 
+ PLAN:
+ * nazwa
+ 
+ * pobieranie cen jednej firmy z 30 dni,
+ * liczenie indykatorów,
+ * porównanie do sektora, innych sektorów,
+ * sprawdzenie czy istnieje fajna okazja,
+ * pokazanie na ekranie, ¿e istnieje fajna okazja,
+ * zwrócenie strategii, które mog¹ zadzia³aæ w liœcie po avg.gain,

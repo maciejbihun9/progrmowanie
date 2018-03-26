@@ -1,0 +1,6 @@
+ * run mongo db:
+ - mongod --port 27017 --dbpath C:\MongoDB\data\db (trzeba odczekaæ chwile na po³¹czenie od bazy),
+
+ * run mongo:
+ - mongod - otwiera baze w folderze C:\data\db
+ - mongo - otwiera konsole pod³¹czon¹ do bazy danych

@@ -1,0 +1,96 @@
+1. ORM jest to mechanizm, który potrafi zast¹piæ jdbc,
+
+2. Podczas tworzenia warstwy trwa³oœci musimy dokonaæ kilku wyborów. Mo¿emy u¿yæ
+JDBC, Hibernate, Java Persistence API (JPA) lub dowolnego innego frameworka utrwalania
+danych. Mo¿emy te¿ zdecydowaæ siê na wykorzystanie którejœ z popularnych
+ostatnio baz danych NoSQL (które wolê nazywaæ bazami bez ustalonego schematu).
+
+3. ¯eby unikn¹æ wi¹zania aplikacji z jak¹œ konkretn¹ strategi¹ dostêpu do danych,
+prawid³owo zaimplementowane repozytoria powinny udostêpniaæ oferowan¹ funkcjonalnoœæ
+za poœrednictwem interfejsów.
+
+4. Jak ³atwo zauwa¿yæ, dostêp obiektów us³ug do repozytoriów odbywa siê poprzez interfejsy.
+Takie rozwi¹zanie ma kilka zalet. Po pierwsze, u³atwia testowanie obiektów us³ug,
+jako ¿e te ostatnie nie s¹ powi¹zane z konkretn¹ implementacj¹ dostêpu do danych.
+Co wiêcej, mo¿na nawet stworzyæ pozorne implementacje tych interfejsów dostêpu do
+danych. Dziêki temu istnieje mo¿liwoœæ przetestowania obiektów us³ug bez koniecznoœci
+³¹czenia siê z baz¹ danych, co znacz¹co przyspiesza testy jednostkowe i pozwala
+wyeliminowaæ ryzyko niepowodzenia testu z powodu niespójnoœci danych.
+
+5. DAO to œwietne rozwi¹zanie z powodu tego, ¿e w œwietny sposób izoluje szczegó³y implementacji
+od kodu aplikacji wiêc mo¿na w ka¿dej chwili podmieniæ sposób dostêpu do danych,
+
+6. Interfesjy s¹ bardzo zalecane do budowy kodu aplikacji,
+
+7. SQLException jest bardzo ogólnym wyj¹tkiem, który trudno jest obs³u¿yæ w bloku catch,
+
+ * Przyczyn¹ jest uniwersalny charakter wyj¹tku SQLException, który swoim zakresem obejmuje
+wszystkie problemy zwi¹zane z dostêpem do danych,
+
+8. Niektóre frameworki utrwalania danych oferuj¹ bogatsz¹ hierarchiê wyj¹tków.
+Hibernate, na przyk³ad, dostarcza prawie dwa tuziny ró¿nych wyj¹tków, ka¿dy nakierowany
+na specyficzny problem przy dostêpie do danych. Dziêki temu mo¿na utworzyæ
+blok catch dla ka¿dego typu wyj¹tku.
+
+9. Ani jdbs, ani hibernate nie daje nam odpowiednije hierarchii obs³ugi wyjatków, która jest 
+odpowiednio nie powi¹zana z konkretn¹ metod¹ utrwalania danych,
+
+10. W przeciwieñstwie do JDBC, Spring oferuje kilka rodzajów wyj¹tków
+dostêpu do danych, ka¿dy opisuj¹cy na swój sposób powód zg³oszenia wyj¹tku,
+
+11. Mo¿emy zatem oczekiwaæ od Springa sta³ego zbioru zg³aszanych wyj¹tków,
+niezale¿nie od wyboru dostawcy mechanizmu utrwalania,
+
+12. ród³a danych JNDI:
+
+ * Serwery te pozwalaj¹ na konfiguracjê Ÿród³a danych
+uzyskiwanego przez JNDI. Niew¹tpliw¹ zalet¹ tego sposobu konfiguracji Ÿróde³ danych
+jest to, ¿e w ten sposób mog¹ byæ zarz¹dzane ca³kowicie z zewn¹trz aplikacji, umo¿liwiaj¹c
+aplikacji za¿¹danie Ÿród³a danych, gdy jest na to gotowa. Poza tym, Ÿród³a danych
+zarz¹dzane w ramach serwera aplikacji s¹ czêsto w puli i mog¹ byæ prze³¹czane przez
+administratorów podczas pracy serwera (w trybie „hot-swap”),
+
+ * Ÿród³a danych mog¹ byæ prze³¹czane podczas pracy serwera,
+
+ * ¿ród³a danych mog¹ byæ uzyskiwane przez JNDI,
+
+ * dane mog¹ byæ uzyskiwane poprzez jndi,
+
+ * niew¹tpliw¹ zalet¹ tego sposobu konfiguracji Ÿróde³ danych
+jest to, ¿e w ten sposób mog¹ byæ zarz¹dzane ca³kowicie z zewn¹trz aplikacji, umo¿liwiaj¹c
+aplikacji za¿¹danie Ÿród³a danych, gdy jest na to gotowa,
+
+ * konfiguracja jndi jest bardziej rozbudowana,
+
+13. Podczas testowania oraz dewelopowania najlepiej u¿ywaæ bazy wbudowanej bazy(H2, Derby),Zawdziêczamy to w du¿ej mierze mo¿liwoœci wype³nienia bazy danymi testowymi,
+usuwanymi przy ka¿dym restarcie aplikacji,
+
+14. W prawdziwej aplikacji najlepiej jest zadeklarowaæ komponenty w Spring z adnotacjami @Profile(),
+które mówi¹ które z dataSource s¹ aktywne w danym momêcie,
+
+15. JDBC w Springu:
+
+ * Istnieje wiele technologii utrwalania. Hibernate, iBATIS i JPA to tylko niektóre z nich.
+Pomimo to ca³kiem du¿a liczba aplikacji zapisuje obiekty Javy do bazy danych za pomoc¹
+starego dobrego JDBC,
+
+ * jdbc jest zbudowany ponad SQL,
+
+ * mo¿esz równie¿ bardziej precyzyjnie ni¿ w przypadku praktycznie ka¿dej
+innej technologii dostroiæ wydajnoœæ dostêpu do danych,
+
+ * JDBC ma jednak
+pewne dodatkowe wymagania odnoœnie prawid³owej obs³ugi po³¹czenia i zapytania,
+ale przede wszystkim obs³ugi wyj¹tku SQLException, który mo¿e zostaæ zg³oszony,
+
+ * ma od chuja zduplikowanego kodu,
+
+ * w interfejsie potrzebne jest u¿ycie klasy JdbcOperations,
+
+ * i tak zawsze jdbc wymaga od u¿ytkownika u¿ycia nadmiarowego kodu do obs³ugi prostego wpisania 
+uzytkownika do bazy danych
+
+ * Spring eliminuje potrzebê pisania zbyt bardzo nadmiarowego kodu, jednak on pozostaje.
+
+16. 
+

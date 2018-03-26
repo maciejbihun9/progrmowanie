@@ -1,0 +1,63 @@
+ * W Pythonie umieszczenie "not" przed
+warunkiem tworzy nowy warunek, 
+którego wartoœæ logiczna jest przeciwna do wartoœci
+logicznej orygina³u,
+
+ * podstawy o zmiennych:
+ - name = "maciek"
+ - przypisanie wartoœci do zmiennej,
+ - U¿ywaj¹c nazwy zmiennej, mo¿esz siêgn¹æ do jej wartoœci.
+- Lepszym sposobem wyobra¿enia sobie tej kwestii 
+by³oby coœ takiego: zmienna odwo³uje siê do wartoœci w taki
+sam sposób jak nazwisko odwo³uje siê do osoby.
+ - ksi¹¿ka telefoniczna - po nazwisku mo¿na dotrzeæ do osoby,
+ - Wiêc jakie to wszystko ma znaczenie? Có¿, w przypadku wartoœci niemutowalnych,
+których u¿ywa³eœ, takich jak liczby, ³añcuchy i krotki, nie znaczy to wiele. Ale ma swoje
+znaczenie w kontekœcie wartoœci mutowalnych, takich jak listy.
+
+- Wiêc mora³, który p³ynie z tej historii, jest nastêpuj¹cy: uwa¿aj na wspó³dzielone
+referencje, kiedy korzystasz z wartoœci mutowalnych. Jeœli zmienisz wartoœæ poprzez
+jedn¹ zmienn¹, zostanie zmieniona dla wszystkich.
+
+- w sytuacji:
+a = 3
+b = a
+a = 2 - nie zmienia b, bo b zosta³a stworzona poprzez przypisanie jej wartoœci z a
+
+ * zmienna = None - jest równoznaczna ze zmienn¹ False,
+
+ * liczby, stringi, krotki - niemutowalne
+
+ * listy mutowalne
+
+ * Python polega na przypisywaniu nowych
+   wartoœci do zmiennej o okreœlonej nazwie,
+
+ - tuple = ()
+ - tuple = (1,2,3,4) - utworzenie nowej zmiennej i przypisanie jej do poprzedniej
+
+ * teraz print to mo¿na robiæ tak:
+ - print("aff", "maciej", "janek", "dasfaf")
+
+ * czêsto stosuj do sprawdzania, czy coœ istnieje lub nie zwyk³¹ klauzule
+ - not in, lub in
+
+ * Kiedy bêdziesz pisaæ swoje w³asne
+programy, spróbuj pomyœleæ o rzeczach, które mog³yby pójœæ w z³¹ stronê,
+a potem staraj siê upewniæ, ¿e Twój program bêdzie sobie z nimi radzi³.
+Wiêc b¹dŸ troszkê pesymist¹.
+
+ * przesy³anie zmiennych do funkcji:
+ - przesy³anie obiektów mutowalnych(list, zbiorów, obiektów) i zmiana ich parametrów tam spowoduje zmianê dla wszystkich
+   referencji do tego obiektu, nawet "return" spowoduje zwrócenie nowej referencji do tego samego obiektu(zbioru, listy) 
+ - inczej jest dla niemutowalych - nie zostan¹ one zmienione
+
+ * wy³¹czenie programu:
+ - sys.exit()
+
+ * odpalanie skryptu z konsoli:
+ - import sys
+ - sys.path.append("url_to_project_path")
+ - import module_to_run
+
+

@@ -1,0 +1,13 @@
+ * jeœli hashcode zwraca te same wartoœci dla obu obiektów, to equals mo¿e, ale nie musi byæ true,
+
+ * jesli hashcode nie zwraca tych samych wartoœci, to napewno obikety nie s¹ równe,
+
+ * Hashmapa dzia³a tak, ¿e posiada obiekty, które maj¹ haschcode, jak ma znaleŸæ obiekt, to
+   pobiera hschcode, a jeœli go znajdzie, to ma mniejsze pole do poszukiwania,
+
+ * jest to Ÿród³em wielu problemów, dlatego powinno siê te metody testowaæ pod wzglêdem 
+   poprawnego dzia³ania,
+
+ * ten koncept jest wykorzystywany w ca³ym API Collections,
+
+ * wszystkie metody set, hashmap dzia³aj¹ na tej zasadzie.

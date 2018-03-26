@@ -1,0 +1,26 @@
+ * PostgresSQL - Jest to te¿ baza danych zalecana do stosowania wraz z Django, co
+wynika z oferowanych przez ni¹ funkcji oraz wydajnoœci dzia³ania. Framework Django jest
+dostarczany wraz z pakietem django.contrib.postgres pozwalaj¹cym na wykorzystanie funkcji
+charakterystycznych dla PostgreSQL. Wiêcej informacji na temat tego modu³u znajdziesz
+na stronie https://docs.djangoproject.com/en/1.8/ref/contrib/postgres/.
+
+ * pobieranie bazy postgres: http://www.postgresql.org/download/
+
+ * jest rekomendowana dla Django ze wzglêdu na po kompatybilnoœæ oraz szybkoœæ 
+
+ * instalacja, konfiguracja str. 432
+
+ * sprawdzenie projektu Django w poszukiwaniu b³êdów:
+ - python manage.py check --deploy
+
+ - pozwala na dopracowanie œrodowiska produkcyjnego przed wdro¿eniem,
+ - nale¿y zawsze sprawdzaæ nasze œrodowisko tym poleceniem.
+
+ * odpalanie serwera: postgres -D "C:\Program Files\PostgreSQL\10\data" - podanie foldera danych
+
+ * superuser: postgres has³o: (podane podczas instalacji): maciek1234
+
+ * pscopg2: adapterem bazy danych PostgreSQL dla Pythona.
+
+ * utworzenie usera: CREATE USER nazwa PASSWORD 'password'
+   utworzenie bazy danych: CREATE DATABASE nazwa_bazy 

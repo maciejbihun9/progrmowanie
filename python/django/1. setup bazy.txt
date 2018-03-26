@@ -1,0 +1,48 @@
+1. Testy aplikacji powinny byæ w pliku tests.py - ciekawe...,
+
+2. W pliku views.py znajduje siê ca³a logika aplikacji - odpowiedzi na ¿¹dania http,
+
+3. Pracê zaczynamy od zdefiniowania pocz¹tkowych modeli naszego projektu... - ciekawe
+
+ * Django tworzy kolumny w bazie dla ka¿dego pola w tym pliku
+
+4.  https://docs.djangoproject.com/en/1.8/ref/models/fields/ - omówienie wszystkich dostêpnych typów kolumn,
+
+5. author = models.ForeignKey(User, related_name='blog_posts')
+
+ * Definiujemy nazwê odwrotnego zwi¹zku, czyli u¿ytkownik (User) do posta (Post),
+
+ * to nam mówi, ¿e poprostu przechowujemy ID danego uzytkownika,
+
+ * Kolumna jest kluczem zewnêtrznym (ForeignKey) i definiuje zwi¹zek typu
+„wiele do jednego”. Wskazujemy Django, ¿e ka¿dy post ma autora, a sam autor
+mo¿e opublikowaæ wiele postów. Dla tej kolumny Django utworzy klucz zewnêtrzny
+w bazie danych, wykorzystuj¹c do tego klucz podstawowy odpowiedniego modelu,
+
+6. Zapisywanie danych w okreœlony sposób:
+
+ * class Meta: ordering = ('-publish',) - zapisywanie danych posortowanych w odwrotny sposób,
+
+7. Django zapewnia obs³ugê daty i godziny z uwzglêdnieniem stref czasowych. Aktywacja i dezaktywacja
+obs³ugi stref czasowych odbywaj¹ siê za pomoc¹ opcji USE_TZ w pliku settings.py
+projektu,
+
+8. Dodaj aplikacjê bloga do installed apps:
+
+ * jest to potrzebne do tego, aby Django móg³s utworzyæ modele danych a bazie danych,
+
+ * W tym momencie Django ju¿ „wie”, ¿e nasza aplikacja jest aktywna w danym projekcie, wiêc
+framework bêdzie móg³ prowadziæ introspekcjê przygotowanych przez nas modeli,
+
+9. Po utworzeniu modeli trzeba je zmigrowaæ,
+
+10. Django generuje nazwy tabel
+przez po³¹czenie nazwy aplikacji i zapisanej ma³ymi literami nazwy modelu (tutaj blog_post),
+
+11. Ka¿da edycja pliku models.py powoduje potrzebê utworzenia migracji oraz jej zmigrowania,
+
+ * makemigrations - utworzenie migracji,
+
+ * migrate - synchro bazy danych
+
+12. 

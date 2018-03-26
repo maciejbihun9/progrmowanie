@@ -1,0 +1,6 @@
+
+ * there is not .ts files in the dubuger,
+ 
+ * only debugger filed in the file makes it availabable
+
+ * create a debugger field in place where you want to stop your program execution,

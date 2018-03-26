@@ -1,0 +1,15 @@
+DU¯O PISNIA JEST PODCZAS U¯YWANIA TEGO DEBUGGERA
+
+1. Zatrzymanie wykonywania kodu na pewnej linijce polega na wstawieniu takiego kodu:
+
+ * import web_pdb
+   web_pdb.set_trace()
+
+2. Wejœcie na localhost:5555 - widok debugowania
+
+3. Wykonanie nastêpnej lini - n,
+
+4. wypisz ca³y obiekt - p dir(obj_name)
+
+5. U¿ywanie debugger czasami prowadzi do wyj¹tku BDP  quit exception przed linij¹ wykonania,
+

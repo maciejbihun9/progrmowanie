@@ -1,0 +1,15 @@
+1. Tu maj¹ siê znajdowaæ interfejsy serwisowe,
+ale zosta³y dodane jakieœ dziwne klasy nie serwisowe,
+ * klasy raportowe oraz klasy wyj¹tków, które s¹ zwi¹zane z kontekstem modu³u w którym siê znajduj¹,
+ * jakieœ dziwnie wygl¹daj¹ce klasy POJO - struktura pliku po rozparsowaniu,
+ * nazwy tych metod serwisowych brzmi¹ podobnie jak nazwy metod repozytoriów,
+ * nazwy zaczynaj¹ siê podobnie do tego jak: merge, save, load,
+ * konfiguracje, raporty oraz wyj¹tki
+
+2. Nie posiadaj¹ one ¿adnych adnotacji,
+
+3. Maj¹ za to pe³n¹ dokumentacjê:
+
+ * opis parametrów, opis wyrzucanych wyj¹tków oraz w jakich sytuacjach mo¿e siê to staæ
+
+ * Co jest zwracane

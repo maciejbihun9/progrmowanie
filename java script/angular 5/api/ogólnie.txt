@@ -1,0 +1,7 @@
+
+ * we can also have enum types here:
+ - because we can have also the enum types here,
+
+ * we can have interfaces here - damn!,
+ 
+ * 

@@ -1,0 +1,107 @@
+1. Jednak w przypadku gdy jedna z tych aplikacji dzia³a w przegl¹darce WWW,
+potrzebne jest nieco inne rozwi¹zanie.
+
+2. WebSocket mo¿e byæ wykorzystywany do prowadzenia komunikacji pomiêdzy aplikacjami
+dowolnego rodzaju, jednak najczêœciej stosuje siê go, by u³atwiæ wymianê
+komunikatów pomiêdzy serwerem oraz aplikacjami dzia³aj¹cymi w przegl¹darkach
+WWW.
+
+3. Wiele przegl¹darek nie wspiera w pe³ni websocket, zwa¿ywszy na te okolicznoœci, prawdopodobieñstwo,
+¿e osoby korzystaj¹ce z naszej aplikacji nie bêd¹ w stanie jej u¿ywaæ, jeœli
+zastosujemy w niej WebSocket, jest ca³kiem wysokie.
+
+4. Dok³adnie to samo dotyczy drugiej strony medalu, czyli obs³ugi protoko³u Web-
+Socket przez serwery aplikacji. GlassFish obs³uguje go ju¿ od kilku lat, jednak wiele
+innych serwerów udostêpni³o niezbêdne mo¿liwoœci dopiero w swoich najnowszych
+wersjach.
+
+5. Nawet jeœli przegl¹darka i serwer aplikacji bêd¹ dostatecznie nowe i wyposa¿one
+w obs³ugê WebSocket, to i tak nie ma gwarancji, ¿e problemy nie wyst¹pi¹ gdzieœ
+pomiêdzy nimi. Poœrednicz¹ce w ruchu sieciowym firewalle zazwyczaj blokuj¹ wszystko,
+co nie jest transmisj¹ HTTP. Nie dysponuj¹ mo¿liwoœci¹ przekazywania po³¹czeñ
+WebSocket b¹dŸ (jeszcze) nie zosta³y skonfigurowane w odpowiedni sposób.
+
+6. Technologia SockJS wybiera technologie, jeœli jest ona dostepna, jeœli nie, to
+wybiera inn¹ metodê po³¹czenia
+
+7. SockJS dzia³a w taki sposób jakby obs³uga WebSocket by³a wszechobecna, 
+a w razie potrzeby, w niewidoczny dla
+nas sposób, wykorzysta rozwi¹zanie awaryjne.
+
+ * @Override
+public void registerWebSocketHandlers(
+WebSocketHandlerRegistry registry) {
+registry.addHandler(marcoHandler(), "/marco").withSockJS();
+}
+
+8. SocjJS pozwala na komunikacje przypominaj¹ca
+wymianê komunikatów WebSocket, bêdzie dzia³aæ prawid³owo, nawet je¿eli w rzeczywistoœci
+przegl¹darka, serwer albo serwer proxy nie bêd¹ obs³ugiwaæ protoko³u
+WebSocket.
+
+9. Na nasze szczêœcie protokó³ HTTP okreœla wszelkie szczegó³y zwi¹zane z generowaniem
+¿¹dañ przez przegl¹darki WWW oraz sposobem ich obs³ugi przez serwery.
+W efekcie niemal nikt nie pisze ju¿ niskopoziomego kodu obs³uguj¹cego komunikacjê
+przy u¿yciu gniazd TCP.
+
+10. Protokó³ HTTP przes³oni³ swoim modelem obs³ugi ¿¹dañ
+i odpowiedzi gniazda TCP; analogicznie protokó³ STOMP stosuje swój format po³¹czeniowy,
+bazuj¹cy na ramkach, przes³aniaj¹c nim po³¹czenia WebSocket.
+
+11. STOMP - równie¿ dzia³a podobnie jak JMS oraz AMQP
+
+12. W przypadku aplikacji produkcyjnych prawdopodobnie zdecydowalibyœmy siê zatem
+na obs³ugê naszej aplikacji WebSocket przez brokera STOMP z prawdziwego zdarzenia,
+takiego jak RabbitMQ lub ActiveMQ. Brokery te s¹ w stanie zaoferowaæ znacznie bardziej
+skalowalne i niezawodne mechanizmy przesy³ania komunikatów, nie wspominaj¹c
+nawet o obs³udze wszystkich poleceñ STOMP.
+
+13. Brokerzy dzia³aj¹ g³ównie na portach localhost, nie inaczej jest ze STOMP,
+
+14. @RequestMapping jest podpiêta tylko pod ¿¹dania HTTP,
+
+15. Konwerter Spring:
+
+ * @MessageMapping("/marco")
+public void handleShout(Shout incoming) {
+	logger.info("Odebrano komunikat: " + incoming.getMessage());
+}
+
+ * Poniewa¿ metoda handleShout() pobiera parametr typu Shout, to zawartoœæ komunikatu
+STOMP zostanie skonwertowana do tego typu przy wykorzystaniu konwertera
+komunikatów Springa.
+
+ * MappingJackson2MessageConverter jest odpowiedzialny za konwersjê obiektów JSON na obiekty JAVY,
+
+ * konwertowanie obiektów tekstowych na obiekty javy odbywa siê automatycznie,
+
+16. Adnotacje @MessageMapping oraz @SubscribeMapping zapewniaj¹ prosty sposób wysy³ania
+komunikatów w odpowiedzi na odebranie komunikatu lub obs³ugê subskrypcji.
+
+17. STOMP umo¿liwia otrzymywanie aktualizacji na temat pojawiaj¹cych siê subsrybowanych obiektów
+bez prze³adowania strony. 
+
+ *  dzia³anie jest bardzo podobne do AJAX. Potrzebna jest równie¿ implementacja SockJS.
+
+18. Kiedy publikujemy komunikat w temacie STOMP, czy to przy u¿yciu metody convertAndSend(),
+czy jako efekt wywo³ania metody obs³ugi, otrzyma go ka¿dy klient subskrybuj¹cy
+dany temat. Jeœli chcemy, ¿eby klienty prezentowa³y kana³ obiektów Spittle
+aktualizowany „na ¿ywo”, takie rozwi¹zanie jest wprost idealne. Jednak mo¿e siê tak¿e
+zdarzyæ, ¿e bêdziemy chcieli przesy³aæ komunikaty przeznaczone dla konkretnego
+klienta, a nie do wszystkich klientów.
+
+19. STOMP jest to dobra metoda do informowania u¿ytkowników, 
+którzy zadeklarowali chêæ odbierania informacji o nowym obiekcie.
+
+20. Ze wzglêdu na asynchroniczny charakter obs³ugi komunikatów STOMP nadawca komunikatu
+mo¿e siê nigdy nie dowiedzieæ, ¿e podczas jego obs³ugi pojawi³y siê problemy.
+
+21. Protokó³ WebSocekt jest fascynuj¹cym sposobem przekazywania komunikatów pomiêdzy
+aplikacjami, zw³aszcza w przypadkach, gdy jedna z tych aplikacji dzia³a w przegl¹darce
+WWW. Ma on kluczowe znaczenie dla pisania wysoce interaktywnych aplikacji
+internetowych, które p³ynnie przekazuj¹ dane pomiêdzy klientem a serwerem.
+
+22. Spring oferuje równie¿ model programowania wy¿szego poziomu, pozwalaj¹cy na
+obs³ugê komunikatów WebSocket przy u¿yciu STOMP — protoko³u warstwy po³¹czenia.
+W tym przypadku komunikaty WebSocket s¹ obs³ugiwane przez kontrolery
+Spring MVC, podobnie jak ¿¹dania HTTP.

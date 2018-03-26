@@ -1,0 +1,116 @@
+# tylko w domu!!!,
+# w pracy interfaces,
+
+ * we can add to a list only objects that are the same type or are direct childs of a type,
+ List<String> list = new ArrayList<>();
+        Object obj = new Object();
+        list.add(obj);
+ - this will cause an error,		
+
+ * In the past you could add a new (bad type) object into a collection
+ without a warning. This warning was catched in the runtime during casting period.
+ 
+ * Now we can use generics that pretend us from that beheviour,
+ 
+ * raw typing is a method of typing where we do not specify any generic types
+ of a list and we can add there all different types.
+ 
+ * generic typing is a method where we can add only parametrized objects
+ - remember that we can not add a new object() to List<String>
+ 
+ * create a method that is able to get any kind of objects:
+ - // Unbounded wildcard type - typesafe and flexible
+	static int numElementsInCommon(Set<?> s1, Set<?> s2) {
+		int result = 0;
+		for (Object o1 : s1)
+			if (s2.contains(o1))
+				result++;
+		return result;
+ }
+ 
+ * we do not use any instanceof checks with generics
+ 
+ 
+ * bounded wildcards allow me to work with couple of types:
+ - here we can work with couple of number types,
+ - private static double sum(List<? extends Number> list) 
+    {
+        double sum=0.0;
+        for (Number i: list)
+        {
+            sum+=i.doubleValue();
+        }
+ 
+        return sum;
+    }
+
+ * do not ever use type declarations without generic types!:
+ List list = new ArrayList() - bad! 
+	
+ * Eliminate uchecked warnings:
+ 
+ * it is better to use lists over arrays, because we d not have
+ to botter with any of supressWarnings anymore,
+ 
+ * those are just simple limitations that we can ommit
+ with no harm,
+ 
+ * In java 7/8 you won't get any errors from generics,
+ that is not true for java 5 or 6
+ 
+ * If your program do not contain any ClassCastExceptions
+ 
+ * Do not ever use any raw typings,
+ 
+ * always prefer list over arrays, because of generic typing,
+ 
+ * it is very important to avoid classCastExceptions warning during compilation,
+ 
+ * when we have an array of generic items E, then the runtime
+ type will be an object!,
+ 
+ * lists ofcourse are developed atop of arrays for
+ performance issues, like ArrayList for example,
+ 
+ * the fundamental restriction is that you can not use 
+ primitive types when using generic types,
+ but any other combinatins are allowed,
+ 
+ * E extends Type - indicate that E must be a type that
+ is a subtype of TYpe,
+ 
+ * use generics as much as you can, create your code in a way
+ where you are not forced to botter with class casting,
+ 
+ * this can only happens when you create a new type,
+ 
+ Favor generic methods:
+ 
+ * create as much generic types as you can:
+ - // Generic method
+ - without it you will get type warnings.
+public static <E> Set<E> union(Set<E> s1, Set<E> s2) {
+	Set<E> result = new HashSet<E>(s1);
+	result.addAll(s2);
+	return result;
+}
+
+ * stateless classes are very safe to share between other classes,
+ 
+ * do not use any castings,
+ 
+ * apply a static method to generic types:
+ - // Returns the maximum value in a list - uses recursive type bound
+public static <T extends Comparable<T>> T max(List<T> list) {
+	Iterator<T> i = list.iterator();
+	T result = i.next();
+	while (i.hasNext()) {
+		T t = i.next();
+		if (t.compareTo(result) > 0)
+			result = t;
+	}
+	return result;
+}
+ 
+ 
+ 

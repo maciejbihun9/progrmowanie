@@ -1,0 +1,19 @@
+
+ * Defi niowanie parametrów funkcji z użyciem *args w celu zagarniania dowolnych nadmiarowych
+argumentów jest klasyczną funkcjonalnością Pythona,
+
+ * generowane id, które jest wyjątkowe podczas życia danego obiektu,
+ 
+ * wizualizacja pracy python'a:
+ - http://www.pythontutor.com/visualize.html#mode=edit
+ 
+ * obiekty są takie same, nawet jeśli nie są hashtable, bo mogą zawirać obiekty,
+ które są hastable, także wtedy są takie same,
+ 
+ * każda nowo utworzona klasa musi posiadać __eq__() oraz __hash__(), bo inaczej
+ nasze obiekty nie będą mogly być wykorzystane w zbiorach oraz słownikach
+ - trzeba zapewnić, że __eq__() NIE zależy od zmienialnych pól, bo jesli tak jest, to
+ metoda hash musi zwrócić unhashable type,
+ 
+ * generatory są fajne, gdy trzeba wygenerować zajebiście dużą ilość liczb
+ w powietrzu, on the fly, bez zapisywania danych i tracenia pamięci,

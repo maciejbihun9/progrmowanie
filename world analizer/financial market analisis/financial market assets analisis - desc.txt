@@ -1,0 +1,11 @@
+1. What kind of data we expect to have?
+
+2. How do we get this data?
+
+2. What kind of analisis we expect to do on this data?
+
+3. What is the best data structure for this system?
+
+4. Create analisis:
+
+ * investigate what kind of parameters work the best analisis

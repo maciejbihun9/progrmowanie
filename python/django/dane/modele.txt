@@ -1,0 +1,247 @@
+
+* trzeba pamiêtaæ, ¿e id s¹ przypisywane automatycznie, nie trzeba ich dopisywaæ, 
+
+PRODUCT_QUANTITY_CHOICES = [(i, str(i)) for i in range(1, 21)]
+
+class Comment(models.Model):
+	post = models.ForeignKey(Post, related_name='comments')
+	name = models.CharField(max_length=80)
+	slug = models.SlugField(ma_length=200, db_index=True)
+	email = models.EmailField()
+	body = models.TextField()
+	created = models.DateTimeField(auto_now_add=True)
+	updated = models.DateTimeField(auto_now=True)
+	price = models.DecimalField(max_digits=10, decimal_places=2)
+	active = models.BooleanField(default=True)
+	available = models.BooleanField(default=True)
+	quantity = forms.TypedChoiceField(choices=PRODUCT_QUANTITY_CHOICES, coerce=int)
+
+	coupon = models.ForeignKey(Coupon,
+                               related_name='orders',
+                               null=True,
+                               blank=True)
+	# to jest w³¹snie dziwne, ¿e dodajemy tutaj polek óre ju¿ jest w obiekcie powiazanym,
+        # pewnie po to, aby nie by³o odzielnych zapaytañ
+        # wysokoœæ rabatu kuponu odzielnie ??? - dzienie, przie¿ jest to zapisane w kuponie
+        discount = models.IntegerField(default=0,
+                                   validators=[MinValueValidator(0),
+                                               MaxValueValidator(100)])
+
+	class Meta:
+		ordering = ('created',)
+		# zdefiniowanie indeksu dla obu kolumn,
+        	# Wspólne zindeksowanie obu kolumn powoduje, ¿e nastêpuje
+        	# wyraŸna poprawa wydajnoœci zapytañ wykorzystuj¹cych kolumny id i slug.
+        	index_together = (('id', 'slug'),)
+
+	def __str__(self):
+		return 'Komentarz dodany przez {} dla posta {}'.format(self.name, self.post)
+
+ * forms.TypedChoiceField - Pozwala u¿ytkownikowi na wybór iloœci sztuk dodawanego produktu
+(od 1 do 20). Wykorzystujemy pole typu TypedChoiceField wraz z opcj¹ coerce=int
+w celu konwersji danych wejœciowych na postaæ liczby ca³kowitej.
+
+ * slug s³u¿y do przechowywania ³adnego adresu url,
+
+ * price Kolumna typu DecimalField, u¿ywa siê w niej typu Pythona o nazwie
+decimal.Decimal do przechowywania liczby rzeczywistej o sta³ej precyzji.
+Maksymalna liczba cyfr (³¹czenie z tymi po przecinku dziesiêtnym) jest okreœlana
+za pomoc¹ atrybutu max_digits, natomiast maksymalna liczba cyfr po przecinku
+dziesiêtnym jest okreœlana przez atrybut decimal_places.
+
+ *  available - Wartoœæ boolowska wskazuj¹ca, czy dany produkt jest dostêpny. Dziêki tej
+wartoœci zyskujemy mo¿liwoœæ wyœwietlania lub ukrywania danego produktu w katalogu.
+
+ Do przechowywania wartoœci pieniê¿nych zawsze u¿ywaj kolumny typu DecimalField. Typ FloatField
+wewnêtrznie opiera siê na typie float Pythona, podczas gdy DecimalField bazuje na typie Decimal
+Pythona. Gdy korzystasz z typu Decimal, unikasz problemów z zaokr¹glaniem wartoœci, jakie nierozerwalnie
+wi¹¿¹ siê z typem float.
+
+1. Atrybut related_name umo¿liwia nadanie nazwy atrybutowi,
+którego u¿ywamy do obs³ugi zwi¹zku miêdzy dwoma obiektami,
+
+ * comments bêdzie dodany do obiektu post jako atrybut, ale nie trzeba go definiowaæ.
+ - pozwoli to na pobranie wszystkich komentarzy dla danego posta - post.comments.all()
+
+ * post dla jednego danego komentarza mo¿na pobraæ poprzez comment.post()
+
+2. W Django wi¹zanie ForeignKey jest zawsze w modelu obiektu którego bedzie wiele do jednego,
+
+3. Ka¿dy model trzeba najpierw zmigrowaæ, a potem mo¿na go zarejestrowaæ w ustawieniach,
+aby mo¿na go by³o u¿ywaæ w panelu admina,
+
+4. ¯aden model nie posiada metod set() oraz get(),
+
+ * odwo³anie nastêpuje poprzez odwo³anie do obiektu oraz do w³aœciwoœci,
+
+5. Model Post (czyli obiekt do którego s¹ powi¹zane obiekty nie posiada ¿adnego pola comments) 
+
+ * odwo³anie post.comments.filter(active=True) - zwróci dowi¹zane do niego obiekty comments mimo, ¿e 
+nie ma takiego zdefiniowanego pola,
+
+6. Pamiêtaj, ¿e po ka¿dej zmianie trzeba przygotowaæ migracjê i j¹ przeprowadziæ,
+
+7. Najlepsz¹ metod¹ do testowania modeli jest console shelowa,
+
+8. Ale wyœwietlanie obiektów w adminie jest jeszcze lepsze,
+
+9. Tworzenie kanonicznych adresów url dla modeli:
+
+ * metoda get_absolute_url() dla modelu jest metod¹ kanoniczn¹
+
+ * jest to metoda która umo¿liwia pobranie adresu url do danego obiektu w bazie,
+któr¹ mo¿na pobraæ w modelu html,
+
+ * def get_absolute_url(self):
+return reverse('blog:post_detail',
+args=[self.publish.year,
+self.publish.strftime('%m'),
+self.publish.strftime('%d'),
+self.slug])
+
+10. slug - slug. Krótka etykieta zawieraj¹ca jedynie litery, cyfry, znaki podkreœlenia lub
+myœlnik. Etykietê wykorzystujemy do przygotowania eleganckich adresów URL,
+które bêd¹ przyjazne mechanizmom SEO,
+
+11. ustawianie daty, która bêdzie mia³a wartoœæ taka jak podczas tworzenia obiektu:
+
+ * created = models.DateField(auto_now_add=True, db_index=True)
+ - tutaj tak¿e zosta³ na³o¿ony indeks na kolumnê
+
+12. Indeksy w bazie danych poprawiaj¹ wydajnoœæ wykonywania zapytañ. Rozwa¿ u¿ycie opcji db_index=True
+dla kolumn, które s¹ czêsto wykorzystywane w zapytaniach za pomoc¹ funkcji filter(), exclude()
+lub order_by(). Kolumny typu ForeignKey lub zdefiniowane z u¿yciem opcji unique=True bêd¹
+zawiera³y indeks. Istnieje równie¿ mo¿liwoœæ zastosowania opcji Meta.index_together i tym samym
+utworzenia indeksu obejmuj¹cego wiêcej ni¿ tylko jedn¹ kolumnê.
+
+13. Relacja wiele do wielu:
+
+class Image:
+
+users_like = models.ManyToManyField(settings.AUTH_USER_MODEL,
+	related_name='images_liked',
+	blank=True)
+
+ np. image.users_like.all() - pobieranie u¿ytkowników którzy polubili to zdjêcie
+
+class User:
+
+user.images_liked.all() - pobranie zdjêæ które polubi³ ten u¿ytkownik
+
+ * Po zdefiniowaniu ManyToManyField Django utworzy poœredni¹ tabelê z³¹czenia przy u¿yciu
+kluczy podstawowych obu modeli. Kolumna typu ManyToManyField mo¿e byæ zdefiniowana
+w dowolnym z dwóch powi¹zanych ze sob¹ modeli,
+
+14. Mo¿na tutaj zdefiniowaæ ró¿ne metody do sprawdzania poprawnoœci danego adresu URL,
+lub innych pól zdefiniowanych w modelu.
+
+ * mo¿na tego dokonaæ za pomoc¹ metody clean_nazwapola(),
+
+ * metoda jest wywo³ywana podczas wywo³aniai metody is_valid na ca³ym formularzu.
+
+15. Klasa modelForm posiada metodê save(), któr¹ mo¿na sobie nadpisaæ.
+
+ * w moim przyk³adzie poprostu pobra³em plik na podstawie podanego adresu url
+   i zapisa³em go razem z reszt¹ podanych danych,
+
+16. Utworzone modele w pliku models.py s³u¿¹ tylko do utworzenia egzemplarza formy,
+nie tworzymy obiektów ich klas poprze wywo³anie publicznego konstruktora. Tworzymy je
+poprzez metodê save formy, która zosta³a na ich podstawie utworzona. Jest to w tym przypadku 
+bardzo fajne bo nie trzeba siê jebaæ z metodami get oraz set.
+
+17. Tworzenie relacji wiele do wielu #2:
+
+ * utworzenie dodatkowego modelu danych, który bêdzie trzyma³ powi¹zanie miêdzy
+zdefiniowanymi obiektami do kótrych posiada referece ForeignKey
+
+class Contact(models.Model):
+	user_from = models.ForeignKey(User, related_name='rel_from_set')
+	user_to = models.ForeignKey(User, related_name='rel_to_set')
+	created = models.DateTimeField(auto_now_add=True, db_index=True)
+
+18. Gdy trzeba bêdzie uwzglêdniæ wiêksz¹ liczbê kolumn w zwi¹zku typu „wiele do wielu”, utwórz niestandardowy
+model wraz z kolumn¹ typu ForeignKey po obu stronach zwi¹zku. Dodaj ManyToManyField
+w jednym z powi¹zanych modeli i naka¿ Django u¿ycie modelu poœredniego, co odbywa siê przez dodanie
+parametru through.
+
+ * W jednym z powi¹zanych modeli dodaj:
+following = models.ManyToManyField('self',
+                                       through=Contact,
+                                       related_name='followers',
+                                       symmetrical=False)
+
+ * through - mówi o modelu, który przechowuje powi¹zanie miêdzy modelami,
+
+ * to nam pozwala na dodawanie dodatkowych kolumn do naszego nowo utworzonego modelu,
+
+ * poniewa¿ User jest modelem nie zmienialnym, to mo¿na pos³u¿yæ siê czyms takim:
+
+# Dynamiczne dodanie poni¿szej kolumny do modelu User.
+User.add_to_class('following', models.ManyToManyField('self',
+    through=Contact,
+    related_name='followers',
+    symmetrical=False)) # Dlatego te¿ jeœli ja obserwujê Ciebie, to nie oznacza, ¿e automatycznie Ty
+obserwujesz mnie.
+
+ * Upraszczamy sposób pobierania powi¹zanych ze sob¹ obiektów za pomoc¹
+metod warstwy ORM w Django user.followers.all() i user.following.all().
+Wykorzystujemy model poœredni Contact i unikamy skomplikowanych zapytañ do
+bazy danych, których wykonanie mog³oby anga¿owaæ dodatkowe z³¹czenia w bazie
+danych. Z tak¹ sytuacj¹ moglibyœmy mieæ do czynienia po zdefiniowaniu zwi¹zku
+we w³asnym modelu Profile.
+
+ * w celu utworzenie w³aœnego modelu u¿ytkownika:
+https://docs.djangoproject.com/en/1.8/topics/auth/customizing/#specifying-a-custom-user-model.
+
+ * pamiêtaj, ¿e w wiêkszoœci przypadków nale¿y dodawaæ nowe w³aœciowœci do utworzonego ju¿ modelu,
+
+19. Utworzenie absolutnego url w pliku settings.py, który utworzy url dla ke¿dego obiektu,
+który zosta³ tutaj zdefinowany:
+
+ ABSOLUTE_URL_OVERRIDES = {
+	'auth.user': lambda u: reverse_lazy('user_detail', args=[u.username])
+}
+
+20. Aplikacja django.contrib.contenttypes jest domyœlnie umieszczana na liœcie INSTALLED_APPS
+podczas tworzenia nowego projektu za pomoc¹ polecenia startproject. Wymieniona aplikacja
+jest równie¿ u¿ywana przez inne pakiety typu contrib, na przyk³ad framework uwierzytelniania
+i aplikacjê administracyjn¹,
+
+ * Aplikacja ta mo¿e œledziæ wszystkie modele 
+zainstalowane w projekcie i zapewnia 
+ogólny interfejs przeznaczony do pracy z modelami,
+
+ * ContentType jest powi¹zany ze wszystkimi obiektami w aplikacji wiêc podczas 
+tworzenia modelu mo¿na go wykorzystaæ jako tak¹ nadklasê dla innych klas
+i go podwi¹zaæ do twrzonego obiektu.
+
+ * pobranie typu obiektu:
+ - target_ct = ContentType.objects.get_for_model(target)
+
+21. Nowe obiekty ContentType s¹ tworzone podczas tworzenia nowych modeli w aplikacji,
+
+ * pobieranie klasy modelu:
+from django.contrib.contenttypes.models import ContentType
+image_type = ContentType.objects.get(app_label='images', model='image')
+image_type
+<ContentType: image>
+
+22. Denormalizowanie danych:
+
+ * pozwala na optymalizacjê dzia³ania aplikacji,
+
+ * Denormalizowanie danych polega na dodaniu kolumny do modelu, który posiada ca³kowit¹ liczbê
+polubieñ np. zdjêcia przez u¿ytkowników, bo pocz¹tkowo posiada³ tylko uzytkowników którzy go polubili,
+
+ * Istnieje wiele sposobów poprawy wydajnoœci, które warto wzi¹æ pod uwagê przed denormalizacj¹ danych.
+Rozwa¿ na przyk³ad u¿ycie indeksów bazy danych, optymalizacjê zapytañ lub buforowanie,
+
+23. Podczas radzenia sobie z obrazami najlepiej u¿ywaæ biblioteli Pillow,
+
+24.  
+
+
+
+
+
+

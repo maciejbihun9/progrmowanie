@@ -1,0 +1,172 @@
+# TYPESCRIPT TO JEST TAKIE POŁĄCZENIE JAVY ORAZ PYTHON'A
+
+ * is not executed in the browser,
+ 
+ * ts has to compiled into a js file to be executed in the browser,
+ 
+ * without IDE, we should read some about converting ts into a js, 15 - 20
+ 
+ * Fortunately TypeScript is similar to other languages like C, Java or C#. And
+differently from JavaScript we can create classes and interfaces, define variable and return
+types.
+
+ * basic types:
+ - boolean,
+ - number,
+ - string
+ 
+ * parse string to int:
+ - string = '12';
+ var a = +string;
+ 
+ * create an object:
+ item: Item = {id: 12, "name" : "Maciej"}
+ item: Item = new Item(12, "Maciej")
+
+ * create a new variable:
+ - var VAR_NAME : TYPE = value
+ 
+ * create an array (of any type):
+ - var list : number [] = [1,2,3]
+ 
+ * create a generic array:
+ - var list : Array<number> = [1,2,3]
+ 
+ * create a list of objects:
+ - var points: Array<Point> = [
+      new Point(),
+      new Point()
+    ];
+	
+ * 	create a enum:
+ - enum Color {RED, GREEN, BLUE}
+ - var c: Color = Color.GREEN
+ 
+ * create a any type variable:
+ - var c: any = 12;
+ 
+FUNCTIONS:
+
+ * function key word is only used out side of a class!!!
+
+ * create a function that has to return something:
+ - someFunction(): any {return 12;}
+ - someFunction(): number {return 12;} 
+ - someFunction(): string {return 'string';}
+ 
+ * create a void function:
+ - this function does not return any results
+ - function warnUser(): void {
+	alert("This is my warning message");
+   }
+   
+ * in PyCharm we do not need any function key words:
+ - someFunction(): number {
+    return 12;
+   }
+
+ * function is declared the same as variable but without any keywords,
+   with simple name and type at the end.
+   
+ * function optional parameter:
+ - funkcja (var: string, name?: string) {} 
+ 
+ * we can have many subscribe function one by one, one after another:
+ - this.route.params.subscribe(params => this.heroService.getHero(+(params['id']))
+ .subscribe(hero => this.hero = hero));
+
+CLASSES:
+
+ * private fields are normally available in the html files, but not in 
+   other classes. There have to be set or get.
+
+ class_functions:
+  
+ * prywatne funkcje też powinny mieć podkreślink przed deklaracja:
+ - private funkcja(){}
+ 
+ * metody statyczne działają dokładnie tak samo jak w javie:
+ - ALE POWINNO SIĘ JE DEKLAROWAĆ ODRAZU PO DEKLARACJI ZMIENNYCH KLASY
+ PRZED DEKLARACJĄ METOD INSTANCJI,
+ - static funkcja(): string {}
+ 
+ * metody get oraz set mogą być generowane automatycznie!!!
+ - on są zawsze publiczne, bo zawierają słowa kluczowe: keywords!!!
+ 
+ * typ zwrotny dla metody może być deklarowany, ale nie musi!!!:
+ - jest deklarowany dokładnei tak samo jak w pythonie 3.6, tylko tam  jest ->, a tu :
+
+ * metoda klasowa może posiadać wartość domyślną (tak samo jak w pythonie , ale nie w javie):
+ - metoda(variable: string = '213'): any{
+    return 'da';
+  } 
+  
+  class_variables:
+
+ * dziedziczenie odbywa się dokładnie tak samo jak w Javie,
+ - super w metodzie może być wywołane jako druga lub dalsza linijka
+ 
+ * obiekt polimorficzny:
+ - var tom: Animal = new Horse("Tommy the Palomino");
+
+ * deklarowanie typów dla zmiennych w klasach jest takie same jak w pythonie 3.6
+ - odbywa się po dwukropku, ale NIE MUSI WYSTĘPOWAĆ WOGLE!!!:
+ - greeting: string;
+ - zmienna: number;
+ - zmienna;
+
+ * modyfikator dostępu dla zmiennych klasowych by default jest public:
+ - zmienna: string;
+ 
+ * prywatne zmienne powinny mieć podkreślink przed jej deklaracją,
+ - private _zmienna: string;
+
+ * nie używanie let, var w klasach, bo nie mają żadnego zastosowania,
+
+ * te wszystkie var, let mają tylko znaczenie poza deklaracją klas,
+ - W klasie nie mają żadnego znacznia,
+
+ * not changed objects:
+ - it is a good practice to declare them as const objects if are not changed later,
+ - const greeter = new Greeter('world'); 
+ 
+INTERFEJSY:
+
+ * deklaracja tak samo jak w Java, ale zmienne oraz metody jak w pythonie!!! 
+ 
+JSON:
+
+ * podawanie obiektu json jako parametru funkcji:
+ - parsowanie formatu json odrazu na obiekt okreslonej klasy
+ - class Point{
+	private _x : number = 0;
+	private _y : number = 0;
+	private _z : number = 0;
+	constructor( p: {x:number;y:number;z?:number;}){
+		this._x = p.x;
+		this._y = p.y;
+		if (p.z)
+			this._z = p.z;
+	}
+	
+	is3d():boolean{
+		return this._z!=0;
+	}
+} 
+
+- var p1 = new Point({x:10,y:20});
+ 
+MODULES:
+
+ * poprostu importowanie modułów
+ - jest to łatwe w IDE, ale w innych jest już zgoła inaczej
+ nie wiadomo jak importować moduły, także potrzebna jest odrębna konfiguracja
+ 
+DECORATORS (aka. ANNOTATIONS):
+
+ * Is used to set up a class with properties,
+ 
+ * tsconfig.json have to contain:
+ - emitDecoratorMetadata and experimentalDecorators for convenience of all project,
+ 
+ * @Component działa jak @Table w Springu

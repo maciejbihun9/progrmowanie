@@ -1,0 +1,8 @@
+1. Istnieje mo¿liwoœæ dodania pól do modelu user zdefiniowanego w Django:
+
+ * jest to mozliwe poprzez zdefiniowanie naszego modelu, który po³¹czymy z modelem user
+   relacj¹ jeden do jeden,
+
+2. Zastosowanie w³asnego modelu u¿ytkownika daje znacznie wiêksz¹ elastycznoœæ, choæ mo¿e
+oznaczaæ równie¿ nieco wiêksz¹ trudnoœæ podczas integracji z innymi aplikacjami, które wspó³dzia³aj¹
+ze standardowym modelem User.

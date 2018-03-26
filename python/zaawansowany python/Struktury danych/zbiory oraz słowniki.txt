@@ -1,0 +1,121 @@
+
+ * dicts są bardzo wysoko wydajnościowe bo działają pod nimi hash tables,
+ 
+ * w pythonie działa wiele dictów nawet jak program ich nie wykonuje,
+ 
+ * zbiory tak samo są zrobione nad hash table,
+ 
+ * kolejność elementów w tych kolekcjach nie zmienia się w czasie życia,
+ 
+ * podczas wyszukiwania igieł w stogu siana dla 10 000 000 igieł, szybkość wyszukiwania
+ jest niemal identycznie zajebista. Dla takiej ilości listy są kilka krotnie wolniejsze!!!
+ Było to dla operatora "in"!!!
+ 
+ * hashtable - posiada hashcode, który nie zmienia sie podczas 
+ działania programu i identyfikuje obiekt.
+ - obiekty nie zmienialane sa hashtable,
+ - tuple może być hashtable, tylko jeśli posiada obiekty hashtable,
+ np. frozenset, typy proste
+ - lista nie jest, bo można ją zmieniać, tak samo jak dict,
+ - hashem typów prostych jest ich wartość, inne zmienna, ale z tą samą wartością
+ mają tą samą wartość hash.
+ 
+SŁOWNIKI:
+
+ * słowniki są utworzone na bazie tablic haszujących, gdzie klucz jest podawany 
+ do metody hash(), która pod podaną wartością szuka obiektu w tej tablicy, jeśli nie znajdzie
+ to zwraca keyError.
+ Aby były równe, to muszą mieć ten sam hash oraz equals.
+ Podczas dodawania elementów tablica może być zbyt duża, także zostanie
+ ona zrekonstruowana w innym miejscu,
+ 
+ * .keys(), value(), items() - nie replikują danych, zwracają widoki, które odrazu
+ zmieniają dane w orginalnym słowniku,
+ 
+ * nie zmieniaj słownika podczas iterowania,
+ 
+ * nie można zmieniać kluczy podczas iterowania, bo to może doprowadzić do tego, że
+ pętla nie przejdzie przez wszystkie elementy,
+ 
+ * nie mamy wpływu na przebudowania tablic, 
+ 
+ * klucze w słownikach muszą być hashtable,
+ 
+ * słowniki w dużych listach zjadają wiele pamięci operacyjnej!!!
+ - warto się zstanowić nad listą krotek (tylko dla wielu milionów)
+ 
+ * jest to czas za pamięć, można wyszukać 2 miliony kluczy w sekundę,
+ - ja poświęcam to pamięć,
+
+ * pobieranie danych ze słowników:
+ - s.get(key, 'na') - zadeklarowanie tego co ma być zwracane, gdy nie ma podanego klucza,
+
+ * obliczenie wystapień słów w tekście:
+ - collections.Counter('abracadabra') 
+ - Counter({'a': 5, 'b': 2, 'r': 2, 'c': 1, 'd': 1}),
+ - dodanie do tego stringa: ct.update('aaaaazzz')
+ 
+ * zachowanie kolejnośco dodawania:
+ - collections.OrderedDict
+ 
+ * tworzenie własnej klasy słownikowej:
+ - class StrKeyDict(collections.UserDict):
+	def __missing__(self, key):
+		if isinstance(key, str):
+			raise KeyError(key)
+		return self[str(key)]
+		
+	def __contains__(self, key):
+		return str(key) in self.data
+		
+	def __setitem__(self, key, item):
+		self.data[str(key)] = item
+		
+ * utworzenie słownika, w którym nie można zmieniać elementów, ale
+ można dodawać nowe.
+ - >>> from types import MappingProxyType
+   >>> d = {1: 'A'}
+   >>> d_proxy = MappingProxyType(d)
+   
+ZBIORY:
+
+ * pisanie konstruktora set() jest wolniejsze
+   niż podanie do {} elementów, bo on musi wykonać operacje na
+   konstruktorze, ale dla frozenset jest to już nie uniknione
+   
+ * każdy obiekt musi być hashable,
+
+ * zajmują duzo pamięci
+
+ * posiadają posrotowane elementy, które sortują się podczas dodawnia
+
+ * bardzo szybkie wyszukiwanie, 
+
+ * nie posiada duplicatów,
+
+ * set nie jest hashtable,
+
+ * frozenset już nim jest,
+
+ * obliczanie ile elementów z jendego zbioru jest w drugim:
+ - len(needles & haystack)
+
+ łączenie zbiorów:
+ - operacje działają normalnie również dla podklas zbiorów,
+ - podczas tych operacji powstaje nowy obiekt i 
+ stary nie jest ruszany
+ 
+ * część wspólna zbiorów:
+ - s.intersection(t)
+ - l & t
+ 
+ * suma zbiorów:
+ - s.union(t)
+ 
+ * w czym zbiory się różnią:
+ - s.difference(t)
+
+ *   
+   
+ 
+ 

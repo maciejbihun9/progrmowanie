@@ -1,0 +1,21 @@
+
+ * Jak łatwo zauważyć, wiele wspomnianych operacji działa tak samo dla tekstów, list
+i tabel. Tekst, listy i tabele razem są nazywane ciągami. […] Polecenie FOR także
+działa ogólnie na ciągach.
+
+ * Sekwencje kontenerowe:
+ - list, tuple i collections.deque mogą przechowywać elementy różnych typów.
+ 
+ * Sekwencje płaskie
+ - są bardziej upakowane, zajmują mniej pamięci, ale zawierają odwołania tylko do typów
+ prostych, także nie posiadają odwołania do obiektów,
+ - str, bytes, bytearray, memoryview i array.array przechowują elementy jednego typu.
+ 
+ * Sekwencje zmienne
+ - list, bytearray, array.array, collections.deque i memoryview
+ 
+ * Sekwencje niezmienne
+ - tuple, str i bytes
+ 
+ * 
+ 

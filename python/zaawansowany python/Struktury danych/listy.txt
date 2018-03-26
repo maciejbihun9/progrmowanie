@@ -1,0 +1,49 @@
+ 
+  * jasne sprecyzowanie celu listy:
+  - listy teraz mają swój lokalny zakres,
+  -  codes = [ord(symbol) for symbol in symbols],
+  
+  * połączenie funkcji z listą elementów:
+  - list(map(funkcja, lista))
+  
+  * nie trzeba stosować znaku końca listy,
+
+  WYCINKI:  
+  * tworzenie wycinków listy:
+  - seq[start:stop:step]
+  
+  * odracanie listy:
+  - lista = [1,2,3]
+  - list(reversed(lista) -> iterator) -> list
+  - lista[::-1]
+  
+  * odczytywanie od drugiej strony, ale co n elementów:
+  -  s[::-n]
+  
+  * usuwanie wycinków:
+  - del s[12:14]
+  
+  * mnożenie listy zawsze powiela jej zakres,
+  
+  * filtrowanie listy i mapowanie funkcji z listą symboli:
+  - wykonanie jakiś funkcji tylko na elementach, które spełniają określone wyrażenie,
+  - list(filter(lambda c: c > 127, map(ord, symbols)))
+  
+  * wykonanie funkcji na każdym elemencie:
+  - rozwiązanie dosyć szybkie i krótkie,
+  - list(map(lambda c: c * 2, lista))
+  
+  * filter z map nie są wcale jakieś szybsze:
+  - list(filter(lambda c: c > 127, map(ord, symbols)))
+  - [ord(s) for s in symbols if ord(s) > 127]
+  
+  * budowanie listy z wielu petli:
+  - tshirts = [(color, size) for size in sizes for color in colors]
+  
+  * sortowanie listy:
+  - list.sort() - zwraca posortowaną listę, które nie tworzy kopii,
+  jest to ten sam obiekt,
+
+
+
+  

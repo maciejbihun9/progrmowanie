@@ -1,0 +1,143 @@
+ * PODSTAWOWA RÓ¯NICA MIÊDZY OBIEKTAMI A TABLICAMI:
+ Obiekty ró¿ni¹ siê od tablic miêdzy innymi tym, ¿e programista samodzielnie definiuje klucze.
+ Nie musisz ograniczaæ siê do liczbowych indeksów. Mo¿esz korzystaæ z bardziej przyjaznych
+ nazw, takich jak nazwisko, data_urodzenia czy wiek,
+
+ * obiekty s¹ takie same jak obiekty JSON!!! oraz dict w pythonie
+ - mo¿ne je zapisywaæ w cudzys³owiach
+ - W skrócie: jeœli zdecydujesz siê nadaæ polu nazwê, która nie jest poprawn¹ nazw¹ zmiennej,
+   to musisz umieœciæ j¹ w cudzys³owie,
+ - u¿ywanie cudzys³owi nie jest rekomendowane!
+
+ * Pole obiektu mo¿e zawieraæ funkcjê, poniewa¿ funkcje równie¿ s¹ danymi.
+
+ * normlanie mo¿na tworzyæ puste obiekty, a potem je wype³niaæ funkcjami lub danymi,
+   które mo¿na normalnie wywo³ywaæ. Mo¿na to wszystko dodawaæ do obiektów.
+ - jesli nie istniej podawa wartoœæ, to zostanie zwrócona wartoœæ undefined
+
+ * obiekty mog¹ zawieraæ, tak¿e inne obiekty
+
+ * podstawowy przyk³ad obiektu (bez konstruktora):
+ var pies = {
+  imie: 'Burek',
+  mow: function(){alert('Hau, hau!');},
+  autor: {
+    imie: "Maciej",
+    nazwisko: "Bihun"
+  }
+ };
+
+ - dostep do atrybutów obiektów jest poprzez: 
+ a) pies.imie - dzi³anie tak jek zwyk³y obiekt,
+ b) pies["imie"] - dzia³anie tak jak dict w pythonie
+ c) wywo³ywanie funkcji: pies.mow()
+ d) pobranie podobiektów: pies.autor.imie lub ksiazka['autor']['nazwisko']
+
+ DOBRA RADA:
+ Dobra rada: ¿adnych cudzys³owów!
+ 1. Podczas siêgania do pól i metod stosuj notacjê z kropk¹.
+ 2. Nie u¿ywaj cudzys³owów w nazwach pól litera³ów obiektowych.
+
+ KONSTRUKTORY:
+
+ * function Bohater(imie) {
+	this.imie = imie;
+	this.specjalizacja = 'Ninja';
+	this.kimJestes = function() {
+	    return "Jestem " + this.imie + ", a moja specjalizacja to " +
+		this.specjalizacja;
+	}
+   }
+ - szablonowy przyk³ad tworzenia klas z konstruktorem, który mo¿e posiadaæ PARAMETRY WEJŒCIOWE!!!
+
+ * function Bohater() {
+	this.specjalizacja = 'Ninja';
+   }
+ - tworzenie obiektu: var maciek = new Bohater();
+
+ - jest to pewnego rodzaju foremka dla klas,
+ - przewag¹ takiego rozwi¹zania jest to, ¿e to mo¿e przyjmowaæ parametry do konstruktora 
+
+ * tworzenie obiektu globalnego:
+ - var a = 1;
+ - odwo³anie do obiektu globalnego: window['a'], window.a
+
+ * sprawdzanie jakiego typu jest obiekt:
+ - maciek instanceof Bohater;
+
+ * Tworzenie kopii obiektów dzia³a tak samo jak w innych jêzykach:
+ - przypisanie oryginalnego obiektu do innego, spowoduje póŸniej zmianê obu tych obiektów,
+ - nale¿y uwa¿aæ przy przypisuwaniu obiektów do innych zmiennych,
+
+ * obiekty o tych samych w³aœciwoœciach nie s¹ sobie równe!!!,
+   s¹ sobie równe tylko gdy zostan¹ do siebie przypisane
+
+OBIEKTY WBUDOWANE (OPAKOWUJ¥CE):
+
+ * Object, Array, Function, Boolean, Number i String.
+ 
+
+ * u¿ytkowe: Math, Date i RegExp
+
+ * b³êdów: Error
+
+ * dwa popularne metody tworzenia obiektów:
+OBJECT
+>>> var o = {};
+>>> var o = new Object();
+
+ - s¹ one wyposa¿one w dwie podstawowe metody: toString(), valueOf(), constructor -> Array
+
+ARRAY
+>>> var arr = [];
+>>> var arr = new Array();
+>>> new Array(5); - zwraca tablice o d³ugoœci 5.
+
+ - var a = new Array(1,2,3,'cztery'); - a[1]
+ - var a = new Array([1,2,3,'cztery']); - a[1][1]
+ - typeof a -> "object"
+
+ * posiadaj¹ metody wbudowan: length, ..., slice(1,3), join(,) - zwraca wszystkie elementy po³¹czone przecinkiem
+ - arr.slice(1,3) - zwrca sublist
+
+ * CIEKAWOSTKA:
+ - mo¿na zmieniaæ d³ugoœæ tablicy ;) - powoduje, to ¿e mo¿na usuwaæ elementy z tablicy lub dodawaæ undefined.
+
+ * zastosowanie pola arguments:
+>>> function f() {return arguments;}
+>>> f(1,2,3)
+ - arguments dzia³a podobnie jak tablica, ale nie posiada funkcji tablic, tylko length
+
+FUNCTION - nie u¿ywac tego konstruktora!!!
+
+BOOLEAN: 
+- przydatne tylko podczas konwersji, te¿ bym tego nie stosowa³,
+- boolean nie posiada mo¿liwoœci konwersji liczb na true oraz false,
+
+NUMBER: - dzia³a tak samo jak parseInt oraz parseFloat
+
+STRING: - dzia³a jak tablica znaków. Mo¿na na nim wykonywaæ metody dla tablic.
+ - typy litera³owe nie posiadaj¹ metod dostepu do elementów tablicy stworzonej ze String.
+
+ * Przeciwieñstwem split() jest metoda join(), która zamienia tablicê w obiekt typu String:
+
+MATH:
+
+ * random() - pobieranie liczb randomowych,
+
+ * floor(), ceil() - metody do zokr¹glania,
+
+ * sqrt(), pow()
+
+DATE:
+
+ * swobodne tworzenie daty,
+ - new Date('2009 11 12')
+
+ * aktualna data:
+ - Date()
+ 
+
+ 
+
+ 

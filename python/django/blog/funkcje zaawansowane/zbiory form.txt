@@ -1,0 +1,44 @@
+ * wszystkie s¹ wysys³ane razem,
+
+ * Zbiór formularzy zawiera metodê is_valid() przeznaczon¹ do jednoczesnej weryfikacji wszystkich
+formularzy.
+
+ *  info: https://docs.djangoproject.
+com/en/1.8/topics/forms/formsets/
+
+ * https://docs.djangoproject.com/en/1.8/topics/forms/modelforms/#model-formsets.
+
+ * formy nigdy nie maj¹ zaimplementowanej metopy action w kodzie html, tylko w kodzie python
+
+ * utworzenie zbioru form:
+ - Jeden kurs zawiere wiele modu³ów, wiêæ podczas dodawania tych modu³ow mo¿na dodaæ ich wiele na raz.
+ - to mi umo¿liwia automatyczne podpiêcie tych obiektów pod rodzica oraz ich dynamiczne edytowanie
+
+from django import forms
+from django.forms.models import inlineformset_factory
+from .models import Course, Module
+
+# Wymieniona funkcja pozwala na dynamiczne utworzenie modelu zbioru formularzy
+# dla obiektów Module powi¹zanych z obiektami Course.
+ModuleFormSet = inlineformset_factory(Course,
+                                    Module,
+                                      # pola w formie
+                                    fields=['title',
+                                    'description'],
+                                    # dodatkowe formy pod ju¿ istniej¹cymi
+                                    extra=2,
+                                    # pole wyboru do usuniêcia (thick)
+                                    can_delete=True)
+
+ * zbiór form w html:
+
+ <form action="" method="post">
+            {{ formset }}
+            <!--do³¹czany jest tak¿e formularz przeznaczony do zarz¹dzania zbiorem formularzy.-->
+Ten formularz zarz¹dzaj¹cy zawiera ukryte
+pola przeznaczone do kontrolowania pocz¹tkowej, ca³kowitej, minimalnej i maksymalnej liczby
+formularzy. Jak mo¿esz zobaczyæ, przygotowanie zbioru formularzy jest niezwykle ³atwe.
+            {{ formset.management_form }}
+            {% csrf_token %}
+            <input type="submit" class="button" value="Zapisz modu³y">
+        </form>

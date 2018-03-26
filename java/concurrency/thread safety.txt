@@ -1,0 +1,74 @@
+
+OPIS:
+
+ * czasami zmiana działania programu z nie wątkowego w wielowątkowy może być dosyć czasochłonna,
+ 
+ * prywatne oraz finalne zmienne są moimi najlepszymi przyjaciółmi,
+ czasami gryzie się to z ideą szybkości oraz efektywności, ale trudno,
+ 
+ * metody get() - nie muszą być synchroniczne,
+ 
+ * gdy zmienna współdzielona nie bedzie synchronizowana, to podczas dostępu do tej
+ zmiennej nie wiadomo, który wątek dojdzie pierwszy, także chujnia, 
+
+TRIKI:
+
+ * akcesowanie zmiennej, która się zmienia podczas działania programu przez kilkka wątków:
+ - zablokowanie takiej możliwości poprzez private final field,
+ - do not do it,
+ - use synchronization any time you do it,
+ 
+ * tworzenie stateless objects, czyli bez zadnych pól, kóre moża współdzielić,
+ klasa, która posiada tylko metody, które tworzą zmienne w metodzie podczas działania,
+ 
+ * przykład złej implementacji lazy init, gdzie może się dzarzyc ,że dwa wątki dojdą do null:
+ - @NotThreadSafe
+ public class LazyInitRace {
+	private ExpensiveObject instance = null;
+	public ExpensiveObject getInstance() {
+		if (instance == null)
+			instance = new ExpensiveObject();
+		return instance;
+ }
+}
+
+ * używaj zmiennych atomowych do zliczania ilości wydarzeń z których korzysta wiele wątków:
+ - @ThreadSafe
+ public class CountingFactorizer implements Servlet {
+ private final AtomicLong count = new AtomicLong(0);
+ public long getCount() { return count.get(); }
+ public void service(ServletRequest req, ServletResponse resp) {
+	BigInteger i = extractFromRequest(req);
+	BigInteger[] factors = factor(i);
+	count.incrementAndGet();
+	encodeIntoResponse(resp, factors);
+ }
+}
+
+ * watch out!!! this is not thread safe:
+ - private final AtomicReference<BigInteger> lastNumber = new AtomicReference<BigInteger>();
+ - private final AtomicReference<BigInteger[]> lastFactors = new AtomicReference<BigInteger[]>(); 
+ set()
+ set()
+ - make sure that you set those variables in one atomic operation
+ - w tym momęcie synchronized jest lekarstwem na wszystko!!!
+ - wystarczy dodać synchronized do definicji metody i już nie trzeba deklarawać zmiennych jako atomic,
+ a i tak wszystko będzie grało, bo cała metoda bedzie chroniona lockiem(this) tego obiektu danej klasy,
+ 
+ * chroń metody synchronized, a bedzie dobrze,
+ 
+ * klasa posiada swój własny reentrantLock, który zapobiega zakleszczaniu, gdy podklasa jaki nadklasa
+ posiadają tą samą synchroniczną metodą, która powodowała by zaklesczanie na nadklasie,
+ 
+ * pozwalanie na dostanie się do synchronicznych zasobów już zajętych przez wątek 
+ temu samemu wątkowi dzięki - reentrantLock
+ - po każdym ponownym dostępie do zasobów counter tego locka zostaje zainkrementowany
+ 
+ * nawet jeżeli poszczególne akcje są atomowe, to jeśli chcemy, aby byłe zawsze atomowe obok siebie, to
+ i tak cały blok musi być synchroniczny,
+ - natomiast trzeba uważać, bo zbyt dużo takich bloków może prowadzić do problemów z wydajnością,
+ 
+ * trzeba uważać, aby nie wrzucać do bloków synchronicznych długich procesów, które powodują, że 
+ współdzielone dane są nie dostepne,
+ - gdzie nie chcemy budować bloków synchronicznych zbyt małych
+ 

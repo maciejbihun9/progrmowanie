@@ -1,0 +1,6 @@
+1. Bigtable is designed to handle massive workloads at consistent low latency and high throughput,
+so it's a great choice for both 
+operational and analytical applications, including IoT, 
+user analytics, and financial data analysis.
+
+2. 

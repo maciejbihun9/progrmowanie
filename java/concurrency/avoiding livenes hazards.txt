@@ -1,0 +1,70 @@
+OPIS:
+
+ * problem ucztujących filozofów:
+ - problem głodowania - jeżeli każdy weźmie jeden widelec i bedzie oczekiwał na drugi,
+ to dojdzie do zagłodzenia ucztującego filozofa,
+ 
+ - problem livelock - powstaje, gdy np. wszyscy siegają po sztućce w tym samym czasie,
+ to nawet po 5min jeśli bedzie zasada odkładania na miejsce, to i tak się zakleszczą,
+ 
+ - w takim problemi można wprowadzić kelnera, który będzie zarządzał kto dostanie widelce,
+ a kto bedzie musiał czekać (grupa Semaphores), dokłądnie tak samo jak to miało miejsce
+ podczas czekania na naczynia do pomycia w przypadku "Dequeue"
+ 
+TRIKI:
+
+ * nigdy nie synchronizuje podwójnie po obiektach lokujących
+public void transferMoney(Account fromAccount, Account toAccount,  DollarAmount amount)
+ throws InsufficientFundsException {
+	synchronized (fromAccount) {
+		synchronized (toAccount) {
+			if (fromAccount.getBalance().compareTo(amount) < 0)
+				throw new InsufficientFundsException();
+			else {
+				fromAccount.debit(amount);
+				toAccount.credit(amount);
+			}
+		}
+	}
+} 
+
+ * niby ten problem można rozwiązać poprzez posługiwanie się kodem hash obiektów, który
+ pozwala na to, że kolejność przydzielania locków nigdy nie dopuści do zakleszczenia.
+ private static final Object tieLock = new Object(); 
+ public void transferMoney(final Account fromAcct, final Account toAcct, final DollarAmount amount)
+ throws InsufficientFundsException {
+	class Helper {
+	 public void transfer() throws InsufficientFundsException {
+			if (fromAcct.getBalance().compareTo(amount) < 0)
+				throw new InsufficientFundsException();
+			else {
+				fromAcct.debit(amount);
+				toAcct.credit(amount);
+			}
+		}
+	}
+	int fromHash = System.identityHashCode(fromAcct);
+	int toHash = System.identityHashCode(toAcct);
+	if (fromHash < toHash) {
+		synchronized (fromAcct) {
+			synchronized (toAcct) {
+				new Helper().transfer();
+			}
+		}
+	} else if (fromHash > toHash) {
+		synchronized (toAcct) {
+			synchronized (fromAcct) {
+				new Helper().transfer();
+			}
+		}
+	} else {
+		synchronized (tieLock) {
+			synchronized (fromAcct) {
+				synchronized (toAcct) {
+					new Helper().transfer();
+				}
+			}
+		}
+	}
+}
+ 

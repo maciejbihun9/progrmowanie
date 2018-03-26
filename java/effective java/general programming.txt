@@ -1,0 +1,236 @@
+BASICALLY:
+
+ * write if else statements as a one liner:
+ - f < s ? -1 : (f == s ? 0 : 1);
+ - f < s ? -1 : (f == s ? 0 : (f > s ? -1 : 1));
+ 
+ * it is far more better to represent some value as an enum than just string,
+ - it is safer, quicker and far more convenient,
+ 
+ * far more prefer StringBulder that simple string concatenation,
+ - it is couple ten times faster just just simple string concatenation,
+ - it causes outofMemory exception for big number of appends
+ 
+ * always use interface as a type declaration, because it is far more faster
+ to change the implementation just pointing to an apprioprate type:
+ - List<String> strings = new ArrayList<String>();
+ - use classes as types only if you use special methods from that class that is not,
+
+NUMBERS:
+
+ * primitives values are just values whereas boxed items are references
+ that can have also null values that are not allowable for processing,
+ - where values can be the same, references are not the same at all,
+ - remember that if you want to use it creating comaprator,
+ 
+ * applying == to boxed values we are almost always wrong!,
+
+ * do not ever use double and float type for numerical computations,
+ - when you want to have an exact result,
+ - use long, int and BigDecimal for it str219.
+
+ * do not reinvent the wheel,
+
+ * Integer.MAX_VALUE - this is a soemthing more than 2000000000
+ 
+ * Integer.MIN_VALUE - this is a soemthing more than -2000000000
+ 
+ * make a auto unboxing from an Integer object:
+ - Integer i = new Integer(12);
+ - int a = i //auto unboxing
+ 
+ * you can not use primitives as a generic types of collections,
+ - btw. you can add primitive to that collection, but this will cause
+ immidied auto boxing,
+ 
+ * s ofor keeping numberis in collections you are foreced to use objects,
+ but watch out on this, because it causes unnecesery object creations,
+ 
+FOR LOOPS:
+
+ * prefer for-each loops over iterators, because it provides better scope 
+ and variable is visible only in the appriopriate places,
+
+ * use more loops over while iterations, because we can secure scopes!
+ - use it more when you call an expensive method in each iteration
+ for (int i = 0, n = expensiveComputation(); i < n; i++) {
+	doSomething(i);
+ }
+ 
+ * limit method calls that returns a result using it in a for loop initialization
+ - we can initialize there many variables as you see
+ - for (int i = 0, g = expensiveComputation(), 
+ h = expensiveComputation(), n = expensiveComputation(); i < n; i++) {
+            System.out.println("stuff to do");
+        }
+
+ITERATOR:
+
+ * there is no way to remove an item during iterator while loop from a list,
+ even with listIterator
+ - to remove an item from a colletion just use streams!!!
+ 
+ * use for loops over while because of scope issues:
+ - for (Iterator<Element> i = c.iterator(); i.hasNext(); ) {
+	doSomething(i.next());	
+   }
+
+	// Compile-time error - cannot find symbol i
+   for (Iterator<Element> i2 = c2.iterator(); i.hasNext(); ) {
+	doSomething(i2.next());
+   }
+ - there is no way that i can be used more than once, whic his great visibility issue 
+
+BASICALLY:
+
+ * write if else statements as a one liner:
+ - f < s ? -1 : (f == s ? 0 : 1);
+ - f < s ? -1 : (f == s ? 0 : (f > s ? -1 : 1));
+ 
+ * it is far more better to represent some value as an enum than just string,
+ - it is safer, quicker and far more convenient,
+ 
+ * far more prefer StringBulder that simple string concatenation,
+ - it is couple ten times faster just just simple string concatenation,
+ - it causes outofMemory exception for big number of appends
+ 
+ * always use interface as a type declaration, because it is far more faster
+ to change the implementation just pointing to an apprioprate type:
+ - List<String> strings = new ArrayList<String>();
+ - use classes as types only if you use special methods from that class that is not,
+ 
+ * remember that only constant fields can have undersocers in their names,
+ 
+ * working with bits:
+ - you can moving bits, so you can create a new numbers during moving bits 
+
+ int a = 12 << 3
+ - in this example you have 12, that has binary representation as: 1100 -> 1100000
+ - each binary movement causes movement on all bits,
+
+REFLECTION:
+
+ * is much slower than just calling methods from a source code,
+
+ * you can create a new types during code execution,
+ 
+ * the best use case is when you declare an Interface that indicates on a class
+ that is not know at the compile time,
+
+ * reflection is error prone so should be used very carefully,
+
+ * it is used for building tools, 
+ 
+NATIVE PROGRAMMING:
+
+ * do not use native code,
+ it is very dangerous,
+ even one bug can corrupt entire application,
+
+ * BigInteger was created atop very fast C library,
+
+ * native languages are not safe 
+ 
+OPTIMIZATION:
+
+ * thinking about quick improvemenet is the source of all evil,
+ do not try to make your application fast right from the start, 
+ 
+ * the main rule - do not optimize your code until you have 
+ unoptimized solution right from the start,
+ 
+ * optimization is only for experts,
+ 
+ * strive to write good programs not the fast ones,
+ 
+ * the best choice that you can make is to use composition,
+ because inheritance can limit your performance very much,
+ 
+ * real performace comes from creating milions objects at once,
+ so before you do that, do not bother much with optimizations,
+
+ * find out real speed of your program before you do it,
+ because you can be suprised what you find. Sometims your considerations
+ just waste your time and energy!,
+ - measure time spended on action before and after optimizations,
+
+ * when your program gets bigger and bigger that there is more
+ important to use a profiler to check how long takes to invoke 
+ each method , how many times a method is invoked and can help 
+ with picking the right algorithm,
+ 
+ * sometimes you can be suprised when your program executes 
+ differently on different JVM machines with different hardware,
+ 
+ * stirve to build good programs, not fast ones!!!,
+ - measure the perfomance if it is good then you are done,
+ if not then use profiler and decide weather you should picking
+ different algorithm,
+ 
+NUMBERS:
+
+ * primitives values are just values whereas boxed items are references
+ that can have also null values that are not allowable for processing,
+ - where values can be the same, references are not the same at all,
+ - remember that if you want to use it creating comaprator,
+ 
+ * applying == to boxed values we are almost always wrong!,
+
+ * do not ever use double and float type for numerical computations,
+ - when you want to have an exact result,
+ - use long, int and BigDecimal for it str219.
+
+ * do not reinvent the wheel,
+
+ * Integer.MAX_VALUE - this is a soemthing more than 2000000000
+ 
+ * Integer.MIN_VALUE - this is a soemthing more than -2000000000
+ 
+ * make a auto unboxing from an Integer object:
+ - Integer i = new Integer(12);
+ - int a = i //auto unboxing
+ 
+ * you can not use primitives as a generic types of collections,
+ - btw. you can add primitive to that collection, but this will cause
+ immidied auto boxing,
+ 
+ * s ofor keeping numberis in collections you are foreced to use objects,
+ but watch out on this, because it causes unnecesery object creations,
+ 
+ * other methods od adding numbers:
+ - int a = number | number2
+ 
+FOR LOOPS:
+
+ * prefer for-each loops over iterators, because it provides better scope 
+ and variable is visible only in the appriopriate places,
+
+ * use more loops over while iterations, because we can secure scopes!
+ - use it more when you call an expensive method in each iteration
+ for (int i = 0, n = expensiveComputation(); i < n; i++) {
+	doSomething(i);
+ }
+ 
+ * limit method calls that returns a result using it in a for loop initialization
+ - we can initialize there many variables as you see
+ - for (int i = 0, g = expensiveComputation(), 
+ h = expensiveComputation(), n = expensiveComputation(); i < n; i++) {
+            System.out.println("stuff to do");
+        }
+
+ITERATOR:
+
+ * there is no way to remove an item during iterator while loop from a list,
+ even with listIterator
+ - to remove an item from a colletion just use streams!!!
+ 
+ * use for loops over while because of scope issues:
+ - for (Iterator<Element> i = c.iterator(); i.hasNext(); ) {
+	doSomething(i.next());	
+   }
+
+	// Compile-time error - cannot find symbol i
+   for (Iterator<Element> i2 = c2.iterator(); i.hasNext(); ) {
+	doSomething(i2.next());
+   }
+ - there is no way that i can be used more than once, whic his great visibility issue   

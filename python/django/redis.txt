@@ -1,0 +1,74 @@
+ * Umieœcimy w bazie danych ca³kowit¹ liczbê wyœwietleñ danego obrazu. Je¿eli do tego celu
+u¿yjemy warstwy ORM w Django, skutkiem bêdzie wykonanie polecenia SQL UPDATE w trakcie
+ka¿dego wyœwietlenia danego obrazu. Natomiast w przypadku u¿ycia Redis po prostu inkrementujemy
+wartoœæ licznika przechowywanego w pamiêci, co oznacza znacznie lepsz¹
+wydajnoœæ ca³ej operacji.
+
+ * przyk³ad wykorzystania inkrementowania iloœci wyœwietleñ:
+ - total_views = r.incr('image:{}:views'.format(image.id))
+ - gdzie image nie posiada pola id, które jest dodane póŸniej oraz jest
+ - inkrementowane przy ka¿dym wywo³aniu
+
+ * W tym widoku u¿ywamy polecenia INCR, które inkrementuje wartoœæ klucza o 1 oraz ustawia
+wartoœæ 0 przed wykonaniem operacji, jeœli klucz nie istnieje. Wartoœci¹ zwrotn¹ metody incr()
+jest wartoœæ klucza po przeprowadzeniu operacji. Nastêpnie tê wartoœæ zwrotn¹ umieszczamy
+w zmiennej total_views. Do utworzenia klucza Redis u¿yliœmy notacji typ-obiektu:id:kolumna,
+na przyk³ad image:33:id.
+
+ * Wykorzystujemy wywo³anie zincrby() do przechowywania w posortowanym zbiorze liczby
+wyœwietleñ obrazu zapisanej w kluczu o nazwie image:ranking.
+
+ * Za pomoc¹ wywo³ania zrange() pobieramy elementy w posortowanym
+zbiorze. Wywo³anie to oczekuje podania zakresu zdefiniowanego przez najmniejsz¹
+i najwiêksz¹ wartoœæ. U¿ycie wartoœci 0 dla najmniejszej wartoœci i -1 dla najwiêkszej powoduje,
+¿e Redis zwraca wszystkie elementy w posortowanym zbiorze. Podaliœmy równie¿ opcjê
+desc=True w celu pobrania elementów u³o¿onych w kolejnoœci malej¹cej. Na koniec notacja [:10]
+powoduje pobranie jedynie dziesiêciu pierwszych elementów o najwiêkszej wartoœci.
+
+ * inkrementowanie licznika pod zadan¹ po³¹czonego z podan¹ nazw¹:
+ - redis.incr("nazwa")
+
+ * pobranie tej wartoœci:
+ - redis.get("nazwa")
+
+ * inkremetowanie elementu pod numerem image.id w zbiorze image_ranking o 1 
+ - redis.zincrby('image_ranking', image.id, 1)
+
+ * pobranie zbioru:
+ - image_ranking = r.zrange('image_ranking', 0, -1, desc=True)[:10]
+
+ * iloœæ elementów w zbiorze:
+ - n_items = r.zcard("image_ranking")
+
+ * po³¹czenie zbiorów o podanych kluczach pod nazw¹ tmp_keys:
+ - r.zunionstore(tmp_key, keys)
+
+ * usuwanie elementów o podanych id:
+ - r.zrem(tmp_key, *product_ids)
+
+Baza danych Redis nie jest zamiennikiem dla bazy danych SQL, ale charakteryzuj¹cym siê du¿¹
+szybkoœci¹ dzia³ania magazynem danych w pamiêci, odpowiednim do wykonywania okreœlonych
+zadañ. Korzystaj z niej, gdy czujesz, ¿e tak trzeba. Poni¿ej wymieni³em kilka scenariuszy,
+w których baza danych Redis sprawdza siê ca³kiem dobrze.
+* Zliczanie. Jak mog³eœ zobaczyæ, za pomoc¹ bazy danych Redis bardzo ³atwo mo¿na
+zarz¹dzaæ licznikami. Do dyspozycji masz funkcje incr() i incrby().
+* Przechowywanie ostatnich elementów. Z wykorzystaniem funkcji lpush() i rpush()
+mo¿na dodawaæ elementy na pocz¹tku i koñcu listy. Do usuniêcia i zwrócenia
+pierwszego lub ostatniego elementu s³u¿¹ funkcje — odpowiednio — lpop() i rpop().
+Natomiast skrócenie wielkoœci listy jest mo¿liwe za pomoc¹ funkcji ltrim().
+* Kolejki. Poza wywo³aniami typu push() i pop(), Redis oferuje tak¿e blokuj¹ce
+polecenia kolejki.
+* Buforowanie. Przy u¿yciu wywo³añ expire() i expireat() mo¿na wykorzystaæ
+Redis w charakterze bufora. Ponadto istniej¹ opracowane przez firmy trzecie
+rozwi¹zania pozwalaj¹ce na u¿ycie bufora Redis w Django.
+* Pub/Sub. Baza danych Redis oferuje polecenia przeznaczone do subskrypcji
+i rezygnacji z subskrypcji wysy³ania komunikatów do kana³ów wiadomoœci.
+
+Rankingi i tablice wyników. Posortowane zbiory Redis wraz z wartoœciami
+niezwykle u³atwiaj¹ tworzenie ró¿norodnych tablic wyników.
+* Monitorowanie w czasie rzeczywistym. Niezwykle szybkie operacje wejœcia-wyjœcia
+w bazie danych Redis czyni¹ z niej doskona³e rozwi¹zanie w scenariuszach
+wymagaj¹cych dzia³ania w czasie rzeczywistym.
+
+* dobre rozwi¹zanie dla uczenia maszynowego, bo u³atwia szybki dostêp do wyników obliczeñ
+dokonanych prze zlgorytmy uczenia maszynowego, które musz¹ byæ dostêpne jak najszybciej.

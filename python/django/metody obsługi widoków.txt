@@ -1,0 +1,20 @@
+ * formy nie trzeba przesy³aæ w metodzie renderowania
+ -  render(request, 'cart/detail.html', {'cart': cart, 'form': form})
+
+ - mo¿na j¹ przes³aæ przypisuj¹c j¹ do atrybutu obiektu i pobraæ j¹ w szablonie
+cart = Cart(request)
+    for item in cart:
+        # dodaj do dict ka¿dego elementu podane pole
+        # czyli teraz dict posiada pole formy, któr¹ mo¿na wyœwietliæ w widoku
+        # tutaj nie ma przesy³ania formy!
+        item['update_quantity_form'] = CartAddProductForm(
+            initial={'quantity': item['quantity'],
+                     'update': True})
+
+...
+<form action="{% url "cart:cart_add" product.id %}" method="post">
+                        {{ item.update_quantity_form.quantity }}
+                        {{ item.update_quantity_form.update }}
+                        <input type="submit" value="Zmieñ">
+                        {% csrf_token %}
+                    </form>

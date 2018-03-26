@@ -1,0 +1,8 @@
+1. Po ka¿dym rozdziale nastêpuje napisanie 3 algorytmów
+   u¿ywaj¹c zagadnienñ z poprzedniego rozdzia³u.
+
+2. Algorytmy znajd¹ siê w odpowiednim pliku pod nazw¹ rozdzia³u,
+   a kod musi byæ na tyle generyczny, aby da³o siê napisaæ na jego podstawie 
+   wszystkie te algorytmy.
+
+3. Naprawde wa¿ne notatki mog¹ siê znaleŸæ w pliku folderu notes 

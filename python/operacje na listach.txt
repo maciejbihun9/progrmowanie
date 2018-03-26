@@ -1,0 +1,11 @@
+ * sumowanie lementów listy:
+ - sum(item['quantity'] for item in self.cart.values())
+
+ * tworzenie listy tupli:
+ - [(i, str(i)) for i in range(1, 21)],
+
+ * tworzenie listy z atrybutów obiektów w liœcie:
+ - [p.id for p in products]
+
+ * sumowanie parametrów obiektów listy:
+ - sum(item.get_cost() for item in self.items.all())

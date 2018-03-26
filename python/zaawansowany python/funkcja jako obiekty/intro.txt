@@ -1,0 +1,63 @@
+
+ * map, reduce oraz filter nie są już tak mocno używane dzięki temu, że
+ mamy tutaj list comperhension
+
+ * functions are objects and objects are functions,
+ 
+ * python is not a functional language, but can be extended to be it,
+ 
+ * get all build in functions that can be implemented:
+ - dir(function_name)
+
+  * Integers, strings and dictionaries 
+  are other examples of first-class objects in Python,
+  bo jako parametry można wrzucać fukcje: dict(), set(),
+  
+  * In Python, all functions are first-class,
+
+ * return method documentation:
+ - function.__doc__()
+
+ * tworzenie kodu w runtime:
+ - np. utworzenie funkcji podczas sesji consolis,
+
+ * it is possible to assign a function to a variable and 
+ call it with that name,
+
+ * sortowanie słów w zależności od ostatniej literki w słowie:
+ - the key can be any function that returns a new condition,
+ -  def reverse(word): return word[::-1]
+ - sorted(fruits, key=reverse)
+ 
+ * replacement for map():
+ - list(map(fact, range(6))),
+ - [fact(n) for n in range(6)]
+ 
+ * map and filter return generators
+ - so we have to iterate over all collection to get the answer,
+ 
+ * The lambda keyword creates an anonymous function within a Python expression,
+ - we can create an annonymus function in case when we do not want to create
+ a new function for just a simple operation,
+ - fruits = ['strawberry', 'fig', 'apple', 'cherry', 'raspberry', 'banana'],
+ - sorted(fruits, key=lambda word: word[::-1])
+ - lambda creates a new def-class function
+
+ * callable:
+ - create a callable with () and lambda, 
+ - calling a class is like a calling a new method in Java, because
+ we do not have new keyword in python,
+ - class have to have __call__ to be invoked as a callable,
+ - Not only are Python functions real objects, but arbitrary Python objects may also be
+made to behave like functions.
+ - this will make class as a callable
+ - def __call__(self):
+	# calls the class pick method,
+	return self.pick()
+	
+ * prepare function to get all kind of parameters:
+ - def tag(name, *content, cls=None, **attrs): 
+ 
+ * show method annotations:
+ - this will show us all func metadata,
+ - func.__annotations__

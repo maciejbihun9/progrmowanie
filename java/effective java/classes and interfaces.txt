@@ -1,0 +1,193 @@
+ACCESS:
+
+ * well designed model class hides all implementation details 
+ behind it's api
+ 
+ * always hide an information behind it's api, then the class 
+ can be safly reused!,
+ 
+ * use the lowest possible access level consistent with the
+ proper functioning of the software that you are writing. 
+
+ * packaged private means that class is a part of an api
+ rather than exported, public api
+ - without it you will be obligated to maintaince it for ever,
+ 
+ * all members of an interface all public by convention,
+ 
+ * Instance fields should never be public,
+ 
+ * you can make a field public cloning it, but never 
+ making public a reference to that field,
+ 
+ * if you want to have a public field of an array
+ then you can do it by cloning this array:
+ - private static final Thing[] PRIVATE_VALUES = { ... };
+ public static final Thing[] values() {
+	return PRIVATE_VALUES.clone();
+ }
+ 
+ * just make sure that you provide immutability,
+ 
+ 100 str.
+ 
+ * it is far more better to create a factory method than
+ just a simple constructor!,
+ 
+ * instanceof tests whether the object reference on the left-hand side (LHS)
+ is an instance of the type on the right-hand side (RHS) or some subtype.
+ - do not use it extensively, because this is some kind of a code smell,
+ this evolves some kind of bigger code refactor after some classes were added,
+ 
+ * getClass() == ... tests whether the types are identical.
+ 
+ * classes should be always created immutable!!!,
+ sometimes there are some circustances where the performence is lower,
+ but safe is maintained
+ - sometimes it is impractical, but anyway all fields should be defined as final,
+ this can reduce the number of states that object can be in,
+ 
+COMPOSITION - INHERITANCE:
+
+Inheritance:
+
+ * damn, it is very crazy... It is important to create many subclasses
+ for a class to check their behaviour as a class for inheritance,
+ - damn bad thing
+ 
+ * remember that superclass constructor is invoked before subclass, so 
+ invoking overridable methods there would be a tragedy,
+ 
+ * it is not good idea to implement Cloneable or serializable in a class
+ that was created for inheritance,
+ 
+ * The best solution to this problem is to prohibit subclassing in classes that
+ are not designed and documented to be safely subclassed,
+ 
+ * be cool to set class as a final or make private constructors, which provide
+ that the class won't be subclassable,
+ 
+ * the subclassing is really banned!!!, we should not be using it anymore,
+ 
+ * prefer interfaces over abstract classes!!!,
+ 
+ * Constructors must not invoke overridable methods,
+ 
+ The most obvious difference between the two mechanisms is that abstract 
+ classes are permitted
+ to contain implementations for some methods while interfaces are not.
+
+ * each time when you think about inheritance ask your self, is it really
+ each B is A???
+ 
+ * remember that inheritance violates encapsulation,
+ 
+ * remember also that we can make methods final and then it won't be
+ possible to extend that class,
+ 
+ * USE COMPOSITION WITH WRAPER CLASSES!!!
+
+ * subclasses and super classes have to considered as a tndem,
+ because they have to considered as tandem,
+
+ * good method that adds new items to a collection needs to return,
+
+ * constructor has to call a super method as a first line, but
+ when you call a method then super can be called in next few lines, 
+ 
+ * in inheritance we need a implementation for each constructor of a super class,
+ 
+ * sometimes you can hear that composition is recognized as a delegation,
+ 
+ * remember that you can call super method in what ever place you want!!! - in a method ofcourse!!!
+ 
+ * in a constructor you have to do it in the first line,
+
+Interfaces:
+
+ * it is said that we can not add any new methods to the interface after has been implemented,
+ 
+ * the best method is to use a combination of abstract classes and interfaces,
+ - in abstract class provide default implementation for a method,
+ that will be common for all implementations
+
+ * are great for defining mixins,
+ 
+ * remember that interafce can extend many interfaces,
+ - public interface SingerSongwriter extends Singer, Songwriter {
+	AudioClip strum();
+	void actSensitive();
+   }
+ - now we can just implement only one interface and we will have 
+ all our much needed methods,
+ 
+ * Interfaces enable safe, powerful functionality enhancements,
+ 
+ * what you should know about interafaces is that each class that implements it
+ is a the same type, so each implementation of it can be a function parameter,
+ 
+ * Some of the methods might duplicate across the concrete implementation.
+ 
+ * do not ever use interfaces with only constants,
+ - this is a poor usecase of interfaces,
+ - public interface PhysicalConstants {
+	// Avogadro's number (1/mol)
+	static final double AVOGADROS_NUMBER = 6.02214199e23;
+	// Boltzmann constant (J/K)
+	static final double BOLTZMANN_CONSTANT = 1.3806503e-23;
+	// Mass of the electron (kg)
+	static final double ELECTRON_MASS = 9.10938188e-31;
+  }
+  
+ * Comparator is not a magic intrface, I can even do it myself,
+ this is just a simple interface taht have to return signs,
+
+ * using anonymus classes is risky, because we have to create a new class every time
+ we need it:
+ - But note that using an anonymous class in this way will create a new instance each
+time the call is executed. 
+
+ * We can have a class where we can store many Comparable implementations also
+ represented as classes, that can be used for comparisons later on,
+ - be sure that you won't be creating any additional class instances each
+ time you want to compare something,
+
+Use case of static variables:
+  
+ * prefer creating utility classes:
+ -  public class PhysicalConstants {
+		private PhysicalConstants() { } // Prevents instantiation
+		public static final double AVOGADROS_NUMBER = 6.02214199e23;
+		public static final double BOLTZMANN_CONSTANT = 1.3806503e-23;
+		public static final double ELECTRON_MASS = 9.10938188e-31;
+ }
+ 
+ * do not ever try to use interfaces to define types
+ they were designed to define types not constans,
+
+ * do not ever use tagged classes 
+ - contains enum types of a class in the class 
+ - class Figure {
+	enum Shape { RECTANGLE, CIRCLE };}
+	 
+ * tagged classes are not good 	
+ 
+NESTED CLASSES:
+
+ * should be used only for inner class jobs, tasks, operations,
+
+ * there are very different inner classes:
+ - static, non-static, anonymus classes, local classes,
+
+ * this architecture is more about creation of good safe and secure systems
+ and module,
+ 
+ zastosowania:
+ * when you want to create many implementations of the iteration in the same class
+ you can do it with many nested classes that implements Iterator class and 
+ use it whenever you want,
+ 
+ * A calculator that contains an enum type with many operations served by calculator,
+ 
+ * This kind of calculator can contain an Operation class, that contains many
+ operations that we can accessed,

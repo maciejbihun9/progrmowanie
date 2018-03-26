@@ -1,0 +1,53 @@
+1. Spring is evolving in every popular these days areas, where jee is not
+
+2. It is good time to be a java developer.
+
+3. Spring never allows user to extend or implement classes,
+
+4. Tworzenie zale¿noœci w konstruktorze powoduje brak mo¿liwoœci testowania danego bloku kodu,
+
+5. Zale¿noœci nale¿y tworzyæ poprzez podanie obiektu klasy w konstruktorze, która implementuje
+   wszystkie rodzaje obiektów które mog¹ byæ wstrzykiwane,
+
+ * w tym przypadku ³atwo jest podmieniæ klase, która jest wstryzkiwana, bo obiekt od niej zale¿ny nawet nie 
+  odczuje ró¿nicy
+
+6. We can do dependency injection in xml or java classes,
+
+ * we can do it in xml file or java class with @configuration annotation.
+
+7. Podczas uruchamiania aplikacji w Springu kontekst aplikacji ³aduje definicje komponentów
+i realizuje ich powi¹zania.
+
+8. ClassPathXmlApplicationContext umo¿liwia wstrzykiwanie binów z plików xml do klas javy.
+
+9. kontener zarz¹dza obiektami springa od new a¿ po finalize:
+
+ * tworzy powi¹zania miêdzy komponentami,
+
+ * fabryki komponentów s¹ tak¿e mo¿liwe do zastosowania, ale s¹ zbyt nisko poziomowe
+   kontenery s¹ preferowane w tym momêcie
+
+10. Istnieje kilka rodzajów kontekstów:
+
+ * web application context - do aplikacji internetowych,
+
+ * xml application context - do pobierania komponentów z plików xml,
+
+ * FileSystemXmlApplicationContext - we can use it when we want to get beans from file at specific path,
+
+11. Kontener jest najwa¿niejszym elementem aplikacji w spring:
+
+ * posiada fabrykê komponentów
+
+12. Powinno siê unikaæ wstrzykiwania komponentów poprzez field injection. Ta metodyka budowania klas
+nie pozwala na testowanie danego komponentu w oderwaniu od spring, wiêc za ka¿dym razem trzeba w³¹czæ kontener,
+aby przeprowadziæ testy. Zwiêksza to tak¿e zale¿noœæ od springa.
+Dobrym rozwi¹zaniem jest u¿ywanie wstrzykiwania poprzez konstruktor, bo klasa mo¿e byæ immutable i 
+zmniejsza zale¿noœæ od spring. Powoduje to, ¿e nie jest ju¿ mo¿liwa zale¿noœæ cyrkuliczna, ale to dobrze, bo
+nie jest to dobra praktyka. Konstruktor powinien byæ u¿ywany do zale¿noœci bez których nie mo¿na siê obejœæ uzywajac danej klasy, 
+a metody setuj¹ce do zale¿noœci opcjonalnych, które nie musz¹ byc obecne podczas startu aplikacji.
+Ta metoda pozwala na zmianê w³aœciwoœci komponentu podczas dzia³ania aplikacji poprzez JMX.
+Zbyt du¿a iloœæ elementów w konstruktorze œwiadczy o z³ej architekturze klasy.
+
+   

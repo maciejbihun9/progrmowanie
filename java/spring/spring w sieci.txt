@@ -1,0 +1,30 @@
+1. Spring mvc nie wymaga ju¿ tak wielu konfiguracji jak wczeœniej,
+
+2. Odpalanie spring mvc:
+
+@Configuration
+@EnableWebMvc
+public class WebConfig {
+
+}
+
+3. Producent widoku s³u¿y do wyszukiwania
+plików JSP poprzez dodawanie prefiksu i sufiksu do nazw widoków,
+
+4. Kontroller jest równie¿ komponentem, tak¿e podlega skanowaniu,
+
+5.  Jedn¹ z rzeczy, które warto zrobiæ, jest
+rozbicie adnotacji @RequestMapping poprzez umieszczenie odwzorowania œcie¿ki na
+poziomie klasy.
+
+@RequestMapping("/")
+public class Home {
+}
+
+@RequestMapping({"/", "/homepage"})
+public class Home {
+}
+
+6. ¯¹danie GET do zasobu /spittles/12345 jest lepsze od odwo³ania /spittles/show?spittle_id=12345.
+
+7. Wyœwietlanie ¿¹danych zasobów, obs³uga form, walidacja form, metody przekaywania parametrów - 155 - 190

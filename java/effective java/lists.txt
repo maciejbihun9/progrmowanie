@@ -1,0 +1,3 @@
+
+ * create one line list:
+ - Arrays.asList(item, item, item);

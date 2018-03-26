@@ -1,0 +1,259 @@
+
+ * Angular asks you to be explicit about that API. 
+ It's up to you to decide which properties are 
+ available for binding by external components.
+ 
+ * All data bound properties must be TypeScript public properties.
+ Angular never binds to a TypeScript private property.
+ 
+ * display value if it's not null:
+ - {{currentHero?.name}}
+ 
+ <comp [name]="userName"></comp>
+ selectr: "comp"
+ export class Comp {
+	// won't work if name is private
+	@Input() private name: string;
+ }
+
+ * an example of a string interpolation:
+ <h3>
+  {{title}}
+  <img src="{{heroImageUrl}}" style="height:30px">
+  <img [src]="heroImageUrl" style="height:30px">
+ </h3>
+
+ * you can make an expression between {{}}:
+ - <!-- "The sum of 1 + 1 is not 4" -->
+<p>The sum of 1 + 1 is not {{1 + 1 + getVal()}}</p>
+
+ * create an input html expression:
+ - [property]="expression"
+ - [hero] = "selectedHero"
+ - [hero] = "x * 3"
+ - [hero] = "x++"
+ - [hero] = "x > 3 ? 2 : 1"
+ 
+ * an html element is not visible if is true:
+ - {{title}}
+<span [hidden]="isUnchanged">changed</span>
+
+ * get an input value:
+ - <div *ngFor="let hero of heroes">{{hero.name}}</div>
+ - <input #heroInput> {{heroInput.value}}
+ 
+ * Template expressions cannot refer to anything in the global namespace
+ (except undefined). They can't refer to window or document. 
+ They can't call console.log or Math.max. 
+ They are restricted to referencing members of the expression context.
+ 
+ * wyrażenia w angularze są ewaluowane, gdy następuje jakieś asynchroniczne zdarzenie:
+ - istnieje coś takiego jak event loop, co idzie w czasie aplikacji i oczekuje na zdarzenia,
+ - http call,
+ - key press,
+ - btn click
+ - a new expression
+ 
+ * watch how you declare your variables names to not get into a collision:
+ hero: string = "hero name";
+ <div *ngFor="let hero of heroes">{{hero.name}}</div>
+<input #heroInput> {{heroInput.value}}
+
+ * Wyrażenie szablonu nie powinno zmieniać żadnego
+ stanu aplikacji poza wartością właściwości docelowej.
+ 
+ * Wyrażenia powinny kończyć się szybko lub wrażenie użytkownika
+ może się przeciągać, szczególnie na wolniejszych urządzeniach. 
+ Rozważ wartości buforowania, gdy ich obliczenia są kosztowne,
+ 
+ * powinno się unikać skompkiowanych wyrażeń w wyrażeniach w templatce,
+ bo póżniej trudno jest je testować,
+
+ * submit a form event:
+ - <form #heroForm (ngSubmit)="onSubmit(heroForm)"> ... </form> 
+ 
+ * Typy wiążące można podzielić na trzy kategorie wyróżniające się kierunkiem
+s przepływu danych: ze źródła do widoku,
+
+ * we can change a html code on the fly:
+ - changing url's,
+ - changing html classes, id's, 
+ - changing styles
+ z widoku do źródła oraz z dwukierunkowej sekwencji: widok-do-źródła-do-
+ 
+ * Twoja intuicja jest nieprawidłowa! Twój codzienny model mentalny HTML jest mylący.
+ W rzeczywistości po uruchomieniu powiązania danych nie działają już atrybuty HTML.
+ Nie ustawiasz atrybutów.
+ Ustawiasz właściwości elementów DOM, komponentów i dyrektyw.
+ 
+ * Attributes initialize DOM properties and then they are done.
+ Property values can change; attribute values can't.
+ - ATRYBUTY NIE MOGĄ SIĘ ZMIENIAĆ, CZYLI NIE MOŻNA ZMIENIAĆ WARTOŚCI NP STYLE LUB ID
+ 
+ * W świecie angulara atrybuty są tylko do inicjalizacji elementów, bo po tym zupełnie znikają
+ i angular może nimi spokojnie manipulować.
+ 
+ * use of Angular directives:
+ <img [src]="heroImageUrl">
+ <app-hero-detail [hero]="currentHero"></app-hero-detail>
+ <div [ngClass]="{'special': isSpecial}"></div>
+ 
+ * set an html element style attibutes:
+ - color: string;
+ - <button [style.color]="color"> 
+ - While this is a fine way to set a single style, the NgStyle directive
+ is generally preferred when setting several inline styles at the same time.
+ - [style.background-color] == [style.backgroundColor]
+ 
+ * when setting values you have two choices:
+ - interpolation or property bounding
+<p><img src="{{heroImageUrl}}"> is the <i>interpolated</i> image.</p>
+<p><img [src]="heroImageUrl"> is the <i>property bound</i> image.</p>
+
+ * #var variables:
+ 
+ <input #phone placeholder="phone number">
+
+CLASSES:
+
+ * the best way to style a element is to use a ngClass, not [style.color] or 
+ stuf like that.
+
+ * You can add and remove CSS class names from
+ an element's class attribute with a class binding,
+ but you can override them
+ 
+ * add a class if value is true:
+ - <div [class.special]="isSpecial">Special</div>,
+ 
+ * While this is a fine way to toggle a single class name,
+ the NgClass directive is usually
+ preferred when managing multiple class names at the same time.
+ 
+ * add classes to your element:
+ - <some-element [ngClass]="{'class1 class2 class3' : true}">items</some-element>
+ 
+EVENTS:
+
+ * The only way to know about a user action is to listen for certain events
+ such as keystrokes, mouse movements, clicks, and touches.
+ You declare your interest in user actions through Angular event binding.
+ 
+ * <button (click)="onSave()">Save</button> == <button on-click="onSave()">On Save</button>
+ 
+ * change value binded with an input use (input) event:
+ - <input [value]="hero.name"
+           (input)="hero.name=$event.target.value" >
+ - works the same as:
+ - [ngModel] 
+ 
+ * name your events what ever you want:
+ - @Output('myClick') clicks = new EventEmitter<string>();
+ (myClick) = "property = $event"
+ 
+ * the components that are at the bottom of the html tree
+ they are just for displaying the data,
+ - the do not know how to delete an item, so the one thing what they can
+ is to emit event about delete needs
+ 
+ deleteRequest = new EventEmitter<Hero>();
+ delete() {
+   this.deleteRequest.emit(this.hero);
+ }
+ - listen for an events:
+ - $event contains this hero object,
+ - <app-hero-detail (deleteRequest)="deleteHero($event)" [hero]="currentHero">
+ 
+ * make variable from lower comp to upper comp available after change:
+ - you can do it after some event but two way data binding works as well,
+ - you have emit this variable, but you can get it from lower comp using two way databinding
+ - resize(delta: number) {
+    this.size = Math.min(40, Math.max(8, +this.size + delta));
+    this.sizeChange.emit(this.size);
+ - <app-sizer [(size)]="fontSizePx"></app-sizer>
+  }
+  
+DIRECTIVES:
+
+ * NgClass - add and remove a set of CSS classes
+ * NgStyle - add and remove a set of HTML styles
+ * NgModel - two-way data binding to an HTML form element 
+
+ * NgIf - conditionally add or remove an element from the DOM
+ * NgSwitch - a set of directives that switch among alternative views
+ * NgForOf - repeat a template for each item in a list 
+ 
+ NgClass:
+ * <div [class.special]="isSpecial">The class binding is special</div>
+ 
+ * best way to style a component:
+ - this.currentClasses =  {
+    'saveable': this.canSave,
+    'modified': !this.isUnchanged,
+    'special':  this.isSpecial
+  };
+ - <div [ngClass]="currentClasses">This div is initially saveable, unchanged, and special</div>
+ - this div contains object with true/false items applied to css class names,
+ - you shuld have also some kind of a set method that sets current classes after some event.
+ 
+ NgStyle:
+ * <div [style.font-size]="isSpecial ? 'x-large' : 'smaller'" >
+  This div is x-large or smaller.
+</div>
+
+ * works the same as ngClass, but here you use specific style attributes: color, weight, etc.
+ - this.currentStyles = {
+    'font-style':  this.canSave      ? 'italic' : 'normal',
+    'font-weight': !this.isUnchanged ? 'bold'   : 'normal',
+    'font-size':   this.isSpecial    ? '24px'   : '12px
+  };
+  
+ NgModel:
+ * IMPORTANT!!!: import FormsModule in ngModule!!  
+ 
+ NgIf:
+ * NgIf removes the HeroDetailComponent from the DOM, 
+ destroying that component and all of its sub-components.
+ - removes unneeded elements that speed up UI, because unvisible
+ components are not trying to use available resources,
+ 
+ * returns false if item is null
+ 
+ * method to secure against null pointers:
+ - <div *ngIf="currentHero">Hello, {{currentHero.name}}</div>
+ 
+ * hide an element without removing all tree from the DOM:
+ - <div [class.hidden]="isSpecial">Hide with class</div>
+ - all tree checks for changes, remains unvisible,
+ - You could be holding onto considerable computing resources and 
+ degrading performance, for something the user can't see.
+ 
+ NgFor:
+ * create a for loop for list of defined items:
+ - <app-hero-detail *ngFor="let hero of heroes" [hero]="hero"></app-hero-detail>
+ 
+ * create a loop in html template with items id's:
+ - <div *ngFor="let hero of heroes; let i=index">{{i + 1}} - {{hero.name}}</div>
+ 
+ * use trackBy when you have performence issues:
+ - it was designed for changes in the list, deleted items etc.
+ 
+ NgSwitch:
+ * ciekawy switch case:
+ <div [ngSwitch]="currentHero.emotion">
+  <app-happy-hero    *ngSwitchCase="'happy'"    [hero]="currentHero"></app-happy-hero>
+  <app-sad-hero      *ngSwitchCase="'sad'"      [hero]="currentHero"></app-sad-hero>
+  <app-confused-hero *ngSwitchCase="'confused'" [hero]="currentHero"></app-confused-hero>
+  <app-unknown-hero  *ngSwitchDefault           [hero]="currentHero"></app-unknown-hero>
+ </div>
+ 
+ * another interesting approach:
+ - <div *ngSwitchCase="'confused'">Are you as confused as {{currentHero.name}}?</div>
+ 
+ NgForm:
+ * It allows to track a form values,
+ 
+ 
+ 
+ 
+ 

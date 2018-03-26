@@ -1,0 +1,86 @@
+1. Je¿eli planujesz wdro¿enie aplikacji w œrodowisku produkcyjnym, powinieneœ raczej
+skorzystaæ z bardziej zaawansowanej bazy danych, takiej jak PostgreSQL, MySQL lub Oracle,
+
+2. Zalecane jest tworzenie osobnego wirtualnego œrodowiska dla ka¿dej aplikacji:
+
+ * python -m virtualenv nazwa
+
+ * œrodowisko trzeba uaktywniæ poprzez odpalenie pliku wsadowego activate,
+
+ * wszystko trzeba pobieraæ od nowa, ale jakieœ odseparowanie to teraz mamy ;),
+
+ * przejdŸ do folderu gdzie ma byæ tworzony projekt i tam z poziomu cmd:
+ - django-admin startproject nazwa,
+
+ * tutaj wszystkimi komendami mo¿na zarz¹dzaæ z poziomu cmd, 
+
+ * aby dewelopowaæ projekt w pycharm to trzeba dodaæ interpreter pythona:
+ - trzeba podac œcie¿kê do naszego nowego œrodowiska maszynki virtualnej
+
+ * nie trzeba siê pierdoliæ z ró¿ny i  wersjami pakietów,
+
+ * wskazaywanie instalacji pythona dla naszego œrodowiska,
+
+3. Poprzez instalacjê pakietów instalujemy je do aktualnie aktywnego œrodowiska:
+
+4. manage.py - Narzêdzie pow³oki s³u¿¹ce do pracy z projektem. Stanowi rodzaj
+lekkiego opakowania na narzêdzia django-admin.py. Nie musisz przeprowadzaæ
+edycji tego pliku,
+
+5. python manage.py migrate - W ten sposób w bazie danych zosta³y
+ utworzone tabele dla pocz¹tkowo zainstalowanych aplikacji.
+
+6. Django jest wyposa¿ony w lekki serewr programistyczny, czyli ju¿ wyprzedza jave o lata œwietlne:
+
+ * zero deplojowania na serwer, wszystko odbywa siê automatycznie,
+
+ * dodanie nowego pliku powoduje potrzebê ponownego w³¹czenia serwera,
+
+7. Aby wdro¿yæ aplikacjê Django w œrodowisku produkcyjnym, konieczne jest uruchomienie jej jako
+aplikacji WSGI (ang. web server gateway interface) za pomoc¹ serwera WWW z prawdziwego
+zdarzenia, takiego jak Apache, Gunicorn lub uWSGI.
+
+8. Opisanie w³aœciwoœci settings,
+
+9. Django posiada domyœln¹ konfiguracjê bay danych,
+
+10. We frameworku
+Django za projekt jest uznawana instalacja Django wraz z pewnymi ustawieniami, natomiast
+aplikacja to grupa modeli, widoków, szablonów i adresów URL. 
+
+11. Projekt mo¿esz potraktowaæ jako witrynê internetow¹ zawieraj¹c¹
+kilka aplikacji, takich jak blog, wiki lub forum. Poszczególne aplikacje mo¿na póŸniej
+wykorzystaæ tak¿e w innych projektach,
+
+12. Zalecenia do korzystania z django:
+
+ * nie moge odpalaæ interpretera python w dowolny miejscu i importowaæ modu³ów do konsoli
+ - python nie wie z jakim projektem ja pracuje, bo odnios³em siê ogólnie do python
+ - trzeba odpalic interpreter u¿ywaj¹c pliku manage.py mojego projektu: python manage.py shell,
+
+13. W Django jest równie¿ mo¿liwe stworzenie dostêpu do pliku sitemap.xml, który pokazuje informacje
+na temat danej witryny, przydatne podczas analizowania tej strony przez boty, które adresuj¹ nasz¹ stronê w sieci.
+
+14. Pamiêtaj, ¿e w ka¿dym ¿¹daniu HTTP Django próbuje
+dopasowaæ ¿¹dany adres URL do ka¿dego wzorca w kolejnoœci ich wystêpowania w pliku urls.py.
+Operacja koñczy siê na pierwszym znalezionym dopasowaniu,
+
+15. Zwróæ uwagê na to jaka jest kolejnoœæ wczytywana pakietów pythona w installed apps oraz urls
+jest to bardzo wa¿ne w kontekœcie poprawnego dzia³ania aplikacji,
+
+16. Pliki __init__.py s¹ wczytywane podczas w³¹czania aplikacji Django wiêc mo¿na wczytaæ dane
+do aplikacji podczas wstawania. Jest to bardzo pewne rozwi¹zanie, aby coœ inicjalizowaæ podczas wstawania,
+
+17. Wyrzucenie na standardowe wyjœcie bazy danych w formacie JSON:
+
+ * python manage.py dumpdata courses --indent=2
+
+18. Utworzenie pliku z zale¿noœciami w formacie .txt:
+
+ * pip freeze > requirements.txt
+
+19. Utworzenie wirtualnego œrodowiska z pliku z zale¿noœciami:
+
+ * pip install -r requirements.txt
+
+ 

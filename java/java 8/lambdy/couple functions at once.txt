@@ -1,0 +1,15 @@
+Function<Integer, Integer> addF = x -> x + 1
+Function<Integer, Integer> marginF = x -> x - 1
+Function<Integer, Integer> combine = addF.andThen(marginF)
+
+ * mo¿na po³¹czyæ kilka funkcji, aby wykonaæje jedna po drugiej,
+
+ * jest to dobre do przeprowadzania obliczeñ bez jakiœ tam sprawdzeñ,
+do jedno linijkowych funkcji dzia³aj¹cych na danym obiekcie.
+
+ * do przyklejania tekstów:
+
+Function<String, String> addHeader = Letter:addHeader;
+Function<String, String> transformationPipeline
+	= addheader.andThen(Letter::checkSpelling)
+		  .andThen(Letter::addFooter);		

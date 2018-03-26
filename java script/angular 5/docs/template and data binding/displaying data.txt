@@ -1,0 +1,23 @@
+
+ * More precisely, the redisplay occurs after some kind
+ of asynchronous event related to the view, such as a keystroke,
+ a timer completion, or a response to an HTTP request,
+ 
+ * when you declare a html tag with selector name in it then Angular
+ detecs it and creates an instance of it in the application,
+ 
+ * it is better to instantiate a variable with a constructor,
+ 
+ * we can generate a new class typing -:):
+ - ng generate class hero
+ 
+ * declare a simple class with some initial properties:
+ - Declares a constructor parameter and its type.
+ - Declares a public property of the same name.
+ - Initializes that property with the corresponding 
+ argument when creating an instance of the class.
+ - export class Hero {
+  constructor(
+    public id: number,
+    public name: string) { }
+ }

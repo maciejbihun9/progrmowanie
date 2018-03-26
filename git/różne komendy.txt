@@ -1,0 +1,3 @@
+
+ * załadowanie pliku z podanej rewizji:
+ - git checkout sha-1 file_path

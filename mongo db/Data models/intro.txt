@@ -1,0 +1,53 @@
+ * nie wymuszaj¹ struktury dokumentu,
+
+ * W praktyce jednak dokumenty w kolekcji maj¹ podobn¹ strukturê,
+
+ * Podczas projektowania modeli danych nale¿y zawsze braæ pod uwagê wykorzystanie aplikacji
+ (tj. Zapytania, aktualizacje i przetwarzanie danych),
+ a tak¿e nieod³¹czn¹ strukturê samych danych.
+
+ * operacje zapisu s¹ atomowe na poziomie dokumentu oraz nie mo¿na zapisaæ danych do
+   wiêcej ni¿ jednego dokumentu na raz,
+
+ * Znormalizowane modele danych opisuj¹ relacje za pomoc¹ odwo³añ miêdzy dokumentami,
+
+ * denormalizacja opisuje dokumenty wbudowane,
+
+ * istnieje nawet mo¿liwoœæ indeksowania pól zagnie¿d¿onych,
+
+ * mo¿na nawet u¿ywaæ hadoop na naszej bazie danych popzrzez Hadoop connector
+
+STRUKTURY DANYCH:
+ - ¿aden dokument nie mo¿e posiadaæ wiêcej ni¿ 16MB,
+ - nie ma wielkiej ró¿nicy podczas dodawania oraz updatu
+
+ * porzez referencje:
+ - obiekty posiadaj¹ nawzajem klucze obce do siebie,
+ - mniejsza wydajnoœæ pobierania,
+ - gdy dane wbudowane obiekty powodowa³y by du¿o zduplikowanych danych,	
+ - du¿e hierarchiczne zbiory danych,
+ - zaawansowane relacje wiele do wiele,
+ - mog¹ potrzebowaæ wiêkszej liczby odwo³añ do serwera,
+ - du¿a swoboda odnoœnie zapytañ,
+ - zawira wiêcej pamiêci przez indeks oraz id do ka¿dego dokumentu,
+ - trzeba wykonaætrochêwiêcej zapytañ,
+ - du¿a kontrola nad zapytaniami, oraz dgy dokumenty s¹ du¿e
+
+ * dokumenty wbudowane:
+ - pozwalaj¹ na pobranie ca³ej bazy w jednym zapytaniu,
+ - Ogólnie, osadzanie zapewnia lepsz¹ wydajnoœæ operacji odczytu, 
+   a tak¿e mo¿liwoœæ ¿¹dania i pobierania powi¹zanych danych w ramach jednej operacji na bazie danych. 
+   Wbudowane modele danych umo¿liwiaj¹ aktualizacjê powi¹zanych danych w pojedynczej operacji zapisu atomowego,
+ - Ponadto dokumenty w MongoDB musz¹ byæ mniejsze ni¿ maksymalny rozmiar dokumentu BSON.
+ - w tym przypadku dokumenty rosn¹, tak¿e maleje ich wydajnoœæ!
+ - ograniczenie sortowania,
+ - dobre do stronicowania,
+ - dla ma³ych dokumentów dzia³aj¹ œwietnie,
+ - stosowane, gdy dokument jest czêsto pobierany z dokumentami powi¹zanymi
+
+SKALOWANIE:
+
+ * niektóre banki przechowuj¹nawet petabajty danych, zdarza siê, ¿e nawet dochodzi do sytuacji, gdzie
+   zapisuje siê 300,000 tików danych gie³dowych na sekundê
+
+   

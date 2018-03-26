@@ -1,0 +1,5 @@
+1. Aby aszyforwaæ wprowadzone has³o do formy mo¿na u¿yæ metody
+uset.set_password(user_form.cleaned_data['password'])
+
+ * wtedy has³o zostanie zapisane jako zaszyforwane, jeœli oczywiœci dana forma
+   rozszerza forme na podstawie modelu User.

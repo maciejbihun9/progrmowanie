@@ -1,0 +1,11 @@
+ * noneMatch() - method is a method which takes argument as
+ a Predicate and if none of element of stream matches
+ the given Predicate, then it returns true otherwise false.
+
+ * anyMatch() - method we pass Predicate as an argument.
+ The element of stream is iterated for this Predicate.
+ If any element matches then it returns true otherwise false.
+
+ * allMatch() - We pass Predicate as an argument to allMatch() method.
+ That Predicate is applied to each element of stream and if each and every element
+ satisfies the given Predicate then it returns true otherwise false.

@@ -1,0 +1,39 @@
+ 
+ * Dobra metoda wczytywania j-query:
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            {% block domready %}
+            {% endblock %}
+        });
+    </script>
+
+ * Django posiada równie¿ adnotacje, które pozwalaj¹ na wywo³anie metody
+tylko i wy³¹cznie dla ¿¹dañ GET lub POST
+
+ - @require_POST lub @require_GET
+
+ * Nie pomyl kodu JavaScript ze znacznikami szablonów Django. Jêzyk szablonów Django jest
+przetwarzany po stronie serwera w trakcie generowania ostatecznego dokumentu HTML. Z kolei
+kod JavaScript jest wykonywany pod stronie klienta. W pewnych przypadkach u¿yteczne bêdzie
+dynamiczne wygenerowanie kodu JavaScript za pomoc¹ Django.
+
+ - jednak kod java script mo¿e byæ umieszczony w szablonach Django,
+jednak prefereowane jest do³¹czanie plików .js, które s¹ serwowane jako pliki stateyczne, zw³aszcza
+gdy s¹ duzymi plikami
+
+ * csrf - w z¹daniach AJAX jest nie wygodne
+ - info na temat: https://docs.djangoproject.com/en/1.8/ref/csrf/#ajax.
+ - Dlatego te¿ Django pozwala na ustawienie w³asnego nag³ówka X-CSRFToken w ¿¹daniach AJAX,
+ - pozwala równie¿ na o wiele lepsze konfigurowanie tego token'a
+
+ * Metody uznawane za bezpieczne nie wymagaj¹ zabezpieczenia przed
+atakami typu CSRF. Do bezpiecznych metod zaliczamy GET, HEAD, OPTIONS i TRACE.
+
+ * trzeba pamiêtaæ, ¿e nie mo¿na wywo³aæ us³ugi poprzez JSON z innej domeny ni¿ nasza:
+   np. ten kod nie zadzia³a na naszej stronie:
+$.getJSON('http://flickr.com/api/test.json', function(data) {
+    alert(data);
+});
+
+ 

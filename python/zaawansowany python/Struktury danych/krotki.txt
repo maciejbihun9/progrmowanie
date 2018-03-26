@@ -1,0 +1,64 @@
+WAŻNE LEKCJE:
+ • Umieszczanie zmiennych elementów w krotkach nie jest dobrym pomysłem.
+ • Przypisanie złożone nie jest operacją atomową – właśnie zobaczyliśmy, że zgłasza
+ wyjątek po wykonaniu części swojego zadania.
+ • Inspekcja kodu bajtowego Pythona nie jest zbyt trudna, a często przydaje się, aby
+ zobaczyć co się dzieje wewnątrz.
+ 
+ * WARNING!!!:
+ - ("item") - this is not a list!!!
+ - for one item we create an iterable but from our string item!!!
+ 
+ * tuple with one element is just one element
+ 
+ * lista tupli działa znacznie szybciej od listy słowników, bo tablice haszujące nie są
+ zbyt szybkie. Trzeba przechowywać nazwy pol w każdym obiekcie oraz tablice haszującą.
+ W przypadku tupli lub nazwanych tupli nie ma takiego problemu,
+ jednak ma to uzasadnienie tylko dla milionów obiektów,
+ 
+  * Niektóre teksty wprowadzające do Pythona prezentują krotki jako „niezmienne listy”,
+ ale jest to ich niedocenianie. Krotki mają podwójną rolę: mogą służyć jako niezmienne
+ listy, a także jako rekordy bez nazw pól. Drugie zastosowanie bywa niedoceniane, więc
+ od niego zaczniemy.
+
+ * Nawet jeśli nie implementujemy własnych typów sekwencyjnych, wiedza o obiektach
+ wycinków jest przydatna, ponieważ pozwala przypisywać wycinkom nazwy, podobnie
+ jak arkusze kalkulacyjne pozwalają nazywać zakresy komórek.
+
+ * krotka, to taki fajny kontenerek dla typów nie zmienialnych,
+ 
+ * krotke też można podzelić, ale jest twrzony nowy obiekt
+
+ * potęga tkwi, także w tym, że można tworzyć zagnieżdżone struktury
+ 
+ * krotki nie posiadają metody reversed(),
+ 
+ * nie można ich kopiować!!
+ 
+ * tworzenie nazwanych krotek:
+ - replace dla klas,
+ - Instancje klasy budowane za pomocą funkcji namedtuple zajmują dokładnie
+ tyle samo pamięci, co krotki, ponieważ nazwy pól są przechowywane w klasie.
+ Używają mniej pamięci niż zwykłe obiekty, ponieważ poszczególne instancje
+ nie przechowują swoich atrybutów w słownikach __dict__.
+ - collections.namedtuple
+ - Card = collections.namedtuple('Card', ['rank', 'suit'])
+ - City = namedtuple('City', 'name country population coordinates'),
+ gdzie parametry wstawiane są w postaci stringów.
+ wynik: City(name='Tokyo', country='JP', population=36.933, coordinates=(35.689722,
+ 139.691667))
+ - Możemy uzyskać dostęp do pól na podstawie ich nazwy lub położenia!!!
+
+ * rozpakakowanie krotek:
+ - lax_coordinates = (33.9425, -118.408056)
+ - latitude, longitude = lax_coordinates
+ 
+ * pojebane!!!:
+ - >>> t = (1, 2, [30, 40])
+   >>> t[2] += [50, 60]
+- wystapi błąd o niezmienialności krotek, ale operacja się uda!!! :)
+
+ * przykłady:
+ - zapisywanie koordynatów miejsc,
+ - rozakowanie ktrotek
+ 

@@ -1,0 +1,43 @@
+1. Key factors in investment analysis include entry price,
+expected time horizon and reasons for making the decision at the time,
+
+2. Investment goals should always be considered when analyzing an investment;
+ one size does not always fit all,
+ and highest returns regardless of risk are not always the goal.
+
+3. When investing on stock exchange then it is good to first analize which sector
+will give me the best output,
+
+4. When looking at a specific company, 
+a financial analyst conducts analysis by focusing on the income statement,
+balance sheet and cash flow statement.
+
+5. Articles links:
+
+ * http://www.sciencedirect.com/science/article/pii/S0167923603000861
+
+ * http://www.sciencedirect.com/science/article/pii/S0377221709005438
+
+ * http://ieeexplore.ieee.org/abstract/document/1578783/?reload=true
+
+ * https://dl.acm.org/citation.cfm?id=1462204
+
+ * http://www.sciencedirect.com/science/article/pii/S0377221798000514
+
+ * http://www.sciencedirect.com/science/article/pii/S0957417405002915
+
+6. used key words:
+
+ * market analisis using artificial inteligence,
+
+ * companies ofert analisis using artificial inteligence,
+
+ * global market analisis artificial inteligence,
+
+ * stock assets analysis using artificial intelligence
+
+ 
+
+
+
+

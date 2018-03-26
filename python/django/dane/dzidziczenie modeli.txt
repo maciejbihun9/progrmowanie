@@ -1,0 +1,55 @@
+Opcje dziedziczenia:
+ * Modele abstrakcyjne - Opcja okazuje siê u¿yteczna, kiedy te same informacje maj¹
+zostaæ umieszczone w kilku modelach. Dla modelu abstrakcyjnego nie jest tworzona
+¿adna tabela bazy danych.
+
+# model abstrakcyjny - nie tworzony w bazce
+from django.db import models
+class BaseContent(models.Model):
+	title = models.CharField(max_length=100)
+	created = models.DateTimeField(auto_now_add=True)
+	class Meta:
+		abstract = True
+
+# model potomny
+class Text(BaseContent):
+	body = models.TextField()
+
+
+ * Model dziedziczenia oparty na wielu tabelach. Opcja jest stosowana, gdy ka¿dy
+model w hierarchii jest uznawany za kompletny model. Dla ka¿dego z modeli jest
+tworzona tabela w bazie danych.
+
+from django.db import models
+class BaseContent(models.Model):
+	title = models.CharField(max_length=100)
+	created = models.DateTimeField(auto_now_add=True)
+
+class Text(BaseContent):
+	body = models.TextField()
+
+# Django do³¹czy w modelu Text automatycznie wygenerowan¹ kolumnê OneToOneField i utworzy
+tabelê bazy danych dla ka¿dego modelu.
+
+ * Modele proxy. Opcja okazuje siê u¿yteczna, gdy trzeba zmodyfikowaæ zachowanie
+modelu, na przyk³ad dodaæ kolejne metody, zmieniæ domyœlnego mened¿era lub u¿yæ
+zupe³nie innych opcji meta. Dla modeli proxy nie s¹ tworzone tabele w bazie danych.
+Maj¹ za zadanie do³¹cznie kolejnych metod do modelu oraz lekk¹ zmianê modelu pierwotnego.
+Dzia³¹j¹ na tej samej tabeli bazy danych
+
+from django.db import models
+from django.utils import timezone
+class BaseContent(models.Model):
+	title = models.CharField(max_length=100)
+	created = models.DateTimeField(auto_now_add=True)
+
+class OrderedContent(BaseContent):
+	class Meta:
+# domyslne sortowanie kolekcji
+		proxy = True
+		ordering = ['created']
+	def created_delta(self):
+		return timezone.now() - self.created
+
+
+

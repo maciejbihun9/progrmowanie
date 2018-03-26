@@ -1,0 +1,87 @@
+# STAY FOCUS!!!!!!!!!!!!
+
+ * Dyrektywa ma taki sam zestaw haków cyklu życia,
+ bez haków specyficznych dla zawartości komponentu i widoków,
+ 
+ * No directive or component will implement all of the lifecycle hooks
+ and some of the hooks only make sense for components.
+ Angular only calls a directive/component hook method if it is defined,
+ 
+ * I do not need any interfaces here, those method will be called any way,
+ but in this case I do not see when i am overriding those methods,
+ 
+ * router nie utrzymuje przy życiu tych komponentów,
+ on je niszczy podczas każdego przechodzenia,
+ 
+ * Experienced developers agree that components should be cheap and safe to construct.
+ 
+ * avoid complex constructor jobs
+ 
+LIFE CYCLE HOOKS:
+
+ * ngOnInit() 
+ - An ngOnInit() is a good place for a component to fetch its initial data.
+ - is called short after component creation and after ngOnChanges
+ - is called after component and directives properties were displeyed,
+ - is called after all components were dsiplayd,
+ - component is fully created,
+ - we have to implement onInit
+
+ * ngOnChanges():
+ - called before ngOnInit and after one or more data-bound input properties change.
+ - so works only for @input() elements!!!
+ 
+ eg.
+ <app-custom-input [inputObject]="sizerSize"></app-custom-input>
+ @Input() inputObject: string;
+ - if in object higher this object has changed then ngOnChanges will be called,
+ - changes stores all input in a list (contains all object fields: prev, curr, ...)
+ - contains only fileds from one object, this is not a list of objects,
+ ngOnChanges(changes: SimpleChanges) {
+    for (let propName in changes) {
+      let chng = changes[propName];
+      let cur  = JSON.stringify(chng.currentValue);
+      let prev = JSON.stringify(chng.previousValue);
+      this.logToConsole("Current word: ${cur}");
+    }
+  }
+  
+ * ngDoCheck():
+ - it is very dangerous, because it can be called many times, after each item change!,
+ - is called after each field of the component is changed,
+ - it is not called for simple input in input component that is not bounded with any field, 
+ - runs only after input variables changes,
+ - works for all type of fields: inputs and also others,
+ - runs when some condition is fullfilled,
+ - Called during every change detection run,
+ - it is called many times during a changes loop (even after mouse over an input element),
+ - if badly implemented then the user experinence can be bad,
+ - does not have to have any if statements,
+ immediately after ngOnChanges() and ngOnInit().
+ - an example:
+  ngDoCheck(){
+    if (this.inputObject % 2 == 0){
+      this.logToConsole('NgDoCheck called. Expression was fullfilled.');
+    }
+  }
+  - this code runs after each previous hook, 
+ 
+ * ngAfterContentInit():
+ - is called only once after previous 3 hooks,
+ - Respond after Angular projects external content into the component's view.
+ 
+ * ngAfterViewInit():
+ - it is called after initialization of the component and all childs,
+ 
+ * ngAfterViewChecked():
+ - this is called after each view change,
+ - works pretty similar to ngDoCheck(), but runs just later!
+ 
+ * ngOnDestroy():
+ - Unsubscribe Observables and detach event handlers to avoid memory leaks,
+ - Destroys the directive/component,
+ - destroys all event hooks to avoid memory leaks,
+ 
+ * ngOnDestroy():
+ - This is the time to notify another part of the application that the component is going away.
+ - it is called after each url change, even in router,

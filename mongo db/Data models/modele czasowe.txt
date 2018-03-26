@@ -1,0 +1,8 @@
+ * wiele banków korzysta z mongo db prz yzapisywaniu swoich tykniêæ,
+
+ *  
+
+ * trzeba zachowaæ jak najmniejsz¹ iloœæ dokumentów, bo mniej odczytów. Dane mog¹ byæszybciej aktualizaowane, a
+   metody do zarz¹dzania treœci¹ tych dokumentów s¹ atomowe wiêc mo¿na je implementowaæ przy u¿yciu wielu w¹tków.
+   -$set,
+   -$inc

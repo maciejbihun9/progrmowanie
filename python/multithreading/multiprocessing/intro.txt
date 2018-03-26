@@ -1,0 +1,11 @@
+ * pozwala na zrównoleglanie wykonywania funkcji
+
+
+ThreadPool:
+
+ * standardowe rozwi¹zanie:
+pool = ThreadPool(processes=10)
+        invest_strategy_results = [pool.apply_async(self.compute_invest_strategy,(sell_conditions, buy_conditions, indicators,
+                                                             tickers, stocks_data, start_date, end_date,
+                                                             iter_param)) for iter_param in selected_params]
+ - powoduje, ¿e operacje trwaj¹ d³u¿ej ni¿ normalnie,

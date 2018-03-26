@@ -1,0 +1,73 @@
+ * named tuple class:
+ - wiązkami atrybutów bez żadnych
+własnych metod, przypominającymi rekordy bazy danych.
+ - nie widoczne dla debuggera
+ - jest to poprostu kontener dla zmiennych
+ - ale posiadają nazwe, także ich połączenie  daje coś do zrozumienia
+ 
+ - using namedtuples leads to more readable code,
+ we have more control over our code and we can get tuple attrs just
+ using attrs names,
+ - this is especially good when using list of namedtuples,
+ then we can get tuples attrs using attrgetter
+ - Card = collections.namedtuple('Card', ['rank', 'suit'])
+
+ * tworzenie kombinacji za pomocą wielu pętli:
+ - self._cards = [Card(rank, suit) for suit in self.suits for rank in self.ranks]
+ 
+ * tworzenie kombinacji za pomocą wielu pętli z pomocą if statement: 
+ - [(x, y) for x in [1,2,3] for y in [3,1,4] if x != y]
+ 
+ * iterowanie po liście w odrotną stronę:
+ - for card in reversed(deck): 
+ 
+ * tworzenie słownika:
+ - dict(spades=3, hearts=2, diamonds=1, clubs=0)
+ - items = {"spades" : 3, "hearts" : 2}
+ 
+ * opakowanie listy obiektów w klasie i korzystanie z niej tak samo jak na normalnej liście:
+ - jeśli nadam w konstruktorze, że lista jest obiektem, to na obiekcie tej
+ klasy można sobie wywoływać metody tak jak na normalnej liście
+ - class FrenchDeck:
+    ranks = [str(n) for n in range(2, 11)] + list('JQKA')
+    suits = 'spades diamonds clubs hearts'.split()
+
+    def __init__(self):
+        self._cards = [Card(rank, suit) for suit in self.suits for rank in self.ranks]
+
+    def __len__(self):
+        return len(self._cards)
+
+    def __getitem__(self, position):
+        return self._cards[position]
+		
+ - beer_card = Card('7', 'diamonds')
+ - deck = FrenchDeck()
+ - print(len(deck))
+ - print(deck[49])
+ 
+ - class StrKeyDict(collections.UserDict):
+	def __missing__(self, key):
+		if isinstance(key, str):
+			raise KeyError(key)
+		return self[str(key)]
+		
+	def __contains__(self, key):
+		return str(key) in self.data
+		
+	def __setitem__(self, key, item):
+		self.data[str(key)] = item
+
+ * wywoływanie metod specjalnych, które zostały zadeklarowane w klasie i są wywoływane pośrednio
+   działają szybciej oraz są lepszą metodyką tworzenia oprogramowania,
+
+ * przedstawienie zawartości obiektu klasy:
+ - __repr__(), lub __str__(),
+ - obie te metody działają tak samo z tym, że str nadpisuje repr,
+
+* klasy powinno się budować właśnie z metod specjalnych, bo to jest uważane
+za bardzo pythonowe
+
+ * każdy obiekt powinien mieć repr oraz str, abu można było to używać podczas dubugowania 
+
+ * model danych == model obiektowy 

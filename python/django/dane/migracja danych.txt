@@ -1,0 +1,17 @@
+ * migracja bazy danych do pliku
+mkdir courses/fixtures
+python manage.py dumpdata courses --indent=2 --
+	output=courses/fixtures/subjects.json
+
+ - courses - nazwa aplikacji do migracji
+
+ * ³adowanie danych z pliku .json do bazy danych:
+ - python manage.py loaddata subjects.json
+
+ * strona 343 - pe³yn opis operacji
+
+ * informacje na temat danych testowych:
+ - https://docs.djangoproject.com/en/1.8/topics/testing/tools/#topics-testing-fixtures.
+
+Dane testowe okazuj¹ siê u¿yteczne nie tylko do u¿ycia w charakterze danych pocz¹tkowych, ale równie¿
+jako przyk³adowe dane aplikacji lub dane wymagane do przeprowadzenia testów.

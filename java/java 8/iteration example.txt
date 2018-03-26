@@ -1,0 +1,3 @@
+ * lista.forEach(() -> {}) - jest to œwietny przyk³ad dzia³ania na ca³ej liœcie obiektów
+ - jest zajebista do procesowania przez wiele w¹tków
+ - lista.forEach(System.out:println)

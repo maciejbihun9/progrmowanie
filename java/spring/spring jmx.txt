@@ -1,0 +1,28 @@
+1. JMX umo¿liwia zarz¹dzanie komponentami aplikacji w poziomu konsoli,
+
+2. Istnieje mo¿liwoœæ eksportu metod oraz w³aœciwoœci do konsoli i tam nimi zdalne zarz¹dznie,
+
+3. Mo¿na zadeklarowaæ w interfejsach jakie metody klas maj¹ byæ wyeksportowane,
+
+4. Oznaczenie komponentów zarz¹dzanych:
+
+@Controller
+@ManagedResource(objectName="spitter:name=SpittleController") //
+public class SpittleController
+
+ * @ManagedAttribute - ta adnotacja okreœla jaka w³aœciwoœæ z klasy bêdzie
+poddana eksportowaniu
+
+5. Celem jmx jest zarz¹dzanie aplikacj¹ z poziomu innej aplikacji,
+zmiana w³aœciwoœci komponentów oraz zarz¹dzanie nimi, wydawani im poleceñ
+oraz nas³uchiwanie tego co maj¹ do powiedzenia,
+
+ * komponent zarz¹dzany mo¿e na przyk³ad powiadamiaæ o iloœci obiektów w bazie danych,
+ mo¿e to robiæ poprzez wysy³anie powiadomieñ do odbiorców, któryz ni musz¹ bez przerwy o to pytaæ.
+
+ * 
+
+6. Wydaje siê, ¿e jest sporo pracy przy wywo³ywniu metod zdalnych komponentów,
+
+7. jmx jestoknem do wnêtrza aplikacji, pozwala na komunikacjê z nia w trakcie dzia³ania.
+Mo¿liwe jest naprzyk³ad wys³anie powiadomienia o iloœci elementów w bazie na telefon komórkowy.

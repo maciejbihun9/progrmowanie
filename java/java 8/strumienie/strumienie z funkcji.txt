@@ -1,0 +1,30 @@
+ 
+ * jeœli trzeba generowaæ liczby to s¹ to dobre metody do wykorzystania
+
+ITERATE:
+ 
+ * utworzenie nieskoñczonego strumienia,
+
+ * sprawdza siê zajebiœcie jak trzeba coœ wygenerowaæ!!!
+
+ * wykonuj¹ operacje w nieskoñczonoœæ
+
+ * Stream.iterate - jest to metoda sekwencyjna, bo ka¿dy kolejny element
+zale¿y od poprzedniego
+
+ - wartoœci s¹ obliczane na ¿¹danie i mo¿e byæ to obliczane bez przerwy,
+
+ - strumieñ jest nie ograniczony - jest to g³ówna ró¿nica z kolekacjami
+
+ - trzeba pamiêtaæ, ¿e strumienie posiadaj¹ dostêp tylko do jednego elementu na raz,
+
+Stream.iterate(new int[]{0, 1},
+t -> new int[]{t[1],t[0] + t[1]})
+.limit(10)
+.map(t -> t[0])
+.forEach(System.out::println);
+
+GENERATE:
+
+ * odpowiada tylko za generowanie nowych liczb,
+   ale nie pozwala na wykonywanie funkcji na ka¿dej z osobna,

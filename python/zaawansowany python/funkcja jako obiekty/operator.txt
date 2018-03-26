@@ -1,0 +1,42 @@
+
+ * sum sequence items in one line:
+ - reduce takes a result of previous operations
+ and use it as a,
+ - from functools import reduce
+   from operator import mul
+   def fact(n):
+		return reduce(lambda a, b: a*b, range(1, n+1))
+		
+ - mul works the same as simple multiplication		
+ - reduce(mul, range(1, n+1))	
+		
+ * loop over sorted list of tuples, sorted by second item:
+ - from operator import itemgetter
+
+metro_data = [
+ ('Tokyo', 'JP', 36.933, (35.689722, 139.691667)),
+('Delhi NCR', 'IN', 21.935, (28.613889, 77.208889)),
+('Mexico City', 'MX', 20.142, (19.433333, -99.133333)),
+('New York-Newark', 'US', 20.104, (40.808611, -74.020386)),
+('Sao Paulo', 'BR', 19.649, (-23.547778, -46.635833)),
+]
+
+for city in sorted(metro_data, key=itemgetter(1)):
+    print(city) 
+	
+ * indicate columns which you want to use in computtaions:
+ - it works great for list of lists
+ - cc_name = itemgetter(1, 0)
+   for city in metro_data:
+      # print first and second column
+      print(cc_name(city)) 
+	  
+ * indicate columns which you want to use in computtaions,
+ but now when we have a list of namedtuples:
+ - see str. 158 to see how to parse tuples into a named tuples,
+ - name_lat = attrgetter('name', 'coord.lat')
+   for city in sorted(metro_areas, key=attrgetter('coord.lat')): #
+	  print(name_lat(city)) 
+	  
+ * different kind of multiplications and additions:
+ - str.160 

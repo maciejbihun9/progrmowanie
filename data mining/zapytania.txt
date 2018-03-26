@@ -1,0 +1,7 @@
+1. Efektywne pozyskiwanie danych w internecie,
+
+2. Data miner - do wydobycia danych ze stron data scraper.
+
+3. Data retrival
+
+4. data world bank

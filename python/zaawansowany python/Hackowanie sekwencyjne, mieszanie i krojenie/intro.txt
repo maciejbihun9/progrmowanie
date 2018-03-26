@@ -1,0 +1,103 @@
+
+ * IT DOES NOT MATTER WHAT IS IT, IT MATTERS HOW IT BEHAVES, 
+ 
+ * get class name for static methods or for creating a new class instances:
+ - cls = type(self)
+ - instance = cls(params)
+
+ * make a class behaving as a list:
+ - import collections
+
+Card = collections.namedtuple('Card', ['rank', 'suit'])
+
+class FrenchDeck:
+    ranks = [str(n) for n in range(2, 11)] + list('JQKA')
+    suits = 'spades diamonds clubs hearts'.split()
+
+    def __init__(self):
+        self._cards = [Card(rank, suit) for suit in self.suits
+                       for rank in self.ranks]
+
+    def __len__(self):
+        return len(self._cards)
+
+    def __getitem__(self, position):
+        return self._cards[position]
+
+ - __getitem__ makes this class acting as a list.
+ we can iterate over class instance safly and do list indexing
+ without this class we cannot do it,
+ this method does not support taking an object length: len(instance),
+ but we can do it implementing a class __len__() method in our class. 
+
+ - an __iter__ method allows a user to make an instance unpacking in one line
+ - a, b, c = vector 
+ 
+ * each class as list slicing produces a new list, so we losing our type and
+ all object fields and variables,
+ 
+ * each instance slicing produces a new instance with sliced items:
+ - if an index is a slice then we create a new cls instance,
+ - elif this is just an simple index we return one item!!!,
+ - this is great
+ - def __getitem__(self, index):
+	cls = type(self)
+	if isinstance(index, slice):
+		return cls(self._components[index])
+	elif isinstance(index, numbers.Integral):
+		return self._components[index]
+	else:
+		msg = '{cls.__name__} indices must be integers'
+		raise TypeError(msg.format(cls=cls))
+		
+ * iterable reducing:
+ - import functools
+ - reduce function takes a function with two params and an iterable,
+ reduce method gets a result from first iteration and applys it with another
+ item from a list
+ - functools.reduce(lambda a,b: a * b, range(1, 6))
+ 
+ * a zip method allows a user to iterate over two iterables in the same time, 
+ in the parralel, so this is very quick and efficient,
+ - this method also produces a generator,
+ - we can zip here many lists or iterables,
+ - zip has a surprising trait: it stops without warning when one of the iterables is
+exhausted5.
+ >>> zip(range(3), 'ABC') #
+<zip object at 0x10063ae48>
+>>> list(zip(range(3), 'ABC')) #
+[(0, 'A'), (1, 'B'), (2, 'C')]
+>>> list(zip(range(3), 'ABC', [0.0, 1.1, 2.2, 3.3])) #
+[(0, 'A', 0.0), (1, 'B', 1.1), (2, 'C', 2.2)]
+>>> from itertools import zip_longest #
+>>> list(zip_longest(range(3), 'ABC', [0.0, 1.1, 2.2, 3.3], fillvalue=-1))
+[(0, 'A', 0.0), (1, 'B', 1.1), (2, 'C', 2.2), (-1, -1, 3.3)]
+ 
+ * create a good equals method:
+ - use zip, because it creates a generator that compares instance fields
+ on the fly and does not waste memory.
+ - if first field of an instance is not the same then we can safly return with False,
+ - even if they do not have the same length we can safly return with false
+ - def __eq__(self, other):
+	if len(self) != len(other): #
+		return False
+	for a, b in zip(self, other): #
+		if a != b: #
+			return False
+	return True
+ 
+ 
+ * create a good hash method:
+ - get hash for each class instance variable and apply a xor method to it
+ - def __hash__(self):
+	hashes = (hash(x) for x in self._components) #
+	return functools.reduce(operator.xor, hashes, 0)
+	
+ * create an even more effecient method:
+ - map produces a generator, so saves memory
+ - def __hash__(self):
+	hashes = map(hash, self._components)
+	return functools.reduce(operator.xor, hashes) 
+ 
+ 
+ 

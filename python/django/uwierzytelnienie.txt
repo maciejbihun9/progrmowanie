@@ -1,0 +1,78 @@
+1. Zwróæ uwagê na ró¿nice miêdzy metodami authenticate() i login(). Metoda authenticate()
+sprawdza dane uwierzytelniaj¹ce u¿ytkownika i jeœli s¹ prawid³owe, zwraca obiekt u¿ytkownika. Natomiast
+metoda login() umieszcza u¿ytkownika w bie¿¹cej sesji.
+
+2. Je¿li coœ zakoñczy siê niepowodzeniem, to jest popularne,
+ aby zwróciæ Dane szablonu html za pomoc¹ metody HTTPTResponse,
+
+3. Framework uwierzytelniania w Django zawiera wiele formularzy i widoków gotowych do natychmiastowego
+u¿ycia. Utworzony przed chwil¹ widok logowania to dobre æwiczenie pomagaj¹ce
+w zrozumieniu procesu uwierzytelniania u¿ytkowników w Django. Jednak w wiêkszoœci
+przypadków mo¿esz wykorzystaæ wspomniane domyœlne widoki uwierzytelniania.
+
+ * Django posiada utworzone domyœlne widoki do zmian hase³, logout_login view, resetu has³a itd,
+
+ * https://docs.djangoproject.com/en/1.8/topics/auth/default/#module-django.contrib.auth.views.
+
+4. domyœle szablony zwi¹zane z logowaniem i uwierzytelnianiem maj¹ byæ w folderze registration.
+
+ * nie trzeba jebaæ siê z obs³ug¹ widoków, bo Django je nam daje za darmo,
+
+ * login page z Django pobiera szablon z folderu registration,
+
+ * fajna jest mo¿liwoœæ jednoczesnego u¿ywania domyœlnych ustawieñ oraz dodania swoich,
+
+5. @login_required - sprawdzanie, czy u¿ytkownik zosta³ uwierzytelniony,
+Je¿eli u¿ytkownik jest uwierzytelniony, nastêpuje wykonanie udekorowanego widoku.
+Gdy natomiast u¿ytkownik nie jest uwierzytelniony, zostaje przekierowany na stronê logowania,
+a adres URL, do którego próbowa³ uzyskaæ dostêp, bêdzie podany jako wartoœæ parametru
+next ¿¹dania GET.
+
+6. Przypisanie domyœlnego przekierowania do widoków logowania oraz wylogowania:
+
+LOGIN_REDIRECT_URL = reverse_lazy('dashboard')
+LOGIN_URL = reverse_lazy('login')
+LOGOUT_URL = reverse_lazy('logout'),
+
+7. U¿ytkownik jest podawany w obiekcie HttpRequest,
+
+ * dostêp jest za pomoc¹: reuqest.user
+
+8. Najjelszpa metoda do sprawdzania czy user jest uwierzytelniony:
+
+ * request.user.is_authenticated()
+
+9. Jeœli chceny korzystaæ z domyœlnych widoków oraz funkcjonalnoœci logowania, to 
+ 'django.contrib.admin' musi byæ po nazwie strony logowania.
+
+10. Django posiada wszystkie widoki oraz zdefiniowane akcje jakie maj¹ siê dziaæ podczas 
+zmian has³a, utworzenia nowego has³a, wysy³ania email ze zmian¹ has³a itd.
+
+ * elementy musz¹ siê znaleŸæ poprostu w odpowiednim folderze pod odpowiedni¹ nazw¹,
+
+ * wysy³anie email dzieje sie jakoœ magicznie pod spodem
+
+11. Istnieje mo¿liwoœæ uwierzytelnienia za pomoc¹ innych serwisów spo³ecznoœciowych tj.:
+
+ * google, facebook, twitter - zosta³y opisane na str. 135.
+
+12. Django administration posiada pozwolenia zwi¹zane z dodanymi modelami:
+ 
+ - pozwolenia: add, change, delete,
+
+ - mo¿na stworzyægrupy które posiaaj¹ ró¿ne uprawnienia i dodawaæ do tych
+   grup ró¿nych u¿ytkowników,
+
+ - mo¿na tak¿e tworzyæ w³asne pozwolenia:
+ https://docs.djangoproject.com/en/1.8/topics/auth/customizing/#custom-permissions.
+
+ - aby chroniæ metody przed dostêpem nale¿y pobraæ podan¹ biblioteke:
+ - django-braces==1.8.1 - dzia³aj¹ca wersja, bo w Django domyœlnie nie ma 
+   metod odpowiedzialnych za ochrone przed innymi u¿ytkownikami.
+
+ - te elementy musz¹ byæ dziedziczone przez klaskê
+ - PermissionRequiredMixin - chroni wywo³anie metody przed dostêpem
+   u¿ytkownika, który ich nie posiada, ale trzeba dodaæ jednoczeœnie:
+   permission_required = 'apka.operacja_nazwamodelu'
+
+ - wymaga zalogowania - LoginRequiredMixin

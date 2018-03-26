@@ -1,0 +1,16 @@
+1. Django oczyszcza kod HTML generowany
+przez filtry. Dostarczan¹ przez framework funkcjê mark_safe() wykorzystamy do oznaczenia
+wyniku jako bezpiecznego kodu HTML do wygenerowania w szablonie. Domyœlnie Django
+nie ufa ¿adnemu kodowi HTML i bêdzie przeprowadzaæ jego oczyszczenie przed umieszczeniem
+w danych wyjœciowych. Jedynym wyj¹tkiem s¹ zmienne oznaczone jako zawieraj¹ce
+bezpieczny kod HTML. Dziêki takiemu podejœciu Django chroni przed u¿yciem potencjalnie
+niebezpiecznego kodu HTML i pozwala na utworzenie wyj¹tku, gdy masz pewnoœæ, ¿e dostarczasz
+bezpieczny kod HTML.
+
+2. Jak mo¿esz zobaczyæ, w³asne filtry szablonu okazuj¹ siê bardzo u¿yteczne podczas modyfikacji
+formatowania.
+
+3. Biblioteka markdown pozwala na wprowadzenie do tekstu pewnej dekoracji w zale¿noœci od tego,
+czy dany tekst ogrodzony jakimiœ oznaczeniami.
+
+4.

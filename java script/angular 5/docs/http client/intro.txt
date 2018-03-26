@@ -1,0 +1,65 @@
+# tylko zastosowania komponentów oraz jak one dokładnie działają
+# po dokładną konfiguracjęnalezy się udać do dokumentacji
+
+ * httpClient should be injected in data service, because
+ services are responsible for retriving the data,
+ 
+ * it is more convenient to tell what type of object to return from a call,
+ 
+ * component with data retrival logic is difficult to test,
+ and later on hard to reuse,
+ 
+ * HTTPResponse contains headers and body objects
+ 
+ * get all response headers from the server:
+ - you will get body and headers collections wiwth all data in json format,
+ - getConfigResponse(): Observable<HttpResponse<Config>> {
+  return this.http.get<Config>(
+    this.configUrl, { observe: 'response' });
+}
+ 
+ * get the data from the server:
+ - to get full data from the server response we have to set that we want it!!!
+ getHeroesResponse (): Observable<HttpResponse<Hero[]>> {
+    return this.http.get<Hero[]>(
+      this.heroesUrl, { observe: 'response' });
+  }
+ - when we get() then we retrive the data in this shape
+ Obserable<Type>.subscribe(resp => {
+      // display its headers
+      const keys = resp.headers.keys();
+      this.headers = keys.map(key =>
+        `${key}: ${resp.headers.get(key)}`);
+
+      // access the body directly, which is typed as `Config`.
+      this.config = { ... resp.body };
+    });
+ - resp.body() == response as Type
+ - resp.headers.keys() 
+ - resp.headers.get(key)
+ 
+ export interface Config {
+  heroesUrl: string;
+  textfile: string;
+ }
+ - result = this.http.get(url) -> Observable
+ - we should get the data and specify the return type:
+ - this.http.get<Config>(this.configUrl);
+ 
+ * do something with the data after retrival:
+ - result.subscribe(items => console.log(items))
+ - if items is a simple json object then we can access his fields using
+ object keys like in snormal dict,
+ 
+ * obsługa błędów z serwera:
+ - .subscribe(
+      data => this.config = { ...data }, // success path
+      error => this.error = error // error path
+    );
+	
+ * subscribe for json format data:
+ - .subscribe(data => this.config = {
+        heroesUrl: data['heroesUrl'],
+        textfile:  data['textfile']
+    }); 
+ 

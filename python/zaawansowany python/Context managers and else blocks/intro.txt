@@ -1,0 +1,94 @@
+
+ * The with statement is a very big deal1,
+ 
+ * create seperated env or close a file automatically:
+ - creates a seperated context
+ - use of with keyword
+ 
+ * Using else with these statements often makes the code easier to read and saves the
+trouble of setting up control flags or adding extra if statements.
+ 
+ * the uses of else keyword:
+-for:
+The else block will run only if and when the for loop runs to completion; i.e. not
+if the for is aborted with a break.
+We can use it when in a loop some kind of an expected beheviour is happening,
+else will run if no break code here run
+for item in my_list:
+	if item.flavor == 'banana':
+		break
+else:
+	raise ValueError('No banana flavor found!')
+
+-while:
+The else block will run only if and when the while loop exits because the condition
+became falsy; i.e. not when the while is aborted with a break.
+
+-try:
+The else block will only run if no exception is raised in the try block. The official
+docs also state: “Exceptions in the else clause are not handled by the preceding
+except clauses.”
+
+try:
+	dangerous_call()
+except OSError:
+	log('OSError...')
+else:
+	after_call()
+	
+CONTEXT MANAGERS:
+
+ use cases:
+• Managing transactions in the sqlite3 module; see Using the connection as a context
+manager.
+• Holding locks, conditions and semaphores in threading code; see Using locks,
+conditions, and semaphores in the with statement.
+• Setting up environments for arithmetic operations with Decimal objects; see the
+decimal.localcontext documentation.
+• Applying temporary patches to objects for testing; see the unittest.mock.patch
+function.
+
+ * how to create a good context manager:
+ - str. 454 and 460
+
+ * we can use it when we have some important job to do before some action
+ and also after that job. Clean some caches, close files etc.
+
+ * The with statement was designed to simplify the try/finally pattern which guarantees
+that some operation is performed after a block of code, even if the block is aborted
+because of an exception, a return or sys.exit() call.	
+
+ * The code in the finally clause
+usually releases a critical resource or restores some previous state that was temporarily
+changed.
+
+ * The context manager protocol consists of the __enter__ and __exit__ methods.
+ - sometims the contextmanager can return None if no reasonable objects are outthere,
+ - the result of __enter__ becomes as item after with!!!
+
+ * open and close file:
+ - call __enter__ at the beginning of the with statement.
+ - at the end of the with statement the __exit__() method of file is called
+ that close the file.
+ >>> with open('mirror.py') as fp: #
+... src = fp.read(60)
+ 
+CONTEXTLIB:
+
+ * btw. in the fucntion i can define another function, but here it is with an annotation
+
+ * create an easier version of the contextmanager with just simple annotation.
+ - everything before yield is in enter function,
+ - everything after yield is in exit function,
+ 
+ * always use try block to catch all exceptions because the contextmanager may suppres it, 
+
+@contextlib.contextmanager
+def looking_glass():
+	import sys
+	original_write = sys.stdout.write
+	def reverse_write(text):
+		original_write(text[::-1])
+	sys.stdout.write = reverse_write
+	yield 'JABBERWOCKY'
+	sys.stdout.write = original_write 

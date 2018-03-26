@@ -1,0 +1,9 @@
+ * wrzucanie ca³ej dostêpnej wiedzy na temat danego zagadnieniado pliku be jakieœ konkretnej kolejnoœci,
+dopiero po zakoñczeniu ksi¹¿ki mo¿na pouk³adaæ to wszystko w jak¹s logiczn¹ ca³oœæ.	
+
+ * na dole pliku mo¿na stworzyæ coœ takiego jak przyk³adyi tam podaæ moje przemyœlenia na temat tego jak oraz
+gdzie mo¿na to wykrzystaæ.,
+
+ * w razie czegoœ bardzo szczegó³owego warto jest podaæ jakiœ link lub stronke, aby ³atwo by³o do tego dotrzeæ!
+
+ * w IDE mo¿na coœ potestowaæ i posprwadzaæ oraz dodaæ moje przemyœlenia,

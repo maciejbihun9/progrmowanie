@@ -1,0 +1,128 @@
+1. Dane s¹ najwa¿niejsze,
+
+2. REST (Representational State Transfer) wy³oni³ siê w ostatnich latach jako skoncentrowana
+na informacji alternatywa dla tradycyjnych us³ug sieciowych opartych na
+SOAP. O ile SOAP koncentruje siê na danych i przetwarzaniu, to REST skupia siê na
+przetwarzanych danych.
+
+3. krytykowanie soap i promowanie rest,
+
+4. dane mog¹ byæ reprezentowane w ka¿dej formie (json, xml, html),
+
+5. Nie istniej¹ ¿adne œcis³e regu³y okreœlaj¹ce, 
+jak maj¹ wygl¹daæ adresy URL, by by³y one
+zgodne z konwencj¹ REST, jednak powinny okreœlaæ zasoby, a nie reprezentowaæ
+polecenia przekazywane serwerowi.
+
+6. REST koncentruje siê na rzeczach a nie us³ugach,
+
+7. Aktualizacja zasaobow jest za pomoc¹ metody POST lub PUT
+
+8. Czy widzisz, w jaki sposób przedstawiony na
+nim kontroler udostêpnia zasób REST, a nie zwyczajn¹ stronê WWW?
+
+9. rest pozwala na zwrócenie zasobu w kompletnie innej szacie graficznej,
+
+10. json jest absolutnie rekomendowany w tym przypadku, bo nie wymaga dodatkowej pracy
+po przes³aniu do klienta,
+
+11. Reprezentacja widoku jest prawie zawsze przedstawiona w html,
+
+12. ContentNegotiatingViewResolver jest to komponent, który umo¿liwia zwrócenie
+danych z formacie po¿¹danym przez klienta,
+
+13. Klient wymaga jakiegoœ konkretnego formatu danych, a nasz kontroler musi to zapewniæ,
+
+14. Klient otrzymuje format plików w zale¿noœci od rozszerzenia, które poda³ na koñcu url.
+
+15. Dok³adnie ten sam kontroler,
+który generuje kod HTML przeznaczony dla ludzi przegl¹daj¹cych zasoby, mo¿e tak¿e
+generowaæ kod JSON lub XML przeznaczony dla innych klientów.
+
+16. ContentNegotiatingViewResolver nie zwraca danych json w odpowiednim formacie, tak¿e nie
+jest on dobrym rozwi¹zaniem.
+
+ * o wiele lepiej jest u¿yæ konwerter komunikatów Spring.
+
+17. Adnotacja @ResponseBody informuje Spring, ¿e zwrócony obiekt chcemy przes³aæ do
+klienta jako zasób skonwertowany do jakiejœ postaci, któr¹ klient jest w stanie przyj¹æ.
+
+18. Mo¿na stosowaæ ró¿ne adnotacje, które zmodyfikuj¹ nam sposób w jaki JSON zostanie zwrócony
+
+19. @RestController zastêpuje na potrzebê u¿ywania adnotacji @ResponseBody oraz @RequestBody:
+
+ * Domyœlnie bêdzie stosowana konwersja komunikatów
+
+20. Przekazuje te¿ klientom metadane, które pomagaj¹ im zrozumieæ
+zasób lub dowiedzieæ siê, co zasz³o podczas obs³ugi ¿¹dania.
+
+21. ResponseEntity wydaj siê byæ najlepszym rozwiazaniem, bo zwraca zasób oraz status ¿¹dania:
+
+ * zwrócenie tego obiektu pozwala na zwrócenie nag³ówka, statusu oraz pe³nej odpowiedzi jakiej oczekuje klient,
+
+ * Jedn¹ z rzeczy, do których mo¿esz wykorzystaæ obiekt ResponseEntity, jest odczytanie
+wartoœci jednego z nag³ówków odpowiedzi,
+
+ * zwraca ona tak¿e wiele informacji o zasobie tj. last modified, itd.
+
+22. œwietne rozwi¹zanie do zwracania b³êdów lub zasobów w zale¿noœci od sytuacji.
+@RequestMapping(value="/{id}", method=RequestMethod.GET)
+public ResponseEntity<?> spittleById(@PathVariable long id) {
+Spittle spittle = spittleRepository.findOne(id);
+if (spittle == null) {
+Error error = new Error(4, "Spittle [" + id + "] nie zosta³ znaleziony");
+return new ResponseEntity<Error>(error, HttpStatus.NOT_FOUND);
+}
+return new ResponseEntity<Spittle>(spittle, HttpStatus.OK);
+}
+
+24. Ale nawet lepsze rozwi¹zanie jest z wyrzucaniem naszego wyj¹tku w zale¿noœci od sytuacji nie 
+znalezienia obiektu.
+
+25. Przyjê³o siê, ¿e w przypadku tworzenia nowych zasobów w dobrym tonie jest
+przekazywanie klientowi adresu URL tego zasobu przy u¿yciu nag³ówka odpowiedzi
+Location.
+
+26. Najczêœciej klientami API modelu REST s¹ aplikacje mobilne
+oraz aplikacje pisane w jêzyku JavaScript; nic jednak nie stoi na przeszkodzie, by
+z takich zasobów korzysta³y tak¿e aplikacje Spring.
+
+REST TEMPLATE
+
+27. Jedyna ró¿nica polega na tym, ¿e getForObject() zwraca po prostu obiekt ¿¹danego typu,
+podczas gdy getForEntity()zwraca
+ten obiekt wraz z dodatkow¹ informacj¹ o odpowiedzi.
+
+public Profile fetchFacebookProfile(String id) {
+RestTemplate rest = new RestTemplate();
+return rest.getForObject("http://graph.facebook.com/{spitter}",
+Profile.class, id);
+}
+
+ * jest to przyk³ad konsumowania resta i konwertowania go na konkretny typ danych,
+ * wysy³a ¿¹danie do konkretnego url zasobu i konwertuje go na obiekt.
+
+28. JSON oraz konsumowanie wiadomoœci REST jest zwykle zarezerwowane dla technologii webowych,
+ale jest równie¿ mo¿liwe aby konsumowaæ je za pomoc¹ rest template,
+
+29. Fakt, ¿e pos³ugiwanie siê rest jest bardzo ³atwe i pozwala na przesy³anie danych jaki informacji na temat 
+danych, nag³ówków oraz informacji na temat utworzenia zasobu,
+
+30. Rest template jest to poprostu javowa metoda do komunikowania siê z serwerem jak przy uzyciu jquery,
+
+31. Metoda exchange() obiektu restTemplate pozwala na ustawienie nag³ówka ¿¹dania,
+
+32. Zasoby w systemie s¹ identyfikowane za pomoc¹
+adresów URL, modyfikowane za pomoc¹ metod HTTP i reprezentowane w jednej lub
+kilku w³aœciwych dla klienta formach.
+
+33. Bardzo czêsto klientami API modelu
+REST s¹ aplikacje mobilne b¹dŸ aplikacje JavaScript dzia³aj¹ce w przegl¹darkach
+WWW. Nic jednak nie stoi na przeszkodzie, by przy u¿yciu szablonów RestTemaplate
+korzysta³y z nich tak¿e inne aplikacje Spring, ale jest to o wiele ¿adsze.
+Jednak taki czysty rest template pozwala tak¿e innym na dostêp do zasobów,
+dlatego trzeba je zabezpieczaæ.
+
+34. 
+
+

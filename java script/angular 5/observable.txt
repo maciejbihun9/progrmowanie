@@ -1,0 +1,40 @@
+
+ * If you neglect to subscribe(), the service will not 
+ send the delete request to the server! As a rule,
+ an Observable does nothing until something subscribes!
+
+ * after each observable subscribe() must be called:
+ - this.heroService.deleteHero(hero).subscribe();
+
+ * make an operation after observable done executing:
+ - we can do it using subscribe,
+ - this.heroService.addHero({ name } as Hero)
+    .subscribe(hero => {
+      this.heroes.push(hero);
+    });
+
+ * we can describe a type of an operation object:
+ - tutaj jest podobieństwo do javy, gdie trzeba było podawać argumentu w (),
+ podczas programowania funkcjnalnego
+ - getHeroes(): void {
+    this.heroService.getHeroes()
+      .subscribe((heroes: Hero[]) => this.heroes = heroes);
+  } 
+
+ * create an observable of arrays:
+ - this.http.get<Hero[]>(url) - returns one object, a one array,
+ 
+ * create an observable of objects :
+ - this.http.get<Hero>(url) - returns one object
+
+ * create a pipe that filter a results:
+ - we can do something with our data in this place,
+ - pipe is a method for informational purposes than operations on the data,
+ - pipe returns an obserable, so we can make a subscribe call after it,
+ - observable.pipe(
+	// do something when data returns
+    tap(_ => this.log(`fetched hero id=${id}`)),
+	// handle errors
+    catchError(this.handleError<Hero>(`getHero id=${id}`))
+  );
+ - tap is responsible for logging some messages, not for reall operations, 

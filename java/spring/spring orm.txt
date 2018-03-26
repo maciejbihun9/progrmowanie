@@ -1,0 +1,93 @@
+1. jdbc jest takim dzieckiem w œwiecie utrwalania danych, 
+
+ * nie dojrza³y, trzeba pisaædu¿o nadmiarowego kodu, 
+
+2. Zalety ORM:
+
+ * lazy loading - uzyskanie danych, tylko wtedy, gdy s¹ potrzebne, 
+
+ * eager fetching - pobiera ca³y graf obiektów, co zmniejsza liczbe cykli komunikacji z baz¹,
+
+ * cascading - usuwanie obiektów powi¹zanych z innym typyem powinno równie¿ wywo³aæ usuniêcie 
+obiektów powi¹zanych,
+
+3. Graf obiektu - Obiekt ze wszystkimi zale¿noœciami!,
+
+4. Zastosowanie narzêdzia ORM do warstwy trwa³oœci pozwoli Ci
+zaoszczêdziæ dos³ownie tysiêcy wierszy kodu i d³ugich godzin pracy,
+
+5. Przyk³ady ORM - Hibernate, iBATIS, Java Data Objects (JDO) i Java Persistence API (JPA),
+
+6. Hibernate(Hibernate w akcji, Hibernate - strona domowa):
+
+ * pamiêæ podrêczna, leniwe ³adowanie, chciwe pobieranie czy rozproszona pamiêæ podrêczna,
+
+ * zaspokaja on wszystkie potrzeby obiektu repozytorium w dziedzinie utrwalania danych,
+
+ * Po pierwsze, adnotacja @Repository jest jedn¹ z adnotacji stereotypowych,
+które s¹ wyszukiwane za pomoc¹ mechanizmu skanowania komponentów.
+Oznacza to, ¿e zamiast stosowaæ jawn¹ deklaracjê komponentu HibernateSpitterRepository, 
+wystarczy, i¿ klasê repozytorium umieœcimy w pakiecie podlegaj¹cym skanowaniu,
+
+ * do zadañ klasy szablonowej nale¿y przechwytywanie wyj¹tków platformy i ponowne ich zg³aszanie
+w postaci zunifikowanych niekontrolowanych wyj¹tków Springa,
+
+ * Aby umo¿liwiæ t³umaczenie wyj¹tków w niezawieraj¹cej szablonu klasie repozytorium
+Hibernate, musimy dodaæ komponent PersistenceExceptionTranslationPostProcessor
+w kontekœcie aplikacji Springa.
+
+7. Spring i JPA:
+
+ * powsta³o na zgliszczach EJB 2,
+
+ * rekomendowany w Springu sposób utrwalania danych,
+
+ * JPA to mechanizm utrwalania oparty na POJO, 
+
+ * Niektórzy twierdz¹ nawet, ¿e nie ma nic lepszego ni¿ tandem Spring — JPA do programowania POJO,
+
+ * Niezale¿nie
+od tego, który wariant EntityManagerFactory wybierzesz, Spring bêdzie zarz¹dza³ mened¿erami encji za Ciebie,
+
+ * Spring chowa zawi³oœci zwi¹zane z JPA pod powierzchnie dzieki temu mo¿na siê skupiæ na dostêpie do danych,
+
+ * @Transactional mówi, ¿e wszystkie metody zwi¹zane
+z utrwalaniem danych w naszym repozytorium bêd¹ wykonywane w kontekœcie transakcji,
+
+ * du¿o jebania jest z tym jpa, trzeba deklarowaæ du¿o konfiguracji, binów tranzakcji oraz
+jebanie sie z obs³ug¹ wyj¹tków.
+
+8. Spring z wykorzystaniem Spring Data:
+
+ * Zamiast wielokrotnego tworzenia tych samych implementacji repozytorium
+Spring Data wymaga od nas jedynie utworzenia interfejsów. Nie jest potrzebna ¿adna
+implementacja,
+
+ * zero zbêdnej implementacji oraz powtarzalnego kodu!!!,
+ 
+ * Dziedziczy te¿ 18
+metod s³u¿¹cych do przeprowadzania najczêstszych operacji utrwalania, takich jak
+zapisywanie obiektów Spitter, ich usuwania i wyszukiwania w oparciu o identyfikator,
+
+ * @EnableJpaRepositories nad klas¹ konfiguracji w³¹cza ca³¹ magiê spring Data,
+
+9. Istotne jest zrozumienie, ¿e implementacja repozytorium tworzona jest przy uruchamianiu
+aplikacji, w trakcie tworzenia kontekstu aplikacji Springa. Nie jest wynikiem
+generowania kodu podczas budowania aplikacji ani nie powstaje przy wywo³ywaniu
+metod interfejsu.
+
+10. Dla z³o¿onych zapytañ mo¿na tworzyæ w³asne metody dostêpu do danych, gdzie
+zapytanie jest ukryte w nazwie metody,
+
+ * maj¹ jadnak pewne ograniczenia, które s¹ rozwiewane przez andnotacje @Query
+
+11. Jak widzieliœmy wczeœniej, adnotacja @Query jest u¿yteczna wtedy, gdy wyra¿enie
+zapytania za pomoc¹ konwencji nazewniczej jest trudne,
+
+12. Interfejs mo¿e rozszerzaæ kilka klas,
+
+13. Gdy zapytania s¹ bardzo zaawansowane, to warto u¿yæ po³¹czenia Spring Data oraz jpa,
+
+14. Spring Data to najlepsze rozwi¹zanie do budowania po³¹czenia z bazami danych,
+
+15. 

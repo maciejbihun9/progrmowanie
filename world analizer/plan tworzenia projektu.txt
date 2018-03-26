@@ -1,0 +1,41 @@
+1. Na podstawie wiedzy ekonomicznej, muszê ustaliæ jakie analizy bêd¹ przeprowadzane
+   pod wzgêdem pobierania danych.
+
+2. Zbudowanie architektury bazy danych na podstawie wiedzy  o tym jak bêd¹ pobierane dane,
+
+3. ZnaleŸæ Ÿród³a danych,
+
+4. Automatyzacja pobierania danych,
+
+5. Napisanie skryptów do analizy danych
+
+JAVA PART
+------------------------------------------
+
+PROJEKT JAVA:
+ - to bêdzie taki projekt, który spowoduje, ¿e zaczne byæ coœ wart,
+ - w przysz³oœci mi on bardzo pomo¿e,
+ - pobieranie danych gie³dowych w ró¿nych odstêpach czasowych do repozytorium,
+ - ró¿ne analizy nie bêd¹ dla niego dostêpne, bêdzie musia³ dop³aciæ,
+ - bêdzie wiele sekcji, gdzie mo¿na wybraæ  
+ - pobieranie danych tylko dla user'a, który ma uprawnienia
+ - wyœwietlanie pobieranych danych z u¿yciem angulara,
+   wyœwietlanie zrobionych analiz na stronce, pobranych z repozytorium,
+ - móg³bym zrobiæ to samo dla javy oraz python'a,
+ - pobieranie wyników obliczeñ i ich wyœwietlanie dla u¿ytkowników, którzy
+   maj¹ do nich dostêp,
+ - ui przygotuje póŸniej,
+ - wyniki analiz te¿ bêd¹ siê znajdowaæ pod odpowiednim url'm,
+ 
+ PROJEKT GIE£DOWY:
+ - dewelopowanie zapisywania analiz, a dok³adniej zdjêæ wyników analiz,
+ - zapisanie ich pod okreœlony url,
+ - odczytanie tego obrazka spod podanego url'a,
+ - narazie siê trzeba skupiæ na tym co mam do zaoferowania
+ - dla testowania ja sobie zrobie apke, gdzie sobie pobiorê dane gie³dwe, aby podpi¹c mongo db,
+ - podpiêcie analiz pod bazê danych, pobieranie
+ ----------------------------------------------
+ - utworenie bazy danych u¿ytkowników, logowania do aplikacji,
+ - zabezpieczenie urlów przed u¿ytkownikami, którzy nie maj¹ aktualnie dostêpu,
+ - zabezpieczenie ca³ej aplikacji,
+ - stworzenie ca³ego systemu p³atnoœci, mo¿liwoœci logowania do aplikacji,

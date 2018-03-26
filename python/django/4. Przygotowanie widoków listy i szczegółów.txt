@@ -1,0 +1,11 @@
+1. Wewn¹trz widoku znajduje siê ca³a logika odpowiedzialna za zwrot ¿¹danej
+odpowiedzi,
+
+2. parametr request jest wymagany przez wszystkie widoki,
+
+3. Metoda z views.py mo¿e dostaæ poza request równie¿ kilka parametrów,
+które s¹ podawane w œcie¿ce ¿¹dania:
+
+ * def post_detail(request, year, month, day, post):
+
+4. Konwencja mówi o dodawaniu metody get_absolute_url() do klasy modelowej.

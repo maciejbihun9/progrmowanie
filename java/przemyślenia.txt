@@ -1,0 +1,9 @@
+1. Czy rozkminiaæ projekt Eliksir?:
+
+ * jak napisana jest nowoczesna aplikacja w javi'e?
+
+ * rozkminka architektury - tylko ogólnie - bez szczegó³ów, bez technologii,
+
+ * w jaki sposób by³y napisane interfejsy?,
+
+ * 

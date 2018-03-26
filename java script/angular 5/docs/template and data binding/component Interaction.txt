@@ -1,0 +1,97 @@
+
+ * create an alias for an input parameter:
+ - we can create shorter names for input variables(it is very nice)
+ - <app-hero-child *ngFor="let hero of heroes"
+      [hero]="hero"
+      [master]="master">
+ - @Input('master') masterName: string;
+ 
+ * I can see that it is common to mark an item with underscore
+ when we have a private variable:
+ - private _name: string;
+ 
+ * create getter and setters for private input fields:
+ - private _name = '';
+
+  @Input()
+  set name(name: string) {
+    this._name = (name && name.trim()) || '<no name set>';
+  }
+
+  get name(): string { return this._name; }
+  
+  * YOU HAVE LEARN SOMETHING ABOUT TESTING !!!
+  - you can learn how to test components in this section,
+  
+  * In angular we can execute all java script functions
+  - execute myTimer() every 1 sek,
+  - var zmienna = setInterval(function(){ myTimer() }, 1000);
+  
+  - stop executing this function:
+  - clearInterval(zmienna)
+  
+  * reference to my object:
+  - <h3>Countdown to Liftoff (via local variable)</h3>
+  - <button (click)="timer.start()">Start</button>
+  - <button (click)="timer.stop()">Stop</button>
+  - <div class="seconds">{{timer.seconds}}</div>
+  - <app-countdown-timer #timer></app-countdown-timer>
+  - now I can access all public fields of my class object via timer reference
+  
+  * use of delegation:
+  - inject component into your component in class,
+  - call this component methods via this injected component,
+  - this is my style of programming,
+  here I do not have to emit any events or variables higher to the parent component
+  
+  - @ViewChild(CountdownTimerComponent)
+  - private timerComponent: CountdownTimerComponent;
+  - start() { this.timerComponent.start(); }
+  - stop() { this.timerComponent.stop(); }
+  
+  * create many components in parent component:
+  - <app-astronaut *ngFor="let astronaut of astronauts"
+      [astronaut]="astronaut">
+    </app-astronaut>
+	
+ * if service is injected into a component then after this component
+ removal all subscriptions are deleted and there is no memory leaks,
+ but when we do it in app.module then we have to use unsubscriptions in NgOnDestroy()
+ 
+ * An observable allows you to subscribe only whereas
+ a subject allows you to both publish and subscribe.
+ 
+ * public some text and subscribe to your subscribers:
+ - this is possible thanks to Subject() class of Angular
+ 
+ * communication between components (between parant and children for sure):
+ - I am not sure about communication between other relations between components, but
+ this works for parant-children relation.
+ - public message = new Subject<string>();
+  setMessage(value: string) {
+    //it is publishing this value to all the subscribers that have already subscribed to this message
+    this.message.next(value);
+  }
+ - now, all components that subscribe to this subject will recive this message.
+ - this.subscription = this.messageService.message.subscribe(
+      message => {
+        this.message = message;
+      }
+    );
+ 
+ * in some tutorials I have seen that we create an obserable from subject,
+ but those objects work the same:
+ - 
+ // Observable string sources
+  private missionAnnouncedSource = new Subject<string>();
+  private missionConfirmedSource = new Subject<string>();
+
+  // Observable string streams
+  missionAnnounced$ = this.missionAnnouncedSource.asObservable();
+  missionConfirmed$ = this.missionConfirmedSource.asObservable(); 
+  
+ - works the same as: 
+  missionAnnounced$ = this.missionAnnouncedSource;
+  missionConfirmed$ = this.missionConfirmedSource; 
+  
+  

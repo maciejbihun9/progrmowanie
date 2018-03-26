@@ -1,0 +1,18 @@
+1. Python: 
+
+ * Django - ksi¹¿ka
+
+ * potem Python podstawy
+
+ * system do grania na gie³dzie
+
+2. Java:
+
+ * w javie nie da siê samemu pisaæ du¿ych aplikacji, ale p³ac¹ zajebiœcie du¿o,
+
+ * uczenie siê takich rzeczy co siê fajnie robi w javi'e, ma³e elementy aplikacji
+
+
+3. JavaScript:
+
+ * coœ do podstaw

@@ -1,0 +1,97 @@
+
+ * our object has to be hashable to be inserted into a set or a dict,
+ 
+ * all built in methods are already available in the python object
+ when is created,
+ 
+ * Every object-oriented language has at least one standard way of getting a string representation
+	from any object. Python has two:
+	repr()
+	Return a string representing the object as the developer wants to see it.
+	str()
+	Return a string representing the object as the user wants to see it.
+
+ * python does not contain any private fields and it does not metter
+ weather you declare it with __ or not!!!, 
+ - using __ before a variable makes that field not accessable for simple set,
+ but we still are able to change it using: _classname_varname = new_value,
+
+ * one underscore does not have any meaning, but
+ we can tract it as a protected variables,
+	
+ * get all object variables in a dict:
+ - object.__dict__() 
+ 
+ * store instance attributes in a tuple like object:
+ - use __slots__() method  to do it,
+ - it is impoertant to just declare it, because since this there is no dict!!!,
+ that stores all values,
+ - it reduces memory usage from 1.5 Gb to 645 MB for 10000000 objects,
+ - should be used only when working with many database objects, but even in
+ this case we should concern using pandas or numpy libraries,
+ - does not support weak references,
+ - this can have huge effect we you have milion objects activated
+ in the same time saving a lot of memory!!!
+ 
+ * of course it is not recommended to store many objects with numeric data
+ you should use numpy for that!!! as much as possible,
+	
+ * przykład metody equals:
+ - następuje porównanie wartości pól obiektów,
+ - def __eq__(self, other):
+	return tuple(self) == tuple(other)\
+	
+ * __iter__ makes a Vector2d iterable; this is what makes unpacking work, e.g,
+x, y = my_vector. We implement it simply by using a generator expression to
+yield the components one after the other3,
+ - def __iter__(self):
+	return (i for i in (self.x, self.y))	
+ - now we can:
+ - x, y = v1
+ 
+ * __iter__ makes possible to tract object as a list!!!
+ - w have to define there how our list looks like from class fields
+ - we can iterate over it,
+ 
+ * classmethod does not operate on class instances, but on class itself where
+ staticmethod is just a another method that exists in the class body,
+ - can be used when we want to create an instance of a class at the end 
+ of our method from parameters passed to the functions,
+ 
+ * we do not see any use case for staticmethods
+ - if you want to create a method which does not touches the class body
+ then you should create it in a seperate module,
+ 
+ * our object can be hashable only if all our class variables are immutable,
+ - we can do it by making our variables private
+ - hash value can never change to work in sets and dicts properly!!!,
+ that's why we need private variables here
+ self.__x = float(x)
+ self.__y = float(y)
+ - we can get those varialbes only using some getter methods:
+ @property
+def x(self):
+	return self.__x
+	
+ * an example of a hash method:
+ - def __hash__(self):
+	return hash(self.x) ^ hash(self.y) 
+
+ * convert bytes into an object representation:
+ - with classmethod we pass class as an argument not self,
+ - after parsing we can return an object representation with params from bytes,
+@classmethod
+def frombytes(cls, octets):
+	typecode = chr(octets[0])
+	memv = memoryview(octets[1:]).cast(typecode)
+	return cls(*memv) 
+	
+ * use format methods to format numbers to a string representation,
+
+ * round the amount of zeros in string representation:
+ - format(variable, '.3f') - to 3 numbers of zeros
+
+ * advanced string formatting - str. 252 
+ - format how class variables are formatted into a string representation,
+ 
+ * 

@@ -1,0 +1,5 @@
+1. we can learn our model here and make available for others to use.
+
+2. It is easy to test and experiment
+
+3. You can build your models more quickly,

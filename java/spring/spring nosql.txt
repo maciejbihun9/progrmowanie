@@ -1,0 +1,154 @@
+1. Najlepsz¹ reprezentacj¹ niektórych danych s¹ dokumenty. Oznacza to, ¿e naszych
+danych nie rozpraszamy po wielu tabelach, wêz³ach lub encjach, bo wiêkszy sens ma
+zebranie wszystkich informacji w nieznormalizowanej strukturze (zwanej dokumentem),
+
+2. Bazy dokumentowe nie s¹ przystosowane do przechowywania danych powi¹zanych ze
+sob¹ w du¿ym stopniu w ramach wzajemnych relacji.
+
+3. Dla baz nierelacyjnych istenieje: Spring Data MongoDB,
+
+4. Konfiguracja mongo db zajmuje kilka binów konfiguracji,
+
+5. W poprzednim rozdziale w³¹czyliœmy mechanizm automatycznego generowania repozytorium
+Spring Data JPA za pomoc¹ adnotacji @EnableJpaRepositories. 
+Adnotacja @EnableMongoRepositories pe³ni tê sam¹ funkcjê w MongoDB,
+
+6. Dostêp do zabezpieczonego serwera MongoDB jest trochê bardziej z³o¿ony,
+
+7. Standardowa konfiguracja komponentów, nic wielkiego,
+
+8. MongoDB nie dostarcza jednak w³asnych adnotacji odwzorowywania obiektowodokumentowego,
+
+9. Jak wczeœniej wspomina³em, dokumenty mog¹ byæ ze sob¹ wzajemnie powi¹zane,
+ale nie jest to dziedzina, w której bazy dokumentowe sprawdzaj¹ siê najlepiej.
+
+ * dokumenty nie powinny mieæ relacji,
+
+10. Tylko klasa rodzica dokumentu posiada adnotacje @Document,
+klasy dzieci nie posiadaj¹ ¿adnych adnotacji.
+
+11. Do obs³ugi bazy mongo db mo¿na u¿ywaæ Criteria api,
+
+12. MongoOperations s³u¿y do w³asnorêcznej obs³ugi metod repozytorium,
+dzia³a podobnie jak w pythonie
+
+13. ka¿dy interfejs rozszerzaj¹cy interfejs Repository po uruchomieniu zostanie
+automatycznie zaimplementowany.
+
+SPRING DATA MONGODB
+
+14. Zapytania mo¿na tworzyæ w taki sam sposób jak w spring data jpa,
+
+ * jedyna ró¿nica to w adnotacji @Query u¿ywamy zapytania na bazie JSON
+
+15. Ale podobnie jak bazy relacyjne, nie s¹ lekarstwem na wszystkie trudnoœci. Co wiêcej,
+w niektórych sytuacjach ¿adne z tych rozwi¹zañ nie jest odpowiednie. Na szczêœcie s¹
+jeszcze inne mo¿liwoœci.
+
+SPRING NEO4J
+
+ * maj¹c node mo¿na za³adowaæ tylko jego I poziom zale¿noœci bez dalszych.
+Mo¿na oczywiœcie ustawiæ, aby ³adowa³ ca³oœæ lub tylko II poziom i tak dalej.
+
+ * skoncentrowany na szybkoœæ,
+
+ * do skanowania nie wykorzystuje siê refleksji, dlatego aplikacja wstaje o wiele wczeœniej,
+
+ * neo4j - najbardziej nadaje siê do sieci spolecznoœciowych,
+   gdzie jest bardzo rozbudowana sieæ relacji miedzy elementami,
+
+ * sieci spo³ecznoœciowe, historyjki, itp, itd. 
+
+16. Podczas gdy bazy dokumentowe przechowuj¹ dane w „gruboziarnistych” dokumentach,
+bazy grafowe przechowuj¹ dane w kilku „drobnoziarnistych” wêz³ach, powi¹zanych
+ze sob¹ poprzez relacje. Wêze³ w bazie grafowej z regu³y reprezentuje w bazie danych
+koncepcjê, w której w³aœciwoœci okreœlaj¹ stan wêz³a. Relacje wi¹¿¹ ze sob¹ dwa wêz³y
+i mog¹ przechowywaæ w³asne w³aœciwoœci.
+
+17. Dostêp w oparciu o szablony Neo4j oraz automatyczne generowanie implementacji repozytoriów,
+
+18. posiada tak¿e automatyczne generowanie repozytoriów, które trzeba w³¹czyæ podczas konfiguracji,
+
+19. Mo¿na konfigurowaæ po³¹czenia ze zdalnymi serwerami jaki i dzia³aj¹cymi na naszej maszynie wirtualnej,
+
+20. W najprostszej postaci bazy grafowe s¹ bardziej uniwersalne od baz dokumentowych
+i mog¹ stanowiæ alternatywê dla baz relacyjnych, nie posiadaj¹c przy tym ustalonego
+schematu. Poniewa¿ jednak dane w bazie grafowej maj¹ strukturê grafu, mo¿liwe jest
+pod¹¿anie wzd³u¿ relacji i odkrywanie zale¿noœci, które by³yby trudne lub nawet nieosi¹galne
+w bazach innego typu.
+
+ * czyli przedewszystkim s¹ bardziej uniwerslane,
+21. Pliki s¹zapisywane do systemu plików,
+
+22. Jak zwykle potrzeba kilku konfiguracji komponentów,
+
+23. Jedn¹ z najwspanialszych funkcjonalnoœci, dostêpn¹ w wiêkszoœci projektów Spring
+Data, jest automatyczne generowanie implementacji interfejsu repozytorium,
+
+24. Spring Data Neo4j jest bardzo podobne do implementacji Spring Data standardowego
+ w kontekœcie dostêpnych metod.
+
+25. Jest to jednak bardziej zaawansowana metoda zapisywania danych, czasem nie potrzeba a¿ tak dobrych rozwi¹zañ,
+
+REDIS
+
+26. Redis jest przedstawicielem baz danych nazywanych bazami klucz-wartoœæ. Jak wskazuje
+sama nazwa, bazy te przechowuj¹ dane w postaci pary klucz-wartoœæ. W praktyce
+bazy klucz-wartoœæ maj¹ wiele cech wspólnych z tablic¹ haszuj¹c¹,
+
+ * w pewnym sensie s¹ jak tablice haszuj¹ce
+
+ *  do po³¹czenia z baz¹ danych potrzebna jest nam fabryka po³¹czenia z baz¹ Redis.
+W Spring mamy jej az 4 implementacje,
+
+ * Mo¿emy zapisaæ wartoœæ pod jakimœ kluczem
+i pobraæ wartoœæ dla podanego klucza. I to wszystko.
+
+27. Z perspektywy Spring Data Redis wszystkie fabryki po³¹czeñ s¹
+równie dobre,
+
+28. wszystkie metody po³¹czeñ do bazy s¹ takie same - polega to na tworzeniu komponentów z atrybutami po³¹czenia
+
+29. Jak wskazuje nazwa, fabryka po³¹czeñ Redisa produkuje po³¹czenia (pod postaci¹
+obiektów RedisConnection) do bazy klucz-wartoœæ Redis. Po³¹czenie RedisConnection
+pozwala nam zapisywaæ i odczytywaæ dane,
+
+30. Typowe dzia³anie z Redis:
+
+ RedisConnectionFactory cf = ...;
+RedisConnection conn = cf.getConnection();
+conn.set("greeting".getBytes(), "Hello World".getBytes());
+
+31. pozwala na przechowywanie kluczy i wartoœci dowolnego typu, nie tylko
+tablicy bajtów, tak¿e warto je zapisaæ za pomoc¹ RedisTmeplate.
+
+RedisConnectionFactory cf = ...;
+RedisTemplate<String, Product> redis =
+new RedisTemplate<String, Product>();
+redis.setConnectionFactory(cf);
+
+32. Chocia¿ nie jest to wymagane, to w przypadku czêstego wykorzystywania szablonów
+RedisTemplate lub StringRedisTemplate warto je skonfigurowaæ w postaci komponentu
+i wstrzykiwaæ, kiedy s¹ potrzebne,
+
+33. Redis zapisuje i pobiera obiekty... tyle, po kluczu, jak nie znajdzie, to null. Bieda.
+
+34. Redis umo¿liwia dodawanie par klucz-wartoœæ tj.:
+
+ * obiekt - list, zbiór,mapa,tablice
+
+35. Po utworzeniu i wype³nieniu wartoœciami kilku wpisów w zbiorze mo¿emy przeprowadziæ
+interesuj¹ce operacje na tych zbiorach, takie jak znajdowanie ró¿nic pomiêdzy
+nimi, znajdowanie czêœci wspólnej oraz ³¹czenie zbiorów:
+
+36. Zbiory nie maj¹ indeksów ani nie s¹ w jawny sposób posortowane, nie mo¿emy wiêc
+wskazaæ i pobraæ pojedynczego elementu,
+
+37. Bez wzglêdu na wybran¹ bazê pobieranie danych z ka¿dej bazy jest operacj¹ kosztown¹.
+W praktyce zapytania na bazie danych s¹ czêsto najwiêkszym w¹skim gard³em
+aplikacji. Teraz gdy ju¿ wiesz, jak zapisywaæ i pobieraæ dane z ró¿nych Ÿróde³, popatrzmy,
+jak zapobiec powstaniu tego w¹skiego gard³a. W nastêpnym rozdziale zobaczysz,
+jak wykorzystaæ mechanizm deklaratywnego cachowania do unikniêcia niepotrzebnych
+odczytów z bazy.
+
+ 

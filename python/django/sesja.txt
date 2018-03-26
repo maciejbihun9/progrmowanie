@@ -1,0 +1,43 @@
+ * omówienie wszystkich ustawieñ dotycz¹cych sesji:
+ - https://docs.djangoproject.com/en/1.8/ref/settings/#sessions,
+
+ * sesja normalnie przetrzymuje dane w formacie JSON pod kluczem w obiekcie request
+
+
+* Aby w ogóle u¿yæ mechanizmu sesji, konieczne jest upewnienie siê, ¿e opcja
+MIDDLEWARE_CLASSES w projekcie ma przypisan¹ wartoœæ 'django.contrib.sessions.middleware.SessionMiddleware'.
+ To oprogramowanie poœrednicz¹ce zarz¹dza sesjami i jest dodawane
+domyœlnie podczas tworzenia nowego projektu za pomoc¹ polecenia startproject.
+
+ * Ten s³ownik Pythona domyœlnie akceptuje dowolny
+obiekt Pythona, który mo¿e byæ serializowany na postaæ danych w formacie JSON.
+
+ * Ustawienie zmiennej w sesji odbywa siê nastêpuj¹co.
+request.session['foo'] = 'bar'
+Pobranie klucza sesji odbywa siê w poni¿szy sposób.
+request.session.get('foo')
+W celu usuniêcia klucza przechowywanego w sesji nale¿y u¿yæ nastêpuj¹cego polecenia.
+del request.session['foo']
+
+ * Kiedy u¿ytkownik loguje siê w witrynie internetowej, jego sesja anonimowa jest usuwana i nastêpuje
+utworzenie nowej sesji dla uwierzytelnionego u¿ytkownika. Je¿eli w sesji anonimowej s¹ przechowywane
+elementy, które maj¹ w niej pozostaæ po zalogowaniu siê u¿ytkownika, konieczne jest skopiowanie
+danych ze starej sesji do nowej.
+
+ * istnieje wiele metod zapisywania sesji - zapisywanie sesji!!!??
+ - w bazie danych
+ - w cachu (efektywnoœci),
+ - na serwerze,
+
+ * czyli dane sesji s¹ zapisane w bazie danych, ale mo¿na siê do nich dostaæ, bo mamy klucz sesji,
+który do nich prowadzi,
+
+ * To jest klucz, którego bêdziemy u¿ywaæ do przechowywania koszyka na zakupy w sesji u¿ytkownika.
+Poniewa¿ sesje Django s¹ tworzone dla poszczególnych u¿ytkowników, dla wszystkich
+sesji mo¿na wykorzystaæ ten sam klucz,
+
+ * my musimy sami utworzyæ klucz sesji,
+
+ * 
+
+

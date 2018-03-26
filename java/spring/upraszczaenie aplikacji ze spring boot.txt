@@ -1,0 +1,66 @@
+1. spring boot bardzo u³atwia pracê ze springiem,
+
+2. spring boot starter pozwala na pobranie wszystkich zale¿noœci zwi¹zanych ze specyfik¹
+tworzonej aplikacji. Fakt, ¿e czasami trzeba pobraæ zaleznoœci do bazy danych oraz widoków,
+ale jest to mimo wszystko dobre rozwi¹zanie.
+
+ * Kiedy jest du¿o zale¿noœci to trudno wybraæ takie, które nie bêd¹ ze sob¹ kolidowaæ
+
+3. Startery Spring Boot mog¹ powodowaæ uruchomienie mechanizmu automatycznej
+konfiguracji. Na przyk³ad aby skorzystaæ ze Spring MVC w aplikacji Spring Boot,
+wystarczy dodaæ do pliku budowy odpowiedni starter. Kiedy mechanizm automatycznej
+konfiguracji wykryje Spring MVC w œcie¿ce klas, automatycznie skonfiguruje kilka komponentów
+zwi¹zanych ze Spring MVC, takich jak producent widoków, komponenty
+obs³ugi zasobów oraz konwertery komunikatów. Nam pozostanie jedynie napisanie klas
+kontrolerów obs³uguj¹cych ¿¹dania.
+
+4. Spring boot przeprowadza automatyczn¹ konfiguracjê aplikacji pod wzglêdem
+specyfiki tworzonej aplikacji,
+
+5. Groovy oraz spring cli pozwalaj¹ na bardzo du¿e skrócenie czasu potrzebnego do
+odpalenia programu.
+
+6. spring aktuator pozwala na œledzenie tego co dzieje sie w aplikacji oraz
+na œledzenie informacji oraz b³êdów z niej wyp³ywaj¹cych,
+
+7. Tworz¹c projekt Maven w oparciu o projekt
+nadrzêdny, którym jest starter Spring Boot spring-boot-starter-parent, zyskamy
+mo¿liwoœæ korzystania z zarz¹dzania zale¿noœciami przez program Maven i nie bêdziemy
+musieli jawnie deklarowaæ numerów wersji w niektórych zale¿noœciach. Numery te
+zostan¹ odziedziczone po projekcie nadrzêdnym.
+
+8. Spring boot pozwala na minimalizacjê kodu konfiguracyjnego,
+
+9. Spring Boot pomaga nam w kwestii
+zarz¹dzania zale¿noœciami lub minimalizacji kodu konfiguracyjnego,
+
+10. thymeleaf jest jednym z lepszych frameworków do budowy interfejsu graficznego u¿ytkownika,
+zdecydowanie lepszy od jsp, czy jsf.
+
+ * stosowanie thymleaf nie wymaga ¿adnej jawnej konfiguracji, czyli zmniejszenie iloœci
+   potrzebnego kodu oraz iloœci pracy. Lepszy od jsf, czy jsp, bo uzywa html.
+
+ * A poniewa¿ automatycznie skonfigurowany producent
+szablonów bêdzie szuka³ szablonów Thymeleaf w katalogu templates umieszczonym
+wewn¹trz katalogu g³ównego œcie¿ki klas, bêdziemy musieli umieœciæ plik home.html
+w projekcie Maven lub Gradle, w katalogu src/main/resources/templates.
+
+11. Po wykryciu w œcie¿ce klas bazy H2 jaki i jdbc template, spring boot
+automatycznie konfiguruje ich komponenty,
+
+12. Sppring boot niemal¿e eliminuje ca³y kod konfiguracyjny aplikacji, nie potrzebuje
+¿adnych plików xml, czy œmieci tym podobnych. Adnotacja @EnableAutoConfiguration robi ca³¹ robotê,
+
+13. Po spakowaniu aplikacji w jar mo¿na ja odpaliæ na localhoscie:8080
+
+14. Jêzyk groovy jest o wiele lepsz¹ wersj¹ jêzyka java:
+
+ * pozwala na szybsze oraz ³atwiejsze tworzenie kodu,
+
+15. O ile sam Spring stara siê u³atwiæ tworzenie programów
+w jêzyku Java, Spring Boot stara siê u³atwiæ stosowanie frameworka Spring.
+
+16. startery Spring Boot oraz automatyczn¹ konfiguracjê. 
+
+17. Aplikacje powinny byæ pisane w spring boot, bo bardzo u³atwia pisanie aplikacji
+oraz usuwa nadmiarowy kod. Przeprowadza automatyczn¹ konfiguracjê komponentów znalezionych na œcie¿ce javy. 

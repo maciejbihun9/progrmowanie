@@ -1,0 +1,22 @@
+
+ * data-tags- pozwla na przechowywanie danych w ³atwy oraz niestandardowy sposób,
+  mo¿na w tym zapisaæ wszelakie dane: data-id, data-email, data-age etc.
+ - posiadaj¹ ju¿ dane do wys³ania do backend'u,
+ - jesteœ ograniczony do zachowania stringów,
+ - mo¿na ustawiaæ ró¿ne atrybuty za pomoc¹ set oraz get attributes,
+ - za pomoc¹ jquery mo¿na zmieniæwartoœæ poprzez .attr(old, new), .attr(value),
+ - Custom data attributes are intended to store custom data private to the page or application,
+ - mo¿na tam podes³aæ jakieœ specyficzne dane na temat elementu html,
+ - jest to poprostu dodatkowy atrybut, po którym mo¿na wyszukaæ element,
+ - albo oddelegowaæ zdarzenia do elementu wyrzej po³o¹onego, aby
+obs³u¿a³ zdarzenia za pomoc¹ takich akcji:
+
+ $('body').on('click','div',changeColor);
+
+ data-action="changeColor"
+
+ for which there are no more appropriate attributes or elements.
+
+ * $(window).scroll() - przechwycenie zdarzenie skrolowania
+
+ 

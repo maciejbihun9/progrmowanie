@@ -1,0 +1,115 @@
+
+ * remember that Angular always adds a class-reference to it's own injector,
+ that manages the providers of that component.
+ 
+ * Use this when you have many components of the same type or many components that
+ inherits from a parent,
+
+ * declare providers for a component:
+ - providers: [
+    { provide: Hero,          useValue:    someHero },
+    { provide: TITLE,         useValue:   'Hero of the Month' },
+    { provide: HeroService,   useClass:    HeroService },
+    { provide: LoggerService, useClass:    DateLoggerService },
+    { provide: MinimalLogger, useExisting: LoggerService },
+    { provide: RUNNERS_UP,    useFactory:  runnersUpFactory(2), deps: [Hero, HeroService] }
+  ]
+  
+  - The provide object literal takes a token and a definition object. 
+  The token is usually a class but it doesn't have to be.
+  
+ - useValue - is a fixed property, it is used as a class configuration constants,
+ we want here a type information about an object,
+ useValue objects are created immidetly as the component is created, but
+ rest of providers are created lazily,
+ 
+ - useExisting - this is a way to create an alias for a provider  
+ 
+ - useFactory - is used for creating new objects from already injected,
+ { provide: RUNNERS_UP,    useFactory:  runnersUpFactory(2), deps: [Hero, HeroService] }
+ export function runnersUpFactory(take: number) {
+  return (winner: Hero, heroService: HeroService): string => {
+    /* ... */
+  };
+};
+
+ * Create components that do different things with the data:
+ eg. get the heroes data and do with it what you want,
+ subclass as a sorted data,
+ subclass as a limited amount of data,
+ subclass after some modifications,
+
+@Component({
+  selector: 'app-unsorted-heroes',
+  template: `<div *ngFor="let hero of heroes">{{hero.name}}</div>`,
+  providers: [HeroService]
+})
+export class HeroesBaseComponent implements OnInit {
+  constructor(private heroService: HeroService) { }
+
+  heroes: Array<Hero>;
+
+  ngOnInit() {
+    this.heroes = this.heroService.getAllHeroes();
+    this.afterGetHeroes();
+  }
+
+  // Post-process heroes in derived class override.
+  protected afterGetHeroes() {}
+
+}
+
+@Component({
+  selector: 'app-sorted-heroes',
+  template: `<div *ngFor="let hero of heroes">{{hero.name}}</div>`,
+  providers: [HeroService]
+})
+export class SortedHeroesComponent extends HeroesBaseComponent {
+  constructor(heroService: HeroService) {
+    super(heroService);
+  }
+
+  protected afterGetHeroes() {
+    this.heroes = this.heroes.sort((h1, h2) => {
+      return h1.name < h2.name ? -1 :
+            (h1.name > h2.name ? 1 : 0);
+    });
+  }
+} 
+
+ * inject a child component parent component to a child component when
+ you do not know the name of the parent and probably many classes inherits from the same parent,
+ 
+ - @Component({
+  selector: 'alex',
+  template: `
+    <div class="a">
+      <h3>{{name}}</h3>
+      <cathy></cathy>
+      <craig></craig>
+      <carol></carol>
+    </div>`,
+})
+export class AlexComponent extends Base
+{
+  name= 'Alex';
+}
+
+ - @Component({
+	  selector: 'craig',
+	  template: `
+	  <div class="c">
+		<h3>Craig</h3>
+		{{alex ? 'Found' : 'Did not find'}} Alex via the base class.
+	  </div>`,
+	  // avoid circular reference
+	  providers: [{ provide: Parent, useExisting: forwardRef(() => AlexComponent) }]
+  })
+  export class CarolComponent {
+  name= 'Carol';
+  constructor( @Optional() public parent: Parent ) { }
+}
+
+ * create multi-dependency trees with many items in a tree:
+ - Alice -> Barry -> Carol
+ - refer to DI in Action reference

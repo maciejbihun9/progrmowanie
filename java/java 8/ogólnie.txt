@@ -1,0 +1,75 @@
+
+ * lambdy:
+ - s¹ to zwyk³e funkcje, które zyj¹ w odosoobnieniu, nie s¹ czêœci¹ ¿adnej klasy,
+ - nie potrzebuj¹ ¿adnego obiektu
+ - pozwalaj¹ na programowanie funkcjonalne,
+ - ³atwiej jest u¿ywaæ bibliotek oraz API's,
+ - lambdy, to napewno nie klasy anonimowe, s¹ podobne, ale to nie jest to samo!
+ - wspomagaj¹ wspó³bie¿ne procesowanie (jest to poprostu ³atwiejsze),
+ - w g³ównej mierze polegaj¹ na wykonywaniu zdefiniowanego zachowania,
+ - najwiêkszy zysk jest, gdy musimy u¿yæ funkcjonalnych metod programowania
+ - Mogê utworzyæ funkcjê, która mo¿e byæ argumentem innych funkcji,
+ a ta funkcja mo¿e byæ nie musi byæ czêœci¹ ¿adnej klasy.
+
+ - zwyk³a funkcja: public void metoda(){} -> nazwa_funkcji = public void metoda(){}
+ /* Wszystko wygl¹da bardzo podobnie, ale nie potrzebujemy ¿adnych nazw oraz modyfikatorów,
+    bo nie mamy ¿adnego kontekstu do którego mo¿emy siê odwo³aæ tzn.: obiektu jakieœ klasy. */
+
+ - nazwa_funkcji = () -> {/* Cia³o metody */}, a jeœli jest to tylko jedna linijka kodu, to mo¿na
+   to zmieœciæ w jednej linijce kodu: nazwa_funkcji = () -> System.out.println("some tekst");
+ - metoda mo¿e oczywiœcie posiadaæ argumenty wejœciowe,
+ - lambda sama wie jaki jest typ zwracany, bo kompilator sam o tym wie,
+ - aby metoda mog³a dzia³aæ w Javie, to trzeba okreœliæ jej typ zwracany,
+a typem zwracanym mo¿e byæ tylko nazwa interfejsu, któryposiada jedn¹ metode nie zwi¹zan¹ nazw¹ z t¹
+ju¿ zaimplementowan¹ ;),
+ - dany interfejs mo¿e mieæ tylko i wy³¹cznie jedn¹ metodê, bo inaczje wyst¹pi b³¹d kompilacji,
+aby siê przed tym ochroniæ, to trzeba dodaæ adnotacje, ¿e dany interfejs jest funkcjonalny - @FunctionalInterface
+ - jak siê okazuje nie trzeba tworzyæ tego interfejsu, bo mo¿na wykorzystaæ interfejs Predicate<T> predicate,
+ - zachowuje siê on w ten sam sposób jakbyœmy utworzyli dany interfejs samodzielnie,
+ - w takim przypadku mo¿na wprowadziæ jako parametr metody zwyk³e wyra¿enie lambda, gdzie
+w definicji metody bêdzie wymagany obiekt predicate,
+ - trzeba pamiêtaæ ¿e ta metoda musi zwracaæ boolean,
+ - w pakiecie java 8 jest du¿o interfejsów, które pobieraj¹ ró¿ne parametry wejœciowe
+oraz zwracaj¹ ró¿ne parametry wyjœciowe,
+
+performConditionaly(people, p -> p.getFirstname().startsWith("C"), p -> System.out.println(p.getFirstname()));
+
+private void performConditionaly(List<Person> people, Predicate<Person> predicate, Consumer<Person> consumer){
+	for (Person p: people){
+		if (predicate.test(p)){
+			consumer.accept(p);
+		}
+	}
+}
+
+ - w powy¿szym przyk³adzie dok³adnie widaæ, ¿e do metody mo¿na podaæ wyra¿enie lambda,
+które definiuje funkcje boolean
+oraz wyra¿enie, które definiuje co ma siê zdarzyæ.
+ - te lamdby s¹ dobre do tego, aby stworzyæ metodê, która bêdzie w stanie dostaæ liste obiektów
+oraz razem mo¿liwoœci¹ wstawienia tam jakiejkolwiek funkcji która ma je przetwarzaæ.
+ - w metodzie lambda nie trzeba podawaæ typu parametru, który podajemy, 
+bo w interfejsie ju¿ jest to sprecyzowane,
+ - co ciekawe, to nawet nie potrzeba pisaæ tych nawiasów kiedy podajemy parametr,
+ - lambda mo¿e nawet byæ wys³ana jako parametr innej funkcji, jeœli dana funkcja przyjmuje jako
+parametr obiekt klasy, która implementuje interfejs z tylko jedn¹ metod¹.
+
+ np. Collections.sort, or Collections
+ np.Thread thread = new Thread(() -> System.out.println("printowanie jakiegoœ tekstu"));
+    thread.run();
+
+ - w przypadku przekazywania wyra¿enia lambda do funkcji, nie mo¿na z³apaæ wyj¹tku zwi¹zanego z dan¹ metod¹,
+ale mo¿na stworzyæ wyra¿enie lambda wrapper, do którego mo¿na wrzuciæ wyra¿enie lambda, gdzie mo¿na ju¿
+obs³u¿yæ dany wyj¹tek. Mo¿na tam zrobiæ wszystko generycznie, ¿e nawet mo¿na zwracaæ generyczne wyj¹tki.
+ 
+
+ * Funkcja nazwa_funkcji = () -> {/* Cia³o metody */},
+
+
+ * functional vs objected:
+ - nie wprowadza niczego nowego,
+ - poprostu nowe narzêdzie do kodowania w javi'e
+ - kiedy projektuje jakiœ system, to zawsze myœle w kontekœcie obiektów,
+nie moge poprostu wrzuciæ metody,
+ - czasami nie potrzebuje klasy, potrzebuje tylko metody,
+
+ 

@@ -1,0 +1,90 @@
+PODCZAS WDRO¯ENIA JEDNAK TRZEBA OTWORZYÆ KSI¥¯KÊ NA STRONIE 435, BO DU¯O SZCZEGU£ÓW JEST.
+
+ * ustawienia produkcyjne projektu zale¿¹ œciœle od wybranego œrodowiska,
+
+ * Gdy obs³ugujesz wiele œrodowisk, utwórz plik z ustawieniami podstawowymi oraz oddzielne pliki dla ka¿dego
+z u¿ywanych œrodowisk. Pliki z ustawieniami dla poszczególnych œrodowisk powinny dziedziczyæ
+po ustawieniach podstawowych i nadpisywaæ ustawienia charakterystyczne dla danego œrodowiska.
+
+ * trzeba zrobiæ folder z ustawieniami dla wielu œrodowisk.
+
+ * usun¹æ settings.py i przekopiwoaæ do foldera podane dane
+
+ * Srodowiska:
+ - set DJANGO_SETTINGS_MODULE=educa.settings.pro - dla produkcyjnego
+ - set DJANGO_SETTINGS_MODULE=educa.settings.local - dla lokalnego
+
+ - teraz tylko normalnie wywo³aj us³ugê, a odpali siê odpowiednie œrodowisko.
+
+ * str. 430
+
+ * PostgresSQL - Jest to te¿ baza danych zalecana do stosowania wraz z Django, co
+wynika z oferowanych przez ni¹ funkcji oraz wydajnoœci dzia³ania. Framework Django jest
+dostarczany wraz z pakietem django.contrib.postgres pozwalaj¹cym na wykorzystanie funkcji
+charakterystycznych dla PostgreSQL. Wiêcej informacji na temat tego modu³u znajdziesz
+na stronie https://docs.djangoproject.com/en/1.8/ref/contrib/postgres/.
+
+ * pobieranie bazy postgres: http://www.postgresql.org/download/
+
+ * odpal, aby sprawdziæ projekt: python manage.py check --deploy
+
+WSGI:
+
+ * jest to standard do udostêpniania projektów Django w necie,
+
+ * Interfejs WSGI jest u¿ywany do uruchomienia tworzonego
+projektu zarówno w serwerze programistycznym, jak i aplikacji wdro¿onej w wybranym
+œrodowisku produkcyjnym,
+ - http://wsgi.readthedocs.org/en/latest/.
+
+ * Serwer uWSGI to niezwykle szybki serwer aplikacji Pythona,
+
+ * Jednak zaleca siê u¿ywanie uWSGI w œrodowisku opartym na systemie UNIX.
+ 
+ * instalacja uwsgi: gem install uwsgi
+
+ * problemy:
+ - czasami podczas w³¹czania serwera mo¿e byæ, ¿e brakuje jakiegoœ mudole, jest to spowodowane
+   z³¹ wersj¹ pythona, a dok³adniej uwsgi zosta³o pobrane dla z³ej wersji pythona. Wtedy trzeb odinstalowaæ 
+   i zainstalowaæ ponownie dobr¹ wersje.
+	
+This is the ONLY MOST Correct Anwser! I simply run sudo -H pip uninstall uwsgi,
+ apt-get install python3-pip & sudo -H pip3 install uwsgi. And that fixed the issue!!!!!.
+ Ubuntu 16.04 / 64bit / python2.x system wide / python3.x project virtual env
+
+ np. no module site
+
+ * http://uwsgi-docs.readthedocs.org/en/latest/Options.html
+
+NGINX
+
+Ogólnie rzecz
+bior¹c, serwera WWW takiego jak Nginx u¿ywasz w celu szybkiego i efektywnego udostêpniania
+plików statycznych, a ¿¹dania treœci generowanej dynamicznie s¹ przekazywane do
+procesów roboczych uWSGI.
+Kiedy klient w postaci przegl¹darki internetowej wykonuje ¿¹danie HTTP, zachodz¹ nastêpuj¹ce
+zdarzenia.
+1. Nginx otrzymuje ¿¹danie HTTP.
+2. Je¿eli ¿¹danie dotyczy pliku statycznego, Nginx dostarcza plik bezpoœrednio.
+Jeœli natomiast ¿¹dana jest strona generowana dynamicznie, Nginx poprzez gniazdo
+deleguje to ¿¹danie do uWSGI.
+3. Serwer uWSGI przekazuje ¿¹danie do Django w celu jego przetworzenia.
+Otrzymana w wyniku odpowiedŸ HTTP jest przekazywana z powrotem do serwera
+Nginx, który z kolei przekazuje j¹ dalej do klienta, czyli przegl¹darki internetowej.
+
+ * czyli nginx dzia³a jak taki dystrybutor ¿¹dañ
+
+ * instalacja: sudo apt-get install nginx
+
+ * dokumentcja: http://nginx.org/en/docs/
+
+OGÓLNE
+
+ * pliki statyczne nale¿y skopiowaæ do jenego folderu, aby nginx móg³ je znaleŸæ:
+STATIC_URL = '/static/'
+# Django. Polecenie collectstatic
+# kopiuje wszystkie pliki statyczne
+# z aplikacji i umieszcza je w
+# katalogu wskazanym przez zmienn¹ STATIC_ROOT.
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+ - python manage.py collectstatic

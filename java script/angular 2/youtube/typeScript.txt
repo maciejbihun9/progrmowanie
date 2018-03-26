@@ -1,0 +1,59 @@
+ * create an array:
+ - public contacts = [
+    {firstName : 'Maciej', lastName: 'Bihun', phone: '518752323', email: 'mac.bih@wp.pl'},
+    {firstName : 'Jacek', lastName: 'Zdeb', phone: '518752315', email: 'jac.zde@wp.pl'},
+    {firstName : 'Edek', lastName: 'Przestr', phone: '518752876', email: 'ede.prze@wp.pl'},
+    {firstName : 'Marek', lastName: 'Lubecki', phone: '518752201', email: 'mar.lub@wp.pl'}
+  ];
+  
+ * create not initialized array:
+ - public contacts: Contact[]; 
+
+ * create a java script object:
+ -  public selectedContact = {};
+
+ * create a method with input parameter:
+ - onSelect(contact) {
+    this.selectedContact = contact;
+  }
+
+ * In typeScript we can create a interface:
+ - export interface Contct {
+ 	firstName: string;
+	lastName: string;
+	phone: string;
+ }
+
+ * create a static content (in this case an arrays):
+ - export const CONTACTS: Contact[] = [{}, {}, ...]
+
+ * If you want to create an instance of a class then this class has to have an @Injectable() annotation:
+ - @Injectable export class ContactService {},
+
+ * Promise is a great way to fatching data,
+
+ * We can inject all objects in providers in ngModule and inject it into constructor
+   of a class where we want to use it,
+
+ * create a private field of a object (this is the same as typing with this key word):
+ - constructor(private _contactService: ContactService){}
+
+ * create a empty array:
+ - public contacts: Contact[];	
+
+ * assign to a local variable data acuired from the server:
+ - we do not want to do it in a constructor, because this will cause heavy loading!!!
+ - this._contactService.getContacts().then((contacts: Contact[]) => this.contacts = contacts);
+
+ * pisanie metod:
+ - getContacts() {
+    return Promise.resolve(CONTACTS);
+  }
+  
+INTERFEJSY  
+ * można tworzyć interfejsy:
+ - tworzenie odbywa się tak samo jak w java,
+ - nalezy pamiętać o typie po nazwie!!!
+ - klasa musi być wyeksportowana, aby można ją było używać w późniejszyme etapie 
+
+

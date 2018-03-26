@@ -1,0 +1,68 @@
+ * Te kolektory polegaj¹ na parowaniu wartoœci,
+
+ *  Kolekcjonerzy s¹ niezwykle przydatni, poniewa¿ oni
+zapewniaj¹ zwiêz³y, ale elastyczny sposób definiowania kryteriów, 
+które zbieraj¹ zastosowania w celu uzyskania powsta³ych
+kolekcja,
+
+ * innymi s³owy potrafi wyci¹gn¹æ ze strumienia dany obiekt oraz
+jego wartoœci, aby po³¹czyæ je w pare i dodaæ do mapy grupuj¹cej,
+
+ * kolektory s¹ parametrami strumienia metody collect(),
+
+ * pobieranie obiektu po liczbie maksymalnej lub minimalnej:
+//compare by num of items
+        Comparator<Transaction> transactionValueComparator =
+                Comparator.comparing(Transaction::getValue);
+
+        Optional<Transaction> collect = transactions.parallelStream()
+                .collect(maxBy(transactionValueComparator));
+
+        Transaction maxTransaction = collect.get();
+
+FUNKCJE SUMUJ¥CE
+
+ * Integer sumTransactionsValues = transactions.parallelStream()
+                .collect(summingInt(Transaction::getValue));
+ - funkcja dzia³a podobnie jak funkcja redukuj¹ca, która pobiera wartoœæ poprzedniego
+   dodawania i wprowadza j¹ jako parametr funkcji kolejnego dodawania,
+
+ * we have even summingLong(), summingDouble() methods also
+
+ * pobranie œredniej ze wszystkich wartoœci
+
+ * pobranie tych wszystkich metod na raz ;):
+IntSummaryStatistics menuStatistics =
+menu.stream().collect(summarizingInt(Dish::getCalories));
+
+£¥CZENIE STRINGÓW
+
+ * zwyk³e ³¹czenie:
+ - menu.stream().map(Dish::getName).collect(joining());
+
+ * ³¹czenie ze znakiem:
+ -  menu.stream().map(Dish::getName).collect(joining(", "));
+
+ * po³aczenie wszystkich nazw obiektów:
+ - menu.stream().map(Dish::getName).collect(joining());
+
+METODA REDUCING - poprzednie metody redukowania s¹ specjalizacj¹ tej metody.
+
+ - wiêcej roboty, wole specjalizacje,
+
+ - nie czytelne, nie u¿ywam tego,
+
+int totalCalories = menu.stream().collect(reducing(0, Dish::getCalories, (i, j) -> i + j));
+
+int totalCalories = menu.stream().collect(reducing(0, - wartoœæ pocz¹tkowa 
+					Dish::getCalories, - funckja transformacji
+					Integer::sum)) - funkcja agregacji
+
+ - nastêpuje pobranie wartoœci pocz¹tkowej, potem pobranie kalorii z potrawy, a potem ju¿
+sumowanie kalorii i dodawanie ich do wartoœci pocz¹tkowej,
+
+ - czyli funkcja agregacji to funkcja, która dostaje dwa parametry, poprzedni oraz nowy ze strumienia,
+
+ - jest to œwietna metoda do iteracyjnego wykonywania operacji na elemencie pocz¹tkowym zmodyfikowanym i
+ kolejnym obiekcie w strumieniu
+

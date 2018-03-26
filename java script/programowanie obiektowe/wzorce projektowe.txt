@@ -1,0 +1,35 @@
+ SINGLETON
+ * w js jest to najbardziej właściwy wzorzec,
+ * jest on domyslny, bo nie ma klas, także każdy obiekt jest wyjątkowy i jedyny,
+ * tworzenie poprzez literał:
+ - obj = {}
+ * tworzenie singletona z konstruktorem:
+ - jest to zmienna globalna,
+ - function Logger() {
+		if (typeof global_log === "undefined") {
+		 global_log = this;
+		}
+		 return global_log;	
+   }
+ - za każdym razem zwraca ten sam object
+ 
+ FABRYKA:
+ * Przydaje się ona, gdy istnieje kilka podobnych typów
+   obiektów, a programista nie jest w stanie z góry ocenić,
+   który z nich okaże się potrzebny,
+ - str. 280  
+ 
+ DEKORATORY:
+ * Innym możliwym rozwiązaniem
+jest stworzenie jednego obiektu podstawowego oraz puli różnych obiektówdekoratorów,
+które oferują dodatkowe funkcjonalności. Napisany przez Ciebie program może
+następnie wybrać interesujące go dekoratory oraz ich kolejność. Różne programy mogą pobierać
+z tej samej puli różne zestawy dekoratorów.
+
+ OBSERWATOR:
+* Pewnie widzisz tu istotne podobieństwo do obsługi zdarzeń przeglądarki — zdarzenia przeglądarki
+są jednym z przykładów zastosowania tego wzorca. Przeglądarka jest obiektem obserwowanym:
+publikuje ona informacje o wystąpieniu zdarzeń (takich jak kliknięcie). Funkcje
+obsługi zdarzeń podłączone do danego typu zdarzenia zostaną poinformowane o jego wystąpieniu.
+Przeglądarka wyśle im obiekt reprezentujący dane zdarzenie. Twoja prywatna implementacja tego
+wzorca nie musi korzystać z obiektów zdarzeń. Możesz przesyłać dane dowolnego typu. 

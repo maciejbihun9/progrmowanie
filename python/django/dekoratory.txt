@@ -1,0 +1,5 @@
+G£ÓWNA ZASADA
+
+Je¿eli te same operacje sprawdzenia wykonujesz w wielu widokach, wówczas najlepszym rozwi¹zaniem
+jest przygotowanie w³asnych dekoratorów.
+ 

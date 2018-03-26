@@ -1,0 +1,47 @@
+1. Warstwa ORM w Django pozwala na przeprowadzanie nieuwzglêdniaj¹cej wielkoœci liter operacji wyszukiwania
+za pomoc¹ filtru icontains. Przyk³adowe poni¿sze zapytanie mo¿na wykorzystaæ do
+wyszukania postów zawieraj¹cych w treœci s³owo framework.
+ 
+ * Post.objects.filter(body__icontains='framework')
+
+SOLR
+* Zarejestrowanie modele, które chcemy przechowywaæ w silniku wyszukiwania,
+
+* Ka¿dy egzemplarz SearchIndex wymaga, aby
+jedna z jego kolumn mia³a wartoœæ document=True.
+Wedle konwencji ta kolumna powinna
+mieæ nazwê text i bêdzie u¿ywana w charakterze 
+podstawowej kolumny podczas wyszukiwania. 
+
+
+* W omawianym
+przyk³adzie za pomoc¹ parametru model_attr okreœlamy, ¿e kolumna publish odpowiada
+kolumnie o tej samej nazwie w modelu Post. Wskazana kolumna bêdzie zindeksowana
+wraz z zawartoœci¹ kolumny publish danego obiektu Post.
+
+ - bêdzie mo¿na wyszukiwaæ po zawartoœci tego pola - w tym przypadku dacie
+
+ - publish = indexes.DateTimeField(model_attr='publish')
+
+* mo¿emy ustawiæ, aby indeksowany by³y tylko i wy³¹cznie obiekty o zadanej wartoœci jendego z pól
+
+* indeksowanie obiektów aplikacji nastêpuje poprzez: python manage.py rebuild_index
+- zostaj¹ utworzone indeksy, a poprzednie zostaj¹ usuniête,
+
+* sorl pozwala na wyszukiwanie obiektów u¿ywaj¹c pewnych filtrów:
+- istniej¹ ond pod: http://127.0.0.1:8983/solr/#/blog/query
+
+* za pomoc¹ parametru query pobieramy jednorazowo wszystkie obiekty,
+aby pojedyñczo nie iterowaæprzez wynik. 
+
+* Metoda load_all() jednorazowo
+wczytuje z bazy danych wszystkie dopasowane obiekty Post. Z wykorzystaniem wymienionej
+metody wynik wyszukiwania od razu wype³niamy wszystkimi dopasowanymi obiektami z bazy
+danych i unikamy uzyskiwania dostêpu do pojedynczych obiektów w bazie danych podczas
+iteracji przez wynik.
+
+* najwa¿niejsze jest to, ¿e Solr zrobi wszystko za mnie. Nie musze pisaæ¿adnego kodu do wyszukiwania.
+Jest to ju¿ zrobione w Solr. Trzeba siê jebaæ z konfiguracjami, ale mo¿na pobraæ star¹ wersje.
+
+
+

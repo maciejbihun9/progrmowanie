@@ -1,0 +1,99 @@
+1. Django dostarcza dwie klasy bazowe przeznaczone do tworzenia formularzy.
+* Form. Klasa jest przeznaczona do budowania formularzy standardowych.
+* ModelForm. Klasa jest przeznaczona do budowania formularzy, za pomoc¹ których
+bêd¹ tworzone lub uaktualniane egzemplarze modelu,
+
+2. Rozró¿nienie na typ formy odbywa siê poprzez typ ¿¹dania(POST, GET),
+
+3. Formularz na podstawie modelu:
+
+class CommentForm(forms.ModelForm):
+	class Meta:
+		model = Comment
+		fields = ('name', 'email', 'body')
+
+4. Tworzenie formularza, który jest zapisywany do bazy, wraz z zapisywaniem
+obiektów powi¹zanych relacj¹ ForeignKey podczas metody POST- str 65.
+
+5. pobieranie danych do formularzy:
+
+* {% with comments.count as total_comments %}
+<h2>
+{{ total_comments }} komentarz{{ total_comments|pluralize:"y" }}
+</h2>
+{% endwith %}
+
+ * gdzie comments.count wykorzystuje warstwê orm do zaci¹gniêcia iloœci obiektów.
+zmienna bêdzie dostêpna do zamkniêcia nawiasów.
+
+6. Znacznik {% with %} szablonu okazuje siê u¿yteczny, gdy chcemy unikn¹æ wykonania zapytania do
+bazy danych lub wielokrotnego uzyskania dostêpu do kosztownych metod.
+
+7. Je¿eli weryfikacja formularza zakoñczy siê niepowodzeniem, s³ownik cleaned_data bêdzie zawiera³
+jedynie poprawne pola formularza.
+
+8. Je¿eli chcesz wygenerowaæposzczególne pola, to mo¿na przez nie iterowaæ,
+
+9. Generowanie formularza na podstawie modelu:
+
+ * W systemie komentarzy wykorzystamy klasê ModelForm, poniewa¿
+konieczne jest zapewnienie dynamicznego tworzenia formularza na podstawie modelu Comment,
+
+ * Jednak istnieje mo¿liwoœæ
+wyraŸnego wskazania frameworkowi, które kolumny maj¹ byæ uwzglêdnione w formularzu.
+
+10. po dostarczeniu danych w obiekcie form, dane mo¿na wyœwietliæ poprze:
+
+<form action="{% url 'login' %}" method="post">
+            {{ form.as_p }}
+            {% csrf_token %}
+            <input type="hidden" name="next" value="{{ next }}" />
+            <p><input type="submit" value="Zaloguj"></p>
+        </form> 
+
+ * action - przekieruje nas do podanego adresu url
+ * form.as_p - wyœwietla dane z formy za pomoc¹ paragrafów,
+
+11. Sprawdzanie czy formy posiadaj¹ b³êdy:
+
+ *  {% if form.errors %}
+
+12. Parametr "next" opisany na str. 115 pozwala na przekierowanie na strone po zalogowaniu,
+
+13. Weryfikacja danych wprowadzanych do formularza porównuj¹c je do bazy danych:
+
+ * poprzez rozszerzenie klasy formy o klasê Modelu, mo¿na dziedziyczæ po klasie modelowej,
+   to pozwala na weryfikacjê, czy dany u¿ytkownik jest ju¿ w bazie danych i wyrzucenie b³êdu weryfikacji
+   podczas przetwarzania formy,
+
+14. Istnieje mo¿liwoœæ dostarczenia
+metody clean_<nazwa_pola>() dla dowolnego pola formularza w celu wyczyszczenia
+jego wartoœci lub zg³oszenia b³êdu weryfikacji formularza dla okreœlonego pola. Formularze
+zawieraj¹ tak¿e ogóln¹ metodê clean() przeznaczon¹ do sprawdzenia ca³ego formularza, co
+okazuje siê u¿yteczne podczas weryfikacji pól zale¿nych wzajemnie od siebie.
+
+15. Aby umo¿liwiæ przekazywanie plików, w formularzu musi znaleŸæ siê opcja enctype="multipart/
+form-data". Wykorzystujemy tylko jeden formularz HTML do wys³ania obu formularzy Django, czyli
+user_form i profile_form.
+
+16. Nie stosujemy na jednej stronie wielu form, dane do nich wysy³amy za pomoc¹ jednej,
+
+17. Uzupe³nianie formy danymi z adresu url:
+
+ * form = ImageCreateForm(data=request.GET),
+
+ * w formie dostêpny jest obiekt request, tak¿e mo¿na pobraæ z niego dane przes³ane razem z ¿¹daniem,
+
+18. Gotowa forma do tworzenia obiektów User:
+ 
+ * from django.contrib.auth.forms import UserCreationForm
+ - form_class = UserCreationForm
+
+19. Pobieranie danych z formy: 
+
+ * cd = form.cleaned_data
+
+
+
+
+

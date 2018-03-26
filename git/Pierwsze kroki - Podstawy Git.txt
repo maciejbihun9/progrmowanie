@@ -1,0 +1,158 @@
+STARTING:
+
+ * uzyskiwanie pomocy:
+ - git help
+ 
+ * create a git ignore file:
+ - create a file using notepad
+ - add contents 
+ - save as all types, as .gitignore 
+ - it will work now
+ 
+ * update .gitignore file:
+ - start notepad "filename"
+ 
+ * change file name:
+ - git mv from_file to_file
+ 
+COMMIT: 
+ 
+ * commit changes with all changed elements in comments:
+ - git commit -v
+ 
+ * commit changes without a staging area:
+ - git commit -a
+ 
+DIFFERENCES: 
+ 
+ * show all changes in a file:
+ - git diff src/bla/file.html
+ 
+ * show all changed files from a last commit:
+ - git diff
+ - shows only those changes which didn't go into a repository,
+ - if no changes then shows nothing
+
+REMOVING:
+
+ * remove file from tracking that was firstly tracked:
+ - add this file to the .gitignore
+ - git rm --cached file
+ - git commit
+ - now this file won't be tracked, but will be in your project direcotry
+ 
+ * remove file from tracking and from working dir:
+ - git rm url\file.html`
+ 
+ * remove file from tracking, but do not delete it from a working directory:
+ - git rm --cached url\file.html
+ 
+HISTORIA:
+
+ * pokzuje różnice wprowadzone z każdą rewizją + autora, sprawdzenie dodawanych elementów:
+ - git log -p
+ 
+ * show stats about each commit:
+ - git log --stat
+ 
+ * show key + comments of each commit:
+ - git log --pretty=oneline
+ 
+ * get revisions from date:
+ - np. date = "2008-01-15"
+ - git log --since=2.week
+ - git log --since=date
+ 
+ -(n)	Pokaż tylko ostatnie n rewizji.
+--since, --after	Ogranicza rewizje do tych wykonanych po określonej dacie.
+--until, --before	Ogranicza rewizje do tych wykonanych przed określoną datą.
+--author	Pokazuje rewizje, których wpis autora pasuje do podanego.
+--committer	Pokazuje jedynie te rewizje w których osoba zatwierdzająca zmiany pasuje do podanej.
+ 
+TRACKING: 
+ 
+ * śledzenie pliku:
+ - rozpoczyna się poprzez dodanie go do sekcji pośredniej lub od razu jego skomitowanie,
+ 
+ * plik może być w stanie:
+ - zmienionym,
+ - nie zmienionym,
+ - oczekiwanie w poczekalni
+ 
+ * git jest to baza rozproszona, gdzie każdy użytkownik posiada jej reprezentację
+ u siebie w systemie plików,
+
+ * Git przechowuje i traktuje informacje kompletnie
+ inaczej niż te pozostałe systemy, 
+ mimo że interfejs użytkownika jest dość zbliżony,
+ 
+ * Większość pozostałych systemów przechowuje informacje
+ jako listę zmian na plikach. Systemy te 
+ (CVS, Subversion, Perforce, Bazaar i inne) 
+ traktują przechowywane informacje jako zbiór plików
+ i zmian dokonanych na każdym z nich w okresie czasu,
+ 
+ * Traktuje on dane podobnie jak zestaw migawek (ang. snapshots) małego systemu plików,
+
+ * Powoduje także, że Git jest bardziej podobny do mini systemu 
+ plików ze zbudowanymi na nim potężnymi narzędziami.
+ - git - to takie drzewko plików,
+
+ * całą wersje projektu posiadasz na swoim komputerze, a kiedy pojawia się
+ połączenie sieciowe, to następuje przesłanie wersji do serwera, ale!!!
+ - jak to jest, przecież może wystapić tam jakaś kolizja wersji,
+
+ * obiekt git'a:
+ - dla każdego obiektu git obliczana jest suma kontrolna, która uniemożliwia utratę danych podczas
+ ich przesyłania,
+ - git to system plików,
+
+ * Mechanizmem, który wykorzystuje Git do wyznaczenia sumy kontrolnej
+ jest tzw. skrót SHA-1. Jest to 40-znakowy łańcuch składający się z liczb
+ szesnastkowych (0–9 oraz a–f), wyliczany
+ na podstawie zawartości pliku lub struktury katalogu.
+ Skrót SHA-1 wygląda mniej więcej tak:
+ - git oblicza sha-1 na podstawie zawartości plików,
+ 
+ * W rzeczywistości Git przechowuje wszystko nie pod postacią plików i ich nazw,
+ ale we własnej bazie danych,
+ w której kluczami są skróty SHA-1, a wartościami - zawartości plików, czy struktur katalogów. 
+ 24b9da6552252987aa493b52f8696cd6d3b00373 : pliki
+ 
+ * w takiej zwykłej pracy z git, operuje się tylko zapisywaniem danych do repozytorium,
+ - dane zawsze można wycofać, nie ma z tym żadnego problemu,
+ 
+ * Ta cecha sprawia, że praca z Git jest czystą przyjemnością, ponieważ wiemy,
+ że możemy eksperymentować bez ryzyka zepsucia czegokolwiek:
+ - pchasz regularnie swoją bazę danych do repozytorium, także trudno jest
+ stracić jakieś dane podczas codziennej pracy,
+ 
+ * Katalog git jest to najważniejsza część naszego projektu:
+ - jest to obiektowa baza danych,
+ - tam są przechowywane wszystkie zmiany, cały system plików,
+ - ten katalog jest klonowany podczas kopiowania do innego repozytorium,
+ 
+ * plik dodany do przechowalni jest plikiem śledzonym:
+ - jest to realizowane po komendzie "add",
+ - git add ., git add filename
+ - git add folder(will add all subfolders and files)
+ 
+ * co zmieniłem, a nie jest w poczekalni:
+ - bardzo dokładnie pokazuje co zostało zmienione w postaci łatki
+ - git diff
+ 
+ * Jeśli modyfikujesz plik po uruchomieniu git add, musisz ponownie użyć git add, 
+ aby najnowsze zmiany zostały umieszczone w poczekalni:
+ 
+ * my nie chcemy trakować różnych plików budowania aplikacji:
+ - dodajemy je do .gitignore
+ 
+ * My nie chcemy śledzić plików związanych z tworzeniem projektu oraz budowania projektu
+ 
+ * wywalenie pliku ze śledzenia:
+ - move a file from modified to untracked,
+ 
+ * plik od poprzedniego commit'a ze wszystkimi zmianami w pliku:
+ - jest plikiem zmodyfikowanym,
+ - czasami można wogle ominąć tą przechowalnie,
+ 

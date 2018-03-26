@@ -1,0 +1,5 @@
+1. Pracê nad nowym featurem zaczynam od przygotowania modelu danych dla danego widoku,
+
+2. W Django wi¹zanie ForeignKey jest zawsze w modelu obiektu którego bedzie wiele do jednego.
+
+3. 

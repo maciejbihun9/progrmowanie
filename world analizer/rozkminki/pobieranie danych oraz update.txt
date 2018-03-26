@@ -1,0 +1,18 @@
+
+ * pobieranie danych dal tickerów
+ - jeśli istnieje to pobieramy tylko 100 elementów
+ - zapisujemy tylko te elementy ,których jeszcze nie ma w bazie,
+ - potrzeba stworzenia api do zapisywania na bazie w pod listach - troche więcej roboty, ale
+ uda mi się stworzycfajnie generyczne api,
+ któe bede mógł później używać
+ 
+ * update dokumentów:
+ + get last doc item:
+ - zapisanie w każdym dokumencie ostatniego elementu z listy cen,
+ - trzeba robić update każdego z elementów ,
+ - podczas pobierania danych można to zrobić z łatwością,
+ - naucze się updatu,
+ - teoretycznie dane bedą aktualne dla każdego elementu, ale może 
+ się okazać, że nie dla każdego tickera bede pobierał dane za każdym razem
+ 
+ * 

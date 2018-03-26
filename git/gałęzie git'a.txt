@@ -1,0 +1,86 @@
+OPIS:
+
+ * Git zachęca do częstego rozgałęziania i scalania projektu,
+ nawet kilkukrotnie w ciągu jednego dnia. Zrozumienie i opanowanie 
+ tego wyjątkowego i potężnego mechanizmu może
+ dosłownie zmienić sposób, w jaki pracujesz.
+ - W masterze znajduje się tylko stabilny kod, a programiści, tylko działają na 
+ swoich własnych branczach, których nie mają zamiaru ruszać,
+ 
+ * git sam ustala, którego rodzica wziąć do scalania z danej gałęzi
+ - podczas scalania dwóch gałęzi i komitowania, potem podczas powrotu do wersji
+ git musi wybrać którą drogą dojść do określonego punktu,
+ 
+ * po zakończeniu naprawiania zgłoszenia praktykuje się usuwanie gałęzi:
+ - git branch -d nazwa,
+ - ale usuwanie gałęzi, która nie została jeszcze zmergowana nie powiedzie się!!! (ZAJEBISTE)
+ 
+ * nie trzeba komitowaćzmian, gdy trzeba nagle przenieść się do innego brancha,
+ bo w aktualnym branchu zmiany zostaną zestaszowane!,
+ także spokojnie można się prznieść i np. poprawić błąd!,
+ 
+ * trzeba pamiętać, że podczas przechodzenia między gałęziami w folderze
+ roboczym mamy wiele zmian, tak aby odpowiadały one aktualnemu stanowi gałęzi
+ 
+ * obiekt git:
+ - zestaw zmian, które nastąpiły w projekcie (dodane oraz usunięte),
+ - każdy obiekt git'a zawiera takie metadane,
+ 
+ * drzewo git'a:
+ - drzewko to posiada wszystkie commity oraz podczas przechodzenia do określonego
+ commita, dodaje oraz usuwa elementy zawarte we wszystkich elementach,
+ - podczas przechodzenia do określonego commita, git musi trawesrować całe drzewko,
+ aby dodawać oraz usuwać określone plik oraz dane,
+ - każda gałąźposiada swój wskaźnik, który podąża nie zaleznie od pozostałych
+ - HEAD wskazuje na gałąź na której się znajdujesz, bo nawet kilka galęxi może wskazywać na
+ ten sam commit,
+ 
+ * gałąź git'a:
+ - jest to tak naprawdę plik z kodem SHA-1, który powstaje po każdym commicie,
+ - jeden commit to dodanie lini z kodem SHA-1 który zawiera zmiany,
+ 
+ * zachowanie podczas konfliktów:
+ (upper version is from the head, lower version is from merging branchs)
+ - git merge branch(in master, from branch to head)
+ - git shows conflicts, then I can see it using git status,
+ - I go to one of those files and using hand I can resolve them,
+ - git add this_file,
+ - the same action with rest files
+ 
+ * fajnie jest jak się tworzy swoje własne branch'e do własnej pracy
+ typu branch na branchu, ale później zmiany te są dodawane gałęzi,
+ która jest współdzielona przez wspólne repozytorium
+ - wypychanie zmian do współdzielonej gałęzi: git push nazwa_zdalnego_repo nazwa_brancha
+ 
+ * w gicie intergować dane można na dwa sposoby: merge oraz rebase
+ 
+ * rebase: pozwala stworzenie ładnej oraz schludnej historii tworzenia kodu,
+ ale nie powinien być stosowany publicznie.
+ Może służyć, tylko własnym osobistym zmianom, bo wprowadzi niepożądek dla kolegów,
+ rebase tworzy z dwóch gałęzi takie połączenie, które wygląda jakby nie zostało stworzone z merg'a
+ jakby nigdy nie została stwrzona dla niego osobna gałąź,
+ Jest to fajne, aby nie zdradzać kolegom ile się narobiło gałęzi, bo jeśli chodzi o 
+ merge to wiadomo, że się mergowało wszystko, później łatwiej jest coś znaleźdź niż w gąszczu gałęzi.
+ 
+KOMENDY:
+
+ * show already merged branches:
+ - git branch --merged,
+
+ * show not merged branches:
+ - git branch --no-merged 
+ 
+ * get data from remote server and automatically merge it (should be used in work!!!):
+ - git pull
+ 
+ * update data from remote server to your local server (update master/origin):
+ - git fetch origin
+ - nie ma to wpływu na mój master, tylko na origin/master
+ - na mój lokalny serwer wpływają dane, które jeszcze nie były u mnie i pozostają w moim origin/master.
+ 
+ * rebase gałęzi pomocniczej do głównej:
+ - przejdź do gałęzi pomocnieczej i wykonaj: git rebase master
+ - dzięki temu zostaną stworzone migawki tej gałęzi w master,
+ - przechodząc do master, wykonuje: git merge pomocnicza - i mam fajną historie
+ - reszte gałęzi moge teraz usunąć, aby nie zaśmiecać historii w gałęzi głównej
+ 

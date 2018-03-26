@@ -1,0 +1,39 @@
+ * odwo³anie do elementu s³ownika, które nie istnieje generuje b³¹d
+
+ * klucz musi byæ niemutowalny (np. lista nie mo¿e byæ kluczem!),
+
+ * Wartoœci nie musz¹ byæ unikalne. Poza tym mog¹ byæ mutowalne
+lub niemutowalne. Mog¹ byæ zupe³nie dowolne.
+
+ * Jeœli przypiszesz wartoœæ do s³ownika przy u¿yciu klucza, który ju¿ istnieje, Python
+zast¹pi dotychczasow¹ wartoœæ bez protestu. Musisz zatem uwa¿aæ, poniewa¿
+móg³byœ nadpisaæ wartoœæ istniej¹cego klucza, nie zdaj¹c sobie z tego sprawy.
+
+ * Widoki s³ownika — zwracane przez metody keys(), values() i items() — s¹ pod
+pewnymi wzglêdami podobne do list. Mo¿na po nich iterowaæ za pomoc¹ pêtli
+for. Nie s¹ to jednak listy. Nie mog¹ na przyk³ad byæ indeksowane. W dodatku
+widoki s¹ dynamiczne, co oznacza, ¿e ich zawartoœæ nie jest niezale¿na od
+zwi¹zanych z nimi s³owników. Wiêc zmiana w s³owniku znajduje swoje odbicie
+w widokach tego s³ownika. Aby dowiedzieæ siê wiêcej o widokach, zajrzyj do
+dokumentacji zamieszczonej na oficjalnej stronie Pythona (www.python.org).
+
+ * sprawdzanie czy element istnieje:
+ - if item in set_element
+
+ * zapisanie elementu do klucza, który ju¿ istniej podmienia go,
+
+ * Podstawowe metody s³owników:
+ - trzeba pamiêtaæ, ¿e po ich wywo³aniu dostajemy coœ w rodzaju listy,
+ale przypisane do jakieœ zmiennej zostan¹ zmienione, jeœli wartoœæ w zbiorze ulegnie zmianie.
+Nie stanie siê tak, jeœli przeprowadzimy konwersjêna liste. Wtedu tracone jest po³¹czenie ze zbiorem,
+bo tworzona jest kompletenie nowa lista.
+
+ * keys() - wszystkie klucz
+
+ * values() - wszystkie wartoœci
+
+ * items() - ca³y zbiór
+
+ * usuwanie elementu:
+ - del items["nazwa"], jeœli nie ma takiego ,to bedzie b³¹d, tak¿e trzeba to jakoœ zabezpiecz¹æ
+ - if item in set

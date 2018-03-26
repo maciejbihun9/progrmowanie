@@ -1,0 +1,45 @@
+ * wpisywanie tekstu do dokumentu (nadpisuje ca³y tekst dokument!!!, tak¿e trzeba uwa¿aæ):
+ - document.write(text)
+
+ * ustawianie tytu³u przegl¹darki:
+ - document.title = "dafa"
+
+DRZEWO - poruszanie siê po drzewie:
+
+metod dostêpu do wêz³ów:
+- wszystko jest pobierane z elementu document
+* przy u¿yciu pól zawieraj¹cych informacjê o relacjach rodzic – dziecko pomiêdzy
+elementami: parentNode, childNodes, firstChild, lastChild, nextSibling,
+previousSibling;
+* przy u¿yciu metod getElementsById(), getElementsByTagName(),
+getElementsByName().
+* sposobów modyfikacji wêz³ów:
+* przy u¿yciu innerHTML lub innerText b¹dŸ textContent;
+* przy u¿yciu nodeValue lub setAttribute(), albo poprzez odwo³ywanie siê
+do atrybutów jako do pól obiektu.
+* jak usuwaæ wêz³y, korzystaj¹c z removeChild() lub replaceChild();
+* jak dodawaæ nowe wêz³y przy u¿yciu appendChild(), cloneNode() i insertBefore().
+
+ZDARZENIA:
+
+ * jedyny sposób dodawania zdarzeñ:
+ (ostatni parametr jest to propagacja zdarzeñ(czy u¿ywaæ propagacji b¹belkowej?),
+  istnieje wiele sposobów propagacji zdarzeñ: b¹belkowanie, przechwytywanie),
+ - mypara.addEventListener('click', function() {alert('Uuu!')}, false); - spowoduje to wywo³anie
+   zdarzeñ od do³u do góry li, ul, div, html, body.
+
+ * usuwanie zdarzeñ (zatrzymanie propagacji oraz usuniêcie podanego node):
+ function paraHandler(e){ 
+  alert('akapit klikniêty');
+  e.stopPropagation();
+ }
+ - para.removeEventListener('click', paraHandler, false); - to dla metod anonimowych,
+
+ * nie mo¿na usuwaæ funkcji anonimowych,
+
+ * usuwanie zachowania domyœlnego:
+ - preventDefault()
+ 
+ 
+ 
+

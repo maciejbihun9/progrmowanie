@@ -1,0 +1,23 @@
+
+ * przekierowanie pod url podany w konkretnym obiekcie:
+ - gdzie ka¿dy obiekt ma w modelu zdefiniowny swój url,
+ - daje to du¿e mo¿liwoœci do wykorzystania tego samego widoku do obs³ugi wielu obiektów
+
+{% for c in categories %}
+                <li {% if category.slug == c.slug %}class="selected"{% endif %}>
+                    <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
+                </li>
+            {% endfor %}
+
+ * wyœwietlanie jednego elementu listy z poza kolekcji:
+	<ul>
+            <li {% if not category %}class="selected"{% endif %}>
+                <a href="{% url "shop:product_list" %}">Wszystkie</a>
+            </li>
+            {% for c in categories %}
+                <li {% if category.slug == c.slug %}class="selected"{% endif %}>
+                    <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+

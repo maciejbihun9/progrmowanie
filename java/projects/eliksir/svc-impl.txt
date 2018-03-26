@@ -1,0 +1,12 @@
+ * Zosta³y tutaj wstrzykniête ró¿ne komponenty - inne serwisy oraz repozytoria
+
+ * A te ³by potworzy³y tutaj jakieœ swoje adnotacje,
+
+ * nazwy metod serwisowych s¹ niemal takie same jak metod dao
+
+ * wstrzykujemy tylko komponenty jako interfejsy tj. nie impl
+
+ * do serwisów s¹ nawstrzykiwane zarówno klasy Dao jaki klasy serwisowe,
+
+ * nie jest to czyst mvc:
+ - us³ugi,

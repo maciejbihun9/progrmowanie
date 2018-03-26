@@ -1,0 +1,14 @@
+ * totalnie nowy framework,
+ 
+ * install new package (globally):
+ - npm install -g @angular/cli
+
+PACKAGE.JSON - SCRIPTS: 
+ 
+ * we can add a new shortcut for running a longer commands,
+ 
+PACKAGE.JSON - DEPENDENCIES:
+
+ * contains all project dependencies 
+ 
+ 

@@ -1,0 +1,77 @@
+
+ * the tree of components also contains a list of injectors,
+ 
+ * when a component wants to use a service or another provider then
+ tries to inject it from this component. If that provider can not be found
+ then it looks for it in this components parents and after that grandparents,
+ so we can control the visibility only for our family,
+ - the first provieder wins,
+ - the docs says that defining a service or any other providers can break our application,
+ I do not see an opportunity for it, but ok for now,
+ 
+ * here they are talking about making a service for maintaining the components states during 
+ application lifetime,
+ 
+ * Save a component's state in a component's scope service provider using a local scope,
+ 
+ * service does not has to be only for data retrival from a server. It can be used for saving 
+ components state while moving between parent component cards (pretty fuckin nice boy),
+ 
+ * I should not care about how service dependencies are resolved, because Angular takes carea about it,
+ 
+ * each service is a singleton at injector level/scope,
+ 
+ * Sometimes when Angular can not find any dependency in the dependency tree
+ then you can use an @Optional annotation to set a dependency to null and move forward,
+ without any errors
+ - The @Optional decorator tells Angular to continue when it can't find the dependency.
+ Angular sets the injection parameter to null instead.
+ 
+ * Dekorator @Host zatrzymuje wyszukiwanie w górę w komponencie hosta,
+ gdzie hostem jest:
+ - <app-hero-bio [heroId]="3"> <app-hero-contact></app-hero-contact> </app-hero-bio>
+ więc, jeśli nie ma provider'a w app-hero-bio to bedzie wyjątek,
+ 
+ @Host()     // limit search for logger; hides the application-wide logger
+@Optional() // ok if the logger doesn't exist
+private loggerService: LoggerService
+ - the hero-bio does not have any LoggerService provider(this is a host provider for this element),
+ so without @Optional it would be an error,
+ - const someHero = new Hero(42, 'Magma', 'Had a great month!', '555-555-5555');
+ * other ways to define a provider:
+ providers: [
+    { provide: Hero,          useValue:    someHero },
+    { provide: TITLE,         useValue:   'Hero of the Month' },
+    { provide: HeroService,   useClass:    HeroService },
+    { provide: LoggerService, useClass:    DateLoggerService },
+    { provide: MinimalLogger, useExisting: LoggerService },
+    { provide: RUNNERS_UP,    useFactory:  runnersUpFactory(2), deps: [Hero, HeroService] }
+  ]
+ - TITLE does not has to be imported because it is defining a string variable,
+ - RUNNERS_UP defines a factory with dependencies
+ 
+ - later inject those providers like this:
+  @Inject(RUNNERS_UP) public runnersUp: string,
+  @Inject(TITLE) public title: string)
+  
+ - use this approach for varoables that are initial variables for an application, 
+ 
+ * create a logger with minimized functions api:
+ - @Injectable()
+export class DateLoggerService extends LoggerService
+{
+  logInfo(msg: any)  { super.logInfo(stamp(msg)); }
+  logDebug(msg: any) { super.logInfo(stamp(msg)); }
+  logError(msg: any) { super.logError(stamp(msg)); }
+}
+
+function stamp(msg: any) { return msg + ' at ' + new Date(); }
+- providers: [{ provide: MinimalLogger, useExisting: LoggerService }]
+
+ * create a provider instance from already injected instances of other providers
+ - { provide: RUNNERS_UP,    useFactory:  runnersUpFactory(2), deps: [Hero, HeroService] }
+ - export function runnersUpFactory(take: number) {
+  return (winner: Hero, heroService: HeroService): string => {
+    /* ... */
+  };
+};

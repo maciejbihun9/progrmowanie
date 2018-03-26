@@ -1,0 +1,6 @@
+ * odpowiednio zaimplementowana lambda mo¿e dostaæ dostêp do obiektu this klasy,
+która znajdujê siê wy¿ej,
+
+ * lambda nie posiada sama z siebie ¿adnego this'a, bo nie ma to sensu,
+
+ * 

@@ -1,0 +1,60 @@
+1. Wiadomoœci e-mail zapewniaj¹ wiêkszoœæ tych samych korzyœci,
+które oferuj¹ asynchroniczne komunikaty opisane w rozdziale 17., choæ w przypadku
+e-maili ich nadawcami i odbiorcami s¹ ludzie,
+
+2. Bardzo czêsto zdarza
+siê, ¿e s¹ one generowane przez aplikacje. Przyk³adami takich wiadomoœci mog¹ byæ
+potwierdzenia wysy³ane przez internetowe sklepy albo automatyczne powiadomienia
+o operacjach wykonywanych na koncie bankowyme,
+
+3. Zadanie implementacji MailSender
+polega na nawi¹zywaniu po³¹czenia z serwerem
+pocztowym i wysy³aniu wiadomoœci e-mail.
+
+4. Konfigurowanie komponentu odpowiedzialnego za po³aczenie z serwerem pocztowym
+polega tylko i wy³¹cznie na podaniu hosta serwera obs³uguj¹cego,
+
+5. Serwer poczty dzia³a na porcie 25(domyœlnie),
+
+ * mo¿na ustawiæ inny port
+
+6. SMTP - Protokó³ ten nie radzi³ sobie dobrze z plikami binarnymi,
+poniewa¿ stworzony by³ w oparciu o czysty tekst ASCII,
+
+ * W celu kodowania plików binarnych do przesy³u przez SMTP stworzono standardy takie jak MIME
+
+7. Dowi¹zanie sesji pocztowej przy u¿yciu JNDI powoduje, ¿e
+nadpisaliœmy wczeœniejsz¹ konfiguracjê serwera. Teraz mo¿na siê skoncetrowaæ
+na wysy³aniu wiadomoœci email, a nie na zajmowanie siê serwerami.
+
+8. Java posiada ju¿ wbudowane komponenty do wysy³ania wiadomoœci tj.:JavaMailSender
+
+9. Spring has special classes to package data to send like:
+
+ * SimpleMailMessage,
+
+ * wysy³anie wiadomoœci w Spring wi¹¿e siê z napisaniem kilku linijek kodu oraz kilku komponentów
+
+10. Spring pozwala nawet na przystrojenie wiadomoœci kodem HTML,
+
+11. Mo¿na przesy³aæ poczte jako zwyk³¹ wiadomoœæ HTML,
+
+ * Apache Velocity pozwala na generowanie bogatej wiadomoœci,
+
+ * do tworzenia wiadomoœci email mo¿na nawet u¿yæ thymeleaf,
+
+12. Warto zwróciæ uwagê, ¿e w tym szablonie nie ma ¿adnych specjalnych znaczników
+(które wystêpuj¹ w kodzie JSP). I choæ odwo³ania do atrybutów modelu maj¹ postaæ
+${}, to jednak pojawiaj¹ siê one wy³¹cznie w atrybutach, a nie, jak to jest w przypadku
+Velocity, w zawartoœci elementów. Taki szablon bez trudu mo¿na otworzyæ w dowolnej
+przegl¹darce i zobaczyæ, jak bêdzie wygl¹da³ w swojej ostatecznej postaci, i to bez
+wczeœniejszego przetwarzania go przy u¿yciu silnika Thymeleaf.
+
+13. setOrder(2) - pozwala na oznaczenie który z komponentów bêdzie wa¿niejszy, jeœli komponenty s¹'
+tego samego typu,
+
+PODSUMOWANIE
+Wysy³anie poczty elektronicznej za pomoc¹ spring, miêdzy ludŸmi lub miêdzy cz³owiekiem a aplikacj¹
+jest niemal jak bu³ka z mas³em. Szcególnie przygotowanie wiadomoœci za pomoc¹ narzêdzi do produkowania szablonów.
+
+

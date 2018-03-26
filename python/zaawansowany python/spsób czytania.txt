@@ -1,0 +1,3 @@
+# rozkminka nieznajomego kodu,
+# czytanie opisu tego kodu,
+# nie czytanie historyjek, tylko same zastosowania,

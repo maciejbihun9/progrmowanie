@@ -1,0 +1,3 @@
+ * inicjalizacja: ngOnInit():
+ - zaczyna wykonywać kod podczas inicjalizacji aplikacji.
+ 

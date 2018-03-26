@@ -1,0 +1,95 @@
+ * ograniczanie liczby zmiennych globalnych poprzez wprowadzenie przestrzeni nazw.
+ - nie mo¿na stworzyænowego obiektu poprzez new. Jest to jedyny obiekt.
+MYAPP.event = {};
+// obiekt wraz z deklaracjami metod
+MYAPP.event = {
+addListener: function(el, type, fn) {
+// ... cia³o metody
+},
+removeListener: function(el, type, fn) {
+// ...
+},
+getEvent: function(e) {
+// ...
+}
+// ... inne pola i metody
+};
+
+ - dodawanie elementu dom:
+MYAPP.dom = {};
+MYAPP.dom.Element = function(type, prop){
+ var tmp = document.createElement(type);
+ for (var i in prop) {
+  tmp.setAttribute(i, prop[i]);
+ }
+ return tmp;
+}
+
+ - tworzenie nowego elementu z wykorzystaniem podanej techniki:
+var el1 = new MYAPP.dom.Element('a', {href:'http://phpied.com'});
+
+ * tworzenie funkcji prywatnej:
+
+var MYAPP = {};
+MYAPP.dom = (function(){
+	var _setStyle = function(el, prop, value) {
+		console.log('setStyle');
+	};
+	//funkcja prywatna
+	var _getStyle = function(el, prop) {
+		console.log('getStyle');
+	};
+	
+	//funkcja prywatna
+	funkcja private(){}
+	return {
+		setStyle: _setStyle,
+		getStyle: _getStyle,
+		inna: _setStyle
+	};
+})()
+
+ * tworzenie funkcji samowyzwalaj¹cej:
+ - g³ównym zastosowanie jest: 
+ Ten wzorzec sprawdza siê zw³aszcza podczas jednorazowych zadañ inicjalizacyjnych wykonywanych
+ podczas ³adowania skryptu.
+ function(){
+	// tu nale¿y umieœciæ kod
+ })()
+ 
+ * tworzenie obiektów wewn¹trz namespace(wraz z prywatnymi polami):
+ - do utworzenia pól prywatnych nale¿y poprostu nie przypisywaæ ich do obiektu this,
+ - nie [rzypisywanie pól, metod do this to œwitny sposób na prywatne zmienne,
+ - Button zwraca obiekt zdefiniowany w funkcji(klasie), czyli ja nie moge korzytaæ
+   z funkcji setStyles(), bo zwracam obiekt, który nie posiada do niej dostepu.
+ - metoda seteStyles() - dzia³a tylko wewnatrz.  
+var MYAPP = {};
+MYAPP.dom = {};
+MYAPP.dom.Button = function(text, conf) {
+	var styles = {
+		font: 'Verdana',
+		border: '1px solid black',
+		color: 'black',
+		background: 'grey'
+	};
+	function setStyles() {
+		for (var i in styles) {
+			b.style[i] = conf[i] || styles[i];
+		}
+	}
+	conf = conf || {};
+	var b = document.createElement('input');
+	b.type = conf['type'] || 'submit';
+	b.value = text;
+	setStyles();
+	return b;
+};
+
+ * w javascript to kurwa klasy wygl¹daj¹ tak samo jak metody. Mo¿na z ka¿dej metody
+   zwracaæ jakiœ inny obiekt,
+   
+ * JSON - zapisuje siê go dok³adnie tak samo jak dict w pythonie
+ - dodatkowo mo¿na siê odwo³aæ do jego pól poprzez object property.
+ - jest to zwyk³y obiekt javascript, tylko posiada nazy jako ci¹gi znaków.
+
+ * parsoanie JSON: var obj = JSON.parse(xhr.responseText); 

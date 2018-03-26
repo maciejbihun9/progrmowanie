@@ -1,0 +1,9 @@
+
+ * the annotations are bette rthat just naming conventions, that is for damn true,
+ 
+ * do not forget about override annotation, but for sublcases you do not have to use it
+ because it is define in the upper class, but as we all know it is a good practice
+ to define different behaviour of that!!!
+ 
+ * sometimes it is good to create a market interface that is implemented only by classes,
+ but does not adds any new features, it is just indication or information,

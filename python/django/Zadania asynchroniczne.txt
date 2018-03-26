@@ -1,0 +1,26 @@
+ * RabbitMQ - Obs³uguje wiele protoko³ów przesy³ania wiadomoœci.
+
+Aby wykonywaæ zadania asynchroniczne w aplikacjach, to trzeba je dobrze skonfigurowaæ,
+
+ * konfiguracja znajduje sie na stronie z opisem Celery - Python by example
+
+ * server celery w³¹cza siê automatycznie po instalacji:
+ - inaczej rabbitmq-server
+
+ * celery 4 nie obs³ugiwane na Windowsie, u¿ywaj 3.14
+
+ * odpalanie worker'a celery: celery -A myshop worker
+
+ * Zadañ asynchronicznych mo¿esz u¿ywaæ nie tylko w d³ugo wykonywanych procesach, ale równie¿ w innych
+procesach, które mog¹ zakoñczyæ siê niepowodzeniem lub niewymagaj¹cych du¿ej iloœci czasu,
+choæ jednoczeœnie podatnych na awarie po³¹czenia b¹dŸ te¿ wymagaj¹cych powtórzenia.
+
+ * U¿ywamy metody delay() zadania w celu jego wywo³ania w sposób asynchroniczny. Zadanie
+bêdzie dodane do kolejki i wykonane przez w¹tek roboczy tak wczeœnie, jak to mo¿liwe.
+
+ - order_created.delay(order.id)
+
+ * aplikacja flower to narzêdzie s³u¿¹ce do monitorowania Celery:
+ - odpalanie: celery -A myshop flower
+ - monitorowanie jest dostêpne pod adresem: http://localhost:5555/dashboard
+ - dokumentacja flower: http://flower.readthedocs.org/en/latest/.

@@ -1,0 +1,12 @@
+PROXY:
+
+ * in the company environment problems can occur, because of proxy settings,
+ 
+ * when you wnat do download angular/ cli then you will face  this issue
+ 
+ * you have to set proxy settings that you can in:
+ setitngs -> proxy 
+ 
+ * set this for npm work:
+ npm config set proxy http://proxy.company.com:8080
+ npm config set https-proxy http://proxy.company.com:8080

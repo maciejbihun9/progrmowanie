@@ -1,0 +1,27 @@
+1. Rekomendowane drzewko templatek:
+
+ * templates/
+	blog/
+		base.html
+		post/
+			list.html
+			detail.html
+
+2. Wszystkie wbudowane znaczniki szablonów i filtry mo¿esz przejrzeæ na stronie https://docs.
+djangoproject.com/en/1.8/ref/templates/builtins/,
+
+3. W powy¿szym kodzie ³atwo zauwa¿ysz dwa znaczniki {% block %}. Informuj¹ one framework,
+¿e chcemy zdefiniowaæ blok we wskazanym miejscu. Szablony dziedzicz¹ce po tym szablonie
+bêd¹ mog³y umieszczaæ treœæ we wspomnianych blokach. W omawianym przyk³adzie zdefiniowaliœmy
+dwa bloki o nazwach title i content,
+
+4. Pliki html powinny dziedziczyæ po base.html, czyli mieæ pewnego rodzaju schemat.
+
+5. Przed tworzeniem templatek warto by sobie przejrzeæten zbiór bloków django,
+
+6. Podstawowy schemat aplikacji jest zajebiœcie prosty,
+testowanie mo¿na przeprowadziæ nawet po kilku minutach(z t¹ ksi¹¿k¹ oczywiœcie),
+
+7. dobrze jest utworzyæ generyczny html template, ktory mo¿na dodawaæ do tych ogólnych,
+
+8. 

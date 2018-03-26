@@ -1,0 +1,92 @@
+
+ * Python variables are like reference variables in Java, so it’s better to think
+of them as labels attached to objects,
+
+ * generate id for objects:
+ - id(self) inside of a object,
+ 
+ * Since variables are mere labels, nothing prevents an object from having several labels
+assigned to it. When that happens, you have aliasing,
+
+ * compare objects:
+ obj = {'name': 'Charles L. Dodgson', 'born': 1832}
+ obj2 = {'name': 'Charles L. Dodgson', 'born': 1832}
+ - obj is obj2 -> False, bo te obiekty zajmują różne miejsca w pamięci,
+ a is właśnie porównuje te miejsca
+ - __eq__ works the same as is
+ - obiekty te posiadają takie same id's 
+ - id nigdy się nie zmienia, bo jest to identyfikator obiektu
+ w pamięci
+ 
+ - compare by value: obj == obj2 -> true
+ 
+ * niebezpieczne tworzenie klasy:
+ - kazdy nowy obiekt stworzony z tego konstruktora
+ bez początkowych wartości będzie współdzielony między inne obiekty
+ jako zmienna statyczna.
+ - The issue with mutable defaults explains why None is often used as the default value for
+parameters that may receive mutable values.
+parameters that may receive mutable values.
+ - def __init__(self, passengers=[]):
+	self.passengers = passengers
+	
+ - zmienne domyslne powinny być definiowane w konstruktorze:
+ - def __init__(self, passengers=None):
+	if passengers is None:
+		self.passengers = []
+	else:
+		self.passengers = passengers 
+		
+ * zmienna uzyta w pętli for staje się zmienną globalną która posiadają
+ referencje do ostatniego obiektu iterowania listy, czyli usunięcie tego obiektu z listy
+ nie spowoduje jego zniszczenia, bo dalej będzie istnieć do niego referencja 
+ 
+ * Function parameters are passed as aliases, which means the function may change
+any mutable object received as an argument. There is no way to prevent this, except
+making local copies or using immutable objects (eg. passing a tuple instead of a
+list).
+ 
+KOPIOWANIE:
+
+ * Simple assignment does not create copies,
+
+ * kopiowanie listy:
+ - those are ofcourse shallow copies,
+ - list = [1,2,3]
+ - list2 = list(list) lub list2 = list[:]
+ 
+ * głębokie kopiowanie kopiuje wszystko
+ - from copy import deepcopy
+ - c = deepcopy(a)
+ - kopiowanie cyklicznych referencji, aż do samego dna,
+ - nie trzeba się bać, że zmiana obiektu spowoduje zmianę kopii,
+ - jest to najlespza opcja do kopiwoania obiektów,
+ 
+ * płytkie kopiowanie obiektów:
+ - NIEBEZPIECZNE
+ - kopiuje do innego miejsca, ale wartości są nadal te same,
+ także zmiana wartości jednego obiektu powoduje zmianę kopii,
+ 
+DEL ORAZ GARBAGE COLLECTION:
+
+ * The del statement deletes names, not objects.
+
+ * objects are garbage collected only if the last reference is deleted,
+ then object can be garbage collected,
+
+ * tell me when object is destroyed:
+ - this method is called when the last reference to a object is destroyed,
+ - import weakref 
+ - call a bye method on s1 reference to a set,
+ - it is important to know that finalize contains the weak reference to object,
+ - weakref.finalize(s1, bye)
+ 
+ * dictionary do obiektów, które po usunięciu tego słownika odrazu
+ przestają istnieć i bezznaczenia jest, że inne obiekty posiadają do niego referencje:
+ - import weakref
+ - stock = weakref.WeakValueDictionary()
+ 
+ * we have also WeakValueDictionary, WeakKey
+Dictionary, WeakSet,
+ - those collections contains objects that are removed when this collections
+ are removed even when a program contains other references to those objects,

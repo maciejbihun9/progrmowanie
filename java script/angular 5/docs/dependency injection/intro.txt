@@ -1,0 +1,10 @@
+
+ * each provider declared in the app.module is a singleton for entire application
+ that lives all the time,
+ 
+ * if you declared a service in a providers for one component then this is just scoped provider
+ that is destroyed when this component dies,
+ - then there can be many services,
+ 
+ * use @Injectable() for each proveider because this is a coding style and
+ tells Angular that this service  can have many injected providers itself,

@@ -1,0 +1,24 @@
+ * dzia³a tak jak pod linuxem,
+
+ * ustawi³em tam jakiegoœ user'a na: admin
+
+ * ale defauult tam jest chyba root bez has³a
+
+COMMANDS:
+
+ * list files: ls, ls -la
+ - hidden files: ls -a
+
+ * poka¿ aktualny folder: echo $0
+
+ * poka¿ aktualny folder: pwd
+
+ * folder C znajduje siê pod: /mnt/c
+
+ * odpalanie œrodowiska plików wsadowych windows(virtualenv): source activate,
+
+ * sprawdzanie œcie¿ki dla pliku: which plik
+
+ * dla pythona musia³em pobieraæ odzielnie pakunki dla wersji 3.5.2, chocia¿ instalowa³em j¹ pod windowsem:
+ - mo¿liwe, ¿e trzeba tworzyæ wirtualne œrodowiska osobno pod linuxem, bo te stworzone z windy nie zadzia³aj¹!,
+ - mo¿e teraz uda siê podpi¹æ virtualke bez instalowania pakunków bezpoœrednio pod ca³¹ wersj¹ python'a

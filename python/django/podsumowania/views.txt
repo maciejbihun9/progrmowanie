@@ -1,0 +1,52 @@
+1. Filtrowanie treœci:
+
+ * lepiej jest to zrobiæ w metodzie zwracaj¹cej widok ni¿ w pliku html(.filter, .annotate itd.),
+
+ * otrzymane dane wrzuciæ do templatki,
+
+ * listy z danymi dodaæ do templatki i tam po nich iterowaæ,
+
+ * definiowanie metod annotate, aby z nich skorzystaæ ju¿ w widoku
+
+2. Dobrze jest zapisaæ cel danego widoku w komentarzach.
+
+3. Czyli widoki to takie miejsce, to pobrania danych odpowiednich do wyœwietlenia
+
+4. Widok listy jakiœ elementów warto zaimplementowaæ w taki sposób, aby 
+mo¿liwe by³o wyœwietlenie elementów z ka¿dej kategorii oraz tylko z jednej klikniêtej
+
+class CourseListView(TemplateResponseMixin, View):
+    """
+    Widok przeznaczony do wyœwietlenia ogólnego opisu kursu.
+    """
+    model = Course
+    template_name = 'courses/course/list.html'
+
+    def get(self, request, subject=None):
+        # Pobieramy wszystkie tematy oraz ca³kowit¹ liczbê kursów dostêpnych dla
+        # poszczególnych tematów.
+        subjects = Subject.objects.annotate(
+            total_courses=Count('courses'))
+        # Pobieramy wszystkie dostêpne
+        # kursy oraz ca³kowit¹ liczbê modu³ów znajduj¹cych
+        # siê w poszczególnych kursach.
+        courses = Course.objects.annotate(
+            total_modules=Count('modules'))
+        # jeœli posiadamy subject to pobierz modu³y z nim zwi¹zane
+        if subject:
+            subject = get_object_or_404(Subject, slug=subject)
+            # pobieranie kursów dla podanego przedmiotu
+            courses = courses.filter(subject=subject)
+        # wygenerowania obiektów w szablonie i udzielenia odpowiedzi HTTP.
+        return self.render_to_response({'subjects': subjects,
+                                        'subject': subject, 'courses': courses})
+
+ - klasa ta posiada metodê dispatch(). która jest wywo³ywana podczas przyjœcia ¿¹dania,
+ta metoda deleguje zadanie do odpowiedniej metody (get() lub post()) w zale¿noœci od nag³ówka ¿¹dania. POST LUB GET.
+
+5. Jeden widok mo¿e byæ podpiêty pod kilka urls'ów,
+
+6. Te bardziej zaawansowane aplikacje posiadaj¹ tylko klasy widoków, a nie same metody,
+które dziedzicz¹ jakiœ okreœlony widok.
+
+7.  

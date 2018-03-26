@@ -1,0 +1,3 @@
+ * wyszukiwanie najtañszych akcji oraz aktywów,
+
+ 

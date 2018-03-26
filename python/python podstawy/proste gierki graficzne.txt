@@ -1,0 +1,9 @@
+W tym rozdziale zobaczy³eœ, jak mo¿na wykorzystaæ multimedialny pakiet livewires,
+aby do programów dodaæ grafikê. Dowiedzia³eœ siê, jak utworzyæ nowe okno graficzne
+i jak ustawiæ dla tego okna obraz t³a. Zobaczy³eœ, jak mo¿na wyœwietlaæ tekst w oknie
+graficznym. Pozna³eœ duszka, specjalny obiekt graficzny z obrazem. W szczególnoœci
+zobaczy³eœ, jak mo¿na umiejscawiaæ i zmieniaæ po³o¿enie duszka na ekranie graficznym.
+Zobaczy³eœ równie¿, jak mo¿na sprawdzaæ, czy miêdzy duszkami wystêpuj¹ kolizje.
+Dowiedzia³eœ siê, jak pobieraæ dane wejœciowe z myszy. Na koniec zobaczy³eœ, jak to
+wszystko mo¿na posk³adaæ w jedn¹ ca³oœæ w postaci szybkiej gry wideo z udzia³em
+sterowanego przez komputer przeciwnika.

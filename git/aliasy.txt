@@ -1,0 +1,14 @@
+
+ * tworzenie aliasa:
+ - git config --global alias.co checkout 
+
+ * pokaż status:
+ - git st,
+ 
+ * pokaż ostatnią rewizje:
+ - git config --global alias.last log -1 HEAD -> git last
+ 
+ * checkout and move to this branch:
+ git config --global alias.cob checkout -b 
+ - git checkout -b nazwa
+ - git config --global alias.co checkout

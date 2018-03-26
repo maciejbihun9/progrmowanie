@@ -1,0 +1,18 @@
+* normalne sortowanie: 
+- Comparator<Apple> c = Comparator.comparing(Apple::getWeight);
+
+* sortowanie odwrotne:
+- Comparator<Apple> c = Comparator.comparing(Apple::getWeight).reversed();
+
+* sortowanie kilkukrotne(np. gdy posiadaj¹ tê sam¹ wagê to posortuje po kraju):
+- Inventory.sort(comparing(Apple::getWeight)
+	.reversed()
+	.thenComparing(Apple::getCountry));
+
+* w java 8 mo¿na nawet zbudowaæ wyra¿enie z wielu metod lambda.
+
+Predicate<Apple> redAndHeavyAppleOrGreen = redApple.and(a -> a.getWeight() > 150)
+	.or(a -> "green".equals(a.getColor()));
+
+
+ 

@@ -1,0 +1,29 @@
+﻿
+ * pobieranie danych z neta, nawet dla jednego dnia trwa w chj długo:
+ - za pomocą Yahoo czas pobierania jest akceptowalny
+
+ * pobranie danych z bazy dla wszystkich spółek tylko z ostatnich 3 lat,
+ - są to najbardziej aktualne dane,
+ 
+ * estymowanie parametrów dla każdej ze spółek 
+   z osobna dla wielu różnych strategii,
+ - oblicanie indykatorów osobno dla każdego sektora, dla indeksu S&P
+ - zapisanie wyników analiz, 
+ - obliczanie indykatorów dla każdej spółki z osobna dla całego przedziału (może być mało pozycji),
+   będzie także odwołanie do analizy całego sektora
+ - porównanie spółki do sektora? - tak, porównanie do historii danej spółki? - tak, do całości - nie   
+ - obliczenie strategii dla jednej spółki nie trwa długo,  
+ 
+ * pobranie danych dla aktualnego dnia - ok
+ 
+ * dodanie go do bazy danych - ok,
+ 
+ * pobranie danych z osttnich 30 dni - ok,
+ 
+ * obliczenie indykatorów dla tych 30 dni(ich wartości):
+ - porównanie wartości z wyestymowanymi wartościami,
+ - oszacowanie wielkości zysków oraz ilości dni oczekiwania na zamknięcie pozycji,
+ 
+ * sprawdzenie której spółce indykatory mówią, że w takim stanie 
+   będzie miała dobre zyski,
+  

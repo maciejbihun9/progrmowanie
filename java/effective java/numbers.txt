@@ -1,0 +1,15 @@
+
+  * BigInteger is used for all big numbers that excides normal primitive types,
+  because memory is alocated dynamically,
+  
+  * BigInteger can store any big value because the memory is allocated
+  dynmically,
+  
+  * Example of safeBIgInteger:
+  - public static BigInteger safeInstance(BigInteger val) {
+	if (val.getClass() != BigInteger.class)
+		return new BigInteger(val.toByteArray());
+	return val;
+  }
+  
+  

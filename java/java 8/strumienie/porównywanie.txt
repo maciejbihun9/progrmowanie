@@ -1,0 +1,5 @@
+ * tworzenie interfejsu, który bêdzie porównywa³ obiekty w okreœlony sposób;
+ //compare by num of items
+ - w jaki sposób trzeba porównywaæ elementy
+ Comparator<Transaction> transactionValueComparator =
+                Comparator.comparing(Transaction::getValue);

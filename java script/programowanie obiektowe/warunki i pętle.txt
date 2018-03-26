@@ -1,0 +1,17 @@
+ * blok kodu:
+ {
+   var a = 1;
+   var b = 1;
+ }
+
+ * normalny javowy if:
+if (a > 2) {
+	result = 'a jest wieksze od 2';
+} else {
+	result = 'a NIE jest wieksze od 2';
+}
+
+ * sprawdzanie czy zmienna istnieje:
+ - if (typeof somevar !== "undefined")
+
+ * pêtle tak samo jak w java,ale wszêdzie jest var

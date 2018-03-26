@@ -1,0 +1,103 @@
+DO CZEGO MO¯NA U¯YÆ ZABEZPIECZANIA METOD, PODAJ PRZYK£ADY I ZAPISZ JE,
+NIE WCHOD W SZCZEGÓ£Y. TYLKO ZASTOSOWANIA.
+ZAPISANIE TEGO JAKIEGO WYBORU POWINIENEM DOKONAÆ KIEDY BEDE MUSIA£ COŒ W TYM NAPISAÆ.
+ZALETY ORAZ WADY OPISYWANYCH METOD.
+
+ * Dziêki zabezpieczeniu zarówno warstwy sieciowej aplikacji, jak i metod backendu
+mamy pewnoœæ, ¿e bez odpowiedniej autoryzacji nie zostanie wywo³ana ¿adna logika,
+ 
+ * Jest to œwietna metoda do zabezpieczania wywo³ania metody w jakimœ konkretnym przypadku,
+
+ * Trochê mniej oczywistym sposobem autoryzacji metody jest jej postautoryzacja. Postautoryzacja
+polega z regu³y na podjêciu decyzji bezpieczeñstwa na podstawie obiektu
+zwróconego przez zabezpieczan¹ metodê. To oznacza oczywiœcie, ¿e metoda musi
+zostaæ wywo³ana, aby wyprodukowaæ wynik,
+
+ * Czasami poprostu trzeba zabezpieczyæ tylko dane jakie u¿ytkownik mo¿e obserwowaæ, 
+
+ * Nale¿y jednak przy tym pamiêtaæ, aby nie przesadziæ z wykorzystaniem wyra¿eñ.
+Nale¿y unikaæ tworzenia skomplikowanego kodu wyra¿eñ i umieszczania w nich kodu
+biznesowego niezwi¹zanego z zabezpieczeniami. Wyra¿enia s¹ przy tym zwyk³ymi
+wartoœciami typu String przekazanymi do adnotacji. Sprawia to, ¿e s¹ trudne w testowaniu
+i znajdowaniu potencjalnych b³êdów.
+
+1. Czasami mo¿e siê zdarzyæ, ¿e zwyk³y b³¹d programisty bêdzie skutkowwa³ tym, ¿e
+u¿ytkownik bêdzie mia³ dostêp do treœci, do których nie powinien mieæ,
+
+2. Adnotacje @Secured oraz @RolesAllowed s¹ najprostsze w zastosowaniu i ograniczaj¹
+dostêp w oparciu o uprawnienia przyznane u¿ytkownikowi. Jeœli potrzebna jest nam
+wiêksza elastycznoœæ w definiowaniu regu³ zabezpieczeñ na metodach, Spring Security
+udostêpnia adnotacje @PreAuthorize i @PostAuthorize. Adnotacje @PreFilter i @PostFiler
+umo¿liwiaj¹ odrzucenie elementów z kolekcji zwróconej z metody lub do niej przekazanej,
+
+ * W przypadku wywo³ania metody przez nieuwierzytelnionego u¿ytkownika lub przez
+u¿ytkownika nieposiadaj¹cego wymaganych uprawnieñ aspekt opakowuj¹cy metodê
+zg³osi jeden z wyj¹tków Spring Security (prawdopodobnie klasê potomn¹ 
+AuthenticationException lub AccesDeniedException). S¹ to wyj¹tki niekontrolowane, ale ktoœ musi
+je w koñcu przechwyciæ i obs³u¿yæ.
+
+3. Mo¿na zabezpieczaæ metody w zale¿noœci od przyznanych roli,
+
+4. Jedyn¹ wad¹ adnotacji @Secured jest to, ¿e jest ona specyficzna dla Springa. Jeœli
+preferujesz standardowe adnotacje, rozwa¿ u¿ycie @RolesAllowed.
+
+ * jednak posiadaj¹ ograniczenie tj.: Pozwalaj¹ ograniczyæ wywo³anie metod
+jedynie w oparciu o informacjê, czy u¿ytkownik posiada okreœlone uprawnienie,
+
+ * Chocia¿ adnotacje @Secured i @RolesAllowed spe³niaj¹ swoj¹ rolê, jeœli chodzi o niedopuszczanie
+nieautoryzowanych u¿ytkowników, jest to w³aœciwie wszystko, co potrafi¹,
+
+5. Do zabezpieczania metod coraz czêsciej u¿ywa siê jêzyka SpEL,
+
+ * s¹ œwietne do ograniczania dostêpu u¿ytkowników do danych,
+
+ * Wyra¿enia znacznie zwiêkszaj¹ mo¿liwoœci definiowania ograniczeñ zabezpieczeñ.
+Umo¿liwiaj¹ przydzielenie lub odrzucenie dostêpu do metody z wykorzystaniem niemal
+dowolnego wyra¿enia, które mo¿emy sobie wymyœliæ.
+
+@PreAuthorize Ogranicza dostêp do metody przed wywo³aniem na podstawie oszacowania wartoœci
+wyra¿enia.
+
+ * przyk³ad: u¿ytkownik mo¿e pisaæ teksty o d³ugoœci tylko do 140 znaków, ale user premium ju¿ bez ograniczeñ,
+   teraz nie bêdzie mielenia aplikacji bez potrzeby, jeœli user ju¿ na pocz¹tku nie spe³nia wymagañ,
+
+@PostAuthorize Pozwala na wywo³anie metody, ale zg³asza wyj¹tek bezpieczeñstwa, gdy wynikiem
+wyra¿enia jest false.
+
+ * jest to metoda, która zostaje wykonana przed autoryzacj¹.
+
+ * mo¿e byæ u¿yteczna, jeœli u¿ytkownik chce mieæ dostêp do nie swoich zasobów,
+   wtedy zwróci odpowiedni wyj¹tek,
+
+ * W tej sytuacji nale¿y siê upewniæ, ¿e metoda nie
+bêdzie mia³a niepo¿¹danych skutków ubocznych, jeœli autoryzacja siê nie powiedzie,
+
+ * metoda ta posiada wbudowany obiekt principal, który posiada nazwê u¿ytkownika, który wywo³a³ tê metodê,
+
+@PostFilter Pozwala na wywo³anie metody, ale filtruje wynik zwracany przez metodê w oparciu
+o wyra¿enie.
+
+ * metoda post_filter pozwala na pokazanie u¿ytkownikom, tylko tych danych, które mog¹ zobaczyæ,
+np. wiadomoœci o okreœlonej treœci,
+
+ * W szczególnoœci administrator ma mo¿liwoœæ zobaczenia wszystkich obraŸliwych
+spittle’ów, a u¿ytkownicy niebêd¹cy administratorami zobacz¹ jedynie w³asne wpisy,
+
+ * usuwanie tylko tych obiektów, które dany user posiada
+
+@PreFilter Pozwala na wywo³anie metody, ale filtruje dane na wejœciu metody przed
+jej rozpoczêciem.
+
+ * oczywiœcie aby móc z nich korzystaæ o trzeba zadeklarowaæ komponent konfiguracyjny, oczywiœcie bardzo prosty,
+
+ * Gdy odnosisz wra¿enie, ¿e wyra¿enia zabezpieczeñ staj¹ siê nieporêczne i nie³atwo
+nad nimi zapanowaæ, warto rozwa¿yæ napisanie w³asnego ewaluatora uprawnieñ w celu
+uproszczenia kodu wyra¿eñ SpEL. Zobaczmy, jak utworzyæ i wykorzystaæ w³asny ewaluator
+uprawnieñ do uproszczenia naszych wyra¿eñ filtrowania,
+
+ * mo¿na go utworzyæ znacznie proœciej
+
+6. Istnieje te¿ mo¿liwoœæ filtrowania parametrów metody, któr¹ chcemy wykonaæ.
+
+ * jest to dobre rozwi¹zanie dla administratora, bo mo¿e on wykonaæ metode na ce³aj bazie, ale
+np. usun¹æ tylko te obiekty, które nale¿¹ do konkretnego uzytkownika,

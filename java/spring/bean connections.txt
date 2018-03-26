@@ -1,0 +1,106 @@
+1. W Springu obiekty nie odpowiadaj¹ za odnajdywanie albo tworzenie innych obiektów,
+potrzebnych im do dzia³ania. Zamiast tego referencje do obiektów, z którymi
+wspó³pracuj¹, otrzymuj¹ przez kontener.
+
+2. kontener Springa odpowiada za tworzenie
+komponentów w aplikacji i koordynuje wzajemne relacje pomiêdzy obiektami z u¿yciem
+mechanizmu wstrzykiwania zale¿noœci.
+
+3. Tworzenie powi¹zañ jest kwesti¹ gustu, tak¿e nie ma znaczenia
+czy wybieramy metodê wi¹zañania na pomoc¹ xml czy javy.
+
+4. Istniej¹ trzy metody powi¹zania komponentów, ale najbardziej zalecana jest
+konfiguracja automatyczna, bo im mniej zadeklarujesz w sposób jawny tym lepiej.
+
+5. Automatyczne wi¹zanie komponentów w Springu realizowane jest za pomoc¹ dwóch mechanizmów:
+* Skanowania komponentów — Spring automatycznie wyszukuje komponenty,
+które maj¹ zostaæ utworzone w kontekœcie aplikacji.
+* Autowi¹zania (ang. Autowiring) — Spring w sposób automatyczny rozwi¹zuje
+zale¿noœci komponentów. 
+
+6. Nie musimy konfigurowaæ komponentu w sposób jawny. Dziêki u¿yciu 
+adnotacji @Component Spring zrobi to za nas automatycznie.
+
+7. Nale¿y pamiêtaæ o tym, ¿e skanowanie komponentów nie jest domyœlnie w³¹czone.
+Wci¹¿ musimy w sposób jawny utworzyæ konfiguracjê, która w³¹czy mechanizm wyszukiwania
+klas opatrzonych adnotacj¹ @Component i utworzy komponenty dla tych klas.
+
+8. Jeœli do adnotacji @ComponentScan nie przekazano ¿adnych dodatkowych ustawieñ
+konfiguracji, domyœlnym pakietem, w którym bêd¹ skanowane komponenty, jest pakiet
+klasy konfiguracji.
+
+9. Dodanie jednej linii zawieraj¹cej adnotacjê
+@ComponentScan w zamian za nieograniczon¹ liczbê automatycznie tworzonych komponentów
+to bez w¹tpienia œwietny interes.
+
+10. Mówi¹c w skrócie, autowi¹zaniem nazywamy mechanizm, za pomoc¹ którego Spring
+w sposób automatyczny rozwi¹zuje zale¿noœci komponentu z u¿yciem komponentów
+wyszukanych w kontekœcie aplikacji. Do oznaczenia obiektów poddanych autowi¹zaniu
+mo¿emy wykorzystaæ adnotacjê @Autowired.
+
+11. Niezale¿nie od tego, czy skorzystamy z konstruktora, metody typu setter, czy dowolnej
+innej metody, Spring spróbuje spe³niæ zale¿noœæ wyra¿on¹ za pomoc¹ parametrów tej
+metody. Jeœli zale¿noœæ ta spe³niona jest przez tylko jeden komponent, to w³aœnie on
+zostanie wykorzystany.
+
+12. @Autowired jest adnotacj¹ dostêpn¹ tylko w Springu, tak¿e uzale¿nia nasz kod od springa
+
+13. Wszystkie biny mo¿na zadeklarowaæ w jednym pliku z klas¹ o adnotacji @configuration
+ z adnotacj¹ @bean.
+
+14. W metodzie zwracaj¹cej bean w klasie konfiguracyjnej mo¿na zwracaæ obiekty ró¿nych klas:
+THIS IS GREAT!!!
+
+ @Bean
+public CompactDisc randomBeatlesCD() {
+int choice = (int) Math.floor(Math.random() * 4);
+if (choice == 0) {
+return new SgtPeppers();
+} else if (choice == 1) {
+return new WhiteAlbum();
+} else if (choice == 2) {
+return new HardDaysNight();
+} else {
+return new Revolver();
+}
+}
+
+ * stwarza to dobre warunki do warunkowego zwracania obiektów
+podtypów w zale¿noœci od ustalonego warunku,
+
+ * na przyk³ad jeœli klient jest kobiet¹ to mo¿na zwróciæ bean bardziej dostosowany do jej preferencji,
+
+15. Metoda zwracaj¹ca bean, podczas ka¿dego kolejnego wywo³ania zwraca ten sam bean.
+
+@Bean
+public CDPlayer cdPlayer() {
+	return new CDPlayer(sgtPeppers());
+}
+
+16. W springu biny s¹ ZAWSZE singletonami!!!:
+
+17. W przypadku oprogramowania sytuacja jest inna. Nie ma powodu, dla którego nie
+mo¿emy u¿yæ tej samej instancji SgtPeppers w dowolnej liczbie komponentów. Wszystkie
+komponenty w Springu s¹ domyœlnie singletonami i nie musimy duplikowaæ instancji,
+¿eby móc spe³niæ zale¿noœci drugiego komponentu CDPlayer. Spring przechwytuje
+wywo³anie metody sgtPeppers() i upewnia siê, ¿e zwrócony zostanie komponent powsta³y
+w wyniku wywo³ania tej metody przez Springa w trakcie tworzenia komponentu CompactDisc. 
+W rezultacie oba komponenty typu CDPlayer otrzymaj¹ tê sam¹ instancjê
+SgtPeppers.
+
+@Bean
+public CDPlayer cdPlayer() {
+	return new CDPlayer(sgtPeppers());
+}
+@Bean
+public CDPlayer anotherCDPlayer() {
+	return new CDPlayer(sgtPeppers());
+}
+
+18. Korzystaj zawsze z automatycznej konfiguracji!!!
+
+19. 
+
+
+
+ 

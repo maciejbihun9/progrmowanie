@@ -1,0 +1,5 @@
+ * zosta³ stworzony interfejs do do tego, aby mo¿na by³o go zaimplementowaæ
+w ka¿dej klasie modelowej,
+ - np. Interfejs dla dowolnych obiektów, które maj¹ unikalny identyfikator (w ramach danej klasy obiektów).
+ 
+ * 

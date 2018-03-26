@@ -1,0 +1,4 @@
+1. Zapisuj tylko to co nam Django umo¿liwia bez wchodzenia w szczegó³y
+oraz postaraj siê to dobrze rozdzieliæ na pliki, ¿eby ³atwo to znaleŸæ w ksi¹¿ce póŸniej,
+
+2. Jak mo¿na sobie u³atwiaæ ¿ycie stosuj¹c Django,

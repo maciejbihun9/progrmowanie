@@ -1,0 +1,43 @@
+ * Wypisanie zdania, gdzie ka¿de s³owo ma du¿¹ literkê:
+ - quote = "Myœlê, ¿e istnieje œwiatowy rynek dla mo¿e piêciu komputerów."
+ - quote.title()
+
+ * zamiana s³owa na inne s³owo (zamienia wszystkie wyst¹pienia, czyba, ¿e podamy iloœæ s³ów do zamiany, to zamieni tylko tê konkretn¹ iloœæ):
+ - quote.replace("rynek", "rynki", n)
+
+ * Zamiana wielkoœci liter(ma³e na du¿e, du¿e na ma³e):
+ - string.swapcase(),
+
+ * pusty string zwraca false:
+ - username = ""
+   if not username: - bedzie true
+
+ * zwracanie true/false dla liczb:
+ - d = 12
+ - if not d:
+	print(d) - zwraca false
+
+ - ujemne zwracaj¹ false do zera, a dodatnie zwracaj¹ true
+
+ * porównywanie stringów jest za pomoc¹ znaku '==':
+ - string1 == string2
+
+ * dopóki coœ jest puste:
+	username = ""
+	while not username:
+		username = input("U¿ytkownik: ")
+
+ * Wypisanie tekstu po nowej lini:
+ - print("\nOto poszczególne litery Twojego s³owa:"),
+
+ * mo¿na tworzyæ ³añcuchy z innych ³añcuchów,
+ 
+ * ³añcuchy string s¹ niemutowalne,
+
+ * stringi s¹ tak naprawdê jak krotki, s¹ niezmienialn¹ sekwencj¹ elementów
+
+ * zamiana elementów w liœcie stringów na jeden:
+ - string = "to jest lista stringów"
+ - string[2:4] = "jeden string"
+	
+

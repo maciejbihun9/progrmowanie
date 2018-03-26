@@ -1,0 +1,3 @@
+PYTHONPATH=/mnt/c/Users/macbi/PycharmProjects/virtual_envs/e_learning_env35
+
+export PYTHONPATH=${PYTHONPATH}:/usr/ 

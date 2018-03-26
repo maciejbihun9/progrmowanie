@@ -1,0 +1,64 @@
+# SYSTEM BÊDZIE OCZYWIŒCIE DZIA£A£ W SYTUACJI, GDY NIC SIÊ NIE DZIEJE 
+# NIE CHCE ABY SAM PODEJMOWA£ DECYZJE, TYLKO, ¯EBY MÓWI£ KIEDY WEJŒÆ I KIEDY WYJŒÆ
+# TYLKO USTALANIE PRAWDOPODOBIEÑSTWA WYGRANEJ - BEZ INFORMACJI GEOPOLITYCZNYCH - CZYLI BEZ Q - LEARNINGU
+# RAZ DZIENNIE ODPALANIE SYSTEMU I ODPALANIE ANALIZ -> zapisanie do bazy wyników i utworzenie raportu
+# NIE WSZYSTKO MUSI BYÆ JAKOŒ ZAJEBIŒCIE OPTYMALNE! - czasami trzeba poprostu wejœæ w to i spróbowaæ rezultatu!
+
+ - czy zapisywaæ moje analizy? - tak, bo raz dziennie odpalane,
+ - czy czasami bêda chcia³ pobraæ tylko jedno lub kilka aktywów? - Tak (porównaæ zale¿noœcitylko z nimi)
+ - dane trzeba mieæ pobrane? - tak (na razie tylko dzienne)
+ - czy intraday trading?? - nie, wiem!!! - ale na pewno osobna baza,
+ - czy liczenie akcji osobno od surowców? - mo¿e byæ, ale nie musi
+
+ * osobna baza danych dla surowców, akcji oraz walut. Osobne bazy dla ró¿nych 
+
+ * wyszukiwanie niedowartoœciowanych aktywów - OK :
+ - czy pobieranie danych dla wszystkich na raz, czy np. z podzia³em na rynki, typy aktywów?
+ DANE:
+ - pobieranie wszystkiego na raz nie bêdzie mêczyæ bazy danych, ale to zale¿y od iloœci tych danych,
+ - pobieranie cen wszystkich akcji na raz,
+ - aby zwróciæ te najlepsze, to trzeba pobraæ wszystko,
+ OPIS:
+ - porównywanie wyników obliczeñ? - tak,
+ - dane z wielu gie³d? - musi byæ,
+ - anaiza techniczna? - tak,
+ - porównanie wspó³czynników z analizy technicznej w jednym programie? - tak,
+ - utworzenie raportu na temat sytuacji spó³ek, 
+ - porównywanie niedowartoœciowania aktywów - tak,
+ - zapisywaæ analizy? - oczywiœcie np. data analizy - wynikami
+ - wyszukiwanie korelacji w zachowaniu cen akcji,
+ - konkretne wskaŸniki danej spó³ki nie s¹ mi do niczego potrzbne - tak, czyli ich nie pobieramy,
+ - pobieramy waluty, surowce, akcje - porównywanie tych aktywów(ceny mog¹ byæwysokie, ale stosunek miêdzy aktywami nie a¿ tak),
+ - iterowanie przez wszystkie firmy i obliczanie ich wyników finansowych( podstawowe wspó³czynniki ),
+ - to czy kompania jest naprawdê wartoœciowa do inwestycji to ju¿ bym musia³ to sam porozkminiaæ, 
+ - tylko dla danych dziennych,
+ - zwrócenie tabelki z wynikami,
+
+ + ale czasami mog³o by byæ tak, ¿e: chce pobraæ tylko jedn¹ akcje:
+ - rozkminka technicznych wskaŸników,
+ - przed inwestycj¹ ostatni podgl¹d jak ma siê do reszty aktywów 
+
+ * analiza korelacji aktywów(czy na podstawie wskaŸników, aktualnej kondycji gie³dy mo¿na rozkminiæ co siê stanie?):
+ - dla wybranego aktywa porównaj korelacjê z innymi aktywami,
+ - czy taka korelacja ju¿ kiedyœ istnia³a w przesz³oœci, taki stosunek wartoœci aktywów i co siê poŸniej sta³o?
+   czy ceny spada³y czy ros³y oraz o ile?,
+ - zbadanie zale¿noœci czasowych, opóŸnieñ wzrostów po jakimœ aktywie, czy indeksie, czy runku,
+
+ * korelacje miêdzy aktywami: waluty i surowce, surowce i akcje itd.
+ 
+ * analiza zaleznoœci cen od wydarzeñ oraz rocznic oraz rzeczy sentymentalnych dla ludzi:
+ - iloœæ lat od wyboru prezydenta,
+ - igrzyska olimpijskie
+ - mistrzostwa œwiata
+
+ * pobieranie cen akcji oraz analiza tego, czy mamy jak¹œ okzjê na rynku:
+ - pobieranie wszystkich cen akcji na raz - trzeba po koleji analizowaæ ka¿d¹ kompanie z osobna i wypatrzeæ, czy 
+   w kontekœcie warunków rynkowych mamy do czynienia z okazj¹
+
+ * wyszukanie okazji inwestycyjnych bior¹c pod uwagê aktualn¹ sytuacjê ekonomiczn¹,
+ - bañka na ka¿dym aktywie,
+ - jak wykorzystaæ aktualn¹ sytuacjê?,
+
+ * badanie rynku ca³ego kraju:
+ - wyceny akacji(kapitalizacja) / pkb,
+ - iloœæ kasy na kredyt,

@@ -1,0 +1,34 @@
+ * nie s¹ rekomendowane, tak¿e nie bede ich u¿ywa³ 
+
+ * Sygna³y okazuj¹
+siê niezwykle u¿yteczne, gdy trzeba wykonaæ zadanie po wyst¹pieniu innego zdarzenia.
+Oczywiœcie mo¿na tak¿e tworzyæ w³asne sygna³y, aby inne komponenty otrzymywa³y powiadomienia
+o wyst¹pieniu pewnych zdarzeñ,
+
+ * Framework Django jest dostarczany wraz z dyspozytorem sygna³ów, który pozwala funkcjom
+typu receiver na otrzymywanie powiadomieñ o wyst¹pieniu okreœlonych akcji:
+
+- wywo³anie funkcji nasêpuje jedynie po wys³aniu sygna³u m2m_changed przez nadawcê.
+- metoda bêdzie wywo³ywana po wywo³aniu fukncji Image.users_like
+
+@receiver(m2m_changed, sender=Image.users_like.through)
+def users_like_changed(sender, instance, **kwargs):
+    instance.total_likes = instance.users_like.count()
+    instance.save()
+
+ * metody sygna³owe:
+ - pre_save(), post_save(), post_delete(), pre_delete(),
+ - m2m_changed() - sygna³ po zmianie kolumny w ManyToManyField
+
+ * pe³na lista sygna³ów w Django:
+ - https://docs.djangoproject.com/en/1.8/ref/signals/.
+
+ * istnieje wiele metod, ktore mog¹ s³u¿yæ jako sygna³y,
+
+ * Sygna³y w Django s¹ synchroniczne, a zatem blokuj¹ w¹tek, w którym s¹ wysy³ane. Nie pomyl wiêc
+sygna³ów z zadaniami asynchronicznymi. Jednak mo¿na po³¹czyæ sygna³y i zadania asynchroniczne
+w celu ich wywo³ywania, gdy kod zostanie powiadomiony przez sygna³.
+ 
+ * Zachowaj ostro¿noœæ podczas korzystania z sygna³ów, poniewa¿ utrudniaj¹ one kontrolowanie przep³ywu
+zdarzeñ. W wielu przypadkach mo¿na unikn¹æ u¿ycia sygna³ów, gdy wiadomo, które funkcje maj¹ byæ
+poinformowane o wyst¹pieniu okreœlonego zdarzenia.

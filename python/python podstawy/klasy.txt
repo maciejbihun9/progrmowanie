@@ -1,0 +1,94 @@
+W Pythonie jest mo¿liwe utworzenie nowej klasy, która bezpoœrednio dziedziczy
+po wiêcej ni¿ jednej klasie. Jest to nazywane dziedziczeniem wielokrotnym.
+Jednak takie podejœcie wprowadza szereg komplikacji. Wiêc zapewne bêdzie
+najlepiej, jeœli jako pocz¹tkuj¹cy programista bêdziesz unikaæ stosowania
+dziedziczenia wielokrotnego.
+
+Podczas tworzenia projektu warto jest stworzyæ drzewko dziedziczenia oraz
+opisaæ dzia³anie danej klasy. Utworzyæ wstêpn¹ architektur¹ projektow¹.
+
+ * klasy w Pythonie maj¹ zapisane, ¿e dziedzicz¹ po object!,
+
+ * w klasie zmienna globalna musi byæ prywatna: __zmianna
+ - inaczej kurwa mo¿na j¹ zmieniaæ porzez atrybuty!
+
+ * self - pozwala metodzie na odwo³anie siê do samego obiektu,
+
+ * __init__() - Jako konstruktor metoda __init__
+jest wywo³ywana automatycznie przez ka¿dy nowo tworzony obiekt klasy 
+natychmiast po zaistnieniu obiektu. 
+ * inicjalizacja zmiennych tak samo jak w javi'e,
+
+ * s³u¿y jako taki getter - ale ja wole standardowe rozwi¹zania:
+@property
+    def name(self):
+        return self.__name
+
+ * UWAGA!!!:
+ - maciek = Person() -> maciek.age
+ - jacek = Person()
+ jacek.age - zadzia³a!!
+
+ - ten kod przypisuje zmienn¹ globaln¹ do klasy! Person,
+ teraz ka¿dy obiekt ma do niej dostêp poprzez odwo³anie siê do atrybutu!!
+
+ * zmienna prywatna klasy:
+ - nie pozwala na bezpoœredni dostêp do atrybutu obiektu,
+ - nie zapomniej na przypisaniu tej samej zmiennej w funkacjach dostêpu,
+   bo inaczej przypiszesz nowy atrybut do obiektu.
+ - zmienna mood jest jednak dostêpna!: obiekt._test__mood
+
+class test:
+
+	def __init__(self, mood):
+		self.__mood = mood
+
+ * korzystanie ze zmiennych globalnych klasy:
+
+ * metody prywatne s¹ tworzone w taki sam sposób jak zmienne
+
+class test:
+	value = 0 
+ - zostaje utworzona przed powstaniem pierwszego obiektu i mam do niej dostêp poprzez metody statyczne
+
+ * operator "pass":
+ - kiedy nie chcemy implementowaæ jeszcze metody lub klasy,
+
+ * kilkukrotne dziedziczenie klas:
+class CL1(object):
+    def __init__(self):
+        super(CL1, self).__init__()
+        print "class 1"
+
+
+class CL2(object):
+    def __init__(self):
+        super(CL2, self).__init__()
+        print "class 2"
+
+
+class CL3(CL1, CL2):
+    def __init__(self):
+        super(CL3, self).__init__()
+        print "class 3"
+
+result:
+class 2
+class 1
+class 3
+
+ * klasy mog¹ rozszerazæ wiele klas i posiadaj¹ ich mieszankê funkcjonalnoœci
+
+POLIMORFIZM:
+
+ * mo¿liwoœæ wskazywania z klas wy¿ej po³o¿onych na te ni¿ej po³o¿one. Wskazywanie na obiekty tego samego typu,
+   aby uzyskaæ ró¿ne zachowania,
+
+ * czasami, to nawet gdzieœ jakoœ mo¿na mieæ liste w zajebistej nadklasie, a
+  korzystaæ z niej w podklasach,
+
+MODU£Y:
+
+ * aby zaimportowaæ modu³ to trzeba niestety go mieæ w tym samym katalogu
+
+  

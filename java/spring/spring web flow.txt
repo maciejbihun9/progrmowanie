@@ -1,0 +1,16 @@
+ * Spring Web Flow jest frameworkiem sieciowym, umo¿liwiaj¹cym budowanie aplikacji
+z elementów, które sk³adaj¹ siê na sekwencjê czynnoœci zwan¹ inaczej przep³ywem
+sterowania (ang. flow),
+
+ * Przeprowadzanie u¿ytkownika przez ca³y proces dzia³ania aplikacji,
+
+ * Spring Web Flow jest zbudowany na fundamencie Spring MVC,
+
+ * Egzekutor przep³ywu jest odpowiedzialny za utworzenie i wykonanie przep³ywu, ale
+³adowanie definicji przep³ywu nie nale¿y do jego zadañ. Odpowiada za nie rejestr
+przep³ywów, który utworzymy w nastêpnej kolejnoœci,
+
+ * Droga przekierowañ jest uzale¿niona od podejmowanych decyzji,
+
+ * sranie w xml - nie lubiê tego - jebaæ to 
+

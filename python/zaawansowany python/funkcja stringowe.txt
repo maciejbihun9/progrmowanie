@@ -1,0 +1,14 @@
+
+ * split a string:
+ - string.split(',')
+ 
+ * replace first item occurance:
+ - string.replace(',',' ')
+ 
+ * split text into a list of words:
+ - text.split()
+ - import re
+ - RE_WORDS = re.compile('\w+')
+ - RE_WORDS.findall(text) -> list of words
+ 
+ * 

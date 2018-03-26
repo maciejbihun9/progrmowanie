@@ -1,0 +1,57 @@
+
+ * jak myślą ?:
+ - tylko średnie ceny oraz średni volumen, bo drogie akcje o niskim wolumenie
+ nigdy nie zostaną kupione przez krótkoterminowych predstawiieli mas,
+ czyli teoretycznie masy nie powinny się tym interesować, ale cena jest zbyt duża, aby to pominąć,
+ - czasami cena akcji odzwierciedla pewne prognozy na podstawie obliczen gospodarki i tak dalej,
+ - to inni ludzie nadają wartość! - tego nie da się zmienić
+
+ * jak podzielić akcje z dużym volumenem?:
+ - czy akcje totalnie odbiegające od normy wywalićs?: Tak,
+ - akcji z dużym volumenem na razie nie uwzględniam - TAK,
+ (mały volumen lub duża cena stwrzają duże ryzyko, brak płynności, ale duży vol nie jest zły)
+ (napewno zachowują się tak akcje inaczej niż jak z małym volumenem)
+ - mały volumen jest niebezpieczny?: TAK,
+ - czy mały volumen może się gdzieś kiedyś przydać, także warto wiedzieć, które to były akcje - TA
+ - czy zostawić firmy z duzym volumenem? - TAK - są bezpieczne, większ płynność
+ + ale teraz jak je podzielić?:
+ - w tym momęcie ręczne usuwanie rodzynków ma duzy sens,
+ bo sam musze ustalić czy jest to ok lub nie,
+ program tego nie ustali,
+ samemu mam szans, aby poczytać na temat rodzynków, 
+ które pewnie sławne, także nie używalne,
+ - czy moge pobrać kapitalizacje giełdową spółki? - nie tał łatwo,
+ - czy potrzebuje więcej parametrów? - TAK,
+ 
+ * czy pobierać market cap?:
+ - ciężkie do znalezienia,
+ - może nie teraz, później
+ 
+WNIOSKI NA TEMAT WYKRESU:
+
+ * najwięcej jest tanich akcji o małym zagęszczeniu,
+ * więcej jest takich co mają ekstremalnie mały wolumen niż ceny,
+ * bardzo mało jest akcji które mają proporcjonalną cene do wolumenu 
+ 
+GRUPY:
+
+ * każda grupa musić być mniej więcej o takiej samej dystrybucji tnz. nie może być pustych miejsc
+ w danym obszarze,
+ ale musi posiadać odpowiednią ich ilość
+ 
+ * randomowe dobieranie elementów do grup,
+ odpalanie na każdej grupie strategii i zapisywanie rezultatów,
+ grupy były by tworzone zupełenie randomowo z randomowych elementów,
+ potem biore najlepsze wyniki i sprawdzam, czy ta grupa ma jakieś cech wspólne,
+ a jesli nie to znajduje nowe parametry i szuma tych cech wspólnych
+ - trzeba ustalić wielkość tych grup (min, max)
+
+ * podział na 3 grupy ze wzg. na cene oraz wolumen,
+ - średnie, drogie z małym volumenem oraz tanie z dużym
+ - tych grup musi być więcej, bo jest zbyt duże rodrobnienie
+
+ * akcje nie płynne volumenem oraz niską ceną (coś dla mas):
+ - nie płynne akcjie, czyi poniżej 10000 akcji/dzień,
+ - 
+ 
+ 

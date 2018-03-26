@@ -1,0 +1,107 @@
+
+ * abc are for very general purposes, to build frameworks or for
+ big abstractions, existing once are ok,
+ 
+ * use of abc: collections.MutableSequence:
+ - by extending our class with it, we have to implement 
+ delitem and insert. Without it we will get TypeError during runtime.
+ Wthout any errors during compilation.
+ 
+ * we can write some better implementation of our contains method.
+ - If our sequence contains sorted items then we can create a binary search
+ and do it quicker,
+ - so we can normally overrite an abc's methods without any problems,
+ it depends on our sequence,
+ 
+ * we shouldn't use abc much, we should use more duck typing, because 
+ this is just power of Python. Type checking it is not what we want in our project.
+
+ * the risk of over engeenering is very high,
+ 
+ * sequence implementation:
+ - class Foo:
+... def __getitem__(self, pos):
+... return range(0, 30, 10)[pos]
+ - this allows a user to maka a iterations, indexing and using in operator
+ 
+ * shuffle items in a collection:
+ - if our sequence is build as a class then we cannot shuffle it 
+ - shuffle method works like shuffling items in a collection in one list in one place
+ - if we want do that in a class sequence then we have implement __setitem__()
+ - >>> def set_card(deck, position, card):
+... 	deck._cards[position] = card
+...
+>>> FrenchDeck.__setitem__ = set_card
+>>> shuffle(deck)
+>>> deck[:5]
+ - now we can shuffle items in a list in our deck object
+
+ * Do not create your own ABC's implementations,
+
+ * we shouldn't use any insinstance methods. This is an indication
+ that code smell, expecially when we use this with if, else, elif
+ - you can not depend on a type of an object,
+ - you should depend on proper use of polimorphism
+
+ * duck typing is better than just type checks,
+
+ * do not define custom ABC's, it is all about simple code
+
+ * check weather object is type number:
+ - isinstnace(x, numbers.Integral) -> for int and bool
+ - numbers.Real for a floating point
+ 
+ * define an abstract method:
+ - an abstractmethod can have it's own implementation, but can have only
+ a comments,
+ - you have to implement only those methods that lives with annotation,
+ in this case you can create your own impl of how you want to pick or load items
+ in the inspect and loaded methods.	 
+ - there is no way to inform a user that a method can raise an Error
+ only in the docs, docstring,
+ - import abc
+class Tombola(abc.ABC):
+	@abc.abstractmethod
+	def load(self, iterable):
+		"""Add items from an iterable."""
+	
+	@abc.abstractmethod
+	def pick(self):
+		"""Remove item at random, returning it.
+		This method should raise `LookupError` when the instance is empty.
+		"""
+	
+	def loaded(self):
+		"""Return `True` if there's at least 1 item, `False` otherwise."""
+		return bool(self.inspect())
+	
+	def inspect(self):
+		"""Return a sorted tuple with the items currently inside."""
+		items = []
+		while True:
+			try:
+				items.append(self.pick())
+			except LookupError:
+				break
+		self.load(items)
+		return tuple(sorted(items))
+		
+ * create a abstractclassmethod:
+ - class MyABC(abc.ABC):
+ @classmethod
+ @abc.abstractmethod
+ def an_abstract_classmethod(cls, ...):
+	pass 
+	
+ * generate very nice random numbers using random.SystemRandom()
+ that uses cryptographic approach,
+ - to shuffle: randomizer.shuffle(items) 
+ 
+ * in subclasses we can override methods from abstracts
+ 
+ * It is importtn that we can use any iterable to fill our function
+ and then just parse it to a list datatype.
+ - list(list) - it is ok! nothing wrong can happen
+ 
+ * list all class superclasses:
+ - class.__mro__

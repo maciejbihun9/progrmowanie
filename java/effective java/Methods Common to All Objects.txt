@@ -1,0 +1,186 @@
+EQUALS::
+
+ * recipe for good equals method: str. 42
+
+ * implement an equals method only when the superclass does not have any equals implementation,
+ 
+ * this is the key method for sets and hashmaps, even for list, because .contains() use it,
+ 
+ * make sure objects remain the same during the application runtime,
+ let say that you have a set with two different objects and you change their states.
+ In one moment this set is not convenient to work,
+ 
+ * The equals contract has to be MAINTAINED!!!,
+ because if not then you can face a situation when you can add a crazy object to a list
+ and that method wont find it
+ - this kind of equals can cause this problem:
+ @Override public boolean equals(Object o) {
+	if (o instanceof CaseInsensitiveString)
+		return s.equalsIgnoreCase(((CaseInsensitiveString) o).s);
+	if (o instanceof String) // One-way interoperability!
+		return s.equalsIgnoreCase((String) o);
+	return false;
+ }
+ - this is good implementation:
+ @Override public boolean equals(Object o) {
+	return o instanceof CaseInsensitiveString && ((CaseInsensitiveString) o).s.equalsIgnoreCase(s);
+ }
+ 
+ * with default implementation, the equals method returns true only for itself!!!
+ - for itself instance,
+ 
+ * REMEMBER!!!, if you do not want to call a method, an object method, then just
+ throw an error when someones calling it,
+ - @Override public boolean equals (Object o) {
+	throw new AssertionError(); // Method is never called
+ }
+ 
+ * there is no way to create good equals contract A-B-C using inheritance for subclasses
+ 
+ * you have to use delegation/composition to be safe using lists, sets and maps:
+ @Override public boolean equals(Object o) {
+	if (!(o instanceof ColorPoint))
+		return false;
+	ColorPoint cp = (ColorPoint) o;
+	return cp.point.equals(point) && cp.color.equals(color);
+ }
+ 
+ * checking for the null type can be done in the same place where checking for
+ the different type is done.
+ - @Override public boolean equals(Object o) {
+	if (!(o instanceof MyType))
+		return false;
+	MyType mt = (MyType) o;
+ }
+ 
+HASHCODE:
+
+ * always override hashcode when you override equals,
+
+ * calling the hashmethod() on the same object during the application lifetime
+ will have to return the same results, but different in many application runs.
+
+ * the same objects according to equals has to return the same hash number 
+ 
+ * The bigger hashtable is, then more efficient program will be,
+ 
+ * example of inserting instances into a map that fails:
+ - Map<PhoneNumber, String> m
+ = new HashMap<PhoneNumber, String>();
+ m.put(new PhoneNumber(707, 867, 5309), "Jenny"); 
+ - this will fail almost 
+ 
+ * hashcode should be computed using significant fields of a class
+ (that is used in an equals method)
+ - the prescription for creating that method is on 47 page.
+ 
+ * good hashcode method can disperse unequal objects into seperate hashtables,
+ be more efficient and fast,
+ 
+ * you have to always use all significant fields from class instance to produce a hashcode,
+ sometimes this will cause bad performance bad will work the best with no problmes,
+
+TOSTRING:
+
+ * always provide the toString() method,
+
+ * the good idea is to use String.format() to better present fields of your instance,
+ - @Override public String toString() {
+	return String.format("(%03d) %03d-%04d",
+		areaCode, prefix, lineNumber);
+ }
+
+ * always document well your methods, because in the future releases this code can break
+ the code of the code users,
+
+CLONE:
+
+ * you have to implement the Comparable interafce to indicate that instances of a class 
+ can be cloned,
+ 
+ * x.clone() != x, because now those objects are not refering to the same places in the memory,
+ 
+ * cloning entails to create a new class instance,
+ - you have to becarefull about internal data strucutres,
+ 
+ * they say that constructors are not called,
+ 
+ * if your class contains only primitive fields or immutable references then
+ you can use just simple super.clone() method to create a seperate clone of a object.
+ - @Override public PhoneNumber clone() {
+	try {
+		return (PhoneNumber) super.clone();
+	} catch(CloneNotSupportedException e) {
+		throw new AssertionError(); // Can't happen
+	}
+ }
+ 
+ * we have to ensure that we clone all elements in the arrays, because if not this will cause
+ problems with objects values,
+ 
+ * refer to page 59.
+ 
+COMPARABLE:
+
+ * comapreTo returns always -1, 0, 1 integers,
+ 
+ * returns class cast exception if we can not compare them because of type,
+ 
+ * it is very hard to extend that compareTo method,
+ you should use delegation more extensivelz,
+ 
+ * comapreTo follows the same concepts as an equals method,
+ 
+ * both side must work the same after reverse use,
+ 
+ * sorted collections use compareTo to make a good order of 
+ items in a collection, not an equals method,
+ 
+ * you should be aware that an equals method is not consistent with 
+ compareTo
+ - for BigInteger, adding a new item to a TreeSet and HashSet
+ may produce different results, because sometimes those collections
+ uses different methods of comparison,
+ 
+ * for floating or double points you should use
+ Float.compare or Double.compare instead of normal relational checking
+ that does not follow behind compareTo contract
+ - for arrays you should use for each item member,
+ - for class fields always start from the most significant fields
+ that means a lot and go down the line, because if the most important 
+ item is not equal then you should stop the process,
+ public int compareTo(PhoneNumber pn) {
+	// Compare area codes
+	if (areaCode < pn.areaCode)
+		return -1;
+	if (areaCode > pn.areaCode)
+		return 1;
+		
+ * remember that compareTo takes care only about the sign of 
+ the comparing items, not the value,
+ - this knowledge can improve speed of computations, 
+ public int compareTo(PhoneNumber pn) {
+	// Compare area codes
+	int areaCodeDiff = areaCode - pn.areaCode;
+	if (areaCodeDiff != 0)
+		return areaCodeDiff;
+	// Area codes are equal, compare prefixes
+	int prefixDiff = prefix - pn.prefix;
+	if (prefixDiff != 0)
+		return prefixDiff;
+	// Area codes and prefixes are equal, compare line numbers
+	return lineNumber - pn.lineNumber;
+}
+
+ * anyway you should be aware that this can cause some real problems
+ in real systems, so watch out with it for nig numbers,
+ 
+EQUALS:
+
+ * if you decide not to override an equals method then the object is the same only for
+ this object no metter happen, it has to be the same reference!!!,
+ so object created from the same elements won't be the same, 
+
+ 
+ 
+ 

@@ -1,0 +1,42 @@
+Przygotowane modele dodamy do witryny administracyjnej, aby zyskaæ mo¿liwoœæ ³atwego
+zarz¹dzania kategoriami i produktami. PrzeprowadŸ edycjê pliku admin.py aplikacji shop
+i umieœæ w nim poni¿szy fragment kodu.
+
+ * list_display - jest to lista atrybutów, które bêd¹ do wype³nienia podczas
+   tworzenia obiektu,
+
+ * prepopulated_fields = {'slug': ('title',)} - slug jest automatycznie wype³niony za tytu³em,
+
+ * 
+
+from django.contrib import admin
+from .models import Category, Product
+class CategoryAdmin(admin.ModelAdmin):
+	list_display = ['name', 'slug']
+	prepopulated_fields = {'slug': ('name',)}
+admin.site.register(Category, CategoryAdmin)
+
+* Wykorzystujemy ModelInline dla modelu OrderItem, aby do³¹czyæ go na miejscu, w klasie
+OrderAdmin. Taki sposób do³¹czenia modelu pozwala na jego pojawienie siê na tej samej stronie
+edycji, tak jak w przypadku modelu nadrzêdnego.
+
+class OrderItemInline(admin.TabularInline):
+    model = OrderItem
+    raw_id_fields = ['product']
+
+class ProductAdmin(admin.ModelAdmin):
+	list_display = ['name', 'slug', 'price', 'stock', 'available', 'created', 'updated']
+	list_filter = ['available', 'created', 'updated']
+	list_editable = ['price', 'stock', 'available']
+	prepopulated_fields = {'slug': ('name',)}
+	inlines = [OrderItemInline]
+admin.site.register(Product, ProductAdmin)
+
+Pamiêtaj, ¿e u¿yliœmy atrybutu prepopulated_fields w celu wskazania kolumn, których wartoœæ
+bêdzie wstawiana automatycznie na podstawie wartoœci innych kolumn. Jak wczeœniej widzia³eœ,
+tego rodzaju rozwi¹zanie okazuje siê wygodne podczas generowania slugów. Atrybutu list_editable
+w klasie ProductAdmin u¿ywamy do wskazania kolumn, które mog¹ byæ edytowane z poziomu listy
+wyœwietlanej na stronie witryny administracyjnej. Tym samym zyskujesz mo¿liwoœæ jednoczesnej
+edycji wielu rekordów. Ka¿da kolumna w list_editable musi byæ równie¿ wymieniona
+w atrybucie list_display, poniewa¿ edytowane mog¹ byæ jedynie wyœwietlone kolumny.
+

@@ -1,0 +1,62 @@
+1. Pod wieloma wzglêdami komponenty tworzonej przez nas aplikacji dzia³aj¹ w ten sam
+sposób. Bezstanowe komponenty lepiej siê skaluj¹, ale zadaj¹ czêsto te same pytania.
+Poniewa¿ nie przechowuj¹ stanu, to po zakoñczeniu zadania nie pamiêtaj¹ ¿adnej
+uzyskanej odpowiedzi. Nastêpnym razem, gdy jej potrzebuj¹, musz¹ wiêc ponownie
+zadaæ to samo pytanie,
+
+2. Chocia¿ sam Spring nie implementuje ¿adnego rozwi¹zania
+w zakresie cachowania, to udostêpnia deklaratywne wsparcie dla cachowania,
+które doskonale integruje siê z kilkoma popularnymi implementacjami cachowania,
+
+3. Mened¿ery pamiêci podrêcznej s¹ sercem abstrakcji mechanizmu
+cachowania w Springu i umo¿liwiaj¹ integracjê z jedn¹ z kilku popularnych implementacji
+cachowania.
+
+4. Wbrew pozorom konkurencyjna mapa jest œwietnym kontenerem do sk³adowania danych podczas ¿ycia aplikacji,
+
+5. Spring posiada kilka managerów pamiêci podrêcznej,
+
+6. Ehcache jest jednym z najpopularniejszych systemów cachowania. Wed³ug informacji
+na stronie internetowej Ehcache jest to „najczêœciej wykorzystywane rozwi¹zanie cachowania
+w Javie”,
+
+7. £atwa i prosta konfiguracja komponentów,
+
+8. Gdy siê temu dobrze przyjrzymy, to wpis w pamiêci podrêcznej nie jest niczym innym
+ni¿ par¹ klucz-wartoœæ, w której klucz okreœla operacje i parametry, a na ich podstawie
+zwracana jest przechowywana wartoœæ. Nikogo nie powinno wiêc dziwiæ, ¿e baza
+klucz-wartoœæ Redis nadaje siê œwietnie jako pamiêæ podrêczna,
+
+9. Jest kilka managerów cachowania, gdzie CompositeCacheManager chyba wypada najlepiej,
+
+10. Wszystkie wymienione w tabeli 13.1 adnotacje mog¹ byæ umieszczone zarówno na
+poziomie metody, jak i na poziomie klasy. Po opatrzeniu adnotacj¹ metody opisane
+w niej regu³y cachowania dotycz¹ wy³¹cznie wskazanej metody. Po umieszczeniu adnotacji
+na poziomie klasy regu³y zastosowane s¹ do wszystkich metod tej klasy.
+
+11. Adnotacja @Cacheable szuka najpierw wpisu w pamiêci podrêcznej i pomija wywo³anie
+metody w przypadku jego odnalezienia. Jeœli wpis nie zostanie znaleziony, metoda
+jest wywo³ywana, a w pamiêci podrêcznej zapisywana jest wartoœæ zwrócona przez
+metodê. Adnotacja @CachePut z kolei nie sprawdza nigdy pasuj¹cych wartoœci w pamiêci
+cache, zawsze wywo³uje metodê, a zwrócon¹ przez ni¹ wartoœæ zapisuje w pamiêci
+podrêcznej.
+
+12. Jeœli jakaœ wiadomoœæ
+jest szczególnie czêsto wyœwietlana, marnotrawstwem jest ka¿dorazowe odpytywanie
+bazy danych o ten konkretny wpis. Poprzez oznaczenie metody findOne() adnotacj¹
+@Cacheable mo¿emy sprawiæ, ¿e wiadomoœæ zostanie zapisana w pamiêci podrêcznej,
+a dziêki temu unikniemy zbêdnych zapytañ do bazy.
+
+13. Obiekty, które nie zmieniaj¹ siê podczas dzia³ania aplikacji, mog¹ byæ spokojnie cachowane,
+
+14. Po zapisaniu obiektu istniej du¿e prawdopodobieñstwo, ¿e ktos bêdzie chcia³ go w najbli¿szym czasie odczytaæ,
+
+ * ca³y obiekt wêdruje do pamiêci podrêcznej i jest pod kluczem id danego obiektu,
+
+ * istniej¹ adnotacje, które zapobiegaj¹ zapisywaniu elementów do pamiêci podrêcznej w konkretnych przypadkach,
+
+ * podczas testowania lub debuggowania nie potrzeba caszowania, takze wtedy mo¿na tego u¿yæ,
+
+ * gdy dane s¹ ju¿ nieaktualne, to trzeba je samemu usuwaæ,
+
+15. 

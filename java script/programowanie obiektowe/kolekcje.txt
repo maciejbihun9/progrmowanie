@@ -1,0 +1,52 @@
+TABLICE:
+
+ * nie deklaruje siê wielkoœci tablicy,
+
+ * deklaracja tablicy:
+ - var table = [] -> "object"
+
+ * tablice mog¹ posiadaæ wszystkie rodzaje typów danych:
+ - var table = [1,2,3, "raz", "dwa"]
+
+ * tablica jest dowolnie rozszerzalna:
+ - var table = [1,2,3,4,5]
+ - table[5] = null - zadzia³a normalnie,
+
+ * dodawanie do tablicy nowego elementu na zbyt dalekim indeksie powoduje powstanie 
+   obiektów undefined:
+ - table[10] = 12;
+ - [1,2,3,4,5,undefined * 4, 12]
+
+ * usuwanie z tablicy:
+ - delete table[5]; - nie usuwa on obiektu, a ustawia na undefined
+
+ * listy zagnie¿d¿one:
+ - lista = [["str", "dsada"], ["das", "dafa", "asaqfefq"]]
+ - lista[0][0][0] = 's'
+
+ * tablica mo¿e zawieraæ dowolne dane,
+
+ * tablica jest podobna jak w Java, tak¿e ciêzko siê cokolwiek usuwa,
+   usuwanie wi¹¿e siê z tworzenim nowej talicy, tak¿e lipa,
+
+ * usuwanie elementów z tablicy - to niez³a filozofia ;)
+ - // Find and remove item from an array
+ var i = array.indexOf("b");
+  if(i != -1) {
+	array.splice(i, 1);
+  }
+ 
+LISTY:
+
+ * deklaracja listy:
+ - lista = []
+ 
+ * dodawanie do listy:
+ - lista.push(item)
+ 
+ * d³ugoœæ listy:
+ - lista.length
+ 
+ * tworzenie kopii listy (bez kopiowania referencji):
+ - items2 = items.slice() - nowa lista
+ 

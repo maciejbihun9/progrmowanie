@@ -1,0 +1,74 @@
+ * listy s¹ zmienne, a krotki nie - jest to najwiêksza ró¿nica 
+ * elementom listy mo¿na przypisaæ inn¹ wartoœæ, a krotkom nie,
+ * Za pomoc¹ indeksowania mo¿esz przypisaæ istniej¹cemu elementowi listy now¹
+wartoœæ, ale nie mo¿esz w ten sposób utworzyæ nowego elementu. Próba
+przypisania wartoœci do nieistniej¹cego elementu spowoduje wyst¹pienie b³êdu.
+
+ * szybki sposób na kopie listy: 
+ - list_copy = lista[:]
+
+ * sublista(pierwsze 4 elementy):
+ - sublista = lista[:4]
+
+ * sublista(od 4 elementu w³¹cznie do koñca):
+ - sublista = lista[4:]
+
+ * zbiór otwarty prawostronnie(od 3 do 5):
+ - lista[3:5]
+
+ * czy dany element jest w liœcie(jak w krotkach):
+ - item in lista
+
+ * pobranie randomoweg elementu z listy:
+ - random.choice(lista)
+
+ * usuwanie wycinka listy:
+ - del lista[:2]
+
+ * czy item w liœcie:
+ - if item in list:
+
+ * dodawanie do listy:
+ - list.append(item),
+
+ * usuwanie z listy:
+ - list.remove(item)
+
+ * zwróc pozycje pierwszego elementu na którym znaleziono wartoœæ:
+ - lista.index(item)
+
+ * bezpieczny sposób usuwania z listy:
+ - if score in scores:
+	scores.remove(score) - dzia³a w sposób taki, ¿e otrzymuje ca³y obiekt
+
+ * zwyk³e sortowanie w po¿¹dku rosn¹cym:
+ - lista.sort(),
+ - scores.sort(reverse=True)
+
+ * odwracanie po¿¹dku listy:
+ - lista.reverse()
+
+ * Zwraca wartoœæ zajmuj¹c¹ pozycjê i oraz usuwa j¹ z listy. Przekazanie
+numeru pozycji i jest opcjonalne. Jeœli argument i nie zostanie
+podany, usuwany i zwracany jest ostatni element listy.
+ - lista.pop(index)
+
+ * stosowanie zagnie¿dzeñ:
+ - ['pierwszy', ('drugi', 'trzeci'), ['czwarty', 'pi¹ty', 'szósty']]
+ - nie s¹ rekomendowane!, max dwa zagnie¿d¿enia 
+
+ * referencje do listy:
+lista = ["jeden", "dwa", "trzy", "cztery"]
+
+lista2 = lista
+
+lista3 = lista
+
+lista4 = lista
+
+lista[2] = "try"
+ - wszystkie listy odwo³uj¹ siê do tego samego miejsca w pamiêci!
+ - wypisze wszystike list ze zmian¹!!!
+
+ * KOPIOWANIE LIST BEZ PRZYPISYWANIA LISTY!!!;
+ - lista2 = lista1[:]

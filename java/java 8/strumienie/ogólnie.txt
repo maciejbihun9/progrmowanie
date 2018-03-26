@@ -1,0 +1,190 @@
+ * strumienie zosta³y wprowadzone do równoleg³ego przetwarzania du¿ych list,
+ opakowa³y wielow¹tkowoœæ wiêc nie trzeba siê o to martwiæ,
+ nie trzeba siê martwiæ o loki itd.
+
+ * streams benefits:
+ - Declarative— More concise and readable
+ - Composable— Greater flexibility
+ - Parallelizable— Better performance
+
+ * dane s¹ strumieniowane za kulisami,
+
+ * strumienie to œwietne zast¹pienie Guavy
+
+ * dzia³aj¹ szybciej od rozwi¹zañ konwencjonalnych,
+
+ * swego rodzaju iteratory,
+
+ * u¿ywaj¹c strumieni mo¿na wyeliminowaæ kontenery operacji,
+   oraz zmniejszyæ iloœæ kodu.
+
+ * jeœli menu to lista potraw:
+
+menu.parallelStream()
+	.filter(d -> d.getCalories() < 400) - filtrowanie
+	.sorted(comparing(Dish:getCalories)) - sort by calories
+	.map(Dish::getName) - pobierz nazwy wybranych potraw
+	.collect(toList());
+
+ - metoda map() - pozwala na pobranie tylko jakiœ konkretnych parametrów kolekcji,
+ - toList() - jest to metoda statycza, która pozwala na zwrócenie listy w odpowiedzi,
+
+ * ¿aden rezultat nie jest zwracany, ¿aden element nie jest wybrany zanim metoda collect()
+nie jest wywo³ana,
+
+ * pamiêtaj, ¿e wszystkie operacje poza collect zwracaj¹ kolejny strumieñ,
+
+ * w ka¿dym rozwi¹zaniu iterowanie przez kolekcje odbywa siê sekwencyjnie a nie randomowo,
+
+ * kolekcja - podczas przetwarzania ka¿dy element musi byæ w pamiêci, ka¿dy element musi byæ przetworzony
+zanim zostanie czêœci¹ kolekcji, czyli ka¿dy obiekt musi byæ przetwarzany zanim cokolwiek mo¿na zrobiæ z kolekcj¹
+
+ * strumieñ - w strumieniu dane s¹ zafiksowane i elementy s¹ przetwarzan na zawo³anie,
+idea jest taka, ¿e user przetwarza tylko te elementy, które potrzebuje
+
+ * przyk³ad - przetwarzanie liczb pierwszych zacznie dodawanowe liczby do listy, ale nie zaoñczy dzia³ania,
+bo jest ich nieskoñczenie wiele, tak¿e nie wyœwietli ich userowi, a strumienie przetworz¹ je na bierz¹co,
+
+ p³yty DVD posiadaj¹ ca³e dane w jednym czasie, aby wyœwietliæ, gdzie youtube strimuje je nabierz¹co jak s¹ potrzebne
+
+ * strumieñ mo¿e byæ wykorzystanu tylko raz - to wywali wyj¹tek:
+
+List<String> title = Arrays.asList("Java8", "In", "Action");
+Stream<String> s = title.stream();
+s.forEach(sout());
+s.forEach(sout());
+
+ * strumienie w odró¿nieniu od kolekcji chowaj¹ pêtle forEach za kulisami,
+
+ * kolekcje procesuj¹ elementy jeden po drugim, gdzie strumienie wykonuj¹ to za kulisami asynchronicznie,
+
+ * u¿ywaj¹c kolekcji muszisz sam zadbaæ o programowanie wspó³bie¿ne,
+
+ * metody poœrednie nie zwracaj¹ ¿adnego wyniku, tylko uformowany strumieñ obiektów,
+ - w tych metodach mo¿na, tak¿e umieœciæ jakiœ kod, ale sama lambda musi zwrcaæ odpowiedni¹ wartoœæ
+ - np.filter() - boolean,
+
+ * pomys³ za formowanie strumienia jest podobny do pomys³u buildera,
+
+ * podstawowe operacje koñcz¹ce strumieñ: forEach, count, collect,
+
+ * metoda distinct() - pozwala na filtrowaniei tylko obiektów unikalnych pod wzglêdem hashCode() oraz equals()
+
+ * metoda limit() przekazuje strumieñ do wywo³ania odrazu jak tylko metoda filter() zrobi swoj¹ robotê,
+tak¿e ca³y strumieñ nie zostaje sprawdzony
+
+ * metoda skip(n) - omija pierwsze n elementów,
+
+ * metoda map() - pozwala na przeprowadzenie okreœlonej akcji na ka¿dym elemencie strumienia,
+czyli mo¿na pobraæ jak¹œ konkretn¹ wartoœæ z ka¿dego obiektu strumienia i podaæ j¹ dalej do przetwarzania.
+
+ARRAYS STREAM
+
+ * occupationTypes - lista stringów
+
+ * List<String []> listy = occupationTypes.stream().map(type -> type.split("")) - tworzy liste list, gdzie w ka¿dej liœcie
+znajduj¹ siê literki powsta³e ze splitu s³ów. 
+
+ * aby po³¹czyæ te literki w jeden strumieñ mo¿na u¿yæ metody flatMap(Arrays::stream)
+
+List<String> uniqueCharacters = occupationTypes.stream()
+                .map(type -> type.split("")) - rozdzia³ obiektów string na listy literek
+                .flatMap(Arrays::stream) - po³¹czenie w jeden strumieñ wszystkich literek
+                .distinct() - pobranie unikatów
+                .collect(toList()); - utworzenie listy
+
+ * flatMap() - metoda, która poprostu ³¹czy strumienie w jeden strumieñ,
+
+ * zaawansoane metody pracy na dwóch listach:
+numbers1.stream().flatMap(i ->
+	numbers2.stream()
+		.filter(j -> (i + j) % 3 == 0)
+		.map(j -> new int[]{i, j})
+	)
+	.collect(toList());
+
+ - tworzymy strumieñ z numerów w I liœcie i podajemy te elementy jako parametry do flatMap(
+	w metodzie flat_map tworzymy kolejny strumieñ z II listy
+
+ - na strumieniach mo¿na wywo³aæ metode flatMap(), która pod³¹cza strumieñ który pójdzie jako parametr
+metody flatMap()
+
+ - ju¿ w metodzie flatMap mamy distêp do ka¿dego elementu ze strumenia I po kolei.
+
+FINDING AND MATCHING
+
+ * "Is there an element in the stream matching the given predicate?”
+
+ * czy jakikolwiek element spe³nia podane wyra¿enia?
+ - if(menu.stream().anyMatch(predicate))
+
+ * check all items to see if menu is healthy:
+ - menu.stream().allMatch(dish -> dish.getCalories < 1000);
+
+ * metoda findAny() - zwraca obiekt Optional, który posiada informacje na temat tego, czy obiekt zosta³
+znaleziony. Jeœli obiektu nie znaleziono, to nie zostaj zwrócony null, tylko obiekt boolean.
+
+ - dobre zabezpieczenie przed przypadkiem wyst¹pienia null.
+
+Optional<Dish> dish = menu.stream()
+.filter(Dish::isVegetarian)
+.findAny(); - zwraaca obiekt Optimal
+
+ - we can extract values from the Optional object using special functions: ifPresent(lambda), isPresent()
+
+adults.stream()
+                .filter((p) -> p.getAge() > 70)
+                .findAny()
+                .ifPresent((p) -> print("Founded person: " + p.getAge()));
+
+
+ - daj mi pierwsz¹ liczbêpodzieln¹ przez 3:
+ List<Integer> someNumbers = Arrays.asList(1, 2, 3, 4, 5);
+Optional<Integer> firstSquareDivisibleByThree =
+someNumbers.stream()
+.map(x -> x * x)
+.filter(x -> x % 3 == 0)
+.findFirst(); // 9
+
+ * findAny() is less constraining that findFirst()
+
+REDUCING:
+
+ * strumieñ jest redukowany do wartoœci, zmniejsza siê bardziej i bardziej, a¿ uformuje ostatecznie
+wartoœæ koñcow¹,
+ - metoda reduce() posiada wartoœæ pocz¹tkow¹
+
+ * obliczanie sumy ze wszystkich kalorii w menu:
+ - int sum = numbers.stream().reduce(0, (a, b) -> a + b);
+ - mo¿na go zredukowaædo tego: 
+int sum = numbers.stream().reduce(0, Integer::sum);
+
+ * wymno¿enie wszystkich elementów w liœcie:
+ - int product = numbers.stream().reduce(1, (a, b) -> a * b);
+
+ * zliczanie:
+ - int count = menu.stream()
+	.map(d -> 1) - ka¿dy element strumiania zwraca 1
+	.reduce(0, (a, b) -> a + b); - poniewa¿ka¿dy jest jeden, to wygl¹da to jak zliczanie
+
+ - jest to wzorzeæ mapowania-redukowania, który u¿ywany jest przez google do wyszukiwania treœci,
+
+ * zliczanie elementów:
+ - long count = menu.stream().count();
+
+ * sumowanie wspó³bie¿ne:
+ - dzia³a poprostu lepiej od sumowania sekwencyjnego
+ - int sum = numbers.parallelStream().reduce(0, Integer::sum); 
+ - int calories = menu.stream()
+		.mapToInt(Dish::getCalories)
+		.sum();
+
+ * mapToInt() - zwraca wyspecjalizowany strumieñ obiektów Integer IntStream
+
+ * pobieranie elementu maksymalnego:
+ - OptionalInt maxCalories = menu.stream()
+	.mapToInt(Dish::getCalories)
+	.max();
+
+
+

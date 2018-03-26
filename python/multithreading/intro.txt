@@ -1,0 +1,4 @@
+ * nie ma mo¿liwoœci zwrócenia wyników obliczeñ z zadania wielow¹tkowego,
+ - musi byæ to zadanie, które zwraca callable
+
+ * 

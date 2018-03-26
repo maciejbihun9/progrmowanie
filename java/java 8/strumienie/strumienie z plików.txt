@@ -1,0 +1,15 @@
+ * znajdowanie unikatowego s³owa w pliku:
+
+public static void main(String[] args) {
+        long uniqueWords = 0;
+        try (Stream<String> lines = Files // otworzenie strumienia do podanego pliku.
+                .lines(Paths.get("C:\\Users\\macbi\\IdeaProjects\\java_8\\src\\main\\java\\streams\\adults.txt"), Charset.defaultCharset())){
+            //each line is now collection of words
+            uniqueWords = lines.flatMap(line -> Arrays.stream(line.split(" "))) //generate stream of words from all lines.
+                    .distinct()
+                    .count();
+            print(uniqueWords);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }

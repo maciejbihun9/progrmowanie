@@ -1,0 +1,150 @@
+# OBIEKTY W JAVA SCRIPT S¥ ZAWSZE KOPIOWANE PRZEZ REFERENCJE!!!
+
+ * ka¿dy obiekt mo¿e zawieraæ inne obiekty,
+
+ * przyk³ad dziedziczenia:
+ function Figura(){
+	this.nazwa = 'figura';
+	this.toString = function() {return this.nazwa;};
+ }
+ function Figura2D(){
+	this.nazwa = 'figura 2D';
+ }
+ function Trójk¹t(bok, wysokoœæ) {
+	this.nazwa = 'trójk¹t';
+	this.bok = bok;
+	this.wysokoœæ = wysokoœæ;
+	this.pobierzPole = function(){return this.bok * this.wysokoœæ / 2;};
+ }
+ Dziedziczenie odbywa siê w nastêpuj¹cy sposób:
+ Figura2D.prototype = new Figura();
+ Trójk¹t.prototype = new Figura2D();
+
+ - w takim przypadku zmiana pól nadklas nie wp³ynie na obiekty podklas ju¿ utworzonych, bo dziedzicz¹ one z konkretnej instancji klasy!!!,
+ - trzeba pamiêtaæ, ¿e teraz za ka¿dym razem tworzymy pola nadklas, tak¿e z pamiêci¹ bêdzie s³abo!
+ 
+ * utworzone obiekty s¹ instancjami wszystkich klas:
+ >>> my instanceof Figura
+ true
+ >>> my instanceof Figura2D
+ true
+ >>> my instanceof Trójk¹t
+ true
+ >>> my instanceof Array
+ false
+ 
+ * tworzenie pól w klasach, nadklasach, które nie bêd¹ mia³y zmienianych pól:
+ - function Figura(){}
+ Figura.prototype.nazwa = 'Figura';
+ 
+ * Innymi s³owy, lepsze bêdzie dziedziczenie obiektu osadzonego w Figura.prototype
+ni¿ ca³ego obiektu utworzonego za pomoc¹ new Figura() — przecie¿ i tak nie skorzystasz
+z w³asnych pól obiektu Figura (inaczej trafi³yby one do prototypu). Rozwi¹zanie to poci¹ga za
+sob¹ zwiêkszenie efektywnoœci, poniewa¿:
+?? Nie jest tworzony nowy obiekt potrzebny tylko podczas dziedziczenia.
+?? Przeszukiwanie ³añcucha prototypów (na przyk³ad w celu odnalezienia toString())
+jest krótsze.
+
+function Figura(){}
+// rozszerzenie prototypu
+Figura.prototype.nazwa = 'figura';
+Figura.prototype.toString = function() {return this.nazwa;};
+function Figura2D(){}
+// obs³uga dziedziczenia
+Figura2D.prototype = Figura.prototype;
+Figura2D.prototype.constructor = Figura2D;
+// rozszerzenie prototypu
+Figura2D.prototype.nazwa = 'figura 2D';
+
+function Trójk¹t(bok, wysokoœæ) {
+this.bok = bok;
+this.wysokoœæ = wysokoœæ;
+}
+// obs³uga dziedziczenia
+Trójk¹t.prototype = Figura2D.prototype;
+Trójk¹t.prototype.constructor = Trójk¹t;
+// rozszerzenie prototypu
+Trójk¹t.prototype.nazwa = 'trójk¹t';
+Trójk¹t.prototype.pobierzPole = function(){return this.bok * this.wysokoœæ / 2;}
+
+ - W TYM PRZYPADKU ZMIANA PROTOTYPE U DZIECKA SPOWODUJE ZMIANÊ W NADKLASACH!!!
+
+ * obiekty poprzez new tworzymy tylko, gdy ka¿da instancja bêdzie siê ró¿niæ,
+ - pola, która maj¹ byæ takie same dla ka¿dej instancji powinny byæ dodane poprzez Object.prototype.value = ""
+   poniewa¿ nie marnuj¹ pamiêci w podobiektach 
+
+ * dostawanie siê do nad konstruktorów obiektów:
+ - my.__proto__.__proto__.__proto__.constructor
+
+ TWORZENIE DZIEDZICZENIA, KTÓRE ZAPOBIEGA ZMIENIANIU WARTOŒCI W NADOBIEKTACH PRZEZ DZIECI:
+function Figura(){}
+// rozszerzenie prototypu
+Figura.prototype.nazwa = 'figura';
+Figura.prototype.toString = function() {return this.nazwa;};
+function Figura2D(){}
+// obs³uga dziedziczenia
+var F = function(){};
+F.prototype = Figura.prototype;
+Figura2D.prototype = new F();
+Figura2D.prototype.constructor = Figura2D;
+// rozszerzenie prototypu
+Figura2D.prototype.name = '2D Figura';
+function Trójk¹t(bok, wysokoœæ) {
+this.bok = bok;
+this.wysokoœæ = wysokoœæ;
+}
+// obs³uga dziedziczenia
+var F = function(){};
+F.prototype = Figura2D.prototype;
+Trójk¹t.prototype = new F();
+Trójk¹t.prototype.constructor = Trójk¹t;
+// rozszerzenie prototypu
+Trójk¹t.prototype.name = 'Trójk¹t';
+Trójk¹t.prototype.getArea = function(){return this.bok * this.wysokoœæ / 2;};
+
+ ZAMKNIÊCIE DZIEDZICZENIA WEWN¥TRZ FUNKCJI:
+
+ function extend(Dziecko, Rodzic) {
+var F = function(){};
+F.prototype = Rodzic.prototype;
+Dziecko.prototype = new F();
+Dziecko.prototype.constructor = Dziecko;
+Dziecko.uber = Rodzic.prototype;
+}
+
+ KOPIOWANIE WARTOŒCI OBIEKTÓW DO PODOBIEKTÓW:
+
+function extend2(Dziecko, Rodzic) {
+ var p = Rodzic.prototype;
+ var c = Dziecko.prototype;
+ for (var i in p) {
+  c[i] = p[i];
+ }
+ c.uber = p;
+}
+
+ - kopiowanie wartoœci pól prostych (dupliowanie) oraz kopiowanie refrencji do obiektów(tablice oraz obiekty)
+
+ G£ÊBOKIE KOPIOWANIE:
+
+function deepCopy(p, c) {
+var c = c || {};
+for (var i in p) {
+if (typeof p[i] === 'object') {
+c[i] = (p[i].constructor === Array) ? .[] : {};
+deepCopy(p[i], c[i]);
+} else {
+c[i] = p[i];
+}
+}
+return c;
+}
+
+ MIKSINY:
+
+ * S¹ to dodatkowe elementy dodawane do podobiektów,
+
+ * niczym siê nie ró¿ni¹ od prototypowania - jak dziedziczenie wielokrotne
+
+  DZIEDZICZENIE WIELOKROTNE ORAZ WTWO£YWNIE METOD NADOBIEKTÓW - 193 - 194
+ 
