@@ -1,0 +1,10 @@
+
+ * print tekst to the console:
+ - Console.WriteLine("this is our text");
+ 
+ * with the console we can use also many others sounds or stuff
+ like that,
+ 
+ * convert numbers to strings:
+ - Convert.ToInt32(number_string)
+ - watch out on lower castings,

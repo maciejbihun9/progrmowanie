@@ -1,0 +1,25 @@
+
+ * this package is perfect for numbers, dates, days of a week
+
+LocationStrategy(router is more convenient here):
+
+ * Use Location only if you need to interact with or create normalized URLs outside of routing,
+
+ * this is a just replacement for router, 
+ - we can do pretty much the same things
+
+ * allows application to show the current application url,
+ 
+ * the application url, on which page you currently are,
+ 
+ * this can be presented in different formats:
+ - for that just use hash or path prefixes,
+ 
+NgIfContext:
+
+ * i do not know what the fuck is this means
+
+NgLocaleLocalization:
+
+ * there is no even one example how to use this stuff,
+ 

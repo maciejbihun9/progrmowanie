@@ -1,0 +1,60 @@
+
+ * at the beginning we have those life cycles hooks that are invoked during the component initialization,
+ 
+ * we have also a lot of animations that are not really usefull for me,
+ 
+ * takie metody typowo inicjalizacyjne to trzeba pisać wyłącznie w klasie AppModule,
+
+AfterContentChecked:
+
+ * this is that life cycle hook that is invoked every time after directive is changed,
+ 
+ * remember that each component is also a directive!,
+
+ * jest wywoływany po każdym sprawdzeniu zawartości dyrektywy,
+ 
+-----------------------------------------------------------------------------
+
+Compiler:
+
+ * it is too low level tool,
+ 
+APP_INITIALIZER:
+
+ * those methods will be called after the application initialization,
+
+ * now you can implement those methods in the same file and
+ the application starts with those methods,
+ - now I can control the execution of the application using 
+ setTimeouts() methods, 
+ 
+ * providers: [ HeroService, MessageService,
+    {
+      provide: APP_INITIALIZER,
+      useFactory: onAppInit1,
+      multi: true,
+      deps: [/* your dependencies */]
+    },
+    {
+      provide: APP_INITIALIZER,
+      useFactory: onAppInit2,
+      multi: true,
+      deps: [/* your dependencies */]
+    }], 
+	
+ * zastosowanie:
+ - delay the application start up,
+ - est up some things, 
+ 
+Injector:
+
+ * injects the classes into the Angular context, so you can use them
+ as they become available,
+
+ * I can create a class, then I can use an injector to inject that class into a context,
+
+ * the name of a class is just a Token that allows me to get this class from the context, 
+ 
+Version:
+
+ * this is the version of the angular, but what can i set in the constructor?,

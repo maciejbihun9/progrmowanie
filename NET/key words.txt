@@ -1,0 +1,21 @@
+# contains only c# key words that are used in this language,
+
+ * using - we can use it to import some classes,
+ - System is a namespace, so we can import also all namespaces,
+ 
+ * string - typ tekstowy z małej literki,
+ 
+ * Constane - can not be changed,
+ - const float Item = 3.14f; - should be declared as camel case, 
+ - int number = 1;
+ - int number;
+ 
+ * declare a new variable:
+ - int number;
+ 
+ * we declare variables the same as in java
+ 
+ * all types in C# are declared the same as in java,
+ only boolean is declared as bool,
+ - we can even have var variable,
+ then the compiler can figger out what is the type

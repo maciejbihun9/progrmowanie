@@ -2,12 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f341ddb-947e-47ef-9e6e-2652f1fef69b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/api/platform-browser/platform-browser.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/type script/collections" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/type script/functional programming.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/NET/intro.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/NET/key words.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/NET/syntax.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/NET/use full functions.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/NET/web mvc.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/QueryLIst &amp; COntentChildren.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/cli.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/common/common.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/common/directives.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/common/enums.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/common/pipe.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/core/core.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/language service.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/life  cycles.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/powerfull knowledge.txt" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/type_script.txt" afterPath="$PROJECT_DIR$/java script/angular 5/type script/type_script.txt" />
-      <change beforePath="$PROJECT_DIR$/java/spring/practice/spring - konfiguracja projektowa.txt" afterPath="$PROJECT_DIR$/java/spring/practice/spring - konfiguracja projektowa.txt" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/observable.txt" afterPath="$PROJECT_DIR$/java script/angular 5/observable.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,31 +32,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="platform-browser.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java script/angular 5/api/platform-browser/platform-browser.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="51" lean-forward="false" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="type_script.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="type_script.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java script/angular 5/type script/type_script.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="3" lean-forward="true" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+            <state relative-caret-position="561">
+              <caret line="33" column="6" lean-forward="true" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="collections" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java script/angular 5/type script/collections">
+      <file leaf-file-name="intro.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NET/intro.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+            <state relative-caret-position="527">
+              <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pipe.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java script/angular 5/common/pipe.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QueryLIst &amp; COntentChildren.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java script/angular 5/QueryLIst &amp; COntentChildren.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="powerfull knowledge.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java script/angular 5/powerfull knowledge.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="language service.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java script/angular 5/language service.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cli.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java script/angular 5/cli.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -61,10 +112,33 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="life  cycles.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java script/angular 5/life  cycles.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="observable.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java script/angular 5/observable.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="584">
+              <caret line="159" column="31" lean-forward="false" selection-start-line="159" selection-start-column="31" selection-end-line="159" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <push-targets>
+      <push-target-info target-remote="origin" target-branch="master" repo="$PROJECT_DIR$" source="master" />
+    </push-targets>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -74,6 +148,7 @@
         <option value="$PROJECT_DIR$/java script/angular 5/type script/functional programming.txt" />
         <option value="$PROJECT_DIR$/java script/angular 5/type script/collections" />
         <option value="$PROJECT_DIR$/java script/angular 5/type script/type_script.txt" />
+        <option value="$PROJECT_DIR$/java script/angular 5/observable.txt" />
       </list>
     </option>
   </component>
@@ -83,9 +158,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="969" />
-    <option name="y" value="22" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="79" />
+    <option name="y" value="35" />
     <option name="width" value="956" />
     <option name="height" value="1022" />
   </component>
@@ -104,6 +179,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -125,16 +202,12 @@
             <path>
               <item name="programming" type="b2602c69:ProjectViewProjectNode" />
               <item name="programming" type="462c0819:PsiDirectoryNode" />
-              <item name="java script" type="462c0819:PsiDirectoryNode" />
-              <item name="angular 5" type="462c0819:PsiDirectoryNode" />
-              <item name="type script" type="462c0819:PsiDirectoryNode" />
+              <item name="NET" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -144,6 +217,10 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming\java script\angular 5" />
+      <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming\java script\angular 5\type script" />
     </key>
@@ -191,24 +268,26 @@
       <workItem from="1521994633114" duration="1633000" />
       <workItem from="1521996449145" duration="1354000" />
       <workItem from="1521998678657" duration="1191000" />
-      <workItem from="1522099798081" duration="24000" />
+      <workItem from="1522099798081" duration="927000" />
+      <workItem from="1522388138309" duration="308000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22757000" />
+    <option name="totallyTimeSpent" value="23968000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="79" y="35" width="956" height="1022" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19427083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3968085" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14631464" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29262927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -409,6 +488,22 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/type script/functional programming.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/type script/type_script.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="3" lean-forward="false" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/java script/angular 5/api/platform-browser/platform-browser.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -713,14 +808,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/type script/functional programming.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java script/angular 5/type script/collections">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -731,8 +818,80 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java script/angular 5/type script/type_script.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="3" lean-forward="true" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+        <state relative-caret-position="561">
+          <caret line="33" column="6" lean-forward="true" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NET/intro.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/common/pipe.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/QueryLIst &amp; COntentChildren.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/powerfull knowledge.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/language service.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/cli.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/type script/functional programming.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/life  cycles.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/observable.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="159" column="31" lean-forward="false" selection-start-line="159" selection-start-column="31" selection-end-line="159" selection-end-column="31" />
           <folding />
         </state>
       </provider>

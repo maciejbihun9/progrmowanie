@@ -1,0 +1,12 @@
+# tutaj bedzie bardziej wiedza teroretyczna, aby ogarniać bardziej te terminy niż przykłady
+
+ * directive is also a component,
+
+ * data-bound property:
+ - this is an input property,
+ - <my-component [name]="somePropInParent"></my-component>
+
+ * write many lines of code in the event methods. You can
+ write many lines of code and functions between string quotes,
+ this is like a normal place to
+ - <button (click)="this.messageService.consoleInfo(heroSurname.value); heroSurname.value = ''">

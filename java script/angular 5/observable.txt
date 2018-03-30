@@ -37,4 +37,124 @@
 	// handle errors
     catchError(this.handleError<Hero>(`getHero id=${id}`))
   );
- - tap is responsible for logging some messages, not for reall operations, 
+ - tap is responsible for logging some messages, not for reall operations,
+
+
+ * If you neglect to subscribe(), the service will not
+ send the delete request to the server! As a rule,
+ an Observable does nothing until something subscribes!
+
+ * after each observable subscribe() must be called:
+ - this.heroService.deleteHero(hero).subscribe();
+
+ * make an operation after observable done executing:
+ - we can do it using subscribe,
+ - this.heroService.addHero({ name } as Hero)
+    .subscribe(hero => {
+      this.heroes.push(hero);
+    });
+
+ * we can describe a type of an operation object:
+ - tutaj jest podobieństwo do javy, gdie trzeba było podawać argumentu w (),
+ podczas programowania funkcjnalnego
+ - getHeroes(): void {
+    this.heroService.getHeroes()
+      .subscribe((heroes: Hero[]) => this.heroes = heroes);
+  }
+
+ * create an observable of arrays:
+ - this.http.get<Hero[]>(url) - returns one object, a one array,
+
+ * create an observable of objects :
+ - this.http.get<Hero>(url) - returns one object
+
+ * create a pipe that filter a results:
+ - we can do something with our data in this place,
+ - pipe is a method for informational purposes than operations on the data,
+ - pipe returns an obserable, so we can make a subscribe call after it,
+ - observable.pipe(
+	// do something when data returns
+    tap(_ => this.log(`fetched hero id=${id}`)),
+	// handle errors
+    catchError(this.handleError<Hero>(`getHero id=${id}`))
+  );
+ - tap is responsible for logging some messages, not for reall operations,
+
+
+ * An Observable is a lazily evaluated computation that
+ can synchronously or asynchronously return zero to (potentially)
+ infinite values from the time it's invoked onwards.
+
+ * they are the most usefull in angular services, because we can
+ register many independant observables that get the data from teh server
+ and pipes them thorough with some additional modifications,
+
+ * we can call an observable many times, those are seperate calls to
+ the backend
+ - are lazy and does not have shared execution scope, they are independant
+
+ * Subscribing to an Observable is analogous to calling a Function.
+
+ * are not asynchromus,
+
+ * they are not event emitters,
+
+ * Observables are able to deliver values either synchronously or asynchronously.
+
+ * What is the difference between an Observable and a function?
+ -  Observables can "return" multiple values over time,
+
+ * we can convert the data or events into observables to subscribe to them,
+ - Observable.from([12, 1,3]),
+ - Observable.of(12, 1,3)
+
+ * instead of create() we usually use those items to create it:
+ - of, from, interval
+
+ * the way of creating observables for many receivers with totally different scopes:
+ - observable.subscribe(x => console.log(x));
+
+ * pushes the values 1, 2, 3 immediately (synchronously) when subscribed,
+ and the value 4 after one second:
+ - btw. this is the recommended way for creating observables,
+ - but this is the way of creating an observable for given observer,
+ it can not be used for many observers,
+ - those elements are pushed to subscribers,
+ - so those subscribers receive those values after they are available,
+ - the subscribe content will be invoked 4 times
+ - var observable = Rx.Observable.create(function (observer) {
+  observer.next(1);
+  observer.next(2);
+  observer.next(3);
+  setTimeout(() => {
+    observer.next(4);
+    observer.complete();
+  }, 1000);
+});
+
+ * an observable can deliver those values:
+ There are three types of values an Observable Execution can deliver:
+
+ - "Next" notification: sends a value such as a Number, a String, an Object, etc.
+ delivers the data,
+ - "Error" notification: sends a JavaScript Error or exception.
+ - "Complete" notification: does not send a value. - this is just a indication
+
+ * in subscribe we can set which method we want to serve
+ after we get the response,
+ - console.log('just before subscribe');
+observable.subscribe({
+  next: x => console.log('got value ' + x),
+  error: err => console.error('something wrong occurred: ' + err),
+  complete: () => console.log('done'),
+});
+console.log('just after subscribe');
+
+ * we can unsubscribe our subscription and this will prevent from
+ executing items in the future,
+ - // this object represents the execution of our subscribe method,
+    var subscription = this.observable.subscribe(
+      data => console.log("data item : " + data),
+      error => console.log("give me an information about the errors: " + error),
+    );
+    subscription.unsubscribe();

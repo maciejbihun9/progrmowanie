@@ -1,0 +1,4 @@
+
+
+ * build the application and prepare it for the deployment
+ - ng build

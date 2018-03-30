@@ -1,0 +1,47 @@
+
+ * c# tak samo jak java jest kompilowany do kody bajtowego,
+ do mszyny wirtualnej, 
+ - w tym przypadku jest to IL Code,
+ - potem jest on kompilowany do kodu natywnego dla danej maszyny, 
+ czy systemu operacyjnego,
+ 
+ * JIT - jest to kompilator just in time, który kompiluje kod 
+ do kodu natywnego jednostki, na której się pracuje,
+ 
+ * CLR - odpala moją aplikację 
+ 
+ARCHITECTURE .NET:
+
+ * is created from classes that provides functionality,
+
+ * solution is a set of projects, 
+ 
+ * namespace - is a container for related classes,
+ contains 10's of related classes,
+ - I can consider that as a package in java,
+ - for images,
+ - for security,
+ 
+ * assembly - is a container for raleted namespaces
+ - this is a file, ex. dll,
+ 
+ * we do not use all of those features in this environment,
+ 
+ * solution can have many projects,
+ 
+ * po skompilowaniu aplikacji dostaniem plik wykonywalny, który bedzie
+ można odpalić - Assembly,
+ 
+ * AppConfig - contains the configuration items about your application,
+ 
+ * we can even create multithreaded applications
+ 
+ * the enter point of the application is a class called Program.cs
+ that contains psvm method,
+ 
+ * the enter point of the application has to be Main with the capital letter,
+ as the enter point of the applciation,
+ 
+ * I am guessing that each method has to be written with capital letters,
+ 
+ 

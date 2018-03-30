@@ -1,0 +1,15 @@
+
+ * overflowing:
+ - if we add too big value to the variable declared in as a smaller range 
+ variable, then this will cause overgflowing
+ - this will set 0 to this variable,
+ 
+ * scope: 
+ 
+ * Agenda:
+ - we can cast the variable the same like in java
+ - int i = (int)item;
+ 
+ * comparisons operators works pretty much the same as in java
+ 
+ * logical operators also works the same,

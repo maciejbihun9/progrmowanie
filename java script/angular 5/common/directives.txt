@@ -1,0 +1,69 @@
+NgClass
+
+ * use some classes to style your html code:
+ - <some-element [ngClass]="['first', 'second']">...</some-element>
+ - manage which class is available in the html element in the Angular code:
+ - <some-element [ngClass]="{'first': true, 'second': true, 'third': false}">...</some-element>
+
+NgPlural:
+
+ * the exception is thrown after each bad input item that is not in the switch case section - this is very bad behaviour!!!
+ 
+ * how could i omit that?
+ 
+ * it is not working for strings
+ 
+ * this section is a great example how to use it:
+ - in this example we have to provide the exact value to be displayed in the section,
+ - this is not recommended way when you want to write some message because that wii be triggered to quick and it will be an error
+ - string are not working
+<div>
+ <input [(ngModel)] = "count"/>
+</div>
+<p>
+  I have {{count}} items, but I could also say
+  <span [ngPlural]="count">
+     <ng-template ngPluralCase="">nothing</ng-template>
+	 <ng-template ngPluralCase="=1">there are no items.</ng-template>
+	 <ng-template ngPluralCase="=2">there is one item.</ng-template>
+	 <ng-template ngPluralCase="=3">there are a couple items.</ng-template>
+ </span>
+</p>
+
+NgSwitch:
+# wolna patrycja
+ * działa podobnie jak ngPlural,
+ 
+ * stringi obsługiwane są poprzez podwójne apostrofy,
+ <div [ngSwitch]="switchValue">
+    <p *ngSwitchCase="'alarm'">pick some number</p>
+    <p *ngSwitchCase="1">I picked kuba</p>
+    <p *ngSwitchCase="2">I picked maciek</p>
+    <p *ngSwitchCase="3">I picked jacek</p>
+    <p *ngSwitchDefault>this is the {{switchValue}}</p>
+  </div>
+ 
+ * chyba raczej trzeba stosować tylko ngIf bardziej niż te switche!, 
+ 
+ * different use cases with ngSwitch:
+ - we can declare different components using this swich case idea:
+ - depends on the input we can use different components
+ <div [ngSwitch]="hero?.emotion">
+  <app-happy-hero    *ngSwitchCase="'happy'"    [hero]="hero"></app-happy-hero>
+  <app-sad-hero      *ngSwitchCase="'sad'"      [hero]="hero"></app-sad-hero>
+  <app-confused-hero *ngSwitchCase="'app-confused'" [hero]="hero"></app-confused-hero>
+  <app-unknown-hero  *ngSwitchDefault           [hero]="hero"></app-unknown-hero>
+ </div>
+
+NgTemplate:
+
+ * set a template id:
+ - where #name is an id of an element,
+ - <ng-template #name let-maciek="localSk"><span>Ahoj {{maciek}}!</span></ng-template>
+
+ * it is never displayed directly,
+
+ * it is only used for rendering HTML code on the page,
+
+ * if the  
+ 

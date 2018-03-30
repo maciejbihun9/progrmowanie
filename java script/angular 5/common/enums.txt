@@ -1,0 +1,6 @@
+
+NumberFormatStyle:
+
+ * it is used by getLocaleNumberFormat() to represent numbers in diffferent ways,
+
+ * represent numbers in different ways

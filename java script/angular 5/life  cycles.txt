@@ -1,0 +1,20 @@
+# opisanie funkcji zycia apliakcji, ale po polsku, aby dobrze to zrozumieć
+
+ * firstly constructor is created, after that all other methods
+ are called,
+ - it is not possible to use input variables in the constructor,
+ because they are not available there yet,
+
+ * ngOnChanges() - is called before ngOnInit(),
+ - this method contains SimpleChanges object with previouds and current data,
+ - calls each time when an input variable is changed,
+ - this is the first place where you can get those input parameters,
+
+ * ngOnInit() - called only once
+ - To perform complex initializations shortly after construction.
+ - To set up the component after Angular sets the input properties.
+ - greate place for initial data,
+ - in this moment all input data-bounded properties are initialized
+
+ zastosowanie:
+ - loading the data from service
