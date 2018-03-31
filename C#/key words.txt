@@ -19,3 +19,10 @@
  only boolean is declared as bool,
  - we can even have var variable,
  then the compiler can figger out what is the type
+ - we can have also an anonymus type
+ var item = {name = "maciej", age = 23};
+ - this is an annonymus type, and we can get from this obj those fields
+ like from other objects by name of a field,
+
+ * as a method parameter we can declare optional values:
+ - default int: int?

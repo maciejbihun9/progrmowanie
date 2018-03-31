@@ -1,0 +1,52 @@
+
+ * contains the same rules as normal mvc application,
+
+ * router selects the right controller to make an http call
+
+ * this application that has been written in .NET,
+ almost always contains router, that selects the right
+ controller
+
+ ------------- WEB ASP.MVC PROJECT TREE ----------------------
+
+ * AppData - database files,
+
+ * App_Start - classes executed when app is started,
+ - defines reouters
+
+ * call controller methods in the application:
+ - for MoviesController - Popular()
+ - /movies/popular,
+
+ - if there is no any methods declared in the url then this url will rote to the
+ Index() method that should be declared there,
+ - id - is optional, only for specific items
+
+ * Content - client assets,
+ - images, css files
+
+ * Controllers - Controllers for managing the application,
+ - returns views for that controller
+
+ * Scripts:
+ - we store here all js files,
+
+ * Views:
+ - when we use a view for a controller then we asp looks for controllers
+ with the same names but without controller,
+ - Shared - views used across different controllers,
+
+ *  favicon.ico - the icon of the app that can be seen in the browser,
+
+ * Global.asax - jest to klasa, która zawiera hooks for events of the application
+ - when the app is started then this Application_Start will be called,,
+
+ * packages.config:
+ - manages packages for our app,
+ - this package manager will download all much needed files for our application
+ from one place,
+
+ * startup.cs - new approach for starting the application,
+
+ * WebConfig - config for app
+

@@ -1,0 +1,7 @@
+
+ * visual studio contains it's own
+
+ * partial view:
+ - during the views creation I can create a partial view,
+ - this is a widget of a complete page,
+ - this is not a complete page

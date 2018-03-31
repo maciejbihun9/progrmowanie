@@ -1,0 +1,60 @@
+
+ * we have to always inherit from Controller class,
+
+ * we have to have an Index() method because this method will be called
+ if we won't specify any url action properties,
+ - ActionResult Index() { return View ();}
+
+ * View:
+ - this is a method,
+ - remember that each method in C# is written as Capital cases,
+
+ * ActionResult:
+ - base class for action
+ - an instace of ActionResult,
+ - our views should return ViewResult, because in unit test
+ we can omit many headaches with class castings,
+ - in truth we return views instead of actions, so this is the convenient way to
+ develop those kinf of applications,
+
+ * ActionResult extenses:
+ - ViewResult, PartialViewResult,
+  ContentResult, RedirectResult, RedirectToRouteResult,
+  JsonResult, Fileresult, HttpNotFoundResuls, EMptyResult
+ - in each we return prefix method()
+
+ examples:
+ - this returns simple text:
+  public ActionResult simpleContent()
+         {
+             return Content("this is just simple content");
+         }
+ - this returns json:
+ - JsonRequestBehavior.AllowGet - allows get calls:
+        public JsonResult simpleJsonResult()
+        {
+            var movie = new Movie("Maciej", 23);
+            return Json(movie, JsonRequestBehavior.AllowGet);
+        }
+ - this return redirect to Index in the HomeController:
+ - this new object will be available in the url as a paramaeters of a call
+ public ActionResult emptyResponse()
+         {
+             return RedirectToAction("Index", "Home", new {page = "page", item = "fasdss"});
+         }
+
+ * passing parameters:
+ - if our parameter is named "id" then we can declare our value in the url normally
+ after slash - /4, but if the name is different then we have to do it like this
+ ?id = 5 - THIS IS VERY IMPORTANT,
+ - this is declared in the RouteConfig file!!!, oyu can change that in the file
+ - // how to pass params with the url
+           public ActionResult Edit(int movieId)
+           {
+               return Content("id=" + movieId);
+           }
+
+ * creating custom routes:
+
+
+

@@ -8,3 +8,11 @@
  * convert numbers to strings:
  - Convert.ToInt32(number_string)
  - watch out on lower castings,
+
+TEXT:
+
+ * check string value:
+ - String.isNullOrWhiteSpace(string),
+
+ * string formatting:
+ - String.Format("pageIndex={0}&sortBy={1}", pageIndex, sortBy)

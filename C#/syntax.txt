@@ -13,3 +13,10 @@
  * comparisons operators works pretty much the same as in java
  
  * logical operators also works the same,
+
+ * generating getters and setters:
+ - public int Id { get; set; }
+ - public string Name { get; set; }
+
+ * how to create an inheritance and implementatiosn:
+ - public class MovieController : Controller
