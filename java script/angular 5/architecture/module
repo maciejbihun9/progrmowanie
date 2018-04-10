@@ -1,0 +1,32 @@
+
+ * WE SHOULD CREATE MANY SUBTREES THAT ARE DECLARED IN ONE MODULE,
+ THIS IS IMPORTANT BECAUSE WE CAN USE THIS ENTIRE MODULE IN OTHER APPLICATIONS
+
+ * An NgModule is a container for a cohesive
+ block of code dedicated to an application domain, a workflow,
+ or a closely related set of capabilities.
+ - so in one module we should have components related by use cases,
+ that imports functionality from other modules
+ - every app has at least one module
+ - You launch your app by bootstrapping the root NgModule.
+ - we can have many NgModules that contains many related components,
+ - Only the root NgModule should set this bootstrap property,
+ - we do not have to write export in AppModule, because we won't need
+ to export entire module anywhere,
+
+ * providers are accessible in entire application,
+
+ * exports - defines what other modules can see,
+
+ * imports - defines what our main module can see from other modules,
+
+ * in main.ts we can bootstrap many modules that instantly becomes rootModules
+ in which we can bootstrap some our components,
+
+ * A component and its template together define a view.
+
+ * we can have many components that are host components for many sub components
+ and those all components can be in one ngModule, but it is does not have
+ to be like that.
+
+ * Library Module:

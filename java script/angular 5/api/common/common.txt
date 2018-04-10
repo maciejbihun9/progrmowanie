@@ -2,6 +2,7 @@ CURRENCIES:
 
  * use CurrencyPipe to convert numbers into a currency representation,
  - this is not a curr1 -> curr2 conversion,
+ - this is for numbers conversions,
 
  * get country currency name:
  - now is labeled as an experimental,

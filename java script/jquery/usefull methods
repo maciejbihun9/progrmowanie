@@ -1,0 +1,23 @@
+POBIERANIE TEKSTU Z ELEMENTÓW HTML:
+
+ * pobieranie tekstu z elementu html oznaczonego klasą:
+ - $(".SubregionTitle").text();
+
+ * pobieranie tylko tekstu z elementu oznaczonego klasą, który posiada jeszcze dodatkowe elementy
+ - document.getElementsByClassName("SubregionTitle")[0].childNodes[0].nodeValue;
+
+ * pobieranie tylko tekstu z elementu oznaczonego klasą
+ - document.getElementsByClassName("SubregionTitle")[0].textContent;
+
+POBIERANIE ELEMENTÓW:
+
+ * pobieranie elementu z podana klasą z elementu o podanym id:
+  - $("#id .class_name")
+
+ * pobieranie pierwszego elementu z podaną klasą:
+ - $(".class_name").first();
+
+ZMIANA ATRYBUTÓW ELEMENTÓW:
+
+ * ustawianie atrybutów elementom:
+  - $("#Sub-Regions .w-button").first().attr("href", "/Global");

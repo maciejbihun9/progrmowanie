@@ -5,3 +5,8 @@
  - during the views creation I can create a partial view,
  - this is a widget of a complete page,
  - this is not a complete page
+
+ * views associated with url:
+ - each view folder should have the same name as url ending
+ - we should even create folder structure if want to have extended url system
+ - after url is called the browser should call for an Index.html view

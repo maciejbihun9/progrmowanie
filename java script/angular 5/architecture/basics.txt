@@ -1,0 +1,57 @@
+ * In angular we have Services and Components,
+ Angular is built from modules - NgModules that are part of an extensive Angular context.
+ Application this is a set of those modules,
+ modules are like full context of flying components,
+
+ * Angular templates are dynamic,
+
+ * A dependency doesn't have to be a service—it could be a function, for example, or a value.
+
+ * Services are like components, this is the sam as in java,
+ - they have some metadata that tells Angular how to use them,
+
+ * Application can have many root components that can be bootstrapped,
+
+ * NgModule - declares a context for compilation. declares what should be compile,
+ this module allows lazy loading,
+ allows us to load components on demand, only when we need them
+
+ * DI is possible by using many injectors
+
+ * @injectable allows a user to to inject a service into a component,
+
+ * router does not load new pages, just shows and hides view hierarchies,
+ - when the router recognizes that particular view requires a new module
+ then this router just loads this on demand,
+ - urls are linked to particular components
+ - we are showing components on the same page, just view hierarchy changes,
+ - in router we can specify different views logic. We can jump to another views
+ using some input data,
+
+ use cases:
+ - we can use input elements to navigate between some views
+
+ * together component and template define an Angular view,
+ 
+ * From that image we can highlight some key points to master the framework. They are::
+ - Module - this is like a class
+ - Component - DOM in never touched when we changing the angular 2 componennts visibility,
+   we use *ngIf directive to do that.
+   We have to always think about Angular 2 components when we developing an application.
+ - Template
+ - Metadata
+ - Service - service should only provide data for a application.
+   Each service uses @Injectable() annotation to tell that this is a service
+   that provides a data.
+ - Directives
+ - Dependency injection:
+ An injected class is globally available to the application.
+ We should declare our injected classes in the provides section of the app module.
+ 
+ * So classes are considered as modules,
+ 
+ * When many classes are created for just one module, it is called a Library,
+
+ * we can have files hierarchy what ever we want,
+
+ 

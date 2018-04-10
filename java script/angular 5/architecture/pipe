@@ -1,0 +1,8 @@
+
+ * we use pipes to transform the data before it is displayed,
+
+ * use this when working with currency, dates,
+
+ * we can also set input parameters for pipes:
+ - <!-- fullDate format: output 'Monday, June 15, 2015'-->
+   <p>The date is {{today | date:'fullDate'}}</p>

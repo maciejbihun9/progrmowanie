@@ -2,3 +2,9 @@
 /node_modules
 # ignore angular e2e files
 /e2e
+
+# ignore files with specific endings:
+*.png
+
+ * get the latest version of it from here:
+ - https://github.com/github/gitignore/blob/master/VisualStudio.gitignore

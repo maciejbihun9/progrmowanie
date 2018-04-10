@@ -1,0 +1,16 @@
+
+ * Angular creates, updates, and destroys components as the
+ user moves through the application. Your app can take action at each moment in this
+ lifecycle through optional lifecycle hooks, like ngOnInit().
+
+ * a component is also a directive!!!, but component has it's own template
+
+ * we define sub trees in html files,
+
+ * any experienced jquery developer can experience many tidous code when working with
+ data binding with the view
+
+ * we have data binding from component to the template, we define data
+ connection between those items in the component,
+
+ * events - this is a method for callling components functions interacting with a view,

@@ -1,0 +1,20 @@
+
+ * this is the special case of component, special extension,
+
+ * examples:
+ - export class Logger {
+     log(msg: any)   { console.log(msg); }
+     error(msg: any) { console.error(msg); }
+     warn(msg: any)  { console.warn(msg); }
+   }
+
+ * Injectable provides Angular to use that module as a dependency that can be used
+ in other components,
+
+ * The injector is the main mechanism. You don't have to create an Angular injector.
+  Angular creates an application-wide injector for you during the bootstrap process.
+
+ * When you register a provider at the component level,
+ you get a new instance of the service with each new instance of that component.
+ At the component level,
+ register a service provider in the providers property of the @Component metadata:
