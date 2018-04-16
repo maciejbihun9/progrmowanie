@@ -1,0 +1,20 @@
+
+ * communication between comps can be done in many ways.
+ One of the best is to use an observalble, subscription pattern,
+
+ * we can create a service that will send message from one comp to another
+ which will have subscription object thatm
+
+ * each person that wants to send messages to subscribers needs to have
+ an instance of a Subject class. On the Subscriber side we can subscrive to this
+ subject and just gettting messages from there what ever a new message becomes
+ available,
+
+ * In this situation we should use
+  Subject class, that is a special type of Observable,
+
+ example:
+ * see AngularAdanced and watcher video communication pattern
+
+ zastosowanie:
+ * sending messages to specific components

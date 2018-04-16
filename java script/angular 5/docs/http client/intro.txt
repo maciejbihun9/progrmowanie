@@ -1,7 +1,7 @@
 # tylko zastosowania komponentów oraz jak one dokładnie działają
 # po dokładną konfiguracjęnalezy się udać do dokumentacji
 
- * httpClient should be injected in data service, because
+ * httpClient should be injected into data service, because
  services are responsible for retriving the data,
  
  * it is more convenient to tell what type of object to return from a call,
@@ -45,6 +45,19 @@
  - result = this.http.get(url) -> Observable
  - we should get the data and specify the return type:
  - this.http.get<Config>(this.configUrl);
+
+ * create a default request and send it using httpClient:
+ - const url = `${this.apiUrl}/?${fields}`;
+ - const request = new HttpRequest('GET',
+ url, {reportProgress: true, headers: this.headers, withCredentials: true});
+ - return this.http.request<any[]>(request);
+
+ * post the server:
+ - this.http.post(this.baseUrl + "SendMail/" , JSON.stringify(body),
+               { headers: this.headers, withCredentials: true })
+               .map(response => response)
+               .subscribe((res) => console.log(res));
+ - where body is a model class instance
  
  * do something with the data after retrival:
  - result.subscribe(items => console.log(items))
@@ -56,6 +69,10 @@
       data => this.config = { ...data }, // success path
       error => this.error = error // error path
     );
+
+ * catch errors from observable:
+ - this.http.get(url, {headers: this.headers, withCredentials : true})
+               .catch((error: any) => Observable.throw(error.json().error || 'Server error'));
 	
  * subscribe for json format data:
  - .subscribe(data => this.config = {

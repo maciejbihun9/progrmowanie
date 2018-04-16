@@ -1,10 +1,18 @@
+ * podczas pobierania repo z gita nie ma problemÃ³w, bo kod moÅ¼e pobrac kaÅ¼dy,
+ ale juÅ¼ podczas puszowania do repo nowych gaÅ‚Ä™zi trzeba mieÄ‡ status kontributora,
+ takÅ¼e trzeba uzyskaÄ‡ access,
+
+ * trzeba dodaÄ‡ lokalny klucz ssh, jako mÃ³j id do corporate github account oraz
+ byÄ‡ zalgowanym podczas pobierania oraz puszowania do/z repo, bo bede pobieraÅ‚
+ jako ten zalogowany uÅ¼ytkownik,
+
  * git init - initilize folder in current folder
 
  * .git - stores anything associated with project!
  - git do not have any back up
  - jest w plikach, nia na serwerze
 
- * git status - status plików
+ * git status - status plikï¿½w
 
  * git add '. or file name'- dodaj do stage area
  - *.html - only html files
@@ -13,24 +21,24 @@
 
  * git branch nazwa - nowy branch
 
- * git stash - po wykonaniu git add ., pliki id¹ do stage area, ale ni s¹ skomitowane,
-po przejœciu do innego brancza, bedzie problem, bo ten plik pozostanie, ale nie teraz.
-Staszowanie pozwala na nie uwzglêdnianie tego pliku w inneym branczu..
+ * git stash - po wykonaniu git add ., pliki idï¿½ do stage area, ale ni sï¿½ skomitowane,
+po przejï¿½ciu do innego brancza, bedzie problem, bo ten plik pozostanie, ale nie teraz.
+Staszowanie pozwala na nie uwzglï¿½dnianie tego pliku w inneym branczu..
 
  * git checkout nazwa - checkout do brancza:
- - pozwala na to, ¿e mozemy mieæ ró¿ne pliki w ró¿nych branchach
- - uwa¿aj przy zmianie branczy, bo nie skomitowane pliki, kótrych nie ma
-   w innym branczu pozostan¹ w folderze!!! - bedzie problem
+ - pozwala na to, ï¿½e mozemy mieï¿½ rï¿½ne pliki w rï¿½nych branchach
+ - uwaï¿½aj przy zmianie branczy, bo nie skomitowane pliki, kï¿½trych nie ma
+   w innym branczu pozostanï¿½ w folderze!!! - bedzie problem
 
- * git merge nazwa_branch - merd¿owanie brancza o nazwie nazwa_branch 
-   do tego w którym jestem. W razie, gdyby wyst¹pi konflikt to poka¿e nam wiadomoœæ
-   i w konkretnym pliku mo¿na to rozwi¹zaæ
+ * git merge nazwa_branch - merdï¿½owanie brancza o nazwie nazwa_branch 
+   do tego w ktï¿½rym jestem. W razie, gdyby wystï¿½pi konflikt to pokaï¿½e nam wiadomoï¿½ï¿½
+   i w konkretnym pliku moï¿½na to rozwiï¿½zaï¿½
 
- - po mergu z b³êdami trzeba zapisaæ odpowiedni¹ forme
+ - po mergu z bï¿½ï¿½dami trzeba zapisaï¿½ odpowiedniï¿½ forme
  - git merge tool
 
  * git remote - pokazuje zdalne repozytoria
 
- * git close url - pobierze folder do bierz¹cego with commit history
+ * git close url - pobierze folder do bierzï¿½cego with commit history
  - cd folder
  - git remote -> origin

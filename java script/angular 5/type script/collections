@@ -19,6 +19,15 @@ ARRAYS:
  array = [];
  array.forEach(x => console.log("Each item form an array: " + x))
 
+ * declare generic array:
+ - var array = new Array<Object>();
+
+ * check if item exists in an array:
+ - array.includes(item) -> returns true if this item exists
+
+ * combine items from an array into one string:
+ - array.join(",") => "1,2,3,4"
+
 MAP:
 
  * create a map:

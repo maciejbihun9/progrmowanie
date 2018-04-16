@@ -3,5 +3,3 @@
  - because we can have also the enum types here,
 
  * we can have interfaces here - damn!,
- 
- * 

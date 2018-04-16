@@ -1,0 +1,49 @@
+SALES_ANALITICS_CLIENT:
+
+ services:
+ * we can move all services to folder with shared components,
+ * service can contaian a model class as an interface (eg. UserService contains User Interface with defined fields)
+ - we can skip here additional files,
+
+ * define one generic http methods that contains he same values:
+ - private get(url) {
+           return this.http.get(url,
+           { headers: this.headers, withCredentials: true })
+           .map(response => response)
+       }
+ - I can see that .map() method is used quite extensively,
+ - we can use that just because in ts we have autocasting
+ - isCurrentUserAdmin() {
+           return this.get(this.baseUrl + `user/isadmin`)
+       }
+
+   authorised() {
+           return this.get(this.baseUrl + 'user/authorized')
+       }
+
+ model classes:
+ * we have in shared folder models folder:
+ - there we can find models that we use in app,
+ but models are also declared only in service modules,
+
+ * I can see that model classes are declared as interfaces,
+
+ * sometimes model classes are declared in service modules and other times
+ are declared in seperate in different modules, files,
+
+ environment folder:
+ * we can add there urls that we use in our project, that tells us from where we
+ are getting the data,
+
+ * urls that tells from where the data becomes is called api urls,
+
+ * it is good idea to move all api urls to one file and then get them from there
+
+ directives:
+ * we can define many directives in one file
+
+ zastosowanie:
+ * stylowanie elementów html, [ngStyle], albo nasze dyrektywy, które mają
+ deskryptywne nazwy,
+
+

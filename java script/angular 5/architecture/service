@@ -1,6 +1,12 @@
 
  * this is the special case of component, special extension,
 
+ * we define our services in providers array,
+ provider is a recipe for creating a dependency,
+
+ * A component should not need to define things like how to fetch data from the server,
+ validate user input, or log directly to the console.
+
  * examples:
  - export class Logger {
      log(msg: any)   { console.log(msg); }

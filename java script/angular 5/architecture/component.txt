@@ -3,7 +3,10 @@
  user moves through the application. Your app can take action at each moment in this
  lifecycle through optional lifecycle hooks, like ngOnInit().
 
- * a component is also a directive!!!, but component has it's own template
+ * a component is also a directive!!!, but component has it's own template,
+
+ * A component should not need to define things like how to fetch data from the server,
+  validate user input, or log directly to the console.
 
  * we define sub trees in html files,
 

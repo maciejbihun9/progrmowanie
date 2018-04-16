@@ -54,4 +54,6 @@
 
  * we can have files hierarchy what ever we want,
 
+ * we can use spec.ts files for component testing,
+
  
