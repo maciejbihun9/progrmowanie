@@ -1,2 +1,0 @@
- * add a click event:
- - (click) = 'method_name()'

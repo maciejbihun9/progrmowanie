@@ -1,0 +1,3 @@
+
+ * use this when UI update is not needed:
+ - ngZone - refer to the docs

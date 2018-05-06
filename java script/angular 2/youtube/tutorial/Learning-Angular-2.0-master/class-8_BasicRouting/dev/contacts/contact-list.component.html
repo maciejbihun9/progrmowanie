@@ -1,8 +1,0 @@
-<ul>
-  <li
-    *ngFor = "#contact of contacts"
-    (click)="onNameClick(contact)" [class.clicked]="selectedContact === contact">
-      {{contact.firstname}} {{contact.lastname}}
-  </li>
-</ul>
-<contact [contact]="selectedContact"></contact>

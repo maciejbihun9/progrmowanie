@@ -2,87 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f341ddb-947e-47ef-9e6e-2652f1fef69b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/http/main concepts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/HostBinding &amp; HostListener" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/docs/http client/advanced features" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/events" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/template" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/type script/models" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/zastosowania/Communicating Between Components" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/zastosowania/Components architecture" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/zastosowania/Creating models" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/zastosowania/Dynamically add components to the DOM" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/zastosowania/Loading data" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/zastosowania/Managing styles in the code" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/zastosowania/Run functions outside of angular core" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 2/book/http.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 2/book/intro.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 2/book/pipes.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 2/book/practices.txt" afterPath="$PROJECT_DIR$/java script/angular 2/book/practices.txt" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/Communicating Between Components" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/QueryLIst &amp; COntentChildren.txt" afterPath="$PROJECT_DIR$/java script/angular 5/zastosowania/Managing view items in code.txt" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/.angular-cli.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/.editorconfig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/e2e/app.e2e-spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/e2e/app.po.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/e2e/tsconfig.e2e.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/karma.conf.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/protractor.conf.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/app-routing.module.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/app.component.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/app.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/app.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/app.module.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/dashboard/dashboard.component.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/dashboard/dashboard.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/dashboard/dashboard.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/dashboard/dashboard.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/hero-detail/hero-detail.component.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/hero-detail/hero-detail.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/hero-detail/hero-detail.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/hero-search/hero-search.component.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/hero-search/hero-search.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/hero-search/hero-search.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/hero-search/hero-search.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/hero.service.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/hero.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/heroes/heroes.component.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/heroes/heroes.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/heroes/heroes.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/heroes/heroes.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/in-memory-data.service.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/message.service.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/message.service.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/messages/messages.component.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/messages/messages.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/messages/messages.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/messages/messages.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/mock-heroes.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/environments/environment.prod.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/environments/environment.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/favicon.ico" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/main.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/polyfills.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/styles.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/test.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/tsconfig.app.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/tsconfig.spec.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/typings.d.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/toh-pt6.zip" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/tsconfig.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/tslint.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/architecture/architecture cases" afterPath="$PROJECT_DIR$/java script/angular 5/architecture/architecture cases" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/architecture/directive" afterPath="$PROJECT_DIR$/java script/angular 5/architecture/directive" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/core/core.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/docs/http client/intro.txt" afterPath="$PROJECT_DIR$/java script/angular 5/docs/http client/intro.txt" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/http.txt" afterPath="$PROJECT_DIR$/java script/angular 5/http.txt" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/server.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/type script/collections" afterPath="$PROJECT_DIR$/java script/angular 5/type script/collections" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/type script/functional programming.txt" afterPath="$PROJECT_DIR$/java script/angular 5/type script/functional programming.txt" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/type script/type_script.txt" afterPath="$PROJECT_DIR$/java script/angular 5/type script/type_script.txt" />
-      <change beforePath="$PROJECT_DIR$/podsumowanie dnia/16.04.2018" afterPath="$PROJECT_DIR$/podsumowanie dnia/16.04.2018" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/HostBinding &amp; HostListener" afterPath="$PROJECT_DIR$/java script/angular 5/HostBinding &amp; HostListener" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/template" afterPath="$PROJECT_DIR$/java script/angular 5/template" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -96,11 +19,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="template" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java script/angular 5/template">
+      <file leaf-file-name="template" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java script/Angular/template">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="117" column="70" lean-forward="false" selection-start-line="117" selection-start-column="70" selection-end-line="117" selection-end-column="70" />
+            <state relative-caret-position="51">
+              <caret line="3" column="54" lean-forward="false" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="directive" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java script/Angular/architecture/directive">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -122,8 +55,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/C#/syntax.txt" />
-        <option value="$PROJECT_DIR$/C#/NET/intro.txt" />
         <option value="$PROJECT_DIR$/C#/NET/syntax" />
         <option value="$PROJECT_DIR$/C#/key words.txt" />
         <option value="$PROJECT_DIR$/C#/use full functions.txt" />
@@ -170,9 +101,11 @@
         <option value="$PROJECT_DIR$/java script/angular 5/zastosowania/Loading data" />
         <option value="$PROJECT_DIR$/java script/angular 5/zastosowania/Components architecture" />
         <option value="$PROJECT_DIR$/java script/angular 5/zastosowania/Managing styles in the code" />
-        <option value="$PROJECT_DIR$/java script/angular 5/HostBinding &amp; HostListener" />
         <option value="$PROJECT_DIR$/java script/angular 5/zastosowania/Communicating Between Components" />
+        <option value="$PROJECT_DIR$/java script/angular 5/zastosowania/Run functions outside of angular core" />
+        <option value="$PROJECT_DIR$/java script/angular 5/HostBinding &amp; HostListener" />
         <option value="$PROJECT_DIR$/java script/angular 5/template" />
+        <option value="$PROJECT_DIR$/java script/Angular/architecture/directive" />
       </list>
     </option>
   </component>
@@ -182,7 +115,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="26" />
     <option name="y" value="7" />
     <option name="width" value="948" />
@@ -203,6 +136,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -224,20 +158,19 @@
               <item name="programming" type="b2602c69:ProjectViewProjectNode" />
               <item name="programming" type="462c0819:PsiDirectoryNode" />
               <item name="java script" type="462c0819:PsiDirectoryNode" />
-              <item name="angular 5" type="462c0819:PsiDirectoryNode" />
+              <item name="Angular" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="programming" type="b2602c69:ProjectViewProjectNode" />
               <item name="programming" type="462c0819:PsiDirectoryNode" />
               <item name="java script" type="462c0819:PsiDirectoryNode" />
-              <item name="angular 5" type="462c0819:PsiDirectoryNode" />
-              <item name="zastosowania" type="462c0819:PsiDirectoryNode" />
+              <item name="Angular" type="462c0819:PsiDirectoryNode" />
+              <item name="architecture" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -533,23 +466,27 @@
       <workItem from="1525438986105" duration="1887000" />
       <workItem from="1525441113351" duration="1259000" />
       <workItem from="1525442913211" duration="718000" />
+      <workItem from="1525616749679" duration="668000" />
+      <workItem from="1525618987897" duration="1259000" />
+      <workItem from="1525621156437" duration="1215000" />
+      <workItem from="1525623582779" duration="770000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="236766000" />
+    <option name="totallyTimeSpent" value="240678000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28541666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.225" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1378579" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12301166" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -583,184 +520,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-5_MultipleComponentsAndDirectives/dev/contacts/contact-list.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-5_MultipleComponentsAndDirectives/dev/contacts/contact-list.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-5_MultipleComponentsAndDirectives/dev/contacts/contact.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-5_MultipleComponentsAndDirectives/dev/contacts/contact.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-5_MultipleComponentsAndDirectives/dev/app.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-5_MultipleComponentsAndDirectives/dev/app.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-12_FormsWithAngularFormsBuilder/dev/contacts/contact.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-12_FormsWithAngularFormsBuilder/dev/contacts/contact.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-12_FormsWithAngularFormsBuilder/dev/contacts/contact.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-12_FormsWithAngularFormsBuilder/dev/contacts/contact.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-12_FormsWithAngularFormsBuilder/dev/contacts/contact.service.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-12_FormsWithAngularFormsBuilder/dev/contacts/contact.service.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-12_FormsWithAngularFormsBuilder/dev/contacts/newcontact.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-12_FormsWithAngularFormsBuilder/dev/contacts/newcontact.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-12_FormsWithAngularFormsBuilder/dev/contacts/contact-list.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-12_FormsWithAngularFormsBuilder/dev/contacts/contact-list.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-12_FormsWithAngularFormsBuilder/dev/contacts/data.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-12_FormsWithAngularFormsBuilder/dev/contacts/data.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-12_FormsWithAngularFormsBuilder/dev/about/about.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-12_FormsWithAngularFormsBuilder/dev/about/about.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-12_FormsWithAngularFormsBuilder/dev/app.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-12_FormsWithAngularFormsBuilder/dev/app.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-12_FormsWithAngularFormsBuilder/dev/boot.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-12_FormsWithAngularFormsBuilder/dev/boot.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-9_AdvancedRouting+DataServices/dev/contacts/contact.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-9_AdvancedRouting+DataServices/dev/contacts/contact.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-9_AdvancedRouting+DataServices/dev/contacts/contact.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-9_AdvancedRouting+DataServices/dev/contacts/contact.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-9_AdvancedRouting+DataServices/dev/contacts/contact.service.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-9_AdvancedRouting+DataServices/dev/contacts/contact.service.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-9_AdvancedRouting+DataServices/dev/contacts/newcontact.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-9_AdvancedRouting+DataServices/dev/contacts/newcontact.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-9_AdvancedRouting+DataServices/dev/contacts/contact-list.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-9_AdvancedRouting+DataServices/dev/contacts/contact-list.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-9_AdvancedRouting+DataServices/dev/contacts/data.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-9_AdvancedRouting+DataServices/dev/contacts/data.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-9_AdvancedRouting+DataServices/dev/about/about.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-9_AdvancedRouting+DataServices/dev/about/about.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-9_AdvancedRouting+DataServices/dev/app.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-9_AdvancedRouting+DataServices/dev/app.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-9_AdvancedRouting+DataServices/dev/boot.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-9_AdvancedRouting+DataServices/dev/boot.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11_FormsWithTwowayBindings(1)/dev/contacts/contact.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11_FormsWithTwowayBindings(1)/dev/contacts/contact.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11_FormsWithTwowayBindings(1)/dev/contacts/contact.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11_FormsWithTwowayBindings(1)/dev/contacts/contact.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11_FormsWithTwowayBindings(1)/dev/contacts/contact.service.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11_FormsWithTwowayBindings(1)/dev/contacts/contact.service.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11_FormsWithTwowayBindings(1)/dev/contacts/newcontact.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11_FormsWithTwowayBindings(1)/dev/contacts/newcontact.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11_FormsWithTwowayBindings(1)/dev/contacts/contact-list.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11_FormsWithTwowayBindings(1)/dev/contacts/contact-list.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11_FormsWithTwowayBindings(1)/dev/contacts/data.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11_FormsWithTwowayBindings(1)/dev/contacts/data.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11_FormsWithTwowayBindings(1)/dev/about/about.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11_FormsWithTwowayBindings(1)/dev/about/about.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11_FormsWithTwowayBindings(1)/dev/app.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11_FormsWithTwowayBindings(1)/dev/app.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11_FormsWithTwowayBindings(1)/dev/boot.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11_FormsWithTwowayBindings(1)/dev/boot.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11-FormsWithTwowayBindings(2)/dev/contacts/contact.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11-FormsWithTwowayBindings(2)/dev/contacts/contact.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11-FormsWithTwowayBindings(2)/dev/contacts/contact.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11-FormsWithTwowayBindings(2)/dev/contacts/contact.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11-FormsWithTwowayBindings(2)/dev/contacts/contact.service.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11-FormsWithTwowayBindings(2)/dev/contacts/contact.service.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11-FormsWithTwowayBindings(2)/dev/contacts/newcontact.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11-FormsWithTwowayBindings(2)/dev/contacts/newcontact.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11-FormsWithTwowayBindings(2)/dev/contacts/contact-list.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11-FormsWithTwowayBindings(2)/dev/contacts/contact-list.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11-FormsWithTwowayBindings(2)/dev/contacts/data.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11-FormsWithTwowayBindings(2)/dev/contacts/data.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11-FormsWithTwowayBindings(2)/dev/about/about.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11-FormsWithTwowayBindings(2)/dev/about/about.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11-FormsWithTwowayBindings(2)/dev/app.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11-FormsWithTwowayBindings(2)/dev/app.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11-FormsWithTwowayBindings(2)/dev/boot.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-11-FormsWithTwowayBindings(2)/dev/boot.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-6_servicesAndTemplateUrl/dev/contacts/contact.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-6_servicesAndTemplateUrl/dev/contacts/contact.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-6_servicesAndTemplateUrl/dev/contacts/contact.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-6_servicesAndTemplateUrl/dev/contacts/contact.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-6_servicesAndTemplateUrl/dev/contacts/contact.service.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-6_servicesAndTemplateUrl/dev/contacts/contact.service.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-6_servicesAndTemplateUrl/dev/contacts/contact-list.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-6_servicesAndTemplateUrl/dev/contacts/contact-list.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-6_servicesAndTemplateUrl/dev/contacts/data.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-6_servicesAndTemplateUrl/dev/contacts/data.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-6_servicesAndTemplateUrl/dev/app.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-6_servicesAndTemplateUrl/dev/app.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-10_RoutingWithParams/dev/contacts/contact.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-10_RoutingWithParams/dev/contacts/contact.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-10_RoutingWithParams/dev/contacts/contact.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-10_RoutingWithParams/dev/contacts/contact.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-10_RoutingWithParams/dev/contacts/contact.service.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-10_RoutingWithParams/dev/contacts/contact.service.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-10_RoutingWithParams/dev/contacts/newcontact.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-10_RoutingWithParams/dev/contacts/newcontact.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-10_RoutingWithParams/dev/contacts/contact-list.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-10_RoutingWithParams/dev/contacts/contact-list.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-10_RoutingWithParams/dev/contacts/data.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-10_RoutingWithParams/dev/contacts/data.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-10_RoutingWithParams/dev/about/about.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-10_RoutingWithParams/dev/about/about.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-10_RoutingWithParams/dev/app.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-10_RoutingWithParams/dev/app.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-10_RoutingWithParams/dev/boot.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-10_RoutingWithParams/dev/boot.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/practice-2_BasicRouter/dev/about/about.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/practice-2_BasicRouter/dev/about/about.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/practice-2_BasicRouter/dev/home/home.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/practice-2_BasicRouter/dev/home/home.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/practice-2_BasicRouter/dev/app.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/practice-2_BasicRouter/dev/app.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/practice-2_BasicRouter/dev/boot.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/practice-2_BasicRouter/dev/boot.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-7_TwoWayBinding/dev/contacts/contact.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-7_TwoWayBinding/dev/contacts/contact.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-7_TwoWayBinding/dev/contacts/contact.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-7_TwoWayBinding/dev/contacts/contact.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-7_TwoWayBinding/dev/contacts/contact.service.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-7_TwoWayBinding/dev/contacts/contact.service.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-7_TwoWayBinding/dev/contacts/contact-list.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-7_TwoWayBinding/dev/contacts/contact-list.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-7_TwoWayBinding/dev/contacts/data.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-7_TwoWayBinding/dev/contacts/data.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-7_TwoWayBinding/dev/app.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-7_TwoWayBinding/dev/app.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-8_BasicRouting/dev/contacts/contact.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-8_BasicRouting/dev/contacts/contact.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-8_BasicRouting/dev/contacts/contact.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-8_BasicRouting/dev/contacts/contact.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-8_BasicRouting/dev/contacts/contact.service.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-8_BasicRouting/dev/contacts/contact.service.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-8_BasicRouting/dev/contacts/newcontact.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-8_BasicRouting/dev/contacts/newcontact.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-8_BasicRouting/dev/contacts/contact-list.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-8_BasicRouting/dev/contacts/contact-list.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-8_BasicRouting/dev/contacts/data.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-8_BasicRouting/dev/contacts/data.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-8_BasicRouting/dev/about/about.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-8_BasicRouting/dev/about/about.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-8_BasicRouting/dev/app.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-8_BasicRouting/dev/app.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-8_BasicRouting/dev/boot.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-8_BasicRouting/dev/boot.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-4_BasicBinding/dev/app.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-4_BasicBinding/dev/app.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-13_HttpGetPost/dev/contacts/contact.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-13_HttpGetPost/dev/contacts/contact.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-13_HttpGetPost/dev/contacts/contact.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-13_HttpGetPost/dev/contacts/contact.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-13_HttpGetPost/dev/contacts/contact.service.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-13_HttpGetPost/dev/contacts/contact.service.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-13_HttpGetPost/dev/contacts/newcontact.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-13_HttpGetPost/dev/contacts/newcontact.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-13_HttpGetPost/dev/contacts/contact-list.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-13_HttpGetPost/dev/contacts/contact-list.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-13_HttpGetPost/dev/contacts/data.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-13_HttpGetPost/dev/contacts/data.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-13_HttpGetPost/dev/about/about.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-13_HttpGetPost/dev/about/about.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-13_HttpGetPost/dev/http/http-test.service.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-13_HttpGetPost/dev/http/http-test.service.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-13_HttpGetPost/dev/http/http-test.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-13_HttpGetPost/dev/http/http-test.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-13_HttpGetPost/dev/app.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-13_HttpGetPost/dev/app.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-13_HttpGetPost/dev/boot.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/class-13_HttpGetPost/dev/boot.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/practice-1_TodoApp/dev/todo-list/todo-list.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/practice-1_TodoApp/dev/todo-list/todo-list.component.js.map" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/practice-1_TodoApp/dev/app.component.js" />
-        <option value="$PROJECT_DIR$/java script/angular 2/youtube/tutorial/Learning-Angular-2.0-master/practice-1_TodoApp/dev/app.component.js.map" />
-      </list>
-    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -770,92 +529,56 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/git/Wstępna konfiguracja.txt" />
-    <entry file="file://$PROJECT_DIR$/work ethic for programming">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/git/github_repo_skeleton">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/git/intro.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/jquery/ogólnie.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="25" column="47" lean-forward="false" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/architecture/module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="65" lean-forward="false" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/interface">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/interface">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/api/http/http.txt">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/api/http/http.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/api/ogólnie.txt">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/api/ogólnie.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/api/observables.txt">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/api/observables.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/architecture/basics.txt">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/architecture/basics.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="37" column="48" lean-forward="false" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/intro.txt">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/intro.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/language service.txt">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/language service.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/life  cycles.txt">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/life  cycles.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
@@ -883,42 +606,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/docs/http client/intro.txt">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/docs/http client/intro.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
           <caret line="46" column="35" lean-forward="false" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/architecture/directive">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="99" lean-forward="false" selection-start-line="7" selection-start-column="99" selection-end-line="7" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/docs/http client/advanced features">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/docs/http client/advanced features">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/observable.txt">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/observable.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2278">
           <caret line="134" column="42" lean-forward="false" selection-start-line="134" selection-start-column="42" selection-end-line="134" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/http.txt">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/http.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="34" lean-forward="false" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/string operations.txt">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/string operations.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
@@ -926,49 +642,49 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java script/angular 5/server.txt" />
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/zastosowania/Creating models">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/zastosowania/Creating models">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/services.txt">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/services.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="37" column="46" lean-forward="false" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/routing.txt">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/routing.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="38" lean-forward="false" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/zastosowania/Dynamically add components to the DOM">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/zastosowania/Dynamically add components to the DOM">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="74" lean-forward="false" selection-start-line="2" selection-start-column="74" selection-end-line="2" selection-end-column="74" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/practices.txt">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/practices.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2686">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/docs/template and data binding/component styles.txt">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/docs/template and data binding/component styles.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/events">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/events">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
@@ -977,14 +693,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java script/angular 5/core/core.txt" />
     <entry file="file://$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/in-memory-data.service.ts" />
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/api/common/locales.txt">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/api/common/locales.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/api/common/common.txt">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/api/common/common.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
@@ -994,35 +710,35 @@
     <entry file="file://$PROJECT_DIR$/java script/angular 2/book/http.txt" />
     <entry file="file://$PROJECT_DIR$/java script/angular 2/book/intro.txt" />
     <entry file="file://$PROJECT_DIR$/java script/angular 2/book/pipes.txt" />
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/architecture/architecture cases">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/architecture/architecture cases">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/type script/models">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/type script/models">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="66" lean-forward="false" selection-start-line="2" selection-start-column="66" selection-end-line="2" selection-end-column="66" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/type script/functional programming.txt">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/type script/functional programming.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="50" column="3" lean-forward="false" selection-start-line="50" selection-start-column="3" selection-end-line="50" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/type script/type_script.txt">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/type script/type_script.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="884">
           <caret line="126" column="27" lean-forward="false" selection-start-line="126" selection-start-column="27" selection-end-line="126" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/type script/collections">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/type script/collections">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
@@ -1036,52 +752,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/zastosowania/Components architecture">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/zastosowania/Components architecture">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/zastosowania/Managing view items in code.txt">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/zastosowania/Managing view items in code.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
           <caret line="51" column="24" lean-forward="false" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/zastosowania/Managing styles in the code">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/zastosowania/Managing styles in the code">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="45" lean-forward="false" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/zastosowania/Communicating Between Components">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/zastosowania/Communicating Between Components">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="75" column="11" lean-forward="false" selection-start-line="75" selection-start-column="11" selection-end-line="75" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/HostBinding &amp; HostListener">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="3" lean-forward="false" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/zastosowania/Loading data">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/zastosowania/Loading data">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="6" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/template">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/HostBinding &amp; HostListener">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="117" column="70" lean-forward="false" selection-start-line="117" selection-start-column="70" selection-end-line="117" selection-end-column="70" />
+        <state relative-caret-position="391">
+          <caret line="23" column="68" lean-forward="false" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 2/youtube/typeScript.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-303">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 2/youtube/routing.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 2/youtube/life cycle.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 2/youtube/intro.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 2/youtube/events.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/zastosowania/Run functions outside of angular core">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/template">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="54" lean-forward="false" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/architecture/directive">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
           <folding />
         </state>
       </provider>

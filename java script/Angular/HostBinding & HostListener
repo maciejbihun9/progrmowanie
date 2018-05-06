@@ -1,0 +1,56 @@
+@HOST LISTENER:
+
+ * Let's take the following requirement: when you hover you mouse over the host element,
+ only the color of the host element should change. In addition, when the mouse is gone,
+ the color of the host element should change to its default color.
+ To do this, you need to handle events raised on the host element in the directive class.
+ In Angular, you do this using @HostListener().
+
+ * zastosowania:
+ - create a mousedown event and pass this event as a parameter
+ - we use that event param to prevent default beheviour
+ - @HostListener('mousedown', ['$event'])
+     grab(grabEvt: MouseEvent) {
+       grabEvt.preventDefault();
+
+ - simple click on host element
+ - @HostListener('click', ['$event'])
+     stopClick(event: MouseEvent) {
+     }
+       event.preventDefault();
+       event.stopPropagation();
+     }
+
+ - get access to the html item, all props, all events, all callbacks
+ - get html item properties and manipulate them
+ - @HostListener('mouseover', ['$event'])
+     onMouseover(event: MouseEvent){
+       let element = <HTMLElement>event.target;
+       console.log(element);
+       element.style.color = 'red';
+       element.innerHTML = 'after click';
+       element.style.backgroundColor = 'green';
+     }
+
+ - change colors depends on mouse events
+ -  @HostBinding('style.color') compColor: string;
+
+     @HostListener('mouseenter') onMouseEnter() {
+       this.compColor = 'green';
+     }
+
+     @HostListener('mouseleave') onMouseLeave() {
+       this.compColor = 'red';
+     }
+
+ - associate width of the host html element with component value
+ - each time when column width changes then the html item will be changed
+ - this is great approach with one main component that manages state
+ - @HostBinding('style.width')
+     get width(): string {
+       return (typeof this.column.width === 'number') ? this.column.width + 'px' : 'auto';
+     }
+
+ - associate style with an input element:
+ - @HostBinding('style.height.px')
+   @Input() scrollHeight: number;

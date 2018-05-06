@@ -1,0 +1,14 @@
+
+ * think about directives like about a feature that can be added to a component
+ - dragable,
+ - do something after mouseover,
+ - something that can be added to all components and is a bit generic,
+ - is based on input parameters,
+
+ zastosowanie:
+ * check boolean field and update html element depends on value:
+ - <input type="checkbox" (click)="check()" [checked]="inputRegion.checked"/>
+
+ * dodanie klas css w zalezności od tych pól:
+ - <div class="control__indicator"
+           [ngClass]="{'glowBorder': inputRegion.subRegionsChecked && !inputRegion.checked}"></div>
