@@ -4,6 +4,16 @@ OBJECTS:
 
 ARRAYS:
 
+ * declare string array:
+ const INSTRUMENTS: string[] = [
+   'sax',
+   'trumpet',
+   'trombone',
+   'piano',
+   'keys',
+   'drums'
+ ];
+
  * add item to an array:
  array.push(item)
 
@@ -16,8 +26,28 @@ ARRAYS:
  array[0]()
 
  * use forEach function to iterate over an array:
+ - this is used quite extensively
  array = [];
  array.forEach(x => console.log("Each item form an array: " + x))
+
+ * call a specifi code block foe each item in an array:
+ - this code will be invoked for each item from this specific array
+ - this.slice_nums.map(item => console.log('item from an array: ' + item));
+
+ * use functional methods to sum all of items:
+ - let array = [12,13,2,4,23,6];
+       var number = array.reduce((sum, value) => {
+         return sum + value;
+       }, 0); - result = 60
+
+ * get max value from an array:
+ - let maxNumber = array.reduce((a, b) => {
+         return Math.max(a, b);
+       });
+ - this will return a max item
+
+ * create a sublist from a list:
+ - list.slice(index1, index2)
 
  * declare generic array:
  - var array = new Array<Object>();

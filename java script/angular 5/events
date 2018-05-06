@@ -1,0 +1,8 @@
+
+ * for scrolling refer to SalesAnalitics project - ForecastCustomGridComponent.html
+
+ * catch each input change and call a method from it:
+ - after each input change this method will be called
+ - [(ngModel)]="column.filterValue"
+   (ngModelChange)="onModelChange()"
+

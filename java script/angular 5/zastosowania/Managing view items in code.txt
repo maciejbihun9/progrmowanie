@@ -1,0 +1,58 @@
+ViewChildren decorator (many):
+
+ * it is used to make a reference to a list of angular components (list)
+
+ * @ViewChildren - decorator will return the component instance,
+ 
+ * @ViewChildren(EmployeeComponent) employers: QueryList<EmployeeComponent>;
+
+ examples:
+ * we can also get an item with specified id:
+ - <div #div>
+	this is a div element
+   </div>
+ - @ViewChildren("div") div: QueryList<any>;
+ 
+ViewChild (one):
+
+ * is used to reference a single angular component or simple html element in the component body
+ - always takes the first item of the page
+
+ * creates a connection between view and component(directive),
+ 
+ * View queries are set before the ngAfterViewInit callback is called
+ 
+ * we can call this component methods from this,
+ 
+ examples:
+ * @ViewChild(EmployeeComponent) firstEmp: EmployeeComponent;
+
+ * create a connection between a html item and js code:
+ - <table [ngClass]="tableClasses" #row_item>
+ - @ViewChild('row_item') rowItem: ElementRef;
+
+ * we can get many item that are declared in html code by referencing only host one
+ and just get one property from that html item
+
+ * @ViewChild('tpl') tpl;
+ - this is an example of connection between native element with an id and a view,
+ - this is an ElementRef instance that constains all java script Element fields and methods,
+ 
+ViewContainerRef:
+
+ * this is a simple reference to html code of host component
+
+ * once injected into a component refers to a template of this component,
+ - this can add new templates to this view, where was declared,
+
+ * creates new components dynamically,
+
+ * referencing this ViewContainerRef causes that we will add components
+ as a siblings of this component, so components added using that reference won't be
+ part of this component,
+ 
+ * zastosowanie:
+ - constructor() {}
+ - get number of embedded items: \private _vcr: ViewContainerRef
+ this._vcr.length;
+ 

@@ -2,23 +2,87 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f341ddb-947e-47ef-9e6e-2652f1fef69b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/git/github_repo_skeleton" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/Communicating Between Components" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/architecture/architecture cases" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/interface" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/podsumowanie dnia/16.04.2018" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/work ethic for programming" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/http/main concepts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/HostBinding &amp; HostListener" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/docs/http client/advanced features" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/events" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/template" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/type script/models" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/zastosowania/Communicating Between Components" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/zastosowania/Components architecture" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/zastosowania/Creating models" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/zastosowania/Dynamically add components to the DOM" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/zastosowania/Loading data" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/zastosowania/Managing styles in the code" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/git/Wstępna konfiguracja.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/git/intro.txt" afterPath="$PROJECT_DIR$/git/intro.txt" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/api/ogólnie.txt" afterPath="$PROJECT_DIR$/java script/angular 5/api/ogólnie.txt" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/architecture/basics.txt" afterPath="$PROJECT_DIR$/java script/angular 5/architecture/basics.txt" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/architecture/component.txt" afterPath="$PROJECT_DIR$/java script/angular 5/architecture/component.txt" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/architecture/module" afterPath="$PROJECT_DIR$/java script/angular 5/architecture/module" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/architecture/service" afterPath="$PROJECT_DIR$/java script/angular 5/architecture/service" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 2/book/http.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 2/book/intro.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 2/book/pipes.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 2/book/practices.txt" afterPath="$PROJECT_DIR$/java script/angular 2/book/practices.txt" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/Communicating Between Components" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/QueryLIst &amp; COntentChildren.txt" afterPath="$PROJECT_DIR$/java script/angular 5/zastosowania/Managing view items in code.txt" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/.angular-cli.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/.editorconfig" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/e2e/app.e2e-spec.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/e2e/app.po.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/e2e/tsconfig.e2e.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/karma.conf.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/package.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/protractor.conf.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/app-routing.module.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/app.component.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/app.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/app.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/app.module.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/dashboard/dashboard.component.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/dashboard/dashboard.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/dashboard/dashboard.component.spec.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/dashboard/dashboard.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/hero-detail/hero-detail.component.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/hero-detail/hero-detail.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/hero-detail/hero-detail.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/hero-search/hero-search.component.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/hero-search/hero-search.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/hero-search/hero-search.component.spec.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/hero-search/hero-search.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/hero.service.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/hero.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/heroes/heroes.component.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/heroes/heroes.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/heroes/heroes.component.spec.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/heroes/heroes.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/in-memory-data.service.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/message.service.spec.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/message.service.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/messages/messages.component.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/messages/messages.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/messages/messages.component.spec.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/messages/messages.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/mock-heroes.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/environments/environment.prod.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/environments/environment.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/favicon.ico" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/main.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/polyfills.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/styles.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/test.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/tsconfig.app.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/tsconfig.spec.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/typings.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/toh-pt6.zip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/tsconfig.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/tslint.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/architecture/architecture cases" afterPath="$PROJECT_DIR$/java script/angular 5/architecture/architecture cases" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/architecture/directive" afterPath="$PROJECT_DIR$/java script/angular 5/architecture/directive" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/core/core.txt" afterPath="" />
       <change beforePath="$PROJECT_DIR$/java script/angular 5/docs/http client/intro.txt" afterPath="$PROJECT_DIR$/java script/angular 5/docs/http client/intro.txt" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/routing.txt" afterPath="$PROJECT_DIR$/java script/angular 5/routing.txt" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/http.txt" afterPath="$PROJECT_DIR$/java script/angular 5/http.txt" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/server.txt" afterPath="" />
       <change beforePath="$PROJECT_DIR$/java script/angular 5/type script/collections" afterPath="$PROJECT_DIR$/java script/angular 5/type script/collections" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/type script/functional programming.txt" afterPath="$PROJECT_DIR$/java script/angular 5/type script/functional programming.txt" />
+      <change beforePath="$PROJECT_DIR$/java script/angular 5/type script/type_script.txt" afterPath="$PROJECT_DIR$/java script/angular 5/type script/type_script.txt" />
+      <change beforePath="$PROJECT_DIR$/podsumowanie dnia/16.04.2018" afterPath="$PROJECT_DIR$/podsumowanie dnia/16.04.2018" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,51 +96,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="architecture cases" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java script/angular 5/architecture/architecture cases">
+      <file leaf-file-name="template" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java script/angular 5/template">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="46" column="20" lean-forward="false" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Communicating Between Components" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java script/angular 5/Communicating Between Components">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="16.04.2018" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/podsumowanie dnia/16.04.2018">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routing.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java script/angular 5/routing.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="collections" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java script/angular 5/type script/collections">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+            <state relative-caret-position="765">
+              <caret line="117" column="70" lean-forward="false" selection-start-line="117" selection-start-column="70" selection-end-line="117" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -98,11 +122,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/java script/angular 5/api/platform-browser/platform-browser.txt" />
-        <option value="$PROJECT_DIR$/java script/angular 5/type_script.txt" />
-        <option value="$PROJECT_DIR$/java script/angular 5/type script/functional programming.txt" />
-        <option value="$PROJECT_DIR$/java script/angular 5/type script/type_script.txt" />
-        <option value="$PROJECT_DIR$/java script/angular 5/observable.txt" />
         <option value="$PROJECT_DIR$/C#/syntax.txt" />
         <option value="$PROJECT_DIR$/C#/NET/intro.txt" />
         <option value="$PROJECT_DIR$/C#/NET/syntax" />
@@ -115,7 +134,6 @@
         <option value="$PROJECT_DIR$/java script/angular 5/theory.txt" />
         <option value="$PROJECT_DIR$/C#/NET/views" />
         <option value="$PROJECT_DIR$/java script/angular 5/architecture/pipe" />
-        <option value="$PROJECT_DIR$/java script/angular 5/architecture/directive" />
         <option value="$PROJECT_DIR$/java script/jquery/ogólnie.txt" />
         <option value="$PROJECT_DIR$/java script/jquery/usefull methods" />
         <option value="$PROJECT_DIR$/java script/angular 5/architecture/component.txt" />
@@ -127,13 +145,34 @@
         <option value="$PROJECT_DIR$/java script/angular 5/interface" />
         <option value="$PROJECT_DIR$/java script/angular 5/architecture/module" />
         <option value="$PROJECT_DIR$/java script/angular 5/architecture/basics.txt" />
-        <option value="$PROJECT_DIR$/java script/angular 5/docs/http client/intro.txt" />
         <option value="$PROJECT_DIR$/java script/angular 5/api/ogólnie.txt" />
-        <option value="$PROJECT_DIR$/java script/angular 5/Communicating Between Components" />
         <option value="$PROJECT_DIR$/java script/angular 5/routing.txt" />
-        <option value="$PROJECT_DIR$/java script/angular 5/type script/collections" />
-        <option value="$PROJECT_DIR$/java script/angular 5/architecture/architecture cases" />
         <option value="$PROJECT_DIR$/podsumowanie dnia/16.04.2018" />
+        <option value="$PROJECT_DIR$/java script/angular 5/docs/http client/intro.txt" />
+        <option value="$PROJECT_DIR$/http/main concepts" />
+        <option value="$PROJECT_DIR$/java script/angular 5/architecture/directive" />
+        <option value="$PROJECT_DIR$/java script/angular 5/architecture/architecture cases" />
+        <option value="$PROJECT_DIR$/java script/angular 5/docs/http client/advanced features" />
+        <option value="$PROJECT_DIR$/java script/angular 5/http.txt" />
+        <option value="$PROJECT_DIR$/java script/angular 5/Communicating Between Components" />
+        <option value="$PROJECT_DIR$/java script/angular 5/type script/type_script.txt" />
+        <option value="$PROJECT_DIR$/java script/angular 5/services.txt" />
+        <option value="$PROJECT_DIR$/java script/angular 5/QueryList &amp; ContentChildren.txt" />
+        <option value="$PROJECT_DIR$/java script/angular 5/zastosowania/Dynamically add components to the DOM" />
+        <option value="$PROJECT_DIR$/java script/angular 5/view issues.txt" />
+        <option value="$PROJECT_DIR$/java script/angular 5/zastosowania/Creating models" />
+        <option value="$PROJECT_DIR$/java script/angular 5/events" />
+        <option value="$PROJECT_DIR$/java script/angular 5/core/core.txt" />
+        <option value="$PROJECT_DIR$/java script/angular 2/book/practices.txt" />
+        <option value="$PROJECT_DIR$/java script/angular 5/type script/collections" />
+        <option value="$PROJECT_DIR$/java script/angular 5/type script/functional programming.txt" />
+        <option value="$PROJECT_DIR$/java script/angular 5/type script/models" />
+        <option value="$PROJECT_DIR$/java script/angular 5/zastosowania/Loading data" />
+        <option value="$PROJECT_DIR$/java script/angular 5/zastosowania/Components architecture" />
+        <option value="$PROJECT_DIR$/java script/angular 5/zastosowania/Managing styles in the code" />
+        <option value="$PROJECT_DIR$/java script/angular 5/HostBinding &amp; HostListener" />
+        <option value="$PROJECT_DIR$/java script/angular 5/zastosowania/Communicating Between Components" />
+        <option value="$PROJECT_DIR$/java script/angular 5/template" />
       </list>
     </option>
   </component>
@@ -143,9 +182,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="5" />
-    <option name="y" value="4" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="26" />
+    <option name="y" value="7" />
     <option name="width" value="948" />
     <option name="height" value="1022" />
   </component>
@@ -164,7 +203,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -175,19 +213,38 @@
             <path>
               <item name="programming" type="b2602c69:ProjectViewProjectNode" />
               <item name="programming" type="462c0819:PsiDirectoryNode" />
-              <item name="podsumowanie dnia" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="programming" type="b2602c69:ProjectViewProjectNode" />
+              <item name="programming" type="462c0819:PsiDirectoryNode" />
+              <item name="java script" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="programming" type="b2602c69:ProjectViewProjectNode" />
+              <item name="programming" type="462c0819:PsiDirectoryNode" />
+              <item name="java script" type="462c0819:PsiDirectoryNode" />
+              <item name="angular 5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="programming" type="b2602c69:ProjectViewProjectNode" />
+              <item name="programming" type="462c0819:PsiDirectoryNode" />
+              <item name="java script" type="462c0819:PsiDirectoryNode" />
+              <item name="angular 5" type="462c0819:PsiDirectoryNode" />
+              <item name="zastosowania" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/WebstormProjects/Angular5/MySalesAnaliticsClient" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
@@ -196,6 +253,7 @@
       <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming\java script\angular 5\zastosowania" />
       <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming\java script\angular 5\architecture" />
       <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming\C#" />
       <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming\java script\angular 5\type script" />
@@ -326,31 +384,179 @@
       <workItem from="1523881012249" duration="1199000" />
       <workItem from="1523882843830" duration="667000" />
       <workItem from="1523885219036" duration="599000" />
-      <workItem from="1523887787206" duration="806000" />
+      <workItem from="1523887787206" duration="1428000" />
+      <workItem from="1523944084831" duration="981000" />
+      <workItem from="1523946792494" duration="1959000" />
+      <workItem from="1523948777448" duration="1678000" />
+      <workItem from="1523950916337" duration="598000" />
+      <workItem from="1523954227836" duration="1458000" />
+      <workItem from="1523956429793" duration="1864000" />
+      <workItem from="1523959805073" duration="599000" />
+      <workItem from="1523968301968" duration="1226000" />
+      <workItem from="1523970263194" duration="989000" />
+      <workItem from="1524029689627" duration="800000" />
+      <workItem from="1524031945367" duration="1561000" />
+      <workItem from="1524034852838" duration="599000" />
+      <workItem from="1524036662611" duration="1045000" />
+      <workItem from="1524040649092" duration="1787000" />
+      <workItem from="1524042860807" duration="1786000" />
+      <workItem from="1524044671431" duration="647000" />
+      <workItem from="1524046827484" duration="1787000" />
+      <workItem from="1524048639806" duration="1779000" />
+      <workItem from="1524051783359" duration="598000" />
+      <workItem from="1524053680285" duration="598000" />
+      <workItem from="1524056268072" duration="599000" />
+      <workItem from="1524058177167" duration="599000" />
+      <workItem from="1524065336032" duration="599000" />
+      <workItem from="1524067338691" duration="599000" />
+      <workItem from="1524069312537" duration="599000" />
+      <workItem from="1524072510125" duration="599000" />
+      <workItem from="1524074353473" duration="1464000" />
+      <workItem from="1524076165213" duration="599000" />
+      <workItem from="1524116906220" duration="599000" />
+      <workItem from="1524118912002" duration="1164000" />
+      <workItem from="1524121891117" duration="495000" />
+      <workItem from="1524122561966" duration="589000" />
+      <workItem from="1524127055299" duration="589000" />
+      <workItem from="1524129443464" duration="585000" />
+      <workItem from="1524131249856" duration="597000" />
+      <workItem from="1524136609276" duration="436000" />
+      <workItem from="1524143883641" duration="599000" />
+      <workItem from="1524206578531" duration="1467000" />
+      <workItem from="1524208507121" duration="1428000" />
+      <workItem from="1524210811370" duration="599000" />
+      <workItem from="1524218177742" duration="599000" />
+      <workItem from="1524220251966" duration="604000" />
+      <workItem from="1524223380930" duration="599000" />
+      <workItem from="1524226454433" duration="568000" />
+      <workItem from="1524229076078" duration="599000" />
+      <workItem from="1524230886756" duration="408000" />
+      <workItem from="1524460950964" duration="590000" />
+      <workItem from="1524462749805" duration="599000" />
+      <workItem from="1524464567688" duration="599000" />
+      <workItem from="1524466708163" duration="599000" />
+      <workItem from="1524468558904" duration="599000" />
+      <workItem from="1524470405028" duration="520000" />
+      <workItem from="1524471264779" duration="213000" />
+      <workItem from="1524471689194" duration="599000" />
+      <workItem from="1524473689135" duration="599000" />
+      <workItem from="1524475595337" duration="599000" />
+      <workItem from="1524484620808" duration="599000" />
+      <workItem from="1524486765034" duration="594000" />
+      <workItem from="1524488576016" duration="598000" />
+      <workItem from="1524491329671" duration="599000" />
+      <workItem from="1524493516099" duration="599000" />
+      <workItem from="1524496223282" duration="599000" />
+      <workItem from="1524499522476" duration="600000" />
+      <workItem from="1524547453626" duration="862000" />
+      <workItem from="1524549713489" duration="599000" />
+      <workItem from="1524551923749" duration="599000" />
+      <workItem from="1524554196650" duration="599000" />
+      <workItem from="1524560477059" duration="599000" />
+      <workItem from="1524564749518" duration="394000" />
+      <workItem from="1524569394575" duration="599000" />
+      <workItem from="1524571201208" duration="599000" />
+      <workItem from="1524573018573" duration="599000" />
+      <workItem from="1524574843759" duration="599000" />
+      <workItem from="1524576678163" duration="599000" />
+      <workItem from="1524578569888" duration="599000" />
+      <workItem from="1524637419491" duration="1424000" />
+      <workItem from="1524639227325" duration="599000" />
+      <workItem from="1524641035650" duration="599000" />
+      <workItem from="1524645957895" duration="599000" />
+      <workItem from="1524648198818" duration="599000" />
+      <workItem from="1524652974439" duration="599000" />
+      <workItem from="1524654781638" duration="464000" />
+      <workItem from="1524658111696" duration="599000" />
+      <workItem from="1524660106190" duration="599000" />
+      <workItem from="1524662325674" duration="599000" />
+      <workItem from="1524725007106" duration="625000" />
+      <workItem from="1524726812404" duration="599000" />
+      <workItem from="1524729393910" duration="599000" />
+      <workItem from="1524732978290" duration="1240000" />
+      <workItem from="1524738741194" duration="599000" />
+      <workItem from="1524740551009" duration="1148000" />
+      <workItem from="1524745029466" duration="1416000" />
+      <workItem from="1524746862739" duration="1210000" />
+      <workItem from="1524748762285" duration="599000" />
+      <workItem from="1524825363951" duration="595000" />
+      <workItem from="1524827532085" duration="598000" />
+      <workItem from="1524986548909" duration="599000" />
+      <workItem from="1524988351268" duration="693000" />
+      <workItem from="1524990819137" duration="1483000" />
+      <workItem from="1524992985679" duration="1700000" />
+      <workItem from="1524996893193" duration="1311000" />
+      <workItem from="1524999219790" duration="1563000" />
+      <workItem from="1525001048176" duration="664000" />
+      <workItem from="1525003778910" duration="599000" />
+      <workItem from="1525005582368" duration="679000" />
+      <workItem from="1525007390023" duration="1527000" />
+      <workItem from="1525070077452" duration="928000" />
+      <workItem from="1525072121932" duration="1789000" />
+      <workItem from="1525074026191" duration="1547000" />
+      <workItem from="1525078505474" duration="1363000" />
+      <workItem from="1525080566269" duration="1323000" />
+      <workItem from="1525082960341" duration="599000" />
+      <workItem from="1525085266033" duration="599000" />
+      <workItem from="1525090070091" duration="599000" />
+      <workItem from="1525092332077" duration="599000" />
+      <workItem from="1525094409374" duration="599000" />
+      <workItem from="1525098387368" duration="599000" />
+      <workItem from="1525101118696" duration="599000" />
+      <workItem from="1525243303834" duration="599000" />
+      <workItem from="1525245595290" duration="599000" />
+      <workItem from="1525249665045" duration="599000" />
+      <workItem from="1525252222071" duration="1186000" />
+      <workItem from="1525257422760" duration="1200000" />
+      <workItem from="1525259710239" duration="599000" />
+      <workItem from="1525261847331" duration="779000" />
+      <workItem from="1525263655023" duration="1762000" />
+      <workItem from="1525265759486" duration="1275000" />
+      <workItem from="1525267570784" duration="599000" />
+      <workItem from="1525269378902" duration="599000" />
+      <workItem from="1525330293282" duration="1108000" />
+      <workItem from="1525332565922" duration="599000" />
+      <workItem from="1525334819534" duration="2095000" />
+      <workItem from="1525337216064" duration="1621000" />
+      <workItem from="1525339023671" duration="655000" />
+      <workItem from="1525340854463" duration="2078000" />
+      <workItem from="1525344042586" duration="599000" />
+      <workItem from="1525346391649" duration="1771000" />
+      <workItem from="1525420403033" duration="836000" />
+      <workItem from="1525422870282" duration="1047000" />
+      <workItem from="1525424677448" duration="1617000" />
+      <workItem from="1525426488208" duration="599000" />
+      <workItem from="1525429982059" duration="599000" />
+      <workItem from="1525431786198" duration="599000" />
+      <workItem from="1525434077814" duration="1035000" />
+      <workItem from="1525435888531" duration="599000" />
+      <workItem from="1525438986105" duration="1887000" />
+      <workItem from="1525441113351" duration="1259000" />
+      <workItem from="1525442913211" duration="718000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107688000" />
+    <option name="totallyTimeSpent" value="236766000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13177083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28541666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22481441" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1378579" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -364,8 +570,8 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24284199" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22864583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1378579" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15833333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -564,161 +770,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/api/platform-browser/platform-browser.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="51" lean-forward="false" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/cli.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/powerfull knowledge.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/QueryLIst &amp; COntentChildren.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/common/pipe.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/C#/intro.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/C#/NET/syntax">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/C#/NET/intro.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="13" column="45" lean-forward="false" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/C#/NET/contriollers">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/C#/syntax.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/C#/key words.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/C#/use full functions.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/git/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="5" lean-forward="false" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/git/Pierwsze kroki - Podstawy Git.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/d3/intro">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/C#/NET/views">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="56" lean-forward="false" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/architecture/pipe.txt" />
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/architecture/pipe">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="49" lean-forward="false" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/architecture/directive">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/jquery/usefull methods">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="64" lean-forward="false" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/architecture/service">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/architecture/component.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work ethic.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/git/Wstępna konfiguracja.txt" />
     <entry file="file://$PROJECT_DIR$/work ethic for programming">
       <provider selected="true" editor-type-id="text-editor">
@@ -769,20 +820,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/api/common/common.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/api/common/locales.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java script/angular 5/api/ogólnie.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -794,34 +831,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/type script/type_script.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="204" column="23" lean-forward="false" selection-start-line="204" selection-start-column="23" selection-end-line="204" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/type script/functional programming.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/string operations.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/core/core.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -853,20 +862,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/observable.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2249">
-          <caret line="134" column="42" lean-forward="true" selection-start-line="134" selection-start-column="42" selection-end-line="134" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/docs/http client/intro.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="59" column="39" lean-forward="false" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java script/ogólnie.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -874,42 +869,219 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/routing.txt">
+    <entry file="file://$PROJECT_DIR$/podsumowanie dnia/16.04.2018">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-          <folding />
+        <state relative-caret-position="544">
+          <caret line="32" column="31" lean-forward="false" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/http/main concepts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/docs/http client/intro.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="46" column="35" lean-forward="false" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/architecture/directive">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="99" lean-forward="false" selection-start-line="7" selection-start-column="99" selection-end-line="7" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/docs/http client/advanced features">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/observable.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2278">
+          <caret line="134" column="42" lean-forward="false" selection-start-line="134" selection-start-column="42" selection-end-line="134" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/http.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="34" lean-forward="false" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/string operations.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/server.txt" />
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/zastosowania/Creating models">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/services.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="46" lean-forward="false" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/routing.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="38" lean-forward="false" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/zastosowania/Dynamically add components to the DOM">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="74" lean-forward="false" selection-start-line="2" selection-start-column="74" selection-end-line="2" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/practices.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2686">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/docs/template and data binding/component styles.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/events">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/core/core.txt" />
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/in-memory-data.service.ts" />
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/api/common/locales.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/api/common/common.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 2/book/http.txt" />
+    <entry file="file://$PROJECT_DIR$/java script/angular 2/book/intro.txt" />
+    <entry file="file://$PROJECT_DIR$/java script/angular 2/book/pipes.txt" />
     <entry file="file://$PROJECT_DIR$/java script/angular 5/architecture/architecture cases">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="20" lean-forward="false" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/type script/models">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="66" lean-forward="false" selection-start-line="2" selection-start-column="66" selection-end-line="2" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/type script/functional programming.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="50" column="3" lean-forward="false" selection-start-line="50" selection-start-column="3" selection-end-line="50" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/type script/type_script.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="126" column="27" lean-forward="false" selection-start-line="126" selection-start-column="27" selection-end-line="126" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java script/angular 5/type script/collections">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="238">
+          <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/Communicating Between Components">
+    <entry file="file://$PROJECT_DIR$/java script/angular 2/book/practices.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="85" column="9" lean-forward="false" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/podsumowanie dnia/16.04.2018">
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/zastosowania/Components architecture">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+        <state relative-caret-position="187">
+          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/zastosowania/Managing view items in code.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="24" lean-forward="false" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/zastosowania/Managing styles in the code">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="45" lean-forward="false" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/zastosowania/Communicating Between Components">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="75" column="11" lean-forward="false" selection-start-line="75" selection-start-column="11" selection-end-line="75" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/HostBinding &amp; HostListener">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="3" lean-forward="false" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/zastosowania/Loading data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="6" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/angular 5/template">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="117" column="70" lean-forward="false" selection-start-line="117" selection-start-column="70" selection-end-line="117" selection-end-column="70" />
           <folding />
         </state>
       </provider>

@@ -47,6 +47,7 @@
  - this.http.get<Config>(this.configUrl);
 
  * create a default request and send it using httpClient:
+ - I think that this can provide a progress for a http call
  - const url = `${this.apiUrl}/?${fields}`;
  - const request = new HttpRequest('GET',
  url, {reportProgress: true, headers: this.headers, withCredentials: true});

@@ -34,14 +34,17 @@
     ];
     return {heroes};
   }
-} 
+}
+
+ * the tap() method does not do much, I tried to return limited number of values but couldn't do it!.
+ - I think that this a simple way for logging shit to the console.
 	
  * get the data from given url:
  - the get() method returns data in JSON format, so we have
  to know the type, so then we know to which type we want to parse our data,
  - this.http.get<Hero[]>(this.heroesUrl) 
  
- - with this, even if an error occures, application will work,
+ - with this, even if an error occures, application would work,
  - tap() method gets the data from 
  - this.http.get<Hero[]>(this.heroesUrl)
       .pipe(

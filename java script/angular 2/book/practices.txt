@@ -1,6 +1,7 @@
-﻿ * create all component structure with all basic implementation:
- - ng generate component heroes
- - it also adding this component into a app.module
+﻿ * create all component structure with all basic implementation
+ - it also adding this component into a app.module:
+
+ ng generate component heroes
  
  * The ngOnInit is a lifecycle hook Angular calls ngOnInit
  shortly after creating a component.
@@ -124,7 +125,7 @@ EVENTS:
  - send selected object using (vid):
  // this method emits this object to the world and from this time it can be catched
  // from others components.
- // an even does not have to emit any values, it can be track as asimple event.
+ // an even does not have to emit any values, it can be track as simple event.
  // modyfikatory dostępu nic nie psują
  - this.selectVideo.next(vid);
  

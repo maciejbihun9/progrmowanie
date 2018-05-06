@@ -1,0 +1,8 @@
+HEADERS:
+
+ * origin - this is a name of a server that made a request to the server,
+ this is only a server name from which this request was made
+
+ * Access-Control-Allow-Credentials - this setting informs if response can be seen on the page
+ that requested for a content
+ - values: true/false

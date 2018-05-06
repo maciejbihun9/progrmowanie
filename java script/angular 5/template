@@ -1,0 +1,141 @@
+BASIC:
+
+ * ElementRef - this is a reference to a html item on the page in the code
+
+ * parent divs should have classes declared in normal way, without any directives, where
+ it is a good practice to use directives in html elements that contains angular directives and embelemats
+
+ * each new declared component should be a child of a div to be sure that will show up in next line
+
+ * package component scope using html item:
+ - <th scope="col" *ngFor="let column of state.columns" super-table-header [column]="column" [noHeight]="false"></th>,
+ where super-table-header is a component that is wrapped into a <th> html item,
+ - <div *ngSwitchCase="'TEXT'" super-table-text-filter [filter]="column.def.filter" [column]="column"></div>
+   <div *ngSwitchCase="'ENUM'" super-table-enum-filter [filter]="column.def.filter" [column]="column"></div>
+ - it is a bit common approach,
+
+ * use a component as a directive without @Directive annotation:
+ - set selector name to: [selector-name] instead of selector-name that is normal for components
+
+PACKING COMPONENTS IN HTML:
+
+ * we can package component into different kind of html tags like (div, p, section), but
+ using this approahc we can decide what kind of package we want - BEST
+ - this is used more extensively with smaller components
+ - In this example we can use this as directives
+ - <div *ngIf="!noHeight && !column.def.lockWidth" super-table-resizer [column]="column"></div>
+
+ * using standard approach we are forced to use the same package each time:
+ - <super-table-resizer></super-table-resizer>
+
+:HOST:
+
+ * this we can use in our css files to style all component
+ - using this we can create a shadow around entire component
+ around all elements declared there.
+
+ :host {
+       box-shadow: 3px 3px 6px 3px lightgray;
+       position: relative;
+       display: block;
+       height: 800px;
+     }
+
+NG-CONTAINER, NG-TEMPLATE AND TEMPLATE OUTLET SCOPE
+ The core directives ng-container, ng-template and ngTemplateOutlet all combine together to allow us to create highly dynamical and customizable components.
+
+ * this approach is a bit popular to control what exists on the screen depends on boolean flag values
+
+ * ng-container:
+ - So ng-container is useful when you want to conditionaly append a group of elements
+  (ie using *ngIf="foo") in your application but don't want to wrap them with another element.
+ - we can not use two template bindings in one html element, so we have to create an additional html element to fullfil that,
+ - instead we can use this ng-container to do it,
+ - it can also provide a placeholder for injecting a template dynamically into the page
+
+ zastosowanie:
+ - <div>
+       <ng-container *ngIf="true">
+           <h2>Title</h2>
+           <div>Content</div>
+       </ng-container>
+   </div>
+
+ - we do not have to use any additional html tags, elemetns - this is great!
+ - <ng-container *ngIf="lessons">
+       <div class="lesson" *ngFor="let lesson of lessons">
+           <div class="lesson-detail">
+               {{lesson | json}}
+           </div>
+       </div>
+   </ng-container>
+
+ - we can control what is on the screen depends on specific boolean values
+ - <ng-container *ngIf="lessons; then loaded else loading">
+   </ng-container>
+   <ng-template #loaded>
+     <div>Items loaded!</div>
+   </ng-template>
+   <ng-template #loading>
+     <div>Loading...</div>
+   </ng-template>
+
+ * ng-template:
+ - this is a html tag that we use only to define a template, but when you
+ create a new html feature that sits inside a ng-template then you will find anything on the screen,
+
+ zastosowanie:
+ - the loading template will be on the screen during getting lessons items from the server, but!!!
+ this template won't show up in this declared div element!
+ - this ng-template always has to be in the root of the file,
+ can not be injected into a seperate html element,
+ - <div class="lessons-list" *ngIf="lessons else loading">
+     ...
+   </div>
+
+   <ng-template #loading>
+       <div>Loading...</div>
+   </ng-template>
+
+ * ng-container and ng-template are designed to work together
+
+ * reference ng-template in the code:
+ - this is a perfect resolution for passing this template as a parameter to child components.
+
+ - <ng-template #defaultTabButtons>
+             <button class="tab-button" (click)="login()">
+               {{loginText}}
+             </button>
+             <button class="tab-button" (click)="signUp()">
+               {{signUpText}}
+             </button>
+         </ng-template>
+
+ - @ViewChild('defaultTabButtons')
+   private defaultTabButtonsTpl: TemplateRef<any>;
+
+ * use this as a input component:
+ - <tab-container [headerTemplate]="customTabButtons"></tab-container>
+
+NG-CONTENT:
+
+ * it makes possible to do that:
+ - <wrapper>
+     <counter></counter>
+   </wrapper>
+ - where wrapper contains only:
+ - <ng-content></ng-content>
+
+ * It is very usefull when you create reuseable components that contains different html anytime we use it.
+
+ * A wrapper component have to have this template and different methods that are allowed for different templates:
+ - <ng-content></ng-content>
+
+ * if <ng-content></ng-content> does not have any attributes then it will display all children
+
+ * pick specific child from a wrapper:
+ - <ng-content select="counter"></ng-content>
+
+ * <ng-content> does not “produce” content, it simply projects existing content, so
+ all *ngFor and *ngIf will not work,
+

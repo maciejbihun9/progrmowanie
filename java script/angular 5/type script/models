@@ -1,0 +1,11 @@
+
+ * Do not create simple js objects. Create objects of some type!:
+ - use your coding practices everywhere, adn do it in the same way
+
+ export interface SuperTableOptions {
+   autoHeight?: boolean;
+ }
+
+ options: SuperTableOptions = {
+   autoHeight: true;
+ };

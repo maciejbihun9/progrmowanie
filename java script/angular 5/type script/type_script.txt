@@ -124,9 +124,14 @@ types.
 
  * basic types:
  - boolean,
+ Boolean - use for castings
  - number,
  - string,
- - never - 
+ - any,
+ - type - działa chyba podobnie jak enum, ale ma bardzo okrojone funkcje,
+ wydaje mi się, że posiada tylko i wyłącznie dostepne typy,
+ - Function - do zadeklarowania typu dla normlanej funkcji java scriptu
+ let func: Function = function(){console.log("item")}
  
  * parse string to int:
  - string = '12';

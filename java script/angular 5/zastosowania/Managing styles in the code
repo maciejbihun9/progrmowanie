@@ -1,0 +1,20 @@
+
+ * append class and styles to a html element in the same time:
+ - <input [class.direction]="this.column.isHidden" [style.top]="tabMargin()" (click)="closeColumn()" type="image" src="../../../assets/right_arrow.png" id="hide-column-btn" />
+
+ * append a class with HostBinding:
+ - using this you have to provide scss file for styles, because we can not
+ add a class to a host without that:
+ - this is very common case when developing applications
+
+ - :host {
+  &.simple-class {
+      color: red;
+  }
+ }
+
+ - @HostBinding('class.simple-class')
+ get isMultiClickSelection(): boolean {
+       return true;
+ }
+

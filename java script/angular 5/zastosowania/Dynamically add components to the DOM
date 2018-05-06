@@ -1,0 +1,26 @@
+
+ * description:
+ - this approach adds new comps to the specific place in the html element,
+
+ * create a container for new components on the page where ever you want:
+ - <ng-container #container></ng-container>
+
+ * create a reference to that container in the code:
+ - @ViewChild("container", { read: ViewContainerRef }) container;
+
+ * create a reference to ComponentFactoryResolver in the constructor:
+ - the ComponentFactoryResolver know how to create a new component that why we need it,
+ - constructor (private el: ElementRef, public state: SuperTableState,
+                  // resolver knows how to create a component
+                  private resolver: ComponentFactoryResolver) {
+       this.visibleRows = this.rows;
+     }
+
+ * create a reference to a factory and add new components to container:
+ - add many components with the same factory
+ - const factory = this.resolver.resolveComponentFactory(SimpleComponent);
+       // this method uses this recipe for how to create a component and creates that component
+       // A new comp is added as a sibling of others
+       this.container.createComponent(factory);
+       this.container.createComponent(factory);
+       this.container.createComponent(factory);

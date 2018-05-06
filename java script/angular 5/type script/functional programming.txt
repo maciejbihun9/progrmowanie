@@ -10,3 +10,42 @@
  * in type script they introduced a new approach for working with functions:
  - array.forEach(x => console.log(x)) is the same as ...
  - array.forEach(function(x){console.log(x)})
+
+FUNCTIONAL APPROACH:
+
+ * functional approach example:
+ - typ funkcjonalny dobrze jest deklarować w miejscach ogólnych,
+ np. takim miejsce jest plik models
+
+ export type MathComp = (num1: number, num2: number) => number;
+
+ adder: MathComp = (a, b) => {return a + b};
+ margin: MathComp = (a, b) => {return a * b};
+
+ ngOnInit() {
+        let sum = this.adder.apply(this, [12, 13]);
+        let marginResult = this.margin.apply(this, [5, 6]);
+        console.log(sum);
+        console.log(marginResult);
+      }
+
+ * functional approach example:
+ - strings and numbers sorting will be done with the same parameters, but just
+ with different implementation,
+ - this is a good example of showing how to declare named function interface
+
+ export type SuperTableSorter = (row1Value: any, row2Value: any, row1: Object, row2: Object) => number;
+
+ export interface BuiltInSorters {
+   STRING: SuperTableSorter;
+   NUMBER: SuperTableSorter;
+ }
+
+ export const superTableSorters: BuiltInSorters = {
+   STRING: function(val1: string, val2: string): number {
+     return val1.localeCompare(val2);
+   },
+   NUMBER: function(val1: number, val2: number): number {
+     return val1 - val2;
+   }
+ };
