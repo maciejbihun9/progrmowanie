@@ -2,7 +2,11 @@ ViewChildren decorator (many):
 
  * it is used to make a reference to a list of angular components (list)
 
- * @ViewChildren - decorator will return the component instance,
+ * we can start using it in ngAfterViewInit() function,
+
+ * we can subscribe to changes of this list
+
+ * @ViewChildren - will return all components from the host view,
  
  * @ViewChildren(EmployeeComponent) employers: QueryList<EmployeeComponent>;
 
@@ -55,4 +59,25 @@ ViewContainerRef:
  - constructor() {}
  - get number of embedded items: \private _vcr: ViewContainerRef
  this._vcr.length;
- 
+
+ContentChildren:
+
+ * use it when inject components into another component:
+ - export class App3Component implements AfterContentInit {
+     @ContentChildren(App2Component) appComps: QueryList<App2Component>;
+     ngAfterContentInit(): void {
+       console.log('Number of items in the app.componet.ts');
+       console.log(this.appComps.length);
+       this.appComps.forEach(item => {
+         console.log(item);
+       });
+     }
+   }
+
+  - <app-root3>
+      <app-root2></app-root2>
+      <app-root2></app-root2>
+      <app-root2></app-root2>
+    </app-root3>
+
+ * this approach won't work with normal situations

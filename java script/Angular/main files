@@ -1,0 +1,47 @@
+ENVIRONMENT CONFIGURATION:
+
+ * tsconfig.json:
+ - Typically, you add a TypeScript configuration file called tsconfig.json to your project to guide the compiler as it generates JavaScript files,
+
+ * tsconfig.spec.js:
+ - Typically, you add a TypeScript configuration file called tsconfig.json to your project to guide the compiler as it generates JavaScript files,
+ but this is for test files
+
+ * tslint.json:
+  - contains ts configuration
+  - it contains some configs about the use cases of ts, what sholuld be good or
+  what shouuld be considered as an error
+  - TSLint is an extensible static analysis tool that checks TypeScript code for readability, maintainability, and functionality errors.
+  It is widely supported across modern editors & build systems and can be customized with your own lint rules, configurations, and formatters,
+  - poprostu deklaracja kiedy pokazywać błąd kompllacji kodu
+
+ * d.ts:
+ - natively ts is an extension of js. Because of that js sometimes can not understand this new syntax, because
+ of that we have to declare libs as modules to tell the compiler about our new libs,
+ - use this files to declare libs that you load eg. lodash or others
+
+ - if we have a folder with js files and we want to import that we have to declare that this is a ts module
+ - declare module 'name' - if his root is node_modules
+
+ * protractor.conf.js:
+ - Protractor is an end-to-end test framework for Angular and AngularJS applications.
+ Protractor runs tests against your application running in a real browser, interacting with it as a user would.
+
+ * package-lock.js:
+ - is automatically generated for any operations where npm modifies either the node_modules tree, or package.json.
+  It describes the exact tree that was generated, such that subsequent installs are able to generate identical trees, regardless of intermediate dependency updates.
+
+ * karma - is a config for test files,
+
+ * .angular-cli:
+ - declare under which paths the most important files are declared
+
+ * polyfills:
+ -
+
+DEVELOPMENT:
+
+ * e2e:
+ - files for application testing
+
+

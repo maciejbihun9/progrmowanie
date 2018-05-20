@@ -1,0 +1,31 @@
+
+ * inteligętny algorytm jest to alg, który korzysta z danych do
+ zmiany swojego zachowania,
+
+ * aplikacja posiada dane i podejmuje decyzje na podstawie tych danych,
+ jednak zdarzenia mogą powodować, że zacznie sie zachowywać inaczej bo się uczy,
+
+ * droga dojścia do rozwiązania:
+ zbieranie danych -> parsowanie i oczyszcanie -> zrozumienie danych -> określenie struktruy
+ -> trening modelu -> ocena modelu,
+
+ * "Każda odpowiednio zaawansowana technologia jest nieodróżnialna od magii."
+ 
+ * Zgodnie z naszym doświadczeniem
+ projekty biznesowe, które najczęściej kończą się niepowodzeniem, to te z tak
+ rozbudowanymi celami jak rozwiązanie całego problemu sztucznej inteligencji! Zacznij
+ od czegoś prostego i rozwijaj to, stale oceniając aplikację do momentu, w którym uznasz,
+ że pierwotny problem został rozwiązany,
+ 
+ * Ujmijmy to tak: zawsze zaczynaj od możliwie najprostszego modelu. Następnie staraj się stopniowo
+ uzyskiwać lepsze wyniki, wbudowując w rozwiązanie dodatkowe inteligentne aspekty.
+ Reguła KISS (ang. keep it simple, stupid, czyli nie komplikuj, głupku) jest Twoim
+ przyjacielem i niezmienną zasadą inżynierii oprogramowania,
+
+ * do opisu skteczności działania klasyfikatorów stosuje się głównie wsp. TPR, TNR,
+ - TPR - ilość trafnie wskazanych elementów do całości trafnych,
+ - TNR - ilość błędnie wskazanych w całkowitej ilości błędnych,
+ - FPR - Współczynnik predykcji fałszywie pozytywnych (FPR)
+ - FNR - Współczynnik predykcji fałszywie negatywnych (FNR)
+ 
+ * ustalanie eketywności działania algorytmu: ROC,

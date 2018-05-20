@@ -1,0 +1,35 @@
+1. Grupowanie punktów na podstawie podobieñstw miêdzy nimi,
+
+2. Sprawdzanie, ktre elementy s¹ podobne do siebie,
+
+3. Najczêœciej u¿ywane jest tutaj metoda k-œrednich,
+ * jest oparty na maksymalizacji wartoœci oczekiwanej
+ 
+4. Analiza g³ównych sk³adowych(PCA) 
+ - pozwala oceniæ które dane s¹ przydatne, a które nie.
+ - jest dobra do wstêpnego przetwarzania danych przed klastrowaniem,
+ - 
+ 
+5. B³¹d systematyczny - powstaje podczas konsekwentnego zani¿ania lub zawy¿ania danych przez ankietowanych,
+
+6. Szum - powstaje podczas niestarannoœci 
+
+7. Struktra danych - pozwala na oktreœliæ w jaki sposób dane zosta³y podzielone
+
+8. Trzeba zróciæ du¿¹ uwagê w jaki sposób dane zosta³y zbierane,
+
+9. Nale¿y równie¿ zwróciæ uwagê na fakt taki, ¿e zbieranie danych mo¿e siê odbywaæ przez ró¿ne osoby,
+   które zbieraj¹ je z ró¿na dok³adnoœci co unimo¿liwia generalizowanie,
+   dane mog¹ byæ obarczone równie¿ du¿ym b³êdem z uwagi na fakt zbierania ich w ró¿nych warunkach
+ - zwiêksza to szum oraz b³¹d systematyczny,
+
+10. Wraz z dodawaniem kolejnych atrybutów danych zwiêksza siê przestrzeñ w jakiej w jakiej wystêpuj¹,
+
+ * przez to zwiêksza siê odleg³oœæ miêdzy nimi w przestrzeni, która roœnie do 1. Oznacza to, ¿e wraz z 
+   dodawaniem kolejnych atrybutów coraz trudniej jest wydobyæ podobieñstwa miêdzy elementami.
+ * nael¿y równie¿ zauwarzyæ, ¿e roœnie wtedy drastycznie iloœæ elementów potrzebnych do pomiarów.
+
+11. 
+
+
+

@@ -1,0 +1,4 @@
+
+ * badanie wzoru na rozkład normalny:
+ - pobranie danych o dowolnym rozkładzie,
+ - podstawienie ich do wzoru i wyplotowanie na wykresie,

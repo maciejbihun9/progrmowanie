@@ -1,0 +1,5 @@
+1. Użytkownicy sąodwzorowani na produkty
+
+2. Jest to metoda rozkladu macierzy na mniejsze,
+
+3. Przydatna w przetwarzaniu sygnałów oraz automatyce i robotyce,

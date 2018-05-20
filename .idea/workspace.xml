@@ -2,10 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f341ddb-947e-47ef-9e6e-2652f1fef69b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/java script/angular 5/zastosowania/Run functions outside of angular core" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sql/ms sql/select queries" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sql/ms sql/shortcuts" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/HostBinding &amp; HostListener" afterPath="$PROJECT_DIR$/java script/angular 5/HostBinding &amp; HostListener" />
-      <change beforePath="$PROJECT_DIR$/java script/angular 5/template" afterPath="$PROJECT_DIR$/java script/angular 5/template" />
+      <change beforePath="$PROJECT_DIR$/data mining/Nowy dokument tekstowy.txt" afterPath="$PROJECT_DIR$/java script/Angular/Angular 6/intro" />
+      <change beforePath="$PROJECT_DIR$/data mining/zapytania.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/cli.txt" afterPath="$PROJECT_DIR$/java script/Angular/cli.txt" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/template" afterPath="$PROJECT_DIR$/java script/Angular/template" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/zastosowania/Components architecture" afterPath="$PROJECT_DIR$/java script/Angular/zastosowania/Components architecture" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/zastosowania/Managing view items in code.txt" afterPath="$PROJECT_DIR$/java script/Angular/zastosowania/Managing view items in code.txt" />
+      <change beforePath="$PROJECT_DIR$/java/effective java/enums.txt" afterPath="$PROJECT_DIR$/java/effective java/enums.txt" />
+      <change beforePath="$PROJECT_DIR$/java/effective java/ogólnie java.txt" afterPath="$PROJECT_DIR$/java/effective java/ogólnie java.txt" />
+      <change beforePath="$PROJECT_DIR$/java/java 8/Closure.txt" afterPath="$PROJECT_DIR$/java/java 8/Closure.txt" />
+      <change beforePath="$PROJECT_DIR$/java/java 8/lambdy/lambda with dots.txt" afterPath="$PROJECT_DIR$/java/java 8/lambdy/lambda with dots.txt" />
+      <change beforePath="$PROJECT_DIR$/java/spring/advanced spring.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java/spring/aspect spring.txt" afterPath="$PROJECT_DIR$/java script/Angular/main files" />
+      <change beforePath="$PROJECT_DIR$/java/spring/bean connections.txt" afterPath="$PROJECT_DIR$/java/spring/bean connections.txt" />
+      <change beforePath="$PROJECT_DIR$/java/spring/learn plan.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java/spring/mongo.txt" afterPath="$PROJECT_DIR$/java script/usefull functions" />
+      <change beforePath="$PROJECT_DIR$/java/spring/practice/general.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java/spring/practice/mvc - konfiguracja.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java/spring/practice/spring - konfiguracja projektowa.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java/spring/practice/wyjątki.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java/spring/rest_description.txt" afterPath="$PROJECT_DIR$/java/spring/rest_description.txt" />
+      <change beforePath="$PROJECT_DIR$/java/spring/tests/intro.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/learnings methods/books.txt" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,28 +39,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="template" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java script/Angular/template">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="54" lean-forward="false" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="directive" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java script/Angular/architecture/directive">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -55,21 +55,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/C#/NET/syntax" />
-        <option value="$PROJECT_DIR$/C#/key words.txt" />
-        <option value="$PROJECT_DIR$/C#/use full functions.txt" />
-        <option value="$PROJECT_DIR$/C#/NET/contriollers" />
-        <option value="$PROJECT_DIR$/java script/angular 5/life  cycles.txt" />
-        <option value="$PROJECT_DIR$/git/.gitignore" />
-        <option value="$PROJECT_DIR$/java script/angular 5/api/common/common.txt" />
-        <option value="$PROJECT_DIR$/java script/angular 5/theory.txt" />
-        <option value="$PROJECT_DIR$/C#/NET/views" />
-        <option value="$PROJECT_DIR$/java script/angular 5/architecture/pipe" />
-        <option value="$PROJECT_DIR$/java script/jquery/ogólnie.txt" />
-        <option value="$PROJECT_DIR$/java script/jquery/usefull methods" />
-        <option value="$PROJECT_DIR$/java script/angular 5/architecture/component.txt" />
-        <option value="$PROJECT_DIR$/java script/angular 5/architecture/service" />
-        <option value="$PROJECT_DIR$/work ethic for programming" />
         <option value="$PROJECT_DIR$/git/Wstępna konfiguracja.txt" />
         <option value="$PROJECT_DIR$/git/intro.txt" />
         <option value="$PROJECT_DIR$/git/github_repo_skeleton" />
@@ -106,6 +91,21 @@
         <option value="$PROJECT_DIR$/java script/angular 5/HostBinding &amp; HostListener" />
         <option value="$PROJECT_DIR$/java script/angular 5/template" />
         <option value="$PROJECT_DIR$/java script/Angular/architecture/directive" />
+        <option value="$PROJECT_DIR$/java script/Angular/zastosowania/Components architecture" />
+        <option value="$PROJECT_DIR$/java script/Angular/main files" />
+        <option value="$PROJECT_DIR$/java script/Angular/zastosowania/Managing view items in code.txt" />
+        <option value="$PROJECT_DIR$/java script/Angular/template" />
+        <option value="$PROJECT_DIR$/sql/ms sql/select queries" />
+        <option value="$PROJECT_DIR$/sql/ms sql/shortcuts" />
+        <option value="$PROJECT_DIR$/java/java 8/Closure.txt" />
+        <option value="$PROJECT_DIR$/java/java 8/lambdy/lambda with dots.txt" />
+        <option value="$PROJECT_DIR$/java/spring/bean connections.txt" />
+        <option value="$PROJECT_DIR$/java/spring/rest_description.txt" />
+        <option value="$PROJECT_DIR$/java/effective java/enums.txt" />
+        <option value="$PROJECT_DIR$/java/effective java/ogólnie java.txt" />
+        <option value="$PROJECT_DIR$/java script/usefull functions" />
+        <option value="$PROJECT_DIR$/java script/Angular/cli.txt" />
+        <option value="$PROJECT_DIR$/java script/Angular/Angular 6/intro" />
       </list>
     </option>
   </component>
@@ -116,10 +116,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="26" />
-    <option name="y" value="7" />
-    <option name="width" value="948" />
-    <option name="height" value="1022" />
+    <option name="x" value="875" />
+    <option name="y" value="25" />
+    <option name="width" value="949" />
+    <option name="height" value="995" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -136,6 +136,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -144,40 +145,16 @@
               <item name="programming" type="b2602c69:ProjectViewProjectNode" />
               <item name="programming" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="programming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programming" type="462c0819:PsiDirectoryNode" />
-              <item name="http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="programming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programming" type="462c0819:PsiDirectoryNode" />
-              <item name="java script" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="programming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programming" type="462c0819:PsiDirectoryNode" />
-              <item name="java script" type="462c0819:PsiDirectoryNode" />
-              <item name="Angular" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="programming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programming" type="462c0819:PsiDirectoryNode" />
-              <item name="java script" type="462c0819:PsiDirectoryNode" />
-              <item name="Angular" type="462c0819:PsiDirectoryNode" />
-              <item name="architecture" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/WebstormProjects/Angular5/MySalesAnaliticsClient" />
+    <property name="last_opened_file_path" value="$USER_HOME$/WebstormProjects/Angular5/SalesAnalyticsClient" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
@@ -469,24 +446,97 @@
       <workItem from="1525616749679" duration="668000" />
       <workItem from="1525618987897" duration="1259000" />
       <workItem from="1525621156437" duration="1215000" />
-      <workItem from="1525623582779" duration="770000" />
+      <workItem from="1525623582779" duration="1755000" />
+      <workItem from="1525626071413" duration="1392000" />
+      <workItem from="1525628527757" duration="1233000" />
+      <workItem from="1525677087672" duration="43000" />
+      <workItem from="1525686398336" duration="599000" />
+      <workItem from="1525687978075" duration="1363000" />
+      <workItem from="1525690467599" duration="599000" />
+      <workItem from="1525696439613" duration="694000" />
+      <workItem from="1525698246093" duration="1187000" />
+      <workItem from="1525701504415" duration="1412000" />
+      <workItem from="1525761325619" duration="1817000" />
+      <workItem from="1525763163322" duration="1051000" />
+      <workItem from="1525764970236" duration="599000" />
+      <workItem from="1525769156768" duration="1704000" />
+      <workItem from="1525771338747" duration="599000" />
+      <workItem from="1525773922415" duration="1284000" />
+      <workItem from="1525776595902" duration="599000" />
+      <workItem from="1525778405693" duration="598000" />
+      <workItem from="1525781100632" duration="599000" />
+      <workItem from="1525784042681" duration="598000" />
+      <workItem from="1525786350077" duration="598000" />
+      <workItem from="1525847408333" duration="599000" />
+      <workItem from="1525859157063" duration="599000" />
+      <workItem from="1525868780097" duration="599000" />
+      <workItem from="1525870626320" duration="767000" />
+      <workItem from="1525872438209" duration="599000" />
+      <workItem from="1525932804464" duration="599000" />
+      <workItem from="1525934609894" duration="599000" />
+      <workItem from="1525936563353" duration="599000" />
+      <workItem from="1525938788651" duration="599000" />
+      <workItem from="1525944357370" duration="599000" />
+      <workItem from="1525951190165" duration="599000" />
+      <workItem from="1525952997576" duration="755000" />
+      <workItem from="1525955606966" duration="599000" />
+      <workItem from="1526017969029" duration="589000" />
+      <workItem from="1526019900952" duration="670000" />
+      <workItem from="1526120836136" duration="1076000" />
+      <workItem from="1526122999918" duration="1436000" />
+      <workItem from="1526125841451" duration="1200000" />
+      <workItem from="1526127648726" duration="740000" />
+      <workItem from="1526281732213" duration="599000" />
+      <workItem from="1526378435905" duration="672000" />
+      <workItem from="1526394722048" duration="801000" />
+      <workItem from="1526399679617" duration="1818000" />
+      <workItem from="1526402505226" duration="1123000" />
+      <workItem from="1526404415606" duration="1800000" />
+      <workItem from="1526447490713" duration="1835000" />
+      <workItem from="1526449506616" duration="1531000" />
+      <workItem from="1526451869198" duration="1719000" />
+      <workItem from="1526535580095" duration="612000" />
+      <workItem from="1526537435707" duration="599000" />
+      <workItem from="1526539551737" duration="1257000" />
+      <workItem from="1526541713350" duration="599000" />
+      <workItem from="1526546663367" duration="599000" />
+      <workItem from="1526548901759" duration="599000" />
+      <workItem from="1526550720665" duration="1192000" />
+      <workItem from="1526556457929" duration="807000" />
+      <workItem from="1526558755493" duration="599000" />
+      <workItem from="1526560584167" duration="599000" />
+      <workItem from="1526562400316" duration="598000" />
+      <workItem from="1526625526560" duration="599000" />
+      <workItem from="1526627928748" duration="599000" />
+      <workItem from="1526634520723" duration="599000" />
+      <workItem from="1526636741271" duration="1631000" />
+      <workItem from="1526642987194" duration="599000" />
+      <workItem from="1526645568664" duration="599000" />
+      <workItem from="1526648077766" duration="1147000" />
+      <workItem from="1526652848651" duration="830000" />
+      <workItem from="1526655270664" duration="599000" />
+      <workItem from="1526657082954" duration="598000" />
+      <workItem from="1526658892286" duration="599000" />
+      <workItem from="1526660782628" duration="597000" />
+      <workItem from="1526662590588" duration="599000" />
+      <workItem from="1526811114192" duration="189000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="240678000" />
+    <option name="totallyTimeSpent" value="303795000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.225" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1765625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12301166" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14634146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -529,59 +579,243 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/java script/Angular/interface">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/api/http/http.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/api/ogólnie.txt">
+    <entry file="file://$PROJECT_DIR$/java/java 8/method references.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/api/observables.txt">
+    <entry file="file://$PROJECT_DIR$/java/java 8/iteration example.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/java 8/Closure.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/java 8/[JAVA][Java 8 in Action].m7p">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/architecture/basics.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="48" lean-forward="false" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/intro.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/language service.txt">
+    <entry file="file://$PROJECT_DIR$/java/java 8/lambdy/ogólnie.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/life  cycles.txt">
+    <entry file="file://$PROJECT_DIR$/java/java 8/lambdy/lambda with dots.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+        <state relative-caret-position="128">
+          <caret line="8" column="63" lean-forward="false" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/java 8/lambdy/comparing with lambda.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/java 8/lambdy/couple functions at once.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/spring/advanced spring.txt" />
+    <entry file="file://$PROJECT_DIR$/java/spring/practice/mvc - konfiguracja.txt" />
+    <entry file="file://$PROJECT_DIR$/java/spring/practice/general.txt" />
+    <entry file="file://$PROJECT_DIR$/java/spring/practice/spring - konfiguracja projektowa.txt" />
+    <entry file="file://$PROJECT_DIR$/java/spring/practice/wyjątki.txt" />
+    <entry file="file://$PROJECT_DIR$/java/spring/tests/intro.txt" />
+    <entry file="file://$PROJECT_DIR$/java/spring/aspect spring.txt" />
+    <entry file="file://$PROJECT_DIR$/java/spring/bean connections.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/spring/advanced bean connections.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-902">
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/spring/integracja w springu.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/spring/learn plan.txt" />
+    <entry file="file://$PROJECT_DIR$/java/spring/mongo.txt" />
+    <entry file="file://$PROJECT_DIR$/java/spring/Obsługa komunikatów przy pomocy Websocket i STOMP.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/spring/rest_description.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="123" column="31" lean-forward="false" selection-start-line="123" selection-start-column="31" selection-end-line="123" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/spring/rest_features.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/spring/spring cachowanie.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/spring/spring into action.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/spring/spring jdbc.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-987">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/spring/spring nosql.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/spring/spring w sieci.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/spring/spring web flow.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/spring/spring zabezpieczanie metod.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/effective java/tools/different.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/effective java/annotations.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/effective java/classes and interfaces.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="157" column="36" lean-forward="true" selection-start-line="157" selection-start-column="36" selection-end-line="157" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/effective java/Creating and Destroying Objects.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-807">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/effective java/design patterns.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="41" column="41" lean-forward="true" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/effective java/enum.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/effective java/enums.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="29" column="41" lean-forward="false" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/effective java/garbage collector.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/effective java/general programming.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3323">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/effective java/serialization.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="30" column="42" lean-forward="false" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/kiedy tworzyć swój wyjątek.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/przemyślenia.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -592,269 +826,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/podsumowanie dnia/16.04.2018">
+    <entry file="file://$PROJECT_DIR$/java/hashcode() oraz equals().txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="31" lean-forward="false" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+        <state relative-caret-position="204">
+          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/http/main concepts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/docs/http client/intro.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="46" column="35" lean-forward="false" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/docs/http client/advanced features">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/observable.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2278">
-          <caret line="134" column="42" lean-forward="false" selection-start-line="134" selection-start-column="42" selection-end-line="134" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/http.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="34" lean-forward="false" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/string operations.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/server.txt" />
-    <entry file="file://$PROJECT_DIR$/java script/Angular/zastosowania/Creating models">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/services.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="46" lean-forward="false" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/routing.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="38" lean-forward="false" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/zastosowania/Dynamically add components to the DOM">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="74" lean-forward="false" selection-start-line="2" selection-start-column="74" selection-end-line="2" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/practices.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2686">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/docs/template and data binding/component styles.txt">
+    <entry file="file://$PROJECT_DIR$/java/effective java/ogólnie java.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="13" column="47" lean-forward="false" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/events">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/core/core.txt" />
-    <entry file="file://$PROJECT_DIR$/java script/angular 5/angular_5_hero_tutorial/src/app/in-memory-data.service.ts" />
-    <entry file="file://$PROJECT_DIR$/java script/Angular/api/common/locales.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/api/common/common.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 2/book/http.txt" />
-    <entry file="file://$PROJECT_DIR$/java script/angular 2/book/intro.txt" />
-    <entry file="file://$PROJECT_DIR$/java script/angular 2/book/pipes.txt" />
-    <entry file="file://$PROJECT_DIR$/java script/Angular/architecture/architecture cases">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/type script/models">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="66" lean-forward="false" selection-start-line="2" selection-start-column="66" selection-end-line="2" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/type script/functional programming.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="3" lean-forward="false" selection-start-line="50" selection-start-column="3" selection-end-line="50" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/type script/type_script.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="126" column="27" lean-forward="false" selection-start-line="126" selection-start-column="27" selection-end-line="126" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/type script/collections">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 2/book/practices.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="85" column="9" lean-forward="false" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/zastosowania/Components architecture">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/Angular 6/intro">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/zastosowania/Managing view items in code.txt">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/cli.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" column="24" lean-forward="false" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/zastosowania/Managing styles in the code">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="45" lean-forward="false" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/zastosowania/Communicating Between Components">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="75" column="11" lean-forward="false" selection-start-line="75" selection-start-column="11" selection-end-line="75" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/zastosowania/Loading data">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="6" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/HostBinding &amp; HostListener">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="68" lean-forward="false" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
+        <state relative-caret-position="136">
+          <caret line="8" column="51" lean-forward="false" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 2/youtube/typeScript.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-303">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 2/youtube/routing.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 2/youtube/life cycle.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 2/youtube/intro.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/angular 2/youtube/events.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/zastosowania/Run functions outside of angular core">
+    <entry file="file://$PROJECT_DIR$/java script/usefull functions">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/template">
+    <entry file="file://$PROJECT_DIR$/data mining/Nowy dokument tekstowy.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="54" lean-forward="false" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/architecture/directive">
+    <entry file="file://$PROJECT_DIR$/data mining/zapytania.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnings methods/books.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

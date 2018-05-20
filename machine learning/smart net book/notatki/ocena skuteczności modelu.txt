@@ -1,0 +1,4 @@
+
+ * obliczanie pola pod krzywą ROC, z tym, że ta krzywa może byc nawet linią
+ prostą prostopadłą do wykresu,
+ 

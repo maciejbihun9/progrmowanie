@@ -1,0 +1,14 @@
+
+ * stosowany, gdy zmienne objaśniające są skorelowane z czynnikiem losowym,
+ wtedy metoda najmniejszych kwadratów może dać stronnicze wyniki,
+ 
+ * umożliwiając badaczowi odkrycie przyczynowego 
+ wpływu zmiennej objaśniającej na zmienną zależną,
+ 
+ * instrument nie może być zależny od błędu losowego,
+
+ zastosowanie:
+ * gdy są pominięte zmienne, które wpływają 
+ zarówno na zmienne zależne, jak i niezależne,
+
+ *  

@@ -1,0 +1,50 @@
+
+ * atrybut, cecha - parametr opisujący dane zjawisko,
+
+ * struktura - może to być na przykład jakaś struktura danych,
+ sposób upożądkowania danych na komputerze,
+ 
+ * Modele nieparametryczne – w identyfikacji procesów,
+ modele nie posiadające struktury, którą trzeba by identyfikować.
+ Ponieważ etap identyfikacji struktury modelu parametrycznego jest
+ często bardzo skomplikowany, modele nieparametryczne stosuje się
+ bardzo często na wstępnych etapach identyfikacji,
+ dla uzyskania podstawowej wiedzy o badanym systemie,
+ 
+ * konwergencja - zbieżność,
+ 
+ * endogeniczność - O parametrze bądź zmiennej mówi się, że jest endogeniczna, jeśli zachodzi 
+ korelacja między tym parametrem/tą zmienną a błędem losowym,
+ 
+ * 
+ 
+ * W modelu
+	y = Xβ + ε
+	zmiennymi egzogenicznymi nazywamy zmienne, które nie są
+	skorelowane ze składnikiem losowym,
+	
+	zmiennymi endogenicznymi nazywamy zmienne, które są
+	skorelowane ze składnikiem losowym,
+ 
+ * zmienna zależna - reprezentuje wynik eksperymentu, którego zmienność jest badana,
+ 
+ * zmienna niezależna - jest to zmienna wejściowa, nad którą kontrolę posiada
+ osoba, która wykonuje eksperyment,
+ 
+ * błąd systematyczny:
+ - powstaje, jeśli ludzie podają np. cały czas zaniżone wartości
+ 
+ * szum:
+ - powstaje, gdy podają te wartości nieprecyzyjnie, raz za wysoko, raz za nisko,
+ 
+ * przekleństwo wymiarów:
+ - Wraz z rosnącą liczbą wymiarów stosunek odległości minimalnej
+ do maksymalnej między punktami dąży do 1, 
+ także dla bardzo dużej ilość atrybutów, dodanie
+ kolejnego nie zmieni końcowego wyniku. 
+ Stosunek min do max bedzie rósł coraz słabiej,
+ dlatego różnice nie będą zauważalne,
+ - kiedy pumkty są zbyt gęsto upakowane, to trudo ustalić podobieństwo,
+ 
+ * macierz kowariancji:
+ - macierz wariancji, czyli odstępstw od średniej dla poszczególnych cech,

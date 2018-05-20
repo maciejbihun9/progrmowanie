@@ -1,0 +1,11 @@
+ROZKŁAD NORMALNY:
+
+ * wzór na rozkład normalny jest tylko do weryfikowania, czy dany rozkład
+ jest podobny do normlanego,
+
+ * weryfikowanie jak blisko dany rozkład jest do normalnego:
+ - oliczenie wariancji oraz średniej danego rozkładu,
+ - podzielenie histogramu rzeczywstych danych przez ilość elementów, aby dostać prwadopodobieństwo zdarzenia,
+ - podstawianie każdego elementu z kolei do wzoru i porównywanie jak
+ bardzo się różni z rzeczywistym,
+ 

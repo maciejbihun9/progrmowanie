@@ -1,0 +1,4 @@
+
+ * zamienne objaśniające skorelowane z czynnikiem losowym,
+ - GMM,
+ - metoda zmiennych instrumentalnych

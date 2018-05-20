@@ -1,0 +1,6 @@
+1. Algorytm wykrywa ukryte gatunki danego produktu. Jeœli oka¿e siê, ¿e dany user lubi
+   dany gatunek produktów, to dany produkt mo¿e zostaæ mu zarekomendowany z definicji.
+
+2. Wg. algorytmu zmiennych ukrytych nale¿y uwzglêdniæ zmienne ukrytew macierzy u¿ytkowników i filmów,
+
+3. 

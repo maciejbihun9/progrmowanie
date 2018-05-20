@@ -1,0 +1,12 @@
+NEW FEATURES:
+
+ * Angular elements will give us the ability to use our
+ components in other envs (like jquery or VueJS app)
+ - we will have the possibility to add Angular components to already
+ existing applications written in different frameworks
+
+ zastosowanie:
+ - take great progress bar from Angular 6 to old environment written in react!!
+
+ * Rendering engine: Ivy:
+ - app will be smaller

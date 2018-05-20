@@ -1,34 +1,33 @@
 
- * w java 8 mo¿liwe jest przekazanie jako parametr metody konkretnej klasy
+ * w java 8 moï¿½liwe jest przekazanie jako parametr metody konkretnej klasy
 
- * to jest taki shortcut dla zajebiœcie krótkich funkcji!, czyli nie do wielolinijkowych,
+ * to jest taki shortcut dla zajebiï¿½cie krï¿½tkich funkcji!, czyli nie do wielolinijkowych,
 tylko do jednolinjkowych 
 
- * moim zdaniem troche zaciemnia sytuacje, ale do krótkich funkcji mo¿na tego u¿yæ,
+ * moim zdaniem troche zaciemnia sytuacje, ale do krï¿½tkich funkcji moï¿½na tego uï¿½yï¿½,
 
- * jest to œwietne rozwi¹zanie do tworzenia sortowania obiektów
+ * jest to ï¿½wietne rozwiï¿½zanie do tworzenia sortowania obiektï¿½w
 
+ - (Apple p) -> {p.getWeight()} - moï¿½na zastï¿½piï¿½ Apple::getWeight
+ - nawiasy nie sï¿½ potrzebne do metoda nie zostaje wywoï¿½ana.
 
- - (Apple p) -> {p.getWeight()} - mo¿na zast¹piæ Apple::getWeight
- - nawiasy nie s¹ potrzebne do metoda nie zostaje wywo³ana.
+ * umoï¿½liwia to pisanie mniejszej iloï¿½ci kodu, ale moï¿½na to wykorzystaï¿½ tylko dla jendej metody
 
- * umo¿liwia to pisanie mniejszej iloœci kodu, ale mo¿na to wykorzystaæ tylko dla jendej metody
+ * przykï¿½ady;
+ - (args) -> ClassName.staticMethod(args) moï¿½na zamieniï¿½ na ClassName::staticMethod
+ - wiadomo tutaj, ï¿½e ta metoda bï¿½dzie przyjmowaï¿½a tylko jeden parametr, ale jest to klasa
+   statyczna wiï¿½c trzeba byï¿½o wykazaï¿½ jak to wyglï¿½da.
 
- * przyk³ady;
- - (args) -> ClassName.staticMethod(args) mo¿na zamieniæ na ClassName::staticMethod
- - wiadomo tutaj, ¿e ta metoda bêdzie przyjmowa³a tylko jeden parametr, ale jest to klasa
-   statyczna wiêc trzeba by³o wykazaæ jak to wygl¹da.
+ - (arg0, rest) -> arg0.instanceMethod(rest) moï¿½na zamieniï¿½ na ClassName::instanceMethod.
+ - przykï¿½ad wywoï¿½ywania metody z argumentu, gdzie drugi jest parametrem metody.
 
- - (arg0, rest) -> arg0.instanceMethod(rest) mo¿na zamieniæ na ClassName::instanceMethod.
- - przyk³ad wywo³ywania metody z argumentu, gdzie drugi jest parametrem metody.
-
- - () -> new Apple() mo¿na zamieniæ na Apple::new;
+ - () -> new Apple() moï¿½na zamieniï¿½ na Apple::new;
 
  * utworzenie obiektu Apple poprzez podanie parametru konstruktora
  - Function<integer, Apple> createApple = Apple::new  =  (weight) -> new Apple(weight);
  - Apple a = createApple.apply(110)
 
- * tworzenie obiektu dla ka¿dego elementu listy:
+ * tworzenie obiektu dla kaï¿½dego elementu listy:
 List<Integer> weights = Arrays.asList(2,3,1,4);
 List<Apple> apples = map(weights, Apple:new);
 

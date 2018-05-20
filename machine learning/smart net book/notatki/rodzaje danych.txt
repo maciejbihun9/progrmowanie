@@ -1,0 +1,6 @@
+
+ * dane panelowe:
+ - opisują pewną zbiorowość,
+ - są to dane, które uwzględniają dane rozłozone w czasie dla tej samej
+ jednostki
+ np. time-series, dane giełdowe,

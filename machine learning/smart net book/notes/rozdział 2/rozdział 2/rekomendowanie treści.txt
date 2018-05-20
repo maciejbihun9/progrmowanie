@@ -1,0 +1,4 @@
+1. Spróbuj zrozumieæ naturê danych,
+2. Co to znaczy, ¿e jakieœ elementy s¹do siebie podobne,
+3. Stosuj podobieñstwa Jackarda wraz z odleg³oœci¹ euklidesow¹.
+ * razem mog¹ daæ zadowalajace wyniki,

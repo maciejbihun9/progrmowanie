@@ -120,6 +120,44 @@ NG-CONTAINER, NG-TEMPLATE AND TEMPLATE OUTLET SCOPE
  * use this as a input component:
  - <tab-container [headerTemplate]="customTabButtons"></tab-container>
 
+ * create generic directive:
+ - you can create generic directive that is able to get input params and templateRef
+ - templateRef will be a template and input params will be there for the possibility of
+ managing those items,
+ @Directive({ selector: 'ngx-datatable-column' })
+ export class DataTableColumnDirective {
+
+   @Input() name: string;
+   @Input() prop: TableColumnProp;
+   @Input() frozenLeft: any;
+   @Input() frozenRight: any;
+   @Input() flexGrow: number;
+   @Input() resizeable: boolean;
+   @Input() comparator: any;
+   @Input() pipe: any;
+   @Input() sortable: boolean;
+   @Input() draggable: boolean;
+   @Input() canAutoResize: boolean;
+   @Input() minWidth: number;
+   @Input() width: number;
+   @Input() maxWidth: number;
+   @Input() checkboxable: boolean;
+   @Input() headerCheckboxable: boolean;
+   @Input() headerClass: string | ((data: any) => string|any);
+   @Input() cellClass: string | ((data: any) => string|any);
+   @Input() summaryFunc: (cells: any[]) => any;
+   @Input() summaryTemplate: TemplateRef<any>;
+
+   @Input()
+   @ContentChild(DataTableColumnCellDirective, { read: TemplateRef })
+   cellTemplate: TemplateRef<any>;
+
+   @Input()
+   @ContentChild(DataTableColumnHeaderDirective, { read: TemplateRef })
+   headerTemplate: TemplateRef<any>;
+
+ }
+
 NG-CONTENT:
 
  * it makes possible to do that:
@@ -141,4 +179,3 @@ NG-CONTENT:
 
  * <ng-content> does not “produce” content, it simply projects existing content, so
  all *ngFor and *ngIf will not work,
-

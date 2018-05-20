@@ -1,0 +1,23 @@
+1. Informacje zbierane s¹podczas wype³niania kwestionariuszy lub oceniania zavhowania 
+   u¿ytkowników podczas interakcji z sieci¹.
+
+ * moim zdaniem ta druga metoda jest lepsza. Lepiej oddaje profil u¿ytkownika.
+
+2. Filtrowanie kolaboratywne bazuje na tym, ¿e rekomendujemy u¿ytkownikom te treœci,
+   które s¹ lubiane przez ludzi im podobnym.
+
+ * Maj¹c produkty w naszym systemie chcemy wiedzieæ jak nasi u¿ytkownicy je opisuj¹,
+
+ * U¿ytkownik opisuje nasze produkty lub nie,
+
+ * ka¿dy produkt posiada dane na temat usera, któy go opisa³,
+
+ * Kiedy przychodzi nowy user, to najpierw porównujemy go z pozosta³ymi, a potem
+   oceny pozosta³ych na temat produktu, które nie widzia³ s¹ mno¿one przez podobieñstwo,
+   wtedy mo¿na ustalic jak bardzo mo¿e siê spodobaæ komus daney product. 
+ 
+* najbardziej podobni u¿ytkownicy wp³ywaj¹ na prognozy ocen.
+
+
+3. Pamiêtaj: "Poka¿ mi swoich przyjació³, a ja powiem ci kim jesteœ!!!"
+

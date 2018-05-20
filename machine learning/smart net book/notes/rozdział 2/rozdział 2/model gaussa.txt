@@ -1,0 +1,10 @@
+1. Jest to metoda s³u¿¹ca maksymalizacji wartoœci oczekiwanej,
+
+2. Jest metod¹ nieparametryczn¹,
+
+3. Metoda ta modeluje kowariancjê,
+
+4. Wraz ze wzrostem iloœci elementów gêstoœæ prawdopodobieñstwa rizk³adu zbliza siê do rozk³adu normalnego,
+   zawsze jednak istnieje element niepewnoœci,
+
+5. 

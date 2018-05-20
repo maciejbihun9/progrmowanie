@@ -1,0 +1,17 @@
+
+ * nie zawsze musi opierać się na budowaniu skomplikowanego modelu,
+ a na dodawaniu dodatkowych danych,
+ 
+ * ustalenie możliwości skalowalności na samym początku projektowania aplikacji
+ - podział danych na małe grupy i odpalenie równolegle,
+ 
+ * odpowiednie dobranie algorytmu do problemu,
+ 
+ * celem jest generalizacja wyników,
+ 
+ * w konkursie netflixa zbudowano model z wielu modeli z 100 elementami uczącymi,
+ 
+ * sprawdzenie pochodzenia oraz dokładnoście posiadanych danych,
+ 
+ 
+ 

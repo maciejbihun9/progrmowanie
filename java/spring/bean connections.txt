@@ -1,57 +1,57 @@
-1. W Springu obiekty nie odpowiadaj¹ za odnajdywanie albo tworzenie innych obiektów,
-potrzebnych im do dzia³ania. Zamiast tego referencje do obiektów, z którymi
-wspó³pracuj¹, otrzymuj¹ przez kontener.
+1. W Springu obiekty nie odpowiadajï¿½ za odnajdywanie albo tworzenie innych obiektï¿½w,
+potrzebnych im do dziaï¿½ania. Zamiast tego referencje do obiektï¿½w, z ktï¿½rymi
+wspï¿½pracujï¿½, otrzymujï¿½ przez kontener.
 
 2. kontener Springa odpowiada za tworzenie
-komponentów w aplikacji i koordynuje wzajemne relacje pomiêdzy obiektami z u¿yciem
-mechanizmu wstrzykiwania zale¿noœci.
+komponentï¿½w w aplikacji i koordynuje wzajemne relacje pomiï¿½dzy obiektami z uï¿½yciem
+mechanizmu wstrzykiwania zaleï¿½noï¿½ci.
 
-3. Tworzenie powi¹zañ jest kwesti¹ gustu, tak¿e nie ma znaczenia
-czy wybieramy metodê wi¹zañania na pomoc¹ xml czy javy.
+3. Tworzenie powiï¿½zaï¿½ jest kwestiï¿½ gustu, takï¿½e nie ma znaczenia
+czy wybieramy metodï¿½ wiï¿½zaï¿½ania na pomocï¿½ xml czy javy.
 
-4. Istniej¹ trzy metody powi¹zania komponentów, ale najbardziej zalecana jest
-konfiguracja automatyczna, bo im mniej zadeklarujesz w sposób jawny tym lepiej.
+4. Istniejï¿½ trzy metody powiï¿½zania komponentï¿½w, ale najbardziej zalecana jest
+konfiguracja automatyczna, bo im mniej zadeklarujesz w sposï¿½b jawny tym lepiej.
 
-5. Automatyczne wi¹zanie komponentów w Springu realizowane jest za pomoc¹ dwóch mechanizmów:
-* Skanowania komponentów — Spring automatycznie wyszukuje komponenty,
-które maj¹ zostaæ utworzone w kontekœcie aplikacji.
-* Autowi¹zania (ang. Autowiring) — Spring w sposób automatyczny rozwi¹zuje
-zale¿noœci komponentów. 
+5. Automatyczne wiï¿½zanie komponentï¿½w w Springu realizowane jest za pomocï¿½ dwï¿½ch mechanizmï¿½w:
+* Skanowania komponentï¿½w ï¿½ Spring automatycznie wyszukuje komponenty,
+ktï¿½re majï¿½ zostaï¿½ utworzone w kontekï¿½cie aplikacji.
+* Autowiï¿½zania (ang. Autowiring) ï¿½ Spring w sposï¿½b automatyczny rozwiï¿½zuje
+zaleï¿½noï¿½ci komponentï¿½w. 
 
-6. Nie musimy konfigurowaæ komponentu w sposób jawny. Dziêki u¿yciu 
+6. Nie musimy konfigurowaï¿½ komponentu w sposï¿½b jawny. Dziï¿½ki uï¿½yciu 
 adnotacji @Component Spring zrobi to za nas automatycznie.
 
-7. Nale¿y pamiêtaæ o tym, ¿e skanowanie komponentów nie jest domyœlnie w³¹czone.
-Wci¹¿ musimy w sposób jawny utworzyæ konfiguracjê, która w³¹czy mechanizm wyszukiwania
-klas opatrzonych adnotacj¹ @Component i utworzy komponenty dla tych klas.
+7. Naleï¿½y pamiï¿½taï¿½ o tym, ï¿½e skanowanie komponentï¿½w nie jest domyï¿½lnie wï¿½ï¿½czone.
+Wciï¿½ï¿½ musimy w sposï¿½b jawny utworzyï¿½ konfiguracjï¿½, ktï¿½ra wï¿½ï¿½czy mechanizm wyszukiwania
+klas opatrzonych adnotacjï¿½ @Component i utworzy komponenty dla tych klas.
 
-8. Jeœli do adnotacji @ComponentScan nie przekazano ¿adnych dodatkowych ustawieñ
-konfiguracji, domyœlnym pakietem, w którym bêd¹ skanowane komponenty, jest pakiet
+8. Jeï¿½li do adnotacji @ComponentScan nie przekazano ï¿½adnych dodatkowych ustawieï¿½
+konfiguracji, domyï¿½lnym pakietem, w ktï¿½rym bï¿½dï¿½ skanowane komponenty, jest pakiet
 klasy konfiguracji.
 
-9. Dodanie jednej linii zawieraj¹cej adnotacjê
-@ComponentScan w zamian za nieograniczon¹ liczbê automatycznie tworzonych komponentów
-to bez w¹tpienia œwietny interes.
+9. Dodanie jednej linii zawierajï¿½cej adnotacjï¿½
+@ComponentScan w zamian za nieograniczonï¿½ liczbï¿½ automatycznie tworzonych komponentï¿½w
+to bez wï¿½tpienia ï¿½wietny interes.
 
-10. Mówi¹c w skrócie, autowi¹zaniem nazywamy mechanizm, za pomoc¹ którego Spring
-w sposób automatyczny rozwi¹zuje zale¿noœci komponentu z u¿yciem komponentów
-wyszukanych w kontekœcie aplikacji. Do oznaczenia obiektów poddanych autowi¹zaniu
-mo¿emy wykorzystaæ adnotacjê @Autowired.
+10. Mï¿½wiï¿½c w skrï¿½cie, autowiï¿½zaniem nazywamy mechanizm, za pomocï¿½ ktï¿½rego Spring
+w sposï¿½b automatyczny rozwiï¿½zuje zaleï¿½noï¿½ci komponentu z uï¿½yciem komponentï¿½w
+wyszukanych w kontekï¿½cie aplikacji. Do oznaczenia obiektï¿½w poddanych autowiï¿½zaniu
+moï¿½emy wykorzystaï¿½ adnotacjï¿½ @Autowired.
 
-11. Niezale¿nie od tego, czy skorzystamy z konstruktora, metody typu setter, czy dowolnej
-innej metody, Spring spróbuje spe³niæ zale¿noœæ wyra¿on¹ za pomoc¹ parametrów tej
-metody. Jeœli zale¿noœæ ta spe³niona jest przez tylko jeden komponent, to w³aœnie on
+11. Niezaleï¿½nie od tego, czy skorzystamy z konstruktora, metody typu setter, czy dowolnej
+innej metody, Spring sprï¿½buje speï¿½niï¿½ zaleï¿½noï¿½ï¿½ wyraï¿½onï¿½ za pomocï¿½ parametrï¿½w tej
+metody. Jeï¿½li zaleï¿½noï¿½ï¿½ ta speï¿½niona jest przez tylko jeden komponent, to wï¿½aï¿½nie on
 zostanie wykorzystany.
 
-12. @Autowired jest adnotacj¹ dostêpn¹ tylko w Springu, tak¿e uzale¿nia nasz kod od springa
+12. @Autowired jest adnotacjï¿½ dostï¿½pnï¿½ tylko w Springu, takï¿½e uzaleï¿½nia nasz kod od springa
 
-13. Wszystkie biny mo¿na zadeklarowaæ w jednym pliku z klas¹ o adnotacji @configuration
- z adnotacj¹ @bean.
+13. Wszystkie biny moï¿½na zadeklarowaï¿½ w jednym pliku z klasï¿½ o adnotacji @configuration
+ z adnotacjï¿½ @bean.
 
-14. W metodzie zwracaj¹cej bean w klasie konfiguracyjnej mo¿na zwracaæ obiekty ró¿nych klas:
+14. W metodzie zwracajï¿½cej bean w klasie konfiguracyjnej moï¿½na zwracaï¿½ obiekty rï¿½nych klas:
 THIS IS GREAT!!!
 
- @Bean
+@Bean
 public CompactDisc randomBeatlesCD() {
 int choice = (int) Math.floor(Math.random() * 4);
 if (choice == 0) {
@@ -65,27 +65,27 @@ return new Revolver();
 }
 }
 
- * stwarza to dobre warunki do warunkowego zwracania obiektów
-podtypów w zale¿noœci od ustalonego warunku,
+ * stwarza to dobre warunki do warunkowego zwracania obiektï¿½w
+podtypï¿½w w zaleï¿½noï¿½ci od ustalonego warunku,
 
- * na przyk³ad jeœli klient jest kobiet¹ to mo¿na zwróciæ bean bardziej dostosowany do jej preferencji,
+ * na przykï¿½ad jeï¿½li klient jest kobietï¿½ to moï¿½na zwrï¿½ciï¿½ bean bardziej dostosowany do jej preferencji,
 
-15. Metoda zwracaj¹ca bean, podczas ka¿dego kolejnego wywo³ania zwraca ten sam bean.
+15. Metoda zwracajï¿½ca bean, podczas kaï¿½dego kolejnego wywoï¿½ania zwraca ten sam bean.
 
 @Bean
 public CDPlayer cdPlayer() {
 	return new CDPlayer(sgtPeppers());
 }
 
-16. W springu biny s¹ ZAWSZE singletonami!!!:
+16. W springu biny sï¿½ ZAWSZE singletonami!!!:
 
-17. W przypadku oprogramowania sytuacja jest inna. Nie ma powodu, dla którego nie
-mo¿emy u¿yæ tej samej instancji SgtPeppers w dowolnej liczbie komponentów. Wszystkie
-komponenty w Springu s¹ domyœlnie singletonami i nie musimy duplikowaæ instancji,
-¿eby móc spe³niæ zale¿noœci drugiego komponentu CDPlayer. Spring przechwytuje
-wywo³anie metody sgtPeppers() i upewnia siê, ¿e zwrócony zostanie komponent powsta³y
-w wyniku wywo³ania tej metody przez Springa w trakcie tworzenia komponentu CompactDisc. 
-W rezultacie oba komponenty typu CDPlayer otrzymaj¹ tê sam¹ instancjê
+17. W przypadku oprogramowania sytuacja jest inna. Nie ma powodu, dla ktï¿½rego nie
+moï¿½emy uï¿½yï¿½ tej samej instancji SgtPeppers w dowolnej liczbie komponentï¿½w. Wszystkie
+komponenty w Springu sï¿½ domyï¿½lnie singletonami i nie musimy duplikowaï¿½ instancji,
+ï¿½eby mï¿½c speï¿½niï¿½ zaleï¿½noï¿½ci drugiego komponentu CDPlayer. Spring przechwytuje
+wywoï¿½anie metody sgtPeppers() i upewnia siï¿½, ï¿½e zwrï¿½cony zostanie komponent powstaï¿½y
+w wyniku wywoï¿½ania tej metody przez Springa w trakcie tworzenia komponentu CompactDisc. 
+W rezultacie oba komponenty typu CDPlayer otrzymajï¿½ tï¿½ samï¿½ instancjï¿½
 SgtPeppers.
 
 @Bean

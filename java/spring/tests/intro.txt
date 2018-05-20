@@ -1,2 +1,0 @@
-
- * inject components in constructors, because with is you can easly test it,

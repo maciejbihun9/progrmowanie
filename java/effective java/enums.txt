@@ -27,7 +27,7 @@
  
  * using string is much more error pronce that just using simple enum types,
  
- * in java enum types are just full-flaged classes,
+ * in java enum types are just full-flagged classes,
  
  * they do not have any accessable constructors, they can not be extended,
  - actually the do have a constructor field, but it is essentially private and

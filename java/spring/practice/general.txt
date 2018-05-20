@@ -1,8 +1,0 @@
-
- * count how many calls have been to the specified resource
- in the controller method.
- - private final AtomicLong counter = new AtomicLong();
- - counter.incrementAndGet()
- - this is a asynchromus counter item,
- 
- 

@@ -1,0 +1,14 @@
+1. Dane powinny byæ w granicach od 0 do 1:
+
+ * jest to wskazane, poniwa¿ pozwala na wyra¿enie prawdopodobieñstwa jakiegoœ zdarzenia.
+
+ * w tym przypadku ³atwo jest u¿ywaæ funkcji sigmoidalnej, która lepiej odzwierciedla dany problem.
+
+2. G³ówna ró¿nica miêdzy regresj¹ liniow¹ jest to, ¿e ta regresja logistyczna daje nam
+   logarytm szans. 
+
+3. Nauka przebiega tak samo:
+
+ * nale¿y wy³apaæ cechy, ktore s¹ ch-ka dla wyst¹pienia zdarzenia
+
+4. 

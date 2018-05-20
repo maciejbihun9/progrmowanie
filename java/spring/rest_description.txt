@@ -1,97 +1,97 @@
-1. Dane s¹ najwa¿niejsze,
+1. Dane sï¿½ najwaï¿½niejsze,
 
-2. REST (Representational State Transfer) wy³oni³ siê w ostatnich latach jako skoncentrowana
-na informacji alternatywa dla tradycyjnych us³ug sieciowych opartych na
-SOAP. O ile SOAP koncentruje siê na danych i przetwarzaniu, to REST skupia siê na
+2. REST (Representational State Transfer) wyï¿½oniï¿½ siï¿½ w ostatnich latach jako skoncentrowana
+na informacji alternatywa dla tradycyjnych usï¿½ug sieciowych opartych na
+SOAP. O ile SOAP koncentruje siï¿½ na danych i przetwarzaniu, to REST skupia siï¿½ na
 przetwarzanych danych.
 
 3. krytykowanie soap i promowanie rest,
 
-4. dane mog¹ byæ reprezentowane w ka¿dej formie (json, xml, html),
+4. dane mogï¿½ byï¿½ reprezentowane w kaï¿½dej formie (json, xml, html),
 
-5. Nie istniej¹ ¿adne œcis³e regu³y okreœlaj¹ce, 
-jak maj¹ wygl¹daæ adresy URL, by by³y one
-zgodne z konwencj¹ REST, jednak powinny okreœlaæ zasoby, a nie reprezentowaæ
+5. Nie istniejï¿½ ï¿½adne ï¿½cisï¿½e reguï¿½y okreï¿½lajï¿½ce, 
+jak majï¿½ wyglï¿½daï¿½ adresy URL, by byï¿½y one
+zgodne z konwencjï¿½ REST, jednak powinny okreï¿½laï¿½ zasoby, a nie reprezentowaï¿½
 polecenia przekazywane serwerowi.
 
-6. REST koncentruje siê na rzeczach a nie us³ugach,
+6. REST koncentruje siï¿½ na rzeczach a nie usï¿½ugach,
 
-7. Aktualizacja zasaobow jest za pomoc¹ metody POST lub PUT
+7. Aktualizacja zasaobow jest za pomocï¿½ metody POST lub PUT
 
-8. Czy widzisz, w jaki sposób przedstawiony na
-nim kontroler udostêpnia zasób REST, a nie zwyczajn¹ stronê WWW?
+8. Czy widzisz, w jaki sposï¿½b przedstawiony na
+nim kontroler udostï¿½pnia zasï¿½b REST, a nie zwyczajnï¿½ stronï¿½ WWW?
 
-9. rest pozwala na zwrócenie zasobu w kompletnie innej szacie graficznej,
+9. rest pozwala na zwrï¿½cenie zasobu w kompletnie innej szacie graficznej,
 
 10. json jest absolutnie rekomendowany w tym przypadku, bo nie wymaga dodatkowej pracy
-po przes³aniu do klienta,
+po przesï¿½aniu do klienta,
 
 11. Reprezentacja widoku jest prawie zawsze przedstawiona w html,
 
-12. ContentNegotiatingViewResolver jest to komponent, który umo¿liwia zwrócenie
-danych z formacie po¿¹danym przez klienta,
+12. ContentNegotiatingViewResolver jest to komponent, ktï¿½ry umoï¿½liwia zwrï¿½cenie
+danych z formacie poï¿½ï¿½danym przez klienta,
 
-13. Klient wymaga jakiegoœ konkretnego formatu danych, a nasz kontroler musi to zapewniæ,
+13. Klient wymaga jakiegoï¿½ konkretnego formatu danych, a nasz kontroler musi to zapewniï¿½,
 
-14. Klient otrzymuje format plików w zale¿noœci od rozszerzenia, które poda³ na koñcu url.
+14. Klient otrzymuje format plikï¿½w w zaleï¿½noï¿½ci od rozszerzenia, ktï¿½re podaï¿½ na koï¿½cu url.
 
-15. Dok³adnie ten sam kontroler,
-który generuje kod HTML przeznaczony dla ludzi przegl¹daj¹cych zasoby, mo¿e tak¿e
-generowaæ kod JSON lub XML przeznaczony dla innych klientów.
+15. Dokï¿½adnie ten sam kontroler,
+ktï¿½ry generuje kod HTML przeznaczony dla ludzi przeglï¿½dajï¿½cych zasoby, moï¿½e takï¿½e
+generowaï¿½ kod JSON lub XML przeznaczony dla innych klientï¿½w.
 
-16. ContentNegotiatingViewResolver nie zwraca danych json w odpowiednim formacie, tak¿e nie
-jest on dobrym rozwi¹zaniem.
+16. ContentNegotiatingViewResolver nie zwraca danych json w odpowiednim formacie, takï¿½e nie
+jest on dobrym rozwiï¿½zaniem.
 
- * o wiele lepiej jest u¿yæ konwerter komunikatów Spring.
+ * o wiele lepiej jest uï¿½yï¿½ konwerter komunikatï¿½w Spring.
 
-17. Adnotacja @ResponseBody informuje Spring, ¿e zwrócony obiekt chcemy przes³aæ do
-klienta jako zasób skonwertowany do jakiejœ postaci, któr¹ klient jest w stanie przyj¹æ.
+17. Adnotacja @ResponseBody informuje Spring, ï¿½e zwrï¿½cony obiekt chcemy przesï¿½aï¿½ do
+klienta jako zasï¿½b skonwertowany do jakiejï¿½ postaci, ktï¿½rï¿½ klient jest w stanie przyjï¿½ï¿½.
 
-18. Mo¿na stosowaæ ró¿ne adnotacje, które zmodyfikuj¹ nam sposób w jaki JSON zostanie zwrócony
+18. Moï¿½na stosowaï¿½ rï¿½ne adnotacje, ktï¿½re zmodyfikujï¿½ nam sposï¿½b w jaki JSON zostanie zwrï¿½cony
 
-19. @RestController zastêpuje na potrzebê u¿ywania adnotacji @ResponseBody oraz @RequestBody:
+19. @RestController zastï¿½puje na potrzebï¿½ uï¿½ywania adnotacji @ResponseBody oraz @RequestBody:
 
- * Domyœlnie bêdzie stosowana konwersja komunikatów
+ * Domyï¿½lnie bï¿½dzie stosowana konwersja komunikatï¿½w
 
-20. Przekazuje te¿ klientom metadane, które pomagaj¹ im zrozumieæ
-zasób lub dowiedzieæ siê, co zasz³o podczas obs³ugi ¿¹dania.
+20. Przekazuje teï¿½ klientom metadane, ktï¿½re pomagajï¿½ im zrozumieï¿½
+zasï¿½b lub dowiedzieï¿½ siï¿½, co zaszï¿½o podczas obsï¿½ugi ï¿½ï¿½dania.
 
-21. ResponseEntity wydaj siê byæ najlepszym rozwiazaniem, bo zwraca zasób oraz status ¿¹dania:
+21. ResponseEntity wydaj siï¿½ byï¿½ najlepszym rozwiazaniem, bo zwraca zasï¿½b oraz status ï¿½ï¿½dania:
 
- * zwrócenie tego obiektu pozwala na zwrócenie nag³ówka, statusu oraz pe³nej odpowiedzi jakiej oczekuje klient,
+ * zwrï¿½cenie tego obiektu pozwala na zwrï¿½cenie nagï¿½ï¿½wka, statusu oraz peï¿½nej odpowiedzi jakiej oczekuje klient,
 
- * Jedn¹ z rzeczy, do których mo¿esz wykorzystaæ obiekt ResponseEntity, jest odczytanie
-wartoœci jednego z nag³ówków odpowiedzi,
+ * Jednï¿½ z rzeczy, do ktï¿½rych moï¿½esz wykorzystaï¿½ obiekt ResponseEntity, jest odczytanie
+wartoï¿½ci jednego z nagï¿½ï¿½wkï¿½w odpowiedzi,
 
- * zwraca ona tak¿e wiele informacji o zasobie tj. last modified, itd.
+ * zwraca ona takï¿½e wiele informacji o zasobie tj. last modified, itd.
 
-22. œwietne rozwi¹zanie do zwracania b³êdów lub zasobów w zale¿noœci od sytuacji.
+22. ï¿½wietne rozwiï¿½zanie do zwracania bï¿½ï¿½dï¿½w lub zasobï¿½w w zaleï¿½noï¿½ci od sytuacji.
 @RequestMapping(value="/{id}", method=RequestMethod.GET)
 public ResponseEntity<?> spittleById(@PathVariable long id) {
 Spittle spittle = spittleRepository.findOne(id);
 if (spittle == null) {
-Error error = new Error(4, "Spittle [" + id + "] nie zosta³ znaleziony");
+Error error = new Error(4, "Spittle [" + id + "] nie zostaï¿½ znaleziony");
 return new ResponseEntity<Error>(error, HttpStatus.NOT_FOUND);
 }
 return new ResponseEntity<Spittle>(spittle, HttpStatus.OK);
 }
 
-24. Ale nawet lepsze rozwi¹zanie jest z wyrzucaniem naszego wyj¹tku w zale¿noœci od sytuacji nie 
+24. Ale nawet lepsze rozwiï¿½zanie jest z wyrzucaniem naszego wyjï¿½tku w zaleï¿½noï¿½ci od sytuacji nie 
 znalezienia obiektu.
 
-25. Przyjê³o siê, ¿e w przypadku tworzenia nowych zasobów w dobrym tonie jest
-przekazywanie klientowi adresu URL tego zasobu przy u¿yciu nag³ówka odpowiedzi
+25. Przyjï¿½o siï¿½, ï¿½e w przypadku tworzenia nowych zasobï¿½w w dobrym tonie jest
+przekazywanie klientowi adresu URL tego zasobu przy uï¿½yciu nagï¿½ï¿½wka odpowiedzi
 Location.
 
-26. Najczêœciej klientami API modelu REST s¹ aplikacje mobilne
-oraz aplikacje pisane w jêzyku JavaScript; nic jednak nie stoi na przeszkodzie, by
-z takich zasobów korzysta³y tak¿e aplikacje Spring.
+26. Najczï¿½ciej klientami API modelu REST sï¿½ aplikacje mobilne
+oraz aplikacje pisane w jï¿½zyku JavaScript; nic jednak nie stoi na przeszkodzie, by
+z takich zasobï¿½w korzystaï¿½y takï¿½e aplikacje Spring.
 
 REST TEMPLATE
 
-27. Jedyna ró¿nica polega na tym, ¿e getForObject() zwraca po prostu obiekt ¿¹danego typu,
+27. Jedyna rï¿½nica polega na tym, ï¿½e getForObject() zwraca po prostu obiekt ï¿½ï¿½danego typu,
 podczas gdy getForEntity()zwraca
-ten obiekt wraz z dodatkow¹ informacj¹ o odpowiedzi.
+ten obiekt wraz z dodatkowï¿½ informacjï¿½ o odpowiedzi.
 
 public Profile fetchFacebookProfile(String id) {
 RestTemplate rest = new RestTemplate();
@@ -99,30 +99,28 @@ return rest.getForObject("http://graph.facebook.com/{spitter}",
 Profile.class, id);
 }
 
- * jest to przyk³ad konsumowania resta i konwertowania go na konkretny typ danych,
- * wysy³a ¿¹danie do konkretnego url zasobu i konwertuje go na obiekt.
+ * jest to przykï¿½ad konsumowania resta i konwertowania go na konkretny typ danych,
+ * wysyï¿½a ï¿½ï¿½danie do konkretnego url zasobu i konwertuje go na obiekt.
 
-28. JSON oraz konsumowanie wiadomoœci REST jest zwykle zarezerwowane dla technologii webowych,
-ale jest równie¿ mo¿liwe aby konsumowaæ je za pomoc¹ rest template,
+28. JSON oraz konsumowanie wiadomoï¿½ci REST jest zwykle zarezerwowane dla technologii webowych,
+ale jest rï¿½wnieï¿½ moï¿½liwe aby konsumowaï¿½ je za pomocï¿½ rest template,
 
-29. Fakt, ¿e pos³ugiwanie siê rest jest bardzo ³atwe i pozwala na przesy³anie danych jaki informacji na temat 
-danych, nag³ówków oraz informacji na temat utworzenia zasobu,
+29. Fakt, ï¿½e posï¿½ugiwanie siï¿½ rest jest bardzo ï¿½atwe i pozwala na przesyï¿½anie danych jaki informacji na temat 
+danych, nagï¿½ï¿½wkï¿½w oraz informacji na temat utworzenia zasobu,
 
-30. Rest template jest to poprostu javowa metoda do komunikowania siê z serwerem jak przy uzyciu jquery,
+30. Rest template jest to poprostu javowa metoda do komunikowania siï¿½ z serwerem jak przy uzyciu jquery,
 
-31. Metoda exchange() obiektu restTemplate pozwala na ustawienie nag³ówka ¿¹dania,
+31. Metoda exchange() obiektu restTemplate pozwala na ustawienie nagï¿½ï¿½wka ï¿½ï¿½dania,
 
-32. Zasoby w systemie s¹ identyfikowane za pomoc¹
-adresów URL, modyfikowane za pomoc¹ metod HTTP i reprezentowane w jednej lub
-kilku w³aœciwych dla klienta formach.
+32. Zasoby w systemie sï¿½ identyfikowane za pomocï¿½
+adresï¿½w URL, modyfikowane za pomocï¿½ metod HTTP i reprezentowane w jednej lub
+kilku wï¿½aï¿½ciwych dla klienta formach.
 
-33. Bardzo czêsto klientami API modelu
-REST s¹ aplikacje mobilne b¹dŸ aplikacje JavaScript dzia³aj¹ce w przegl¹darkach
-WWW. Nic jednak nie stoi na przeszkodzie, by przy u¿yciu szablonów RestTemaplate
-korzysta³y z nich tak¿e inne aplikacje Spring, ale jest to o wiele ¿adsze.
-Jednak taki czysty rest template pozwala tak¿e innym na dostêp do zasobów,
-dlatego trzeba je zabezpieczaæ.
-
-34. 
+33. Bardzo czï¿½sto klientami API modelu
+REST sï¿½ aplikacje mobilne bï¿½dï¿½ aplikacje JavaScript dziaï¿½ajï¿½ce w przeglï¿½darkach
+WWW. Nic jednak nie stoi na przeszkodzie, by przy uï¿½yciu szablonï¿½w RestTemaplate
+korzystaï¿½y z nich takï¿½e inne aplikacje Spring, ale jest to o wiele ï¿½adsze.
+Jednak taki czysty rest template pozwala takï¿½e innym na dostï¿½p do zasobï¿½w,
+dlatego trzeba je zabezpieczaï¿½.
 
 

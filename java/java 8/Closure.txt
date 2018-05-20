@@ -1,8 +1,8 @@
- * koncept closure mówi nam, ¿e mo¿emy teraz wykonaæ funkcje tj. run(), compareTo(),
-czyli metod interfejsów, gdzie wartoœci wprowadzane z poza scope musz¹ byc finalne.
-Tutaj ju¿ nie musz¹ byæ
+ * koncept closure mï¿½wi nam, ï¿½e moï¿½emy teraz wykonaï¿½ funkcje tj. run(), compareTo(),
+czyli metod interfejsï¿½w, gdzie wartoï¿½ci wprowadzane z poza scope muszï¿½ byc finalne.
+Tutaj juï¿½ nie muszï¿½ byï¿½
 
-ina a = 12; int b= 13;
+ina a = 12; int b = 13;
 
 doProcess(a, i -> System.out.println(i + b))
 

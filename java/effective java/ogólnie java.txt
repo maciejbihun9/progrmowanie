@@ -11,7 +11,7 @@
  
  * strumień binarny - 
  - wygląda to jak strumień 0,1,
- - OutputStream oraz iNputStream są przykłądami strumieni binarnych,
+ - OutputStream oraz iNputStream są przykładami strumieni binarnych,
  - funkcja read() zwraca bajt, lub tablice bajtów, która
  służy tutaj jako bufor,
  

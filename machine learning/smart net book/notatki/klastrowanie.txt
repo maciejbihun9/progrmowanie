@@ -1,0 +1,130 @@
+ * metoda k - średnich jest ona używana z EM, GMM
+ 
+ * jak na razie nie pokazali nic, na temat tego, że można nie podawać ilości klastrów,
+ 
+ * w obu przypadkach następuje maksymalizacja wartości oczekiwanej - czyli średniej,
+
+K-MEANS (EM):
+
+ * model nie parametryczny,
+ 
+ * przypisuje punktowi, tylko jeden klaster, ale co gdy one się nakładają?
+ a co jeśli nie posiadają podobnej wariancji? - mała użyteczność,
+ - to potwierdza, że ta metoda nie jest praktyczna,
+ 
+ * losowe wybranie ilości klastrów oraz punktów średnich,
+ 
+ * alg. lloyda = k-means,
+ 
+ * przed podjęciem się uczenia modelu tą metodą trzeba ustalić czy jest to rozkład
+ bardzo długi lub bardzo krótki, czyli kowariancja cech jest podobna!!!,
+ klastry mają podobną kowariancję,
+ czyli model musi być znormalizowany,
+ 
+ * przywidywanie ilości klastrów, a potem przypisywanie im początkowego miejsca,
+ i przypisywanie im najbliższych elementów,
+ 
+ * alg. się kończy, gdy punkty nie zmieniają przypisania,
+ 
+ * po początkowym przypisaniu liczymy średnie ponownie i kolejny raz przypisujemy im
+ najbliższych sąsiadów,
+ 
+ * bardzo ważne jest dobranie elementu początkowego, aby była mało iteraacji,
+ 
+ * zbieganie się alg. można nazwać konwergencją,
+ 
+ * good method to get the best result is start with an average from previous step
+ and do it couple times,
+ 
+ * a good place to end an iteration is when an average changes are much lower than
+ some fixed value,
+ 
+ * można to nazwać algorytmem maksymalizacji watrtości oczekiwanej,
+ 
+ * wyświetlenie kombinacji wielu cech danych i określenie poprawności podziału na klastry
+ na podstawie najlepszego doboru cech,
+ 
+K-MEANS (GMM):
+
+ * funckja gęstości p rozkładu normalnego jest modelem tego rozkładu,
+ dzięki któremu możemy porównać rozkład cechy do idealnego rokładu normlanego,
+ - należy pamiętać, że wraz ze wzrostem ilości próbek rozkład zawsze będzie dążył
+ do rozkładu normalnego,
+
+ * ta technika modeluje kowariancję cech dla każdego klastra,
+ czyli nie ma ograniczenia co do kowariancji cech,
+ 
+ * Trzeba tu dokonać ważnego rozróżnienia
+ na rozkład w próbce i rozkład w populacji,
+ 
+ * Celem treningu modelu jest minimalizacja tej niepewności 
+ przy określonych założeniach dotyczących modelu,
+ 
+ * w tym przypadku trening modelu polega na minimalizacji odstępstwa modelu od
+ prawdziwych danych poprze zmiany odchylenia lub średniej,
+ 
+ * Zawsze jednak pozostaje element niepewności,
+
+ * jest to algorytm oparty na modelowaniu, tworzenie modeli,
+
+ * jest oparty na rozkładzie gaussa (jest to rozkład normalny),
+
+ * przyjmuje się, ze badana populacja posiada rozkład gaussa, 
+ 
+ * metoda polega na dopasowywaniu parametrów modelu guss'a do rzeczywistych danych,
+ naturalnie wszystko ma taki rozkład, także nałożenie z góry tego rozkładu dla populacjia
+ ma uzasadnienie, ale trzeba dobrać odpowiednie parametry,
+ 
+ * metoda polega na dostoswaniu parametrów modelu gaussa do rozkładu utworzonego z danych.
+ gdy przychodządo aplikacji nowe elementy to obliczamy p z tego modelu, a potem robimy dostosowanie
+ parametrów, aby najlepiej odwzorować rzeczywistośc,
+ 
+ * Ogólnie gaussowski model mieszany jest bardziej wszechstronny, ponieważ
+przynależność punktów danych do klastra zależy od kształtu klastra, a nie tylko
+od jego odległości od punktów.
+
+ * Bardzo ważne - jeśli istnieją jakieś grupy które można wydzielić, to napewno rozkład danej cechy 
+ nie będzie normalny, bo jego istnienie powoduje to, że będzie istniała jedna grupa z jednącentroidą.
+ 
+ * centroidy można ustawiać tam, gdzie istnieje największa gęstość prawdopodobieństwa!!!
+ danej cechy,
+ 
+ * jest on bardziej wszechstronny,
+ 
+ * Ogólnie wszystkie algorytmy klastrowania
+działają według podobnego wzorca.
+
+MODEL MIESZANY:
+
+ * jest to model, który posiada wiele rozkładów p, które odzwiercidlają tą samę cechę,
+ ale z różnymi założeniami,
+ np. zwrost kobiet i mężczyzn, te rozkłady posiadają inne parametry sigma oraz mu,
+ istnieje również parametr, który określa wage każdego z rozkładów,
+ 
+ * skąd ja bede znał wage?
+ 
+ * nie wydaje mi się, aby ten aspekt był fajny..., trzeba to robić poejdyńczo,
+ 
+ * Ogólnie gaussowski model mieszany jest bardziej wszechstronny, ponieważ
+przynależność punktów danych do klastra zależy od kształtu klastra, a nie tylko
+od jego odległości od punktów.
+ 
+zastosowanie:
+
+ * zbieranie danych i próbowanie ich podpiąć pod jakiś model, rozkład prawdopodobieństwa,
+ patrzenie który najbardziej pasuje do gaussa,
+ 
+ * pozwala na wykrywanie klastrów, które się na siebie nakładają,
+
+ANALIZA GŁÓWNYCH SKŁADOWYCH (PCA):
+
+ * polega na eliminacji nadmiarowych cech, które potencjalnie mogą być bez wartościowe,
+
+ * polega na tym, aby do zadania dobierać takie cechy, które posiadają największą wariancje,
+ 
+ * wektor własny macierzy kowariancji wskazuje kierunek największej wariancji cechy.
+ Może ich być kilka, jeden wskazuje największą wariancje a drugi najmnijeszą.
+ Macierz kowariancji posiada cechy symetryczności, oraz jest macierzą z przekątną jedynek,
+ 
+ 
+ 
