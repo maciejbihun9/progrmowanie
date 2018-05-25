@@ -1,5 +1,9 @@
 
  * Load the data from json file to the application:
+ - remember that this is a callback, so we can not return the data
+ we can set returned data to the application opportunitites data,
+ - I can not wait for return !!!
+
  - rows = [];
 
      constructor() {
@@ -15,6 +19,5 @@
        req.onload = () => {
          cb(JSON.parse(req.response));
        };
-
        req.send();
      }

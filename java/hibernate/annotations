@@ -1,0 +1,59 @@
+
+ * create an indentifier id for a table:
+ - @Id
+
+ * many this class instances can be connected with class field
+ - @manyToOne
+
+ * mark a class field as not optional (has to be not null):
+ - @Basic(optional = false)
+
+ * specify basic table column attributes:
+ - @Column(name = "name", nullable = false, unique = true, length = 23)
+
+ * create in the database a foreignKey property that indicated the connection between classes:
+ - The annotation @JoinColumn indicates that this entity is the owner of the relationship
+ (that is: the corresponding table has a column with a foreign key to the referenced table),
+  whereas the attribute mappedBy indicates that the entity in this side is the inverse of the relationship,
+  and the owner resides in the "other" entity. This also means that you can access the other
+  table from the class which you've annotated with "mappedBy" (fully bidirectional relationship).
+
+  In particular, for the code in the question the correct annotations would look like this:
+ - @Entity
+   public class Company {
+       @OneToMany(fetch = FetchType.LAZY, mappedBy = "company")
+       private List<Branch> branches;
+   }
+
+   @Entity
+   public class Branch {
+       @ManyToOne(fetch = FetchType.LAZY)
+       @JoinColumn(name = "companyId")
+       private Company company;
+   }
+
+ * mark class with a different name for the database:
+ - @Table(name = "different name")
+
+ * create base table class for inheritance:
+ - all extensions of that class will go to the same table,
+ - @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+ - @DiscriminatorColumn(name = "ANIMAL_TYPE", discriminatorType = DiscriminatorType.STRING) will hold
+ the type of the subclass item, those annotations work together
+
+ example:
+ - @Entity
+   @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+   @DiscriminatorColumn(name = "ANIMAL_TYPE", discriminatorType = DiscriminatorType.STRING)
+   public class Pet implements java.io.Serializable
+   {
+
+   }
+   @Entity
+  - class Dog extends Pet
+
+ * Dość częstym zadaniem jakie musimy wykonać zapisując dane naszej aplikacji jest również dołączenie informacji o tym kto i kiedy stworzył,
+ a później aktualizował dany rekord. Zazwyczaj informacje takie trafiają do czterech kolumn: data stworzenia, data aktualizacji, użytkownik,
+  który stworzył oraz zaktualizował rekord. Są to tzw. kolumny audytowe.
+  W momencie, gdy wykorzystujemy do zapisu naszych danych implementację JPA, mamy sprawę bardzo ułatwioną.
+ - @MappedSuperclass

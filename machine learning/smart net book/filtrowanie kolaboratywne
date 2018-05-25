@@ -1,0 +1,22 @@
+ „Pokaż mi swoich przyjaciół, a powiem ci, kim jesteś”.
+
+ * macierz porównania jest zależna od ilości danych: user/przedmiot,
+
+ * predykcja - wnioskowanie opini, recenzji produktu może być generowane na podstawie historii
+ odwiedzin, ratingu,
+
+ * rekomendacja - wektor przedmiotów, gdzie predykcja jest największa
+
+ zastosowanie:
+ * typowe zastosowanie to wektor użytkowników oraz wektor przedmiotów
+
+ * filtrowanie według użytkowników:
+ - stworzenie macierzy user/przedmiot,
+ - porównanie userów po przedmiotach, czyli ci co mają zbliżone oceny przedmiotów
+ są podobni,
+ - rekomendowanie filmów użytkownikowi ze zbioru filmów najbardziej podobnego uzytkownika,
+
+ - w książce są podane propozycje liczenia potencjalnej oceny jaką wystawi użytkownik,
+ ale ja bym tego nie chciał stosować, bo jest to bardzo podatne na błędy,
+ - pobierani są userzy, którzy już ocenili dany przedmiot oraz ich podobieństwa do user'a
+ podobieństwo jest wagą oceny. wartości są dodawane oraz dzielone przez ilość użytkoeników i mamy predyckje.

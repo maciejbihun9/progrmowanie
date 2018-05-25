@@ -1,0 +1,8 @@
+
+ * W podejściu opartym na modelu uwzględniane są dodatkowe założenia (model).
+   Gdy używany jest rozkład SVD, zakładamy, że między produktami a użytkownikami
+   występują powiązania w przestrzeni zmiennych ukrytych, niewidocznej w samych
+   danych użytkowników lub produktów.
+
+ * Oznacza to tylko tyle, że użytkownicy są odwzorowywani na produkty, a produkty na
+   użytkowników w innej, trzeciej przestrzeni.

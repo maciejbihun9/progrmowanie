@@ -16,8 +16,6 @@
  * endogeniczność - O parametrze bądź zmiennej mówi się, że jest endogeniczna, jeśli zachodzi 
  korelacja między tym parametrem/tą zmienną a błędem losowym,
  
- * 
- 
  * W modelu
 	y = Xβ + ε
 	zmiennymi egzogenicznymi nazywamy zmienne, które nie są

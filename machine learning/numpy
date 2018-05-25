@@ -1,0 +1,14 @@
+
+ * create simple numpy array:
+ - np.array([[1, 2], [3, 4]])
+
+ * reset generator status to get the same random data everytime:
+ - >>> numpy.random.seed(0) ; numpy.random.rand(4)
+   array([ 0.55,  0.72,  0.6 ,  0.54])
+   >>> numpy.random.seed(0) ; numpy.random.rand(4)
+   array([ 0.55,  0.72,  0.6 ,  0.54])
+
+ * matrix multiply:
+ a = [[12, 1.2], [2,3]]
+ b = [[2, 3], [2,1]]
+ - np.dot(a, b)

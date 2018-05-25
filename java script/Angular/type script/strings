@@ -1,0 +1,10 @@
+
+ * Check if a string has a certain piece of text:
+ - var test = 'Hello World';
+   if( test.indexOf('World') >= 0){
+     // Found world
+   }
+
+ * check if string contains substring:
+ var item = 'stringstring';
+ item.includes('string') -> true

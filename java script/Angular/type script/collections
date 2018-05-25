@@ -17,8 +17,7 @@ ARRAYS:
  * add item to an array:
  array.push(item)
 
- * ew can add functions to arrays and then call them after getting them
- from an array,
+ * we can add functions to arrays and then call them after getting them from an array,
  array = []
  array.push(function(){
     console.log("function")

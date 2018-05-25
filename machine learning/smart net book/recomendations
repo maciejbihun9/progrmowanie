@@ -1,0 +1,28 @@
+SOCIOLOGY:
+
+ * the agency would waste resources if show commercials to people that are not interested?
+ * I want to change their mentality, i do not care about their feelings and current preferences,
+
+SIMILARITY:
+
+ * dodawanie kwadratów odległości między cechami i obliczenie pierwiastka z nich,
+ ale należy pamiętać, że podobieństwo oraz odległość to w pewnym sensie swoje odwrotności,
+
+ * metoda I:
+ - 1 / pierwiastek z sumy różnic między ocenami + 1
+ - max. value = 1 - całkowite podobieństwo
+
+ * metoda II:
+ - y = beta / (beta + x), gdzie beta to wolny parametr, a x to odległość
+ - beta - ilość obejranych wspólnie filmów,
+
+ * metoda III:
+ - zastosowanie podobieństwa jaccarda
+
+ zastosowanie:
+ - mierzenie podobieństwa między ocenami filmów użytkowników,
+ gdzie ważna jest różnica między ocenami
+ użytkowników oraz ilość wspólnie obejrzanych filmów,
+
+ - trzeba cały czas wyszukiwać jakiś wspólnych cech pomiędzy użytkownikami,
+ aby je ująć we wzorze, np. 20 /30 wspólnych filmwów - powinno być ujęte we wzorze

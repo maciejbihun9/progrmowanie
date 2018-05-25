@@ -1,0 +1,24 @@
+
+ * store user gender:
+ - public class Person {
+       private int id;
+       private String name;
+       private Gender gender;
+
+       // getters and setters...
+   }
+ - public enum Gender {
+       MALE, FEMALE
+   }
+
+ - if enum items are integers then set annotation this way:
+ - @Enumerated(EnumType.ORDINAL)
+   public Gender getGender() {
+       return gender;
+   }
+
+ - if enum items are strings then set it like this:
+ - @Enumerated(EnumType.STRING)
+   public Gender getGender() {
+       return gender;
+   }

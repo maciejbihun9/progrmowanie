@@ -1,0 +1,7 @@
+EAGER loading of collections means that they are fetched fully at the time their parent is fetched. So if you have Course and it has  List<Student>,
+all the students are fetched from the database at the time the Course is fetched.
+
+LAZY on the other hand means that the contents of the List are fetched only when you try to access them.
+For example, by calling course.getStudents().iterator(). Calling any access method on the List will initiate a call to the database to retrieve the elements.
+This is implemented by creating a Proxy around the List (or Set).
+So for your lazy collections, the concrete types are not ArrayList and HashSet, but PersistentSet and PersistentList (or PersistentBag)
