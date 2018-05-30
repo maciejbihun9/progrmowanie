@@ -46,3 +46,8 @@
  
  * macierz kowariancji:
  - macierz wariancji, czyli odstępstw od średniej dla poszczególnych cech,
+
+ * centrowanie danych:
+ - zapewnia punkt odniesienia dla wariancji,
+ - zapewnai stabilnośc działa nia algorytmu
+ możliwe, że jest to odrzucenie wartości skrajnych rozkładu

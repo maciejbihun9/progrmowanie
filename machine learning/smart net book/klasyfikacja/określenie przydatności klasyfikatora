@@ -1,0 +1,12 @@
+ Współczynnik FP = FP/N, gdzie N = TN+FP
+ Swoistość = 1–współczynnik FP = TN/N
+ Czułość = TP/P, gdzie P = TP+FN -> TPR = TP / TP + FN
+* specyficzność - TNR = TN / Tn + FP
+ Precyzja = TP/(TP+FP)
+ Trafność = (TP+TN)/(P+N)
+ F-score = precyzja×trafność
+* skłonność - np. przypisanie małej grupie użytkowników wysokiego prawdopodobieństwa,
+zrobienia czegoś, gdzie większośc populacji ma zwykle bardzo małą skłonność,
+- wysokie prawdopodobieństwo, mała ilość elementów,
+mała powierzchnia gęstości prawdopodobieństwa,
+* ROC = czułość / specyficzność

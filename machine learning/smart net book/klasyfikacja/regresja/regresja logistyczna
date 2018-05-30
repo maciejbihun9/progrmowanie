@@ -1,0 +1,20 @@
+
+
+
+ * do estymacji logistyczneh używamy kzywej logistycznej,
+
+ * celem regresji jest uogólnienie,
+
+ * na wyjściu ma wartości od 0 do 1,
+
+ * transfer danych kategorialnych na liczbowe - 113
+ - używamy do tego OneHotEncoder, który pozwala, aby tylko jedna
+ zmienna była aktywna,
+
+ zastosowanie:
+ * bardzo dobra dla wykrywania oszustw, ale trzeba pamiętać, że wzrost kwoty
+ tranzakcyjnej ze 100zł do 5000zł musi być inaczej traktowany niż od 5000zł do 10000zł.
+ Jest to zajebista różnica w postrzeganiu tych kwot.
+
+ * jest bardzo dobra do określania 0-1 zdarzeń,
+ np. czy giełda pójdzie do góry, czy pójdzie w dół, czy będzie się kręcić w kółko

@@ -1,0 +1,47 @@
+
+ założenia:
+ * jest to algorytm rekomendacyjny, gdzie musi istnieć czynnik użytkownika,
+ czyli nie może być tak jak w clusteringu, że mam przedstawienie puktów na osi,
+
+ * istnieje tylko jedna wersja każdej z macierzy, które powstały z macierzy A,
+ czyli macierz A może być podzielona tylko na unikalną macierz U, sigma oraz V,
+
+ * algorytm ten pozwala na rekomendacja wykraczjące poza oczywiste możliwości !!!
+ i jest to oczywiscie w tym samym czasie najważniejsza cehca tego algorytmu!,
+
+ * W podejściu opartym na modelu uwzględniane są dodatkowe założenia (model).
+   Gdy używany jest rozkład SVD, zakładamy, że między produktami a użytkownikami
+   występują powiązania w przestrzeni zmiennych ukrytych, niewidocznej w samych
+   danych użytkowników lub produktów.
+
+ * Oznacza to tylko tyle, że użytkownicy są odwzorowywani na produkty, a produkty na
+   użytkowników w innej, trzeciej przestrzeni.
+
+ * każdą macież można przedstawić jako iloczyn kilku macierzy - to widomo,
+ a ludzie doszli do wniosku, że w ten sposób można fajnie przedstawić właściwości macierzy
+ używając jej mniejszej wersji,
+ - trzeba pamiętać, że ich parametry nie mają nic wspólnego z pierwotną wersją,
+
+ * Cechy ukryte są tu wybierane w taki sposób, aby były możliwie odległe od siebie
+   ze względu na widzów (są wtedy maksymalnie opisowe),
+
+ wnioski:
+ * Jeśli miłośnicy fantastyki naukowej nigdy nie oglądają komedii romantycznych i na
+   odwrót, ta cecha jest przydatna w trakcie generowania rekomendacji.
+
+ * Zaskakujące może być uwzględnienie w propozycjach filmów
+   z gatunku Thriller, ponieważ nie występują one wysoko (lub w ogóle ich nie
+   ma) na liście rzeczywistych ocen. Można to jednak wyjaśnić działaniem filtrowania
+   kolaboratywnego.
+   - Miłośnikom dramatów może czasem spodobać
+     się kryminał lub  thriller.
+
+ * dzięki tej metodzie można wyszukać w danych zupełnie inne/nowe cechy, kategorie,
+ które nie są widocze na pierwszy rzut oka,
+
+ * jeśli mamy m x n co odzwierciedla users x przedmioty, to rozkałd na m x r
+ przedstawia r jako ukryte gatunki filmów,
+
+ * Zauważ, że choć posługujemy się tu gatunkami, robimy to
+   tylko w celach ilustracyjnych. Choć czasem po treningu możliwe jest przypisanie sensu
+   wymiarom, w rzeczywistości nie mają one jawnie określonego znaczenia,

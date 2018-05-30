@@ -1,0 +1,31 @@
+"Ta wrażliwość nadal cechuje
+ europejskie sądy. Morał z tej anegdoty jest taki,
+ że decyzje prowadzą do konsekwencji,
+ które nie zawsze są symetryczne."
+
+ * tworzenie klasyfikatorów wiąże się z bardzo dobrą znajomością zarówno ekonomii
+ jaki teorii z dziedziny uczenia maszynowego, sama teoria nie wystarczy,
+
+ * Zbiory danych używane przez naukowców są często małe w porównaniu z rozwiązaniami
+   stosowanymi w praktyce,
+
+ * W praktyce rejestrowane dane
+   zwykle nie są w pełni zgodne z prognozowanym wzorcem, ale podlegają błędowi
+   systematycznemu i szumowi,
+
+ * Można uznać, że w ramach umysłowego przetwarzania najpierw określana jest
+   struktura, a potem następuje klasyfikowanie,
+
+ * klasyfikatory można podzielić na binarne oraz klasowe,
+
+ * klasy mogą mieć wartości ciągłe oraz nieciągłe,
+ np. czy cena akcji wzrośnie lub nie,
+ np. przewidywanie konkretnej ceny
+
+ * Stosunkowo skuteczna nowa technika statystyczna
+   łączy twierdzenie Bayesa z probabilistycznymi strukturami sieciowymi, które opisują
+   zależności między różnymi atrybutami z danego problemu z dziedziny klasyfikacji.
+
+ * Proces Bernulliego - Jest on opisywany jako sekwencja niezależnych zdarzeń,
+   których skutki są uznawane za sukces lub niepowodzenie.
+   Doskonale pasuje to do zadania wykrywania oszustw i, ogólnie, klasyfikacji binarnej.

@@ -2,19 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f341ddb-947e-47ef-9e6e-2652f1fef69b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/java script/Angular/type script/strings" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java/hibernate/annotations" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java/hibernate/lazy eager" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java/hibernate/storing enums" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/machine learning/numpy" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/machine learning/smart net book/SVD" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/machine learning/smart net book/filtrowanie kolaboratywne" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/machine learning/smart net book/recomendations" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/intro" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/określenie przydatności klasyfikatora" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/regresja/regresja liniowa" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/regresja/regresja logistyczna" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/wyzwania" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/machine learning/smart net book/notatki/ogólnie" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/machine learning/smart net book/rekomendacje/svd/svd działanie" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/machine learning/smart net book/rekomendacje/svd/svd założenia" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/machine learning/smart net book/testowanie" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/matematyka/macierze/wstęp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/matematyka/pojęcia" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/network/cookie" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/type script/collections" afterPath="$PROJECT_DIR$/java script/Angular/type script/collections" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/zastosowania/Loading data" afterPath="$PROJECT_DIR$/java script/Angular/zastosowania/Loading data" />
-      <change beforePath="$PROJECT_DIR$/machine learning/smart net book/inteligentna-siec-algorytmy-przyszlosci-wydanie-ii-douglas-mcilwraith-haralambos-marmanis-dmitry-ba-Helion.pl.pdf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/machine learning/smart net book/SVD" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/machine learning/smart net book/filtrowanie kolaboratywne" afterPath="$PROJECT_DIR$/machine learning/smart net book/rekomendacje/filtrowanie kolaboratywne" />
       <change beforePath="$PROJECT_DIR$/machine learning/smart net book/notatki/podstawowe pojęcia.txt" afterPath="$PROJECT_DIR$/machine learning/smart net book/notatki/podstawowe pojęcia.txt" />
+      <change beforePath="$PROJECT_DIR$/machine learning/smart net book/recomendations" afterPath="$PROJECT_DIR$/machine learning/smart net book/rekomendacje/recomendations" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,7 +31,38 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ogólnie" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/machine learning/smart net book/notatki/ogólnie">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="basics.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/network/basics.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cookie" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/network/cookie">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="70" lean-forward="false" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -44,18 +79,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/java script/angular 5/architecture/directive" />
-        <option value="$PROJECT_DIR$/java script/angular 5/architecture/architecture cases" />
-        <option value="$PROJECT_DIR$/java script/angular 5/docs/http client/advanced features" />
-        <option value="$PROJECT_DIR$/java script/angular 5/http.txt" />
-        <option value="$PROJECT_DIR$/java script/angular 5/Communicating Between Components" />
-        <option value="$PROJECT_DIR$/java script/angular 5/type script/type_script.txt" />
-        <option value="$PROJECT_DIR$/java script/angular 5/services.txt" />
-        <option value="$PROJECT_DIR$/java script/angular 5/QueryList &amp; ContentChildren.txt" />
-        <option value="$PROJECT_DIR$/java script/angular 5/zastosowania/Dynamically add components to the DOM" />
-        <option value="$PROJECT_DIR$/java script/angular 5/view issues.txt" />
-        <option value="$PROJECT_DIR$/java script/angular 5/zastosowania/Creating models" />
-        <option value="$PROJECT_DIR$/java script/angular 5/events" />
         <option value="$PROJECT_DIR$/java script/angular 5/core/core.txt" />
         <option value="$PROJECT_DIR$/java script/angular 2/book/practices.txt" />
         <option value="$PROJECT_DIR$/java script/angular 5/type script/collections" />
@@ -84,7 +107,6 @@
         <option value="$PROJECT_DIR$/java script/usefull functions" />
         <option value="$PROJECT_DIR$/java script/Angular/cli.txt" />
         <option value="$PROJECT_DIR$/java script/Angular/Angular 6/intro" />
-        <option value="$PROJECT_DIR$/machine learning/smart net book/notatki/podstawowe pojęcia.txt" />
         <option value="$PROJECT_DIR$/machine learning/numpy" />
         <option value="$PROJECT_DIR$/java script/Angular/type script/collections" />
         <option value="$PROJECT_DIR$/java/hibernate/lazy eager" />
@@ -94,7 +116,20 @@
         <option value="$PROJECT_DIR$/java script/Angular/type script/strings" />
         <option value="$PROJECT_DIR$/machine learning/smart net book/recomendations" />
         <option value="$PROJECT_DIR$/machine learning/smart net book/filtrowanie kolaboratywne" />
+        <option value="$PROJECT_DIR$/matematyka/macierze/wstęp" />
+        <option value="$PROJECT_DIR$/machine learning/smart net book/notatki/podstawowe pojęcia.txt" />
         <option value="$PROJECT_DIR$/machine learning/smart net book/SVD" />
+        <option value="$PROJECT_DIR$/machine learning/smart net book/svd/svd działanie" />
+        <option value="$PROJECT_DIR$/machine learning/smart net book/svd/svd założenia" />
+        <option value="$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/regresja/regresja liniowa" />
+        <option value="$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/regresja/regresja logistyczna" />
+        <option value="$PROJECT_DIR$/machine learning/smart net book/testowanie" />
+        <option value="$PROJECT_DIR$/matematyka/pojęcia" />
+        <option value="$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/określenie przydatności klasyfikatora" />
+        <option value="$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/intro" />
+        <option value="$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/wyzwania" />
+        <option value="$PROJECT_DIR$/machine learning/smart net book/notatki/ogólnie" />
+        <option value="$PROJECT_DIR$/network/cookie" />
       </list>
     </option>
   </component>
@@ -105,10 +140,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="958" />
+    <option name="x" value="970" />
     <option name="y" value="2" />
-    <option name="width" value="949" />
-    <option name="height" value="1029" />
+    <option name="width" value="951" />
+    <option name="height" value="1041" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -125,6 +160,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -135,26 +172,29 @@
             <path>
               <item name="programming" type="b2602c69:ProjectViewProjectNode" />
               <item name="programming" type="462c0819:PsiDirectoryNode" />
-              <item name="machine learning" type="462c0819:PsiDirectoryNode" />
+              <item name="matematyka" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="programming" type="b2602c69:ProjectViewProjectNode" />
               <item name="programming" type="462c0819:PsiDirectoryNode" />
-              <item name="machine learning" type="462c0819:PsiDirectoryNode" />
-              <item name="smart net book" type="462c0819:PsiDirectoryNode" />
+              <item name="matematyka" type="462c0819:PsiDirectoryNode" />
+              <item name="macierze" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="programming" type="b2602c69:ProjectViewProjectNode" />
+              <item name="programming" type="462c0819:PsiDirectoryNode" />
+              <item name="network" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/WebstormProjects/Angular 6/GlobalView" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
@@ -164,10 +204,11 @@
       <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming\machine learning\smart net book\rekomendacje" />
+      <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming\machine learning\smart net book\svd" />
       <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming\java script\angular 5\zastosowania" />
       <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming\java script\angular 5\architecture" />
       <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming\C#" />
-      <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming\java script\angular 5\type script" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -571,24 +612,47 @@
       <workItem from="1527233279050" duration="599000" />
       <workItem from="1527241480969" duration="599000" />
       <workItem from="1527250317387" duration="617000" />
-      <workItem from="1527252401074" duration="5000" />
+      <workItem from="1527252401074" duration="1791000" />
+      <workItem from="1527255069189" duration="599000" />
+      <workItem from="1527261194597" duration="599000" />
+      <workItem from="1527264057754" duration="1977000" />
+      <workItem from="1527266088152" duration="612000" />
+      <workItem from="1527321050835" duration="1421000" />
+      <workItem from="1527323140307" duration="1555000" />
+      <workItem from="1527325644855" duration="1623000" />
+      <workItem from="1527329295551" duration="599000" />
+      <workItem from="1527333530225" duration="1122000" />
+      <workItem from="1527405465863" duration="1826000" />
+      <workItem from="1527407694978" duration="1792000" />
+      <workItem from="1527411749986" duration="1798000" />
+      <workItem from="1527414099369" duration="1194000" />
+      <workItem from="1527416401879" duration="599000" />
+      <workItem from="1527418619603" duration="1922000" />
+      <workItem from="1527425329805" duration="1012000" />
+      <workItem from="1527489604153" duration="599000" />
+      <workItem from="1527577620304" duration="27000" />
+      <workItem from="1527661097476" duration="693000" />
+      <workItem from="1527663155423" duration="1814000" />
+      <workItem from="1527669112512" duration="599000" />
+      <workItem from="1527679580656" duration="599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="350383000" />
+    <option name="totallyTimeSpent" value="376750000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="958" y="2" width="949" height="1029" extended-state="0" />
+    <frame x="970" y="2" width="951" height="1041" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2550911" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35187167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09825327" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1713362" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -631,90 +695,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/java/spring/rest_features.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/spring/spring cachowanie.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/spring/spring into action.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/spring/spring jdbc.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-987">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/spring/spring nosql.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/spring/spring w sieci.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/spring/spring web flow.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/spring/spring zabezpieczanie metod.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/effective java/tools/different.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/effective java/annotations.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/effective java/classes and interfaces.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="157" column="36" lean-forward="true" selection-start-line="157" selection-start-column="36" selection-end-line="157" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/effective java/Creating and Destroying Objects.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-807">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/effective java/design patterns.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="509">
@@ -820,13 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine learning/smart net book/notatki/podstawowe pojęcia.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="61" lean-forward="false" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -942,31 +915,125 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/machine learning/smart net book/recomendations">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="19" column="37" lean-forward="false" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine learning/smart net book/SVD">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="46" lean-forward="false" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine learning/smart net book/filtrowanie kolaboratywne">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="108" lean-forward="false" selection-start-line="21" selection-start-column="108" selection-end-line="21" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java script/Angular/type script/strings">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matematyka/macierze/wstęp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine learning/smart net book/rekomendacje/svd/svd założenia">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="79" lean-forward="false" selection-start-line="3" selection-start-column="79" selection-end-line="3" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine learning/smart net book/rekomendacje/recomendations">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine learning/smart net book/rekomendacje/svd/svd działanie">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine learning/smart net book/notatki/podstawowe pojęcia.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="11" lean-forward="false" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine learning/smart net book/rekomendacje/filtrowanie kolaboratywne">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="54" lean-forward="false" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/regresja/regresja logistyczna">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine learning/smart net book/testowanie">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matematyka/pojęcia">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="84" lean-forward="false" selection-start-line="1" selection-start-column="84" selection-end-line="1" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/określenie przydatności klasyfikatora">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="2" lean-forward="false" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/intro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="72" lean-forward="false" selection-start-line="6" selection-start-column="72" selection-end-line="6" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/regresja/regresja liniowa">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="59" lean-forward="false" selection-start-line="1" selection-start-column="59" selection-end-line="1" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/wyzwania">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="79" lean-forward="false" selection-start-line="1" selection-start-column="79" selection-end-line="1" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine learning/smart net book/notatki/ogólnie">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/basics.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/cookie">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="70" lean-forward="false" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
+          <folding />
         </state>
       </provider>
     </entry>

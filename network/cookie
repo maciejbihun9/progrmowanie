@@ -1,0 +1,23 @@
+
+ * Mechanizm cookie został wprowadzony po to, by w bezstanowym
+ protokole HTTP umożliwić odróżnienie osób odwiedzających dany serwis,
+
+ * Istotne przy stosowaniu cookie jest to,
+ że są to dane tymczasowe – wygasają automatycznie
+ po pewnym czasie i w każdej chwili mogą być usunięte lub
+ zablokowane przez użytkownika. Z tego powodu trwałe
+ dane użytkowników muszą być przechowywane po stronie serwera
+
+ * zwykly ciąg tekstowy, który zostaje wysłany do user'a przez witrynę,
+ który zostaje zapisany w pamięci komputer'a tego user'a,
+
+ zastosowanie:
+ * podtrzymywanie sesji,
+ * zapisywanie stanów elementów na stronie oraz historie stron
+ * sondy, liczniki, koszyki zakupowe, tworzenie statystyk odiwedzania stron,
+ * liczniki zakupowe - send cookie to the browser, if i send without a cookie
+ then webiste would send it
+ - Także stosowanie ciasteczka jako „zabezpieczenie” sond i
+  liczników należy traktować jako działanie pomocnicze – wynik
+  takiego licznika może łatwo, nawet nieświadomie,
+  zafałszować użytkownik, który ma trwale zablokowane ciasteczka.

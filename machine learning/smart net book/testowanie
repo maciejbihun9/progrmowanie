@@ -1,0 +1,8 @@
+WALIDACJA KRZYŻOWA:
+
+ * posiadamy 1000 elementów, które dzielimy na 10 grup, gdzie każda posiada taki sam
+ odsetek elementów elementów prawdziwych oraz nie prawdziwych,
+
+ * trenujemy klasyfikaor na trzech z nich, a na pozostałych siedmiu testujemy
+
+ * potem następuje wyciąganie średniej z tych grup

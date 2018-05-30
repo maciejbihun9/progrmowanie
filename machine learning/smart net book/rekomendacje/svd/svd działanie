@@ -1,0 +1,31 @@
+
+ * każdą macierz A można rozłożyć na trzy unikalne macierze, czyli
+ nie istnieje druga kombinacja macierzy, która mogła by dać tą macierz A niż
+ połączenie U, sigma oraz V transponowane.
+
+ * cała koncepcja polaga na podziale elementów zbioru na kategorie, coś
+ w stylu clusteringu.
+
+ przykład:
+ * mamy macierz A, gdzie:
+ macierz ta posiada oceny tych filmów przyznane przez każdego użytkownika
+ - m - users,
+ - n - movies
+
+ * maciez U:
+ - posiada wartości od -1 do 1
+ - posiada tylko kilka kolumn r, gdzie r jest to gatunek filmu odkryty podczas
+ działania algorytmu,
+ - każda wartość odpowiada temu jak bardzo dany uzytkownik lubi ten gatunek,
+ gdzie im mniejsza poniżej zera tym lepiej oraz wyżej powyżej zera,
+
+ * macierz sigma:
+ - posiada wartości tylko na przekątnej,
+ - informuje o mocy odziaływania każdego z gatunków,
+ - często może być tak, że jest kilka gatunków, ale ten ostatni ma bardzo małą wartość
+ i reprezentuje w pewnym sensie szum w danych, który zawsze występuje,
+
+ * macierz V:
+ - o wielkości r x n, czyli gatunek, film
+ - każdy wierz to gatunek,
+ - każda wartość to wartość przynależnośco danego filmu do konkretnego gatunku,
