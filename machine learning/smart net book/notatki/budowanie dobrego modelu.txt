@@ -12,6 +12,19 @@
  * w konkursie netflixa zbudowano model z wielu modeli z 100 elementami uczącymi,
  
  * sprawdzenie pochodzenia oraz dokładnoście posiadanych danych,
+
+ * To prowadzi do pytania o dryfowanie. Jeśli zbudujesz model w dniu n i zastosujesz go
+   do kolejnych dni, n+1, n+2 itd., zapewne zauważysz, że model dryfuje. Oznacza to,
+   że z czasem skuteczność modelu spadnie. Dzieje się tak, ponieważ zachowania użytkowników
+   się zmieniają.
+
+ * strumieniowanie danych jest najważniejsze dla szybkiego modelu,
+ dzięki temu można otrzymać dane zwiąazne ze zdarzeniem i nauczyć model na ich
+ podstawie, nie oczekując na utworzenie się większej
+ paczki zawierającej dane ze zdarzenianmim,
+ -np. Dopiero niedawno zaczęły się pojawiać
+      systemy przetwarzania strumieniowego takie jak Storm, Storm Trident i Spark Streaming,
+      a także ekscytujące rozwiązania MillWheel21 i FlumeJava22 z firmy Google.
  
  
  

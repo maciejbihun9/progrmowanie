@@ -1,0 +1,35 @@
+ * using caching can dramatically improve your performance,
+
+ * Ordering uses an ORDER BY clause in the SQL statement to retrieve the entities in the defined order.
+  Database handles these kinds of operations very efficiently. So this approach is a lot better for huge associations.
+  USE DATABASE POWER AS MUCH AS YOU CAN
+
+ * if you think about efficiency of hibernate
+ then always look what kind of queries are executed with its hibernate session,
+
+ * the most common performance problem is n+1 problem,
+
+ * in the production mode you should log only errors,
+ it should be optimized for great efficiency,
+ - you can use log4j for that,
+
+ * check performance problems with setting:
+ - hibernate.generate_statistics to true
+ - it will show how much time application spent on executing tasks,
+
+ * do not print.out too many logs from your application!
+ - do not print your sql queries to the console, specially on the production env,
+
+ * watch out on update statements, because it is very easy to fall down with many
+ queries to the database. Just use:
+ - em.createQuery("UPDATE Product p SET p.price = p.price*0.1").executeUpdate();
+ to set many entities using just one query to the a database,
+
+ * performance with deleting entities:
+ - cascade type allows to remove all associated entities in one shoot, but this
+ can have many side effects. it is not really as effecient as it should be
+ - it is recommended to not use that cascade type fetching, because this annotation
+ will run seperated sql queries to delete each of one,
+
+ zastosowanie:
+ * I improved the performance by 20% within a few minutes by setting show_sql to false,

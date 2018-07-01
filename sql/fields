@@ -1,0 +1,6 @@
+
+ * INT(11):
+ - int will always have 64 bit memory occupied,
+ - this number between brackets means that no matter what we can show
+ this number with at most 11 digits, but if there is more digits then
+ anyway that reall number will be stored

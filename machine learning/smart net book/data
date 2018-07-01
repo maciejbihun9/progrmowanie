@@ -1,0 +1,4 @@
+
+ * trening data should be well diversified, 50% positives, 50% negatives
+ - if there is much more data associated with one group then the data
+ from one group would have much more influence on the algorithm,

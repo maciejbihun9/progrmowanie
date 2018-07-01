@@ -1,0 +1,16 @@
+
+ * hibernate uses JDBC under the hood to make database calls,
+
+ * If there is one thing that’s often criticized about JPA and Hibernate, it’s that it sometimes execute more queries than you expected,
+
+ * use your logging and statistics components to see if everything works correclty,
+
+ * Fetching only the data you need is a good thing in general,
+ but it also requires Hibernate to execute an additional query to initialize each relationship,
+
+ * zapewnij skrypt do tworzenia bazy danych podczas startowania apliakcji,
+
+ * jest to dobra rzecz, gdy baza danych już istnieje i nie trzeba robić,
+
+ * trzeba utworzyć schemat bazy danych własnoręcznie, nie moge
+ zrobić tego z pomocą hibernate, bo wszystko spierdole!

@@ -1,0 +1,16 @@
+
+ * SESJA:
+ - jest to jedno połączenie z serwerem,
+ - gdy sesja jest zamknięta, to odrazu dostaje lazy initialization exception,
+ - nie jest bezpieczna wątkowo, dlatego można realizować połączenie tylko z pomocą jednego wątku,
+ - nie jest to do końca to samo co zwykła sesja pomiędzy klientem a serwerem,
+ - nie powinna być rozciągnięta między żądaniami, chyba, że robimy sklep internetowy,
+ - przy kolejnych odczytach encja jest brana z cache encji,
+ - update(detachedObject) - tworzy nową sesje i zapisuje stan obiektu
+
+ * TRANSAKCJA:
+ - przetrzymuje lock podczas zmian na bazie, także tylko jedna tranzakcja w tym samym czasie może robić
+ update danego rekordu w bazie danych,
+ - jest tworzona w sesji,
+ - może być kilka tranzakcji podczas jednej sesji,
+ ale jest to dosyć niebezpieczne, bo może się zakoczyć taką sytuacją jak n+1,

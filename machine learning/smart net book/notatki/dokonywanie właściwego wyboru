@@ -1,0 +1,11 @@
+
+ * zysk - piniężny, moralny, wywyższenie się ponad innymi, komfort ponad czas,
+
+ * it is all about making the right decisions about current state of knowledge,
+
+ * test A/B:
+ - we have two groups of users, we have to make sure that those groups are not
+ highly seperated in terms of conversion coefficient,
+
+ * conversion coefficient:
+ - zmienna losowa o rozkładzie normalnym,

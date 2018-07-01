@@ -1,0 +1,14 @@
+
+ * it is associated with too many queries, because of FETCH.LAZY,
+
+ * when you try to get the data that is annotated as lazy then you will
+ face quering the database everytime that causes n+1 problem
+
+ examples:
+ * this query will end up with many database queries if you use FETCHTYPE.LAZY for
+ your associations
+ - List<Order> orders = em.createQuery("SELECT o FROM Order o").getResultList();
+   for (Order order : orders) {
+       log.info("Order: " + order.getOrderNumber());
+       log.info("Number of items: " + order.getItems().size());
+   }

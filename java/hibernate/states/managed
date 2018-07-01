@@ -1,0 +1,4 @@
+
+ * for an entity to be managed first is has to be persisted and stored in the database,
+
+ * it has to be managed by current transaction

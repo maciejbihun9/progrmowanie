@@ -1,0 +1,12 @@
+
+ * update only one package:
+ (if you do npm install it will reinstall and reindex all packages, so it might take a lot of time)
+ - npm install package_name@version (even if already exists),
+
+ * removing node_modules:
+ - it takes so long, 30 mins, so be sure that there is no other way to do it (it means for visual studio of course!)
+ i think for VS env,
+ - we can remove all modules just by just replacingn them between folders, it works!
+
+ * use only cmd for getting packages, but for folder only, to get packages in the project we have to make sure
+ that we restore packages in the project also because of installation on the vs server,

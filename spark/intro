@@ -1,0 +1,16 @@
+
+ * build on top of scala,
+
+ * it is easy to start with python,
+
+ use cases:
+ * processing for graphs,
+
+ * query structure data (sql -> csv data),
+
+ * for large scale data processing,
+
+ * shines only for big data solutions,
+
+ * machine learning for large scale
+

@@ -1,0 +1,15 @@
+
+ * refresh():
+ - Refresh the state of the instance from the database, overwriting changes made to the entity, if any.
+ - so during a transaction we can get changes from the database and set it to an entity in the transaction ignoring changes made already,
+
+ * flush():
+ - all the insert, update, delete or whatever statements are actually called on the database
+
+ * detach():
+ - nie są już obsługiwane przez EntityManager'a,
+ - mają ograniczone możliwości funkcjonowania,
+ - serializes an entity to another layer,
+ - Obiekty wolnostojące są przydatne w sytuacjach,
+ w których EntityManager nie jest dostępny i do przesyłania
+ obiektów między różnymi instancjami EntityManager,

@@ -1,0 +1,4 @@
+
+ * this is a programming intereface for relational databases made by oracle!
+
+ * all api lives in javax.persistence

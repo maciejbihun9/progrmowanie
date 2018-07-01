@@ -1,0 +1,3 @@
+
+ * make all associated entities persisted after persist() method is called on the host entity:
+ - cascade=PERSIST

@@ -1,0 +1,51 @@
+
+ SIMPLE DESCRIPTION:
+ * creates a connection between database and a application,
+ * in a app we can have many of them connected to the same database,
+
+ METHODS DESCRIPTION:
+
+ * add an entity to the pC, make in persistent and managed:
+ - should NOT be used for entities that already exist in the database,
+ because this entity will be ignored by em, but referenced entities may not be
+ depends on theirCascadeType annotation,
+ - it should be used only for new entities,
+ - if it is removed then becomes managed
+ - em.persist()
+
+ * Merge the state of the given entity into the current persistence context
+ - it should be used for detached entities,
+ - em.merge()
+
+ * close a persistanceContext, but after opened transaction is finished,
+ all other method invocations after that will throw an IllegalStateException:
+ - em.close()
+
+ * set all entities to be detached. After that calling flush() will have no effect at all:
+ - em.clear()
+
+ * synchronize the persistanceContext with the database:
+ - will save even new entity
+ - em.flush()
+
+ * it refreshes the state of the instance from the database also it will overwrite the changes to the entity:
+ - em.refresh()
+
+ * get an entity from the pC or from the database:
+ - this entity will be downloaded from the context if already exists there
+ - em.find(id)
+
+ BASIC EXAMPLES:
+
+ * entityManager.getTransaction().begin();
+   Employee employee = new Employee(1, "Mahesh", "Varanasi");
+   entityManager.persist(employee);
+   entityManager.getTransaction().commit();
+
+ * EntityManager entityManager = entityManagerFactory.createEntityManager();
+   entityManager.getTransaction().begin();
+   // move a new entities to the persistance context
+   entityManager.persist( new Event( "Our very first event!", new Date() ) );
+   entityManager.persist( new Event( "A follow up event", new Date() ) );
+   entityManager.getTransaction().commit();
+   entityManager.close();

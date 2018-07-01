@@ -1,0 +1,10 @@
+
+ * Angular modules not found during build process:
+ - it is possible that I closed laptop during node_modules downloading process,
+ - check the node_modules folder
+ - clean all solution, try restart visual studio or even a laptop to clear all soltion,
+ then build once again, it helps!!!
+
+ * changes are not visible by browser:
+ - if everything seems to be working and after some change it starts to not working then
+ and after that change removal it is not seems to be right then starts to be crazy,

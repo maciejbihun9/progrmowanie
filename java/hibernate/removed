@@ -1,0 +1,6 @@
+
+ * en entity can be in that state after remove() method is called,
+
+ * the database will be affected by this method invocation after flush() or commit() method is called,
+
+ * for an entity to back to the database we have to call persist() again

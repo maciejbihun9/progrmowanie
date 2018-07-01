@@ -1,6 +1,4 @@
 
-
-
  * do estymacji logistyczneh używamy kzywej logistycznej,
 
  * celem regresji jest uogólnienie,
@@ -17,4 +15,6 @@
  Jest to zajebista różnica w postrzeganiu tych kwot.
 
  * jest bardzo dobra do określania 0-1 zdarzeń,
- np. czy giełda pójdzie do góry, czy pójdzie w dół, czy będzie się kręcić w kółko
+ np. czy giełda pójdzie do góry, czy pójdzie w dół, czy będzie się kręcić w kółko,
+
+ * określanie, czy wyświetlić danemu userowi daną reklame na podstawie jego poprzednich doświadczeń,

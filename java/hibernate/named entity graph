@@ -1,0 +1,48 @@
+
+ * te rozwiązanie ładuje wszystkie opisane elementy EAGERLY,
+
+ * nie dopuszcza do tworzenia sią bardzo wielu żądań do bazy danych,
+
+ * adnotacja @NamedEntityGraph musi być w klasie głównej obiektu!,
+ gdzie definiowane są jej atrybuty,
+
+ * nazwa grafu dla tej encji będzie taka sama jak nazwa klasy,
+
+ * jeśli nie ma żadnych atrybutów, to tylko Id będzie pobrane,
+
+ * ustawienie pobierania pobierania konkretnych pól obiektu klasy:
+ - @NamedEntityGraph(name="emailEntityGraph", attributeNodes={
+       @NamedAttributeNode("subject"),
+       @NamedAttributeNode("sender")
+   })
+ - String subject, String sender
+
+ * można zadeklarować kilka takich grafów dla jednej encji:
+ - @NamedEntityGraphs({
+       @NamedEntityGraph(name="previewEmailEntityGraph", attributeNodes={
+           @NamedAttributeNode("subject"),
+           @NamedAttributeNode("sender"),
+           @NamedAttributeNode("body")
+       }),
+       @NamedEntityGraph(name="fullEmailEntityGraph", attributeNodes={
+           @NamedAttributeNode("sender"),
+           @NamedAttributeNode("subject"),
+           @NamedAttributeNode("body"),
+           @NamedAttributeNode("attachments")
+       })
+   })
+
+ * pobieranie odpowidnio nazwanych danych:
+ - EntityGraph<EmailMessage> eg = em.getEntityGraph("emailEntityGraph");
+
+ * IMPORTANT: istnieje świetna możliwość do testowania pobierania danych z bazy poprzez unit testy
+ z uzycie entityManagera!!!
+
+ pytania:
+ * czy pobieranie subencji subencji encji musi być wykonane poprze takie dodawanie NamedAttributes?
+
+ zastosowanie:
+ * pobieranie tylko książek autora:
+ - @NamedEntityGraph(name = "graph.AuthorBooks", attributeNodes = @NamedAttributeNode("books"))
+
+

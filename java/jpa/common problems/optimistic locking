@@ -1,0 +1,41 @@
+ * nie polega na lokowaniu, tylko na sprawdzeniach czy wersja jest taka sama
+ oraz na sprawdzeniu, czy update rows count jest 1, bo jeśli jest zero to
+ jakaś inna tranzakcja zmieniała wartość encji na której pracujemy.
+ To wszystko się dzieje automatycznie przez JPA
+
+ * Ogólnie to zapobiega on przed utraceniu jednego updat'u, który może być
+  utracony przez zbyt szybki kolejny update,
+  jest to spowodowane tranzakcjami konukrencyjnymi.
+  Zapobiega poprostu temu, aby wartość poprzedniego updat'u była wzięta pod uwagę
+
+  * podczas updatu tranzakcja musi pobrać wiersz, sprawdza wersje, a potem przed
+  zatwierdzaniem musi sprawdzić, czy werjsa jest taka sama, jeśli nie, to tranzakcja zostanie przerwana.
+
+  * dzije się podczas updatu
+  - np. kiedy dwóch użytkowników chce zrobić update tej samej encji,
+  - albo jeden user stara się zrobić update tej samej encji, a nie zrobił
+  odświeżania po pierwszej,
+
+  - staraj się poprostu robić update dosyć często, aby te operacje były bardzo krótkie,
+
+  - tutaj chodzi bardziej o konkurencyjne updaytowanie aplikacji, gdy dówch gości robi update w tym samym czasie
+
+  - nie rób cashowania encji oraz używaj kolumny wersji, aby temu zapobiec,
+
+  występowanie:
+
+  * inna tranzakcja zapisała zmiany w tym samym momżecie co user chciał zrobić update
+
+  rozwiązanie:
+
+  * staranie się zapisania zmian po kilka razy, nawet po piewrszym nie udanym. najlepiej
+  powtórzyć próbe updat'u danej encji kilka razy, aby zapobiec StackOverflowException.
+  Poprsotu postraj się powtórzyć daną akcje kilka razy,
+  - nie jest to zbyt dobry pomysł, ale napewno kolejny update będzie zawierał już zmiany z poprzedniej tranzakcji,
+
+  * annotuj columne:
+  - to zablokuje możliwość zmiany wartości podczas danego pola przez różne tranzakcje
+  - @Version
+    @Column(name = "VERSION")
+    private Integer version;
+

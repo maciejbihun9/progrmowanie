@@ -1,0 +1,10 @@
+SORTED COLLECTION:
+
+ * When use sorting, Hibernate will load the associated Book entities
+  from the database and use a Java Comparator to sort them in memory.
+   That is not a good approach for huge Sets of entities.
+
+ORDER COLLECTION:
+
+ * Ordering uses an ORDER BY clause in the SQL statement to retrieve the entities in the defined order.
+  Database handles these kinds of operations very efficiently. So this approach is a lot better for huge associations.

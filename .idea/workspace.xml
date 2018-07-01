@@ -2,23 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f341ddb-947e-47ef-9e6e-2652f1fef69b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/intro" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/określenie przydatności klasyfikatora" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/regresja/regresja liniowa" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/regresja/regresja logistyczna" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/wyzwania" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/machine learning/smart net book/notatki/ogólnie" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/machine learning/smart net book/rekomendacje/svd/svd działanie" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/machine learning/smart net book/rekomendacje/svd/svd założenia" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/machine learning/smart net book/testowanie" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/matematyka/macierze/wstęp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/matematyka/pojęcia" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/network/cookie" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/C#/NET/api" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/browsers/chrome" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/curl/intro" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/data processing/apache spark" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/git/konflikty" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/Angular/advanced caching" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/Angular/common mistakes" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/Angular/packages installation" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/Angular/tests" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java/hibernate/associations" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java/hibernate/basic items" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java/hibernate/caching" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java/hibernate/cascade" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java/hibernate/collections" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java/hibernate/hibernate connections between entities" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java/hibernate/intro" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java/hibernate/n + 1 problem" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java/hibernate/named entity graph" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java/hibernate/performance problems" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java/hibernate/removed" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java/hibernate/states/detached" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java/hibernate/states/managed" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java/hibernate/states/persistent" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java/hibernate/states/transient" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java/jpa/annotations/entity annotations" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java/jpa/basic info" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java/jpa/basic methods" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java/jpa/common problems/locking" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java/jpa/common problems/optimistic locking" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java/jpa/common problems/pesimistic locking" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java/jpa/entityManager" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java/jpa/intro" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/machine learning/smart net book/data" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/machine learning/smart net book/notatki/dokonywanie właściwego wyboru" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/spark/intro" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sql/fields" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sql/procedura" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/visual studio/angular issues" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/visual studio/common problems" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/machine learning/smart net book/SVD" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/machine learning/smart net book/filtrowanie kolaboratywne" afterPath="$PROJECT_DIR$/machine learning/smart net book/rekomendacje/filtrowanie kolaboratywne" />
-      <change beforePath="$PROJECT_DIR$/machine learning/smart net book/notatki/podstawowe pojęcia.txt" afterPath="$PROJECT_DIR$/machine learning/smart net book/notatki/podstawowe pojęcia.txt" />
-      <change beforePath="$PROJECT_DIR$/machine learning/smart net book/recomendations" afterPath="$PROJECT_DIR$/machine learning/smart net book/rekomendacje/recomendations" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/intro.txt" afterPath="$PROJECT_DIR$/java script/Angular/intro.txt" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/main files" afterPath="$PROJECT_DIR$/java script/Angular/main files" />
+      <change beforePath="$PROJECT_DIR$/java/hibernate/annotations" afterPath="$PROJECT_DIR$/java/hibernate/annotations" />
+      <change beforePath="$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/regresja/regresja logistyczna" afterPath="$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/regresja/regresja logistyczna" />
+      <change beforePath="$PROJECT_DIR$/machine learning/smart net book/notatki/budowanie dobrego modelu.txt" afterPath="$PROJECT_DIR$/machine learning/smart net book/notatki/budowanie dobrego modelu.txt" />
+      <change beforePath="$PROJECT_DIR$/machine learning/smart net book/notatki/ogólnie" afterPath="$PROJECT_DIR$/machine learning/smart net book/notatki/ogólnie" />
+      <change beforePath="$PROJECT_DIR$/work ethic.txt" afterPath="$PROJECT_DIR$/work ethic.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,43 +61,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ogólnie" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/machine learning/smart net book/notatki/ogólnie">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="basics.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/network/basics.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cookie" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/network/cookie">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="70" lean-forward="false" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Subject</find>
       <find>enum</find>
+      <find>taką</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -79,57 +79,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/java script/angular 5/core/core.txt" />
-        <option value="$PROJECT_DIR$/java script/angular 2/book/practices.txt" />
-        <option value="$PROJECT_DIR$/java script/angular 5/type script/collections" />
-        <option value="$PROJECT_DIR$/java script/angular 5/type script/functional programming.txt" />
-        <option value="$PROJECT_DIR$/java script/angular 5/type script/models" />
-        <option value="$PROJECT_DIR$/java script/angular 5/zastosowania/Loading data" />
-        <option value="$PROJECT_DIR$/java script/angular 5/zastosowania/Components architecture" />
-        <option value="$PROJECT_DIR$/java script/angular 5/zastosowania/Managing styles in the code" />
-        <option value="$PROJECT_DIR$/java script/angular 5/zastosowania/Communicating Between Components" />
-        <option value="$PROJECT_DIR$/java script/angular 5/zastosowania/Run functions outside of angular core" />
-        <option value="$PROJECT_DIR$/java script/angular 5/HostBinding &amp; HostListener" />
-        <option value="$PROJECT_DIR$/java script/angular 5/template" />
-        <option value="$PROJECT_DIR$/java script/Angular/architecture/directive" />
-        <option value="$PROJECT_DIR$/java script/Angular/zastosowania/Components architecture" />
-        <option value="$PROJECT_DIR$/java script/Angular/main files" />
-        <option value="$PROJECT_DIR$/java script/Angular/zastosowania/Managing view items in code.txt" />
-        <option value="$PROJECT_DIR$/java script/Angular/template" />
-        <option value="$PROJECT_DIR$/sql/ms sql/select queries" />
-        <option value="$PROJECT_DIR$/sql/ms sql/shortcuts" />
-        <option value="$PROJECT_DIR$/java/java 8/Closure.txt" />
-        <option value="$PROJECT_DIR$/java/java 8/lambdy/lambda with dots.txt" />
-        <option value="$PROJECT_DIR$/java/spring/bean connections.txt" />
-        <option value="$PROJECT_DIR$/java/spring/rest_description.txt" />
-        <option value="$PROJECT_DIR$/java/effective java/enums.txt" />
-        <option value="$PROJECT_DIR$/java/effective java/ogólnie java.txt" />
-        <option value="$PROJECT_DIR$/java script/usefull functions" />
-        <option value="$PROJECT_DIR$/java script/Angular/cli.txt" />
-        <option value="$PROJECT_DIR$/java script/Angular/Angular 6/intro" />
-        <option value="$PROJECT_DIR$/machine learning/numpy" />
-        <option value="$PROJECT_DIR$/java script/Angular/type script/collections" />
-        <option value="$PROJECT_DIR$/java/hibernate/lazy eager" />
-        <option value="$PROJECT_DIR$/java/hibernate/annotations" />
-        <option value="$PROJECT_DIR$/java/hibernate/storing enums" />
-        <option value="$PROJECT_DIR$/java script/Angular/zastosowania/Loading data" />
-        <option value="$PROJECT_DIR$/java script/Angular/type script/strings" />
-        <option value="$PROJECT_DIR$/machine learning/smart net book/recomendations" />
-        <option value="$PROJECT_DIR$/machine learning/smart net book/filtrowanie kolaboratywne" />
-        <option value="$PROJECT_DIR$/matematyka/macierze/wstęp" />
-        <option value="$PROJECT_DIR$/machine learning/smart net book/notatki/podstawowe pojęcia.txt" />
-        <option value="$PROJECT_DIR$/machine learning/smart net book/SVD" />
-        <option value="$PROJECT_DIR$/machine learning/smart net book/svd/svd działanie" />
-        <option value="$PROJECT_DIR$/machine learning/smart net book/svd/svd założenia" />
-        <option value="$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/regresja/regresja liniowa" />
-        <option value="$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/regresja/regresja logistyczna" />
-        <option value="$PROJECT_DIR$/machine learning/smart net book/testowanie" />
-        <option value="$PROJECT_DIR$/matematyka/pojęcia" />
-        <option value="$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/określenie przydatności klasyfikatora" />
         <option value="$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/intro" />
         <option value="$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/wyzwania" />
-        <option value="$PROJECT_DIR$/machine learning/smart net book/notatki/ogólnie" />
         <option value="$PROJECT_DIR$/network/cookie" />
+        <option value="$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/regresja/regresja logistyczna" />
+        <option value="$PROJECT_DIR$/machine learning/smart net book/data" />
+        <option value="$PROJECT_DIR$/machine learning/smart net book/notatki/budowanie dobrego modelu.txt" />
+        <option value="$PROJECT_DIR$/machine learning/smart net book/notatki/ogólnie" />
+        <option value="$PROJECT_DIR$/spark/intro" />
+        <option value="$PROJECT_DIR$/java script/Angular/main files" />
+        <option value="$PROJECT_DIR$/machine learning/smart net book/notatki/dokonywanie właściwego wyboru" />
+        <option value="$PROJECT_DIR$/java script/Angular/intro.txt" />
+        <option value="$PROJECT_DIR$/curl/intro" />
+        <option value="$PROJECT_DIR$/visual studio/angular issues" />
+        <option value="$PROJECT_DIR$/visual studio/common problems" />
+        <option value="$PROJECT_DIR$/java/hibernate/annotations" />
+        <option value="$PROJECT_DIR$/java/hibernate/hibernate connections between entities" />
+        <option value="$PROJECT_DIR$/java/hibernate/common problems/Unknown Id.generator" />
+        <option value="$PROJECT_DIR$/java/hibernate/common problems/QuerySyntaxException" />
+        <option value="$PROJECT_DIR$/C#/NET/api" />
+        <option value="$PROJECT_DIR$/git/konflikty" />
+        <option value="$PROJECT_DIR$/browsers/chrome" />
+        <option value="$PROJECT_DIR$/java/hibernate/states" />
+        <option value="$PROJECT_DIR$/java/hibernate/states/detached" />
+        <option value="$PROJECT_DIR$/java/hibernate/named entity graph" />
+        <option value="$PROJECT_DIR$/java/hibernate/intro" />
+        <option value="$PROJECT_DIR$/java/hibernate/n + 1 problem" />
+        <option value="$PROJECT_DIR$/java/hibernate/caching" />
+        <option value="$PROJECT_DIR$/java/hibernate/states/persistent" />
+        <option value="$PROJECT_DIR$/java script/Angular/common mistakes" />
+        <option value="$PROJECT_DIR$/java script/Angular/packages installation" />
+        <option value="$PROJECT_DIR$/java/hibernate/common problems/Optimistic Lock" />
+        <option value="$PROJECT_DIR$/java/hibernate/basic items" />
+        <option value="$PROJECT_DIR$/java/jpa/common problems/pesimistic locking" />
+        <option value="$PROJECT_DIR$/java/jpa/common problems/optimistic locking" />
+        <option value="$PROJECT_DIR$/java/jpa/intro" />
+        <option value="$PROJECT_DIR$/java/jpa/basic info" />
+        <option value="$PROJECT_DIR$/java/jpa/common problems/locking" />
+        <option value="$PROJECT_DIR$/java/hibernate/basic methods" />
+        <option value="$PROJECT_DIR$/java/hibernate/entityManager" />
+        <option value="$PROJECT_DIR$/java/jpa/annotations/entity annotations" />
+        <option value="$PROJECT_DIR$/java/jpa/entityManager" />
+        <option value="$PROJECT_DIR$/java/hibernate/states/managed" />
+        <option value="$PROJECT_DIR$/java/hibernate/states/transient" />
+        <option value="$PROJECT_DIR$/java/hibernate/removed" />
+        <option value="$PROJECT_DIR$/java/hibernate/collections" />
+        <option value="$PROJECT_DIR$/java/hibernate/performance problems" />
+        <option value="$PROJECT_DIR$/sql/fields" />
+        <option value="$PROJECT_DIR$/java/hibernate/cascade" />
+        <option value="$PROJECT_DIR$/java/hibernate/associations" />
+        <option value="$PROJECT_DIR$/java script/Angular/advanced caching" />
+        <option value="$PROJECT_DIR$/java script/Angular/tests" />
       </list>
     </option>
   </component>
@@ -139,10 +139,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="970" />
-    <option name="y" value="2" />
-    <option name="width" value="951" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="116" />
+    <option name="y" value="18" />
+    <option name="width" value="1607" />
     <option name="height" value="1041" />
   </component>
   <component name="ProjectView">
@@ -160,8 +160,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -172,23 +170,19 @@
             <path>
               <item name="programming" type="b2602c69:ProjectViewProjectNode" />
               <item name="programming" type="462c0819:PsiDirectoryNode" />
-              <item name="matematyka" type="462c0819:PsiDirectoryNode" />
+              <item name="java script" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="programming" type="b2602c69:ProjectViewProjectNode" />
               <item name="programming" type="462c0819:PsiDirectoryNode" />
-              <item name="matematyka" type="462c0819:PsiDirectoryNode" />
-              <item name="macierze" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="programming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programming" type="462c0819:PsiDirectoryNode" />
-              <item name="network" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -204,11 +198,11 @@
       <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming\java\jpa" />
       <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming\machine learning\smart net book\rekomendacje" />
       <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming\machine learning\smart net book\svd" />
       <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming\java script\angular 5\zastosowania" />
       <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming\java script\angular 5\architecture" />
-      <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming\C#" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -634,25 +628,153 @@
       <workItem from="1527661097476" duration="693000" />
       <workItem from="1527663155423" duration="1814000" />
       <workItem from="1527669112512" duration="599000" />
-      <workItem from="1527679580656" duration="599000" />
+      <workItem from="1527679580656" duration="1251000" />
+      <workItem from="1527748765932" duration="1336000" />
+      <workItem from="1527750577069" duration="1716000" />
+      <workItem from="1527757232112" duration="1368000" />
+      <workItem from="1527838996153" duration="595000" />
+      <workItem from="1527843118425" duration="754000" />
+      <workItem from="1527846162879" duration="1451000" />
+      <workItem from="1527848897497" duration="644000" />
+      <workItem from="1527854875156" duration="627000" />
+      <workItem from="1527857349201" duration="599000" />
+      <workItem from="1527859161126" duration="599000" />
+      <workItem from="1528094073996" duration="614000" />
+      <workItem from="1528095978954" duration="599000" />
+      <workItem from="1528105084135" duration="599000" />
+      <workItem from="1528107409514" duration="335000" />
+      <workItem from="1528109256970" duration="599000" />
+      <workItem from="1528118656921" duration="599000" />
+      <workItem from="1528178084955" duration="1125000" />
+      <workItem from="1528180024803" duration="780000" />
+      <workItem from="1528183079467" duration="331000" />
+      <workItem from="1528204641204" duration="656000" />
+      <workItem from="1528214112824" duration="663000" />
+      <workItem from="1528215977497" duration="1787000" />
+      <workItem from="1528230334490" duration="923000" />
+      <workItem from="1528232263254" duration="598000" />
+      <workItem from="1528281970107" duration="599000" />
+      <workItem from="1528284133997" duration="598000" />
+      <workItem from="1528286896542" duration="780000" />
+      <workItem from="1528360535510" duration="1289000" />
+      <workItem from="1528365569366" duration="598000" />
+      <workItem from="1528522640611" duration="597000" />
+      <workItem from="1528703519044" duration="599000" />
+      <workItem from="1528705897495" duration="599000" />
+      <workItem from="1528710752876" duration="664000" />
+      <workItem from="1528715646020" duration="1259000" />
+      <workItem from="1528719562157" duration="714000" />
+      <workItem from="1528722314268" duration="1195000" />
+      <workItem from="1528725342077" duration="1658000" />
+      <workItem from="1528728263621" duration="599000" />
+      <workItem from="1528788183206" duration="606000" />
+      <workItem from="1528862598469" duration="1255000" />
+      <workItem from="1528884767674" duration="1782000" />
+      <workItem from="1528886887099" duration="1504000" />
+      <workItem from="1528888779566" duration="1791000" />
+      <workItem from="1528966592841" duration="698000" />
+      <workItem from="1528978858042" duration="931000" />
+      <workItem from="1529054068484" duration="722000" />
+      <workItem from="1529060751466" duration="1988000" />
+      <workItem from="1529062760616" duration="2175000" />
+      <workItem from="1529065652249" duration="1711000" />
+      <workItem from="1529307966917" duration="1168000" />
+      <workItem from="1529310663663" duration="1561000" />
+      <workItem from="1529312476877" duration="1650000" />
+      <workItem from="1529316587846" duration="1791000" />
+      <workItem from="1529318686673" duration="717000" />
+      <workItem from="1529321061614" duration="97000" />
+      <workItem from="1529392269796" duration="1268000" />
+      <workItem from="1529401919281" duration="1697000" />
+      <workItem from="1529404225078" duration="1377000" />
+      <workItem from="1529408361846" duration="702000" />
+      <workItem from="1529430710063" duration="599000" />
+      <workItem from="1529436546154" duration="1455000" />
+      <workItem from="1529438417766" duration="780000" />
+      <workItem from="1529476206463" duration="1007000" />
+      <workItem from="1529580509678" duration="1643000" />
+      <workItem from="1529584347118" duration="1096000" />
+      <workItem from="1529586161085" duration="598000" />
+      <workItem from="1529594503184" duration="598000" />
+      <workItem from="1529596366463" duration="598000" />
+      <workItem from="1529598475899" duration="598000" />
+      <workItem from="1529611514200" duration="597000" />
+      <workItem from="1529660208598" duration="599000" />
+      <workItem from="1529664175026" duration="598000" />
+      <workItem from="1529669347025" duration="1297000" />
+      <workItem from="1529671793231" duration="599000" />
+      <workItem from="1529737422013" duration="1846000" />
+      <workItem from="1529739303775" duration="1574000" />
+      <workItem from="1529741168755" duration="1338000" />
+      <workItem from="1529743467078" duration="1557000" />
+      <workItem from="1529746596914" duration="2091000" />
+      <workItem from="1529748707837" duration="1793000" />
+      <workItem from="1529750548892" duration="1575000" />
+      <workItem from="1529756464337" duration="597000" />
+      <workItem from="1529828288457" duration="600000" />
+      <workItem from="1529998173956" duration="659000" />
+      <workItem from="1530002622807" duration="646000" />
+      <workItem from="1530004748566" duration="599000" />
+      <workItem from="1530006567055" duration="599000" />
+      <workItem from="1530008415380" duration="599000" />
+      <workItem from="1530010231913" duration="599000" />
+      <workItem from="1530013496194" duration="599000" />
+      <workItem from="1530015328471" duration="599000" />
+      <workItem from="1530017138826" duration="599000" />
+      <workItem from="1530019638749" duration="599000" />
+      <workItem from="1530021453380" duration="599000" />
+      <workItem from="1530037120717" duration="1789000" />
+      <workItem from="1530038930086" duration="1788000" />
+      <workItem from="1530040739729" duration="1787000" />
+      <workItem from="1530080977356" duration="599000" />
+      <workItem from="1530082781844" duration="599000" />
+      <workItem from="1530084892783" duration="599000" />
+      <workItem from="1530090496533" duration="599000" />
+      <workItem from="1530092424324" duration="599000" />
+      <workItem from="1530095187738" duration="599000" />
+      <workItem from="1530097005113" duration="598000" />
+      <workItem from="1530100554070" duration="599000" />
+      <workItem from="1530102389783" duration="599000" />
+      <workItem from="1530104375427" duration="599000" />
+      <workItem from="1530119286332" duration="36000" />
+      <workItem from="1530119515969" duration="1215000" />
+      <workItem from="1530121874543" duration="599000" />
+      <workItem from="1530123687696" duration="599000" />
+      <workItem from="1530125498997" duration="599000" />
+      <workItem from="1530165846353" duration="599000" />
+      <workItem from="1530167745232" duration="596000" />
+      <workItem from="1530170108364" duration="599000" />
+      <workItem from="1530178699498" duration="598000" />
+      <workItem from="1530184396343" duration="599000" />
+      <workItem from="1530188913285" duration="1361000" />
+      <workItem from="1530190727493" duration="1802000" />
+      <workItem from="1530193242760" duration="1216000" />
+      <workItem from="1530195295360" duration="605000" />
+      <workItem from="1530272975656" duration="599000" />
+      <workItem from="1530275863239" duration="733000" />
+      <workItem from="1530277690438" duration="605000" />
+      <workItem from="1530279892436" duration="615000" />
+      <workItem from="1530290997453" duration="866000" />
+      <workItem from="1530293114847" duration="1272000" />
+      <workItem from="1530295273050" duration="599000" />
+      <workItem from="1530440513503" duration="40000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="376750000" />
+    <option name="totallyTimeSpent" value="496272000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="970" y="2" width="951" height="1041" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35187167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1713362" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1495228" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -686,6 +808,12 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/tools/uri-encoder.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/tools/uri-encoder.js.map" />
+      </list>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -695,146 +823,45 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/java/effective java/design patterns.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="41" column="41" lean-forward="true" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/effective java/enum.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/effective java/enums.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="29" column="41" lean-forward="false" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/effective java/garbage collector.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/effective java/general programming.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3323">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/effective java/serialization.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="30" column="42" lean-forward="false" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/kiedy tworzyć swój wyjątek.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/przemyślenia.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/ogólnie.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/hashcode() oraz equals().txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/effective java/ogólnie java.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="13" column="47" lean-forward="false" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/Angular 6/intro">
+    <entry file="file://$PROJECT_DIR$/visual studio/angular issues">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <caret line="11" column="87" lean-forward="false" selection-start-line="11" selection-start-column="87" selection-end-line="11" selection-end-column="87" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/cli.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="51" lean-forward="false" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/usefull functions">
+    <entry file="file://$PROJECT_DIR$/C#/NET/api">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data mining/Nowy dokument tekstowy.txt" />
-    <entry file="file://$PROJECT_DIR$/data mining/zapytania.txt" />
-    <entry file="file://$PROJECT_DIR$/learnings methods/books.txt" />
-    <entry file="file://$PROJECT_DIR$/machine learning/smart net book/notatki/rozkłady.txt">
+    <entry file="file://$PROJECT_DIR$/git/konflikty">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/browsers/chrome">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="92" lean-forward="false" selection-start-line="2" selection-start-column="92" selection-end-line="2" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/hibernate/states">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/git/aliasy.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine learning/numpy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/hibernate/storing enums">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/type script/collections">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/HostBinding &amp; HostListener">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/hibernate/lazy eager">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="110" lean-forward="false" selection-start-line="6" selection-start-column="110" selection-end-line="6" selection-end-column="110" />
         </state>
       </provider>
     </entry>
@@ -845,194 +872,275 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/git/aliasy.txt">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/http.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-229">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/routing.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="1" lean-forward="false" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/packages installation">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="36" lean-forward="false" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/common mistakes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="90" lean-forward="false" selection-start-line="6" selection-start-column="90" selection-end-line="6" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/hibernate/common problems/Optimistic Lock" />
+    <entry file="file://$PROJECT_DIR$/java/jpa/common problems/pesimistic locking">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="53" lean-forward="false" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/hibernate/storing enums">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jpa/common problems/locking">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="101" lean-forward="false" selection-start-line="27" selection-start-column="101" selection-end-line="27" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jpa/common problems/optimistic locking">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/git/gałęzie git'a.txt">
+    <entry file="file://$PROJECT_DIR$/java/jpa/basic methods">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-749">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="238">
+          <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/git/Wprowadzenie do kontroli wersji.txt">
+    <entry file="file://$PROJECT_DIR$/java/hibernate/named entity graph">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="23" column="41" lean-forward="true" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/hibernate/n + 1 problem">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="60" lean-forward="false" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/hibernate/lazy eager">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/git/różne komendy.txt">
+    <entry file="file://$PROJECT_DIR$/java/hibernate/hibernate connections between entities">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="45" lean-forward="false" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/hibernate/caching">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/hibernate/basic items">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/docs/testing 2.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/git/podstawy git'a.txt">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/docs/testing.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-663">
+        <state relative-caret-position="306">
+          <caret line="18" column="60" lean-forward="true" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/hibernate/common problems/lazy initialization problem" />
+    <entry file="file://$PROJECT_DIR$/java/hibernate/common problems/QuerySyntaxException" />
+    <entry file="file://$PROJECT_DIR$/java/hibernate/common problems/org.hibernate.PersistentObjectException" />
+    <entry file="file://$PROJECT_DIR$/java/hibernate/common problems/Unknown Id.generator" />
+    <entry file="file://$PROJECT_DIR$/java/hibernate/descriptions/detached entity" />
+    <entry file="file://$PROJECT_DIR$/java/jpa/intro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="34" lean-forward="false" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jpa/annotations">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/hibernate/states/managed">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="46" lean-forward="false" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/hibernate/states/transient">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/hibernate/removed">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="66" lean-forward="true" selection-start-line="1" selection-start-column="66" selection-end-line="1" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jpa/entityManager">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="3" lean-forward="false" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jpa/annotations/entity annotations">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/hibernate/annotations">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="493">
+          <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/type script/type_script.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="758">
-          <caret line="130" column="40" lean-forward="false" selection-start-line="130" selection-start-column="36" selection-end-line="130" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/zastosowania/Loading data">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/git/Pierwsze kroki - Podstawy Git.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine learning/smart net book/notatki/klastrowanie.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1479">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/type script/strings">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/matematyka/macierze/wstęp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine learning/smart net book/rekomendacje/svd/svd założenia">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="79" lean-forward="false" selection-start-line="3" selection-start-column="79" selection-end-line="3" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine learning/smart net book/rekomendacje/recomendations">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine learning/smart net book/rekomendacje/svd/svd działanie">
+    <entry file="file://$PROJECT_DIR$/java/hibernate/states/persistent">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <caret line="15" column="39" lean-forward="false" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/machine learning/smart net book/notatki/podstawowe pojęcia.txt">
+    <entry file="file://$PROJECT_DIR$/java/hibernate/states/detached">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="11" lean-forward="false" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+        <state relative-caret-position="255">
+          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/machine learning/smart net book/rekomendacje/filtrowanie kolaboratywne">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="54" lean-forward="false" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/regresja/regresja logistyczna">
+    <entry file="file://$PROJECT_DIR$/java/jpa/basic info">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <caret line="1" column="56" lean-forward="false" selection-start-line="1" selection-start-column="56" selection-end-line="1" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/machine learning/smart net book/testowanie">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/matematyka/pojęcia">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="84" lean-forward="false" selection-start-line="1" selection-start-column="84" selection-end-line="1" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/określenie przydatności klasyfikatora">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="2" lean-forward="false" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/intro">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="72" lean-forward="false" selection-start-line="6" selection-start-column="72" selection-end-line="6" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/regresja/regresja liniowa">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="59" lean-forward="false" selection-start-line="1" selection-start-column="59" selection-end-line="1" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine learning/smart net book/klasyfikacja/wyzwania">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="79" lean-forward="false" selection-start-line="1" selection-start-column="79" selection-end-line="1" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine learning/smart net book/notatki/ogólnie">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/basics.txt">
+    <entry file="file://$PROJECT_DIR$/sql/procedura">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/network/cookie">
+    <entry file="file://$PROJECT_DIR$/java/hibernate/associations">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/advanced caching">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="70" lean-forward="false" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
+          <caret line="2" column="67" lean-forward="false" selection-start-line="2" selection-start-column="67" selection-end-line="2" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/hibernate/performance problems">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/hibernate/intro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="83" lean-forward="false" selection-start-line="5" selection-start-column="83" selection-end-line="5" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/hibernate/collections">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/hibernate/cascade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/fields">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/type script/collections">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/tests">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="65" lean-forward="true" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
           <folding />
         </state>
       </provider>

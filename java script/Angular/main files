@@ -5,7 +5,7 @@ ENVIRONMENT CONFIGURATION:
 
  * tsconfig.spec.js:
  - Typically, you add a TypeScript configuration file called tsconfig.json to your project to guide the compiler as it generates JavaScript files,
- but this is for test files
+ but this is for test files,
 
  * tslint.json:
   - contains ts configuration
@@ -30,6 +30,7 @@ ENVIRONMENT CONFIGURATION:
  * package-lock.js:
  - is automatically generated for any operations where npm modifies either the node_modules tree, or package.json.
   It describes the exact tree that was generated, such that subsequent installs are able to generate identical trees, regardless of intermediate dependency updates.
+ - a user can back in time to different node_modules states,
 
  * karma - is a config for test files,
 

@@ -1,0 +1,3 @@
+
+ * watch out because api calls seemed to be in the different directory, the view Controller
+ does not have any of those,

@@ -1,0 +1,7 @@
+INTRO:
+
+ * WE CAN RUN ALL TESTS WITHOUT ANY EXTERNAL TOOLS OR ENV'S
+
+ * all tests have to be with .spec.ts ending,
+
+ * The CLI takes care of Jasmine and karma configuration for you,

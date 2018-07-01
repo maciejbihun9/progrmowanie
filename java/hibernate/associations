@@ -1,0 +1,17 @@
+MANY TO MANY:
+
+ * each @ManyToMany association will create another table in the database with
+ ids of selected tablse,
+
+ * this new table will have two primarykeys
+
+ONE TO ONE:
+
+ * it has to be an association between those two entities (cascade = CascadeType.ALL),
+ because we have to have bidirectional association,
+
+ * The bidirectional associations should always be updated on both sides,
+ therefore the Parent side should contain the addChild and removeChild combo.
+ These methods ensure we always synchronize both sides of the association,
+ to avoid object or relational data corruption issues,
+

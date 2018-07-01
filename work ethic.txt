@@ -16,6 +16,10 @@
 
 # DAJ TYM DURNIOM TO CZEGO CHC¥(POSZUKIWANIE GLOBALNYCH TRENDÓ, ABY WIÊCEJ IM TEGO SPRZEDAÆ)
 
+# po ka¿dym dniu pracy spêdŸ conajmniej 20 - 30 min na próbowaniu zapamiêtania tego co uda³o mi siê nauczyæ,
+
+# próbowanie zapamiêtaæ tego wszystkiego od razu..., da siê kurwa !!!,
+
 ANALIZA TEGO CO POTRZEBA ZROBIÆ -> WYSZUKANIE INFORMACJI NA TEMAT TEGO JAK TO ZROBIÆ
 -> UTWORZENIE GÓRNEGO INTERFEJSU DO ANALIZ -> NAPISANIE DATA API -> UTORZENIE SCHEMATU BAZY DANYCH,
 

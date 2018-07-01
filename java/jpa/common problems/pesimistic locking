@@ -1,0 +1,3 @@
+
+ * this is locking particular rows until the unit of work is finished,
+ so we can not access given row during that operation

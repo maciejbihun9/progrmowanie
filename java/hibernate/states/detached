@@ -1,0 +1,16 @@
+
+ * once session is closed then the instance becomes detached,
+
+ * close() and clear() methods invoked on an entityManager will detach all items from the persistanceContext,
+
+ * entityManager.merge(instance) - associates this instance with a specific entityManager,
+
+ zastosowanie:
+ * detach all fields of an instance if the host one is:
+ - @Entity
+   class Employee {
+        :
+       @OneToOne(cascade=CascadeType.DETACH)
+       private Address address;
+        :
+   }

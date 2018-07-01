@@ -1,0 +1,16 @@
+
+ * HAS TO BE ASSOCIATED WITH AN OPEN SESSION,
+
+ * contains id and database representation,
+
+ * the object is considered as a persistent between session.save() and session.close(),
+
+ * each change to the persistent object will be saved after session close() or after each flush() method call,
+
+ * after session.delete() the object will be in Transient state, but after save() it will back to the persistent state,
+
+ * each change between those two method calls will be saved into the database,
+
+ * the object becomes persistent when I ask hibernate to manage that object, to save him,
+
+ * hibernate will track entity changes,

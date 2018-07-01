@@ -1,0 +1,8 @@
+
+ * those techniques limits the amount of queries to the database,
+ - we limiting the number of queries to the minimum,
+
+ * we have 3 types of caching
+
+ * flush():
+ - this method moves all the data from cache to the database(it means all changes),

@@ -1,0 +1,11 @@
+
+ * object that I so not want to be touched by hibernate,
+
+ * newly created instance object,
+
+ * a transient object can be created with a new keyword,
+ but this kind of object is not associated with a session,
+
+ * in normal java world this kind of object can be considered
+ as not to be serialized, but in jpa this means that we do not want to store
+ our objects in the database,
