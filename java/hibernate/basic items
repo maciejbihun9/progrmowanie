@@ -1,14 +1,76 @@
 
- * SESJA:
- - jest to jedno połączenie z serwerem,
+SESSION:
+ - jest to jedno połączenie z bazą danych,
+ - można utworzyć kilka transakcji podczas jednej sesji,
+ jest to dobre, tylko gdy chcemy reużywać tych samych obiektów w kilku transkacjach,
+ jeśli dzieje się inaczej i nie wykoryzstujemy ich ponownie, to napewno powinniśmy towrzyć
+ odrębne sesje,
+ - nie jest bezpieczna wątkowo, także przy wielu tranzakcjach może sprawiać problemy,
  - gdy sesja jest zamknięta, to odrazu dostaje lazy initialization exception,
  - nie jest bezpieczna wątkowo, dlatego można realizować połączenie tylko z pomocą jednego wątku,
  - nie jest to do końca to samo co zwykła sesja pomiędzy klientem a serwerem,
  - nie powinna być rozciągnięta między żądaniami, chyba, że robimy sklep internetowy,
  - przy kolejnych odczytach encja jest brana z cache encji,
  - update(detachedObject) - tworzy nową sesje i zapisuje stan obiektu
+ - In Hibernate, the persistence context is represented by org.hibernate.Session instance.
+  For JPA, it is the javax.persistence.EntityManager. When we use Hibernate as a
+  JPA provider and operate via EntityManager interface,
+  the implementation of this interface basically wraps the underlying Session object.
+  However, Hibernate Session provides a richer interface with more possibilities,
+  so sometimes it is useful to work with Session directly.
+ - session == entityManger
 
- * TRANSAKCJA:
+ * persist():
+ - the behaviour is very similar to the entityManager object,
+ - will store entire instance with all child associations,
+ - persist is a void method and does not generates any database id's,
+ - invocation on already detached instance will throw an error during a commit,
+
+ * save():
+ - it persists the instance, “first assigning a generated identifier”. The method is guaranteed to return the Serializable value of this identifier,
+ - calling save on already detached entity (on the same entity) will add a new row into the database creating a new row,
+ - we can produce many rows in the database calling save on the same entity, just we have to make sure that we
+ detach the same entity,
+
+ * evict():
+ - this method detaches an entity from a session,
+ - The call of save on a detached instance creates a new persistent instance
+  and assigns it a new identifier, which results in a duplicate
+  record in a database upon committing or flushing(this is very dangerous method),
+
+ * merge():
+ - merges changes added to the detached entity with that which is already stored in the database,
+ - Person person = new Person();
+   person.setName("John");
+   session.save(person);
+
+   session.evict(person);
+   person.setName("Mary");
+
+   Person mergedPerson = (Person) session.merge(person);
+
+ * get():
+ - it always hits the database, not proxy,
+ - use it over load() because if no object is found then we get just null value,
+
+ * session.createQuery("from MyProduct").getResultList():
+ - get from the database all products, where it will get all items from cache (persistanceContext)
+ if it is already saved ot persisted,
+ - it is very nice when using unit tests,
+
+ @Test
+ public void givenSubclasses_whenQueryMappedSuperclass_thenOk() {
+     MyEmployee emp = new MyEmployee(1, "john", "baeldung"); // MyEmployee is a class that extends Person superclass
+     session.save(emp);
+
+     assertThat(session.createQuery(
+       "from com.baeldung.hibernate.pojo.inheritance.Person")
+       .getResultList())
+       .hasSize(1);
+ }
+
+
+TRANSACTION:
  - przetrzymuje lock podczas zmian na bazie, także tylko jedna tranzakcja w tym samym czasie może robić
  update danego rekordu w bazie danych,
  - jest tworzona w sesji,

@@ -1,0 +1,18 @@
+
+ * manages caching in the web application,
+
+ * If the service worker is designed to do so,
+ it can completely satisfy the loading of the application, without the need for the network,
+
+ * Even across a fast reliable network,
+ round-trip delays can introduce significant latency when loading the application.
+ Using a service worker to reduce dependency on the network can significantly improve the user experience.
+
+ * Angular's service worker is designed to optimize the end user experience of using an
+ application over a slow or unreliable network connection, while also minimizing the risks of serving outdated content,
+ - It minimizes risk of using outdated content !!!,
+
+ * cached version is served until updated version is published to the browser,
+
+ * Your application must run in a web browser that supports service workers.
+  Currently, the latest versions of Chrome and Firefox are supported.

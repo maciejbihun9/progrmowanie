@@ -1,0 +1,11 @@
+
+Before — Funkcjonalność porady jest wykonywana przed wywołaniem metody
+z poradą.
+ After — Funkcjonalność porady jest wykonywana po zakończeniu działania
+metody z poradą, niezależnie od wyniku jej działania.
+ After-returning — Funkcjonalność porady jest wykonywana po prawidłowym
+zakończeniu metody z poradą.
+ After-throwing — Funkcjonalność porady jest wykonywana po zgłoszeniu
+wyjątku przez metodę z poradą.
+ Around — Porada realizuje tę samą funkcjonalność zarówno przed wywołaniem,
+jak i po zakończeniu metody z poradą.

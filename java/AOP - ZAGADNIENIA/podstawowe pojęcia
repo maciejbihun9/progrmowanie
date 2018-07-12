@@ -1,0 +1,22 @@
+
+ * Aspekt - jest sumą porady i punktów przecięcia. Wzięte razem porada i punkty
+   przecięcia definiują wszystko, co można powiedzieć o aspekcie — jaką czynność wykonuje,
+   gdzie i kiedy.
+   - jaką porady wykonać, przed jaką metodą oraz po jakiej metodzie,
+   - miejsce wstrzykiwania jest włączone do aspektu, a nie tak jak w przypadku DI, że
+   komponent jest wstrzykiwany do innego komponentu,
+   - Aspekt jest główną jednostką modularyzacji programu napisanego przy pomocy AspectJ ponieważ występuje w nim jako niezależny moduł, o charakterystyce mocno podobnej do klasy.
+   Oznacza to, że aspekt można traktować jako wyspecjalizowaną klasę, która ma możliwość przecinania implementacji, oraz modyfikacji jej struktury i/lub zachowania,
+
+ * punkt złączenia - punkt, w którym można wywołać wiele porad naraz. Takim punktem może byc wywołanie metody, wyrzucenie wyjątku itd.
+ - Innymi słowy można wywołać kod modułów odpowiedzialnych za wiele usług.
+
+ * punkt przecięcia - pozwalają zawęzić listę punktów złączenia, do których zastosowany będzie aspekt.
+
+ * porada - definiuje czynność i moment jej wykonania przez aspekt,
+
+ * wprowadzenie - dodawanie funkcjonalności do już istniejącej klasy, opakowywanie już istniejących metod w dodatkowe.
+ W JS mozna to zrobić dynamicznie, poprzez dodawanie metod na późniejszym etapie pracy z kodem,
+ - Szczęśliwie wprowadzenia przez aspekty mogą nam pomóc sobie z tym poradzić, nie
+ wymagając poświęcania decyzji projektowych lub inwazyjnych działań względem istniejących
+ implementacji.

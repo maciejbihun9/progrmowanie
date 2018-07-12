@@ -29,7 +29,7 @@ export class FlyingHeroesPipe implements PipeTransform {
   }
 }
 
- - dodawanie elementów nie działa, tylko dla czystych rurek, czyli takich, którewywoływane są
+ - dodawanie elementów nie działa, tylko dla czystych rurek, czyli takich, które wywoływane są
  tylko po zmianach referencji do obiektów w rurce.
  pure: false - wyukryje zmiany dodania nowego elementu do kolekcji lub każdego innego eventa,
  który Angular może wykrywać,

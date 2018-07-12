@@ -1,0 +1,6 @@
+
+ * call a method after each input change
+ - [(ngModel)]="column.filterValue" (ngModelChange)="onModelChange()"
+
+ * call a method with a value from an input item after each keyup event
+ - <input #searchBox (keyup)="search(searchBox.value)" />

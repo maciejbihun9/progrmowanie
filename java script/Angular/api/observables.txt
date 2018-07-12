@@ -4,20 +4,26 @@
  infinite values from the time it's invoked onwards.
  
  * they are the most usefull in angular services, because we can
- register many independant observables that get the data from teh server
+ register many independent observables that get the data from the server
  and pipes them thorough with some additional modifications,
+
+ * pipe() can be invoked directly on Observable
+ - each 1 sec call this Observable and return new Date() instead returned value
+ - this.timeSub = Observable
+         .interval(1000)
+         .map(val => new Date())
+
+ * can be used for http calls, so only for one call and also for subscribing for many values,
  
- * we can call an observable many times, those are seperate calls to
- the backend
- - are lazy and does not have shared execution scope, they are independant
+ * we can call an observable many times, those are separate calls to the backend
+ - are lazy and does not have shared execution scope, they are independent
  
  * Subscribing to an Observable is analogous to calling a Function.
  
- * are not asynchromus,
- 
  * they are not event emitters,
  
- * Observables are able to deliver values either synchronously or asynchronously.
+ * Observables are able to deliver values either synchronously or asynchronously,
+ so code can be blocked until response comes in, or move forward and run on seperate thread
 
  * What is the difference between an Observable and a function?
  -  Observables can "return" multiple values over time, 

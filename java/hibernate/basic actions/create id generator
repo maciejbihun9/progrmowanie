@@ -1,0 +1,8 @@
+
+ * use Hibernate’s increment generation strategy for this entity’s identifier values:
+    @Id
+    @GeneratedValue(generator="increment")
+    @GenericGenerator(name="increment", strategy="increment")
+    public Long getId() {
+        return id;
+    }

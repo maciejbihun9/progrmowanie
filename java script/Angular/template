@@ -3,12 +3,7 @@ BASIC:
  * interact with html elements position, size, drag, moves etc.:
  - refer to ndx-datatable project -> src -> directives
 
- * ElementRef - this is a reference to a html item on the page in the code
-
- * parent divs should have classes declared in normal way, without any directives, where
- it is a good practice to use directives in html elements that contains angular directives and embelemats
-
- * each new declared component should be a child of a div to be sure that will show up in next line
+ * ElementRef - reference to a component html code,
 
  * package component scope using html item:
  - <th scope="col" *ngFor="let column of state.columns" super-table-header [column]="column" [noHeight]="false"></th>,
@@ -18,7 +13,21 @@ BASIC:
  - it is a bit common approach,
 
  * use a component as a directive without @Directive annotation:
- - set selector name to: [selector-name] instead of selector-name that is normal for components
+ - set selector name to: [selector-name] instead of selector-name that is normal for components,
+
+CONTROL OBJECTS VISIBILITY:
+
+ * Hide html element, but preserve it on the screen
+ - [hidden] = "true"
+
+ * Hide html element and remove it from the screen
+ - *ngIf = "false"
+
+RENDERING TYPE SCRIPT OBJECTS IN HTML CODE:
+
+ * <h2>{{ hero.name }} Details</h2>
+   <div><span>id: </span>{{hero.id}}</div>
+   <div><span>name: </span>{{hero.name}}</div>
 
 PACKING COMPONENTS IN HTML:
 
@@ -26,10 +35,15 @@ PACKING COMPONENTS IN HTML:
  using this approahc we can decide what kind of package we want - BEST
  - this is used more extensively with smaller components
  - In this example we can use this as directives
+ - all super-table-resizer component code exists in the surrounding html item
  - <div *ngIf="!noHeight && !column.def.lockWidth" super-table-resizer [column]="column"></div>
 
  * using standard approach we are forced to use the same package each time:
  - <super-table-resizer></super-table-resizer>
+
+ * content between component tags won't be rendered:
+ - this won't be on the page "some html stuff"
+ - <div component_name>some html stuff</div>
 
 :HOST:
 
@@ -84,8 +98,12 @@ NG-CONTAINER, NG-TEMPLATE AND TEMPLATE OUTLET SCOPE
    </ng-template>
 
  * ng-template:
- - this is a html tag that we use only to define a template, but when you
- create a new html feature that sits inside a ng-template then you will find anything on the screen,
+ - defines only a package for html items. If this expression is false then this first
+ ng-template won't be rendered, won't be on the screen.
+ ng-container and ng-template tags will NOT be rendered!
+ - get a reference to a ng-template instance:
+ @ViewChild('loaded')
+    private defaultTabButtonsTpl: TemplateRef<any>;
 
  zastosowanie:
  - the loading template will be on the screen during getting lessons items from the server, but!!!

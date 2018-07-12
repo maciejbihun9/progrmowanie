@@ -1,0 +1,14 @@
+
+ * przykład metody zwracającej aspekt:
+
+ public aspect PublicErrorLogging {
+
+     private Log log = new Log();
+
+     pointcut publicMethodCall():
+         call(public * com.sarxos.*.*(..));
+
+     after() throwing (Exception e): publicMethodCall() {
+         log.write(e);
+     }
+ }

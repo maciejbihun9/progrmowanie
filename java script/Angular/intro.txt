@@ -1,25 +1,6 @@
 
- * totalnie nowy framework,
- 
- * install new package (globally):
- - npm install -g @angular/cli
- 
- * install all packages from package.json file:
- - npm install
- - this will create node_modules folder
- 
- * create a new class file:
- - ng generate class class_name
- 
- * add bootstrap to the project:
- - @import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
+ * this is a totally new framework,
 
-PACKAGE.JSON - SCRIPTS: 
- 
- * we can add a new shortcut for running a longer commands,
- 
-PACKAGE.JSON - DEPENDENCIES:
-
- * contains all project dependencies 
- 
+ * each data change changes also ui!!!, so
+  we do not have to do any refreshes on our UI is happens automatically,
  

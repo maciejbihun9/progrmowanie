@@ -1,3 +1,7 @@
+ * use sessionFactory.getStatistics() to get transaction statistics,
+
+ * Dirty checking feature of hibernate updates only those fields which require a change while keeps others unchanged,
+
  * using caching can dramatically improve your performance,
 
  * Ordering uses an ORDER BY clause in the SQL statement to retrieve the entities in the defined order.

@@ -1,0 +1,33 @@
+
+ * Posiada swoja własna implementacje AOP, nie związaną z AspectJ,
+
+ * Choć Spring AOP jest wystarczającym rozwiązaniem dla wielu zastosowań aspektów,
+   wypada słabo w porównaniu z rozwiązaniem AOP, jakim jest AspectJ,
+   ale wprowadzanie AspectJ w obecności Spring wprowadza trochę zamieszania po stronie Spring,
+
+ * Posiada punkty przecięcia tylko w metodach, nie posiada ich w ustawieniach pól klas,
+ ale to można zmienić używając AspectJ,
+
+ * Programując aspektowo w Springu, definiujemy punkty przecięcia za pomocą pochodzącego
+   z frameworka AspectJ języka wyrażeń punktów przecięcia.
+
+ * Programowanie aspektowe w Springu bazuje na dynamicznych obiektach pośredniczących. W efekcie
+   obsługa AOP w Springu jest ograniczona do przechwytywania metod,
+   - czyli polega na delegacji
+
+ * Spring nie tworzy obiektu z pośrednikiem, dopóki aplikacja nie będzie potrzebowała
+ określonego komponentu.
+
+ * w springu posiadamy obiekt pośredniczący, który opakowuje obiekt docelowy.
+ Obiekt opakowuący przechwytuje wywołania metod i wywołuje logikę aspektu w
+ odpowiednich momentach,
+
+ * adnotacje do tworzenia aspektów na 129str. i nie można stosować innych adnotacji niż te,
+ bo wyjebie nam wyjątek,
+
+ * Aby wykorzystać pełny potencjał aspektów AspectJ,
+   musimy zrezygnować z aspektów opartych na obiektach pośredniczących, a zamiast nich
+   użyć środowiska uruchomieniowego AspectJ,
+
+ * AspectJ w spring:
+ - spring nie tworzy komponentu aspektu w spring, bo tworzy go AspectJ,

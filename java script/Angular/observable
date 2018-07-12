@@ -6,6 +6,9 @@
  * after each observable subscribe() must be called:
  - this.heroService.deleteHero(hero).subscribe();
 
+ * create a subscription variable:
+ - public name$
+
  * make an operation after observable done executing:
  - we can do it using subscribe,
  - this.heroService.addHero({ name } as Hero)

@@ -1,0 +1,25 @@
+
+ * paradygmat programowania, który ma zadanie rozdzielenie niezwiązanych ze sobą funkcjonalności,
+    czyli maksymalna modułowość działania,
+
+ * istnieje wiele frameworków dla aop (Spring, AspectJ), nie są one takie same,
+
+ * jest to nowa technika programistyczna, która używa specyficznego żargonu,
+ także trzeba się najpierw zaznajomić z tym słownictwem,
+
+ * Aspekty stanowią alternatywę dla dziedziczenia i delegacji,
+ które stanowią standardowe wplatanie obiektów,
+
+ * zapewnia dobre odseparowanie usług aop od logiki biznesowej,czyli
+ kod jest dobrze podzielony na moduły
+
+ * zamykają w modułach aspekty, które dzieją się wiele razy w aplikacji,
+
+ * polega na implementeacji zagadnień przecinających, czyli takich, które
+ działają w wielu miejscach aplikacji, ale nie są jawne w implementacji biznesowej,
+
+ZASTOSOWANIA:
+
+ * logowanie do aplikacji,
+
+ * stosowanie regół bezpieczeństwa,

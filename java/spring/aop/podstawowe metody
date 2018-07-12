@@ -1,0 +1,20 @@
+* @After - Metoda porady wywoływana jest po zakończeniu działania metody lub wyrzuceniu wyjątku,
+* @AfterReturning - Metoda porady wywoływana jest po zakończeniu działania metody,
+* @AfterThrowing - Metoda porady wywoływana jest po wyrzuceniu wyjątku przez metodę,
+* @Around - Metoda porady „opakowuje” metodę,
+-@Around("performance()") Metoda porady around
+ - mozna wywołać kod aspektu przed oraz po wywołaniu metody z obiekty ProceedingJoinPoint, nawet kilka razy,
+ jest to takie kombo, bo pozwala na kilkukrotne wykonywanie przesłanej metody w jednej metodzie.
+ public void watchPerformance(ProceedingJoinPoint jp) {
+     try {
+        System.out.println("Widzowie wyciszają telefony komórkowe");
+        System.out.println("Widzowie zajmują miejsca");
+        jp.proceed();
+        System.out.println("Brawooo! Oklaski!");
+     } catch (Throwable e) {
+        System.out.println("Buu! Oddajcie pieniądze za bilety!");
+     }
+ }
+
+
+* @Before - Metoda porady wywoływana jest przed wywołaniem metody,

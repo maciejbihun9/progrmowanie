@@ -62,17 +62,28 @@ EVENT EMMITERS:
   // from others components.
   // an even does not have to emit any values, it can be track as simple event.
   // modyfikatory dostępu nic nie psują
-  - this.selectVideo.next(vid);
+
+  * works only for parent - child relation like:
+  <component (emitterName)="OnSomething($event)">
+  - then emitterName has to be declared in component
+
+  * we can also emit many variables at once:
+    - this.selectVideo.emit({
+            direction,
+            scrollYPos: this.scrollYPos,
+            scrollXPos: this.scrollXPos
+          });
 
   * catch an event in higher component:
   - (selectVideo)="onSelectVideo($event)"
   - where selectVideo is a name of lower class emiter.
 
-  * we can also emit many variables at once:
-  - this.scroll.emit({
-          direction,
-          scrollYPos: this.scrollYPos,
-          scrollXPos: this.scrollXPos
-        });
+SEND VARIABLE TO LOWER COMPONENT:
+
+ * send object to child component:
+  - <app-panel title="Panel Title"></app-panel> - this will send string value to the title object in the app-panel
+  - <app-panel [title]="panelTitle"></app-panel> - this will send panelTitle Object from the parent comp to the lower component
+
+
 
 

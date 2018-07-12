@@ -1,0 +1,10 @@
+
+ * Jest uważany za framework,
+
+ * rozszerzenie języka Java o zagadnienie programowania aspektowego,
+
+ * posiada rownież dedykowany język do wplatania kodu między kod javy,
+ ale ostatnio dodano adnotacje, które radzą sobie o wiele łatwiej,
+
+ * Zgodnie z konwencją, wszystkie aspekty w AspectJ posiadają
+   statyczną metodę aspectOf(), która zwraca singleton będący instancją aspektu.

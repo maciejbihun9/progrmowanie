@@ -1,0 +1,103 @@
+
+ Entity inheritance means that we can use polymorphic queries for retrieving all the sub-class entities when querying for a super-class.
+
+ If you queried based on the base class, the query is polymorphic.
+
+ * MappedSuperclass:
+ – the parent classes, can’t be entities. So being more percise abstract classes can not be entities,
+ - Person class won't have corresponding table in the database and instance won't we stored,
+ - all inherited fields will be stored,
+ - Person can not have any associations with other entities,
+
+ @MappedSuperclass
+ public class Person {
+
+     @Id
+     private long personId;
+     private String name;
+
+     // constructor, getters, setters
+ }
+
+ @Entity
+ public class MyEmployee extends Person {
+     private String company;
+     // constructor, getters, setters
+ }
+
+ * Single Table:
+ - default inheritance type if there is no selected,
+ - it will be only on big table,
+ – the entities from different classes with a common ancestor are placed in a single table,
+ so if entities have the same parent then are stored in the same table,
+
+ - there will be only one table for all subtype entities
+
+ - @DiscriminatorValue(“null”) – means that any row without a discriminator value will be mapped to the entity class with this annotation; this can be applied to the root class of the hierarchy.
+   It is for base classes, because when subclass entity does not have that discrimantor value then it will be mapped to this account type.
+
+ - @DiscriminatorValue(“not null”) – any row with a discriminator value not matching any of the ones associated with entity definitions will be mapped to the class with this annotation,
+   so for all entities with not matching discriminatorValues will have this class.
+   It is good to create another type (default type) that will handle all non-matching types.
+
+ @Entity
+ @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+ @DiscriminatorColumn(name = "ANIMAL_TYPE", discriminatorType = DiscriminatorType.STRING) // name of a column in Pet table that will hold entities types as string
+ public class Pet implements java.io.Serializable
+ {
+
+ }
+
+ @Entity
+ @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+ @DiscriminatorColumn(discriminatorType = DiscriminatorType.STRING)
+ @DiscriminatorValue("DOG") // type name is all entity items in the database
+ public class Dog extends Pet
+ {
+ }
+
+ - This strategy has the advantage of polymorphic query performance since
+ only one table needs to be accessed when querying parent entities.
+ On the other hand, this also means that we can no
+ longer use NOT NULL constraints on sub-class entity properties.
+
+ * Joined Table:
+ – each class has its table and querying a subclass entity requires joining the tables,
+ - new table is created for each entity in the database,
+ - The disadvantage of this inheritance mapping method is that
+ retrieving entities requires joins between tables,
+ which can result in lower performance for large numbers of records,
+
+ @Entity
+ @Inheritance(strategy = InheritanceType.JOINED)
+ public class Animal {
+     @Id
+     private long animalId;
+     private String species;
+
+     // constructor, getters, setters
+ }
+
+ @Entity
+ @PrimaryKeyJoinColumn(name = "petId")
+ public class Pet extends Animal {
+     // ...
+ }
+
+ * Table-Per-Class:
+ – all the properties of a class, are in it's table, so no join is required,
+ - this allows us to define a table for each entity in the database,
+ - table per class will indeed define entities for parent classes,
+ allowing associations and polymorphic queries as a result,
+ - uses UNION query in the background, so the efficiency level maybe not really good,
+
+ @Entity
+ @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+ public class Vehicle {
+     @Id
+     private long vehicleId;
+
+     private String manufacturer;
+
+     // standard constructor, getters, setters
+ }

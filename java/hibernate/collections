@@ -7,4 +7,4 @@ SORTED COLLECTION:
 ORDER COLLECTION:
 
  * Ordering uses an ORDER BY clause in the SQL statement to retrieve the entities in the defined order.
-  Database handles these kinds of operations very efficiently. So this approach is a lot better for huge associations.
+ Database handles these kinds of operations very efficiently. So this approach is a lot better for huge associations,

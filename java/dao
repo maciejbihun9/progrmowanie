@@ -1,0 +1,38 @@
+INTRO:
+
+ * This is a pattern that seperates buissness logic from database access,
+
+ * Hides all logic much needed to connect to the database in this class,
+
+ * All methods used to talk to the database are hided behind this dao surface,
+
+ * This pattern then ensures the right abstraction and encapsulation of all access to any data source,
+
+ * sometimes we can share our application with many companies, but
+ each of them might want us to provide different persistance layer,
+
+DISADVENTEGES:
+
+ * causes creation of too much boilerplate code,
+ We can avoid that by creating generic DAO,
+
+IMPLEMENTATION:
+
+ * public interface BookDaoInterface<T, Id extends Serializable> {
+       public void persist(T entity);
+
+       public void update(T entity);
+
+       public T findById(Id id);
+
+       public void delete(T entity);
+
+       public List<T> findAll();
+
+       public void deleteAll();
+   }
+
+
+EXAMPLES:
+
+ * create session, create transaction,

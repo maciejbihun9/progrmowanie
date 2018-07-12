@@ -1,4 +1,27 @@
 
+ * Emit an event from lower in the hierarchy component to the higher component we use:
+  - @Output() selectVideo = new EventEmitter();
+  - send selected object using (vid):
+  // this method emits this object to the world and from this time it can be catched
+  // from others components.
+  // an even does not have to emit any values, it can be track as simple event.
+  // modyfikatory dostępu nic nie psują
+  - this.selectVideo.emit(vid);
+
+ * catch an event in higher component:
+  - (selectVideo)="onSelectVideo($event)"
+  - where selectVideo is a name of lower class emiter.
+
+ * do a job after key up:
+  - (keyup)="search(searchBox.value)"
+
+ * do some jobs after click:
+  - after click we can call methods and call some normal js code,
+  - (click)="add(heroName.value); heroName.value=''"
+
+ * list of all used events:
+    - https://www.w3schools.com/jsref/dom_obj_event.asp
+
  * for scrolling refer to SalesAnalitics project - ForecastCustomGridComponent.html
 
  * catch each input change and call a method from it:

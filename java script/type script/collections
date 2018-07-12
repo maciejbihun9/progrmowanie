@@ -14,22 +14,26 @@ ARRAYS:
    'drums'
  ];
 
- * add item to an array:
- array.push(item)
+ * add an item to an array:
+ - array.push(item)
 
  * we can add functions to arrays and then call them after getting them from an array,
- array = []
- array.push(function(){
+ - array = []
+ - array.push(function(){
     console.log("function")
  })
  array[0]()
 
  * use forEach function to iterate over an array:
  - this is used quite extensively
- array = [];
- array.forEach(x => console.log("Each item form an array: " + x))
+ - array = [];
+ - array.forEach(x => console.log("Each item form an array: " + x))
 
- * call a specifi code block foe each item in an array:
+ * filter elements, it is much needed when we remove elements from a list in our UI,
+ because we do not want to wait for our server to response, leave only elements that are not hero
+ - this.heroes = this.heroes.filter(h => h !== hero);
+
+ * call a specific code block foe each item in an array:
  - this code will be invoked for each item from this specific array
  - this.slice_nums.map(item => console.log('item from an array: ' + item));
 

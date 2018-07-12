@@ -1,0 +1,11 @@
+
+ * Istotą blockchain jest utrzymanie wspólnej i zbiorowej księgi rachunkowej transakcji,
+  w postaci cyfrowej, rozproszonej po całej sieci, w takich samych kopiach.
+
+ * każdy może brać udział w przesyłaniu informacji,
+
+ * Transakcje w blockchain zapisane w łańcuchu bloków są nieodwracalne.
+
+ * każda osoba posiada wyemitowane hash'e trasakcji, które zostały zrealizowane przez innych użytkowników sieci,
+
+ * każda osoba weryfikuje transakcje zawierane przez innych,

@@ -1,4 +1,6 @@
 
+ * before any database actions,
+
  * object that I so not want to be touched by hibernate,
 
  * newly created instance object,

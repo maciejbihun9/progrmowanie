@@ -1,0 +1,11 @@
+
+ * Wywołanie metody perform() podanego pakietu w aspekcie:
+ - * - dowolny typ zwracany
+ - exeution(* package.class.method(..));
+
+ * Informujemy tu Springa, że chcemy zastosować poradę aspektu do wykonania metody
+  perform() interfejsu Performance, lecz ograniczając się do wywołań z komponentu
+  o nazwie woodstock.
+ - execution(* concert.Performance.perform()) and bean('woodstock')
+ lub zastosować daną porade tylko i wyłącznie do komponentów innych niż woodstock,
+ czyli ze znakiem negacji !.

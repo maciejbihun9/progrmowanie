@@ -1,3 +1,6 @@
 
  * get object keys:
- - Object.keys({item: 12, surnmae: 'Bihun'})
+ - Object.keys({item: 12, surname: 'Bihun'})
+
+ * server returns text from the call, but I can parse it to json():
+ - text.json();

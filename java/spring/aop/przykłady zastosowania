@@ -1,0 +1,114 @@
+
+ * przykład klasy publiczności, która reaguje w określony sposób w okreslonym czasie:
+ @Aspect
+ public class Audience {
+    // wszystkie metody mają ten sam punkt przecięcia
+
+     @Pointcut("execution(** concert.Performance.perform(..))")
+     public void performance() {}
+
+     @Before("performance()")
+     public void silenceCellPhones() {
+        System.out.println("Widzowie wyciszają telefony komórkowe");
+     }
+
+     @Before("performance()")
+     public void takeSeats() {
+        System.out.println("Widzowie zajmują miejsca");
+     }
+
+     @AfterReturning("performance()" ) Po występie
+     public void applause() {
+        System.out.println("Brawooo! Oklaski!");
+     }
+
+     @AfterThrowing("performance()") Po nieudanym występie
+     public void demandRefund() {
+        System.out.println("Buu! Oddajcie pieniądze za bilety!");
+     }
+ }
+
+ - aby ten aspekt wogle zadziałał, to trzeba zadeklarować odpowiednią adnotacje, która włącza aspkety
+ w aplikacji oraz utworzyć komponent w aplikacji.
+
+ @EnableAspectJAutoProxy
+
+ @Bean
+ public Audience audience() { Deklarujemy komponent Audience
+    return new Audience();
+ }
+
+ * zliczanie ile razy dany kawałek został odpalony, a ponieważ
+ licznik odpaleń nie koniecznie musi byz częścią odtwarzacza, także
+ można go powiązać z czymś bardziej abstrakcyjnym, czyli aspektem wykonania.
+
+   @Aspect
+ - public class TrackCounter {
+
+       private Map<Integer, Integer> trackCounts =
+       new HashMap<Integer, Integer>();
+
+       @Pointcut("execution(* soundsystem.CompactDisc.playTrack(int)) && args(trackNumber)")
+       public void trackPlayed(int trackNumber) {}
+
+       @Before("trackPlayed(trackNumber)") // Zwiększ licznik przed odtworzeniem utworu
+       public void countTrack(int trackNumber) {
+           int currentCount = getPlayCount(trackNumber);
+           trackCounts.put(trackNumber, currentCount + 1);
+       }
+       public int getPlayCount(int trackNumber) {
+        return trackCounts.containsKey(trackNumber) ? trackCounts.get(trackNumber) : 0;
+       }
+   }
+
+  - konfiguracja potrzebna do poprawnego działania tego aspektu:
+  - @Configuration
+    @EnableAspectJAutoProxy Włączenie AspectJ
+    public class TrackCounterConfig {
+        @Bean
+        public CompactDisc sgtPeppers() { Komponent CompactDisc
+            BlankDisc cd = new BlankDisc();
+            cd.setTitle("Sgt. Pepper's Lonely Hearts Club Band");
+            cd.setArtist("The Beatles");
+            List<String> tracks = new ArrayList<String>();
+            tracks.add("Sgt. Pepper's Lonely Hearts Club Band");
+            tracks.add("Fixing a Hole");
+            cd.setTracks(tracks);
+            return cd;
+        }
+
+        @Bean
+        public TrackCounter trackCounter() { Komponent TrackCounter
+            return new TrackCounter();
+        }
+    }
+
+  - od teraz każde wywołanie metody playTrack() wywoła całą logikę aspektu
+
+  * wprowadzanie dodatkowych obiektów do komponentów w ciele aspektu:
+  - public aspect CriticAspect {
+       public CriticAspect() {}
+       pointcut performance() : execution(* perform(..));
+       afterReturning() : performance() {
+        System.out.println(criticismEngine.getCriticism());
+       }
+       private CriticismEngine criticismEngine;
+       public void setCriticismEngine(CriticismEngine criticismEngine) { Wstrzyknięty obiekt
+        this.criticismEngine = criticismEngine;
+       }
+   }
+
+  - <bean class="com.springinaction.springidol.CriticAspect" factory-method="aspectOf">
+        <property name="criticismEngine" ref="criticismEngine"/>
+    </bean>
+
+    <bean id="criticismEngine" class="concert.CriticismEngineImpl">
+        <property name="criticisms">
+            <list>
+                <value>Najgorsze przedstawienie w historii! </value>
+                <value>Śmiałem się, płakałem, a potem zorientowałem się, że jestem na niewłaściwym przedstawieniu.</value>
+                <value>Musicie zobaczyć ten występ!</value>
+            </list>
+        </property>
+    </bean>
+

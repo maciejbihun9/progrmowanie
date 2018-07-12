@@ -8,17 +8,17 @@
   jest to spowodowane tranzakcjami konukrencyjnymi.
   Zapobiega poprostu temu, aby wartość poprzedniego updat'u była wzięta pod uwagę
 
-  * podczas updatu tranzakcja musi pobrać wiersz, sprawdza wersje, a potem przed
-  zatwierdzaniem musi sprawdzić, czy werjsa jest taka sama, jeśli nie, to tranzakcja zostanie przerwana.
+  * podczas updat'u tranzakcja musi pobrać wiersz, sprawdza wersje, a potem przed
+  zatwierdzaniem musi sprawdzić, czy wersja jest taka sama, jeśli nie, to tranzakcja zostanie przerwana.
 
-  * dzije się podczas updatu
+  * dzieje się podczas updatu:
   - np. kiedy dwóch użytkowników chce zrobić update tej samej encji,
   - albo jeden user stara się zrobić update tej samej encji, a nie zrobił
   odświeżania po pierwszej,
 
   - staraj się poprostu robić update dosyć często, aby te operacje były bardzo krótkie,
 
-  - tutaj chodzi bardziej o konkurencyjne updaytowanie aplikacji, gdy dówch gości robi update w tym samym czasie
+  - tutaj chodzi bardziej o konkurencyjne updaytowanie aplikacji, gdy dwóch gości robi update w tym samym czasie,
 
   - nie rób cashowania encji oraz używaj kolumny wersji, aby temu zapobiec,
 

@@ -1,7 +1,7 @@
 BASICS:
 
- * podczas dodawania kodu do strony nale¿y uwa¿aæ na wszystkie komentarze oraz
-cudzys³owie, bo mog¹ zostaæ Ÿle interpretowane przez przegl¹darke i bêdzie dupa,
+ * podczas dodawania kodu do strony naleï¿½y uwaï¿½aï¿½ na wszystkie komentarze oraz
+cudzysï¿½owie, bo mogï¿½ zostaï¿½ ï¿½le interpretowane przez przeglï¿½darke i bï¿½dzie dupa,
 
  * CORS - allows to call Ajax requests to servers under other domains,
  we can get the resources from other servers,
@@ -13,10 +13,10 @@ cudzys³owie, bo mog¹ zostaæ Ÿle interpretowane przez przegl¹darke i bêdzie dupa,
  
 URL/URI:
 
- * encode a url - this encodes only only the special characters of the url:
- - I have to encode them, because the special characters will be tract badly
- - var uri = "https://w3schools.com/my test.asp?name=stale&car=saab";
- - var res = encodeURIComponent(uri); 
+ * encode a url - this encodes only the special characters of the url:
+ - I have to encode them, because the special characters will be tract badly,
+ - var uri = "https://w3schools.com/my test.asp?name=stale&car=saab";,
+ - var res = encodeURIComponent(uri);,
  - from res i get the encoded url
 
 COOKIES:
@@ -25,9 +25,9 @@ COOKIES:
  
  * it is very usefull to pass the application states between app stages,
  
- * server can send a cookie with data access informations to the client,
+ * server can send a cookie with data access information to the client,
  
- * are very fuckin important and we can not interact with the websites without them!!!,
+ * are very fucking important and we can not interact with the websites without them!!!,
  
  * server could not know whether the requestes are coming to the server from the same browser oraz
  not, so each request was tract the same wothout any knowledge about it,
@@ -66,7 +66,7 @@ COOKIES:
  
  * one domain can have only 20 cookies, and one cookie is restricted to have only 4kB,,
  
- * istnieje równie¿ koncept plików subcookie,
+ * istnieje rï¿½wnieï¿½ koncept plikï¿½w subcookie,
  
  * document.cookie has to be set unchangeable
  if you want to be sure that it won't be changed,

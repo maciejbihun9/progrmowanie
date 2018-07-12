@@ -1,0 +1,10 @@
+
+ * wstrzykiwanie skryptów java script na inne stronki,
+
+ * głównie występuje, gdy stronka posiada formę do wprowadzania danych przez użytkownika,
+ a nie są one w żaden sposób walidowane oraz kodowane,
+
+ * przeglądarka samoczynnie wykonuje skrypt,
+
+ * złośliwy skrypt może uzyskać dostęp do wszelkich plików cookie,
+ tokenów sesji lub innych poufnych informacji przechowywanych przez przeglądarkę i używanych w tej witrynie,
