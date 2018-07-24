@@ -1,0 +1,6 @@
+
+ * pokaż wszystkie commity repo:
+ - git log,
+
+ * pokaż całą historie akcji w repo:
+ - git reflog

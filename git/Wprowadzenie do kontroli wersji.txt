@@ -13,4 +13,4 @@
  jednocześnie zachowując wyżej wymienione cechy. Jest niewiarygodnie szybki, bardzo
  wydajny przy pracy z dużymi projektami i posiada niezwykły system gałęzi do nieliniowego rozwoju,
  
- * linux był tworziny z łatek (patches), bo nie mieli kontroli wersji,
+ * linux był tworzony z łatek (patches), bo nie mieli kontroli wersji,

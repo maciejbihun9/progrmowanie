@@ -1,0 +1,12 @@
+
+ * umożliwia przesyłanie komunikatów,
+
+ * integracja z systemami zewnętrznymi,
+
+ * zbudowanie rozwiązań integracynnych,
+ które może być łatwo testowalne,
+
+ * której POJO są połączone ze sobą za pomocą paradygmatu przesyłania wiadomości,
+ a poszczególne komponenty mogą nie być świadome innych składników aplikacji,
+
+ * komunikacja z systemami zewnętrznymi,

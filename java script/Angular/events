@@ -1,5 +1,7 @@
 
  * Emit an event from lower in the hierarchy component to the higher component we use:
+ This is a parent-child communication. It is not possible to call this event
+ in different places in the application.
   - @Output() selectVideo = new EventEmitter();
   - send selected object using (vid):
   // this method emits this object to the world and from this time it can be catched

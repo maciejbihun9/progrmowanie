@@ -28,9 +28,10 @@ ENVIRONMENT CONFIGURATION:
  Protractor runs tests against your application running in a real browser, interacting with it as a user would.
 
  * package-lock.js:
+ - it assures that a user wont install the same package, just with different versions,
+ - a user can back in time to different node_modules states, modules versions
  - is automatically generated for any operations where npm modifies either the node_modules tree, or package.json.
   It describes the exact tree that was generated, such that subsequent installs are able to generate identical trees, regardless of intermediate dependency updates.
- - a user can back in time to different node_modules states,
 
  * karma - is a config for test files,
 

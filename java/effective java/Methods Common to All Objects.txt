@@ -65,8 +65,7 @@ HASHCODE:
  * The bigger hashtable is, then more efficient program will be,
  
  * example of inserting instances into a map that fails:
- - Map<PhoneNumber, String> m
- = new HashMap<PhoneNumber, String>();
+ - Map<PhoneNumber, String> m = new HashMap<PhoneNumber, String>();
  m.put(new PhoneNumber(707, 867, 5309), "Jenny"); 
  - this will fail almost 
  

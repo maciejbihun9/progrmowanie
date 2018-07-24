@@ -1,0 +1,28 @@
+
+ * create external functions, generic functions in other files.
+ Functions look like normal JS functions, but we can use there simple TS code.
+ Then we can import entire function and use it normally
+ - export function columnsByPin(cols: any[]) {
+     const ret: {left: any, center: any, right: any} = {
+       left: [],
+       center: [],
+       right: []
+     };
+
+     if(cols) {
+       for(const col of cols) {
+         if(col.frozenLeft) {
+           ret.left.push(col);
+         } else if(col.frozenRight) {
+           ret.right.push(col);
+         } else {
+           ret.center.push(col);
+         }
+       }
+     }
+
+     return ret;
+   }
+
+ * Export function in other files:
+ - import { columnsByPin } from '../../utils';

@@ -3,4 +3,7 @@
 
  * each data change changes also ui!!!, so
   we do not have to do any refreshes on our UI is happens automatically,
+
+  * Angular is great, because we have here only one page,
+  and server is not overhitten with many requests
  

@@ -1,0 +1,20 @@
+
+ * zmiana wiadomości z komita:
+ - git commit --amend -m "new_message"
+
+ * dodanie pliku do już zatwierdzonego commita:
+ - git add forgotten_file
+ - git commit --amend
+
+ * usuwanie commit'a:
+ removes commit, but changes are not removed,
+ branch is not affected, so branch is not detached.
+ - git revert c761f5c
+ - git reset HEAD~
+
+ * usuwanie commit'a wraz ze zmianami:
+ nie powoduje detach branch
+ - git reset HEAD~ --hard
+
+ * usuwanie commit'a bez zmian (pozostają w stage area):
+ - git reset HEAD~ --soft

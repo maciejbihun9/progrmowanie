@@ -1,0 +1,29 @@
+
+ * With @SkipSelf() we are telling the component to start the dependency resolution from the parent injector (the name SkipSelf says a lot, I guess).
+
+ * example of use:
+ - class Service {
+       someProp = 'Default value';
+   }
+
+   @Component({
+     providers : [Service] // Child's instance
+   })
+   class Child {
+     constructor(
+       @SkipSelf() parentSvc: Service,
+       svc: Service
+       ) {
+           console.log(pSvc.someProp); // Prints 'Parents instance'
+           console.log(svc.someProp);  // Prints 'Default value'
+       }
+   }
+
+   @Component({
+     providers : [Service] // Parent's instance
+   })
+   class Parent {
+     constructor(svc: Service) {
+       svc.someProp = 'Parent instance';
+     }
+   }

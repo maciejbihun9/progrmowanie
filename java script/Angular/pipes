@@ -7,5 +7,8 @@
  - {{ user | json }}
  
  * parse to uppercase:
- - {{hero.name | uppercase}}
- 
+ - {{ hero.name | uppercase }}
+
+ * asynchromus refreshing items from subscribed Subject:
+ - heroes$ - reference to subscribed subject
+ - <li *ngFor="let hero of heroes$ | async">

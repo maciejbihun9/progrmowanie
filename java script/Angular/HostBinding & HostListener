@@ -1,5 +1,6 @@
-@HOST LISTENER:
+ * those items works only for entire component,
 
+ @HOST LISTENER:
  * Let's take the following requirement: when you hover you mouse over the host element,
  only the color of the host element should change. In addition, when the mouse is gone,
  the color of the host element should change to its default color.
@@ -52,5 +53,6 @@
      }
 
  - associate style with an input element:
+ - with this implementation we can set here int values,
  - @HostBinding('style.height.px')
    @Input() scrollHeight: number;

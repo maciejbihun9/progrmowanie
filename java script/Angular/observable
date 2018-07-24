@@ -22,7 +22,12 @@
  - getHeroes(): void {
     this.heroService.getHeroes()
       .subscribe((heroes: Hero[]) => this.heroes = heroes);
-  } 
+  }
+
+ * Observables are lazy, which means nothing happens until a subscription is made.
+ Whereas Promises are eager; which means as soon as a promise is created, the execution takes place.
+ Observable is a stream in which passing of zero or more events is possible
+ and the callback is called for each event. Whereas, promise handles a single event.
 
  * create an observable of arrays:
  - this.http.get<Hero[]>(url) - returns one object, a one array,

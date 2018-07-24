@@ -1,2 +1,18 @@
 
  * we should create models as interfaces and put them into one file called interface,
+
+EXAMPLES:
+
+ * export interface Model{
+    name: string;
+    surname: string;
+    age: number;
+    address?: string // it is optional, so we can skip it in creation of new instances
+ }
+
+ * let model: Model = {
+    name: "Maciej",
+    surname: "Bihun",
+    age: 23
+ }
+

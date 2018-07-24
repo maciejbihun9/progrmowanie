@@ -1,0 +1,6 @@
+
+ * zmiana miejsca na gałęzi (raczej nie jest bezpiecznym azchowaniem):
+ To spowoduje odłączenie od gałęzi.
+ Każdy kolejny commit będzie odłączony od gałęzi i nie będzie widoczny w logowwaniu.
+ powrót go gałęzi spowoduje powrót do miejsca HEAD, z której user wyruszył.
+ - git checkout hash_number

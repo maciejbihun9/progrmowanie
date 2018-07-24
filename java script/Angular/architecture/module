@@ -4,7 +4,7 @@
 
  * we can have many modules across entire application and we should, Each module should
  contain components associated with only one feature where we can have modules that
- declares components that can be used accross entire application,
+ declares components that can be used accros entire application,
 
  * An NgModule is a container for a cohesive
  block of code dedicated to an application domain, a workflow,

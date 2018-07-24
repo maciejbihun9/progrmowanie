@@ -1,6 +1,25 @@
 
  * Istotą blockchain jest utrzymanie wspólnej i zbiorowej księgi rachunkowej transakcji,
-  w postaci cyfrowej, rozproszonej po całej sieci, w takich samych kopiach.
+  w postaci cyfrowej, rozproszonej po całej sieci, w takich samych kopiach,
+
+ * w momęcie zawierania transakcji pomiędzy dwoma osobami, zostaje wysłana informacja do wszystkich
+ użytkowników sieci i zostaje tam również zapisana,
+ - istnieje pełna transparentność dla każdej osoby, czyli każdy sprawdza czy dana osoba posiada
+ wystarczająco kasy aby zrealizować transakcje,
+
+ * transakcje są ułożone w następujących po sobie blokach,
+
+ * Nowy blok pojawia się średnio co 10 minut,
+
+ * każda karta ma ograniczoną ilość transakcji do zapisania,
+ - jak miejsce się skończy, to karta jest pieczętowana (szyfrowana) i trafia do archiwum,
+
+ * ZABEZPIECZANIE KART  - WYKOPYWANIE,
+
+ * Bloki zabezpieczane są poprzez tzw. hashe (czyli sumy kontrolne),
+
+ * każda zmiana utworzonej już transakcji pociąga za sobą utworzenie kolejnej, także
+ zawsze pozostaje cała historia wszystkich trancjakcji
 
  * każdy może brać udział w przesyłaniu informacji,
 
@@ -9,3 +28,6 @@
  * każda osoba posiada wyemitowane hash'e trasakcji, które zostały zrealizowane przez innych użytkowników sieci,
 
  * każda osoba weryfikuje transakcje zawierane przez innych,
+
+ MOŻLIWOŚĆ DO PRZENIESIENIA AKTU WŁASNOSCI DO INNEGO UŻYTKOWNIKA, GDZIE NIKT NIE MOŻE
+ KWESTIONOWAĆ TEGO PRZENIESIENIA

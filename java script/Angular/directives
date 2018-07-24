@@ -1,4 +1,9 @@
 
+ * directive is also a component,
+
+ * the biggest difference between this and components is that directives adds
+ behaviour to already existed components,
+
  * ngIf:
  - removes html from the DOM,
  - if some object is not present during init then div with that object contents
@@ -8,7 +13,13 @@
  - creates switch cast
  - Is declared in the package
 
- * check the validation of a value:
+ * NgClass:
+ - use some classes to style your html code:
+ - <some-element [ngClass]="['first', 'second']">...</some-element>
+ - manage which class is available in the html element in the Angular code:
+ - <some-element [ngClass]="{'first': true, 'second': true, 'third': false}">...</some-element>
+
+ - check the validation of a value:
  - jeśli input zostanie wykasowany, to zostanie wyświetlona klasa .ng-invalid (musi się zgadzać ta nazwa),
  która musi zostać zadeklarowana w pliku css naszej aplikacji,
  - jest to swego rodzaju validator,
@@ -17,6 +28,21 @@
  <label for="name">Name</label>
     <input type="text" class="form-control"
            required [(ngModel)]="user.name" name="name1" ngControl="name">
+
+ * NgPlural:
+ - show an item if a variable is equal to a number in ngPluralCase
+ <div>
+  <input [(ngModel)] = "count"/>
+ </div>
+ <p>
+   I have {{count}} items, but I could also say
+   <span [ngPlural]="count">
+      <ng-template ngPluralCase="">nothing</ng-template>
+ 	 <ng-template ngPluralCase="=1">there are no items.</ng-template>
+ 	 <ng-template ngPluralCase="=2">there is one item.</ng-template>
+ 	 <ng-template ngPluralCase="=3">there are a couple items.</ng-template>
+  </span>
+ </p>
 
  * two way databinding input:
  - has to contain name attribute

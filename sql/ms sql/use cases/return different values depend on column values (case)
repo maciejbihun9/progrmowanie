@@ -1,0 +1,8 @@
+select  a.IsIncluded,  a.ForecastCategoryId, a.DataSource, a.SalesStageId,
+		                                        case
+													when a.ESTCV<5 then 4
+													when a.ESTCV>=20 and a.ESTCV <50 then 3
+													when a.ESTCV>=50 and a.ESTCV <100 then 2
+													else 1
+												end as DealSizeId
+                                                from FinancialPeriodForecastOpportunity a

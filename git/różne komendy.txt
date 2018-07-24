@@ -1,3 +1,17 @@
 
  * załadowanie pliku z podanej rewizji:
  - git checkout sha-1 file_path
+
+ * remove changes from staging/not staging area and from workspace(just removes changes):
+ - git checkout file_url <==> git reset --hard
+
+ * switch between revisions in branch:
+ - git checkout revision_hash
+
+ * get changes from remote repository:
+ not really use full, because when I want to have changes then streight to the workspace
+ - git fetch (changes are in the repository but are not in workspace, so git merge is required)
+
+ * check differences between commited version and workspace:
+ Far more better to use git gui for that,
+ - git diff

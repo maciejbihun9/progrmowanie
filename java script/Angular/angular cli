@@ -10,4 +10,4 @@
  * install specific version of angular cli:
  - npm install @angular/cli@1.6.5
 
- * sometimes it is hard to remove angular cli version, but it can be removed from node_modules safly
+ * sometimes it is hard to remove angular cli version, but it can be removed from node_modules safely,

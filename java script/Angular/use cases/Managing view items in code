@@ -1,14 +1,14 @@
 ViewChildren decorator (many):
 
- * it is used to make a reference to a list of angular components (list)
+ * it is used to make a reference to a list of angular components (list),
 
  * we can start using it in ngAfterViewInit() function,
 
- * we can subscribe to changes of this list
+ * we can subscribe to changes of this list,
 
  * @ViewChildren - will return all components from the host view,
  
- * @ViewChildren(EmployeeComponent) employers: QueryList<EmployeeComponent>;
+ * @ViewChildren(EmployeeComponent) employers: QueryList<EmployeeComponent>,
 
  examples:
  * we can also get an item with specified id:
@@ -19,6 +19,8 @@ ViewChildren decorator (many):
  
 ViewChild (one):
 
+ * it allows us to manipulate other components instances variables,
+
  * is used to reference a single angular component or simple html element in the component body
  - always takes the first item of the page
 
@@ -27,9 +29,23 @@ ViewChild (one):
  * View queries are set before the ngAfterViewInit callback is called
  
  * we can call this component methods from this,
+
+ * This means that queries done using @ViewChild can only see elements inside the template of the component itself,
+ so children of this injected component are not visible,
+
+ * cannot see the internals of its child components.
  
  examples:
  * @ViewChild(EmployeeComponent) firstEmp: EmployeeComponent;
+
+ * get component html method:
+ - <component-name #component-id></component-name>
+ - @ViewChild('component-id') componentName: ComponentName;
+
+ * get directives used in component:
+ - <input matInput #primaryInput [(colorPicker)]="primary" [(ngModel)]="primary"/>
+ - @ViewChild('primaryInput', {read: ColorPickerDirective})
+     colorPicker: ColorPickerDirective;
 
  * create a connection between a html item and js code:
  - <table [ngClass]="tableClasses" #row_item>
@@ -40,7 +56,7 @@ ViewChild (one):
 
  * @ViewChild('tpl') tpl;
  - this is an example of connection between native element with an id and a view,
- - this is an ElementRef instance that constains all java script Element fields and methods,
+ - this is an ElementRef instance that contains all java script Element fields and methods,
  
 ViewContainerRef:
 
@@ -81,3 +97,8 @@ ContentChildren:
     </app-root3>
 
  * this approach won't work with normal situations
+
+ContentChild:
+
+ * Any element which is located inside the template, is ContnetChild,
+

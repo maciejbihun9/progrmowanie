@@ -4,3 +4,21 @@
 
  * server returns text from the call, but I can parse it to json():
  - text.json();
+
+ * always return false or true (!!):
+ It does not matter if we use undefined or string, it will always return true or false value
+ - !! func(12, 13)
+
+ * double !!:
+ - let items = [12, 13, 14, 51, null, undefined, 14, 'maciek'];
+       items.forEach(item => console.log(!! item));
+ - checking input credentials,
+ - can be used to return false, true values in any case
+
+ * send to a function list of items which is flatted into tocouple of variables:
+ - let items = [12, 13, 14];
+ - func(...items);
+ - function func(item1, item3, item4){}
+
+ * check types using string variables:
+ - typeof variable === 'function', 'number'

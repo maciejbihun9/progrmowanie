@@ -34,7 +34,7 @@ OPIS:
  - for event notification systems, where is far more common to change a event that unregister it,
 
  * producer-consumer:
- - jest to wzorzeć zbudowany na blokującej się kolejce, gdzie producer produkuje 
+ - jest to wzorzec zbudowany na blokującej się kolejce, gdzie producer produkuje
  prace, a konsumer ją konsumuje i wykonuje
  - kolejka moze mieć ustawioną wielkość, ale nie musi, także może się tak zdarzyć, że taka
  kolejka wyczerpie totalnie pamięć komputerową, także taka wielkość powinna być podawana,

@@ -1,4 +1,7 @@
 
  * występują gdy ktoś zakomitował coś innego do tej samej lini, niż mam ja podczas pobierania danych,
 
- *
+ * szukanie commita, który wprowadza jakis błąd:
+ - git bisect start         # starts the bisecting session
+ - git bisect bad           # marks the current revision as bad
+ - git bisect good revision # marks the last known good revision

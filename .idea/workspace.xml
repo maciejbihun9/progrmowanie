@@ -2,68 +2,75 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f341ddb-947e-47ef-9e6e-2652f1fef69b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/blockchain/intro" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java script/Angular/Angular 6/service worker" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java script/Angular/directives" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java script/Angular/npm" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java script/Angular/services" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java script/Angular/use cases/handling input item" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java script/Angular/use cases/subscriptions/subscribe to a subject and receive a new message once is available" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/render html item only if variable is initialized" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java script/Cross-Site Scripting (XSS)" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java/AOP - ZAGADNIENIA/aop" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java/AOP - ZAGADNIENIA/aspectJ" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java/AOP - ZAGADNIENIA/podstawowe pojęcia" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java/AOP - ZAGADNIENIA/przykłady implementacji" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java/AOP - ZAGADNIENIA/rodzaje porad" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java/dao" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java/hibernate/basic actions/create id generator" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java/hibernate/basic actions/get list of entities from the database" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java/hibernate/inheritance mapping" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java/jpa/class hierarchy specification" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java/lombok" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java/spring/aop/aop w springu" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java/spring/aop/podstawowe metody" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java/spring/aop/przykłady zastosowania" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java/spring/aop/syntax" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/java/spring/dispatcher servlet" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/blockchain/mining" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/git/bad sides" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/git/edytowanie commitów" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/git/git stash" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/git/informacje na temat repo" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/git/merge vs rebase" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/git/merging" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/git/poruszanie się po gałęzi" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/git/use cases/I commited changes to the wrong branch, I want to commit to the good one" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/git/use cases/move commit from one branch to another" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/Angular/use cases/create component/directive for different html template" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/Angular/use cases/declaring functions in external files" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/Angular/use cases/detect changes" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/Angular/use cases/invoke some logic after input variable changes" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/Angular/use cases/loops features" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/Angular/use cases/services/use parent's service in child component with child service" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/Angular/use cases/styling/append classes to an element" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/Angular/use cases/styling/append styles to an element" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/intro" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/node/intro" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java script/type script/usefull functions" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/java/spring/spring integration/intro" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sql/ms sql/use cases/return different values depend on column values (case)" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/wzorce projektowe/intro" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/api/observables.txt" afterPath="$PROJECT_DIR$/java script/Angular/api/observables.txt" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/api/ogólnie.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/cli.txt" afterPath="$PROJECT_DIR$/java script/Angular/angular cli" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/docs/template and data binding/pipes.txt" afterPath="$PROJECT_DIR$/java script/Angular/docs/template and data binding/pipes.txt" />
+      <change beforePath="$PROJECT_DIR$/blockchain/intro" afterPath="$PROJECT_DIR$/blockchain/intro" />
+      <change beforePath="$PROJECT_DIR$/git/Wprowadzenie do kontroli wersji.txt" afterPath="$PROJECT_DIR$/git/Wprowadzenie do kontroli wersji.txt" />
+      <change beforePath="$PROJECT_DIR$/git/konflikty" afterPath="$PROJECT_DIR$/git/konflikty" />
+      <change beforePath="$PROJECT_DIR$/git/różne komendy.txt" afterPath="$PROJECT_DIR$/git/różne komendy.txt" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/HostBinding &amp; HostListener" afterPath="$PROJECT_DIR$/java script/Angular/HostBinding &amp; HostListener" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/angular cli" afterPath="$PROJECT_DIR$/java script/Angular/angular cli" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/api/common/common.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/api/common/locales.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/api/http/http-common.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/api/http/http.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/api/http/observable.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/api/language service.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/api/observables.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/api/platform-browser/platform-browser.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/architecture/module" afterPath="$PROJECT_DIR$/java script/Angular/architecture/module" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/architecture/pipe" afterPath="$PROJECT_DIR$/java script/Angular/architecture/pipe" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/common mistakes" afterPath="$PROJECT_DIR$/java script/Angular/common mistakes" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/common/common.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/common/directives.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/common/enums.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/common/pipe.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/directives" afterPath="$PROJECT_DIR$/java script/Angular/directives" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/docs/life cycle hooks.txt" afterPath="" />
       <change beforePath="$PROJECT_DIR$/java script/Angular/events" afterPath="$PROJECT_DIR$/java script/Angular/events" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/intro.txt" afterPath="$PROJECT_DIR$/java script/Angular/intro.txt" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/observable.txt" afterPath="$PROJECT_DIR$/java script/Angular/observable" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/pipes.txt" afterPath="$PROJECT_DIR$/java script/Angular/pipes" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/powerfull knowledge.txt" afterPath="$PROJECT_DIR$/java script/Angular/powerfull knowledge" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/practices.txt" afterPath="$PROJECT_DIR$/java script/Angular/practices" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/routing.txt" afterPath="$PROJECT_DIR$/java script/Angular/routing" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/services.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/string operations.txt" afterPath="$PROJECT_DIR$/java script/string operations.txt" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/template" afterPath="$PROJECT_DIR$/java script/Angular/template" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/type script/collections" afterPath="$PROJECT_DIR$/java script/type script/collections" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/type script/functional programming.txt" afterPath="$PROJECT_DIR$/java script/type script/functional programming.txt" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/type script/models" afterPath="$PROJECT_DIR$/java script/type script/models" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/type script/strings" afterPath="$PROJECT_DIR$/java script/type script/strings" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/type script/type_script.txt" afterPath="$PROJECT_DIR$/java script/type script/type_script.txt" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/zastosowania/Communicating Between Components" afterPath="$PROJECT_DIR$/java script/Angular/use cases/Communicating Between Components" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/zastosowania/Components architecture" afterPath="$PROJECT_DIR$/java script/Angular/use cases/Components architecture" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/zastosowania/Creating models" afterPath="$PROJECT_DIR$/java script/Angular/use cases/Creating models" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/zastosowania/Dynamically add components to the DOM" afterPath="$PROJECT_DIR$/java script/Angular/use cases/Dynamically add components to the DOM" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/zastosowania/Loading data" afterPath="$PROJECT_DIR$/java script/Angular/use cases/Loading data" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/zastosowania/Managing styles in the code" afterPath="$PROJECT_DIR$/java script/Angular/use cases/Managing styles in the code" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/zastosowania/Managing view items in code.txt" afterPath="$PROJECT_DIR$/java script/Angular/use cases/Managing view items in code.txt" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/zastosowania/Run functions outside of angular core" afterPath="$PROJECT_DIR$/java script/Angular/use cases/Run functions outside of angular core" />
-      <change beforePath="$PROJECT_DIR$/java script/ogólnie.txt" afterPath="$PROJECT_DIR$/java script/ogólnie.txt" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/http.txt" afterPath="$PROJECT_DIR$/java script/Angular/http" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/interface" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/intro.txt" afterPath="$PROJECT_DIR$/java script/Angular/intro" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/language service.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/life  cycles.txt" afterPath="$PROJECT_DIR$/java script/Angular/life  cycles" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/main files" afterPath="$PROJECT_DIR$/java script/Angular/main files" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/observable" afterPath="$PROJECT_DIR$/java script/Angular/observable" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/packages installation" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/pipes" afterPath="$PROJECT_DIR$/java script/Angular/pipes" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/powerfull knowledge" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/Creating models" afterPath="$PROJECT_DIR$/java script/Angular/use cases/Creating models" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/Managing view items in code.txt" afterPath="$PROJECT_DIR$/java script/Angular/use cases/Managing view items in code" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/Run functions outside of angular core" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/java script/type script/collections" afterPath="$PROJECT_DIR$/java script/type script/collections" />
+      <change beforePath="$PROJECT_DIR$/java script/type script/functional programming.txt" afterPath="$PROJECT_DIR$/java script/type script/functional programming.txt" />
       <change beforePath="$PROJECT_DIR$/java script/usefull functions" afterPath="$PROJECT_DIR$/java script/usefull functions" />
-      <change beforePath="$PROJECT_DIR$/java/hibernate/basic items" afterPath="$PROJECT_DIR$/java/hibernate/basic items" />
-      <change beforePath="$PROJECT_DIR$/java/hibernate/collections" afterPath="$PROJECT_DIR$/java/hibernate/collections" />
-      <change beforePath="$PROJECT_DIR$/java/hibernate/intro" afterPath="$PROJECT_DIR$/java/hibernate/intro" />
-      <change beforePath="$PROJECT_DIR$/java/hibernate/n + 1 problem" afterPath="$PROJECT_DIR$/java/hibernate/n + 1 problem" />
-      <change beforePath="$PROJECT_DIR$/java/hibernate/performance problems" afterPath="$PROJECT_DIR$/java/hibernate/performance problems" />
-      <change beforePath="$PROJECT_DIR$/java/hibernate/states/transient" afterPath="$PROJECT_DIR$/java/hibernate/states/transient" />
-      <change beforePath="$PROJECT_DIR$/java/jpa/common problems/optimistic locking" afterPath="$PROJECT_DIR$/java/jpa/common problems/optimistic locking" />
+      <change beforePath="$PROJECT_DIR$/java/concurrency/building blocks.txt" afterPath="$PROJECT_DIR$/java/concurrency/building blocks.txt" />
+      <change beforePath="$PROJECT_DIR$/java/effective java/Methods Common to All Objects.txt" afterPath="$PROJECT_DIR$/java/effective java/Methods Common to All Objects.txt" />
+      <change beforePath="$PROJECT_DIR$/java/effective java/serialization.txt" afterPath="$PROJECT_DIR$/java/effective java/serialization.txt" />
+      <change beforePath="$PROJECT_DIR$/java/java 8/this in lambdas.txt" afterPath="$PROJECT_DIR$/java/java 8/this in lambdas.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -77,21 +84,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="practices" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java script/Angular/practices">
+      <file leaf-file-name="collections" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java script/type script/collections">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="directives" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java script/Angular/directives">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+            <state relative-caret-position="170">
+              <caret line="34" column="57" lean-forward="false" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -99,11 +96,19 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Subject</find>
       <find>enum</find>
       <find>taką</find>
+      <find>@ViewChild</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -115,57 +120,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/java script/Angular/tests" />
-        <option value="$PROJECT_DIR$/java/hibernate/states/transient" />
-        <option value="$PROJECT_DIR$/java/hibernate/performance problems" />
-        <option value="$PROJECT_DIR$/java/hibernate/intro" />
-        <option value="$PROJECT_DIR$/java/hibernate/collections" />
-        <option value="$PROJECT_DIR$/java/jpa/common problems/optimistic locking" />
-        <option value="$PROJECT_DIR$/java/hibernate/basic items" />
-        <option value="$PROJECT_DIR$/java/jpa/class hierarchy specification" />
-        <option value="$PROJECT_DIR$/java/hibernate/n + 1 problem" />
-        <option value="$PROJECT_DIR$/java/spring/dispatcher servlet" />
-        <option value="$PROJECT_DIR$/java script/Angular/zastosowania/Communicating Between Components" />
-        <option value="$PROJECT_DIR$/java/dao" />
-        <option value="$PROJECT_DIR$/java/hibernate/basic actions/create id generator" />
-        <option value="$PROJECT_DIR$/java/hibernate/basic actions/get list of entities from the database" />
-        <option value="$PROJECT_DIR$/java/spring/aop" />
-        <option value="$PROJECT_DIR$/java/spring/AOP - ZAGADNIENIA/rodzaje porad" />
-        <option value="$PROJECT_DIR$/java/spring/AOP - ZAGADNIENIA/aspectJ" />
-        <option value="$PROJECT_DIR$/java/spring/AOP - ZAGADNIENIA/podstawowe pojęcia" />
-        <option value="$PROJECT_DIR$/java/spring/AOP - ZAGADNIENIA/przykłady implementacji" />
-        <option value="$PROJECT_DIR$/java/spring/AOP - ZAGADNIENIA/aop" />
-        <option value="$PROJECT_DIR$/java/spring/aop w springu" />
-        <option value="$PROJECT_DIR$/java/spring/aop/syntax" />
-        <option value="$PROJECT_DIR$/java/spring/aop/podstawowe metody" />
-        <option value="$PROJECT_DIR$/java script/Angular/docs/template and data binding/pipes.txt" />
-        <option value="$PROJECT_DIR$/java/AOP - ZAGADNIENIA/podstawowe pojęcia" />
-        <option value="$PROJECT_DIR$/java/AOP - ZAGADNIENIA/aspectJ" />
-        <option value="$PROJECT_DIR$/java/spring/aop/aop w springu" />
-        <option value="$PROJECT_DIR$/java/spring/aop/przykłady zastosowania" />
-        <option value="$PROJECT_DIR$/blockchain/intro" />
-        <option value="$PROJECT_DIR$/java/lombok" />
-        <option value="$PROJECT_DIR$/java script/ogólnie.txt" />
-        <option value="$PROJECT_DIR$/java script/Angular/Angular 6/service worker" />
-        <option value="$PROJECT_DIR$/java script/Angular/api/ogólnie.txt" />
-        <option value="$PROJECT_DIR$/java script/Angular/api/observables.txt" />
-        <option value="$PROJECT_DIR$/java script/Cross-Site Scripting (XSS)" />
-        <option value="$PROJECT_DIR$/java script/Angular/services.txt" />
-        <option value="$PROJECT_DIR$/java script/Angular/practices.txt" />
-        <option value="$PROJECT_DIR$/java script/Angular/events" />
-        <option value="$PROJECT_DIR$/java script/Angular/zastosowania/events/catch each input change and call a method from it" />
+        <option value="$PROJECT_DIR$/java script/Angular/interface" />
+        <option value="$PROJECT_DIR$/java script/Angular/http" />
+        <option value="$PROJECT_DIR$/java script/Angular/common mistakes" />
         <option value="$PROJECT_DIR$/java script/Angular/angular cli" />
-        <option value="$PROJECT_DIR$/java script/Angular/template" />
-        <option value="$PROJECT_DIR$/java script/Angular/use cases/handling input item" />
-        <option value="$PROJECT_DIR$/java script/usefull functions" />
-        <option value="$PROJECT_DIR$/java script/Angular/npm" />
-        <option value="$PROJECT_DIR$/java script/Angular/intro.txt" />
-        <option value="$PROJECT_DIR$/java script/Angular/observable" />
-        <option value="$PROJECT_DIR$/java script/Angular/use cases/subscriptions/subscribe to a subject and receive a new message once is available" />
-        <option value="$PROJECT_DIR$/java script/type script/collections" />
-        <option value="$PROJECT_DIR$/java script/Angular/use cases/template/render item only variable is initialized" />
-        <option value="$PROJECT_DIR$/java script/Angular/practices" />
+        <option value="$PROJECT_DIR$/java script/Angular/events" />
+        <option value="$PROJECT_DIR$/java script/Angular/common/directives.txt" />
         <option value="$PROJECT_DIR$/java script/Angular/directives" />
+        <option value="$PROJECT_DIR$/java script/Angular/architecture/pipe" />
+        <option value="$PROJECT_DIR$/java script/Angular/architecture/module" />
+        <option value="$PROJECT_DIR$/java script/Angular/intro" />
+        <option value="$PROJECT_DIR$/java script/Angular/observable" />
+        <option value="$PROJECT_DIR$/git/merging" />
+        <option value="$PROJECT_DIR$/blockchain/mining" />
+        <option value="$PROJECT_DIR$/blockchain/intro" />
+        <option value="$PROJECT_DIR$/java/spring/spring integration/intro" />
+        <option value="$PROJECT_DIR$/git/poruszanie się po gałęzi" />
+        <option value="$PROJECT_DIR$/git/konflikty" />
+        <option value="$PROJECT_DIR$/git/informacje na temat repo" />
+        <option value="$PROJECT_DIR$/git/use cases/move commit from one branch to another" />
+        <option value="$PROJECT_DIR$/git/edytowanie commitów" />
+        <option value="$PROJECT_DIR$/git/use cases/I commited changes to the wrong branch, I want to commit to the good one" />
+        <option value="$PROJECT_DIR$/git/git stash" />
+        <option value="$PROJECT_DIR$/sql/ms sql/use cases/return different values depend on column values (case)" />
+        <option value="$PROJECT_DIR$/git/bad sides" />
+        <option value="$PROJECT_DIR$/git/różne komendy.txt" />
+        <option value="$PROJECT_DIR$/git/Wprowadzenie do kontroli wersji.txt" />
+        <option value="$PROJECT_DIR$/git/merge vs rebase" />
+        <option value="$PROJECT_DIR$/java script/Angular/use cases/Managing view items in code" />
+        <option value="$PROJECT_DIR$/wzorce projektowe/intro" />
+        <option value="$PROJECT_DIR$/java/java 8/this in lambdas.txt" />
+        <option value="$PROJECT_DIR$/java/effective java/serialization.txt" />
+        <option value="$PROJECT_DIR$/java/effective java/Methods Common to All Objects.txt" />
+        <option value="$PROJECT_DIR$/java/concurrency/building blocks.txt" />
+        <option value="$PROJECT_DIR$/java script/Angular/use cases/Creating models" />
+        <option value="$PROJECT_DIR$/java script/type script/functional programming.txt" />
+        <option value="$PROJECT_DIR$/java script/type script/usefull functions.ts" />
+        <option value="$PROJECT_DIR$/java script/type script/usefull functions" />
+        <option value="$PROJECT_DIR$/java script/usefull functions" />
+        <option value="$PROJECT_DIR$/java script/Angular/use cases/invoke some logic after input variable changes" />
+        <option value="$PROJECT_DIR$/java script/Angular/use cases/declaring functions in seperate files.ts" />
+        <option value="$PROJECT_DIR$/java script/Angular/use cases/declaring functions in external files" />
+        <option value="$PROJECT_DIR$/java script/Angular/HostBinding &amp; HostListener" />
+        <option value="$PROJECT_DIR$/java script/Angular/main files" />
+        <option value="$PROJECT_DIR$/java script/intro" />
+        <option value="$PROJECT_DIR$/java script/node/intro" />
+        <option value="$PROJECT_DIR$/java script/Angular/use cases/loops features" />
+        <option value="$PROJECT_DIR$/java script/Angular/use cases/services/use parent's service in child component with child service" />
+        <option value="$PROJECT_DIR$/java script/Angular/use cases/styling/append styles to an object" />
+        <option value="$PROJECT_DIR$/java script/Angular/use cases/styling/append classes to an element" />
+        <option value="$PROJECT_DIR$/java script/Angular/use cases/detect changes" />
+        <option value="$PROJECT_DIR$/java script/type script/collections" />
       </list>
     </option>
   </component>
@@ -176,10 +181,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="116" />
-    <option name="y" value="18" />
-    <option name="width" value="1607" />
-    <option name="height" value="1041" />
+    <option name="x" value="720" />
+    <option name="y" value="16" />
+    <option name="width" value="1025" />
+    <option name="height" value="1022" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -213,28 +218,12 @@
               <item name="programming" type="b2602c69:ProjectViewProjectNode" />
               <item name="programming" type="462c0819:PsiDirectoryNode" />
               <item name="java script" type="462c0819:PsiDirectoryNode" />
-              <item name="Angular" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="programming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programming" type="462c0819:PsiDirectoryNode" />
-              <item name="java script" type="462c0819:PsiDirectoryNode" />
-              <item name="Angular" type="462c0819:PsiDirectoryNode" />
-              <item name="use cases" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="programming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programming" type="462c0819:PsiDirectoryNode" />
-              <item name="java script" type="462c0819:PsiDirectoryNode" />
-              <item name="Angular" type="462c0819:PsiDirectoryNode" />
-              <item name="use cases" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="programming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programming" type="462c0819:PsiDirectoryNode" />
-              <item name="java script" type="462c0819:PsiDirectoryNode" />
               <item name="type script" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="programming" type="b2602c69:ProjectViewProjectNode" />
+              <item name="programming" type="462c0819:PsiDirectoryNode" />
+              <item name="wzorce projektowe" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -246,7 +235,7 @@
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
@@ -929,25 +918,154 @@
       <workItem from="1531338524353" duration="1782000" />
       <workItem from="1531340331407" duration="1786000" />
       <workItem from="1531342155950" duration="1673000" />
-      <workItem from="1531376661040" duration="1107000" />
+      <workItem from="1531376661040" duration="1781000" />
+      <workItem from="1531378462714" duration="1753000" />
+      <workItem from="1531380270573" duration="1847000" />
+      <workItem from="1531385974479" duration="1787000" />
+      <workItem from="1531387784677" duration="690000" />
+      <workItem from="1531389592589" duration="598000" />
+      <workItem from="1531391421619" duration="599000" />
+      <workItem from="1531394853702" duration="1162000" />
+      <workItem from="1531396740639" duration="599000" />
+      <workItem from="1531398550216" duration="598000" />
+      <workItem from="1531401533363" duration="599000" />
+      <workItem from="1531416424624" duration="1784000" />
+      <workItem from="1531418234066" duration="572000" />
+      <workItem from="1531420096215" duration="2040000" />
+      <workItem from="1531459909814" duration="595000" />
+      <workItem from="1531461757033" duration="598000" />
+      <workItem from="1531474430558" duration="976000" />
+      <workItem from="1531476383764" duration="1571000" />
+      <workItem from="1531478395092" duration="918000" />
+      <workItem from="1531480492311" duration="599000" />
+      <workItem from="1531483357880" duration="598000" />
+      <workItem from="1531486428767" duration="599000" />
+      <workItem from="1531488425211" duration="599000" />
+      <workItem from="1531491599777" duration="599000" />
+      <workItem from="1531493602407" duration="599000" />
+      <workItem from="1531495431804" duration="599000" />
+      <workItem from="1531497258663" duration="599000" />
+      <workItem from="1531583486948" duration="998000" />
+      <workItem from="1531586907658" duration="1029000" />
+      <workItem from="1531588795450" duration="1410000" />
+      <workItem from="1531593413590" duration="1692000" />
+      <workItem from="1531642841547" duration="599000" />
+      <workItem from="1531649007699" duration="1774000" />
+      <workItem from="1531651926363" duration="1292000" />
+      <workItem from="1531654009480" duration="1033000" />
+      <workItem from="1531677440199" duration="1782000" />
+      <workItem from="1531679493798" duration="1689000" />
+      <workItem from="1531720425966" duration="598000" />
+      <workItem from="1531724282388" duration="598000" />
+      <workItem from="1531731394325" duration="599000" />
+      <workItem from="1531811251862" duration="1000" />
+      <workItem from="1531820876363" duration="761000" />
+      <workItem from="1531822660799" duration="599000" />
+      <workItem from="1531824616706" duration="599000" />
+      <workItem from="1531827023667" duration="1182000" />
+      <workItem from="1531829278720" duration="2484000" />
+      <workItem from="1531833030694" duration="597000" />
+      <workItem from="1531834902291" duration="598000" />
+      <workItem from="1531838629407" duration="1844000" />
+      <workItem from="1531840807909" duration="1083000" />
+      <workItem from="1531893870523" duration="599000" />
+      <workItem from="1531897135732" duration="595000" />
+      <workItem from="1531899599498" duration="595000" />
+      <workItem from="1531902846103" duration="1310000" />
+      <workItem from="1531904652633" duration="825000" />
+      <workItem from="1531906464869" duration="1103000" />
+      <workItem from="1531908276863" duration="598000" />
+      <workItem from="1531910175437" duration="599000" />
+      <workItem from="1531913459867" duration="1641000" />
+      <workItem from="1531915702024" duration="1769000" />
+      <workItem from="1531917939749" duration="594000" />
+      <workItem from="1531919817922" duration="593000" />
+      <workItem from="1531932645345" duration="2276000" />
+      <workItem from="1531935269945" duration="1867000" />
+      <workItem from="1531937165324" duration="763000" />
+      <workItem from="1531978918729" duration="1792000" />
+      <workItem from="1531980932255" duration="1686000" />
+      <workItem from="1531983053666" duration="1131000" />
+      <workItem from="1531990713971" duration="1788000" />
+      <workItem from="1531992532118" duration="1793000" />
+      <workItem from="1531994490981" duration="1859000" />
+      <workItem from="1531996720896" duration="766000" />
+      <workItem from="1532001915560" duration="1722000" />
+      <workItem from="1532006045481" duration="1720000" />
+      <workItem from="1532007847057" duration="852000" />
+      <workItem from="1532009833005" duration="1904000" />
+      <workItem from="1532013060621" duration="1408000" />
+      <workItem from="1532014870833" duration="1481000" />
+      <workItem from="1532016960361" duration="1694000" />
+      <workItem from="1532018978739" duration="1140000" />
+      <workItem from="1532066755964" duration="599000" />
+      <workItem from="1532068704308" duration="598000" />
+      <workItem from="1532070515877" duration="599000" />
+      <workItem from="1532072324707" duration="599000" />
+      <workItem from="1532075162863" duration="599000" />
+      <workItem from="1532076973979" duration="599000" />
+      <workItem from="1532079025141" duration="599000" />
+      <workItem from="1532081282539" duration="961000" />
+      <workItem from="1532083107706" duration="1224000" />
+      <workItem from="1532087748849" duration="599000" />
+      <workItem from="1532090579189" duration="599000" />
+      <workItem from="1532092406242" duration="599000" />
+      <workItem from="1532094070756" duration="599000" />
+      <workItem from="1532105214321" duration="599000" />
+      <workItem from="1532107191117" duration="927000" />
+      <workItem from="1532109046523" duration="1142000" />
+      <workItem from="1532168015719" duration="598000" />
+      <workItem from="1532276546242" duration="1819000" />
+      <workItem from="1532278742155" duration="1278000" />
+      <workItem from="1532280799492" duration="598000" />
+      <workItem from="1532326155528" duration="599000" />
+      <workItem from="1532331201026" duration="590000" />
+      <workItem from="1532334654302" duration="599000" />
+      <workItem from="1532336462171" duration="1260000" />
+      <workItem from="1532338285490" duration="1170000" />
+      <workItem from="1532340088961" duration="807000" />
+      <workItem from="1532341898105" duration="599000" />
+      <workItem from="1532343709702" duration="781000" />
+      <workItem from="1532345577597" duration="1281000" />
+      <workItem from="1532350349983" duration="598000" />
+      <workItem from="1532352159344" duration="583000" />
+      <workItem from="1532370043113" duration="2217000" />
+      <workItem from="1532374039843" duration="1098000" />
+      <workItem from="1532413854693" duration="599000" />
+      <workItem from="1532415708926" duration="592000" />
+      <workItem from="1532417528492" duration="593000" />
+      <workItem from="1532420420066" duration="596000" />
+      <workItem from="1532422784389" duration="592000" />
+      <workItem from="1532424959559" duration="599000" />
+      <workItem from="1532426772794" duration="599000" />
+      <workItem from="1532428616610" duration="599000" />
+      <workItem from="1532430537518" duration="599000" />
+      <workItem from="1532432346800" duration="599000" />
+      <workItem from="1532434600086" duration="598000" />
+      <workItem from="1532436411088" duration="591000" />
+      <workItem from="1532447142937" duration="599000" />
+      <workItem from="1532449098767" duration="599000" />
+      <workItem from="1532450909255" duration="1272000" />
+      <workItem from="1532452717243" duration="599000" />
+      <workItem from="1532454696421" duration="14000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="603308000" />
+    <option name="totallyTimeSpent" value="729518000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2296875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19583334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.126193" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13043478" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -983,16 +1101,110 @@
     <option name="version" value="1" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/tools/uri-encoder.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/tools/uri-encoder.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/services/opportunity-data.service.spec.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/services/opportunity-data.service.spec.js" />
         <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/polyfills.js.map" />
         <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/polyfills.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/testing/dxcfooter.component.spec.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/testing/dxcfooter.component.spec.js" />
         <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/subregions-filter.pipe.js.map" />
         <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/subregions-filter.pipe.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/tools/messages.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/tools/messages.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/opportunities-grid/opportunities-grid.component.spec.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/opportunities-grid/opportunities-grid.component.spec.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/opportunities-grid/opportunities-grid.component.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/opportunities-grid/opportunities-grid.component.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/models/interfaces.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/models/interfaces.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/super-table.component.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/table-header.component.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/super-table-body.component.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/text-filter.component.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/super-table-row.component.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/super-table-cell.component.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/dummy-rows.component.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/text-filter.component.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/table-header.component.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/super-table-cell.component.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/enum-filter.component.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/enum-filter.component.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/super-table-body.component.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/super-table-row.component.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/dummy-rows.component.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/super-table.component.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/testing/dxcfooter.component.spec.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/testing/dxcfooter.component.spec.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/services/super-table-state.service.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/services/super-table-state.service.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/paginator/paginator.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/paginator/paginator.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/sort-switch/sort-switch.component.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/sort-switch/sort-switch.component.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/sort-switch/sort-switch.component.spec.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/sort-switch/sort-switch.component.spec.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/fiscal-period-multi-select/fiscal-period-multi-select.component.spec.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/fiscal-period-multi-select/fiscal-period-multi-select.component.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/fiscal-period-multi-select/fiscal-period-multi-select.component.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/fiscal-period-multi-select/fiscal-period-multi-select.component.spec.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/super-table.module.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/super-table.module.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/main-forecasting-stats/main-forecasting-stats.component.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/main-forecasting-stats/main-forecasting-stats.component.spec.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/main-forecasting-stats/main-forecasting-stats.component.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/main-forecasting-stats/main-forecasting-stats.component.spec.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/bootstrap/bootstrap.component.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/bootstrap/bootstrap.component.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/tools/memory.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/tools/memory.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/tools/uri-encoder.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/tools/uri-encoder.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/util/super-table-filters.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/util/super-table-filters.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/util/super-table-sorters.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/util/super-table-sorters.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/dxcfooter/dxcfooter.component.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/dxcfooter/dxcfooter.component.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/global-view-navigation-bar/global-view-navigation-bar.component.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/global-view-navigation-bar/global-view-navigation-bar.component.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/global-view-navigation-bar/global-view-navigation-bar.component.spec.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/global-view-navigation-bar/global-view-navigation-bar.component.spec.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/models/opportunity.model.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/models/data.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/models/data.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/models/opportunity.model.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/models/forecast.model.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/models/forecast.model.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/services/in-memory-data-extension.service.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/services/opportunity-data.service.spec.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/services/in-memory-data-extension.service.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/services/opportunity-data.service.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/services/in-memory-data.service.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/services/opportunity-data.service.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/services/forecast.service.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/services/in-memory-data.service.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/services/opportunity-data.service.spec.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/services/forecast.service.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/tools/async-observable-helpers.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/tools/async-observable-helpers.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/dxcfooter/dxcfooter.component.spec.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/dxcfooter/dxcfooter.component.spec.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/models/forecast.result.model.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/models/forecast.result.model.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/services/forecast.service.spec.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/services/forecast.service.spec.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/test.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/test.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/services/user.service.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/services/user.service.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/environments/environment.prod.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/environments/environment.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/environments/environment.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/environments/environment.prod.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/models/forecast-model.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/models/forecast-model.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/main.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/app.module.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/app.component.js.map" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/app.component.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/app.module.js" />
+        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/main.js.map" />
       </list>
     </option>
   </component>
@@ -1004,357 +1216,348 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/java/jpa/entityManager">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="33" column="50" lean-forward="true" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/hibernate/states/transient">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/hibernate/inheritance mapping">
+    <entry file="file://$PROJECT_DIR$/java/java 8/strumienie/strumienie z funkcji.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/hibernate/basic items">
+    <entry file="file://$PROJECT_DIR$/java/java 8/strumienie/predykaty.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="62" column="116" lean-forward="false" selection-start-line="62" selection-start-column="116" selection-end-line="62" selection-end-column="116" />
+        <state relative-caret-position="85">
+          <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jpa/common problems/pesimistic locking">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jpa/common problems/optimistic locking">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jpa/common problems/locking">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jpa/intro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jpa/entityManager">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-186">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/jpa/class hierarchy specification">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="82" column="34" lean-forward="true" selection-start-line="82" selection-start-column="34" selection-end-line="82" selection-end-column="34" />
+        <state relative-caret-position="272">
+          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/hibernate/n + 1 problem">
+    <entry file="file://$PROJECT_DIR$/java/jpa/basic methods">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/HostBinding &amp; HostListener">
+    <entry file="file://$PROJECT_DIR$/java/jpa/basic info">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="43" column="6" lean-forward="true" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/Communicating Between Components">
+    <entry file="file://$PROJECT_DIR$/java/jpa/annotations/entity annotations">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="48" column="31" lean-forward="true" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/spring/dispatcher servlet">
+    <entry file="file://$PROJECT_DIR$/java/effective java/serialization.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+        <state relative-caret-position="102">
+          <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/hibernate/basic actions/get list of entities from the database">
+    <entry file="file://$PROJECT_DIR$/java/effective java/ogólnie java.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/effective java/numbers.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/effective java/metoda czytania.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/effective java/Methods Common to All Objects.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1325">
+          <caret line="67" column="30" lean-forward="false" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/concurrency/avoiding livenes hazards.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/concurrency/building blocks.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="36" column="18" lean-forward="false" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/concurrency/synchronizers.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/concurrency/thread safety.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/AOP - ZAGADNIENIA/aop">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="79" lean-forward="false" selection-start-line="4" selection-start-column="79" selection-end-line="4" selection-end-column="79" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/AOP - ZAGADNIENIA/aspectJ">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/AOP - ZAGADNIENIA/podstawowe pojęcia">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/AOP - ZAGADNIENIA/przykłady implementacji">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/AOP - ZAGADNIENIA/rodzaje porad">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/dao">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="67" lean-forward="false" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/AOP - ZAGADNIENIA/przykłady implementacji">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="38" lean-forward="false" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/hibernate/basic actions/create id generator">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/spring/aop/podstawowe metody">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/spring/aop/syntax">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/docs/template and data binding/pipes.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="31" column="81" lean-forward="false" selection-start-line="31" selection-start-column="81" selection-end-line="31" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/pipes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blockchain/intro">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="56" lean-forward="false" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/spring/aop/przykłady zastosowania">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="763">
-          <caret line="98" column="4" lean-forward="false" selection-start-line="98" selection-start-column="4" selection-end-line="98" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/AOP - ZAGADNIENIA/podstawowe pojęcia">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="-204">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/spring/aop/aop w springu">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="71" lean-forward="false" selection-start-line="32" selection-start-column="71" selection-end-line="32" selection-end-column="71" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/AOP - ZAGADNIENIA/aspectJ">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="80" lean-forward="false" selection-start-line="9" selection-start-column="80" selection-end-line="9" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/lombok">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="57" lean-forward="false" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/ogólnie.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="29" column="19" lean-forward="false" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/Angular 6/service worker">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="2" lean-forward="false" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/Angular 6/intro">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/api/ogólnie.txt" />
-    <entry file="file://$PROJECT_DIR$/java script/Angular/api/observables.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-476">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Cross-Site Scripting (XSS)">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="108" lean-forward="false" selection-start-line="9" selection-start-column="108" selection-end-line="9" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/routing">
+    <entry file="file://$PROJECT_DIR$/java/spring/aop/podstawowe metody">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/string operations.txt">
+    <entry file="file://$PROJECT_DIR$/java script/type script/usefull functions.ts" />
+    <entry file="file://$PROJECT_DIR$/java script/type script/type_script.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/events">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/declaring functions in seperate files.ts" />
+    <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/Managing styles in the code">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="52" lean-forward="true" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+        <state relative-caret-position="204">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/angular cli">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/HostBinding &amp; HostListener">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="653">
+          <caret line="55" column="55" lean-forward="false" selection-start-line="55" selection-start-column="55" selection-end-line="55" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/declaring functions in external files">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/invoke some logic after input variable changes">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="43" lean-forward="false" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/template">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/events/catch each input change and call a method from it" />
-    <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/handling input item">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="71" lean-forward="false" selection-start-line="4" selection-start-column="71" selection-end-line="4" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/tests">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="65" lean-forward="true" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/template">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/template/render html item only if variable is initialized">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="83" lean-forward="false" selection-start-line="0" selection-start-column="83" selection-end-line="0" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/type script/collections">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="33" column="1" lean-forward="false" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/subscriptions/subscribe to a subject and receive a new message once is available">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="46" lean-forward="false" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/services">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="31" lean-forward="false" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/observable">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="14" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/intro.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="72" lean-forward="false" selection-start-line="4" selection-start-column="72" selection-end-line="4" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/npm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="42" lean-forward="false" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
-          <folding />
+          <caret line="2" column="113" lean-forward="false" selection-start-line="2" selection-start-column="113" selection-end-line="2" selection-end-column="113" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java script/usefull functions">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/type script/usefull functions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/type script/functional programming.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="732">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/Creating models">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/main files">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/npm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/ogólnie.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/intro">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-          <folding />
+          <caret line="4" column="57" lean-forward="false" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/practices">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/loops features">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/directives">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/template">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        <state relative-caret-position="132">
+          <caret line="128" column="22" lean-forward="false" selection-start-line="128" selection-start-column="22" selection-end-line="128" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/detect changes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="66" lean-forward="true" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/styling/append classes to an element">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="57" lean-forward="false" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/styling/append styles to an element">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="81" lean-forward="false" selection-start-line="2" selection-start-column="81" selection-end-line="2" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/services/use parent's service in child component with child service">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/node/intro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="34" lean-forward="false" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/type script/collections">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="34" column="57" lean-forward="false" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
           <folding />
         </state>
       </provider>

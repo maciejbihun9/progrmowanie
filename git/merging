@@ -1,0 +1,10 @@
+
+ * merge two branches:
+ - go to branch to which all changes should be merged
+ - git merge branch_name
+
+ * branch rebasing:
+ - it is very interesting replacement for simple merging,
+ - creates clear history, user feels like there were no additional branches,
+ - admin will not be forced to integrate all changes with master branch,
+ - https://git-scm.com/book/pl/v1/Ga%C5%82%C4%99zie-Gita-Zmiana-bazy

@@ -1,7 +1,7 @@
 
  * we use pipes to transform the data before it is displayed,
 
- * use this when working with currency, dates,
+ * use this when working with currency, dates, filtering
 
  * we can also set input parameters for pipes:
  - <!-- fullDate format: output 'Monday, June 15, 2015'-->

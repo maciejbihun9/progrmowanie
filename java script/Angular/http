@@ -4,7 +4,7 @@
  * Http methods return one value:
  - Observable<Hero[]> returns one value, an array of values
 
- * we start working with the http client with this:
+ * we start working with an http client with this:
  - constructor(
     private http: HttpClient,
     private messageService: MessageService) { }

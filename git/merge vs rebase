@@ -1,0 +1,16 @@
+MERGE:
+
+ * merge is more safe than rebase, because it maintains state of a branch
+ instead of connecting all of it in one branch,
+
+REBASE:
+
+ * rewrite all changes from specified branch to current branch:
+ we lost unique branch history.
+ - git rebase branch_name
+
+ * The major benefit of rebasing is that you get a much cleaner project history,
+
+ * it creates much cleaner project history,
+
+ * rebasing loses the context provided by a merge commit,

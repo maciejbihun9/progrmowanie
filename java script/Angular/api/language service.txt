@@ -1,6 +1,0 @@
-
- * allows to auto navigation inside an angular template
- 
- * web storm already allows users to use it,
- 
- * autocopletition is by default,

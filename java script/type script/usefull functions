@@ -1,0 +1,5 @@
+
+ * bind a function with a variable into another function:
+ - function twoParams(a: number,b: number) { return a + b; }
+ - let curryOne = (x: number) => twoParams(123,x);
+ - console.log(`curryOne: ${curryOne(345)}`);

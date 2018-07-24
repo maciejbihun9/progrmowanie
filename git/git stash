@@ -1,0 +1,9 @@
+
+ * istnieje jedna lista zestaszowanych zmian:
+ Posiada ona zmiany ze wszystkich branchy,
+ - git stash list
+
+ * pobranie zmian ze stash list:
+ Może się zdarzyć, że zostaną pobrane zmiany z innego branch'a co może skutkować niezłym bałganem.
+ Jeśli wystąpi błąd z merge, wtedy element nie znika z listy.
+ - git stash pop

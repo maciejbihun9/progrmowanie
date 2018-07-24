@@ -1,4 +1,14 @@
 
+ * serialization causes creating of a new object
+
+ * we have to make sure that we extends a class that has a no-parameter constructor,
+ without that we can not serialize correctly,
+
+ * static fields are not serializable,
+
+ * make a field not serializeable:
+ - transient public String item;
+
  * once serialization has been completed, serialized data can be transmitted
  from one place to another, from one vm to another,
  

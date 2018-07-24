@@ -1,0 +1,61 @@
+FASADA:
+
+ * one class call methods from all classes, so there is a one main class
+ that manages everything
+ - controller class where are declared all controller methods,
+ - many systems integration (system that manages the data about marketing, sales etc.)
+
+FABRYKA:
+
+ * one of the best methods to create an object,
+
+ * In Factory pattern, we create object without exposing the creation logic to the client and refer to newly created object using a common interface,
+
+ * A method that returns an interface type based on string input
+ - public Zwierze rozpoznajZwierzaka(String dzwiek)
+  { if (dzwiek.equals("hau")) { return new Pies(); } else { return new Kot(); } }
+
+ * we have a common interface that specifies
+ - public class ShapeFactory {
+
+      //use getShape method to get object of type shape
+      public Shape getShape(String shapeType){
+         if(shapeType == null){
+            return null;
+         }
+         if(shapeType.equalsIgnoreCase("CIRCLE")){
+            return new Circle();
+
+         } else if(shapeType.equalsIgnoreCase("RECTANGLE")){
+            return new Rectangle();
+
+         } else if(shapeType.equalsIgnoreCase("SQUARE")){
+            return new Square();
+         }
+
+         return null;
+      }
+   }
+
+SINGLETON:
+
+ *
+ - Service in Spring can be a singleton, but it does not have to be implemented in such a way,
+
+BUILDER:
+
+ * building a house,
+
+ * it is associated with fabric pattern,
+
+ * we are creating a product from basics to particulars,
+ - director.call(make, run) -> managers -> simple workers -> products
+
+PROTOTYPE:
+
+ * is used when object creation is very costly,
+
+ * we store costly instance in a map, and we can get this from there instead of getting this from the database,
+
+ * we get this from the database and we clone it,
+
