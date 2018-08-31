@@ -1,0 +1,8 @@
+
+ * the main purpose why the dto was introduced was to limit web services calls to receive the data,
+
+ * using this object can reduce many calls to one that gets data that specific application may need,
+
+ * define only fields that you may need,
+
+ * should not contain any business logic,

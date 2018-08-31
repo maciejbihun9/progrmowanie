@@ -1,0 +1,37 @@
+
+ * The database transaction happens inside the scope of a persistence context,
+
+ * The transactional annotation itself defines the scope of a single database transaction.
+
+ * One Entity Manager can be used across several database transactions, and it actually often is.
+
+WORTH TO NOTE:
+
+ * should be used only in services
+
+ * it does not work on private methods, just has no effect,
+
+ * Spring rolls back a transaction only if we face unchecked exception,
+ so if we face checked exception then this transaction will be commited
+ and this will leave our database in inconsistent state,
+ - use @Transactional(rollbackFor = Exception.class) to avoid that
+
+ * Note that – by default, rollback happens for runtime, unchecked exceptions only.
+ The checked exception does not trigger a rollback of the transaction; the behavior can,
+  of course, be configured with the rollbackFor and noRollbackFor annotation parameters.
+
+ * any self-invocation calls will not start any transaction
+ - so do not call any methods from inside of a class (I CHECK THAT AND IT WORKS!, INTERESTING)
+
+ * this annotation should be used only for service methods, not DAO methods,
+
+ * we should get the current session in transactional method:
+ - because we have session associated with a transaction
+ - @Autowired
+   private SessionFactory sessionFactory;
+
+   public Integer addPerson(Person p) {
+       Session session = sessionFactory.getCurrentSession();
+       Integer personID = (Integer) session.save(p);
+       return personID;
+   }

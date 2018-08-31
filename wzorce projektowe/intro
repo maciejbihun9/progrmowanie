@@ -1,13 +1,32 @@
+ * even if we considering creating only two objects it is good to use some kind of pattern
+
 FASADA:
+
+ * provides simplified api to very complicated system
 
  * one class call methods from all classes, so there is a one main class
  that manages everything
  - controller class where are declared all controller methods,
- - many systems integration (system that manages the data about marketing, sales etc.)
+ - many systems integration (system that manages the data about marketing, sales etc.),
+
+ use cases:
+
+ * allow an easy start with some application for users that are interested only about basic capabilities,
+ but still allows to use those more advanced features
+
+ * cash withdrawal application that uses very big banking system:
+ - expose very limited api for cash withdrawals, since we do not need all banking system api to
+ not confuse any usesr with too extended api.
 
 FABRYKA:
 
  * one of the best methods to create an object,
+
+ * it allows to create objects from the same family (inherits from the same parent) and set concrete class during object set up,
+
+ * it allows to completely hide all object creation details, every detail associated with object creation is in fabric implementation,
+
+ * sometimes it is good to create an object
 
  * In Factory pattern, we create object without exposing the creation logic to the client and refer to newly created object using a common interface,
 
@@ -39,8 +58,7 @@ FABRYKA:
 
 SINGLETON:
 
- *
- - Service in Spring can be a singleton, but it does not have to be implemented in such a way,
+ * Service in Spring can be a singleton, but it does not have to be implemented in such a way,
 
 BUILDER:
 
@@ -49,7 +67,33 @@ BUILDER:
  * it is associated with fabric pattern,
 
  * we are creating a product from basics to particulars,
- - director.call(make, run) -> managers -> simple workers -> products
+ - director.call(make, run) -> managers -> simple workers -> products,
+
+ * It is usually used for constructing complex objects whose configuration and initialization is a multi-stage process,
+
+ * it is mainly used to reduce amount of input variables in constructor,
+
+ * greater ability to control how the object is created,
+
+ * create concrete representations of products,
+
+ * creating specific product representations using the implemented Builder interface,
+
+ * creates objects from the same family,
+
+ * great choice when you have many optional parameters,
+
+ - public User getUser() {
+     return new
+       User.UserBuilder("Jhon", "Doe")
+       .age(30)
+       .phone("1234567")
+       .address("Fake address 1234")
+       .build();
+   }
+
+
+ * IT IS USED AS A PATTERN TO CREATE CLASS WITH MANY CONSTRUCTOR PARAMETERS
 
 PROTOTYPE:
 

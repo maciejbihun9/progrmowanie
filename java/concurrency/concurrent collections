@@ -1,0 +1,42 @@
+ * Collections.SynchronizedList:
+ - creates synchronized list from regular list,
+
+ * ConcurrentHashMap - jest kolekcją, która radzi sobie trochę lepiej, bo
+ nie synchronizuje wszystkich metod po tym samym lock'u więc pozwala na to, aby
+ kilka wątków mogło czytać dane z takiej mapy, a nawet udzuelić pozwolenia na zapisywanie
+ do takiej mapy wielu wątkom na raz,
+ - nie rzuca wyjątku COncurrentModificationExeception, bo posiada iterator, który na to nie
+ reaguje, gdy kolekcja została zmieniona podczas iteracji przez nią,
+ także można usuwać elementy podczas iteracji!!!
+ - ten iterator może reflektować te zmiany w kolekcji, ale nie jest napisane, że to zrobi na pewno,
+ - metody size() oraz isEmpty() zostały spowolnione na rzecz add(), get(),
+ - You should use ConcurrentHashMap when you need very high concurrency in your project,
+ - Reads can happen very fast while write is done with a lock,
+ - couple threads can work on the same collection
+
+ zastosowanie:
+ - dodwawnia elementów do kolekcji która jest w danym czasie iterowana, a nawet może się zdarzyć, że
+ iterator uwzględni ten nowy obiekt,
+
+ * CopyOnWriteArrayList:
+ - Reads do not block, and effectively pay only the cost of a volatile read;
+ - Writes do not block reads (or vice versa), but only one write can occur at once;
+ - jest to kolekcja, która pozwala na dodawanie nowych elementów do listy
+ podczas iterowania i nie rzuca wyjątkami,
+ - podczas każdej modyfikacji lista jest kopiowana, ale iteracja jest od tego samego miejsca,
+ - jest mało wydajna doa dużej ilości modyfikacji
+ - Iterator<Integer> iterator = numbers.iterator() - this will create a snapshot of a list,
+ - pozwala na usuwanie elementów podczas iterowania przez inne wątki,
+ - the thread reading the size will get a value that either reflects or not the number of elements added in addAll()
+
+ zastosowanie:
+ - nie, kiedy potrzeba o wiele więcej dodawania nić iterowania,
+ - for event notification systems, where is far more common to change a event that unregister it,
+ - reads hugely outnumber writes;
+ - the array is small (or writes are very infrequent);
+ - the caller genuinely needs the functionality of a list rather than an array.
+
+ * AtomicIntegerArray, AtomicLongArray, AtomicIntegerArray:
+ - has the best throughput from all others,
+ - has the fastest access for many reader threads from all collections,
+ - does not suppport adding new items to iterable

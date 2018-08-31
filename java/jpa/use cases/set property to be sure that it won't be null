@@ -1,0 +1,11 @@
+
+ * use @Basic(optional = false):
+ - it can be applied to all fields types that are implementing Serializable interface,
+ - With @Basic(optional=true) the persistence provider checks if a field is nullable or not,
+ - the persistence provider will throw an error if field is not set and you trying to persist that during flushing to the database,
+
+ * use @Column(nullable = true):
+ - this annotation is used when you want to check for nullable on the database level,
+ - it is up to you where you want to check for null, database level or persistence provider level
+
+

@@ -1,0 +1,19 @@
+
+ * this is an implementation of JMS interface standard,
+
+ * this works as a JMS broker service,
+
+ * represents a topic,
+
+ use cases:
+
+ * Allowing applications built with different languages and on different operating systems to integrate with each other,
+
+ * it is easy to scale a system horizontally,
+
+ * Reduced coupling - the assumptions made by the clients and services are greatly reduced as a result of the previous 5 benefits.
+ A service can change details about itself, including its location, protocol, and availability, without affecting or disrupting the client,
+
+ * JMS supports messages with serialized Java objects and XML, and is used in many industries -- from retail to finance and everything in between. Here, experts offer five real-life JMS use cases,
+
+ *

@@ -1,0 +1,8 @@
+
+ * it is a message broker,
+
+ * it is very similar or activeMQ,
+
+ * relies on queues,
+
+ * all messages are sended to this service that represents a topic for subscribers,

@@ -41,7 +41,10 @@
  - pipe returns an obserable, so we can make a subscribe call after it,
  - observable.pipe(
 	// do something when data returns
+	startWith('item1') // set up a initial value from observable - like additional item at the first place of the list
     tap(_ => this.log(`fetched hero id=${id}`)),
+    map(items => func(items)) // call a function for every item that is returned from an observable
+    map(state => state ? this._filterStates(state) : this.states.slice()) // set up a condition in map method
 	// handle errors
     catchError(this.handleError<Hero>(`getHero id=${id}`))
   );

@@ -1,0 +1,9 @@
+
+ * jre - jvm + some files + basic libs,
+
+ * stack memory - for local variables, variables in functions, for methods,
+ is much faster that heap, stored in RAM memory,
+ - should be used by creating all variables in functions,
+
+ * heap memory - for global variables, all objects are stored there,
+ is much slower that stack memory, stored in RAM memory

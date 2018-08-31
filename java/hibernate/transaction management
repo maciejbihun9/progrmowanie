@@ -1,0 +1,4 @@
+
+ * Overall hibernate transaction management is better than JDBC transaction management
+ because we don’t need to rely on exceptions for rollback.
+ Any exception thrown by session methods automatically rollback the transaction,

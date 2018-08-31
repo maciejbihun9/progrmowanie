@@ -1,0 +1,9 @@
+
+ * his job is to map view name with view it self,
+
+ * we can have many view resolvers in the same configuration,
+
+ * we have couple types of view resolvers, but they all just declares views
+ in different manner,
+
+ * The ViewResolver enables an application to render models in the browser – without tying the implementation to a specific view technology

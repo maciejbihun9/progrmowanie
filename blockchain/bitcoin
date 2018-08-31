@@ -1,0 +1,20 @@
+
+ * table that contains names - balances,
+
+ * anyone has the same copy of this file and
+ anyone can see those balances, but those balances are linked with hashes,
+ so that is why the basic level of anonymity is maintained,
+
+ * when transaction is made then i am broadcasting a message about the transaction details
+ to everyone around me so they can update their accounts,
+
+ * a person does not has to be a host for those ledgers,
+
+ * anybody has a private key, that is used with transaction message to create a signature.
+ This signature is unique for each transaction. People in Bitcoin community are allowed to
+ verify each transaction using you public key.
+
+ * all transactions goes to a pending area. Miners gets those transactions from that area and
+ tries to generate a number that produces relevant hash number out of it that is acceptable by a system.
+ Once this code is generated then this transaction go to a chain
+

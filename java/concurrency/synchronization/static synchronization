@@ -1,0 +1,13 @@
+
+ * public static synchronized int getCount(){ return 12; }
+ - this method is synchronized on a class in which this method exists,
+ so we can not invoke different static methods out of the same class by different threads,
+
+ * use static synchronization to have only one property for all instances (I would use singleton here):
+ private static boolean stopRequested;
+ private static synchronized void requestStop() {
+ stopRequested = true;
+ }
+ private static synchronized boolean stopRequested() {
+ return stopRequested;
+ }

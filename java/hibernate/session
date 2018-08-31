@@ -1,0 +1,22 @@
+BASIC INFORMATION:
+
+ * In Hibernate, the persistence context is represented by org.hibernate. Session instance,
+ where pC in javax.persistence is represented by javax.persistence.EntityManager,
+ - When we use Hibernate as a JPA provider and operate via EntityManager interface,
+ the implementation of this interface basically wraps the underlying Session object.
+
+ * it allows communication between application and the database,
+
+ * we create transactions using session object,
+
+MORE ADVANCED:
+
+ * SessionFactory should create a new session for each thread,
+
+ * is single threaded, so we should create a new session object for each thread,
+
+ * it stores the data that we used in our transactions
+
+ACTIONS:
+
+ * when you close a session then all instances are pushed to the repo,

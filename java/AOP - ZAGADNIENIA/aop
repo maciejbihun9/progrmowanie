@@ -10,8 +10,8 @@
  * Aspekty stanowią alternatywę dla dziedziczenia i delegacji,
  które stanowią standardowe wplatanie obiektów,
 
- * zapewnia dobre odseparowanie usług aop od logiki biznesowej,czyli
- kod jest dobrze podzielony na moduły
+ * zapewnia dobre odseparowanie usług aop od logiki biznesowej, czyli
+ kod jest dobrze podzielony na moduły,
 
  * zamykają w modułach aspekty, które dzieją się wiele razy w aplikacji,
 
@@ -22,4 +22,6 @@ ZASTOSOWANIA:
 
  * logowanie do aplikacji,
 
- * stosowanie regół bezpieczeństwa,
+ * stosowanie reguł bezpieczeństwa,
+
+ * zarządzanie transakcjami

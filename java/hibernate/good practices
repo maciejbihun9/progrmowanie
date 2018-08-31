@@ -1,0 +1,10 @@
+
+ * use HQL queries over native queries,
+
+ * Avoid Many-to-Many relationships, it can be easily implemented using bidirectional One-to-Many and Many-to-One relationships,
+
+ * For collections, try to use Lists, maps and sets. Avoid array because you don’t get benefit of lazy loading,
+
+ * use validators to validate data type of instances that you are rtrying to persist,
+
+

@@ -1,0 +1,9 @@
+
+ * Criteria API:
+ - used only to retriving the data, not persisting it,
+
+ * declarative transaction management:
+
+ * Hibernate template:
+ - should not be used, because we create tight coupling with spring,
+ - we get simplified transaction management (opening and closing transactions),

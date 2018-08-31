@@ -1,0 +1,30 @@
+
+ * full article about this:
+ - https://www.concretepage.com/hibernate/example-embeddable-embedded-hibernate-annotation
+
+ * @embeddedId:
+ - id that point to embedded instance,
+
+ * @EmbeddedCollection:
+ - contains a list of embedded elements,
+
+ use cases:
+ * if you plan to add the same set of properties to many classes
+ then you can create a seperate class with those properties and embedd those properties
+ to many entities.
+ - this class is not a entity it self,
+
+ * Embeddable class can be also a class that have mapping properties, mapping annotations
+ - @Embeddable
+   public class ProposedAttribute implements Serializable{
+
+       private static final long serialVersionUID = 1867068618006485825L;
+
+       @ManyToOne(fetch = FetchType.LAZY)
+       @JoinColumn(name = "ATTRIBUTE_ID", referencedColumnName = "ATTRIBUTE_ID")
+       private AttributeDefinition attribute;
+
+       @Column
+       private String value;
+
+   }

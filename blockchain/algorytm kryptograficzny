@@ -1,0 +1,9 @@
+
+ 1. Anna pays Charlie 100 $
+ - signs that transaction with her private key and a message insides,
+ - this generates a hash number
+ - this transaction that is markerd with her signature is putted on the ledger list of transcations,
+ - every single transaction that she will make will be signed by a different signature,
+ so that is why those signatures can not be used another time
+ - signature of a transaction is always created on the user side,
+ - publike key is used to verify that signature was created from a private key,

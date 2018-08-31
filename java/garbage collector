@@ -1,0 +1,7 @@
+
+ * gc algorithm counts all references to an object,
+
+WORTH TO NOTE:
+
+ * if we assign huge amount of memory to our jvm and we play with only
+ a small part of it then it GC won't run

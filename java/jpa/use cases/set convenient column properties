@@ -1,0 +1,7 @@
+
+ * updateable:
+ - if it is set to false then this property won't be updated,
+ and it won't be any exceptions, it will be very silent action
+
+ * nullable:
+ - if set to false, then we will have SQLServer exception during saving our instance to the db,

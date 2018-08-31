@@ -1,0 +1,6 @@
+
+ * check proxy:
+ - set HTTP_PROXY
+
+ * set new proxy:
+ - set HTTP_PROXY=http://proxy.houston.hpecorp.net:8088

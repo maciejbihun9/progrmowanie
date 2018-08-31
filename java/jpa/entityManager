@@ -1,3 +1,10 @@
+ WORTH TO NOTE:
+
+ * One Entity Manager can be used across several database transactions, and it actually often is.
+
+ * we should use "Entity Manager per application transaction" pattern
+
+ * method will run in a single database transaction
 
  SIMPLE DESCRIPTION:
  * creates a connection between database and a application,

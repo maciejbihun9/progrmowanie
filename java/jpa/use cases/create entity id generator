@@ -1,0 +1,5 @@
+
+ * id generator used in elixir:
+ - @Id
+   @GeneratedValue(strategy = GenerationType.AUTO, generator = "ADDRESS_SEQ")
+   @SequenceGenerator(name = "ADDRESS_SEQ", sequenceName = "ADDRESS_SEQ", allocationSize = 1)

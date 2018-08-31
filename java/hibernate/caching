@@ -1,8 +1,30 @@
 
+
+ * when we try to load the data then first what happens is hibernate searches for it
+ in first level cache, then in second level cache and it is returned from there,
+
+TECHNICAL CONSIDERATIONS:
+
+ * provide the right version of ehcache, that have to be the same as the hibernate it's self,
+
+FIRST LEVEL CACHE:
+
+ * it is a session scoped cache, so all data is lost when session is closed
+
  * those techniques limits the amount of queries to the database,
  - we limiting the number of queries to the minimum,
 
- * we have 3 types of caching
+ * we have 3 types of caching,
 
  * flush():
  - this method moves all the data from cache to the database(it means all changes),
+
+SECOND LEVEL CACHE:
+
+ * is sessionFactory scoped, so once the data is loaded with session that becomes from specific sessionfactory then stays there,
+
+ * we should limit cache size to specific number of created objects,
+
+ * collections are not cached by default,
+
+ * entity is not stored as instance object, are stored in totally different man,

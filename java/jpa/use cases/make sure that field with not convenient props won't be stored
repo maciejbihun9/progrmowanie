@@ -1,0 +1,5 @@
+
+ * @Column(nullable = false, length = 10)
+ - if a field does not match those properties then persistenceProvider will throw an error
+ that is a bit hard to debug
+ - it will throw SQLServerException

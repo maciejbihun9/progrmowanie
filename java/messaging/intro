@@ -1,0 +1,18 @@
+
+ * used for sending messages asynchromusly,
+
+ how it works:
+
+ * publisher publishes messages to a topic where subscribers gets these new data from a topic (one to many communication),
+
+ * publisher publishes messages to a queue and receiver gets items from a this queue (one to one communication),
+
+ * many publishers publishes messages to a queue and receiver gets items from a this queue (many to one communication)
+
+ use cases:
+
+ * it can be used to communicate between different application (spring boot applications, simple java applications),
+
+ * it can be used send messages between applications, but what is more important it can happen without pinging (checking for new messages)
+
+ * microservices use this mechanism to communicate between themselves

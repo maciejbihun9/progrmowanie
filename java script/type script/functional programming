@@ -13,6 +13,9 @@
 
 FUNCTIONAL APPROACH:
 
+ * create a function:
+ - printName = (name: string) => console.log(name)
+
  * functional approach example:
  - typ funkcjonalny dobrze jest deklarować w miejscach ogólnych,
  np. takim miejsce jest plik models

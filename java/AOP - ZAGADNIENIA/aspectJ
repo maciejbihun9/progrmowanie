@@ -7,4 +7,4 @@
  ale ostatnio dodano adnotacje, które radzą sobie o wiele łatwiej,
 
  * Zgodnie z konwencją, wszystkie aspekty w AspectJ posiadają
-   statyczną metodę aspectOf(), która zwraca singleton będący instancją aspektu.
+ statyczną metodę aspectOf(), która zwraca singleton będący instancją aspektu.

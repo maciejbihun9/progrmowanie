@@ -1,0 +1,41 @@
+
+ * good article about it:
+ - https://www.thoughts-on-java.org/ordering-vs-sorting-hibernate-use/
+
+SORTING:
+
+ * sorting is done on the client side using comparator or comparable interfaces,
+ so we do unoptimized sorting on the client side
+
+ORDERING:
+
+ * get entities using sql query and use order by,
+
+ * this uses order by in the sql query
+
+ * ordering is done in the database, so is highly optimized,
+
+ * we should always use that approach,
+
+ * make sure that you do not use SortedSet becasue this will force your applciation
+ to sort retrived entities another time after retrival,
+
+RETRIVE SORTED COLLECTIONS:
+
+ * use @OrderBy("name asc") annotation,
+ - this is nice, because we have sql code in one place
+
+ * criteria api:
+ - generates sql that is executed on the database,
+ - it is used for very complicated queries that would be
+ very big and long and error prone,
+ - it is not widely used
+ - @NamedQueries should be used instead,
+
+ * @NamedQuery:
+ - recommended way to use,
+ - it is possible to declare them in xml,
+ - can be accessed globaly in the application,
+ - code is easier to maintain
+
+ * create simple native, HQL queries,

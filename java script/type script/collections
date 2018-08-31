@@ -74,6 +74,12 @@ ARRAYS:
  Returns index of an item that matches specified predicate.
  - array.findIndex((item) => {return item > 13});
 
+ * add array to an array as a flat array:
+ - let array = [1,2,3];
+ - let variables = [2,5,7]
+ - array.push(...variables) -> [1,2,3,2,5,7]
+
+
 MAP:
 
  * create a map:

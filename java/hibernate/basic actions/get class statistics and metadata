@@ -1,0 +1,3 @@
+
+ * use sessionfactory to get all statistics and class metadata,
+ how long does it take make a transaction, some basic statistics

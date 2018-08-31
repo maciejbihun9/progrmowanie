@@ -1,15 +1,15 @@
 
- * hibernate is a persistance provider for java applications.
+ * hibernate is a persistence provider for java applications.
  JPA provides interfaces for ORM providers which implements those interfaces.
 
- * developer has not to be an expert in writting queries,
+ * developer has not to be an expert in writing queries,
  can focus only on convenient associations between those,
 
  * hibernate uses JDBC under the hood to make database calls,
 
  * If there is one thing that’s often criticized about JPA and Hibernate, it’s that it sometimes execute more queries than you expected,
 
- * use your logging and statistics components to see if everything works correclty,
+ * use your logging and statistics components to see if everything works correctly,
 
  * Fetching only the data you need is a good thing in general,
  but it also requires Hibernate to execute an additional query to initialize each relationship,

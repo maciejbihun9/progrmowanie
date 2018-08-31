@@ -1,0 +1,8 @@
+
+ * use apache commons for this actions:
+ - HashCodeBuilder()
+   			.append(id)
+   			.toHashCode();
+ - EqualsBuilder()
+   				.append(id, other.id)
+   				.isEquals();

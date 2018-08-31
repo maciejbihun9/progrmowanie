@@ -1,0 +1,3 @@
+
+ * use @EntityListeners to invoke methods after and before delete, save, update
+ - this will allow us to create a callback that will be invoked in specific situations and times.

@@ -1,0 +1,9 @@
+
+ * if we set our bean to be lazy loaded then will be loaded when it's needed (when we call methods from him, when we try to use it)
+
+WORTH TO NOTE:
+
+ * if our bean is not set to be lazy loaded then will be loaded before ApplicationContext is fully initialized,
+ so init method of a bean will be called before we have an access to ApplicationContext
+
+ * by default all beans are initialized at the application startup,

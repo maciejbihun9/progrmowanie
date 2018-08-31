@@ -8,9 +8,6 @@ INTRO:
 
  * This pattern then ensures the right abstraction and encapsulation of all access to any data source,
 
- * sometimes we can share our application with many companies, but
- each of them might want us to provide different persistance layer,
-
 DISADVENTEGES:
 
  * causes creation of too much boilerplate code,
@@ -33,6 +30,9 @@ IMPLEMENTATION:
    }
 
 
-EXAMPLES:
+USE CASES:
 
  * create session, create transaction,
+
+ * sometimes we can share our application with many companies, but
+  each of them might want us to provide different persistance layer,

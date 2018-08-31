@@ -1,0 +1,3 @@
+
+ * it sets the number of threads that are able to access a given section of code in the application,
+ - synchronized is able to grant an access for only one thread in given time

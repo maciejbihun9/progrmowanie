@@ -1,0 +1,12 @@
+
+ * send a transaction that contains a message with me receiving money from anna
+ - get her public key,
+ - create a message, random private key and verify, if it ok then post to others for their verification,
+ - they approve that and
+
+ * to recognized that someone pays more that has you have to know entire spending history
+ - system has to go through entire blockchain and find a user that wants to make a transaction
+ finds him and sums his spendings, if he does not have enough money then a transaction is rejected
+
+ * everyone has a copy of a transaction list:
+ - if you want to make a transaction, then this info is broadcast to other users that owns that transcation list,

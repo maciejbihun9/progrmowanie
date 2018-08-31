@@ -1,0 +1,9 @@
+BASIC KNOWLEDGE:
+
+ * it is used for database call delegation,
+
+ * An object proxy is just a way to avoid retrieving an object until you need it,
+
+GOOD TO NOTE:
+
+ * proxy instances uses

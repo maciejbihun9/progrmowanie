@@ -1,0 +1,12 @@
+
+ * one of the most common ways to do it is to use FETCH in the sql query:
+ - TypedQuery<Author> q = em.createQuery("SELECT a FROM Author a JOIN FETCH a.books b WHERE a.id = :id", Author.class);
+   q.setParameter("id", 1L);
+   Author a = q.getSingleResult();
+
+   log.info(a);
+   for (Book b : a.getBooks()) {
+   	log.info(b);
+   }
+
+ * use entity graph to do it

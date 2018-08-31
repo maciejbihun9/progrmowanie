@@ -1,0 +1,17 @@
+# USE ONLY WHEN IT IS REALLY NEED IT!!!
+# AVOID SHARING DATA BETWEEN THREADS !
+
+ * volatile variables can be created only on heap, can not be created in a method (on the stack)
+
+ * it allow all threads to see this value
+
+ * using volatile variables allow us to write and read variables to main memory (RAM memory, not just cpu cache),
+
+ * if there is a only thread that writes a new value to that variable then it's not have to be synchronized,
+
+ * when there are many threads that writes a new value and read it, then we have to synchronizaed that:
+ - private static volatile AtomicInteger variable = new AtomicInteger(13); -> private final AtomicInteger count = new AtomicInteger(13);
+
+ use cases:
+
+ * create a simple boolean flag,

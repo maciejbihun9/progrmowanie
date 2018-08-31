@@ -7,31 +7,12 @@ OPIS:
  sklaowalności z małym ryzykiem,
  
  * wywoływanie metod klas konkurencyjnych może zająć bardzo dużo czasu, gdy np. metoda get()
- porównuje obiekty kolekcji poprzez equals, gdzie mtoda hash nie rozdzieliła ich w odpowiedni sposób,
+ porównuje obiekty kolekcji poprzez equals, gdzie metoda hash nie rozdzieliła ich w odpowiedni sposób,
  takie rzeczy trudno będzie odnaleźć później w gąszczu problemów z wydajnością,
  
  * kolekcje konkurencyjne zostały stworzone w taki sposób, żeby mogły mieć zmienianą zawartość wiele razy
- 
- * ConcurrentHashMap - jest kolekcją, która radzi sobie trochę lepiej, bo
- nie synchronizuje wszystkich metod po tym samym lock'u więc pozwala na to, aby
- kilka wątków mogło czytać dane z takiej mapy, a nawet udzuelić pozwolenia na zapisywanie
- do takiej mapy wielu wątkom na raz,
- - nie rzuca wyjątku COncurrentModificationExeception, bo posiada iterator, który na to nie 
- reaguje, gdy kolekcja została zmieniona podczas iteracji przez nią,
- - ten iterator może reflektować te zmiany w kolekcji, ale nie jest napisane, że to zrobi na pewno,
- - metody size() oraz isEmpty() zostały spowolnione na rzecz add(), get(),
- 
- zastosowanie:
- - dodwawnia elementów do kolekcji która jest w danym czasie iterowana, a nawet może się zdarzyć, że
- iterator uwzględni ten nowy obiekt,
- 
- * CopyonWriteArrayList - jest to kolekcja, która pozwala na dodawanie nowych elementów do listy
- podczas iterowania i nie rzuca wyjątkami, ale ta nowa lista powoduje, że inne wątki mogą dostać 
- wstęp do już troche zmienionej listy, także iterowanie bedzie na innej liście,
 
- zastosowanie:
- - nie, kiedy potrzeba o wiele więcej dodawania nić iterowania,
- - for event notification systems, where is far more common to change a event that unregister it,
+
 
  * producer-consumer:
  - jest to wzorzec zbudowany na blokującej się kolejce, gdzie producer produkuje
