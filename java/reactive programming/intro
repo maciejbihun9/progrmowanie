@@ -1,0 +1,105 @@
+
+ why we use it:
+
+ * because blocking code waste resources and we want to use
+ full power of our machine - async code to the rescue !,
+
+ * using callbacks can lead to not readable code and callback hell,
+ so this approach introduces more readable way to program that,
+ everything is on the same level,
+
+ * also using Future we can easly end up with blocking code, but besides
+ that we do not have advanced tools to handle errors,
+
+ * this is a simplified way to write asynchronous code,
+ - Flux<String> combinations =
+                   Flux.just(1, 2, 3, 4).flatMap(id -> {
+                       System.out.println("PROCESS FOR ID: " + id);
+                       // real time async example
+                       // for each item in a sequence we call a rest client method
+                       Mono<Product> fluxProduct = webClient
+                               .get()
+                               .uri("/{id}", "5baa0b15b45cda5404ad2d31")
+                               // makes a request
+                               .retrieve()
+                               .bodyToMono(Product.class);
+                   });
+
+ worth to know:
+
+ * reactive programming is based on publisher - subscriber model,
+ - in more advance manner this is like a hybrid, because to run this shit
+ we have to request for starting amount of items,
+
+ * it is not concurrent, but it is agnostic of that, so can help you with
+ developing concurrent applications,
+
+ * it was designed to resolve problems with:
+ - idle threads while waiting for response from the database,
+ - I/O operations,
+ - replacement for using Callbacks and Futures
+
+ * reactive programming:
+ - asynchronous programming paradigm - data streams and propagation of change,
+
+ * push aspect is the key concept of being reactive,
+
+ * end to end this is a push-pull hybrid,
+ because we can request(n) items and send that upstream to tell a publisher how many items we want,
+
+ * async code - implemented using Future and Callable, EventListener,
+
+ * the main goal also is to combine many async operations that is readable
+ reflects organization plans, where everything is on the same level,
+ nesting is minimized,
+
+ * we can think about our application like as
+ about a conveyor belt of workstations,
+
+ * we can inform our publisher how many items we want to get,
+
+ * we can think about that... this is a reactive application,
+
+ * when I subscribe I receive a subscription object that helps me
+ controlling the communication with the source
+ - i can cancel(), request(n), etc.
+
+ * operations are like work stations, adds behaviour,
+ changes material in some ways,
+ and return a totally new instance,
+ they provide great transformation methods and error handling,
+
+ * we have async code only if program our application in that way,
+ if not, we end up with an application that does everything sync
+ eg. Thread.sleep - will block our application,
+ it has to be I/O call or EventListener,
+
+ * to have async code, we have to use async operations
+ - I/O to a remote service, async event,
+
+ * Hot streams:
+ - they can work even without subscribers,
+ - subscriber starts receiving new items when subscribes, so might miss
+ previous emitted items. By the way we can turn a cache on and save all those items
+ in that cache,
+
+ * operator - specific method that we can call, eg. map(), flatMap(),
+
+ * sequence - a source of our Flux is a sequence,
+
+ * we call our stream - reactive sequence,
+
+ * handling errors:
+  - use onErrorReturn() method in a chain
+
+ * nothing happens until you subscribe!!! (with hot streams exception... ;)),
+
+ * by default all happens on the same thread that created a Flux or Mono
+
+ * null values in a sequence are disallowed,
+
+ * iterator is pull based, reactive streams are push based !!!,
+
+ * Using an iterator we can call next method when we want get another item,
+
+

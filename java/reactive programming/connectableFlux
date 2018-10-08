@@ -1,0 +1,27 @@
+
+ worth to know:
+
+ * it buffers data through the first subscription,
+ it replays the data to all subscribers that comes later,
+
+ * it does not matter when we subscribe, because we will receive
+ broadcasted items from a buffer,
+
+ implementation:
+
+ * connect:
+ - connects to a source when this method is called and the data is pushed
+ to all subscribers
+ - when a new subscriber shows up then buffered data is sent to that subscriber,
+
+ * autoConnect(n):
+ - connects to a source when there is enough number of subscribers,
+
+ * refCount(n):
+ - tracks when a subscription is cancelled and if there is no enough
+ subscriptions then pushing stops for given amount of time
+ before disconnecting this source,
+
+ use cases:
+
+ * broadcast items to subscribers,

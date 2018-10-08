@@ -1,0 +1,36 @@
+
+ * register task applications,
+
+ * taske execution is stored in the repository,
+
+ * options for lauching tasks from a steams,
+
+ * are a great way for batch data processing
+
+ how to use:
+
+ * load spring cloud task app starters
+ - app import --uri url_from_page
+
+ use cases:
+
+ * create a stream and tap to that stream with a task,
+ - this maybe a simple logger that gets the json data from a stream and just prints that,
+ - toll-stationId-counter - name of our tap,
+ - toll-stream - this is a name of a simple stream
+ - we want to tap from an stream element called split-JSON,
+ - field-value-counter - this is a sink example and look for field stationId
+ toll-stationId-counter=:toll-stream.split-JSON > field-value-counter --name=counter --field-name=stationId
+ spring.cloud.stream.bindings.output.contentType='application/json'
+
+
+ architecture:
+
+ * task pipelines:
+ - process irregular workloads,
+ - ew can define a schedule to run a task (every night),
+ - instances are starting on-demand,
+ - we can do branching and some conditional operations,
+ - we have lifecycle events that are executing in specific task
+ life times,
+ - they process more limited amount of data and they goes to sleep,

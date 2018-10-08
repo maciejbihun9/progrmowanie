@@ -1,0 +1,7 @@
+
+ * works based on an event loop,
+
+ * may working on only one thread,
+
+ * finished database task goes back to the application,
+ and application executes a call back with response data on the same thread,

@@ -15,7 +15,7 @@ MORE ADVANCED:
 
  * is single threaded, so we should create a new session object for each thread,
 
- * it stores the data that we used in our transactions
+ * it stores the data that we used in our transactions,
 
 ACTIONS:
 

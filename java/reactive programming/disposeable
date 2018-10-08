@@ -1,0 +1,4 @@
+
+ * it allows to replace a request to a server when a user clicks a button several times,
+
+ * we can dispose couple service calls together and send them later,

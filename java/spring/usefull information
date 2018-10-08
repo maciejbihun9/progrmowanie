@@ -1,0 +1,4 @@
+
+ * main() method will run after all beans have been fully initialized,
+ - executing code in CommandLineRunner bean that is long running process might not be a good idea,
+ because that will block our application in that place,

@@ -1,0 +1,50 @@
+
+ worth to know:
+
+ * when a subscriber subscribes then receives only one value
+ in async way, so when it is available to get,
+
+ * represents a single value or empty (0..1),
+
+ * http request is synchronous, so if we make a request using web flux to
+ a web service that responses with a mono object then we are not blocking our
+ application when we make a request (we are not waitnig for a response in one place)
+ we created a callback, so when that operation result is available then we can get that in any moment.
+
+ use cases:
+
+ * we get only one response, so it has more sense to
+ package that in Mono<HttpResponse>
+
+ * concat with a implementation of a publisher:
+ - Mono#concatWith(Publisher)
+
+ * capture value at the assembly time and replay that to all subscribers:
+ - this an example of a hot publisher, to make it cold wrap it into a defer,
+ - send http call when first sub comes, store that in mono and replay that later to other subscribers
+ - so it is not generated for each subscriber, it is sent another time,
+
+ * make couple http calls to a server for the data,
+ register that and wait for response,
+ we create couple channels and we listen on different ports that waits for the data.
+ - Flux<String> combinations =
+           Flux.just(1, 2, 3, 4).flatMap(id -> {
+               System.out.println("PROCESS FOR ID: " + id);
+               // we call onSubscribe for that Mono
+               // it returns right away after is declared
+               Mono<Product> fluxProduct = webClient
+                       .get()
+                       .uri("/{id}", "5baa0b15b45cda5404ad2d31")
+                       // makes a request
+                       .retrieve()
+                       .bodyToMono(Product.class);
+
+               Mono<Product> fluxProduct2 = webClient
+                       .get()
+                       .uri("/{id}", "5baa0b15b45cda5404ad2d33")
+                       // makes a request
+                       .retrieve()
+                       .bodyToMono(Product.class);
+               return fluxProduct.zipWith(fluxProduct2,
+                       (name, stat) -> "Product 1 name:  " + name.getName() + ", Product 2 name: " + stat.getName());
+           });

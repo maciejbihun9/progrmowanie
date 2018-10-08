@@ -1,0 +1,26 @@
+
+ * it implements circuit breaker,
+
+ * is responsible for turning off safety when a service is not responding,
+
+ * It is used to detect failures and encapsulates the logic of preventing a failure from constantly recurring,
+ during maintenance, temporary external system failure or unexpected system difficulties,
+
+ dashboard:
+
+ * see the number of hosts in the cluster,
+
+ * see the performance of requests,
+
+ * see the number of requests,
+
+ * see thread pool properties,
+
+ * there is a lot of data, and it is important to not overreact on this,
+
+ * turbine (from netflix) - allows us to see many server instances on one view
+ - gets all informations from all clients and displays that on one view
+
+ how to use:
+
+ * enable hystrix dashboard - add this annotation @EnableHystrixDashboard

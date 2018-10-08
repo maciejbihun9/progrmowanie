@@ -1,0 +1,77 @@
+
+ worth to know:
+
+ * they allow to switch between execution contexts,
+
+ * placement of publishOn in the chain matters,
+ while the placement of subscribeOn does not.
+
+ * this determines where execution happens,
+
+ * it has similar responsibilities to a ExecutorService,
+
+ * we can set concurrency strategy using subscribeOn() method
+ where we can set on which thread we are going to invoke our code,
+
+ * we can configure where a stream creation process is done by
+ defining publishOn() method in a chain.
+ - everything after this method runs on specified thread
+
+ implementation:
+
+ * immediate:
+ - the execution will be on the current thread,
+
+ * elastic:
+ - creates a pool of threads that executes all code,
+
+ * parallel:
+ - creates as many threads as you have cpu cores,
+ so if you have two cores then it will create only one additional thread
+ and this will work with the main thread together,
+
+ * fromExecutorService:
+ - create from an executorService,
+
+ * publishOn:
+ - we can control where our map() methods are executed,
+ - we can switch between threads to execute code in different contexts,
+
+ * subscribeOn:
+ - it does not affect the behaviour of a subsequent publishOn methods,
+ - it does not matter where in a chain we put our subscribeOn method,
+ - everything is invoked on scheduler thread,
+
+ use cases:
+
+ * create a flux stream that executes all methods (operator methods) on couple threads:
+ - it is important where you place publishOn() method, because you
+ switch an execution context,
+ // create a scheduler backed by 4 thread
+ - Scheduler s = Schedulers.newParallel(4);
+
+   final Flux<Integer> flux = Flux
+       .range(1, 2)
+       // runs on a thread where a subscribe happens
+       .map(i -> 10 + i)
+       // switches a context to a thread from a scheduler
+       .publishOn(s)
+       // this mapping is executed on a scheduler thread
+       .map(i -> "value " + i);
+
+   // subscription happens on this new annynomus thread
+   new Thread(() -> flux.subscribe(System.out::println));
+
+  * execute creation of a flux, code responsible for executing all
+  items from a flux on specified by a scheduler thread:
+  - everything will be executing on specified thread
+  - Scheduler s = Schedulers.newParallel(4);
+
+    final Flux<Integer> flux = Flux
+        .range(1, 2)
+        .map(i -> 10 + i)
+        .subscribeOn(s)
+        .map(i -> "value " + i);
+
+    new Thread(() -> flux.subscribe(System.out::println));
+

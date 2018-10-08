@@ -1,0 +1,5 @@
+
+ * a default implementation of onHookSubscribed() contains
+ request(unbound) that gets all items at once, so overriding it
+ we have to specify a request(number) to let a publisher know
+ how many items we want to receive otherwise we won't receive any items.

@@ -1,0 +1,18 @@
+
+ worth to know:
+ * we do not end up with empty collection !!! GREAT,
+
+ * buffering is similar to windowing
+ instead of emitting windows (Flux<T>) it emits buffers (Collection<T>),
+
+ * when our buffer is opened we are adding new items to a collection
+ and when it is closed we emit it,
+
+ * everything is the same but just we are sending collections instead of flux
+
+ implementation:
+
+ * Flux.range(1, 10).buffer(5, 3)
+
+ * bufferWhile:
+ - do not return empty collections - GREAT

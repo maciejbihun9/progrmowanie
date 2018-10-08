@@ -1,0 +1,13 @@
+
+ * easy start:
+ - reactive starters spring boot 2
+
+ * you have to make sure that each layer is asynchromus:
+ - non blocking server (netty, tomcat),
+ - web layer (web flux),
+ - database layer (reactive spring data),
+ - security (if you use spring secutiry then also make sure that you use reactive spring security)
+
+ * create a publisher of object elements:
+ @GetMapping("/get_url")
+ Flux<Product> listProducts(){return repository.findAll()}

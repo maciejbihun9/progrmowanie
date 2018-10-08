@@ -1,0 +1,44 @@
+
+ * client side software for load balancing, so if we have many instances of our
+ application then we can load balance between them depending on health or other aspects
+
+ * it was created by Netflix,
+
+ * it is responsible for load balancing,
+
+ considerations:
+
+ * I want to have routing based on health metrics,
+
+ * different performance for different clients
+
+ offers:
+
+ * detects services and detects if they are running,
+
+ * list of server addresses,
+
+ * data service pinging (available),
+
+ * selection criteria (which service should I choose),
+
+ * sometimes I want to make a decision based on spot informations, metrics,
+ zone, response time, server overload
+
+ how it works:
+
+ * delegates pinging to eureka,
+
+ * it is pinging a server and gets response time, based on that it
+ computes weight and tries to assign a server to user that requests a service,
+
+ * restTemplate is responsible for checking a service weight,
+ it automatically checks available servers,
+
+ * activate that with @LoadBalanced, @RibbonClient,
+
+ * ribbon gets cache from eureka client,
+
+ config:
+
+ * provide list of servers,

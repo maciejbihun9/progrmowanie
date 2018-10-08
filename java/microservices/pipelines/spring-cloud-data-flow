@@ -1,0 +1,86 @@
+
+ * tool for building data flow pipelines,
+
+ * data integration,
+
+ * data processing in the real time,
+
+ * data flow is a component that stiches all these things together,
+
+ * it simplfies connecting applications together for processing,
+
+ * creation of a stream with two applications will create automatically a queue
+ between those applications,
+
+ implementation:
+
+ * we have register all stream apps (this may happen by
+ importing bunch of starter applications),
+
+ architecture:
+
+ * it is build from many spring boot applications (task or stream applications) for processing data in the real-time purposes,
+
+ * basic use case:
+ - SourceApp (HTTP) -> Processor(Enrich data) -> Processor(Scoring), Sink (Log something) -> Sink (just takes the data - database),
+
+ * messaging middleware (rabbitmq, apache kafka),
+
+ * database (redis (storing scoring data), rdbms),
+ - redis is by default, redis is there for analitic purposes,
+ - rdbms is needed to store metadata about tasks and streams
+ it is created at the system startup, the schema is created at the very beginning,
+ By default we have H2 database that is starting at the application startup,
+
+ * maven repo - this is how locates this applications on runtime,
+
+ * pipeline:
+ - it is built from many applications which are communicating between themselves,
+
+ * streaming pipeline:
+ - processes data,
+ - we build it with set of stream cloud applications
+ each app creates a stream, applications are always running
+ - sequential process driven by events,
+ - we can tap to an existing stream and create another branch,
+ - process huge amount of data
+
+ * Data flow server:
+ - uses deployer to deploy pipelines to the modern runtimes environments,,
+ - exposes rest endpoints to which we can talk to,
+ - it is highly configurable (timeouts, maven repo location),
+ - we have many features enabled by default (we can easly disable them),
+ - we have multiple security options (HTTP, LDAP, OAUTH2) - security is turn off by default,
+ - to run that we can download a jar from spring-data-flow and run it with shell
+ - run server (with sql server, with rabbit mq running for given user, does not work on docker):
+ this will create a task pipeline tables in the database, so that we can see all the data there
+ java -jar spring-cloud-dataflow-server-local-1.6.2.RELEASE.jar --spring.datasource.url=jdbc:sqlserver://localhost;databaseName=scdf
+  --spring.datasource.username=Maciek1234 --spring.datasource.password=Maciek1234 --spring.datasource.driver-class-name=com.microsoft.sqlserver.jdbc.SQLServerDriver
+  --spring.rabbitmq.host=127.0.0.1 --spring.rabbitmq.port=5672 --spring.rabbitmq.username=maciek1 --spring.rabbitmq.password=maciek1
+
+ * data flow shell:
+ - this shell talks to the data flow server,
+ - commands:
+ exit - exits from shell console,
+
+ use cases:
+
+ * processing data between applications, data stores - it is so easy,
+
+ * processing real-time analitics data
+
+ * data processing,
+
+ * data integration tool for organizations,
+
+ * it is being adopted by many class organizations,
+
+ * import/export data,
+
+ * create source/processor/sink applications from functional type applications:
+ - https://github.com/spring-cloud-stream-app-starters/function/tree/master/spring-cloud-starter-stream-app-function - sources
+ - make functional application in this jar length-counter.jar as one of the spring flow applications types,
+ - function-app.jar comes from spring documentation,
+ - java -jar function-app.jar --function.location=file:length-counter.jar --function.className=com.example.functions.LengthCounter
+
+

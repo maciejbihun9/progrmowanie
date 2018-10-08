@@ -1,0 +1,15 @@
+
+ * filter out items that fulfills specified predicate (and apply some transformations for items):
+ // take a flux as an input param and return a flux an result
+ - Function<Flux<String>, Flux<String>> filterAndMap =
+                   f -> f.filter(color -> !color.equals("orange"));
+                   // we can even map our items with some functions
+                           //.map(String::toUpperCase);
+
+           Flux.fromIterable(Arrays.asList("blue", "green", "orange", "purple"))
+                   // do something on a publisher site. print item
+                   .doOnNext(System.out::println)
+                   // apply transformation
+                   .transform(filterAndMap)
+                   // print results
+                   .subscribe(d -> System.out.println("Subscriber to Transformed MapAndFilter: "+ d));

@@ -1,0 +1,32 @@
+
+ implementation:
+
+ * annotate spring application with this annotation:
+ - @EnableTask - enables task application
+
+ * inject properties class instance:
+ - @EnableConfigurationProperties(Task1Properties.class)
+
+ * create a class with properties:
+ - @ConfigurationProperties("task1")
+ class Task1Properties
+
+ * create spring-configuration-metadata-whitelist.properties file:
+ - set configuration-properties.classes=pluralsight.demo.Task1Properties (class with properties)
+
+ * register task application:
+ - app register --name task1 --type=task --uri="https"
+
+ * create an example task pipeline:
+ - see the documentation how to connect all those task - it is complex
+
+ use cases:
+ * we can create task pipeline with task applications that are executing some code
+ if somethings happens:
+ - task create name --definition "load-data 'SUCCESS' -> send-slack 'ERROR' -> email"
+ - if error then run email application, if success run send-slack application,
+
+ * run couple tasks in the same time:
+ - all applications are started in the same time,
+ - they all close after their job is finished
+ - task create name --definition "<load-data || reset-counters || flush-cache>"

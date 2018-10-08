@@ -1,0 +1,3 @@
+
+ * make sure to setup application name in the bootstrap.properties file,
+ because application.properties is too late

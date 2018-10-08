@@ -1,0 +1,26 @@
+
+ * go to spring stream starter app
+
+ * import an application (this will register 65 applications into your running data flow server):
+ - app import --uri http://bit.ly/Celsius-SR3-stream-applications-rabbit-maven
+
+ commands:
+
+ * show all apps:
+ - app list,
+
+ * show properties that we can use:
+ - app info sink:app_name
+
+ * create a stream (the directory exists in the filesystem):
+ - this will create an exchange and a queue in the rabbitmq server
+ - stream create --definition
+ "http --port=8086 | file
+ --directory=C:\Users\macbi\IdeaProjects\spring\pluralsight\microservices\java-microservices-spring-cloud-coordinating-services-m6\after\output_dir
+ --suffix=txt --name=output" --name pluralsight-hello
+
+ * show all streams:
+ - stream list
+
+ * deploy a stream:
+ - stream deploy stream_name

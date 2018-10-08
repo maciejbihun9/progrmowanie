@@ -1,0 +1,12 @@
+
+ * wrap a greek alphabet into an observable:
+ - Observable.from(DataGenerator.generateGreekAlphabet())
+
+ * filter items that are divisible by 3 and are lower than 20
+ - Observable.from(DataGenerator.generateBigIntegerList())
+                   .filter((i) -> {
+                       return ((i % 3 == 0) && (i < 20));
+                   })
+                   .subscribe((i) -> {
+                       System.out.println(i);
+                   });

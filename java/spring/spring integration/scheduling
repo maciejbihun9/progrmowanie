@@ -1,0 +1,8 @@
+
+ * schedule a background worker to perform a job in every given amount of time,
+
+ * explore this article for more:
+ - https://www.baeldung.com/spring-scheduled-tasks,
+
+ use cases:
+ * log a time after specified time period,

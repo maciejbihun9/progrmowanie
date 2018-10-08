@@ -1,0 +1,17 @@
+
+ * it is used to create an development environment without downloading
+ any additional software
+
+ * we can pull all much needed software using docker:
+
+ worth to note:
+
+ * switch to windows containers in the cmd for docker,
+
+ commands:
+
+ * pull redis - docker pull redis:latest,
+
+ * pull rabbitmq - docker pull rabbitmq:latest
+
+ * pull mysql -  docker pull mysql:latest

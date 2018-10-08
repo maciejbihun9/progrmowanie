@@ -1,0 +1,7 @@
+
+ * people says that it should be avoided,
+
+ * firewalls block requests called by RMI,
+ - it should be replaced with REST web service
+
+ * it introduces thightly-coupled between cooperating systems,

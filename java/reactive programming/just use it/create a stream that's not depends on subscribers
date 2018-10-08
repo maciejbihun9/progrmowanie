@@ -1,0 +1,26 @@
+
+ * items are sent only to available subscribers and if someone subscribes
+ after some emits then he will not receive that
+
+ - DirectProcessor<String> hotSource = DirectProcessor.create();
+
+    Flux<String> hotFlux = hotSource.map(String::toUpperCase);
+    // this item is lost
+    hotSource.onNext("lost item");
+
+    hotFlux.subscribe(d -> System.out.println("Subscriber 1 to Hot Source: "+d));
+    // wait two seconds and push 4 items to one subscriber
+    Thread.sleep(2000);
+    // those 4 items will be visible only for this first subscriber
+    hotSource.onNext("blue");
+    hotSource.onNext("green");
+    hotSource.onNext("white");
+    hotSource.onNext("yello");
+
+    hotFlux.subscribe(d -> System.out.println("Subscriber 2 to Hot Source: "+d));
+
+    Thread.sleep(2000);
+    // will be visible by 2 subscribers
+    hotSource.onNext("orange");
+    hotSource.onNext("purple");
+    hotSource.onComplete();

@@ -1,6 +1,6 @@
 INTRO:
 
- *  JPA allows us to propagate entity state changes from Parents to Child entities,
+ * JPA allows us to propagate entity state changes from Parents to Child entities,
 
  * Cascading only makes sense only for Parent – Child associations (the Parent entity state transition being cascaded to its Child entities).
   Cascading from Child to Parent is not very useful and usually, it’s a mapping code smell.

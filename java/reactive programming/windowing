@@ -1,0 +1,31 @@
+
+ worth to know:
+
+ * each window is a Flux<Object>,
+
+ * we might end up with overlapping windows,
+
+ * most of the time windows are sequentially,
+
+ implementation:
+
+ * window(maxSize, skip):
+ - if maxSize > skip -> overlapping windows,
+ instead when skip < maxSize then some items maybe dropped,
+ - maxSize - how many items are in one window,
+ - skip - how many items we skip starting from the first item of the
+ previous window,
+ - creates partitions from our data,
+ - Flux.range(1, 10).window(5, 3)
+
+ * windowWhile(predicate):
+ - window is opened when predicate is true,
+ - is closed when predicate is false
+ - we can have many windows empty
+ - we end up with flux of flux,
+ - Flux<Flux<Integer>> fluxFlux = Flux.just(1, 3, 5, 2, 4, 6, 11, 12, 13)
+                 .windowWhile(i -> i % 2 == 0);
+ - we will end up with many windows which we can combine together with concatMap
+
+ * windowUntil:
+ - is opened until predicate is true,

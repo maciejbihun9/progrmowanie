@@ -1,0 +1,115 @@
+
+ * reactive programming is the foundation of spring flux,
+
+ * this is a response for huge demand on processing big chunks of data,
+
+ * this is a modern way to develop internet applications,
+
+ * webflux - this is the name of the reactive programming concept,
+
+ * it is very similar to spring MVC, but only on the surface,
+
+ * the application is able to growth and gets small,
+
+ * this is have to be a responsive system (respons quickly under all conditions)
+
+ * RESPONSIVE, RESILIENT, SCALABLE, MESSAGE DRIVEN,
+
+ * reactive systems are driven by messages,
+
+ * event driven -> data flow -> subscribers,
+
+ worth to know:
+
+ * reactive - we react on I/O operations, mouse events as notifications/operations
+ for which we are waiting. (Reagujemy na dane, które stają są obecne i gotowe do przetworzenia),
+
+ * it does not replace spring MVC,
+
+ * spring mvc uses blocking model of programming,
+
+ * if we block the execution of our application on any level then there is no
+ purpose to use that,
+
+ * spring Data has reactive support only four databases (all no-sql):
+ There is no async drivers for sql databases
+ - MongoDB,
+ - Cassandra,
+ - Redis,
+ - Couchbase
+
+ * spring MVC is based on servlets where webflux is based on reactive streams,
+
+ * is uses non blocking api,
+
+ * spring mvc uses one request per thread where many concurrent connections
+ are handled by couple threads,
+
+ * it works on many servlet containers (Tomcat, but by default on Netty),
+
+ * we can use Kotlin DSL to program in web flux
+
+ considerations:
+
+ * Reactive Streams is to allow the subscriber to control
+  how fast or how slow the publisher will produce data.
+
+ * we can set how many items we want to receive from a stream
+ - If a publisher can’t slow down then it has to decide whether to buffer, drop, or fail.
+
+ * in reactive programming we can use callbacks as tasks that are running
+ on the background thread,
+ - this might cause something called callback hell,
+ many callbacks running in the background causing bad reading experience
+
+ architecture:
+
+ * non-blocking server based on event loop,
+ - we have small number of threads handling requests (in others are even 500),
+ - those servers are event based requests,
+ - servers are using Servlet 3.1+ versions, that are non-blocking
+ are running asynchronisly,
+
+ * Publisher - Subscriber relation,
+ - thanks to that we can also program in functional and declarative way,
+ - they work a bit different than java 8 streams, they push the data through the pipeline
+ from publishers to subscribers,
+
+ * by default is works on Netty
+
+ * java functional programming principles are also used to create reactive applications,
+
+ * Declarative API
+
+ * non-blocking:
+
+ * asynchronous:
+
+ * functional/declarative:
+
+ implementation:
+
+ * adding a mongo db dependency to the maven file we have to specify the mongo db credentials
+ for connecting to the database,
+
+ use cases:
+
+ * cells in excel that reacts on changing values in those cells,
+ which changes after every change -> reactive,
+
+ * data repository — acting as Publisher, can produce data that
+ an HTTP server — acting as Subscriber, can then write to the response,
+
+ * consume this data in real time as it comes into the system.
+ In this case, the data is pushed to the browser as it is persisted in the Mongo Database,
+
+ * More realistic applications deal with streaming data such as Stock quotes, Tweets, IoT readings,
+
+ * we can get the data from the database as it's becomes available,
+
+ * process the data in the real time
+
+ * a lot of communication between services, a lot of I/O operations between services,
+ a lot of remote calls,
+
+ * leaderboard dashboard, formula 1 competition, stock data that goes to our system

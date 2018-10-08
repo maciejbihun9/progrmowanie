@@ -1,0 +1,14 @@
+
+ * they are created on top of the subscriber, publisher, subscription interfaces,
+
+ * they are working pretty much the same as angular observables,
+
+ * data flow:
+ - publisher, subscriber, Subscription communication,
+
+ * classes:
+ - Publisher, Subscriber, Subscription, Processor,
+
+ * Subscription interface:
+
+ * Publisher<T>:

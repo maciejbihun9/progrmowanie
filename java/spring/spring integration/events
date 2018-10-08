@@ -1,0 +1,17 @@
+
+ * work almost the same as observables in Angular,
+
+ * And, as already discussed – by default spring events are synchronous – the doStuffAndPublishAnEvent()
+ method blocks until all listeners finish processing the event,
+
+ * explore this article for more particulars:
+ - https://www.baeldung.com/spring-events
+
+ description:
+ * it reduces tight coupling between components,
+ * it is harder to debug because this introduces a level of undirection,
+
+ use cases:
+ * sending an email,
+ * something that has to be done on the seperete thread,
+ * when direct api calls are not an option because of spring security,

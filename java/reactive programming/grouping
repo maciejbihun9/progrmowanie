@@ -1,0 +1,21 @@
+
+ worth to know:
+
+ * once a source produce a new key, then items that match that key
+ goes to that group,
+
+ * several groups may be opened in the same time,
+
+ * even if we have many groups we want to have a flat stream that we
+ can send to subscribers,
+
+ use cases:
+
+ * depending on a value we can group items:
+ - a subscriber will receive group after group after group,
+ - Flux.just(1, 3, 5, 2, 4, 6, 11, 12, 13)
+           .groupBy(i -> i % 2 == 0 ? "even" : "odd")
+           // combine all groups together
+           .concatMap(g -> g.defaultIfEmpty(-1) //if empty groups, show them
+                           .map(String::valueOf) //map to string
+                           .startWith(g.key()))

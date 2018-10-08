@@ -1,0 +1,51 @@
+
+ * each stream is just made out of applications
+
+ * offers sources, processors, sinks,
+
+ * we can get applications as maven or docker artifacts,
+
+ * here we have built-in processors, sources and sinks,
+ those are example applications that we can connect with each other,
+
+ * example sources: file, http, JDBC, Amazon, MongoDB, Gemfire, Twitter
+ - we can connect all those applications together
+
+ * example processors: filter, http client, PMML, transform, splitter,
+
+ * example sinks: counter, file, HDFS, log, Amazon S3, WebSocket
+
+ * create an example stream:
+ - make sure that this directory exists
+ - stream create --definition
+    "http --port=8086 | file
+    --directory=C:\Users\macbi\IdeaProjects\spring\pluralsight\microservices\java-microservices-spring-cloud-coordinating-services-m6\after\output_dir
+    --suffix=txt --name=output" --name pluralsight-hello
+
+ - message post under that location localhost:8086 will send a message under specified locaition
+ to a new file
+
+ use cases:
+
+ * take data from a file system, transform it and write the result to another file,
+
+ * an example stream:
+ - dataflow:> stream create --definition "file --directory=/temp | alias: filter | log" --name ps-stream
+
+ * this stream can be bound to the already existing one, in the filter place, like branch
+ - dataflow:> stream create --definition ":ps-stream.alias > log" --name ps-stream2
+
+ how to use:
+
+ * create a stream application (spring boot cloud stream application)
+ - we do not specify any destinations in application.properties
+
+ * install out application with maven:
+
+ * register an application into a running spring data flow server:
+ - app register --name fraudcheck --type processor --uri C:/Users/macbi/Desktop/pluralsight-microservices/pluralsight-dataflow-scoring-stream-app-0.0.1-SNAPSHOT.jar
+
+ * create an example stream:
+ this will splits the json data in specified place and we will have as many logs as parts that were created from that
+ - toll-intake-stream=http --port=8086 | split-JSON: splitter --expression=#jsonPath(payload, '$.station.readings')
+ --outputType=application/json | fraudcheck --outputType=application/json --fraud-threshold=25 | log --level=INFO

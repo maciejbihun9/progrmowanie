@@ -1,8 +1,8 @@
 SORTED COLLECTION:
 
  * When use sorting, Hibernate will load the associated Book entities
-  from the database and use a Java Comparator to sort them in memory.
-   That is not a good approach for huge Sets of entities.
+ from the database and use a Java Comparator to sort them in memory.
+ That is not a good approach for huge Sets of entities.
 
 ORDER COLLECTION:
 

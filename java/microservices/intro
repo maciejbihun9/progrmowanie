@@ -1,0 +1,77 @@
+
+ * it is all about delivering the data, messages, and microservices are doing very well that,
+ - who knows something earlier than others
+
+ * this paradigm allows us to develop all components independently, so growth is faster,
+
+ * it is build on spring-cloud and spring-integration,
+
+ * event driven programming
+ - I send a call to a remote service and i do not wait for a response
+ - reduce dependencies between services,
+
+ * async, non-blocking communication between services, little and simple coupling between those
+
+ * we do it in serverless manner:
+ - we just deploy a function, procedure and we do not care about the infrastructure,
+ - those services can start very quickly and have very low speed of execution,
+ - the infrastructure can be extended as demand is increasing,
+
+ * continues integration is my first priority,
+
+ * we can store the results of the task in provided out of the box database,
+ - it is worth to store data about the task,
+ - the execution time, execution end potential parameters
+
+ * each service has it's own team, it's own database even,
+
+ * services host can change url and uri very rapidly,
+
+ * it is build on spring boot,
+
+ * settings file has to be commited into the git repository
+ to really track the changes that were made into that file that
+ see how things do not work
+
+ * get basic dependencies:
+ - spring-boot-actuator,
+ - spring-cloud,
+
+ considerations:
+
+ * how to handle many useless requests
+
+ * we want to make sure that one service gets only specific amount of work that can handle,
+
+ * sometimes I want to communicate with a service that is the closest to my location,
+ it is not neceserrly means that i know the right url,
+
+ * it is very important also to discover service health
+
+ * we do not have the same host every time,
+
+ * we want to avoid hardcoded service credentials,
+
+ * if our application is not going to be updated rapidly then
+  it is not good thing to use those microservices,
+
+ * continues delivery plays an important part in all modules,
+
+ troubles:
+
+ * how to secure all those pieces together?,
+
+ * components can have different avalibility,
+
+ * how to find latencies in all this system, how to
+ find a path through all this system bounderies,
+
+ * sometimes there may be a situation where a service stays without processing any tasks,
+
+ * there maybe a problem with config files,
+ if someone changes that then there is a high probability that
+ we will have to deploy entire application
+
+ use cases:
+
+ * toll stations collecting the data about cars moving on it - iot resolution

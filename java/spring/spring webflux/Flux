@@ -1,0 +1,61 @@
+
+ * Flux:
+ - this is a stream which can emit 0..n elements:
+ - creation,
+ - subscription,
+ - request (describe how many items we need)
+
+ - it acts as a list,
+
+ implementation:
+
+ * zip streams together:
+ - Flux.just(1, 2, 3, 4)
+     .log()
+     .map(i -> i * 2)
+     .zipWith(Flux.range(0, Integer.MAX_VALUE),
+       (one, two) -> String.format("First Flux: %d, Second Flux: %d", one, two))
+     .subscribe(elements::add);
+ - output:
+ 20:04:38.064 [main] INFO  reactor.Flux.Array.1 - | onSubscribe([Synchronous Fuseable] FluxArray.ArraySubscription)
+ 20:04:38.065 [main] INFO  reactor.Flux.Array.1 - | onNext(1)
+ 20:04:38.066 [main] INFO  reactor.Flux.Range.2 - | onSubscribe([Synchronous Fuseable] FluxRange.RangeSubscription)
+ 20:04:38.066 [main] INFO  reactor.Flux.Range.2 - | onNext(0)
+ 20:04:38.067 [main] INFO  reactor.Flux.Array.1 - | onNext(2)
+ 20:04:38.067 [main] INFO  reactor.Flux.Range.2 - | onNext(1)
+ 20:04:38.067 [main] INFO  reactor.Flux.Array.1 - | onNext(3)
+ 20:04:38.067 [main] INFO  reactor.Flux.Range.2 - | onNext(2)
+ 20:04:38.067 [main] INFO  reactor.Flux.Array.1 - | onNext(4)
+ 20:04:38.067 [main] INFO  reactor.Flux.Range.2 - | onNext(3)
+ 20:04:38.067 [main] INFO  reactor.Flux.Array.1 - | onComplete()
+ 20:04:38.067 [main] INFO  reactor.Flux.Array.1 - | cancel()
+ 20:04:38.067 [main] INFO  reactor.Flux.Range.2 - | cancel()
+
+ * create a hot stream:
+ - create a Flux for multiple emissions even from multiple threads,
+ - ConnectableFlux<Object> publish = Flux.create(fluxSink -> {
+       while(true) {
+           fluxSink.next(System.currentTimeMillis());
+       }
+   })
+     // .sample(ofSeconds(2)) - send next item every two seconds
+     .publish();
+
+ - we can create couple subscriptions to that producer
+ - publish.subscribe(System.out::println);
+   publish.subscribe(System.out::println);
+
+ - If we try running this code, nothing will happen.
+ It’s not until we call connect(), that the Flux will start emitting.
+ It doesn’t matter whether we are subscribing or not.
+
+ use cases:
+
+ * we could have a stream of mouse movements which constantly
+ needs to be reacted to or a twitter feed.
+ These types of streams are called hot streams,
+ as they are always running and can be subscribed
+ to at any point in time, missing the start of the data.
+
+ * emit a stream of products to all clients that subscribes to a source:
+ - clients want to know what kind of products they serve,

@@ -1,0 +1,7 @@
+
+ * block possibility to update all entity properties:
+ - use @Immutable on class definition,
+ - updates to this class will be ignored, but no exception is thrown, only the add and delete operation are allow.
+
+ * block possibility to update all entity collection items:
+ - use @Immutable over a collection of items

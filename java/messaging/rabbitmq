@@ -6,3 +6,30 @@
  * relies on queues,
 
  * all messages are sended to this service that represents a topic for subscribers,
+
+ worth to know:
+
+ * destination maps to a TopicExchange,
+
+ * queue defined for each consumer group,
+
+ architecture:
+
+ * consumer group:
+ - this asures that if something happens to consumer application,
+ messages will stay in a queue and will wait for consumers,
+ - this ia also recommended,
+ - this is like a competition where only one member of specific group will
+ receive concrete message,
+
+ * we can create an entire group of subscribers where message goes to entire group,
+
+ use cases:
+
+ * create another queue:
+ - we can create a queue in the console,
+ - we can bind to an existing one and in next few seconds that queue will be running
+ and will be receiving messages from publishers
+
+ how to use:
+ * server start: rabbitmq-server

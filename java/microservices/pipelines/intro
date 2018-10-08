@@ -1,0 +1,27 @@
+
+ * we have set of starters for those applications that
+ provides set of applications that can be used to
+ compose a task or stream pipeline,
+
+ * we might also deploy all those applications into kuberneties or cloud foundery
+
+ orchestration:
+
+ * integrating data sources, systems and applications,
+
+ * it is all about grouping services and quickly adjust them
+
+ * we are composing applications into task or stream based pipelines
+
+ implementation:
+
+ * we can deploy pipelines to kubernetes, cloud foundery,
+
+ * we can have many instances of specific applications in that stream
+
+ * we can also make a partitioning of our applications, but here
+ we do not have to take care of indexing them in the right way,
+
+ * using docker create images for redis, mysql, rabbitmq
+
+ how to use:

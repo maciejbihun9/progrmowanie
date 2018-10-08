@@ -1,0 +1,21 @@
+
+ * we can aggregate the data in: String, StringBuilder etc.
+
+ * scanning maybe used also for simple accumulation:
+ - Observable.from(Arrays.asList(1,2,3,4)).scan((integer, integer2) -> {
+               return integer * integer2;
+           });
+
+ * appending items to specified container:
+ - next item is added to previous item
+ - Observable.from(DataGenerator.generateGreekAlphabet())
+                   // first item - a container in which we want to aggregate all items,
+                   // second item - already accumulated value,
+                   // third item - next item that wew want to add to our final buffer
+                   .scan(new StringBuilder(), (accumBuffer, nextLetter) -> {
+
+                       return accumBuffer.append(nextLetter);
+                   })
+                   .subscribe((total) -> {
+                       System.out.println("Scan Event: " + total.toString());
+                   });

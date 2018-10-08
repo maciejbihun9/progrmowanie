@@ -1,0 +1,17 @@
+
+ * bootstrap.properties is executed before application.properties, so
+ there should be uri and profile settings
+
+ * config files should be placed in git repo and should be pulled
+ from there using this property:
+ - spring.cloud.config.uri=http://localhost
+
+ * this config .properties file can be replaced by .yml
+
+ * file path does not matter if files exists in the resources folder,
+ - http://localhost:8888/<file.properties name>/<profile name>
+
+ * it is very good to provide many config files, especially when you
+ providing configuration files for many environments,
+
+ * one folder for QA, DEV, PROD envs

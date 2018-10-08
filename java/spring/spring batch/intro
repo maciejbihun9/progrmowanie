@@ -1,0 +1,18 @@
+
+ * Now you put together the actual batch job.
+ Spring Batch provides many utility classes that reduce the need to write custom code.
+ Instead, you can focus on the business logic,
+
+ implementation:
+
+ * enable batch processing, adds many critical beans, memory-based database(when the job is done, the data is gone):
+ - @EnableBatchProcessing
+
+ worth to know:
+
+
+ use cases:
+
+ * a common use case for batch processing is to ingest (poll the data), transform that data
+ and store it in the specified place,
+ - simple transformer to transform the input data (from csv) and return output data (even with different type),

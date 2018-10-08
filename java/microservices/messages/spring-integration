@@ -1,0 +1,12 @@
+implementation:
+
+ * it uses MessageChannel and Message<T> to communicate with external services,
+
+ * Message:
+ - contains a payload and set of headers that goes between services,
+
+ * MessageChannel == Java queue
+
+ * ChannelAdapter (InboundAdapter, OutboundAdapter):
+ - they allow an easier way to connect to these messaging sources
+ - changes something from outside world, data item into a Message object,

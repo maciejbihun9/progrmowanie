@@ -1,0 +1,31 @@
+
+ worth to know:
+
+ implementation:
+
+ * transform:
+ - allows us to apply a lambda expression in our chain to transform our chain,
+
+ * compose:
+ - it allows us to use complicated logic on our iterable items,
+ it is great, because we can use hide many functions inside of another function,
+ - it works almost the same as transform,
+
+ * publisher:
+ - hot:
+ - cold:
+
+ use cases:
+
+ * apply map, filter function to a chain (filter items from a stream which we do want to have):
+ - Function<Flux<String>, Flux<String>> filterAndMap =
+                   f -> f.filter(color -> !color.equals("orange"))
+                           .map(String::toUpperCase);
+
+   Flux.fromIterable(Arrays.asList("blue", "green", "orange", "purple"))
+           // do something on a publisher site. print item
+           .doOnNext(System.out::println)
+           // apply transformation
+           .transform(filterAndMap)
+           // print results
+           .subscribe(d -> System.out.println("Subscriber to Transformed MapAndFilter: "+ d));

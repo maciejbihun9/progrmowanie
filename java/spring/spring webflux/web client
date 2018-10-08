@@ -1,0 +1,28 @@
+
+ * for making http requests to webflux rest api,
+ - this works pretty similar to a html app that is able to consume flux streams,
+
+ * simple rest client is able to make a request for reactive data,
+ only the right implementation can do that,
+
+ * uses reactor and netty,
+
+ * it is non-blocking,
+
+ * an alternative to a rest template,
+
+ * it is used for making requests,
+
+ implementation:
+
+ use cases:
+
+ * send multipart data, files, multivalue maps,
+
+ * change a response type from normal to Flux or Mono:
+ - having Flux type here we asure that we can consume stream that sits under specified url
+ - webClient
+       .get()
+       .retrieve()
+       .bodyToFlux(Product.class)
+       .doOnNext(o -> System.out.println("**********GET: " + o));

@@ -1,0 +1,6 @@
+
+ * I should not use it frequently !!! - are error prone and not easy to use,
+
+ * worth to know:
+ - they are publishers and subscribers in the same time,
+ - generally it implements flux,

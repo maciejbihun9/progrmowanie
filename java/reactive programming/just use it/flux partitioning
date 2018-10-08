@@ -1,0 +1,15 @@
+
+ * split a flux stream while a predicate is true:
+ - refer how this works to windowing docs,
+ - Flux<Flux<Integer>> fluxFlux = Flux.just(1, 3, 5, 2, 4, 6, 11, 12, 13)
+                .windowWhile(i -> i % 2 == 0);
+
+ * split flux stream defining a length of a flux stream:
+ - this creates 4 streams
+ - Flux.range(1, 10).window(5, 3)
+
+ * use concatMap() - to map all those streams together,
+
+ * split a flux into a flux of lists:
+ - Flux<List<Integer>> listFlux = Flux.just(1, 3, 5, 2, 4, 6, 11, 12, 13)
+                   .bufferWhile(i -> i % 2 == 0);

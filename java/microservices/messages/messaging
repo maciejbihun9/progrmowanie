@@ -1,0 +1,39 @@
+
+ how to use:
+
+ * MessageChannel
+
+ * Message<T>
+
+ worth to note:
+
+ * it is basing on event driven architecture,
+
+ * it is based on spring-cloud-stream (rapid pace of delivery and evolvment),
+
+ * we do not have to think about these middleware stuff,
+ we do not have to think about how message broker works (rabbitMQ, cafca)
+
+ * applications communicate through channels,
+
+ * we can have even group of competing customers where only one
+ wins and makes a request to the server,
+
+ * we do not have to add cafca or RabbitMQ,
+ because spring cloud stream gives us that abstraction,
+
+ * we do not have to add any broker specific code to our application!!!,
+
+ considerations:
+
+ * loose coupling,
+
+ * it is common that it is done by many people, experts in their fields
+
+ * it is easy to end up with to tightly coupled system that is fragile,
+
+ * make sure to not over engeener that concept,
+
+ message driven micro services apps:
+
+ * we use for that spring cloud stream

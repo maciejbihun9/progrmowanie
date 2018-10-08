@@ -1,0 +1,22 @@
+
+ * it is not a server, it is a framework,
+
+ * it uses even driven programming,
+
+ * it simplifies network programming, TCP and UDP socket servers,
+
+ * it uses the reactor pattern of programming,
+
+ worth to know:
+
+ * every operation is returned right after the call,
+ - operation object is waiting for the data that will fill that object,
+
+ implementation:
+
+ *  Netty has its own ChannelFuture interface.
+ We can pass a callback to ChannelFuture which will be called upon operation completion.
+
+ use cases:
+
+ * high performance protocol servers,

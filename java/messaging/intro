@@ -5,9 +5,9 @@
 
  * publisher publishes messages to a topic where subscribers gets these new data from a topic (one to many communication),
 
- * publisher publishes messages to a queue and receiver gets items from a this queue (one to one communication),
+ * publisher publishes messages to a queue and receiver gets items from this queue (one to one communication),
 
- * many publishers publishes messages to a queue and receiver gets items from a this queue (many to one communication)
+ * many publishers publishes messages to a queue and receiver gets items from this queue (many to one communication)
 
  use cases:
 

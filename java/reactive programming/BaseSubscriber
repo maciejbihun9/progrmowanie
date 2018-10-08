@@ -1,0 +1,6 @@
+
+ * this is a recommended way for user Subscribers in Reactor,
+
+ use cases:
+
+ * it replaces couple lambda methods with one subscriber implementation,

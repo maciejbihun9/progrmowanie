@@ -1,0 +1,7 @@
+description:
+
+ * protocol used by iot devices to communicate with each other,
+
+ * it is very basic and easy protocol,
+
+ * we can use that protocol to connect with all existing devices,

@@ -1,0 +1,24 @@
+
+ * see this article to nice cache description:
+ - https://www.baeldung.com/hibernate-second-level-cache
+
+ * it is sessionFactory scoped,
+
+ * sessions shares that cache between themselfs,
+
+ * searching an entity: look in session scope cache -> look in second level cache -> query the database,
+
+DESCRIPTION:
+
+ * The best locking property is READ_WRITE property that has the best consistency,
+
+ * READ_ONLY throws ExceptionMapperStandardImpl an Error on each update method call
+
+ * once specific item is cached, then you won't see any additional database queries, PERFECT!!!
+
+ * make sure to specify the largest amount of cached objects,
+
+ * cached entities are cached under specified name in a basket that is named after class name,
+ - size of a cache depends on the amount of distinct items stored in that basket,
+
+ * every update on the cached entity locks that entity until is committed into the database.

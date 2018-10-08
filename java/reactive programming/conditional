@@ -1,0 +1,11 @@
+
+ * all():
+ - search all items that exists in the observable
+ and return only items that fulfill specified condition.
+
+ * contains() and exists():
+ - checks if an item exists or if an observable contains specified item
+ - returns a boolean value,
+
+ * Observable.sequenceEqual(sequence1, sequence2):
+ - checks if sequences are equal

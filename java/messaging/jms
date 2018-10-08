@@ -5,7 +5,13 @@
 
  * consumers and publishers can live in different spring boot applications,
 
+ * consumers and producers are informed about messages delivery - IMPORTANT!
+
  use cases:
+
+ * retail sales - send emails to the client about the status of moving package and all major destinations,
+
+ * And the usual - queued transactions for delayed activity such as billing, order processing, provisioning, email generation,
 
  * a producer is able to send a message, wait for a response, but jms returns a URL to a producer where this producer can
  check if job has been done or not,
@@ -13,7 +19,7 @@
 
  * send informations about electiricty usage from all iot devices to energy company,
 
- * send a product ot user id to a remote server (active mq) send info to another service about new item which gets
+ * send a product to user id to a remote server (active mq) send info to another service about new item which gets
  that is and then search the database for a product with given id,
 
  * Publish/subscribe is another good technique for decoupling senders from many receivers. It's a flexible architecture, because subscribers can come and go as needed,
@@ -25,3 +31,10 @@
  * send a shopping list to a store, which process the request as soon as at least one worker is free to process, to take an action,
 
  * Some of the biggest companies use a JMS messaging layer for their large Web applications, particularly retailers and streaming video services, he said,
+
+ * Use them all the time to process long-running operations asynchronously.
+  A web user won't want to wait for more than 5 seconds for a request to process.
+  If you have one that runs longer than that, one design is to submit the request to a queue
+  and immediately send back a URL that the user can check to see when the job is finished,
+
+ * watching for specific errors, log informations that are coming from many services,

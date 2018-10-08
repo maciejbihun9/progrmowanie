@@ -1,0 +1,10 @@
+
+ * getting details for each favorite:
+ - userService.getFavorites(userId)
+              .timeout(Duration.ofMillis(800))
+              .onErrorResume(cacheService.cachedFavoritesFor(userId))
+              .flatMap(favoriteService::getDetails)
+              .switchIfEmpty(suggestionService.getSuggestions())
+              .take(5)
+              .publishOn(UiUtils.uiThreadScheduler())
+              .subscribe(uiList::show, UiUtils::errorPopup);

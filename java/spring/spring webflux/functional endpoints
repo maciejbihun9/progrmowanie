@@ -1,0 +1,9 @@
+
+ implementation:
+
+ * RequestPredicates:
+ - it is used to test HTTP methods:
+ - accept - checks a media type of a request,
+ - GET,
+ - path,
+ - method

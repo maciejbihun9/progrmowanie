@@ -1,0 +1,68 @@
+
+ * simplifies server discovery,
+
+ * a lot of configuration,
+
+ * service discovery system,
+
+ * it is a good tool to lookup services,
+ check their status, their avalibility,
+
+ * this is a standalone server that communicates
+ with services on other machines and checks their availibility
+ - all registered services are sending heartbeat information to that server,
+ - those heart beats are async and can even deliver an information about
+ health status of a service,
+
+ * there is no database, so it is all about what is available now
+
+ * we have a enabled by default eureka dashboard,
+
+ * it is all about configurations, because we have huge power that
+ comes with that config,
+
+ worth to note:
+
+ * we can have a cluster of eureka servers,
+
+ * this server will get heartbeats from it's clients every 30 seconds,
+
+ * if eureka does not receive any signals from clients then it things that
+ there is a connection error, so behavior in this situation has to be also configured
+
+ * register props in bootstrap.properties to be sure that those properties are
+ available in the right time,
+
+ * if a registery does not receive eny heart beat from a client for 90seconds then
+ removes that from a registery,
+
+ setup a server:
+
+ very basic setup of a registery :
+ * annotate @EnableEurekaServer,
+
+ * go under localhost:8671 - eureka console - manage all instances,
+
+ * setup a server using properties in application.properties file,
+
+ setup a client:
+
+ * annotate with @EnableEurekaClient
+
+ * it has to be a different application
+
+ * we can run many instances of the same application and this will be registered
+ in the eureka server,
+
+ * we can register many applications that are running on the localhost, but
+ we have to make sure that they all a re running on different ports,
+ - server.port=0
+
+ considerations:
+
+ * we want to have a list of available services,
+
+ * if some service is pinging that is available it is does not mean
+ it is healthy and is ready to respond,
+
+ * ip addresses are unpredicable, they are changing all the time,

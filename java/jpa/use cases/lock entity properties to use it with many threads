@@ -1,3 +1,6 @@
 
  * article about locking:
  - https://blog.andresteingress.com/2017/10/20/hibernate-optimistic-locking.html
+
+ * use @OptimisticLocking(type = OptimisticLockType.DIRTY) to lock entity property from
+ - using this approach over lock.ALL we will have much less StaleObjectStateException errors

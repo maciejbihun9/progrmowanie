@@ -1,5 +1,4 @@
 
-
  * when we try to load the data then first what happens is hibernate searches for it
  in first level cache, then in second level cache and it is returned from there,
 
@@ -27,4 +26,4 @@ SECOND LEVEL CACHE:
 
  * collections are not cached by default,
 
- * entity is not stored as instance object, are stored in totally different man,
+ * entity is not stored as instance object, are stored in totally different manner,

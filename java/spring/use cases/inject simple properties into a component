@@ -1,0 +1,8 @@
+
+ * define a property in application.properties,
+
+ * use @Value annotation to annotate your property to inject,
+ name=Maciej
+
+ * @Value("${name}")
+ private String name:

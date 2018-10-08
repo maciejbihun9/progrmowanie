@@ -1,0 +1,28 @@
+
+ worth to know:
+
+ * this is an implementation of a reactive programming paradigm
+
+ * this is like a foundation for non-blocking async programming for the JVM
+
+ * main artifact: reactor-core,
+
+ * the newest version that we gonna use is Reactor 3,
+
+ * it works on java 8 initially,
+
+ purposes:
+
+ * efficient demand management,
+
+ * fully non-blocking,
+
+ * allows backpressure
+
+ * runs on java 8,
+
+ use cases:
+
+ * well suited microservices environment,
+
+ * we can express static arrays and dynamic data streams (event emitters)

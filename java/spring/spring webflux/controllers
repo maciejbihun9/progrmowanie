@@ -1,0 +1,36 @@
+
+ * almost the same as spring MVC libraries,
+
+ architecture:
+
+ * use Netty server to run applications,
+
+ implementation:
+
+ * @RequestMapping == @GetMapping, @PostMapping, @PutMapping, @DeleteMapping,
+
+ * ServerWebExchange:
+
+ * Method Arguments with Reactive Support:
+ - WebSession,
+ - java.security.Principal,
+ - @RequestBody,
+ - HttpEntity,
+ - @RequestPart
+
+ * return types:
+ - we can return ResponseEntity, Object, ServerSentEvent in an HttpEntity,
+
+ use cases:
+
+ * generate server side stream that produces an event every
+ single second and pushes to subscribers:
+ We can get that events under localhost:8080/products/events
+ Our browser has to support events
+ - @GetMapping(value = "/events", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
+       public Flux<ProductEvent> getProductEvents() {
+           return Flux.interval(Duration.ofSeconds(1))
+                   .map(val ->
+                           new ProductEvent(val, "Product Event")
+                   );
+       }

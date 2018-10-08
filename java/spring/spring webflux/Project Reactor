@@ -1,0 +1,65 @@
+
+ * provide asynchronous, non-blocking way of processing the data,
+
+ * it is all about the stream of data,
+
+ worth to know:
+
+ * The core difference is that Reactive is a push model,
+ whereas the Java 8 Streams are a pull model.
+ In reactive approach. events are pushed to the subscribers as they come in.
+
+ * With Reactive we could have an infinite
+ stream coming in from an external resource,
+ with multiple subscribers attached and removed on an ad hoc basis.
+ We can also do things like combine streams,
+ throttle streams and apply backpressure,
+
+ * we can inform a publisher how many data items we want,
+
+ implementation:
+
+ * nothing happens if subscribe method is not called,
+ - we have to provide a consumer method inside of a subscribe method
+
+ * provides two implementations of reactive streams,
+
+ * look for examples in the reactor-test project
+ a) mono - publish 0 or 1 element,
+ - for returning simple object,
+
+ - publish one value:
+ Mono.just("A").log().subscribe(s -> System.out.println(s));
+
+ - publish one value:
+ Mono.just("A")
+                 .log()
+                 // handle each possibility
+                 .doOnSubscribe(subs -> System.out.println("Subscribed: " + subs))
+                 .doOnRequest(request -> System.out.println("Request: " + request))
+                 .doOnSuccess(complete -> System.out.println("Complete: " + complete))
+                 .subscribe(System.out::println);
+
+ - publish no values:
+ it is very usefull to simulte void return type
+ Mono.empty()
+
+ - return a new mono on exception:
+ Mono.error(new Exception())
+                 .onErrorResume(e -> {
+                     System.out.println("Caught: " + e);
+                     return Mono.just("B");
+                 })
+                 .log()
+                 .subscribe();
+
+ b) Flux - publish 0 or many elements,
+ - for returning list of objects,
+
+ use cases:
+
+ * 1000 streams of stocks that goes into our application,
+ and we have to respond to that,
+
+ * In other words, a system where lots of events are being
+ produced and consumed asynchronously,

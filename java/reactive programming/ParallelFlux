@@ -1,0 +1,26 @@
+
+ worth to know:
+
+ * it is used to execute items from a flux stream
+ on couple threads, so one part of a flux is executed on one thread
+ when another part is executed on another thread,
+
+ * it is optimized for parallel work,
+
+ * if we subscribe with lambda (consumer) then we execute on all threads
+ meanwhile if we subscribe with a Subscriber then we merge all rails and
+ execute that on one thread.
+
+ implementation:
+
+ * parallel:
+ - we can obtain ParallelFlux calling that method,
+ - by default it divides the workload into couple cores,
+ - it is very similar to Schedulers.parallel()
+
+ * sequential:
+ - use this method to set your parallelFlux into normal sequential stream flux,
+
+ use cases:
+
+ * we can make our code more efficient if we execute our code on all cores,

@@ -1,0 +1,33 @@
+
+ * BehaviorSubject:
+ - this is an observable, allows emitting events
+
+ * Observer:
+ - onNext(): that is called after each item goes to a observer,
+ so that I can perform some action for each event,
+ - onComplete(): called when we get all events or items and I do not
+ expect any more items coming to our observer.
+ - onError()
+
+ * Subscription:
+ - is created when we subscribe to an observable,
+
+ * Observable:
+ a) non-blocking observable:
+ - you have to request async execution on a different thread
+ - here we can unsubscribe normally,
+
+ b) blocking:
+ - the execution will be synchromus,so all execution will be
+ invoked on a thread that invoked an action,
+ - it is not possible to unsubscribe that observable,
+
+ * Schedulers:
+ - provide a way to specify on which thread we want to execute our code,
+ - we have to specify that to set on which thread we want to run
+ our application,
+
+ implementation:
+
+ * create an observable:
+ - Observable.from(iterable)

@@ -1,0 +1,7 @@
+
+ * use one of those annotations:
+ - @JsonManagedReference - to not persisting entity collection,
+ - @JsonBackReference - to not persist back reference
+
+ * check this article:
+ - https://stackoverflow.com/questions/3325387/infinite-recursion-with-jackson-json-and-hibernate-jpa-issue/18288939#18288939

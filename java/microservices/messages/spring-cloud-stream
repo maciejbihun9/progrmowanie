@@ -1,0 +1,143 @@
+
+ * it listens to an exchange between registered applications
+ where one has input property and another has output annotation,
+
+ * this is like a abstraction for message brokers,
+
+ * it is another framework,
+
+ * connects services through channels,
+
+ * sits on pub/sub pattern,
+
+ * it is build on message brokers,
+
+ * type conversion after getting the data from the message broker,
+
+ * we do not have to add any broker specific code,
+
+ * I can connect to many broker providers in the same time,
+
+ architecture:
+
+ * destination binder: provides an integration with external messaging systems,
+ - connects to the physical end-point ( here is the queue ),
+ - it makes it possible to totally forget about which kind of message software we have,
+ we do not have to use any specific to concrete platform code,
+ - detects what kind of messaging software we have on the classpath and configures that,
+ - this comes from spring-integration
+
+ * destination biding: a bridge between systems,sd
+
+ * message: package for the data,
+
+ * exchange:
+ - this is a topic,
+ - topic can have couple queues that listens to that exchange,
+ so that we can have couple clients that subscribes to those queues,
+
+ * destination:
+ - defines an exchange to which we want to push the data,
+
+ use cases:
+
+ * setup a couple clients environment, that retrives messages from a broker,
+ so that we can spread work around between couple client instances,
+
+ * having @EnableBinding annotation over our application class with
+ the relevant properties we can run that application and see our application
+ in the rabbitMQ dashboard running.
+
+ * receiving messages from Iot devices
+
+ implementation:
+
+ * @EnableBinding(Source.class or Sink.class - those ligths this up as a stream):
+ - this is a part of connection abstraction,
+ - lights up a class to be a stream cloud application,
+ - configures our application, so that it can use streams now,
+
+ * @InboundChannelAdapter(channel=Source.OUTPUT):
+ - this is the most basic setup,
+ for this we need only:
+ spring.cloud.stream.bindings.output.destination=fastpasstoll
+ - this is a source of informations that is sending messages to a destination
+ defined in the application.properties,
+ - this is responsible for sending messages to a stream,
+ it sends a message every one second be default,
+ - this is called inbound because we have to define properties of channel to which
+ we want to send our messages,
+ - fastpassTollChannel = Source.OUTPUT
+ - generate and call this operation
+
+ * application.properties:
+ - that is all we need to know about rabbit mq,
+ - settings to connect to rabbit mq
+ spring.cloud.stream.bindings.input.destination=orders - for a receiver
+ spring.cloud.stream.bindings.output.destination=orders - for a sender
+
+ spring.rabbitmq.host=127.0.0.1
+ spring.rabbitmq.port=5672
+ spring.rabbitmq.username=guest
+ spring.rabbitmq.password=guest
+
+ * define rabbitMQ instance name where we want to publish or subscribe our data items:
+ - spring.cloud.stream.bindings.input.destination=fastpasstoll
+ - spring.cloud.stream.bindings.output.destination=fastpasstoll
+
+ * @StreamListener(Sink.INPUT - pulls from an input channel of Sink):
+ - sink - zlew, także pobiera coś ze zlewu .;))
+ - pulls events from broker,
+ - automatic content type conversion,
+ - annotation used to denote a method that takes input messages,
+ - we can have many methods annotated with that which takes specific params
+ and based on that picks the right method to call and serve a call,
+ eg. we can call a method depending on the speed of our system that comes with
+ headers of our message,
+
+ * @SendTo:
+ - set output destination for the data returned by a method,
+
+ * processors:
+ - they are not brokers, they are regular applications that consume and produce
+ - applications that are receiving and sending messages using @StreamListener
+ and SendTo annotations
+ - they work very similar to message brokers,
+ - this can be used to connect many message brokers together,
+ - they contain both, source and sink,
+ - we can connect different brokers of different types together
+
+ use cases:
+ - enrich data,
+ - search for the data from other instances
+
+ rabbitMQ:
+
+ * by default we can run an instance couple times and for each of these instances
+ there will be a new rabbitmq queue,
+ - if i send a message then both of those instance will get it
+
+ * scaling listeners - adding this:
+ - spring.cloud.stream.bindings.input.group=tollProcessingGroup
+ - this property if is in applciatiom.properties of an instance then after running
+ an instance couple times we will have only one intake,
+ - this is a great resoultion to scal listeners, service to create a load balancing
+ for services that are listening for tasks
+
+ apache kafka:
+
+ * stateful processing with partitions:
+ - this is also associated with using consumers group,
+ - split the data by some property, so that we make sure specific instance
+ will get all data with that property
+ - we will have a different queue for each indexed instance
+
+ # this tells that we are working in a partition model.
+ spring.cloud.stream.bindings.input.consumer.partitioned=true
+
+ # we have to set an index for each partition
+ # we can set it as an argument when we are running our application instance
+ spring.cloud.stream.instanceIndex=0
+
+ # this have to much the nimber of partiotns we set in producer instances
+ spring.cloud.stream.instanceCount=3

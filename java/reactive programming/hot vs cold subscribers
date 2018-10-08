@@ -1,0 +1,47 @@
+
+ cold:
+ - they generate data for each subscriber,
+ - if no subscriber then data is not generated,
+ - this works like HTTP request, no http request if no one is interested
+
+ // return a new Mono for each subscriber
+ Mono<String> defer = Mono.defer(() -> {
+             // without that defer wrap it is a hot stream
+             return Mono.just(restTemplate.getForObject(uri, String.class));
+         });
+         // it receives a new mono for each subscriber
+         defer.subscribe(System.out::println);
+         defer.subscribe(System.out::println);
+         defer.subscribe(System.out::println);
+
+
+ hot:
+ - here something indeed happens before you subscribe,
+ - do not depend on any number of subscribers,
+ - it is like http analogy,
+ - if no subscribers at the beginning then items are lost!!1
+
+ - DirectProcessor<String> hotSource = DirectProcessor.create();
+     Flux<String> hotFlux = hotSource.map(String::toUpperCase);
+     // this item is lost
+     hotSource.onNext("lost item");
+
+     hotFlux.subscribe(d -> System.out.println("Subscriber 1 to Hot Source: "+d));
+     // wait two seconds and push 4 items to one subscriber
+     Thread.sleep(2000);
+     // those 4 items will be visible only for this first subscriber
+     hotSource.onNext("blue");
+     hotSource.onNext("green");
+     hotSource.onNext("white");
+     hotSource.onNext("yello");
+
+     hotFlux.subscribe(d -> System.out.println("Subscriber 2 to Hot Source: "+d));
+
+     Thread.sleep(2000);
+     // will be visible by 2 subscribers
+     hotSource.onNext("orange");
+     hotSource.onNext("purple");
+     hotSource.onComplete();
+
+  * return one mono and reuse that for each subscriber
+  - Mono.just(restTemplate.getForObject(uri, String.class));

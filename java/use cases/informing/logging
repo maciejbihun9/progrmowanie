@@ -1,0 +1,3 @@
+
+ * create a logger on the class level:
+ - private static final Logger log = LoggerFactory.getLogger(ClassName.class);

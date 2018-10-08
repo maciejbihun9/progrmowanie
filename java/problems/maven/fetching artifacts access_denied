@@ -1,0 +1,4 @@
+
+ * if during fetching artifacts from maven repository you get Access denied error
+ then check your proxy settings.
+ - try to download that using different internet connection,
