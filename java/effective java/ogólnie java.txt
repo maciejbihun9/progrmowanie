@@ -18,8 +18,8 @@
  * strumień bajtów:
  - Strumienie bajtowe służą do wejścia-wyjścia bajtowego
  - umożliwiają odczytywanie danych binarnych,
- -InputStream
- -OutputStream
+ - InputStream
+ - OutputStream
  - są to klasy, które robią całą robotę, oczywiście zapewniają
  dostęp do różnych innych urządzeń,
  - odczytywanie oraz zapis danych do oraz z plików,

@@ -1,0 +1,8 @@
+
+ * append an html without a wrapping:
+ - <div>
+      <ng-container *ngIf="true">
+          <h2>Title</h2>
+          <div>Content</div>
+      </ng-container>
+  </div>

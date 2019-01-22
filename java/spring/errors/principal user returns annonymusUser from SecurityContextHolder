@@ -1,0 +1,13 @@
+
+ * configure httpSecurity in the application, because I do not putting a user into a application context:
+ - @Override
+   protected void configure(HttpSecurity http) throws Exception {
+       http.authorizeRequests()
+               .antMatchers("/resources/**").permitAll()
+               .anyRequest().authenticated()
+           .and()
+               .formLogin()
+               //.loginPage("/login")
+               .permitAll();
+       http.csrf().csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse());
+   }

@@ -1,0 +1,5 @@
+
+ * every resource is able to set its caching policy
+
+ * this object is able to define who is able to buffer a response
+ and in which cases,

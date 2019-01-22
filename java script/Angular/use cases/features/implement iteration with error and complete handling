@@ -1,0 +1,8 @@
+
+ * const items$: Observable<number> = of(1,2,3,4);
+    const myObserver = {
+     next: x => console.log(`Message for each array item: ${x}`),
+     error: err => console.error('Observer got an error: ' + err),
+     complete: () => console.log('Observer got a complete notification'),
+    };
+    items$.subscribe(myObserver);

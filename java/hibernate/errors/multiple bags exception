@@ -1,0 +1,3 @@
+
+ * hibernate does not allow to fetch multiple bags which means that
+ we are not able to fetch more that one collection eagerly,

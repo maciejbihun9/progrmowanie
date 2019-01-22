@@ -1,0 +1,3 @@
+
+ * Integer sumTransactionsValues = transactions.parallelStream()
+                   .collect(summingInt(Transaction::getValue));

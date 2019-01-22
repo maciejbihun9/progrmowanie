@@ -1,0 +1,3 @@
+
+ * append classes to odd and even list items:
+  - <div *ngFor="let item of items; let even = even; let odd = odd;" [ngClass]="{even: even, odd: odd}">{{item}}</div>

@@ -1,0 +1,15 @@
+
+ * it is used to model reality or some part of reality,
+
+ * it is used to model buisness/IT systems,
+
+ * it is mainly used to describe higher abstraction of classes
+
+ * it is increasing a final product value for sure, but it is questionable
+ if it is really important for developers,
+
+ * it is great for modeling inheritance, but an inheritance tree may be
+ expressed by a IDE simply,
+ - there is no need to create that seperately
+
+ * it is good for creating huge systems

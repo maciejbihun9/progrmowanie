@@ -1,0 +1,7 @@
+
+ * use ahead of time compiler:
+ - converts type script and html into java script
+ - it is really important to notice that this is a pre-compiled code
+ - this will compile application into java script during build process before sending to the browser,
+ - the aot compile will detect bidings errors during a build time, so before sending it into a browser,
+ - the compile is not sent to the browser

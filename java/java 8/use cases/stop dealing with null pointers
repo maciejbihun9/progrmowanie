@@ -1,0 +1,7 @@
+
+ * start using Optional objects
+
+ * explore this article:
+ - https://codecouple.pl/2016/03/09/pozbadz-sie-null-pointerow-java-util-optional/
+
+ * to handle null pointer possibility in the nicer way we can create an Optional instance

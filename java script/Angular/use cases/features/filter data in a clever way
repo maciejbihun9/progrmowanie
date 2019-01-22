@@ -1,0 +1,15 @@
+
+ * we can filter the data in html template:
+ - @Pipe({ name: 'flyingHeroes' })
+   export class FlyingHeroesPipe implements PipeTransform {
+     transform(allHeroes: Flyer[]) {
+       return allHeroes.filter(hero => hero.canFly);
+     }
+   }
+ - <div *ngFor="let hero of (heroes | flyingHeroes)">
+     {{hero.name}}
+   </div>
+
+ - remember that a pipe is only invoked if a reference changes, so if I add
+ a new item to a list, then nothing changes.
+ I would have to add a new item to a new list and then replace previous reference

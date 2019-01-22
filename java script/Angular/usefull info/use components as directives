@@ -1,0 +1,19 @@
+
+ * It is a good practice to create a component as a directive, because
+  is this case we can use our components as directives and pick different
+  packages depends on use case:
+  - <tr  *ngFor="let row of rows | paginate: { itemsPerPage: 20, currentPage: p }; let i = index" super-table-row [row]="row"></tr>
+  - @Component({
+      /* tslint:disable-next-line */
+      selector: '[super-table-row]',
+      template: `<td [style.height]="height" *ngFor="let column of state.columns" super-table-cell [row]="row" [column]="column"></td>`
+
+    })
+    export class SuperTableRowComponent {
+
+      @Input() row: any;
+      height = '48dp';
+
+      constructor(public state: SuperTableState) { }
+
+    }

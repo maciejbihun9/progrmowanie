@@ -1,0 +1,9 @@
+
+ * every task is done by a plugin,
+
+ * a plugin is just a set of goals
+
+ * this is a place where all work happens,
+ - create a war or jar
+
+ * almost any action that you can take on a project is done by a plugin,

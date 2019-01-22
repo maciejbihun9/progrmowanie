@@ -1,0 +1,4 @@
+
+ * always use Set to create your mapping:
+ - removing an item from many-to-many table will cause removing
+ only from that mapping table. Other tables will remain the same.

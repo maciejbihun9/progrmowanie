@@ -1,0 +1,17 @@
+
+ * set data type of the database table column that is different from the application:
+ - converts atomic reference to big decimal - varbinary -> numeric
+ - @Converter
+   public class AtomicReferenceConverter implements AttributeConverter<AtomicReference<BigDecimal>, BigDecimal> {
+
+       @Override
+       public BigDecimal convertToDatabaseColumn(AtomicReference<BigDecimal> atomicReference) {
+           return atomicReference.get();
+       }
+
+       @Override
+       public AtomicReference convertToEntityAttribute(BigDecimal bigDecimal) {
+           return new AtomicReference<>(bigDecimal);
+       }
+
+   }

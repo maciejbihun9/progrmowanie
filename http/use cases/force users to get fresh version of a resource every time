@@ -1,0 +1,5 @@
+
+ * if a resource has long expires time then we can change this resource
+ name and force users to download that resource every time they get a web page,
+ - we can do it by including a e-tag (dataprint) in every version of a resource
+ and seting: no-cache in headers of that response

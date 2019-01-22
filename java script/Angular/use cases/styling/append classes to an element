@@ -1,5 +1,0 @@
-
- * append a class to an element depending on even and odd props:
- All those classes are append based on true/false values.
- - <div *ngFor="let item of items; let i = index; let even = even; let odd = odd; trackBy: trackByFn"
-         [ngClass]="{even: even, odd: odd}">{{item}} : {{i}}</div>

@@ -2,90 +2,163 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f341ddb-947e-47ef-9e6e-2652f1fef69b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/java/containers/Netty" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/docker" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/hibernate/basic actions/block possibility to update entities" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/hibernate/basic actions/create a second level cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/hibernate/dirty checking" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/maven" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/messaging/mqtt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/messaging/rmi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/microservices/configuration files" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/microservices/eureka" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/microservices/hystrix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/microservices/intro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/microservices/messages/messaging" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/microservices/messages/spring-cloud-stream" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/microservices/messages/spring-integration" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/microservices/pipelines/intro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/microservices/pipelines/spring-cloud-data-flow" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/microservices/pipelines/spring-cloud-task" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/microservices/pipelines/spring-data-flow-shell" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/microservices/pipelines/stream" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/microservices/pipelines/task" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/microservices/ribbon" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/microservices/setup" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/microservices/spring boot task" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/problems/maven/fetching artifacts access_denied" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/reactive programming/BaseSubscriber" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/reactive programming/Flux" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/reactive programming/Mono" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/reactive programming/ParallelFlux" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/reactive programming/Processor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/reactive programming/Reactor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/reactive programming/advance features and concepts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/reactive programming/async programming" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/reactive programming/buffering" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/reactive programming/conditional" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/reactive programming/connectableFlux" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/reactive programming/controlling a demand" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/reactive programming/disposeable" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/reactive programming/examples" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/reactive programming/filtering" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/reactive programming/grouping" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/reactive programming/hot vs cold subscribers" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/reactive programming/intro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/reactive programming/just use it/accumulate techniques" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/reactive programming/just use it/apply many item transformations in one function" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/reactive programming/just use it/change a flux stream for each subscriber" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/reactive programming/just use it/create a stream that's not depends on subscribers" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/reactive programming/just use it/filter out items depending on predicate" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/reactive programming/just use it/flux partitioning" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/reactive programming/just use it/replace a request when a user clicks a button couple times" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/reactive programming/observable" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/reactive programming/threading and scheduling" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/reactive programming/windowing" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/spring/architecture" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/spring/errors/Infinite Recursion with Jackson JSON and Hibernate JPA issue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/spring/spring batch/intro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/spring/spring integration/events" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/spring/spring integration/scheduling" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/spring/spring webflux/Flux" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/spring/spring webflux/Operator" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/spring/spring webflux/Project Reactor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/spring/spring webflux/Reactive Streams" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/spring/spring webflux/controllers" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/spring/spring webflux/functional endpoints" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/spring/spring webflux/implementation" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/spring/spring webflux/intro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/spring/spring webflux/web client" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/spring/use cases/configure spring with jpa" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/spring/use cases/inject simple properties into a component" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/spring/use cases/schedule a background task that is executed in specified amount of time" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/spring/usefull information" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/use cases/informing/logging" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linux/intro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programming paradigms/domain driven design" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agile/epic" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agile/scrum/roles" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agile/story point" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agile/technical story" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agile/user story" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agile/worth to know/create user stories in the fastest way" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/architecture/use cases/create architecture of an application" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/databases/high performance tips" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/databases/why not to use many-to-many" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/intro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic search/Kibana" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic search/Lucene" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic search/intro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic search/query syntax" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http/caching-stuff/cache-control" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http/caching-stuff/caching" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http/caching-stuff/intro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http/cdn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http/dns" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http/interesting stuff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http/intro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http/use cases/block all caching on the client side" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http/use cases/create the right cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http/use cases/force users to get fresh version of a resource every time" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/Angular 6/features" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/Angular compiler" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/async programming/create interval" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/async programming/unwrap the data from observable without storing references" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/data binding/implement two way data binding in every component" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/data binding/manipulate input parameters" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/features/create advanced observable" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/features/filter data in a clever way" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/features/implement advanced observables" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/features/implement iteration with error and complete handling" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/features/implement iteration with observable" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/features/speed up application" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/services/return http response in subscribe body" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/services/send and retrive query params from url" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/styling/use directives to manipulate colors after DOM events" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/append a class to first and last item of a list" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/append an html template depending on a variable" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/append classes to odd and even list items" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/append piece of html to the page without any wrapping" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/based on a property value display different content" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/control what is on the screen using if - else statement" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/create a custom wrapper for components (like div)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/create advanced link to redirect to other component" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/get a reference to a component template" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/get a reference to an html item in code" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/include an html content on the web page without including a host element" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/manage changing list of objects in a template" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/pass components from a parent to a child (like placing elements in a div)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/write good templates" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/usefull info/use components as directives" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/elements/use cases/deal with user input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/coding rules/SOLID" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/coding rules/creating models" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/coding rules/development strategies" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/coding rules/development tips" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/coding rules/exception" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/hibernate/errors/bytecode enhancement failed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/hibernate/errors/could not deserialize" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/hibernate/errors/multiple bags exception" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/hibernate/use cases/control null values in persistance context" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/hibernate/use cases/create ManyToMany association in the right way" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/hibernate/use cases/create OneToOne association in the right way" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/hibernate/use cases/create embedded object into an entity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/hibernate/use cases/create two foreign keys in one entity class getting them from the other entity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/hibernate/use cases/create two way OneToMany, ManyToOne association in the right way" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/hibernate/use cases/fetch entities multiple levels deep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/hibernate/use cases/fetch queries/fetch data using where in clause" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/hibernate/use cases/increase efficiency in hibernate queries" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/hibernate/use cases/save entity with many references" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/hibernate/use cases/set different type to your database table column" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/hibernate/use cases/solve collection lazy loading problem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/java 8/closures.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/java 8/use cases/stop dealing with null pointers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/java 8/use cases/sum entire list of objects one property values" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/pojęcia/obiektowość" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/spring/application design/ddd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/spring/application design/mvc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/spring/errors/conflicts with existing, non-compatible bean definition of same name and class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/spring/errors/javax-servlet-ServletContext class not found" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/spring/errors/principal user returns annonymusUser from SecurityContextHolder" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/spring/thoughts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/testing/general testing rules" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/testing/integration tests" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/testing/mockito/intro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/testing/testing strategies" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/testing/use cases/init the test database with initial data from sql file" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven/build life cycle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven/build profile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven/clean life cycle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven/goal" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven/intro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven/phase" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven/plugin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven/site life cycle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servers/intro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servers/tomcat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uml/intro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/Angular 6/intro" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/Angular 6/intro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/HostBinding &amp; HostListener" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/usefull info/HostBinding &amp; HostListener" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/advanced caching" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/angular cli" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/architecture/architecture cases" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/architecture/architecture cases" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/common mistakes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/directives" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/events" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/http" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/intro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/life  cycles" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/usefull info/life  cycles" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/main files" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/usefull info/main files" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/npm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/observable" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/usefull info/observable" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/pipes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/routing" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/security" beforeDir="false" afterPath="$PROJECT_DIR$/agile/experience" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/services" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/template" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/usefull info/usefull info about template" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/tests" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/Communicating Between Components" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/usefull info/implement communication between components" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/Components architecture" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/Creating models" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/usefull info/creating models principles" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/Dynamically add components to the DOM" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/dynamically add components to the DOM" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/Loading data" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/usefull info/loading data from external files" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/Managing styles in the code" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/Managing view items in code" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/view container, children, child use cases" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/create component/directive for different html template" beforeDir="false" afterPath="$PROJECT_DIR$/agile/intro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/declaring functions in external files" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/usefull info/declaring functions in external files" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/detect changes" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/usefull info/detect changes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/handling input item" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/invoke some logic after input variable changes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/loops features" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/styling/append classes to an element" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/styling/append styles to an element" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/subscriptions/subscribe to a subject and receive a new message once is available" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/use cases/components communication/subscribe to a subject and receive a new message from a publisher once is available" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/dto" beforeDir="false" afterPath="$PROJECT_DIR$/java/dto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/effective java/ogólnie java.txt" beforeDir="false" afterPath="$PROJECT_DIR$/java/effective java/ogólnie java.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/hibernate/annotations" beforeDir="false" afterPath="$PROJECT_DIR$/java/hibernate/annotations" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java/hibernate/caching" beforeDir="false" afterPath="$PROJECT_DIR$/java/hibernate/caching" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/hibernate/cascade" beforeDir="false" afterPath="$PROJECT_DIR$/java/hibernate/cascade" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/hibernate/collections" beforeDir="false" afterPath="$PROJECT_DIR$/java/hibernate/collections" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/hibernate/session" beforeDir="false" afterPath="$PROJECT_DIR$/java/hibernate/session" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/jpa/use cases/lock entity properties to use it with many threads" beforeDir="false" afterPath="$PROJECT_DIR$/java/jpa/use cases/lock entity properties to use it with many threads" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/messaging/intro" beforeDir="false" afterPath="$PROJECT_DIR$/java/messaging/intro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/messaging/jms" beforeDir="false" afterPath="$PROJECT_DIR$/java/messaging/jms" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/messaging/rabbitmq" beforeDir="false" afterPath="$PROJECT_DIR$/java/messaging/rabbitmq" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/hibernate/dirty checking" beforeDir="false" afterPath="$PROJECT_DIR$/java/hibernate/dirty checking" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/hibernate/inheritance mapping" beforeDir="false" afterPath="$PROJECT_DIR$/agile/scrum/artifacts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java 8/Closure.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java 8/[JAVA][Java 8 in Action].m7p" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java 8/iteration example.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java 8/method references.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java 8/streams" beforeDir="false" afterPath="$PROJECT_DIR$/java/java 8/streams" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/maven" beforeDir="false" afterPath="$PROJECT_DIR$/agile/scrum/ceremonies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/nexus" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/przemyślenia.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/przetwarzanie tekstu.txt" beforeDir="false" afterPath="$PROJECT_DIR$/agile/scrum/intro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/spring/errors/Infinite Recursion with Jackson JSON and Hibernate JPA issue" beforeDir="false" afterPath="$PROJECT_DIR$/java/spring/errors/Infinite Recursion with Jackson JSON and Hibernate JPA issue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/spring/use cases/configure spring with jpa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work ethic for programming" beforeDir="false" afterPath="$PROJECT_DIR$/work ethic for programming" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -100,26 +173,40 @@
     <session id="-1519549815">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.19" value="1" />
+          <entry key="project.closed" value="9" />
+          <entry key="project.open.time.0" value="4" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.19" value="2" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="Angular compiler" value="1" />
           <entry key="BaseSubscriber" value="1" />
+          <entry key="Communicating Between Components" value="3" />
+          <entry key="Components architecture" value="1" />
+          <entry key="Creating models" value="1" />
+          <entry key="Dynamically add components to the DOM" value="1" />
           <entry key="Flux" value="9" />
-          <entry key="Infinite Recursion with Jackson JSON and Hibernate JPA issue" value="1" />
+          <entry key="HostBinding &amp; HostListener" value="1" />
+          <entry key="Infinite Recursion with Jackson JSON and Hibernate JPA issue" value="4" />
+          <entry key="Kibana" value="2" />
+          <entry key="Loading data" value="1" />
+          <entry key="Lucene" value="1" />
+          <entry key="Managing styles in the code" value="1" />
+          <entry key="Managing view items in code" value="4" />
           <entry key="Mono" value="3" />
           <entry key="Netty" value="2" />
           <entry key="Operator" value="1" />
@@ -128,125 +215,276 @@
           <entry key="Project Reactor" value="1" />
           <entry key="Reactive Streams" value="1" />
           <entry key="Reactor" value="1" />
+          <entry key="SOLID" value="5" />
           <entry key="accumulate techniques" value="1" />
           <entry key="advance features and concepts" value="1" />
-          <entry key="annotations" value="1" />
+          <entry key="advanced caching" value="1" />
+          <entry key="angular cli" value="1" />
+          <entry key="annotations" value="3" />
+          <entry key="append a class to first and last item of a list" value="2" />
+          <entry key="append an html template depending on a variable" value="1" />
+          <entry key="append classes to an element" value="1" />
+          <entry key="append classes to odd and even list items" value="1" />
+          <entry key="append piece of html to the page without any wrapping" value="1" />
+          <entry key="append styles to an element" value="1" />
           <entry key="apply many item transformations in one function" value="1" />
           <entry key="architecture" value="1" />
-          <entry key="associations" value="1" />
+          <entry key="architecture cases" value="3" />
+          <entry key="artifacts" value="1" />
+          <entry key="associations" value="2" />
           <entry key="async programming" value="1" />
-          <entry key="basic items" value="1" />
+          <entry key="based on a property value display different components" value="3" />
+          <entry key="based on a property value display different content" value="1" />
+          <entry key="basic items" value="3" />
+          <entry key="basic methods" value="1" />
+          <entry key="block all caching on the client side" value="1" />
           <entry key="block possibility to update entities" value="1" />
           <entry key="buffering" value="1" />
-          <entry key="caching" value="2" />
+          <entry key="build life cycle" value="2" />
+          <entry key="build profile" value="1" />
+          <entry key="bytecode enhancement failed" value="1" />
+          <entry key="cache-control" value="1" />
+          <entry key="caching" value="5" />
+          <entry key="cahing" value="1" />
           <entry key="cascade" value="1" />
+          <entry key="cdn" value="1" />
+          <entry key="ceremonies" value="1" />
           <entry key="change a flux stream for each subscriber" value="1" />
+          <entry key="class hierarchy specification" value="2" />
+          <entry key="clean life cycle" value="1" />
           <entry key="collections" value="1" />
+          <entry key="common mistakes" value="1" />
+          <entry key="components architecture" value="1" />
           <entry key="conditional" value="3" />
           <entry key="configuration files" value="3" />
-          <entry key="configure spring with jpa" value="1" />
+          <entry key="configure spring with jpa" value="3" />
+          <entry key="conflicts with existing, non-compatible bean definition of same name and class" value="2" />
           <entry key="connectableFlux" value="2" />
-          <entry key="controllers" value="2" />
+          <entry key="control null values in persistance context" value="3" />
+          <entry key="control what is on the screen using if - else statement" value="1" />
+          <entry key="controllers" value="3" />
           <entry key="controlling a demand" value="1" />
+          <entry key="could not deserialize" value="1" />
+          <entry key="create ManyToMany association in the right way" value="2" />
+          <entry key="create OneToOne association in the right way" value="1" />
+          <entry key="create a custom wrapper for components" value="1" />
           <entry key="create a second level cache" value="2" />
           <entry key="create a stream that's not depends on subscribers" value="1" />
+          <entry key="create advanced link to redirect to other component" value="1" />
+          <entry key="create advanced observable" value="2" />
+          <entry key="create architecture of an application" value="1" />
+          <entry key="create embedded object into an entity" value="1" />
+          <entry key="create interval" value="1" />
           <entry key="create shared embedded fields for entities" value="1" />
+          <entry key="create the right cache" value="1" />
+          <entry key="create two foreign keys in one entity class getting them from the other entity" value="2" />
+          <entry key="create two way OneToMany, ManyToOne association in the right way" value="1" />
+          <entry key="create two way association in the right way" value="1" />
+          <entry key="create user stories in the fastest way" value="1" />
+          <entry key="creating models" value="3" />
+          <entry key="creating models principles" value="1" />
           <entry key="criteria api" value="1" />
+          <entry key="ddd" value="1" />
+          <entry key="deal with user input" value="1" />
+          <entry key="declaring functions in external files" value="1" />
           <entry key="detached" value="1" />
-          <entry key="dirty checking" value="2" />
+          <entry key="detect changes" value="1" />
+          <entry key="development strategies" value="4" />
+          <entry key="development tips" value="1" />
+          <entry key="directive for different html template" value="1" />
+          <entry key="directives" value="1" />
+          <entry key="dirty checking" value="3" />
           <entry key="disposeable" value="1" />
+          <entry key="dns" value="1" />
           <entry key="docker" value="1" />
           <entry key="domain driven design" value="1" />
+          <entry key="dto" value="1" />
           <entry key="entity annotations" value="1" />
-          <entry key="entityManager" value="1" />
+          <entry key="entityManager" value="3" />
+          <entry key="epic" value="2" />
           <entry key="eureka" value="3" />
-          <entry key="events" value="2" />
+          <entry key="events" value="4" />
           <entry key="examples" value="1" />
-          <entry key="fetch strategies" value="1" />
+          <entry key="exception" value="2" />
+          <entry key="experience" value="1" />
+          <entry key="features" value="1" />
+          <entry key="fetch data using where in clause" value="1" />
+          <entry key="fetch entities multiple levels deep" value="1" />
+          <entry key="fetch strategies" value="3" />
           <entry key="fetching artifacts access_denied" value="1" />
+          <entry key="filter data in a clever way" value="3" />
           <entry key="filter out items depending on predicate" value="1" />
           <entry key="filtering" value="4" />
           <entry key="flux partitioning" value="2" />
+          <entry key="force users to get fresh version of a resource every time" value="1" />
           <entry key="functional endpoints" value="1" />
+          <entry key="general testing rules" value="4" />
+          <entry key="get a reference to a component template" value="1" />
+          <entry key="get a reference to an html item in code" value="3" />
           <entry key="get class statistics and metadata" value="1" />
           <entry key="get list of entities from the database" value="2" />
-          <entry key="good practices" value="1" />
+          <entry key="get query params from the url" value="1" />
+          <entry key="goal" value="1" />
+          <entry key="good practices" value="4" />
           <entry key="grouping" value="1" />
-          <entry key="hibernate connections between entities" value="1" />
+          <entry key="handling input item" value="1" />
+          <entry key="hibernate connections between entities" value="3" />
+          <entry key="high performance tips" value="2" />
           <entry key="hot vs cold subscribers" value="2" />
           <entry key="how this works" value="3" />
+          <entry key="http" value="2" />
           <entry key="hystrix" value="1" />
+          <entry key="implement advanced observables" value="1" />
+          <entry key="implement communication between components" value="2" />
+          <entry key="implement iteration with error and complete handling" value="1" />
+          <entry key="implement iteration with observable" value="1" />
+          <entry key="implement two way data binding in every component" value="1" />
           <entry key="implementation" value="2" />
-          <entry key="inheritance mapping" value="1" />
+          <entry key="include an html content on the web page without including a host element" value="2" />
+          <entry key="increase efficiency in hibernate queries" value="1" />
+          <entry key="inheritance mapping" value="2" />
+          <entry key="init the test database with initial data from sql file" value="1" />
           <entry key="initialize entity associations" value="1" />
-          <entry key="inject simple properties into a component" value="1" />
-          <entry key="intro" value="30" />
+          <entry key="inject simple properties into a component" value="2" />
+          <entry key="integration tests" value="1" />
+          <entry key="interesting stuff" value="1" />
+          <entry key="intro" value="49" />
+          <entry key="invoke some logic after input variable changes" value="1" />
+          <entry key="javax-servlet-ServletContext" value="1" />
+          <entry key="javax-servlet-ServletContext class not found" value="2" />
           <entry key="jms" value="1" />
+          <entry key="jndi" value="1" />
           <entry key="lazy eager" value="1" />
+          <entry key="life  cycles" value="2" />
+          <entry key="loading data" value="2" />
           <entry key="lock entity properties to use it with many threads" value="1" />
           <entry key="locking" value="1" />
           <entry key="logging" value="1" />
-          <entry key="managed" value="1" />
-          <entry key="maven" value="1" />
+          <entry key="lombok" value="2" />
+          <entry key="loops features" value="1" />
+          <entry key="m7p" value="1" />
+          <entry key="main files" value="1" />
+          <entry key="make sure that field with not convenient props won't be stored" value="1" />
+          <entry key="manage changing list of objects in a template" value="1" />
+          <entry key="managed" value="2" />
+          <entry key="managing styles in the code" value="1" />
+          <entry key="managing view items in code" value="1" />
+          <entry key="manipulate input parameters" value="1" />
+          <entry key="maven" value="2" />
           <entry key="messaging" value="1" />
           <entry key="mqtt" value="1" />
+          <entry key="multiple bags exception" value="2" />
+          <entry key="mvc" value="3" />
           <entry key="n + 1 problem" value="1" />
-          <entry key="named entity graph" value="1" />
-          <entry key="observable" value="2" />
-          <entry key="perform some work before and after user http request" value="1" />
-          <entry key="performance problems" value="1" />
-          <entry key="persistanceContext" value="1" />
+          <entry key="named entity graph" value="3" />
+          <entry key="nexus" value="1" />
+          <entry key="npm" value="1" />
+          <entry key="obiektowość" value="1" />
+          <entry key="observable" value="4" />
+          <entry key="pass components from a parent to a child (like placing elements in a div)" value="1" />
+          <entry key="perform some work before and after user http request" value="2" />
+          <entry key="performance problems" value="2" />
+          <entry key="persistanceContext" value="2" />
           <entry key="persistent" value="1" />
           <entry key="pesimistic locking" value="1" />
+          <entry key="phase" value="1" />
           <entry key="pipelines" value="1" />
+          <entry key="pipes" value="1" />
+          <entry key="plugin" value="2" />
+          <entry key="principal user returns annonymusUser from SecurityCOntextHOlder" value="1" />
+          <entry key="principal user returns annonymusUser from SecurityContextHolder" value="1" />
           <entry key="problems" value="1" />
           <entry key="proxy pattern" value="2" />
+          <entry key="query syntax" value="2" />
           <entry key="rabbitmq" value="2" />
           <entry key="reactive streams" value="1" />
           <entry key="reactor" value="3" />
+          <entry key="release resources after specific number of operations" value="2" />
           <entry key="removed" value="2" />
+          <entry key="render html item only if variable is initialized" value="1" />
           <entry key="replace a request when a user clicks a button couple times" value="1" />
-          <entry key="retriving items from the database" value="1" />
+          <entry key="retriving items from the database" value="2" />
+          <entry key="return http response in subscribe body" value="2" />
           <entry key="ribbon" value="2" />
           <entry key="rmi" value="1" />
+          <entry key="roles" value="1" />
+          <entry key="routing" value="1" />
+          <entry key="save entity with many references" value="3" />
           <entry key="scanning" value="3" />
           <entry key="schedule a background task that is executed in specified amount of time" value="1" />
           <entry key="scheduling" value="3" />
-          <entry key="session" value="2" />
+          <entry key="security" value="1" />
+          <entry key="send and retrive query params from url" value="1" />
+          <entry key="service worker" value="1" />
+          <entry key="services" value="1" />
+          <entry key="session" value="3" />
+          <entry key="set convenient column properties" value="1" />
+          <entry key="set different type to your database table column" value="4" />
           <entry key="setup" value="1" />
+          <entry key="site life cycle" value="1" />
+          <entry key="solve collection lazy loading problem" value="2" />
           <entry key="sorting, ordering entities in hibernate" value="1" />
+          <entry key="speed up application" value="1" />
           <entry key="spring boot task" value="1" />
           <entry key="spring-cloud-data-flow" value="4" />
           <entry key="spring-cloud-stream" value="1" />
           <entry key="spring-cloud-task" value="3" />
           <entry key="spring-data-flow-shell" value="2" />
           <entry key="spring-integration" value="1" />
+          <entry key="static synchronization" value="1" />
+          <entry key="stop dealing with null pointers" value="3" />
           <entry key="storing enums" value="2" />
+          <entry key="story point" value="1" />
           <entry key="stream" value="3" />
+          <entry key="streams" value="2" />
+          <entry key="subscribe to a subject and receive a new message from a publisher once is available" value="1" />
+          <entry key="subscribe to a subject and receive a new message once is available" value="2" />
+          <entry key="sum entire list of objects one property values" value="1" />
           <entry key="task" value="1" />
+          <entry key="technical story" value="1" />
+          <entry key="template" value="4" />
+          <entry key="testing strategies" value="1" />
+          <entry key="tests" value="3" />
+          <entry key="thoughts" value="1" />
           <entry key="threading and scheduling" value="2" />
+          <entry key="tomcat" value="1" />
           <entry key="transaction management" value="2" />
           <entry key="transformations" value="4" />
           <entry key="transient" value="1" />
-          <entry key="txt" value="1" />
+          <entry key="txt" value="20" />
+          <entry key="unwrap the data from observable without storing references" value="1" />
           <entry key="uplod files to the application" value="1" />
           <entry key="use bean life cycle methods to inform about it's life cycle" value="1" />
           <entry key="use cases" value="5" />
+          <entry key="use components as directives" value="2" />
+          <entry key="use directives to manipulate colors after DOM events" value="1" />
+          <entry key="use parent's service in child component with child service" value="1" />
+          <entry key="usefull info about template" value="1" />
           <entry key="usefull information" value="2" />
+          <entry key="user story" value="2" />
           <entry key="web client" value="3" />
+          <entry key="why not to use many-to-many" value="1" />
           <entry key="windowing" value="5" />
+          <entry key="work ethic for programming" value="2" />
+          <entry key="write good templates" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="216" />
+          <entry key="PLAIN_TEXT" value="519" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="Angular compiler" value="477" />
           <entry key="BaseSubscriber" value="151" />
+          <entry key="Communicating Between Components" value="276" />
           <entry key="Flux" value="3839" />
-          <entry key="Infinite Recursion with Jackson JSON and Hibernate JPA issue" value="141" />
+          <entry key="HostBinding &amp; HostListener" value="11" />
+          <entry key="Infinite Recursion with Jackson JSON and Hibernate JPA issue" value="261" />
+          <entry key="Kibana" value="81" />
+          <entry key="Lucene" value="373" />
+          <entry key="Managing view items in code" value="75" />
           <entry key="Mono" value="1306" />
           <entry key="Netty" value="448" />
           <entry key="Operator" value="57" />
@@ -255,80 +493,185 @@
           <entry key="Project Reactor" value="748" />
           <entry key="Reactive Streams" value="71" />
           <entry key="Reactor" value="412" />
+          <entry key="SOLID" value="595" />
           <entry key="accumulate techniques" value="3" />
           <entry key="advance features and concepts" value="494" />
+          <entry key="annotations" value="162" />
+          <entry key="append a class to first and last item of a list" value="2" />
+          <entry key="append an html template depending on a variable" value="29" />
+          <entry key="append classes to odd and even list items" value="2" />
+          <entry key="append piece of html to the page without any wrapping" value="42" />
           <entry key="apply many item transformations in one function" value="72" />
           <entry key="architecture" value="72" />
+          <entry key="architecture cases" value="100" />
+          <entry key="artifacts" value="264" />
           <entry key="async programming" value="218" />
+          <entry key="based on a property value display different components" value="15" />
+          <entry key="based on a property value display different content" value="55" />
+          <entry key="block all caching on the client side" value="107" />
           <entry key="block possibility to update entities" value="188" />
           <entry key="buffering" value="448" />
-          <entry key="caching" value="4" />
+          <entry key="build life cycle" value="208" />
+          <entry key="build profile" value="185" />
+          <entry key="bytecode enhancement failed" value="68" />
+          <entry key="cache-control" value="154" />
+          <entry key="caching" value="2061" />
+          <entry key="cdn" value="310" />
+          <entry key="ceremonies" value="349" />
           <entry key="change a flux stream for each subscriber" value="145" />
+          <entry key="clean life cycle" value="42" />
           <entry key="collections" value="1" />
+          <entry key="components architecture" value="1" />
           <entry key="conditional" value="319" />
           <entry key="configuration files" value="628" />
           <entry key="configure spring with jpa" value="4" />
+          <entry key="conflicts with existing, non-compatible bean definition of same name and class" value="208" />
           <entry key="connectableFlux" value="751" />
+          <entry key="control null values in persistance context" value="96" />
+          <entry key="control what is on the screen using if - else statement" value="6" />
           <entry key="controllers" value="679" />
           <entry key="controlling a demand" value="265" />
+          <entry key="create ManyToMany association in the right way" value="180" />
+          <entry key="create OneToOne association in the right way" value="74" />
+          <entry key="create a custom wrapper for components" value="39" />
           <entry key="create a second level cache" value="880" />
           <entry key="create a stream that's not depends on subscribers" value="133" />
-          <entry key="dirty checking" value="452" />
+          <entry key="create advanced link to redirect to other component" value="93" />
+          <entry key="create advanced observable" value="4" />
+          <entry key="create architecture of an application" value="105" />
+          <entry key="create embedded object into an entity" value="358" />
+          <entry key="create interval" value="126" />
+          <entry key="create the right cache" value="209" />
+          <entry key="create two foreign keys in one entity class getting them from the other entity" value="101" />
+          <entry key="create two way OneToMany, ManyToOne association in the right way" value="270" />
+          <entry key="create two way association in the right way" value="501" />
+          <entry key="creating models" value="269" />
+          <entry key="creating models principles" value="21" />
+          <entry key="ddd" value="616" />
+          <entry key="deal with user input" value="362" />
+          <entry key="detect changes" value="38" />
+          <entry key="development strategies" value="963" />
+          <entry key="development tips" value="303" />
+          <entry key="directives" value="5" />
+          <entry key="dirty checking" value="453" />
           <entry key="disposeable" value="168" />
+          <entry key="dns" value="189" />
           <entry key="docker" value="359" />
           <entry key="domain driven design" value="4" />
+          <entry key="dto" value="315" />
+          <entry key="epic" value="260" />
           <entry key="eureka" value="2182" />
-          <entry key="events" value="416" />
+          <entry key="events" value="417" />
           <entry key="examples" value="41" />
+          <entry key="exception" value="92" />
+          <entry key="experience" value="185" />
+          <entry key="features" value="319" />
+          <entry key="fetch data using where in clause" value="84" />
+          <entry key="fetch entities multiple levels deep" value="138" />
           <entry key="fetching artifacts access_denied" value="192" />
+          <entry key="filter data in a clever way" value="268" />
           <entry key="filter out items depending on predicate" value="232" />
           <entry key="filtering" value="127" />
           <entry key="flux partitioning" value="295" />
+          <entry key="force users to get fresh version of a resource every time" value="300" />
           <entry key="functional endpoints" value="151" />
+          <entry key="general testing rules" value="616" />
+          <entry key="get a reference to a component template" value="56" />
+          <entry key="get a reference to an html item in code" value="259" />
+          <entry key="goal" value="510" />
           <entry key="grouping" value="424" />
+          <entry key="high performance tips" value="440" />
           <entry key="hot vs cold subscribers" value="839" />
           <entry key="how this works" value="425" />
+          <entry key="http" value="5" />
           <entry key="hystrix" value="643" />
+          <entry key="implement advanced observables" value="4" />
+          <entry key="implement iteration with error and complete handling" value="7" />
+          <entry key="implement iteration with observable" value="5" />
+          <entry key="implement two way data binding in every component" value="6" />
           <entry key="implementation" value="328" />
+          <entry key="include an html content on the web page without including a host element" value="77" />
+          <entry key="increase efficiency in hibernate queries" value="716" />
+          <entry key="init the test database with initial data from sql file" value="433" />
           <entry key="inject simple properties into a component" value="168" />
-          <entry key="intro" value="13051" />
+          <entry key="integration tests" value="130" />
+          <entry key="interesting stuff" value="210" />
+          <entry key="intro" value="19605" />
+          <entry key="javax-servlet-ServletContext class not found" value="329" />
           <entry key="jms" value="326" />
+          <entry key="life  cycles" value="20" />
           <entry key="lock entity properties to use it with many threads" value="149" />
           <entry key="logging" value="64" />
+          <entry key="loops features" value="7" />
+          <entry key="manage changing list of objects in a template" value="436" />
+          <entry key="manipulate input parameters" value="2" />
           <entry key="maven" value="16" />
           <entry key="messaging" value="1003" />
           <entry key="mqtt" value="187" />
-          <entry key="observable" value="948" />
+          <entry key="multiple bags exception" value="149" />
+          <entry key="mvc" value="2311" />
+          <entry key="obiektowość" value="444" />
+          <entry key="observable" value="949" />
+          <entry key="pass components from a parent to a child (like placing elements in a div)" value="362" />
+          <entry key="phase" value="157" />
+          <entry key="plugin" value="213" />
+          <entry key="principal user returns annonymusUser from SecurityContextHolder" value="112" />
+          <entry key="query syntax" value="151" />
           <entry key="rabbitmq" value="768" />
           <entry key="reactive streams" value="88" />
           <entry key="reactor" value="529" />
           <entry key="replace a request when a user clicks a button couple times" value="55" />
+          <entry key="return http response in subscribe body" value="4" />
           <entry key="ribbon" value="1160" />
           <entry key="rmi" value="214" />
+          <entry key="roles" value="300" />
+          <entry key="save entity with many references" value="341" />
           <entry key="scanning" value="214" />
           <entry key="schedule a background task that is executed in specified amount of time" value="35" />
           <entry key="scheduling" value="1602" />
+          <entry key="send and retrive query params from url" value="63" />
           <entry key="session" value="1" />
+          <entry key="set different type to your database table column" value="188" />
           <entry key="setup" value="159" />
+          <entry key="site life cycle" value="77" />
+          <entry key="solve collection lazy loading problem" value="472" />
+          <entry key="speed up application" value="512" />
           <entry key="spring boot task" value="80" />
           <entry key="spring-cloud-data-flow" value="3161" />
           <entry key="spring-cloud-stream" value="4807" />
           <entry key="spring-cloud-task" value="1204" />
           <entry key="spring-data-flow-shell" value="499" />
           <entry key="spring-integration" value="452" />
+          <entry key="stop dealing with null pointers" value="153" />
+          <entry key="story point" value="282" />
           <entry key="stream" value="1847" />
+          <entry key="streams" value="120" />
+          <entry key="subscribe to a subject and receive a new message once is available" value="386" />
+          <entry key="sum entire list of objects one property values" value="4" />
           <entry key="task" value="996" />
+          <entry key="technical story" value="114" />
+          <entry key="testing strategies" value="246" />
+          <entry key="thoughts" value="507" />
           <entry key="threading and scheduling" value="576" />
+          <entry key="tomcat" value="108" />
           <entry key="transformations" value="477" />
+          <entry key="txt" value="9" />
+          <entry key="unwrap the data from observable without storing references" value="772" />
           <entry key="use cases" value="479" />
+          <entry key="use components as directives" value="2" />
+          <entry key="use directives to manipulate colors after DOM events" value="69" />
           <entry key="usefull information" value="260" />
+          <entry key="user story" value="1060" />
           <entry key="web client" value="641" />
+          <entry key="why not to use many-to-many" value="200" />
           <entry key="windowing" value="795" />
+          <entry key="work ethic for programming" value="464" />
+          <entry key="write good templates" value="142" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="57790" />
+          <entry key="PLAIN_TEXT" value="92366" />
         </counts>
       </usages-collector>
     </session>
@@ -336,46 +679,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/reactive programming/intro">
+        <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/services/return http response in subscribe body">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="39" column="46" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/reactive programming/just use it/accumulate techniques">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java/reactive programming/windowing">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/reactive programming/hot vs cold subscribers">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="45" column="54" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/reactive programming/connectableFlux">
+        <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/services/send and retrive query params from url">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -409,57 +725,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/java/spring/spring webflux/implementation" />
-        <option value="$PROJECT_DIR$/java/spring/spring webflux/reactor" />
-        <option value="$PROJECT_DIR$/java/spring/spring webflux/reactive streams" />
-        <option value="$PROJECT_DIR$/java/spring/spring webflux/Reactive Streams" />
-        <option value="$PROJECT_DIR$/java/spring/spring webflux/Operator" />
-        <option value="$PROJECT_DIR$/java/spring/spring webflux/Project Reactor" />
-        <option value="$PROJECT_DIR$/java/spring/spring webflux/controllers" />
-        <option value="$PROJECT_DIR$/java/containers/Netty" />
-        <option value="$PROJECT_DIR$/java/spring/spring webflux/functional endpoints" />
-        <option value="$PROJECT_DIR$/java/spring/spring webflux/web client" />
-        <option value="$PROJECT_DIR$/java/spring/spring webflux/intro" />
-        <option value="$PROJECT_DIR$/java/reactive programming/filtering" />
-        <option value="$PROJECT_DIR$/java/reactive programming/conditional" />
-        <option value="$PROJECT_DIR$/java/reactive programming/examples" />
-        <option value="$PROJECT_DIR$/java/reactive programming/observable" />
-        <option value="$PROJECT_DIR$/java/reactive programming/async programming" />
-        <option value="$PROJECT_DIR$/java/reactive programming/reactor" />
-        <option value="$PROJECT_DIR$/java/hibernate/session" />
+        <option value="$PROJECT_DIR$/java/dto" />
         <option value="$PROJECT_DIR$/java/hibernate/dirty checking" />
-        <option value="$PROJECT_DIR$/java/hibernate/collections" />
-        <option value="$PROJECT_DIR$/java/hibernate/cascade" />
         <option value="$PROJECT_DIR$/java/hibernate/caching" />
-        <option value="$PROJECT_DIR$/java/reactive programming/disposeable" />
-        <option value="$PROJECT_DIR$/java/reactive programming/BaseSubscriber" />
-        <option value="$PROJECT_DIR$/java/reactive programming/use cases" />
-        <option value="$PROJECT_DIR$/java/reactive programming/controlling a demand" />
-        <option value="$PROJECT_DIR$/java/spring/spring webflux/Flux" />
-        <option value="$PROJECT_DIR$/java/reactive programming/scheduling" />
-        <option value="$PROJECT_DIR$/java/reactive programming/Processor" />
-        <option value="$PROJECT_DIR$/java/reactive programming/advance features and concepts" />
-        <option value="$PROJECT_DIR$/java/reactive programming/just use it/create a stream that's not depends on subscribers" />
-        <option value="$PROJECT_DIR$/java/reactive programming/connectableFlux" />
-        <option value="$PROJECT_DIR$/java/reactive programming/grouping" />
-        <option value="$PROJECT_DIR$/java/reactive programming/buffering" />
-        <option value="$PROJECT_DIR$/java/reactive programming/just use it/flux partitioning" />
-        <option value="$PROJECT_DIR$/java/reactive programming/ParallelFlux" />
-        <option value="$PROJECT_DIR$/java/reactive programming/Reactor" />
-        <option value="$PROJECT_DIR$/java/reactive programming/just use it/replace a request when a user clicks a button couple times" />
-        <option value="$PROJECT_DIR$/java/reactive programming/Flux" />
-        <option value="$PROJECT_DIR$/java/reactive programming/transformations" />
-        <option value="$PROJECT_DIR$/java/reactive programming/windowing" />
-        <option value="$PROJECT_DIR$/java/reactive programming/threading and scheduling" />
-        <option value="$PROJECT_DIR$/java/reactive programming/how this works" />
-        <option value="$PROJECT_DIR$/java/reactive programming/just use it/filter out items depending on predicate" />
-        <option value="$PROJECT_DIR$/java/reactive programming/just use it/apply many item transformations in one function" />
-        <option value="$PROJECT_DIR$/java/reactive programming/just use it/change a flux stream for each subscriber" />
-        <option value="$PROJECT_DIR$/java/reactive programming/Mono" />
-        <option value="$PROJECT_DIR$/java/reactive programming/intro" />
-        <option value="$PROJECT_DIR$/java/reactive programming/hot vs cold subscribers" />
-        <option value="$PROJECT_DIR$/java/reactive programming/scanning" />
-        <option value="$PROJECT_DIR$/java/reactive programming/just use it/accumulate techniques" />
+        <option value="$PROJECT_DIR$/java/hibernate/use cases/increase efficiency in hibernate queries" />
+        <option value="$PROJECT_DIR$/java/hibernate/errors/multiple bags exception" />
+        <option value="$PROJECT_DIR$/java/hibernate/use cases/save entity with many references" />
+        <option value="$PROJECT_DIR$/java/hibernate/use cases/control null values in persistance context" />
+        <option value="$PROJECT_DIR$/java/hibernate/annotations" />
+        <option value="$PROJECT_DIR$/java/hibernate/use cases/create two way association in the right way" />
+        <option value="$PROJECT_DIR$/java/hibernate/use cases/create OneToOne association in the right way" />
+        <option value="$PROJECT_DIR$/java/hibernate/use cases/create two foreign keys in one entity class getting them from the other entity" />
+        <option value="$PROJECT_DIR$/java/SOLID" />
+        <option value="$PROJECT_DIR$/java/testing/integration tests" />
+        <option value="$PROJECT_DIR$/java/testing/use cases/init the test database with initial data from sql file" />
+        <option value="$PROJECT_DIR$/java/hibernate/errors/bytecode enhancement failed" />
+        <option value="$PROJECT_DIR$/java/coding rules/exception" />
+        <option value="$PROJECT_DIR$/java/hibernate/use cases/create two way OneToMany, ManyToOne association in the right way" />
+        <option value="$PROJECT_DIR$/java/pojęcia/obiektowość" />
+        <option value="$PROJECT_DIR$/java/spring/application design/ddd" />
+        <option value="$PROJECT_DIR$/java/hibernate/use cases/create embedded object into an entity" />
+        <option value="$PROJECT_DIR$/java/spring/application design/mvc" />
+        <option value="$PROJECT_DIR$/java/testing/testing strategies" />
+        <option value="$PROJECT_DIR$/java/coding rules/development strategies" />
+        <option value="$PROJECT_DIR$/java/coding rules/development tips" />
+        <option value="$PROJECT_DIR$/java/java 8/use cases/sum entire list of objects one property values" />
+        <option value="$PROJECT_DIR$/elastic search/Kibana" />
+        <option value="$PROJECT_DIR$/elastic search/query syntax" />
+        <option value="$PROJECT_DIR$/databases/why not to use many-to-many" />
+        <option value="$PROJECT_DIR$/java/hibernate/use cases/create ManyToMany association in the right way" />
+        <option value="$PROJECT_DIR$/elastic search/Lucene" />
+        <option value="$PROJECT_DIR$/elastic search/intro" />
+        <option value="$PROJECT_DIR$/databases/high performance tips" />
+        <option value="$PROJECT_DIR$/java/hibernate/use cases/fetch entities multiple levels deep" />
+        <option value="$PROJECT_DIR$/docker/intro" />
+        <option value="$PROJECT_DIR$/java/coding rules/creating models" />
+        <option value="$PROJECT_DIR$/java/testing/general testing rules" />
+        <option value="$PROJECT_DIR$/architecture/use cases/create architecture of an application" />
+        <option value="$PROJECT_DIR$/work ethic for programming" />
+        <option value="$PROJECT_DIR$/java script/Angular/usefull info/observable" />
+        <option value="$PROJECT_DIR$/java script/Angular/async programming/create interval" />
+        <option value="$PROJECT_DIR$/java script/Angular/async programming/unwrap the data from observable without storing references" />
+        <option value="$PROJECT_DIR$/java script/Angular/Angular 6/intro" />
+        <option value="$PROJECT_DIR$/java script/Angular/Angular 6/features" />
+        <option value="$PROJECT_DIR$/java script/Angular/use cases/features/speed up application" />
+        <option value="$PROJECT_DIR$/java script/Angular/Angular compiler" />
+        <option value="$PROJECT_DIR$/java script/Angular/architecture/architecture cases" />
+        <option value="$PROJECT_DIR$/java script/Angular/use cases/template/create advanced link to redirect to other component" />
+        <option value="$PROJECT_DIR$/java/hibernate/use cases/set different type to your database table column" />
+        <option value="$PROJECT_DIR$/java/hibernate/use cases/fetch queries/fetch data using where in clause" />
+        <option value="$PROJECT_DIR$/java script/Angular/use cases/services/return http response in subscribe body" />
+        <option value="$PROJECT_DIR$/java script/Angular/use cases/services/send and retrive query params from url" />
       </list>
     </option>
   </component>
@@ -469,11 +785,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="68" />
-    <option name="y" value="22" />
-    <option name="width" value="1243" />
-    <option name="height" value="1014" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="613" />
+    <option name="y" value="67" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -482,6 +798,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -493,65 +810,63 @@
             <path>
               <item name="programming" type="b2602c69:ProjectViewProjectNode" />
               <item name="programming" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java script" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="programming" type="b2602c69:ProjectViewProjectNode" />
               <item name="programming" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="reactive programming" type="462c0819:PsiDirectoryNode" />
+              <item name="java script" type="462c0819:PsiDirectoryNode" />
+              <item name="Angular" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="programming" type="b2602c69:ProjectViewProjectNode" />
               <item name="programming" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="reactive programming" type="462c0819:PsiDirectoryNode" />
-              <item name="just use it" type="462c0819:PsiDirectoryNode" />
+              <item name="java script" type="462c0819:PsiDirectoryNode" />
+              <item name="Angular" type="462c0819:PsiDirectoryNode" />
+              <item name="use cases" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="programming" type="b2602c69:ProjectViewProjectNode" />
               <item name="programming" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="java script" type="462c0819:PsiDirectoryNode" />
+              <item name="Angular" type="462c0819:PsiDirectoryNode" />
+              <item name="use cases" type="462c0819:PsiDirectoryNode" />
+              <item name="components communication" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="programming" type="b2602c69:ProjectViewProjectNode" />
               <item name="programming" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="spring webflux" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="programming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programming" type="462c0819:PsiDirectoryNode" />
-              <item name="wzorce projektowe" type="462c0819:PsiDirectoryNode" />
+              <item name="java script" type="462c0819:PsiDirectoryNode" />
+              <item name="Angular" type="462c0819:PsiDirectoryNode" />
+              <item name="use cases" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/macbi/Desktop/Maciek - documents/programming/java script/Angular/Angular 6/service worker" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538038677471" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/corejava" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547634767483" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming\java\coding rules" />
+      <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming\java script\Angular\usefull info" />
+      <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming\java script\Angular\use cases\features" />
+      <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming\java script\Angular\use cases\template" />
+      <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming\java script\Angular\use cases\components communication" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming\machine learning\smart net book" />
       <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming\java script\angular 5" />
       <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming\java\microservices\messages" />
-      <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming\java\concurrency\synchronization" />
-      <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming\java script" />
-      <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming\java\spring\aop" />
-      <recent name="C:\Users\macbi\Desktop\Maciek - documents\programming\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1506,17 +1821,49 @@
       <workItem from="1535652134416" duration="464000" />
       <workItem from="1535693129500" duration="970000" />
       <workItem from="1537386075172" duration="153000" />
+      <workItem from="1540991339407" duration="4820000" />
+      <workItem from="1541087508280" duration="37033000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="884334000" />
+    <option name="totallyTimeSpent" value="926187000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="68" y="22" width="1243" height="1014" extended-state="1" />
+    <frame x="613" y="67" width="974" height="1047" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24175824" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3358862" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="DB Browser" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.10729614" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="DB Execution Console" order="11" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.42548817" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -1532,7 +1879,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.0889371" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.10729614" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1542,25 +1889,6 @@
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15833333" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32893288" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.1378579" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1670,264 +1998,296 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/java/hibernate/collections">
+    <entry file="file://$PROJECT_DIR$/java/testing/mockito/intro">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/coding rules/development strategies">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        <state relative-caret-position="493">
+          <caret line="29" column="65" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/hibernate/hibernate connections between entities">
+    <entry file="file://$PROJECT_DIR$/java/spring/application design/mvc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/spring/application design/ddd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/testing/testing strategies">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/coding rules/development tips">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="65" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/java 8/use cases/sum entire list of objects one property values">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="63" selection-start-line="2" selection-start-column="63" selection-end-line="2" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/java 8/use cases/stop dealing with null pointers">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/hibernate/associations">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/elastic search/Kibana">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/hibernate/states/managed">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/elastic search/query syntax">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/hibernate/states/persistent">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/databases/why not to use many-to-many">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/hibernate/states/transient">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/elastic search/Lucene">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/hibernate/states/detached">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/elastic search/intro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="79" selection-start-line="3" selection-start-column="79" selection-end-line="3" selection-end-column="79" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/hibernate/basic actions/sorting, ordering entities in hibernate">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/java/hibernate/errors/multiple bags exception">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="59" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/hibernate/basic actions/initialize entity associations">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/databases/high performance tips">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/hibernate/basic actions/get list of entities from the database">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/hibernate/basic actions/get class statistics and metadata">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/java/hibernate/inheritance mapping" />
     <entry file="file://$PROJECT_DIR$/java/jpa/intro">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/hibernate/basic actions/create shared embedded fields for entities">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/java/jpa/entityManager">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="98">
+          <caret line="16" column="78" lean-forward="true" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/jpa/annotations/entity annotations">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/hibernate/basic actions/retriving items from the database">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/jpa/common problems/pesimistic locking">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wzorce projektowe/intro">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/jpa/common problems/locking">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/hibernate/annotations">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/hibernate/basic items">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/hibernate/inheritance mapping">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/reactive programming/filtering">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/reactive programming/BaseSubscriber">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="61" selection-start-line="1" selection-start-column="61" selection-end-line="1" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/reactive programming/controlling a demand">
+    <entry file="file://$PROJECT_DIR$/java/hibernate/use cases/fetch entities multiple levels deep">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="72" selection-start-line="4" selection-start-column="72" selection-end-line="4" selection-end-column="72" />
+          <caret line="4" column="54" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/reactive programming/disposeable">
+    <entry file="file://$PROJECT_DIR$/java/hibernate/use cases/create ManyToMany association in the right way">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="68" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/reactive programming/advance features and concepts">
+    <entry file="file://$PROJECT_DIR$/java/jpa/class hierarchy specification">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/concurrency/synchronization/static synchronization">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/spring/spring webflux/Flux">
+    <entry file="file://$PROJECT_DIR$/java/coding rules/exception">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+        <state relative-caret-position="102">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/reactive programming/Processor">
+    <entry file="file://$PROJECT_DIR$/java/testing/general testing rules">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="75" selection-start-line="1" selection-start-column="75" selection-end-line="1" selection-end-column="75" />
+        <state relative-caret-position="136">
+          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/reactive programming/ParallelFlux">
+    <entry file="file://$PROJECT_DIR$/docker/intro">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="340">
+          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/reactive programming/just use it/flux partitioning">
+    <entry file="file://$PROJECT_DIR$/architecture/use cases/create architecture of an application">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+        <state relative-caret-position="68">
+          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/reactive programming/buffering">
+    <entry file="file://$PROJECT_DIR$/work ethic for programming">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        <state relative-caret-position="170">
+          <caret line="10" column="89" lean-forward="true" selection-start-line="10" selection-start-column="89" selection-end-line="10" selection-end-column="89" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/reactive programming/grouping">
+    <entry file="file://$PROJECT_DIR$/java/coding rules/creating models">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/reactive programming/just use it/create a stream that's not depends on subscribers">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/java/concurrency/synchronization/release resources after specific number of operations">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/reactive programming/just use it/replace a request when a user clicks a button couple times">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/java/spring/spring webflux/controllers">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/reactive programming/transformations" />
-    <entry file="file://$PROJECT_DIR$/java/reactive programming/Reactor">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/reactive programming/Flux">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="90" column="43" selection-start-line="90" selection-start-column="43" selection-end-line="90" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/reactive programming/how this works" />
-    <entry file="file://$PROJECT_DIR$/java/reactive programming/Mono">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/reactive programming/just use it/change a flux stream for each subscriber">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/reactive programming/just use it/apply many item transformations in one function">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/reactive programming/just use it/filter out items depending on predicate">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="63" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/reactive programming/use cases" />
-    <entry file="file://$PROJECT_DIR$/java/reactive programming/threading and scheduling">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/reactive programming/scanning" />
-    <entry file="file://$PROJECT_DIR$/java/reactive programming/intro">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="46" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/reactive programming/just use it/accumulate techniques">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/reactive programming/hot vs cold subscribers">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="54" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/reactive programming/connectableFlux">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/Angular 6/intro">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/reactive programming/windowing">
+    <entry file="file://$PROJECT_DIR$/java script/Angular/Angular 6/service worker">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/Angular 6/features">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        <state relative-caret-position="102">
+          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/Angular compiler">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/features/speed up application">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/async programming/unwrap the data from observable without storing references">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/async programming/create interval">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/usefull info/observable">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="117" column="38" selection-start-line="117" selection-start-column="38" selection-end-line="117" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/usefull info/usefull info about template">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/architecture/basics.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-191" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/architecture/architecture cases">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/hibernate/use cases/control null values in persistance context">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/template/create advanced link to redirect to other component">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/spring/use cases/configure spring with jpa" />
+    <entry file="file://$PROJECT_DIR$/java/spring/spring w sieci.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/hibernate/use cases/fetch queries/fetch data using where in clause">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="42" lean-forward="true" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/spring/use cases/inject simple properties into a component">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/hibernate/use cases/set different type to your database table column">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/services/send and retrive query params from url.txt" />
+    <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/services/return http response in subscribe body">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/services/send and retrive query params from url">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>

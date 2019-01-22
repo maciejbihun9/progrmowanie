@@ -1,0 +1,15 @@
+
+ * use NgPlural structural directive:
+  - show an item if a variable is equal to a number in ngPluralCase
+  <div>
+   <input [(ngModel)] = "count"/>
+  </div>
+  <p>
+    I have {{count}} items, but I could also say
+    <span [ngPlural]="count">
+     <ng-template ngPluralCase="">nothing</ng-template>
+  	 <ng-template ngPluralCase="=1">there are no items.</ng-template>
+  	 <ng-template ngPluralCase="=2">there is one item.</ng-template>
+  	 <ng-template ngPluralCase="=3">there are a couple items.</ng-template>
+   </span>
+  </p>

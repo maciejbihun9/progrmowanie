@@ -1,0 +1,11 @@
+
+ * mocking makes viewing nested objects very hard,
+ - it is tough to look into nested collections and see what is there
+ and it is hard to investigate what went wrong in a test
+ - having a constructor in a model class makes harder to test, because
+ you have to provide all dependencies for tests,
+ - if there is a lot of dependencies then there will be a lot of code to write
+
+ * having setter methods really allows easier testing,
+
+ * do not test very easy code, it is very cost process,

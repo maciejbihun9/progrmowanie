@@ -1,0 +1,11 @@
+
+ * sometimes after some changes (added deps, controllers) applications
+ just stops working and throwing not really informative exceptions,
+ - javax/servlet/ServletContext class not found - there is no
+ too much information about that issue in the internet,
+
+ * just see if everything is ok with the application after every little change,
+ - every piece of stuff is so important!!!,
+
+ * before you decide to do something, check path that should work
+ for any little errors (IT IS VERY IMPORTANT)

@@ -1,0 +1,21 @@
+
+ * we are able to develop applications everywhere and then
+ run it everywhere
+
+ * get all docker images from docker hub,
+
+ * jenkins image contains it's own port: 50000,
+ so this might be considered as a server,
+
+ * we are creating instances of images, not images it self
+
+ * container:
+ - this is an instance of an image,
+ - couple containers might run in the same time,
+
+ * docker file:
+ - allows me to create my own docker image
+
+ example images:
+
+ * jenkins image

@@ -1,0 +1,10 @@
+
+ * load only a proxy using session:
+ - this will load only empty, proxy object that may be used to satisfy the dependency,
+ - Session session = entityManager.unwrap(Session.class);
+   ObligationGroup obligationGroup = session.load(ObligationGroup.class, obligationGroupAccountDto.getObligationGroupId());
+
+ * load only a proxy object using an object ID,
+ - WARNING! - if you try to load any of this object properties
+ then the lazy mechanism will load actual object,
+ - use entityManager.getReference(class, objectId)

@@ -1,0 +1,24 @@
+
+ * use normal entities for saving the data, because hibernate will store entire state
+ of an entity, so we might have to only set an attribute and end a transaction,
+ - hibernate uses dirty checking of all entities in the context,
+
+ * DTO projections:
+ - BookValue - this is a dto entity,
+ - this is a huge benefit in time (43% in time),
+ - long startQuery = System.currentTimeMillis();
+   List<BookValue> books = em.createQuery("SELECT new org.thoughts.on.java.model.BookValue(b.id, b.title) FROM Book b").getResultList();
+   long endQuery = System.currentTimeMillis();
+   timeQuery += endQuery - startQuery;
+
+ * make sure that all to-one associations are lazy loaded,
+ because they are eagerly loaded by default,
+ - eager loading might triple the time of execution
+
+ * use query hints:
+ - query hints gets the data from the database, so hibernate know that
+  objects can not be changed, so there is no need for dirty checking,
+ - this is just a little time benefit
+ - Query query = em.createQuery("SELECT b FROM Book b");
+       query.setHint(QueryHints.HINT_READONLY, true);
+       query.getResultList();

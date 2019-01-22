@@ -1,0 +1,16 @@
+
+ * use if else statement for input variables:
+  - innerWidth is the name for the host component,
+  - @Input() set innerWidth(val: number) {
+        this._innerWidth = val;
+
+        if (this._columns) {
+          const colByPin = columnsByPin(this._columns);
+          this._columnGroupWidths = columnGroupWidths(colByPin, this._columns);
+          this.setStylesByGroup();
+        }
+      }
+  - use get() to get this value:
+  - get innerWidth(): number {
+        return this._innerWidth;
+    }

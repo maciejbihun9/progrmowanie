@@ -1,5 +1,12 @@
 
+ * do not care too much about performance at the beginning of your project,
+ it will be ok to take care of it later on,
+
  * create a basic architecture plan for a new feature on the piece of paper,
 
- * start from the lowest parts of your system,
- and go to the top from there,
+ * start from the high part of your system and then you will see what you really need
+ - start from client need
+
+ eg. the same situation is with woman. if she is nice from first look, if first impression
+ is ok, then you probably won't be considering if she earns a lot of money straight away.
+

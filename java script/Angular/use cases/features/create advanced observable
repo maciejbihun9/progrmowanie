@@ -1,0 +1,25 @@
+
+ * function sequenceSubscriber(observer) {
+     const seq = [1, 2, 3];
+     let timeoutId;
+
+     // Will run through an array of numbers, emitting one value
+     // per second until it gets to the end of the array.
+     function doSequence(arr, idx) {
+       timeoutId = setTimeout(() => {
+         observer.next(arr[idx]);
+         if (idx === arr.length - 1) {
+           observer.complete();
+         } else {
+           doSequence(arr, ++idx);
+         }
+       }, 1000);
+     }
+
+     doSequence(seq, 0);
+
+     // Unsubscribe should clear the timeout to stop execution
+     return {unsubscribe() {
+       clearTimeout(timeoutId);
+     }};
+   }

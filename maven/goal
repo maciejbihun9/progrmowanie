@@ -1,0 +1,29 @@
+
+ * this is a specific task which contributes to the building and
+ managing of a project,
+
+ * a goal may be a part of many phases,
+
+ * a goal maybe executed after or before specific lifecycle,
+
+ * creating a goal we have to specify in which phase we are going to execute that
+
+ examples:
+
+ * delete all target folder contents,
+
+ * echo text messages for each phase of clean life cycle,
+ - this is executed for clean phase of a clean life cycle,
+ - <execution>
+         <id>id.clean</id>
+         <phase>clean</phase>
+         <goals>
+            <goal>run</goal>
+         </goals>
+         <configuration>
+            <tasks>
+               // print something in the console
+               <echo>clean phase</echo>
+            </tasks>
+         </configuration>
+      </execution>

@@ -1,0 +1,7 @@
+
+ * use created in angular components and inject them into an react application,
+ - already created html component in Angular might be used in react application
+ - imagine your favorite date picker that might be used with other frameworks,
+
+ * Ivy rendering engine:
+ - faster, and decreases the application size

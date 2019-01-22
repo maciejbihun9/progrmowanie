@@ -1,0 +1,11 @@
+
+ * get a reference to an html element using an ElementRef:
+ - this can be used after ngAfterViewInit() lifecycle method is called
+ - children of this template are not visible
+ + @ViewChild('htmlElement')private element: ElementRef<any>;
+
+ * get all elements of given type:
+ + @ViewChildren(EmployeeComponent) employers: QueryList<EmployeeComponent>,
+
+
+

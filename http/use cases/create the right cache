@@ -1,0 +1,7 @@
+
+ * bottom of the page:
+ - https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching?hl=pl
+
+ * seperate stuff that is often changed with that which is not and
+ serve it in seperate files,
+ - that will make sure we won't serve any non-modifible files to frequently,

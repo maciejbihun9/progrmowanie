@@ -1,0 +1,104 @@
+DESCRIPTION:
+
+ * the biggest adventage over relational database is that it works a lot
+ better for full text search, there is not joins because the structure is flat,
+
+ * nie powinien być stosowany jako podstawowa baza danych dla aplikacji,
+
+ * wyszukiwanie pełno tekstowe
+
+ * jest to baza no-sql do przechowywania json,
+
+ * napisany w java,
+
+ * głównie oparty na mechaniźmie indeksów,
+
+ * indeksuje konkretne słowa,
+
+ * do komunikacji używamy tylko api rest na porcie 9200,
+
+ * opóźnienie pomiędzy zaindeksowaniem, a odczytem jest zawsze stałe,
+ i wynosi około 1 sekundy,
+
+ * elastic działa tak trochę lajkowo, także próbuje dopasować np. Nowak do Nowak-Kowalski
+
+ * elastic rozpoznaje słowa podobne - fox, foxes, etc, co pozwala
+ na zmniejszenie macierzy i zaindeksowanie tych słów w jendym indeksie
+
+ * podczas zapisywania usuwane są stop words, czyli bardzo popularne słówka w języku,
+ bo mogłoby to spowodować zbyt dużą ilość wyników,
+
+ * nie można zmienić mapowania, czyli tak jakby nie można zmienić tabelki,
+ podczas dodawanie nowego dokumentu z dodatkowym, lub zmienionym mapowaniem
+ dane zostaną zapisane w nowym mapowaniu, a stare sane zostaną przewalno do nowego.
+ Stare dane trzeba będzie usunąć,
+
+STRUCTURE:
+
+ * mappings are used to tell the exact type of a field in a document
+
+CLUSTERING:
+
+ * clustering is done automatically,
+
+ * after another cluster is turned on the environment
+ it is detected and data is spread around those clusters,
+
+ * if one node is turned off then all data goes to first node,
+ so this is a self-organizing structure
+
+ELASTIC MONITORING:
+
+ * aplikacja Hq,
+
+BASICS:
+
+ * INDEX:
+ - in relational database this is considered as a database
+ - is a collection of documents that have similar characteristics (eg. the same terms),
+ - index is stored in shards,
+ - Index = Shards + Replicas
+
+ * SHARD:
+ - this is a box for data,
+ - elastic saves the data in shards by it's own,
+ to distribute and make sure that future queries will
+ be efficient
+
+ * REPLICA:
+ - kopia shardów
+
+ * TYPE:
+ - in relational database this is like a table, but table is fixed where type rely on
+ all documents data types,
+ - służy do przechowywania różnych, ale w jakiś sposób podobnych danych w ramach jednego indexu,
+
+ * NODE:
+ - instancja elastica w klastrze
+
+ * data -> json
+
+ * update -> atomic delete and put,
+
+ * Elastic -> Index, Type, Document
+   RDMS -> DB, Table, Row
+
+EXAMPLES:
+
+ * put an item into the database:
+ - we have to put also an id, because instead we will receive a UUID which is not really readable
+ - curl -XPUT  localhost:9200/party/party/1?pretty -d '{
+    "id": 1,
+    "name" : "Maciej"
+ }'
+
+USE CASES:
+
+ * it might be used with simple sql database, because it is not considered to be the main database for an application,
+ - it is said that people are pushing the data from relational database to the elastic search database,
+
+ * use that for big databases, because in relational database complicated
+ associations causes not the most efficient queries, where in no-sql base where
+ data is more distributed it works much faster,
+
+ * store blog content and index those blogs using it's content to find them better

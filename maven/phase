@@ -1,0 +1,8 @@
+
+ * each maven life cycle is built from many phases,
+
+ examples:
+
+ * compile an application:
+ - all phases will be executed up to that phase
+ mvn compile

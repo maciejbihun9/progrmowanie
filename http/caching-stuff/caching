@@ -1,0 +1,49 @@
+
+ * server response headers contains info about how long a user
+ is able to store this data in cache
+ - this is controlled by max-age
+
+ * no-cache directive:
+ - is for limiting data transfer over the network,
+ - first web browser checks if a resource was changed,
+ - if not then we do not poll for a resource again
+ to limit data transfer over the network
+
+ * no-store directive:
+ - it blocks caching server responses on the client side,
+ - it's great to totally disable a cache
+
+ * public/private responses:
+ - private message allows client side to store application data, but
+ blocks storing the dara in CDN network,
+ - public is by default, defining max-age
+ indicates that we are able to cache that response,
+ - we should make our responses public only when we have the same resources
+ for every user
+
+ * max-age directive:
+ - indicates that we can use given resource given amount of time
+ before polling for a fresh copy once again,
+
+ * E-TAG - is like a dataprint of a resource,
+ - if resource changes then this E-TAG also changes,
+ - we put that dataprint in the url, so doing so we indicate
+ that we want to change our resource,
+
+ * server sends a validation token with a response, so this is used
+ to check if given resource was changed or not, after sending
+ another request to a server,
+ - if E-TAG was not changed, then the resource won't be sended,
+ so that limits data transfer to minimum,
+
+ * if a resource was not changed then a server sends a response with
+ status 304, which means that resource was not changed with the same
+ token value and max-age
+
+ * a browser automatically sends E-TAG to a server to check whether
+ a resource was changed or not, but we have to make sure that a server
+ sends those validation tokens in the first place,
+
+ * we can apply a cache control policy to every resource,
+
+ * the best request is a request that does not need any communication with a server

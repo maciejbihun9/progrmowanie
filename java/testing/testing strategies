@@ -1,0 +1,6 @@
+STRATEGY #1 (Using already stored data in the database):
+
+ * query the data to get test data, but do not change that data to make sure
+ nothing changes for other tests,
+
+STRATEGY #2 (try to do all logic tests in simple unit tests):

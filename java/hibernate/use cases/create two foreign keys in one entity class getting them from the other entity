@@ -1,0 +1,13 @@
+
+ * Create ADDR_ID, ADDR_ID foreign keys in the office entity getting those id's from address entity class
+    @Entity
+    public class Office {
+       @ManyToOne(fetch = FetchType.LAZY)
+       @JoinColumns({
+           @JoinColumn(name="ADDR_ID", referencedColumnName="ID"),
+           @JoinColumn(name="ADDR_ID", referencedColumnName="ZIP")
+       })
+       private Address address;
+    }
+
+

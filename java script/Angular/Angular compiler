@@ -1,0 +1,11 @@
+
+ * it is a great piece of engeenering,
+
+ * browsers might execute java script differently, so that is why we need compiler out there that is
+
+ * transforms HTML Code into a optimized TypeScript Code which creates an equivalent DOM structure,
+
+ * aot compiler reads component metadata once, creates a factory of specific components
+ and creates a specific component when it is needed
+
+ * in docs th

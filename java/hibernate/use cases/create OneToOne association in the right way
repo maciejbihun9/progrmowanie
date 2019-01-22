@@ -1,0 +1,5 @@
+
+ * Create foreignKey association to address entity in this entity
+ - @OneToOne(fetch = FetchType.LAZY)
+ - @JoinColumn(name = "addressId")
+ - private Address address;

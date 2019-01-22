@@ -1,0 +1,10 @@
+
+ * we can control what is on the screen depends on specific boolean values
+  - <ng-container *ngIf="lessons; then loaded else loading">
+    </ng-container>
+    <ng-template #loaded>
+      <div>Items loaded!</div>
+    </ng-template>
+    <ng-template #loading>
+      <div>Loading...</div>
+    </ng-template>

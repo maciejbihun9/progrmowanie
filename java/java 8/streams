@@ -1,7 +1,9 @@
 
  * Strumienie dzia³aj¹ jak taœma w jakieœ fabryce,
 taœma jedzie, a graupa ludzi wykonuje przy elementach na taœmie okreœlone zadania,
-bez potrzeby wykonywania tego wiele razy.
+bez potrzeby wykonywania tego wiele razy,
+
+* jest to eliminacja pêtli, aby kod by³ bardziej wyrazisty oraz, aby wprowadziæ podejœcie funkcjonalne,
 
  * metoda: list.stream() - wrzuca wszystkie elementy list na pas, dziêki temu
 mo¿na wykonaæ na nich okreœlone czynnoœci,
@@ -10,10 +12,10 @@ people.stream()
  .filter(p -> p.getLastName().startsWith("C")) 
  .forEach(p ->  System.out.println(p.getFirstName()));
 
- - jeœli jakaœ osoba posiada nazwisko zaczynaj¹ce siê na "C",
+ - jeœli jakaœ osoba posiada nazwisko nie zaczynaj¹ce siê na "C",
 to jest automaczynie usuwana z taœmy i dalszy kod nie jest wykonywany
 
- - nie trzeba wykonywaæ wielu iteracji listy, bo mo¿na wykonaæ wiele operacji zajednym przejœciem pasa,
+ - nie trzeba wykonywaæ wielu iteracji listy, bo mo¿na wykonaæ wiele operacji za jednym przejœciem pasa,
  - mo¿na modyfikowaæ obiekty podczas ich przechodzenia po pasie,
  - mo¿na dodawaæ wiele modyfikacji do danego obiektu,
 

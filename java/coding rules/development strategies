@@ -1,0 +1,30 @@
+STRATEGY #1 - TDD APPROACH:
+
+ description:
+
+ * speed does not matter, only quality really matters,
+
+ * this is a strategy only for me, to speed up a process of development,
+
+ * I go to the test class and I see that I have left some comments and
+ I know right away that there is still something to test,
+
+ * when test method is ok then I remove comments,
+
+ * when I look into test classes and see that there is no comments then I know that this test class is ok,
+
+ steps:
+
+ * write a method definition with parameters,
+
+ * write comments for one method but for all cases that might happen in that method,
+
+ * write test methods under each comment,
+
+ * each test method will have their own test scope,
+
+STRATEGY #2 - IMMUTABILITY APPROACH:
+
+ description:
+
+ * try to avoid allowing users to change already created objects,

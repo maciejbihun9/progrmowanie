@@ -1,0 +1,5 @@
+
+ * this error happens when you try run an application after package name changes and
+ you did not build the application with those changes
+
+ * mvn clean, mvn spring-boot:run should help

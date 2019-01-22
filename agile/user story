@@ -1,0 +1,33 @@
+
+ * USER FIRST,
+
+ * WHO, WHAT AND WHY, avoid HOW
+
+ * it should be considered as a thing that enables a team to quickly
+ see whether an idea is good or bad,
+
+ * this is like a particular functionality,
+ - user is able to create a user profile, so that he can sell himself
+ better for a banker to receive a bigger loan,
+ - user ia able to register a service, so that he can make his
+ service visible for an admin,
+
+ * see the product from a user perspective!!!,
+ so that you won't dead lock on some feature that is not really important
+ to do it in the first place,
+
+ * this is a popular way to describe a system request, a user request,
+ what user is able to do in a system,
+
+ * user story is splitted into story points which informs us
+ about the amount of work that we have to put into it to perform that,
+
+ * creating a story has to bring a value for a user,
+
+ tips:
+
+ *
+
+ questions:
+
+ * ask yourself about what value that this specific user story brings to a system,

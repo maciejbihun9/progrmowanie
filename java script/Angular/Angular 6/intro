@@ -5,7 +5,7 @@ NEW FEATURES:
  - we will have the possibility to add Angular components to already
  existing applications written in different frameworks
 
- zastosowanie:
+ use cases:
  - take great progress bar from Angular 6 to old environment written in react!!
 
  * Rendering engine: Ivy:

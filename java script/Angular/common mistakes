@@ -1,7 +1,0 @@
-
- * installing node_modules many times causes many problems,
-
- * when installing all modules once again having package-lock in the explorer
- delete it and try another one,
-
- * in package.json file set good node_modules packages version without any tyldas and etc.,

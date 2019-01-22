@@ -1,0 +1,5 @@
+
+ * split application on many modules:
+ - api modules,
+ - service modules,
+ - shared components,

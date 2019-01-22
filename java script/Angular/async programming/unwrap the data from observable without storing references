@@ -1,0 +1,20 @@
+
+ * use async pipe to do it,
+
+ * async pipe subscribes to an observable automatically,
+
+ * change detection is fired only after reference change,
+ growing collections can not force it to do a job
+
+ * async pipe unsubscribes from observable everytime
+ a component is destroyed and reference changes,
+ so creating a subscription reference is not needed
+ and this protects us from memory leaks,
+ - saying that it is really important to note that adding a new item to it does not changes it's reference
+
+ * use changeDetection: ChangeDetectionStrategy.OnPush change
+ detection strategy when playing with async pipe, because when we pass
+ an observable to a component with it, async pipe will detect change in growing list
+ even if reference was ont changed
+
+ * it is a pure gold for managing async tasks

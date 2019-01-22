@@ -1,0 +1,15 @@
+
+ * fetch all nested entities with a query:
+
+ drawbacks:
+ - this will fetch all the data for obligation groups,
+
+ implementation:
+ - List<ObligationGroup> obligationGroups = entityManager.createQuery(
+                   "select o " +
+                           "from ObligationGroup o " +
+                           "join fetch o.userAccountsInObligationGroup u " +
+                           "join fetch u.userObligationStrategies uo " +
+                           "join fetch uo.userRegisteredService ur " +
+                           "join fetch ur.userRegisteredServiceTags urt "
+                   , ObligationGroup.class).getResultList();

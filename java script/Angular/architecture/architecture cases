@@ -1,44 +1,11 @@
 SALES_ANALITICS_CLIENT:
 
- components:
- * AppComponent does not have anything, it is a clear comp,
- it contains only a router outlet with host div
-
- * Router - we can define all routes in a seperate file and parse all those objects to Route instance
- - static pacman: Route  = { path: 'pacman', component: PacmanComponent};
-
- * Modules - I shouldn't define all components and modules in only one Module, I should split them around.
-
  services:
- * all urls should go to environment file. In this project I found that thos are declared in the top of a component.
- * some of those get requestes are not generic, are just without types,
- btw, I just think that those are because of boolean types,
-
- * services are also responsible for providing request pipeline, to form a response,
-
- * we should not declare any subscribe places in services,
-
- * we should not subscribe in services, - THIS IS A BAD PRACTICE
+ * do not subscribe in services this is a bad practice,
 
  * we can move all services to folder with shared components,
- * service can contaian a model class as an interface (eg. UserService contains User Interface with defined fields)
+ * service can contain a model class as an interface (eg. UserService contains User Interface with defined fields)
  - we can skip here additional files,
-
- * define one generic http methods that contains he same values:
- - private get(url) {
-           return this.http.get(url,
-           { headers: this.headers, withCredentials: true })
-           .map(response => response)
-       }
- - I can see that .map() method is used quite extensively,
- - we can use that just because in ts we have autocasting
- - isCurrentUserAdmin() {
-           return this.get(this.baseUrl + `user/isadmin`)
-       }
-
-   authorised() {
-           return this.get(this.baseUrl + 'user/authorized')
-       }
 
  model classes:
  * we have in shared folder models folder:
@@ -61,12 +28,12 @@ SALES_ANALITICS_CLIENT:
  directives:
  * we can define many directives in one file
 
- * zastosowanie:
+ + use cases:
  * stylowanie elementów html, [ngStyle], albo nasze dyrektywy, które mają
  deskryptywne nazwy,
 
  * wydaje mi się, że kod odpowiedzialny za obsługę elementów html powinien być tylko
- w kodzi ts, a nie jako part html, bo wtedy kod html jest o wiele bardziej przenośny.
+ w kodzie ts, a nie jako part html, bo wtedy kod html jest o wiele bardziej przenośny.
  Można tylko podmienić funkcje w kodzie html i wwszystko działa pod inną maską.
  Dodanie tam tylko i wyłącznie innego silnika,
 
@@ -74,18 +41,17 @@ SALES_ANALITICS_CLIENT:
  - <div *ngIf="inputRegion.expanded">
 
  security issues:
- * in corporate world we can get a current user just going unser specified url:
+ * in corporate world we can get a current user just going under specified url:
  - http://c4w30806.itcs.hpecorp.net:4000/api/user
- - aha ale przedtem musiałem podać credentiale, a  to jest serwer tej aplikacji
 
  --------------------------------------------------------------------------------------------
 
  * communication between components is done using Subjects() and observables
  - in some other component we can create a component and call propagateUpdatedRegions() function with a value
  UpdatedRegions is an output event that can be emitted from this component.
- This is a way of callling functions from other components in the contents of others.
+ This is a way of calling functions from other components in the contents of others.
 
- THis is an example of putting a new message to a subject and receiving this message using an Event emmiter
+ This is an example of putting a new message to a subject and receiving this message using an Event emmiter
  not simple subscription.
 
  I can add a new message to a subject()

@@ -1,6 +1,0 @@
-
- * install all packages from packages.json:
- - npm install
-
- * install new package (globally):
- - npm install -g @angular/cli

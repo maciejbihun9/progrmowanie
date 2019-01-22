@@ -1,0 +1,22 @@
+BASICS:
+
+ * ddd stands for - Domain Driven Design,
+
+ * domain model - An object model of the domain that incorporates both behavior and data,
+
+ * this is the total opposition to Anemic Domain Model,
+
+ * domain objects and business objects are the same thing,
+ but removing all business logic from model is a bit anemic,
+
+ * you can not create good banking system unless you deeply understand what the banking is all about,
+
+ * first of all remember that this is not a rule, it's just a tool,
+
+ * ddd is more about process of development than the code itself,
+
+IMPLEMENTATION:
+
+ * move all complex logic to the domain model,
+
+ * if business logic is spread between business layer and domain layer the the balans is maintained

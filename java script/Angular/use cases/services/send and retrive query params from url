@@ -1,0 +1,7 @@
+
+ * send request:
+ - this.router.navigate([`/obligation-groups/${this.obligationGroupId}/bonds/${this.bondId}/purchase-coupons/purchase-details`,
+  {'purchaseId': response.body['id']}]);
+
+ * get the data from request:
+ - const purchaseId = this.route.snapshot.paramMap.get('purchaseId');

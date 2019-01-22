@@ -1,0 +1,10 @@
+
+ * make sure that you load the data in Transactional context:
+ - use @transactional annotation to do it,
+
+ * use EntityGraph to do it,
+ - but make sure that an object really will have many of objects, because otherwise i can load that eagerly
+
+ worth to know:
+ * hibernate loads lazy collection when I stop on debug point in transactional method,
+ but when I do it without debug point in that method I will get lazy initialization exception,

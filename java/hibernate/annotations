@@ -1,16 +1,4 @@
 
- * create an indentifier id for a table:
- - @Id
-
- * many this class instances can be connected with class field
- - @manyToOne
-
- * mark a class field as not optional (has to be not null):
- - @Basic(optional = false)
-
- * specify basic table column attributes:
- - @Column(name = "name", nullable = false, unique = true, length = 23)
-
  * create in the database a foreignKey property that indicated the connection between classes:
  - The annotation @JoinColumn indicates that this entity is the owner of the relationship
  (that is: the corresponding table has a column with a foreign key to the referenced table),
@@ -55,6 +43,6 @@
 
  * Dość częstym zadaniem jakie musimy wykonać zapisując dane naszej aplikacji jest również dołączenie informacji o tym kto i kiedy stworzył,
  a później aktualizował dany rekord. Zazwyczaj informacje takie trafiają do czterech kolumn: data stworzenia, data aktualizacji, użytkownik,
-  który stworzył oraz zaktualizował rekord. Są to tzw. kolumny audytowe.
-  W momencie, gdy wykorzystujemy do zapisu naszych danych implementację JPA, mamy sprawę bardzo ułatwioną.
+ który stworzył oraz zaktualizował rekord. Są to tzw. kolumny audytowe.
+ W momencie, gdy wykorzystujemy do zapisu naszych danych implementację JPA, mamy sprawę bardzo ułatwioną.
  - @MappedSuperclass

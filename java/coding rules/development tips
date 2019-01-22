@@ -1,0 +1,6 @@
+EARLY STAGE OD THE PROJECT:
+
+ * it is very important to split your reality on models first,
+ before creating services and controllers
+ - badly implemented relations might cause a lot of time during refactoring
+ of your tests, constructors, all calls, you might be couple days

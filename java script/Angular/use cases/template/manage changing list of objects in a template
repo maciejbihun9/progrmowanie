@@ -1,0 +1,12 @@
+
+ * every single time a list is changed (new item added, removed) the list is changed
+ and this might cause not efficient behaviour on the template side, because
+ Angular might invoke cascade DOM change.
+ - this works especially well when we get from the server items with the same id's
+ but if we get items with totally different id's then we might end up with pour performance.
+
+ * <div *ngFor="let hero of heroes; trackBy: trackByHeroes">
+     ({{hero.id}}) {{hero.name}}
+   </div>
+
+ * trackByHeroes(index: number, hero: Hero): number { return hero.id; }

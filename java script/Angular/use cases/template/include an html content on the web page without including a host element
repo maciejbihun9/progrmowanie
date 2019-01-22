@@ -1,0 +1,16 @@
+
+ * use ng-container to place na html content without host element
+ - <p>
+     I turned the corner
+     <ng-container *ngIf="hero">
+       and saw {{hero.name}}. I waved
+     </ng-container>
+     and continued on my way.
+   </p>
+
+ * It's more like the curly braces in a JavaScript if-block:
+ - if (someCondition) {
+     statement1;
+     statement2;
+     statement3;
+   }

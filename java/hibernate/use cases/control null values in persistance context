@@ -1,0 +1,5 @@
+
+ * mark a class field as not optional (has to be not null):
+ - it refers to a value in java application that can not be optional, where
+ - @Column(nullable = false) - indicates that this field can not be null in the database.
+ - @Basic(optional = false) - this field can not be null when you try to persist to a persistence context

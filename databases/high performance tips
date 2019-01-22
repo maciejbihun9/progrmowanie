@@ -1,0 +1,10 @@
+
+ * use the smallest data type for columns to make sure that index will be the fastest on the database,
+
+ * avoid writting a lot of many-to-many associations,
+ - never write many-to-many mappings with a list, Hibernate handles
+ the removal of associated entities very inefficiently,
+
+ * List and Bug is mapped to java.util.List, so if you use a list
+ without specifying an order, you are using Bug.
+ - this is the expected behaviour, because ordering slows down a query,

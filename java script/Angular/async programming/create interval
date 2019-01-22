@@ -1,0 +1,4 @@
+
+ * produce an event having time interval:
+ - import {interval} from 'rxjs/internal/observable/interval';
+ - interval(1000).subscribe(value => {});

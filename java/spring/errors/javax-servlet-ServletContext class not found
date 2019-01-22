@@ -1,0 +1,14 @@
+
+ * it happens when starting an application,
+
+ * this is a very hard exception,
+
+ * there is no many responses to that issue and
+ nothing seems to work
+
+ resolution:
+
+ * run your application with: mvn spring-boot:run
+
+ * after couple hours of searching in the internet i created
+ another project and started working again

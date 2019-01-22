@@ -1,0 +1,7 @@
+
+ * if the function's assumptions about its inputs are violated,
+ it should throw an exception instead of returning normally,
+
+ * we should create our own exceptions when:
+ - Business logic exceptions – Exceptions that are specific to the business logic and workflow.
+ These help the application users or the developers understand what the exact problem is.

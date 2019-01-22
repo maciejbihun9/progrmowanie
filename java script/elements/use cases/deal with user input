@@ -1,0 +1,10 @@
+use forms:
+
+ * use inputs inside of form tags because this is semantically correct,
+
+ * forms allow us to send the data to the server without AJAX and js,
+
+ * if your intent is to send the data then you should use forms (for inputs),
+
+ * use forms when you want to give a user the ability to send the data even
+ when js is turned off,

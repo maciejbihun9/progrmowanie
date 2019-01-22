@@ -1,0 +1,16 @@
+BASICS:
+
+ * this is a high-performance full text search engine:
+
+HOW IT WORKS:
+
+ * quickly finds all words in given table,
+
+ * text-index stores info about all stored terms in given table,
+
+ * full text search uses all available search methods in sql,
+
+ * this index is not the same as text-index,
+
+ * an index is associated with all terms
+ and this is called text-index

@@ -1,0 +1,10 @@
+
+ * basically we should cache all resources
+ as longest as we can,
+
+ * it is said that almost a 50% of web site responses is buffered,
+
+ * in private web sites, where resources gets outdated quickly we
+ probabaly won't buffer too much resources
+
+ * it is very important to return a cache-control and e-tag with your resource!!!

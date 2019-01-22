@@ -1,0 +1,9 @@
+DESCRIPTION:
+
+ * this is valuable when we do not want to create another separate table in the database,
+ but instead we would like create an embedded object into an entity with fields from table associated with host entity
+
+ * create embedded field:
+ - make sure to annotate UserDetails class as @Embedable
+ - @Embedded
+   UserDetails userDetail

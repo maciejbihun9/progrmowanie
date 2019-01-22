@@ -1,0 +1,21 @@
+
+ * unidirectional association may produce additional not needed tables in the database, so
+ it is just fine to create bidirectional association between tables,
+
+ * just put @JoinColumn annotation in the entity class where foreign key should be placed,
+
+ * it is a common mistake to associate two tables with two separate associations
+ using @JoinColumn on both sides,
+ - there should be mappedBy attribute in the annotation to indicate that column in int the other entity class
+ - use @JoinColumn in the other entity to indicate that this is a join column for both tables
+ - you are telling hibernate that the mapping is already created,
+ given field exists (that exists in the other entity),
+ - mappedBy tells hibernate that the key for the relation is on the other side,
+
+ example:
+ - @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "obligationGroup")
+   private List<ObligationGroupAccount> obligationGroupAccounts = new ArrayList<>();
+
+ - @ManyToOne(optional = false, fetch = FetchType.EAGER)
+   @JoinColumn(name = "OBLIGATION_GROUP_ID", nullable = false)
+   private ObligationGroup obligationGroup;

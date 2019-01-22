@@ -1,0 +1,6 @@
+
+ * append styles to the first and last items:
+  <tr *ngFor="let hero of heroes; let first = first; let last = last"
+      [ngClass]="{ first: first, last: last }">
+      <td>{{hero.name}}</td>
+  </tr>

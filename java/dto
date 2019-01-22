@@ -1,3 +1,4 @@
+BASIC INFO:
 
  * the main purpose why the dto was introduced was to limit web services calls to receive the data,
 
@@ -6,3 +7,14 @@
  * define only fields that you may need,
 
  * should not contain any business logic,
+
+ * developers says that this is an anti-pattern for applications,
+ and should be used only for complex data, complex applications,
+
+ * developers uses JsonObject instead of dto objects,
+
+BENEFITS:
+
+ * I won't need @JsonIgnore and XmlTransient annotations,
+
+DRAWBACKS:

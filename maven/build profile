@@ -1,0 +1,6 @@
+
+ * config values to set default values of maven build
+
+ * we can customize build for different envs,
+
+ * we can even define a profile for a machine user, project, global maven settings,

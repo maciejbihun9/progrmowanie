@@ -18,6 +18,9 @@ FIRST LEVEL CACHE:
  * flush():
  - this method moves all the data from cache to the database(it means all changes),
 
+ * managing the 1st level cache takes time and can even
+ become a problem if you select hundreds or thousands of entities.
+
 SECOND LEVEL CACHE:
 
  * is sessionFactory scoped, so once the data is loaded with session that becomes from specific sessionfactory then stays there,

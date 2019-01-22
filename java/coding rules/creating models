@@ -1,0 +1,6 @@
+STRATEGY #1 (Car methodology):
+
+ * think about your models like about car components
+ - is it ok to create an instance of a class with these properties ?
+ - should it be possible to have an instance with this bad properties ?
+

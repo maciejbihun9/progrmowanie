@@ -1,0 +1,25 @@
+
+ * Angular is able to check milions of bidings in miliseconds,
+
+ * each component has it's own change detector,
+
+ * after each change in one change detector angular runs all change detectors,
+
+ * change detector checks bindings:
+ - {{ name }}, [name]=”user.name"
+
+ * change detection is made after each:
+ - http call,
+ - after each button click,
+ - after each event (keystroke, mouseclick, mousemove)
+
+ * it does not matter where asynchromus call was made,
+ change detection starts on the top of the tree,
+
+ examples:
+
+ * we can add many many items to our list that is an input parameter
+ in a component that has ChangeDetectionRef.onPush and change detection
+ will not be called until we call it,
+
+ - then will be called only a subtree

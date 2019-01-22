@@ -1,0 +1,8 @@
+
+ * is split into several phases,
+
+ * phase represents a stage in a lifecycle,
+
+ * we have two types of plugins:
+ - build plugin, they all have to be defined in their scope,
+ - reporting plugin, they all have to be defined in their scope,

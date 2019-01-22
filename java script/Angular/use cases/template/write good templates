@@ -1,0 +1,6 @@
+
+ * avoid passing values to component, it is better when a template is self-contained:
+ - <input #box (keyup)="0">
+   <p>{{box.value}}</p>
+
+ * do not bind to a component if you don't need it,

@@ -1,0 +1,58 @@
+STRATEGY #1 (Service layer with logic):
+
+ * Model:
+ - should follow single principle rule,
+ - should not contain any business logic,
+ - should store only data, not parsing, not converting (eelx pattern),
+ - do not concern that in the application might live an entity that should not be
+ living (like object with unreal data in it - lower than zero account balance)
+
+ * Controller:
+ - class should call Service classes methods,
+ - this is the presentation layer,
+ - The dispatcher scans such annotated classes for mapped
+ methods and detects @RequestMapping annotations!!! - IMPORTANT,
+ - You can only use @RequestMapping on @Controller annotated classes,
+ - should not call any repo methods, this is the Service layer responsibility
+ - this is like web controller! (before I thought that this is like a web service)
+ - should communicate only with service layer,
+
+ use cases:
+ - handle incoming http requests,
+ - commonly all methods are annotated with @RequestMapping
+
+ * Service:
+ - this is the place where all business logic should be implemented,
+ - all those methods should be called by controllers,
+ - we should watch to not associate all methods with transactional context,
+ - detach service layer from controller layer,
+ - acts as a transaction boundery,
+
+ problems:
+ - this approach might introduce that it won't be easy to find out logic in services,
+ - we might have to copy logic from one service into another,
+ - it might introduce many circular dependencies,
+ - typically this is the most problematic layer in the application
+
+ use cases:
+ - perfect place for calling the database layer (like persisting items into the database, DAO layer)
+
+STRATEGY #2 (Model layer with logic):
+
+ description:
+ - it is great to find the right balance between logic in models and service layer,
+
+ * Model:
+ - should contain more business logic, because moving all of that to the service layer
+ will cause mocking a lot of things what might cause very messy test classes,
+ - takes care about business logic,
+ - this makes application easier to maintain, easy to find how stuff works,
+ - just make sure to represent reality in the right way,
+
+ * Service:
+ - won't have too much business logic,
+ - services are responsible for taking care of application logic
+
+STRATEGY #3 (TRY TO REPRESENT THE REALITY IN THE RIGHT WAY):
+
+ *

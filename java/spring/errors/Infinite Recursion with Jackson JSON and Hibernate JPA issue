@@ -1,4 +1,7 @@
 
+ * you probably using model classes to send using http:
+ - create dto additional layer to send only data that you need,
+
  * use one of those annotations:
  - @JsonManagedReference - to not persisting entity collection,
  - @JsonBackReference - to not persist back reference

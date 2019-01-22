@@ -1,0 +1,6 @@
+
+ * it is a bit not efficient
+
+ * it usually hides bad understanding of a system,
+ - adding another entity that connects to-many items
+ between them selves usually ends that relationship

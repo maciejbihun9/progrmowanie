@@ -1,0 +1,9 @@
+
+ * fetch all obligation groups for given id's array:
+ - @Query("select o " +
+               "from ObligationGroup o " +
+               "join fetch o.userAccountsInObligationGroup u " +
+               "join fetch u.userObligationStrategies uos " +
+               "join fetch uos.bonds b " +
+               "where o.id in :obligationGroupsIds")
+       List<ObligationGroup> getObligationGroupsWithBonds(String [] obligationGroupsIds);

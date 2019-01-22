@@ -1,0 +1,10 @@
+
+ * use Request Body Search:
+ - curl -XPOST "http://localhost:9200/party/party/_search" -d
+ '{
+    "query": {
+        "match": {
+            "name" : "Kowalski"
+        }
+    }
+ }'

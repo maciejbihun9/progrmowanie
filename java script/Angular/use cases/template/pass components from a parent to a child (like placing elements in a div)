@@ -1,0 +1,29 @@
+
+ * place components in a child component:
+ - @Component({
+    selector: 'alert',
+    template: `
+        <h1 (click)="alert()" #h1>{{type}}</h1>
+        <ng-content></ng-content>
+    `
+
+ })
+ export class AlertComponent {
+    @ViewChild("h1") h1;
+    @ContentChild("inSideNgContent") inSideNgContent;
+
+    ngAfterViewInit (){
+    }
+ }
+
+ - @Component({
+       selector: 'my-app',
+       template: `
+           <alert>
+            <p #insideNgContent>Inside ng-content</p>
+           </alert>
+       `
+    })
+    export class App {
+
+    }

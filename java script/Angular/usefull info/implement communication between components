@@ -1,0 +1,73 @@
+
+OBSERVABLE SUBJECT PATTERNS:
+
+ // define a subject that behaves as a event emmiter, we can call a next on it, send item
+ * public static readonly stateChangedSource: Subject<UserRegisteredService> = new Subject<UserRegisteredService>();
+
+ // make a subject to work as an observable to subscribe for emitted items
+ * private static readonly newUserServiceRegistered$: Observable<UserRegisteredService> =
+  UserRegisteredServicesComponent.stateChangedSource.asObservable();
+
+ // subscribe
+ *  UserRegisteredServicesComponent.newUserServiceRegistered$.subscribe((newUserRegisteredService) => {
+           this.userRegisteredServices.push(newUserRegisteredService);
+       });
+ // send next item
+ * UserRegisteredServicesComponent.stateChangedSource.next(userRegisteredService);
+
+ * we can use BehaviorSubject to store last emitted value to our observers,
+
+USE Rx.BehaviorSubject:
+
+ * the instance of this class represents wartość zmienną w czasie do której można subsrybować,
+ także działa niemal tak samo jak subject,
+
+ * te osoby dostają nową wartość po tym jak będzie ona dostępna! - zajebiste,
+
+SENDING AN OBJECT INSTANCE TO LOWER COMPONENTS,
+
+ * If we want to manage only one state for a component, then we have to create an Injectable service
+ that manages state of that component. this can be injected in any place and it will be available in any place
+ where it was injected.
+
+ * @Input() in lower component receives instance, so this is a reference to an object not a simple label!!,
+ once changed, this new variable can be used in different places depends on when we subscribe to that subject.
+
+ * send an instance of an object to lower objects and change states there
+
+ * those properties of an instance will be also changed in upper object
+
+EVENT EMMITERS:
+
+  * Emit an event from lower in the hierarchy component to the higher component we use:
+  - @Output() selectVideo = new EventEmitter();
+  - send selected object using (vid):
+  // this method emits this object to the world and from this time it can be catched
+  // from others components.
+  // an even does not have to emit any values, it can be track as simple event.
+  // modyfikatory dostępu nic nie psują
+
+  * works only for parent - child relation like:
+  <component (emitterName)="OnSomething($event)">
+  - then emitterName has to be declared in component
+
+  * we can also emit many variables at once:
+    - this.selectVideo.emit({
+            direction,
+            scrollYPos: this.scrollYPos,
+            scrollXPos: this.scrollXPos
+          });
+
+  * catch an event in higher component:
+  - (selectVideo)="onSelectVideo($event)"
+  - where selectVideo is a name of lower class emiter.
+
+SEND VARIABLE TO LOWER COMPONENT:
+
+ * send object to child component:
+  - <app-panel title="Panel Title"></app-panel> - this will send string value to the title object in the app-panel
+  - <app-panel [title]="panelTitle"></app-panel> - this will send panelTitle Object from the parent comp to the lower component
+
+
+
+

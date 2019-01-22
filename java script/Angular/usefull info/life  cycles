@@ -1,0 +1,66 @@
+
+ * firstly constructor is created, after that all other methods are called,
+ - it is not possible to use input variables in the constructor,
+ because they are not available there yet,
+
+ * ngOnChanges() - is called before ngOnInit(),
+ - this method contains SimpleChanges object with previous and current data,
+ - calls each time when an input variable is changed,
+ - this is the first place where you can get those input parameters,
+ - is called before ngOnInit and after each input item field change,
+ - is called for each declared component in the parent component
+ - if we have a parent view where we have many children that takes an input params
+ from the parent component then on change in parent will invoke onChanges in each
+ of those child components
+
+ zastosowanie:
+ ngOnChanges(changes: SimpleChanges): void {
+     console.log("On Changes called!");
+     for (let item in changes){
+       let change = changes[item];
+       let currentValue = change.currentValue;
+       console.log(currentValue)
+     }
+   }
+
+ * ngOnInit():
+ - called only once
+ - To perform complex initializations shortly after construction,
+ - To set up the component after Angular sets the input properties,
+ - great place to initialize data,
+ - in this moment all input data-bounded properties are initialized,
+ - great for loading data from the server
+
+ * ngDoCheck():
+ - called after each previous calls!
+ - I do not think that I should use that ...
+ - is called after each change detection, not only input variables...
+ just each component change
+ - we shouldn't implement this and ngOnChanges in the same component
+ - called many many times!!!
+
+ * ngOnDestroy():
+ - avoid memory leaks,
+ - unsubscribe all handlers
+
+------------- component stages linked to the children -----------------
+
+ * ngAfterContentInit():
+ - called once for each component,
+ - after the content has been initialized,
+ - here we can call some methods on template references
+
+ * ngAfterContentChecked():
+ - is called as many times,
+ - after each content change,
+ - after each component change
+
+ * ngAfterViewInit():
+ - called only once,
+ - after previous hook and after all parent and child views has been initialized,
+
+ * ngAfterViewChecked():
+ - called after each view change,
+ - this is that third hook that is called after each component change,
+ - called after each view change
+

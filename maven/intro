@@ -1,0 +1,28 @@
+
+ * generally maven has three life cycles:
+ - build, clean, site,
+
+ * maven uses plugins to create simple java app structure,
+
+ * this all world is created out of projects
+
+ * Simple project setup that follows best practices.
+
+ * it helps with realising stuff,
+
+ * super POM contains all default configurations,
+
+ * a repository - this is a maven folder where we store all maven
+ artifacts and plugins,
+ - local maven repository, organisation maven repo, internet central maven repo,
+
+ * increases reusability,
+
+ * can build multiple projects together,
+
+ * this is a build tool,
+
+ * maven creates default project structure
+
+ * creates reports, checks, testing automation setups,
+

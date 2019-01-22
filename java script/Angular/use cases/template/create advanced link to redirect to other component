@@ -1,0 +1,6 @@
+
+ * concatenate couple strings:
+ - parameters: obligationGroupId, bondId
+ - <a [routerLink]="['/obligation-groups', obligationGroupId, 'bonds', bondId, 'purchase-coupons']">
+     <button mat-raised-button color="primary">Purchase service units</button>
+   </a>

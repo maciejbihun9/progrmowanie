@@ -1,0 +1,22 @@
+
+ * Main principles:
+ - Find and define the actors.
+ - Identify the responsibilities that serve those actors.
+ - Group our functions and classes so that each has only one allocated responsibility.
+
+ * To keep our primary value high, we must have a design that is easy to change,
+  to extend, to accommodate new functionalities and to ensure that SRP is respected.
+
+ * Single responsibility:
+ - do not mix business logic with presentation !!! - very important,
+ - one actor, one responsibility (librarier, Content management system)
+ - always think about the actors that might
+ that might be involved in operating the book,
+
+ questions:
+
+ * when the single responsibility principle might be broken?:
+ - when field (like location) is not used by all actors, but some of them
+ might be looking only to read the first page, know about the author,
+ where a librarian might care about finding that book and delivering it to a user,
+

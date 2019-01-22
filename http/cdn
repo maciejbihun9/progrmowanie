@@ -1,0 +1,12 @@
+
+ * brings the servers together
+
+ * reduces server load,
+
+ cdn jobs:
+
+ * stores application data in cache, and if a user wants to retrive our
+ application data then connects with cdn with that data instead of
+ connecting with our server. That reduces a distance between our server and clients
+ from all over the world,
+

@@ -1,0 +1,11 @@
+
+ * place this code in the @Before annotated method:
+ - place scripts/data-h2.sql in the resources folder,
+ - Resource initData = new ClassPathResource("scripts/data-h2.sql");
+   DatabasePopulator databasePopulator = new ResourceDatabasePopulator(initData);
+   DatabasePopulatorUtils.execute(databasePopulator, testDataSource);
+
+ thoughts:
+ - this is much more time consuming task than creating the database using java and init loader,
+ - creating sql queries you have to remember about that you have to store values
+ with convenient type, because you will face serialization problem instead (BigDecimal, LocalDataTime)

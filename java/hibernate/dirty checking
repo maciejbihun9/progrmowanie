@@ -1,7 +1,7 @@
 
- * if I load an entities to a persistence context with all properties
+ * if I load entities to persistence context with all properties
  and then change only one property in one entity then hibernate still checks all entities
- and call update on all that have changed
+ and call update on all that have changed,
 
  * automatic dirty checking - scanning for changed entities and committing only those which were updated,
  At the end of a transaction hibernate will search for updated values, aquire lock on tables and updates entities
