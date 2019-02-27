@@ -1,0 +1,20 @@
+
+ * subscribe to couple observables and get only last items from each stream
+ - if one fails all response fails
+ public forkJoinTest(): Observable<any>{
+       const example = forkJoin(
+         //emit 'Hello' immediately
+         of('Hello'),
+         //emit 'World' after 1 second
+         of('World').pipe(delay(4000)),
+         //emit 0 after 1 second
+         interval(1000).pipe(take(1)),
+         //emit 0...1 in 1 second interval
+         interval(1000).pipe(take(2)),
+         //promise that resolves to 'Promise Resolved' after 5 seconds
+       );
+   //output: ["Hello", "World", 0, 1, "Promise Resolved: RESULT"]
+       return example;
+     }
+
+   - it will return: Hello, World, 0, 1 after 4 seconds when all responses are ready to be displayed

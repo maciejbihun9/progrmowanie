@@ -11,7 +11,7 @@
  * change detection is made after each:
  - http call,
  - after each button click,
- - after each event (keystroke, mouseclick, mousemove)
+ - after each event (keystroke, mouse click, mousemove)
 
  * it does not matter where asynchromus call was made,
  change detection starts on the top of the tree,

@@ -1,6 +1,11 @@
 
  * we should create models as interfaces and put them into one file called interface,
 
+ * an interfacae is just for compile time checking,
+
+ * a class will be available on runtime so you can define methods in it,
+ that you can call, but you have to create instances of it.
+
 EXAMPLES:
 
  * export interface Model {

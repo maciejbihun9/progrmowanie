@@ -1,0 +1,26 @@
+
+ * for each item you get in a request, make another request. Make a flat concatenation of all items that you receive from the server.
+ - another request will be made only after previous has ended,
+ - waits for each one to complete before merging the next,
+ - a request will be made after each 2 seconds, because this is a time that is needed to poll the data from the server.
+   const source = of(1,2,3,4,5);
+   // map value from source into inner observable, when complete emit result and move to next
+   return source.pipe(
+     concatMap(val => of(11,12,13).pipe(delay(2000)))
+   );
+
+   response -> 11, 12, 13, 11, 12, 13, 11, 12, 13
+
+ * for each item you get in a request, make another request. Make a flat concatenation of all items that you receive from the server.
+ - all request will be made in the same time,
+ - this is a huge performance win !!!, because all calls are made in the same time,
+ - this delay method does not have any effect in this context
+ - all request have to be made in the same time, a one delayed call won't be made if happens before all others
+    const source = of(1,2,3,4,5);
+    // map value from source into inner observable, when complete emit result and move to next
+    return source.pipe(
+     // you can make a delay here
+     delay(2000)
+     mergeMap(val => of(11,12,13).pipe(delay(2000)))
+    );
+

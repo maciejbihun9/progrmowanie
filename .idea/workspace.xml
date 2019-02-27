@@ -2,696 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f341ddb-947e-47ef-9e6e-2652f1fef69b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agile/epic" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agile/scrum/roles" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agile/story point" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agile/technical story" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agile/user story" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agile/worth to know/create user stories in the fastest way" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/architecture/use cases/create architecture of an application" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/databases/high performance tips" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/databases/why not to use many-to-many" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/intro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elastic search/Kibana" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elastic search/Lucene" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elastic search/intro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elastic search/query syntax" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http/caching-stuff/cache-control" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http/caching-stuff/caching" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http/caching-stuff/intro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http/cdn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http/dns" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http/interesting stuff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http/intro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http/use cases/block all caching on the client side" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http/use cases/create the right cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http/use cases/force users to get fresh version of a resource every time" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/Angular/Angular 6/features" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/Angular/Angular compiler" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/Angular/async programming/create interval" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/Angular/async programming/unwrap the data from observable without storing references" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/data binding/implement two way data binding in every component" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/data binding/manipulate input parameters" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/features/create advanced observable" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/features/filter data in a clever way" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/features/implement advanced observables" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/features/implement iteration with error and complete handling" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/features/implement iteration with observable" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/features/speed up application" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/services/return http response in subscribe body" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/services/send and retrive query params from url" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/styling/use directives to manipulate colors after DOM events" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/append a class to first and last item of a list" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/append an html template depending on a variable" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/append classes to odd and even list items" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/append piece of html to the page without any wrapping" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/based on a property value display different content" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/control what is on the screen using if - else statement" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/create a custom wrapper for components (like div)" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/create advanced link to redirect to other component" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/get a reference to a component template" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/get a reference to an html item in code" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/include an html content on the web page without including a host element" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/manage changing list of objects in a template" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/pass components from a parent to a child (like placing elements in a div)" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/write good templates" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/Angular/usefull info/use components as directives" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java script/elements/use cases/deal with user input" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/coding rules/SOLID" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/coding rules/creating models" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/coding rules/development strategies" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/coding rules/development tips" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/coding rules/exception" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/hibernate/errors/bytecode enhancement failed" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/hibernate/errors/could not deserialize" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/hibernate/errors/multiple bags exception" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/hibernate/use cases/control null values in persistance context" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/hibernate/use cases/create ManyToMany association in the right way" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/hibernate/use cases/create OneToOne association in the right way" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/hibernate/use cases/create embedded object into an entity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/hibernate/use cases/create two foreign keys in one entity class getting them from the other entity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/hibernate/use cases/create two way OneToMany, ManyToOne association in the right way" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/hibernate/use cases/fetch entities multiple levels deep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/hibernate/use cases/fetch queries/fetch data using where in clause" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/hibernate/use cases/increase efficiency in hibernate queries" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/hibernate/use cases/save entity with many references" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/hibernate/use cases/set different type to your database table column" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/hibernate/use cases/solve collection lazy loading problem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/java 8/closures.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/java 8/use cases/stop dealing with null pointers" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/java 8/use cases/sum entire list of objects one property values" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/pojęcia/obiektowość" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/spring/application design/ddd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/spring/application design/mvc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/spring/errors/conflicts with existing, non-compatible bean definition of same name and class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/spring/errors/javax-servlet-ServletContext class not found" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/spring/errors/principal user returns annonymusUser from SecurityContextHolder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/spring/thoughts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/testing/general testing rules" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/testing/integration tests" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/testing/mockito/intro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/testing/testing strategies" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/testing/use cases/init the test database with initial data from sql file" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven/build life cycle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven/build profile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven/clean life cycle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven/goal" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven/intro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven/phase" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven/plugin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven/site life cycle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servers/intro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servers/tomcat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uml/intro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/features/call different methods for items in a observable stream" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java script/Angular/use cases/features/make a request for each item that you received in previous request" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/spring/errors/could not autowire beans in test classes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/programming.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/programming.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/Angular 6/intro" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/Angular 6/intro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/HostBinding &amp; HostListener" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/usefull info/HostBinding &amp; HostListener" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/advanced caching" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/angular cli" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/architecture/architecture cases" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/architecture/architecture cases" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/common mistakes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/directives" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/events" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/http" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/intro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/life  cycles" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/usefull info/life  cycles" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/main files" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/usefull info/main files" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/npm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/observable" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/usefull info/observable" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/pipes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/routing" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/security" beforeDir="false" afterPath="$PROJECT_DIR$/agile/experience" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/services" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/template" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/usefull info/usefull info about template" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/tests" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/Communicating Between Components" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/usefull info/implement communication between components" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/Components architecture" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/Creating models" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/usefull info/creating models principles" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/Dynamically add components to the DOM" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/dynamically add components to the DOM" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/Loading data" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/usefull info/loading data from external files" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/Managing styles in the code" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/Managing view items in code" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/use cases/template/view container, children, child use cases" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/create component/directive for different html template" beforeDir="false" afterPath="$PROJECT_DIR$/agile/intro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/declaring functions in external files" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/usefull info/declaring functions in external files" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/detect changes" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/usefull info/detect changes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/handling input item" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/invoke some logic after input variable changes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/loops features" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/styling/append classes to an element" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/styling/append styles to an element" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java script/Angular/use cases/subscriptions/subscribe to a subject and receive a new message once is available" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/use cases/components communication/subscribe to a subject and receive a new message from a publisher once is available" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/dto" beforeDir="false" afterPath="$PROJECT_DIR$/java/dto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/effective java/ogólnie java.txt" beforeDir="false" afterPath="$PROJECT_DIR$/java/effective java/ogólnie java.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/hibernate/annotations" beforeDir="false" afterPath="$PROJECT_DIR$/java/hibernate/annotations" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/hibernate/caching" beforeDir="false" afterPath="$PROJECT_DIR$/java/hibernate/caching" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/hibernate/dirty checking" beforeDir="false" afterPath="$PROJECT_DIR$/java/hibernate/dirty checking" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/hibernate/inheritance mapping" beforeDir="false" afterPath="$PROJECT_DIR$/agile/scrum/artifacts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/java 8/Closure.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/java 8/[JAVA][Java 8 in Action].m7p" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/java 8/iteration example.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/java 8/method references.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/java 8/streams" beforeDir="false" afterPath="$PROJECT_DIR$/java/java 8/streams" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/maven" beforeDir="false" afterPath="$PROJECT_DIR$/agile/scrum/ceremonies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/nexus" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/przemyślenia.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/przetwarzanie tekstu.txt" beforeDir="false" afterPath="$PROJECT_DIR$/agile/scrum/intro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/spring/errors/Infinite Recursion with Jackson JSON and Hibernate JPA issue" beforeDir="false" afterPath="$PROJECT_DIR$/java/spring/errors/Infinite Recursion with Jackson JSON and Hibernate JPA issue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/spring/use cases/configure spring with jpa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work ethic for programming" beforeDir="false" afterPath="$PROJECT_DIR$/work ethic for programming" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/usefull info/creating models principles" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/usefull info/creating models principles" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java script/Angular/usefull info/detect changes" beforeDir="false" afterPath="$PROJECT_DIR$/java script/Angular/usefull info/detect changes" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
+    <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1519549815">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="9" />
-          <entry key="project.open.time.0" value="4" />
-          <entry key="project.open.time.1" value="3" />
-          <entry key="project.open.time.10" value="2" />
-          <entry key="project.open.time.11" value="2" />
-          <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.15" value="2" />
-          <entry key="project.open.time.19" value="2" />
-          <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.22" value="1" />
-          <entry key="project.open.time.24" value="1" />
-          <entry key="project.open.time.35" value="1" />
-          <entry key="project.open.time.5" value="3" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="26" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="Angular compiler" value="1" />
-          <entry key="BaseSubscriber" value="1" />
-          <entry key="Communicating Between Components" value="3" />
-          <entry key="Components architecture" value="1" />
-          <entry key="Creating models" value="1" />
-          <entry key="Dynamically add components to the DOM" value="1" />
-          <entry key="Flux" value="9" />
-          <entry key="HostBinding &amp; HostListener" value="1" />
-          <entry key="Infinite Recursion with Jackson JSON and Hibernate JPA issue" value="4" />
-          <entry key="Kibana" value="2" />
-          <entry key="Loading data" value="1" />
-          <entry key="Lucene" value="1" />
-          <entry key="Managing styles in the code" value="1" />
-          <entry key="Managing view items in code" value="4" />
-          <entry key="Mono" value="3" />
-          <entry key="Netty" value="2" />
-          <entry key="Operator" value="1" />
-          <entry key="ParallelFlux" value="1" />
-          <entry key="Processor" value="1" />
-          <entry key="Project Reactor" value="1" />
-          <entry key="Reactive Streams" value="1" />
-          <entry key="Reactor" value="1" />
-          <entry key="SOLID" value="5" />
-          <entry key="accumulate techniques" value="1" />
-          <entry key="advance features and concepts" value="1" />
-          <entry key="advanced caching" value="1" />
-          <entry key="angular cli" value="1" />
-          <entry key="annotations" value="3" />
-          <entry key="append a class to first and last item of a list" value="2" />
-          <entry key="append an html template depending on a variable" value="1" />
-          <entry key="append classes to an element" value="1" />
-          <entry key="append classes to odd and even list items" value="1" />
-          <entry key="append piece of html to the page without any wrapping" value="1" />
-          <entry key="append styles to an element" value="1" />
-          <entry key="apply many item transformations in one function" value="1" />
-          <entry key="architecture" value="1" />
-          <entry key="architecture cases" value="3" />
-          <entry key="artifacts" value="1" />
-          <entry key="associations" value="2" />
-          <entry key="async programming" value="1" />
-          <entry key="based on a property value display different components" value="3" />
-          <entry key="based on a property value display different content" value="1" />
-          <entry key="basic items" value="3" />
-          <entry key="basic methods" value="1" />
-          <entry key="block all caching on the client side" value="1" />
-          <entry key="block possibility to update entities" value="1" />
-          <entry key="buffering" value="1" />
-          <entry key="build life cycle" value="2" />
-          <entry key="build profile" value="1" />
-          <entry key="bytecode enhancement failed" value="1" />
-          <entry key="cache-control" value="1" />
-          <entry key="caching" value="5" />
-          <entry key="cahing" value="1" />
-          <entry key="cascade" value="1" />
-          <entry key="cdn" value="1" />
-          <entry key="ceremonies" value="1" />
-          <entry key="change a flux stream for each subscriber" value="1" />
-          <entry key="class hierarchy specification" value="2" />
-          <entry key="clean life cycle" value="1" />
-          <entry key="collections" value="1" />
-          <entry key="common mistakes" value="1" />
-          <entry key="components architecture" value="1" />
-          <entry key="conditional" value="3" />
-          <entry key="configuration files" value="3" />
-          <entry key="configure spring with jpa" value="3" />
-          <entry key="conflicts with existing, non-compatible bean definition of same name and class" value="2" />
-          <entry key="connectableFlux" value="2" />
-          <entry key="control null values in persistance context" value="3" />
-          <entry key="control what is on the screen using if - else statement" value="1" />
-          <entry key="controllers" value="3" />
-          <entry key="controlling a demand" value="1" />
-          <entry key="could not deserialize" value="1" />
-          <entry key="create ManyToMany association in the right way" value="2" />
-          <entry key="create OneToOne association in the right way" value="1" />
-          <entry key="create a custom wrapper for components" value="1" />
-          <entry key="create a second level cache" value="2" />
-          <entry key="create a stream that's not depends on subscribers" value="1" />
-          <entry key="create advanced link to redirect to other component" value="1" />
-          <entry key="create advanced observable" value="2" />
-          <entry key="create architecture of an application" value="1" />
-          <entry key="create embedded object into an entity" value="1" />
-          <entry key="create interval" value="1" />
-          <entry key="create shared embedded fields for entities" value="1" />
-          <entry key="create the right cache" value="1" />
-          <entry key="create two foreign keys in one entity class getting them from the other entity" value="2" />
-          <entry key="create two way OneToMany, ManyToOne association in the right way" value="1" />
-          <entry key="create two way association in the right way" value="1" />
-          <entry key="create user stories in the fastest way" value="1" />
-          <entry key="creating models" value="3" />
-          <entry key="creating models principles" value="1" />
-          <entry key="criteria api" value="1" />
-          <entry key="ddd" value="1" />
-          <entry key="deal with user input" value="1" />
-          <entry key="declaring functions in external files" value="1" />
-          <entry key="detached" value="1" />
-          <entry key="detect changes" value="1" />
-          <entry key="development strategies" value="4" />
-          <entry key="development tips" value="1" />
-          <entry key="directive for different html template" value="1" />
-          <entry key="directives" value="1" />
-          <entry key="dirty checking" value="3" />
-          <entry key="disposeable" value="1" />
-          <entry key="dns" value="1" />
-          <entry key="docker" value="1" />
-          <entry key="domain driven design" value="1" />
-          <entry key="dto" value="1" />
-          <entry key="entity annotations" value="1" />
-          <entry key="entityManager" value="3" />
-          <entry key="epic" value="2" />
-          <entry key="eureka" value="3" />
-          <entry key="events" value="4" />
-          <entry key="examples" value="1" />
-          <entry key="exception" value="2" />
-          <entry key="experience" value="1" />
-          <entry key="features" value="1" />
-          <entry key="fetch data using where in clause" value="1" />
-          <entry key="fetch entities multiple levels deep" value="1" />
-          <entry key="fetch strategies" value="3" />
-          <entry key="fetching artifacts access_denied" value="1" />
-          <entry key="filter data in a clever way" value="3" />
-          <entry key="filter out items depending on predicate" value="1" />
-          <entry key="filtering" value="4" />
-          <entry key="flux partitioning" value="2" />
-          <entry key="force users to get fresh version of a resource every time" value="1" />
-          <entry key="functional endpoints" value="1" />
-          <entry key="general testing rules" value="4" />
-          <entry key="get a reference to a component template" value="1" />
-          <entry key="get a reference to an html item in code" value="3" />
-          <entry key="get class statistics and metadata" value="1" />
-          <entry key="get list of entities from the database" value="2" />
-          <entry key="get query params from the url" value="1" />
-          <entry key="goal" value="1" />
-          <entry key="good practices" value="4" />
-          <entry key="grouping" value="1" />
-          <entry key="handling input item" value="1" />
-          <entry key="hibernate connections between entities" value="3" />
-          <entry key="high performance tips" value="2" />
-          <entry key="hot vs cold subscribers" value="2" />
-          <entry key="how this works" value="3" />
-          <entry key="http" value="2" />
-          <entry key="hystrix" value="1" />
-          <entry key="implement advanced observables" value="1" />
-          <entry key="implement communication between components" value="2" />
-          <entry key="implement iteration with error and complete handling" value="1" />
-          <entry key="implement iteration with observable" value="1" />
-          <entry key="implement two way data binding in every component" value="1" />
-          <entry key="implementation" value="2" />
-          <entry key="include an html content on the web page without including a host element" value="2" />
-          <entry key="increase efficiency in hibernate queries" value="1" />
-          <entry key="inheritance mapping" value="2" />
-          <entry key="init the test database with initial data from sql file" value="1" />
-          <entry key="initialize entity associations" value="1" />
-          <entry key="inject simple properties into a component" value="2" />
-          <entry key="integration tests" value="1" />
-          <entry key="interesting stuff" value="1" />
-          <entry key="intro" value="49" />
-          <entry key="invoke some logic after input variable changes" value="1" />
-          <entry key="javax-servlet-ServletContext" value="1" />
-          <entry key="javax-servlet-ServletContext class not found" value="2" />
-          <entry key="jms" value="1" />
-          <entry key="jndi" value="1" />
-          <entry key="lazy eager" value="1" />
-          <entry key="life  cycles" value="2" />
-          <entry key="loading data" value="2" />
-          <entry key="lock entity properties to use it with many threads" value="1" />
-          <entry key="locking" value="1" />
-          <entry key="logging" value="1" />
-          <entry key="lombok" value="2" />
-          <entry key="loops features" value="1" />
-          <entry key="m7p" value="1" />
-          <entry key="main files" value="1" />
-          <entry key="make sure that field with not convenient props won't be stored" value="1" />
-          <entry key="manage changing list of objects in a template" value="1" />
-          <entry key="managed" value="2" />
-          <entry key="managing styles in the code" value="1" />
-          <entry key="managing view items in code" value="1" />
-          <entry key="manipulate input parameters" value="1" />
-          <entry key="maven" value="2" />
-          <entry key="messaging" value="1" />
-          <entry key="mqtt" value="1" />
-          <entry key="multiple bags exception" value="2" />
-          <entry key="mvc" value="3" />
-          <entry key="n + 1 problem" value="1" />
-          <entry key="named entity graph" value="3" />
-          <entry key="nexus" value="1" />
-          <entry key="npm" value="1" />
-          <entry key="obiektowość" value="1" />
-          <entry key="observable" value="4" />
-          <entry key="pass components from a parent to a child (like placing elements in a div)" value="1" />
-          <entry key="perform some work before and after user http request" value="2" />
-          <entry key="performance problems" value="2" />
-          <entry key="persistanceContext" value="2" />
-          <entry key="persistent" value="1" />
-          <entry key="pesimistic locking" value="1" />
-          <entry key="phase" value="1" />
-          <entry key="pipelines" value="1" />
-          <entry key="pipes" value="1" />
-          <entry key="plugin" value="2" />
-          <entry key="principal user returns annonymusUser from SecurityCOntextHOlder" value="1" />
-          <entry key="principal user returns annonymusUser from SecurityContextHolder" value="1" />
-          <entry key="problems" value="1" />
-          <entry key="proxy pattern" value="2" />
-          <entry key="query syntax" value="2" />
-          <entry key="rabbitmq" value="2" />
-          <entry key="reactive streams" value="1" />
-          <entry key="reactor" value="3" />
-          <entry key="release resources after specific number of operations" value="2" />
-          <entry key="removed" value="2" />
-          <entry key="render html item only if variable is initialized" value="1" />
-          <entry key="replace a request when a user clicks a button couple times" value="1" />
-          <entry key="retriving items from the database" value="2" />
-          <entry key="return http response in subscribe body" value="2" />
-          <entry key="ribbon" value="2" />
-          <entry key="rmi" value="1" />
-          <entry key="roles" value="1" />
-          <entry key="routing" value="1" />
-          <entry key="save entity with many references" value="3" />
-          <entry key="scanning" value="3" />
-          <entry key="schedule a background task that is executed in specified amount of time" value="1" />
-          <entry key="scheduling" value="3" />
-          <entry key="security" value="1" />
-          <entry key="send and retrive query params from url" value="1" />
-          <entry key="service worker" value="1" />
-          <entry key="services" value="1" />
-          <entry key="session" value="3" />
-          <entry key="set convenient column properties" value="1" />
-          <entry key="set different type to your database table column" value="4" />
-          <entry key="setup" value="1" />
-          <entry key="site life cycle" value="1" />
-          <entry key="solve collection lazy loading problem" value="2" />
-          <entry key="sorting, ordering entities in hibernate" value="1" />
-          <entry key="speed up application" value="1" />
-          <entry key="spring boot task" value="1" />
-          <entry key="spring-cloud-data-flow" value="4" />
-          <entry key="spring-cloud-stream" value="1" />
-          <entry key="spring-cloud-task" value="3" />
-          <entry key="spring-data-flow-shell" value="2" />
-          <entry key="spring-integration" value="1" />
-          <entry key="static synchronization" value="1" />
-          <entry key="stop dealing with null pointers" value="3" />
-          <entry key="storing enums" value="2" />
-          <entry key="story point" value="1" />
-          <entry key="stream" value="3" />
-          <entry key="streams" value="2" />
-          <entry key="subscribe to a subject and receive a new message from a publisher once is available" value="1" />
-          <entry key="subscribe to a subject and receive a new message once is available" value="2" />
-          <entry key="sum entire list of objects one property values" value="1" />
-          <entry key="task" value="1" />
-          <entry key="technical story" value="1" />
-          <entry key="template" value="4" />
-          <entry key="testing strategies" value="1" />
-          <entry key="tests" value="3" />
-          <entry key="thoughts" value="1" />
-          <entry key="threading and scheduling" value="2" />
-          <entry key="tomcat" value="1" />
-          <entry key="transaction management" value="2" />
-          <entry key="transformations" value="4" />
-          <entry key="transient" value="1" />
-          <entry key="txt" value="20" />
-          <entry key="unwrap the data from observable without storing references" value="1" />
-          <entry key="uplod files to the application" value="1" />
-          <entry key="use bean life cycle methods to inform about it's life cycle" value="1" />
-          <entry key="use cases" value="5" />
-          <entry key="use components as directives" value="2" />
-          <entry key="use directives to manipulate colors after DOM events" value="1" />
-          <entry key="use parent's service in child component with child service" value="1" />
-          <entry key="usefull info about template" value="1" />
-          <entry key="usefull information" value="2" />
-          <entry key="user story" value="2" />
-          <entry key="web client" value="3" />
-          <entry key="why not to use many-to-many" value="1" />
-          <entry key="windowing" value="5" />
-          <entry key="work ethic for programming" value="2" />
-          <entry key="write good templates" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="PLAIN_TEXT" value="519" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="Angular compiler" value="477" />
-          <entry key="BaseSubscriber" value="151" />
-          <entry key="Communicating Between Components" value="276" />
-          <entry key="Flux" value="3839" />
-          <entry key="HostBinding &amp; HostListener" value="11" />
-          <entry key="Infinite Recursion with Jackson JSON and Hibernate JPA issue" value="261" />
-          <entry key="Kibana" value="81" />
-          <entry key="Lucene" value="373" />
-          <entry key="Managing view items in code" value="75" />
-          <entry key="Mono" value="1306" />
-          <entry key="Netty" value="448" />
-          <entry key="Operator" value="57" />
-          <entry key="ParallelFlux" value="833" />
-          <entry key="Processor" value="191" />
-          <entry key="Project Reactor" value="748" />
-          <entry key="Reactive Streams" value="71" />
-          <entry key="Reactor" value="412" />
-          <entry key="SOLID" value="595" />
-          <entry key="accumulate techniques" value="3" />
-          <entry key="advance features and concepts" value="494" />
-          <entry key="annotations" value="162" />
-          <entry key="append a class to first and last item of a list" value="2" />
-          <entry key="append an html template depending on a variable" value="29" />
-          <entry key="append classes to odd and even list items" value="2" />
-          <entry key="append piece of html to the page without any wrapping" value="42" />
-          <entry key="apply many item transformations in one function" value="72" />
-          <entry key="architecture" value="72" />
-          <entry key="architecture cases" value="100" />
-          <entry key="artifacts" value="264" />
-          <entry key="async programming" value="218" />
-          <entry key="based on a property value display different components" value="15" />
-          <entry key="based on a property value display different content" value="55" />
-          <entry key="block all caching on the client side" value="107" />
-          <entry key="block possibility to update entities" value="188" />
-          <entry key="buffering" value="448" />
-          <entry key="build life cycle" value="208" />
-          <entry key="build profile" value="185" />
-          <entry key="bytecode enhancement failed" value="68" />
-          <entry key="cache-control" value="154" />
-          <entry key="caching" value="2061" />
-          <entry key="cdn" value="310" />
-          <entry key="ceremonies" value="349" />
-          <entry key="change a flux stream for each subscriber" value="145" />
-          <entry key="clean life cycle" value="42" />
-          <entry key="collections" value="1" />
-          <entry key="components architecture" value="1" />
-          <entry key="conditional" value="319" />
-          <entry key="configuration files" value="628" />
-          <entry key="configure spring with jpa" value="4" />
-          <entry key="conflicts with existing, non-compatible bean definition of same name and class" value="208" />
-          <entry key="connectableFlux" value="751" />
-          <entry key="control null values in persistance context" value="96" />
-          <entry key="control what is on the screen using if - else statement" value="6" />
-          <entry key="controllers" value="679" />
-          <entry key="controlling a demand" value="265" />
-          <entry key="create ManyToMany association in the right way" value="180" />
-          <entry key="create OneToOne association in the right way" value="74" />
-          <entry key="create a custom wrapper for components" value="39" />
-          <entry key="create a second level cache" value="880" />
-          <entry key="create a stream that's not depends on subscribers" value="133" />
-          <entry key="create advanced link to redirect to other component" value="93" />
-          <entry key="create advanced observable" value="4" />
-          <entry key="create architecture of an application" value="105" />
-          <entry key="create embedded object into an entity" value="358" />
-          <entry key="create interval" value="126" />
-          <entry key="create the right cache" value="209" />
-          <entry key="create two foreign keys in one entity class getting them from the other entity" value="101" />
-          <entry key="create two way OneToMany, ManyToOne association in the right way" value="270" />
-          <entry key="create two way association in the right way" value="501" />
-          <entry key="creating models" value="269" />
-          <entry key="creating models principles" value="21" />
-          <entry key="ddd" value="616" />
-          <entry key="deal with user input" value="362" />
-          <entry key="detect changes" value="38" />
-          <entry key="development strategies" value="963" />
-          <entry key="development tips" value="303" />
-          <entry key="directives" value="5" />
-          <entry key="dirty checking" value="453" />
-          <entry key="disposeable" value="168" />
-          <entry key="dns" value="189" />
-          <entry key="docker" value="359" />
-          <entry key="domain driven design" value="4" />
-          <entry key="dto" value="315" />
-          <entry key="epic" value="260" />
-          <entry key="eureka" value="2182" />
-          <entry key="events" value="417" />
-          <entry key="examples" value="41" />
-          <entry key="exception" value="92" />
-          <entry key="experience" value="185" />
-          <entry key="features" value="319" />
-          <entry key="fetch data using where in clause" value="84" />
-          <entry key="fetch entities multiple levels deep" value="138" />
-          <entry key="fetching artifacts access_denied" value="192" />
-          <entry key="filter data in a clever way" value="268" />
-          <entry key="filter out items depending on predicate" value="232" />
-          <entry key="filtering" value="127" />
-          <entry key="flux partitioning" value="295" />
-          <entry key="force users to get fresh version of a resource every time" value="300" />
-          <entry key="functional endpoints" value="151" />
-          <entry key="general testing rules" value="616" />
-          <entry key="get a reference to a component template" value="56" />
-          <entry key="get a reference to an html item in code" value="259" />
-          <entry key="goal" value="510" />
-          <entry key="grouping" value="424" />
-          <entry key="high performance tips" value="440" />
-          <entry key="hot vs cold subscribers" value="839" />
-          <entry key="how this works" value="425" />
-          <entry key="http" value="5" />
-          <entry key="hystrix" value="643" />
-          <entry key="implement advanced observables" value="4" />
-          <entry key="implement iteration with error and complete handling" value="7" />
-          <entry key="implement iteration with observable" value="5" />
-          <entry key="implement two way data binding in every component" value="6" />
-          <entry key="implementation" value="328" />
-          <entry key="include an html content on the web page without including a host element" value="77" />
-          <entry key="increase efficiency in hibernate queries" value="716" />
-          <entry key="init the test database with initial data from sql file" value="433" />
-          <entry key="inject simple properties into a component" value="168" />
-          <entry key="integration tests" value="130" />
-          <entry key="interesting stuff" value="210" />
-          <entry key="intro" value="19605" />
-          <entry key="javax-servlet-ServletContext class not found" value="329" />
-          <entry key="jms" value="326" />
-          <entry key="life  cycles" value="20" />
-          <entry key="lock entity properties to use it with many threads" value="149" />
-          <entry key="logging" value="64" />
-          <entry key="loops features" value="7" />
-          <entry key="manage changing list of objects in a template" value="436" />
-          <entry key="manipulate input parameters" value="2" />
-          <entry key="maven" value="16" />
-          <entry key="messaging" value="1003" />
-          <entry key="mqtt" value="187" />
-          <entry key="multiple bags exception" value="149" />
-          <entry key="mvc" value="2311" />
-          <entry key="obiektowość" value="444" />
-          <entry key="observable" value="949" />
-          <entry key="pass components from a parent to a child (like placing elements in a div)" value="362" />
-          <entry key="phase" value="157" />
-          <entry key="plugin" value="213" />
-          <entry key="principal user returns annonymusUser from SecurityContextHolder" value="112" />
-          <entry key="query syntax" value="151" />
-          <entry key="rabbitmq" value="768" />
-          <entry key="reactive streams" value="88" />
-          <entry key="reactor" value="529" />
-          <entry key="replace a request when a user clicks a button couple times" value="55" />
-          <entry key="return http response in subscribe body" value="4" />
-          <entry key="ribbon" value="1160" />
-          <entry key="rmi" value="214" />
-          <entry key="roles" value="300" />
-          <entry key="save entity with many references" value="341" />
-          <entry key="scanning" value="214" />
-          <entry key="schedule a background task that is executed in specified amount of time" value="35" />
-          <entry key="scheduling" value="1602" />
-          <entry key="send and retrive query params from url" value="63" />
-          <entry key="session" value="1" />
-          <entry key="set different type to your database table column" value="188" />
-          <entry key="setup" value="159" />
-          <entry key="site life cycle" value="77" />
-          <entry key="solve collection lazy loading problem" value="472" />
-          <entry key="speed up application" value="512" />
-          <entry key="spring boot task" value="80" />
-          <entry key="spring-cloud-data-flow" value="3161" />
-          <entry key="spring-cloud-stream" value="4807" />
-          <entry key="spring-cloud-task" value="1204" />
-          <entry key="spring-data-flow-shell" value="499" />
-          <entry key="spring-integration" value="452" />
-          <entry key="stop dealing with null pointers" value="153" />
-          <entry key="story point" value="282" />
-          <entry key="stream" value="1847" />
-          <entry key="streams" value="120" />
-          <entry key="subscribe to a subject and receive a new message once is available" value="386" />
-          <entry key="sum entire list of objects one property values" value="4" />
-          <entry key="task" value="996" />
-          <entry key="technical story" value="114" />
-          <entry key="testing strategies" value="246" />
-          <entry key="thoughts" value="507" />
-          <entry key="threading and scheduling" value="576" />
-          <entry key="tomcat" value="108" />
-          <entry key="transformations" value="477" />
-          <entry key="txt" value="9" />
-          <entry key="unwrap the data from observable without storing references" value="772" />
-          <entry key="use cases" value="479" />
-          <entry key="use components as directives" value="2" />
-          <entry key="use directives to manipulate colors after DOM events" value="69" />
-          <entry key="usefull information" value="260" />
-          <entry key="user story" value="1060" />
-          <entry key="web client" value="641" />
-          <entry key="why not to use many-to-many" value="200" />
-          <entry key="windowing" value="795" />
-          <entry key="work ethic for programming" value="464" />
-          <entry key="write good templates" value="142" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="PLAIN_TEXT" value="92366" />
-        </counts>
-      </usages-collector>
-    </session>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="progrmowanie" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/services/return http response in subscribe body">
+        <entry file="file://$PROJECT_DIR$/java/hibernate/collections">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="153">
+              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/features/call different methods for items in a observable stream">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="66" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/services/send and retrive query params from url">
+        <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/features/make a request for each item that you received in previous request">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="289">
+              <caret line="17" column="110" selection-start-line="17" selection-start-column="110" selection-end-line="17" selection-end-column="110" />
             </state>
           </provider>
         </entry>
@@ -722,15 +83,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/java/dto" />
-        <option value="$PROJECT_DIR$/java/hibernate/dirty checking" />
-        <option value="$PROJECT_DIR$/java/hibernate/caching" />
-        <option value="$PROJECT_DIR$/java/hibernate/use cases/increase efficiency in hibernate queries" />
-        <option value="$PROJECT_DIR$/java/hibernate/errors/multiple bags exception" />
-        <option value="$PROJECT_DIR$/java/hibernate/use cases/save entity with many references" />
         <option value="$PROJECT_DIR$/java/hibernate/use cases/control null values in persistance context" />
         <option value="$PROJECT_DIR$/java/hibernate/annotations" />
         <option value="$PROJECT_DIR$/java/hibernate/use cases/create two way association in the right way" />
@@ -776,20 +136,18 @@
         <option value="$PROJECT_DIR$/java/hibernate/use cases/fetch queries/fetch data using where in clause" />
         <option value="$PROJECT_DIR$/java script/Angular/use cases/services/return http response in subscribe body" />
         <option value="$PROJECT_DIR$/java script/Angular/use cases/services/send and retrive query params from url" />
+        <option value="$PROJECT_DIR$/java/spring/errors/could not autowire beans in test classes" />
+        <option value="$PROJECT_DIR$/java script/Angular/usefull info/creating models principles" />
+        <option value="$PROJECT_DIR$/java script/Angular/usefull info/detect changes" />
+        <option value="$PROJECT_DIR$/java script/Angular/usefull info/HostBinding &amp; HostListener" />
+        <option value="$PROJECT_DIR$/java script/Angular/use cases/features/call different methods for items in a observable stream" />
+        <option value="$PROJECT_DIR$/java script/Angular/use cases/features/make a request for each item that you received in previous request" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="613" />
-    <option name="y" value="67" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1920" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -797,61 +155,55 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="programming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programming" type="462c0819:PsiDirectoryNode" />
+              <item name="progrmowanie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="progrmowanie" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="programming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programming" type="462c0819:PsiDirectoryNode" />
+              <item name="progrmowanie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="progrmowanie" type="462c0819:PsiDirectoryNode" />
               <item name="java script" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="programming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programming" type="462c0819:PsiDirectoryNode" />
-              <item name="java script" type="462c0819:PsiDirectoryNode" />
-              <item name="Angular" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="programming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programming" type="462c0819:PsiDirectoryNode" />
+              <item name="progrmowanie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="progrmowanie" type="462c0819:PsiDirectoryNode" />
               <item name="java script" type="462c0819:PsiDirectoryNode" />
               <item name="Angular" type="462c0819:PsiDirectoryNode" />
-              <item name="use cases" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="programming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programming" type="462c0819:PsiDirectoryNode" />
+              <item name="progrmowanie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="progrmowanie" type="462c0819:PsiDirectoryNode" />
               <item name="java script" type="462c0819:PsiDirectoryNode" />
               <item name="Angular" type="462c0819:PsiDirectoryNode" />
               <item name="use cases" type="462c0819:PsiDirectoryNode" />
-              <item name="components communication" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="programming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programming" type="462c0819:PsiDirectoryNode" />
+              <item name="progrmowanie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="progrmowanie" type="462c0819:PsiDirectoryNode" />
               <item name="java script" type="462c0819:PsiDirectoryNode" />
               <item name="Angular" type="462c0819:PsiDirectoryNode" />
               <item name="use cases" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/macbi/Desktop/Maciek - documents/programming/java script/Angular/Angular 6/service worker" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547634767483" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
   </component>
@@ -880,6 +232,422 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="programming" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -1823,24 +1591,27 @@
       <workItem from="1537386075172" duration="153000" />
       <workItem from="1540991339407" duration="4820000" />
       <workItem from="1541087508280" duration="37033000" />
+      <workItem from="1549022936190" duration="4757000" />
+      <workItem from="1549276490935" duration="2495000" />
+      <workItem from="1549288007091" duration="511000" />
+      <workItem from="1549288545075" duration="2437000" />
+      <workItem from="1549623096164" duration="634000" />
+      <workItem from="1551267928021" duration="4850000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="926187000" />
+    <option name="totallyTimeSpent" value="941871000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="613" y="67" width="974" height="1047" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3358862" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28767124" />
       <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Designer" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="DB Browser" order="7" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Palette&#9;" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -1848,446 +1619,337 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.10729614" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="DB Execution Console" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Designer" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.42548817" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Designer" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.10729614" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/polyfills.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/polyfills.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/subregions-filter.pipe.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/subregions-filter.pipe.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/opportunities-grid/opportunities-grid.component.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/opportunities-grid/opportunities-grid.component.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/models/interfaces.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/models/interfaces.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/super-table.component.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/table-header.component.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/super-table-body.component.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/text-filter.component.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/super-table-row.component.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/super-table-cell.component.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/dummy-rows.component.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/text-filter.component.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/table-header.component.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/super-table-cell.component.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/enum-filter.component.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/enum-filter.component.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/super-table-body.component.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/super-table-row.component.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/dummy-rows.component.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/super-table.component.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/services/super-table-state.service.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/services/super-table-state.service.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/paginator/paginator.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/paginator/paginator.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/sort-switch/sort-switch.component.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/components/sort-switch/sort-switch.component.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/super-table.module.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/super-table.module.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/bootstrap/bootstrap.component.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/bootstrap/bootstrap.component.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/util/super-table-filters.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/util/super-table-filters.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/util/super-table-sorters.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/super-table/util/super-table-sorters.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/dxcfooter/dxcfooter.component.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/dxcfooter/dxcfooter.component.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/global-view-navigation-bar/global-view-navigation-bar.component.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/global-view-navigation-bar/global-view-navigation-bar.component.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/models/opportunity.model.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/models/data.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/models/data.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/models/opportunity.model.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/models/forecast.model.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/models/forecast.model.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/services/in-memory-data-extension.service.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/services/opportunity-data.service.spec.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/services/in-memory-data-extension.service.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/services/opportunity-data.service.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/services/in-memory-data.service.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/services/opportunity-data.service.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/services/forecast.service.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/services/in-memory-data.service.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/services/opportunity-data.service.spec.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/services/forecast.service.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/tools/async-observable-helpers.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/tools/async-observable-helpers.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/services/forecast.service.spec.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/services/forecast.service.spec.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/test.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/test.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/services/user.service.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/services/user.service.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/environments/environment.prod.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/environments/environment.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/environments/environment.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/environments/environment.prod.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/models/forecast-model.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/models/forecast-model.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/main.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/app.module.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/app.component.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/app.component.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/app.module.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/main.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/metrics-panel/region/region-fiscal-metrics.component.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/metrics-panel/region/region-fiscal-metrics.component.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/metrics-panel/time-period/time-period-fiscal-metrics.component.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/metrics-panel/time-period/time-period-fiscal-metrics.component.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/metrics-panel/metrics-panel.component.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/metrics-panel/metrics-panel.component.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/metrics-panel/section-time-period-fiscal-metrics/section-time-period-fiscal-metrics.component.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/metrics-panel/section-time-period-fiscal-metrics/section-time-period-fiscal-metrics.component.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/metrics-panel/metrics-panel.component.spec.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/metrics-panel/metrics-panel.component.spec.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/metrics-panel/time-period/time-period-fiscal-metrics.component.spec.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/metrics-panel/time-period/time-period-fiscal-metrics.component.spec.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/metrics-panel/section-time-period-fiscal-metrics/section-time-period-fiscal-metrics.component.spec.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/metrics-panel/section-time-period-fiscal-metrics/section-time-period-fiscal-metrics.component.spec.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/models/forecast-metrics.model.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/models/forecast-metrics.model.js.map" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/opportunities-grid/super-table-column-opportunity-properties.js" />
-        <option value="$USER_HOME$/dxc/repos/sales-forecasting/HP.ESBI.SalesAnalytics.Web/app/opportunities-grid/super-table-column-opportunity-properties.js.map" />
-      </list>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
     </option>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/java/testing/mockito/intro">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/coding rules/development strategies">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
+        <state>
           <caret line="29" column="65" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/spring/application design/mvc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state>
           <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/spring/application design/ddd">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state>
           <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/testing/testing strategies">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state>
           <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/coding rules/development tips">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state>
           <caret line="5" column="65" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/java 8/use cases/sum entire list of objects one property values">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state>
           <caret line="2" column="63" selection-start-line="2" selection-start-column="63" selection-end-line="2" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/java 8/use cases/stop dealing with null pointers">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/elastic search/Kibana">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state>
           <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/elastic search/query syntax">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state>
           <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/databases/why not to use many-to-many">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state>
           <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/elastic search/Lucene">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state>
           <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/elastic search/intro">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state>
           <caret line="3" column="79" selection-start-line="3" selection-start-column="79" selection-end-line="3" selection-end-column="79" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/hibernate/errors/multiple bags exception">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state>
           <caret line="2" column="59" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/databases/high performance tips">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state>
           <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/hibernate/inheritance mapping" />
-    <entry file="file://$PROJECT_DIR$/java/jpa/intro">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/jpa/entityManager">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="16" column="78" lean-forward="true" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
+        <state>
+          <caret line="16" column="78" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/hibernate/use cases/fetch entities multiple levels deep">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
+        <state>
           <caret line="4" column="54" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/hibernate/use cases/create ManyToMany association in the right way">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state>
           <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/jpa/class hierarchy specification">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/concurrency/synchronization/static synchronization">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state>
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/coding rules/exception">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state>
           <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/testing/general testing rules">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state>
           <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docker/intro">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        <state>
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/architecture/use cases/create architecture of an application">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        <state>
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/work ethic for programming">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="89" lean-forward="true" selection-start-line="10" selection-start-column="89" selection-end-line="10" selection-end-column="89" />
+        <state>
+          <caret line="10" column="89" selection-start-line="10" selection-start-column="89" selection-end-line="10" selection-end-column="89" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/coding rules/creating models">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state>
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/concurrency/synchronization/release resources after specific number of operations">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/spring/spring webflux/controllers">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/java script/Angular/Angular 6/intro">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state>
           <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/Angular 6/service worker">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/java script/Angular/Angular 6/features">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state>
           <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java script/Angular/Angular compiler">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state>
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/features/speed up application">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state>
           <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java script/Angular/async programming/unwrap the data from observable without storing references">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state>
           <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java script/Angular/async programming/create interval">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state>
           <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java script/Angular/usefull info/observable">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
+        <state>
           <caret line="117" column="38" selection-start-line="117" selection-start-column="38" selection-end-line="117" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/usefull info/usefull info about template">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/java script/Angular/architecture/basics.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-191" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/java script/Angular/architecture/architecture cases">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
+        <state>
           <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/hibernate/use cases/control null values in persistance context">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/template/create advanced link to redirect to other component">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        <state>
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/spring/use cases/configure spring with jpa" />
-    <entry file="file://$PROJECT_DIR$/java/spring/spring w sieci.txt">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/java/hibernate/use cases/fetch queries/fetch data using where in clause">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="42" lean-forward="true" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+        <state>
+          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/spring/use cases/inject simple properties into a component">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/hibernate/use cases/set different type to your database table column">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state>
           <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/services/send and retrive query params from url.txt" />
     <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/services/return http response in subscribe body">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state>
           <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/services/send and retrive query params from url">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state>
           <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/usefull info/creating models principles">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/usefull info/declaring functions in external files">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/usefull info/detect changes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/usefull info/HostBinding &amp; HostListener">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/spring/errors/could not autowire beans in test classes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/hibernate/collections">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/features/call different methods for items in a observable stream">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="66" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/features/group of observables and only care about the final emitted value of each.">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java script/Angular/use cases/features/make a request for each item that you received in previous request">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="110" selection-start-line="17" selection-start-column="110" selection-end-line="17" selection-end-column="110" />
         </state>
       </provider>
     </entry>

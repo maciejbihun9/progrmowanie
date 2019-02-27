@@ -1,0 +1,12 @@
+
+ * let items = of(1,2,3,4,5).pipe(
+         // it will be called for each item, because it is before filter
+         tap(item => console.log('Before filter : ' + item)),
+         filter(item => item % 2 == 0),
+         // this is called only for items that are still available
+         // for filtered items following methods are not called
+         // if item was removed then those methods won't be called
+         map(item => item * 5),
+         tap(item => console.log('After filter : ' + item))
+       // map(item => item * 3)
+       );
